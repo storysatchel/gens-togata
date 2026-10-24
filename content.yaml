@@ -526,6 +526,24 @@ chapters:
     style: body
     text: |-
       Your character treats one chosen arena weapon type (sword, trident, net, or shield) as having the Accurate 1 quality, and may re-roll the Critical Injury once when striking with it (keeping the result of their choice).
+  - type: h4
+    text: Morning Clients
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      At the start of each session, your character has a number of banked Favors equal to their Dignitas (minimum 1), gathered from the petty clients who attend their morning *salutatio*. This is a fresh allotment each session: unused Favors do not accumulate or carry over.
+  - type: h4
+    text: Nomenclator's Whisper
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Active (Incidental)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Once per social encounter, your character (or their accompanying *nomenclator* slave) recalls a stranger's name, family, and weakness: make an Average Knowledge (Rome) check; on success, immediately learn one Strength or Flaw of a present character without spending [[advantage]].
   - type: h3
     text: Tier 2
   - type: h4
@@ -564,6 +582,33 @@ chapters:
     style: body
     text: |-
       Once per encounter per rank of this talent, when your character suffers strain, they may reduce that strain by 2.
+  - type: h4
+    text: Captatio Benevolentiae
+  - type: p
+    style: body
+    text: '**Tier:** 2   **Activation:** Active (Maneuver)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      When your character opens a speech or social encounter, they may make this disarming overture: add [[boost boost]] to their first social check, and remove [[setback]] from it equal to their ranks in Charm.
+  - type: h4
+    text: Cross-Examine
+  - type: p
+    style: body
+    text: '**Tier:** 2   **Activation:** Active (Action)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Make an opposed Coercion or Deception check against a target. On success, you learn whether a statement they made is a lie, and inflict strain as normal; with [[advantage advantage]], flip one of the target's banked [[boost]] (a witness, an alibi) into a [[setback]].
+  - type: h4
+    text: Filibuster
+  - type: p
+    style: body
+    text: '**Tier:** 2   **Activation:** Active (Action)   **Ranked:** Yes'
+  - type: p
+    style: body
+    text: |-
+      Your character may speak to run out the clock. Once per encounter per rank, make a Resilience check; each success adds a “round” to the time a formal body must wait before it can vote or act.
   - type: h3
     text: Tier 3
   - type: h4
@@ -592,6 +637,24 @@ chapters:
   - type: p
     style: body
     text: Your character's unarmed and improvised-weapon attacks gain the Disorient 2 quality.
+  - type: h4
+    text: Patronus
+  - type: p
+    style: body
+    text: '**Tier:** 3   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Charm, Leadership, and Knowledge (Rome) are career skills for your character. Once per session they may spend a Story Point to produce an appropriate client — a witness, a thug, a craftsman, a minor official — who owes them a Favor and arrives when needed.
+  - type: h4
+    text: Demagogue
+  - type: p
+    style: body
+    text: '**Tier:** 3   **Activation:** Active (Action)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      When addressing a crowd of 16 or more, your character may make a single Coercion or Charm check against the whole audience at once (using the group-size difficulty). On success the crowd takes one collective action your character names — cheer, disperse, march, or riot.
   - type: h3
     text: Tier 4
   - type: h4
@@ -612,6 +675,24 @@ chapters:
     style: body
     text: |-
       Once per round, when an ally within short range of your character suffers a hit, your character may suffer 2 strain to let that ally increase their melee and ranged defense by 1 until the end of the round, barking orders to hold the line.
+  - type: h4
+    text: Consular Gravitas
+  - type: p
+    style: body
+    text: '**Tier:** 4   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Your character's Dignitas counts as 1 higher for the purpose of its armoring and authority effects, and when they speak first in a formal body, their side adds [[boost boost]] rather than [[boost]].
+  - type: h4
+    text: Devastating Peroration
+  - type: p
+    style: body
+    text: '**Tier:** 4   **Activation:** Active (Action)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Once per encounter, when making a Pathos appeal, your character may suffer 3 strain to treat the check as having rolled one additional [[triumph]] for the purpose of landing a Critical Remark.
   - type: h3
     text: Tier 5
   - type: h4
@@ -632,6 +713,15 @@ chapters:
     style: body
     text: |-
       Allies within short range of your character add [[boost]] to all Discipline, Cool, and fear checks. Once per encounter, your character may spend a Story Point to let every ally within short range immediately recover strain equal to your character's Presence.
+  - type: h4
+    text: Pater Patriae
+  - type: p
+    style: body
+    text: '**Tier:** 5   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Allies within earshot of your character add [[boost]] to all social checks, and treat crowds as one step more sympathetic. Once per session, your character may spend a Story Point to cause a hostile crowd or committee to grant them a single hearing, no matter the circumstances — the authority of a living institution.
 - title: 'Chapter 2: Gear and Vehicles'
   blocks:
   - type: p
@@ -912,6 +1002,22 @@ chapters:
       **Caltrops (murex):** scatter to slow pursuers; difficult terrain and a Coordination check or 3 strain to cross.
     - |-
       **Poison:** a Roman specialty; from a bad-oyster purge to a senatorial favorite — GM sets the Resilience difficulty and effect.
+  - type: h3
+    text: Social Gear & Traits
+  - type: list
+    items:
+    - |-
+      **Toga Candida:** the whitened toga of the election candidate (*candidatus*); adds [[boost]] to canvassing checks and marks you, for better or worse, as a man seeking power.
+    - |-
+      **Litterae Commendaticiae** (letter of recommendation): a named patron's written favor; spend it as a Favor, or add [[boost boost]] to a single first-meeting social check with its addressee.
+    - |-
+      **Nomenclator:** an educated slave who whispers the names and histories of those you meet; grants the benefit of the *Nomenclator's Whisper* talent once per scene even to an owner who lacks the talent.
+    - |-
+      **A Claque:** a hired body of applauders (treat as a minion group); while present, your character may spend their reactions to bank [[boost]] for the crowd-mood of a speech.
+    - |-
+      **A Dossier of Dirt:** evidence of a target's guilty secret; reveals one Flaw automatically and, if made public, costs the target 1 Dignitas — the *delator's* stock-in-trade.
+    - |-
+      **A Well-Placed Bribe:** coin as an argument; adds [[boost]] to a Negotiation or Coercion check per 1,000 HS offered (max [[boost boost boost]]), but a [[despair]] means it is remembered, and talked about.
   - type: h3
     text: Beasts & Vehicles
   - type: p
@@ -1650,6 +1756,131 @@ chapters:
     - label: Equipment
       text: Tusks & bulk (Brawl; Dam 10; Crit 3; Knockdown, Vicious 2), tower with 2–3 archers.
     type: statblock
+  - type: h3
+    text: Adversaries of the Forum
+  - type: p
+    style: lead
+    text: |-
+      Opponents meant to be beaten with words, not blades. Each carries Motivations ready to exploit — or to be exploited by.
+  - name: Delator (Informer)
+    kind: Nemesis
+    desc: |-
+      The professional accuser: a man who makes his fortune denouncing the rich to the Emperor and pocketing a share of their confiscated estates. Smiling, well-dressed, and feared in every dining room.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '4'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '3'
+      W.T.: '13'
+      S.T.: '17'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: "Desire: wealth. Fear: a powerful enemy's malice. Strength: cunning. Flaw: avarice."
+    - label: Skills
+      text: |-
+        Charm 2, Coercion 3, Deception 4, Knowledge (Law) 3, Knowledge (Rome) 2, Streetwise 2, Vigilance 2
+    - label: Talents
+      text: Adversary 1; Cross-Examine; Nobody's Fool 1.
+    - label: Abilities
+      text: |-
+        Dossier of Dirt: begins any social scene knowing one Flaw of each PC. Denunciation: may spend a [[triumph]] or a Story Point to open a treason case against a target — a legal threat resolved in a later encounter.
+    - label: Standing
+      text: Dignitas 2 — and climbing on other men's ruin.
+    type: statblock
+  - name: Popularis Tribune (Demagogue)
+    kind: Nemesis
+    desc: |-
+      A tribune of the plebs who has learned that the mob is a weapon. He champions the poor, the grain dole, and land reform — sincerely, cynically, or both — and can veto the Senate and summon a riot in an afternoon.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '4'
+      Pr: '4'
+    derived:
+      Soak: '3'
+      W.T.: '14'
+      S.T.: '18'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: "Desire: power / the people's love. Fear: obscurity. Strength: eloquence. Flaw: vanity."
+    - label: Skills
+      text: |-
+        Charm 3, Coercion 3, Deception 2, Knowledge (Rome) 2, Leadership 3, Negotiation 2, Streetwise 2
+    - label: Talents
+      text: Adversary 1; Demagogue; Scathing Tirade.
+    - label: Abilities
+      text: |-
+        Intercessio: once per Senate encounter, veto a motion outright (see The Senate). Voice of the Mob: may rally a Forum crowd to a single collective action.
+    - label: Standing
+      text: Dignitas 3 (sacrosanct — his person is legally inviolable).
+    type: statblock
+  - name: Matrona (The Grande Dame)
+    kind: Nemesis
+    desc: |-
+      A great lady of a senatorial house — a Livia, a Servilia — who wields through sons, lovers, and letters a power no office could give a woman. Underestimate her and be destroyed.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '4'
+      Will: '4'
+      Pr: '4'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '19'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: family's ascent. Fear: her line's disgrace. Strength: patience / the long game. Flaw: pride.
+    - label: Skills
+      text: Charm 3, Coercion 2, Deception 3, Knowledge (Rome) 3, Negotiation 3, Vigilance 2
+    - label: Talents
+      text: Adversary 2; Patronus; Nobody's Fool 2.
+    - label: Abilities
+      text: |-
+        Web of Letters: may call in a Favor from almost any great house once per session. Poisoner's Reputation: adds [[boost]] to Coercion through sheer dread of what she might do.
+    - label: Standing
+      text: Dignitas 4 (through her house and her dead).
+    type: statblock
+  - name: Stoic Philosopher (Advisor)
+    kind: Rival
+    desc: |-
+      The learned Greek or Roman who sits at a great man's elbow — a Seneca — and whose counsel can steady an empire or, misjudged, flatter a tyrant into ruin. An ally as often as an obstacle.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '4'
+      Cun: '3'
+      Will: '4'
+      Pr: '3'
+    derived:
+      Soak: '3'
+      W.T.: '13'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: knowledge / virtue. Fear: impiety to reason. Strength: discipline. Flaw: a guilty compromise with power.
+    - label: Skills
+      text: Charm 2, Cool 3, Discipline 3, Knowledge (the Gods) 2, Knowledge (Rome) 3, Negotiation 2
+    - label: Talents
+      text: Adversary 1; Stoic Discipline 2; Master Orator.
+    - label: Abilities
+      text: |-
+        Counsel: as an action, grant an ally within earshot [[boost]] [[boost]] on their next social or Discipline check and remove a point of strain.
+    - label: Standing
+      text: Dignitas 2 (the authority of wisdom, not of office).
+    type: statblock
 - title: The Theater of Power
   blocks:
   - type: p
@@ -1905,211 +2136,6 @@ chapters:
     style: body
     text: |-
       The same frame runs the **convivium** (dinner party), where seating is position — the place of honor (*locus consularis*) grants its occupant [[boost]] to social checks — and the intimacy lets guests learn one another's Motivations a step cheaper; and the **election**, a canvass that targets the voting tribes as blocs, won with promises, games, the *sportula*, and (illegally) outright bribery — *ambitus*, a [[triumph]]-worthy gamble that courts a ruinous prosecution if a [[despair]] turns up.
-- title: Social Tools & Adversaries
-  blocks:
-  - type: h3
-    text: New Social Talents
-  - type: h4
-    text: Morning Clients  (Tier 1 · Passive)
-  - type: p
-    style: body
-    text: |-
-      Your character begins each session with a number of banked Favors equal to their Dignitas (minimum 1), from petty clients met at the *salutatio*. These expire at session's end if unused.
-  - type: h4
-    text: Nomenclator's Whisper  (Tier 1 · Active, Incidental)
-  - type: p
-    style: body
-    text: |-
-      Once per social encounter, your character (or their accompanying *nomenclator* slave) recalls a stranger's name, family, and weakness: make an Average Knowledge (Rome) check; on success, immediately learn one Strength or Flaw of a present character without spending [[advantage]].
-  - type: h4
-    text: Captatio Benevolentiae  (Tier 2 · Active, Maneuver)
-  - type: p
-    style: body
-    text: |-
-      When your character opens a speech or social encounter, they may make this disarming overture: add [[boost boost]] to their first social check, and remove [[setback]] from it equal to their ranks in Charm.
-  - type: h4
-    text: Cross-Examine  (Tier 2 · Active, Action)
-  - type: p
-    style: body
-    text: |-
-      Make an opposed Coercion or Deception check against a target. On success, you learn whether a statement they made is a lie, and inflict strain as normal; with [[advantage advantage]], flip one of the target's banked [[boost]] (a witness, an alibi) into a [[setback]].
-  - type: h4
-    text: Filibuster  (Tier 2 · Active, Action · Ranked)
-  - type: p
-    style: body
-    text: |-
-      Your character may speak to run out the clock. Once per encounter per rank, make a Resilience check; each success adds a “round” to the time a formal body must wait before it can vote or act.
-  - type: h4
-    text: Patronus  (Tier 3 · Passive)
-  - type: p
-    style: body
-    text: |-
-      Charm, Leadership, and Knowledge (Rome) are career skills for your character. Once per session they may spend a Story Point to produce an appropriate client — a witness, a thug, a craftsman, a minor official — who owes them a Favor and arrives when needed.
-  - type: h4
-    text: Demagogue  (Tier 3 · Active, Action)
-  - type: p
-    style: body
-    text: |-
-      When addressing a crowd of 16 or more, your character may make a single Coercion or Charm check against the whole audience at once (using the group-size difficulty). On success the crowd takes one collective action your character names — cheer, disperse, march, or riot.
-  - type: h4
-    text: Consular Gravitas  (Tier 4 · Passive)
-  - type: p
-    style: body
-    text: |-
-      Your character's Dignitas counts as 1 higher for the purpose of its armoring and authority effects, and when they speak first in a formal body, their side adds [[boost boost]] rather than [[boost]].
-  - type: h4
-    text: Devastating Peroration  (Tier 4 · Active, Action)
-  - type: p
-    style: body
-    text: |-
-      Once per encounter, when making a Pathos appeal, your character may suffer 3 strain to treat the check as having rolled one additional [[triumph]] for the purpose of landing a Critical Remark.
-  - type: h4
-    text: Pater Patriae  (Tier 5 · Passive)
-  - type: p
-    style: body
-    text: |-
-      Allies within earshot of your character add [[boost]] to all social checks, and treat crowds as one step more sympathetic. Once per session, your character may spend a Story Point to cause a hostile crowd or committee to grant them a single hearing, no matter the circumstances — the authority of a living institution.
-  - type: h3
-    text: Social Gear & Traits
-  - type: list
-    items:
-    - |-
-      **Toga Candida:** the whitened toga of the election candidate (*candidatus*); adds [[boost]] to canvassing checks and marks you, for better or worse, as a man seeking power.
-    - |-
-      **Litterae Commendaticiae** (letter of recommendation): a named patron's written favor; spend it as a Favor, or add [[boost boost]] to a single first-meeting social check with its addressee.
-    - |-
-      **Nomenclator:** an educated slave who whispers the names and histories of those you meet; grants the benefit of the *Nomenclator's Whisper* talent once per scene even to an owner who lacks the talent.
-    - |-
-      **A Claque:** a hired body of applauders (treat as a minion group); while present, your character may spend their reactions to bank [[boost]] for the crowd-mood of a speech.
-    - |-
-      **A Dossier of Dirt:** evidence of a target's guilty secret; reveals one Flaw automatically and, if made public, costs the target 1 Dignitas — the *delator's* stock-in-trade.
-    - |-
-      **A Well-Placed Bribe:** coin as an argument; adds [[boost]] to a Negotiation or Coercion check per 1,000 HS offered (max [[boost boost boost]]), but a [[despair]] means it is remembered, and talked about.
-  - type: h3
-    text: Adversaries of the Forum
-  - type: p
-    style: lead
-    text: |-
-      Opponents meant to be beaten with words, not blades. Each carries Motivations ready to exploit — or to be exploited by.
-  - name: Delator (Informer)
-    kind: Nemesis
-    desc: |-
-      The professional accuser: a man who makes his fortune denouncing the rich to the Emperor and pocketing a share of their confiscated estates. Smiling, well-dressed, and feared in every dining room.
-    chars:
-      Br: '2'
-      Ag: '2'
-      Int: '3'
-      Cun: '4'
-      Will: '3'
-      Pr: '3'
-    derived:
-      Soak: '3'
-      W.T.: '13'
-      S.T.: '17'
-      Def (M/R): 0/1
-    fields:
-    - label: Motivations
-      text: "Desire: wealth. Fear: a powerful enemy's malice. Strength: cunning. Flaw: avarice."
-    - label: Skills
-      text: |-
-        Charm 2, Coercion 3, Deception 4, Knowledge (Law) 3, Knowledge (Rome) 2, Streetwise 2, Vigilance 2
-    - label: Talents
-      text: Adversary 1; Cross-Examine; Nobody's Fool 1.
-    - label: Abilities
-      text: |-
-        Dossier of Dirt: begins any social scene knowing one Flaw of each PC. Denunciation: may spend a [[triumph]] or a Story Point to open a treason case against a target — a legal threat resolved in a later encounter.
-    - label: Standing
-      text: Dignitas 2 — and climbing on other men's ruin.
-    type: statblock
-  - name: Popularis Tribune (Demagogue)
-    kind: Nemesis
-    desc: |-
-      A tribune of the plebs who has learned that the mob is a weapon. He champions the poor, the grain dole, and land reform — sincerely, cynically, or both — and can veto the Senate and summon a riot in an afternoon.
-    chars:
-      Br: '2'
-      Ag: '2'
-      Int: '3'
-      Cun: '3'
-      Will: '4'
-      Pr: '4'
-    derived:
-      Soak: '3'
-      W.T.: '14'
-      S.T.: '18'
-      Def (M/R): 0/1
-    fields:
-    - label: Motivations
-      text: "Desire: power / the people's love. Fear: obscurity. Strength: eloquence. Flaw: vanity."
-    - label: Skills
-      text: |-
-        Charm 3, Coercion 3, Deception 2, Knowledge (Rome) 2, Leadership 3, Negotiation 2, Streetwise 2
-    - label: Talents
-      text: Adversary 1; Demagogue; Scathing Tirade.
-    - label: Abilities
-      text: |-
-        Intercessio: once per Senate encounter, veto a motion outright (see The Senate). Voice of the Mob: may rally a Forum crowd to a single collective action.
-    - label: Standing
-      text: Dignitas 3 (sacrosanct — his person is legally inviolable).
-    type: statblock
-  - name: Matrona (The Grande Dame)
-    kind: Nemesis
-    desc: |-
-      A great lady of a senatorial house — a Livia, a Servilia — who wields through sons, lovers, and letters a power no office could give a woman. Underestimate her and be destroyed.
-    chars:
-      Br: '2'
-      Ag: '2'
-      Int: '3'
-      Cun: '4'
-      Will: '4'
-      Pr: '4'
-    derived:
-      Soak: '2'
-      W.T.: '12'
-      S.T.: '19'
-      Def (M/R): 0/1
-    fields:
-    - label: Motivations
-      text: |-
-        Desire: family's ascent. Fear: her line's disgrace. Strength: patience / the long game. Flaw: pride.
-    - label: Skills
-      text: Charm 3, Coercion 2, Deception 3, Knowledge (Rome) 3, Negotiation 3, Vigilance 2
-    - label: Talents
-      text: Adversary 2; Patronus; Nobody's Fool 2.
-    - label: Abilities
-      text: |-
-        Web of Letters: may call in a Favor from almost any great house once per session. Poisoner's Reputation: adds [[boost]] to Coercion through sheer dread of what she might do.
-    - label: Standing
-      text: Dignitas 4 (through her house and her dead).
-    type: statblock
-  - name: Stoic Philosopher (Advisor)
-    kind: Rival
-    desc: |-
-      The learned Greek or Roman who sits at a great man's elbow — a Seneca — and whose counsel can steady an empire or, misjudged, flatter a tyrant into ruin. An ally as often as an obstacle.
-    chars:
-      Br: '2'
-      Ag: '2'
-      Int: '4'
-      Cun: '3'
-      Will: '4'
-      Pr: '3'
-    derived:
-      Soak: '3'
-      W.T.: '13'
-      Def (M/R): 0/1
-    fields:
-    - label: Motivations
-      text: |-
-        Desire: knowledge / virtue. Fear: impiety to reason. Strength: discipline. Flaw: a guilty compromise with power.
-    - label: Skills
-      text: Charm 2, Cool 3, Discipline 3, Knowledge (the Gods) 2, Knowledge (Rome) 3, Negotiation 2
-    - label: Talents
-      text: Adversary 1; Stoic Discipline 2; Master Orator.
-    - label: Abilities
-      text: |-
-        Counsel: as an action, grant an ally within earshot [[boost]] [[boost]] on their next social or Discipline check and remove a point of strain.
-    - label: Standing
-      text: Dignitas 2 (the authority of wisdom, not of office).
-    type: statblock
 - title: Starter Scenarios
   blocks:
   - type: p

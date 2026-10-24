@@ -187,7 +187,7 @@ def to_speech():
       "This is an audiobook edition; tables and stat blocks are read as spoken lists, so keep "
       "the PDF nearby for reference during play. We begin.")
     cs=[chapter_speech(c) for c in chs]  # index 0..11
-    groups={1:[0,1],2:[2],3:[3,4],4:[5],5:[6],6:[7],7:[8],8:[9],9:[10,11]}
+    groups={1:[0,1],2:[2],3:[3,4],4:[5],5:[6],6:[7],7:[8],8:[9,10]}
     os.makedirs(f"{BASE}/audio",exist_ok=True)
     for part,idxs in groups.items():
         txt=" ".join(cs[i] for i in idxs)
