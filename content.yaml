@@ -163,7 +163,7 @@ chapters:
       text: One rank in Knowledge (Rome) or Charm (max 2 at creation).
     - label: The Weight of Ancestors
       text: |-
-        Once per session, when making a social check that leans on your name and lineage, add [[advantage]] [[advantage]]. Your blood opens doors that gold cannot.
+        Once per session, when making a social check that leans on your name and lineage, add [[advantage]] [[advantage]]. Your blood opens doors that gold cannot. An opponent who publicly exposes a *fabricated* ancestor (the funeral *laudationes* were notorious for invented triumphs and false consulships) turns this against you — the [[advantage]] [[advantage]] becomes lost Dignitas for the scene, a natural use for a Dossier of Dirt.
     type: statblock
   - name: Equestrian
     kind: The Knightly Class
@@ -1095,7 +1095,7 @@ chapters:
   - type: p
     style: body
     text: |-
-      **Toga Candida.** The artificially whitened toga of the *candidatus*; adds [[boost]] to canvassing and public social checks and marks you, for better or worse, as a man seeking office. — *Encumbrance 2 · 150 HS · Rarity 3.*
+      **Toga Candida.** The artificially whitened toga of the *candidatus*; adds [[boost]] to canvassing and public social checks and marks you, for better or worse, as a man seeking office. *(The whitened toga and tribal canvassing belong to Republican elections; under the emperors magistrates are chosen by the Senate and the emperor's* commendatio*, so in High-Empire play this marks a man lobbying the* princeps *and his* amici*.)* — *Encumbrance 2 · 150 HS · Rarity 3.*
   - type: p
     style: body
     text: |-
@@ -2001,7 +2001,7 @@ chapters:
   - name: Popularis Tribune (Demagogue)
     kind: Nemesis
     desc: |-
-      A tribune of the plebs who has learned that the mob is a weapon. He champions the poor, the grain dole, and land reform — sincerely, cynically, or both — and can veto the Senate and summon a riot in an afternoon.
+      A tribune of the plebs who has learned that the mob is a weapon. He champions the poor, the grain dole, and land reform — sincerely, cynically, or both — and can veto the Senate and summon a riot in an afternoon. *(His independent veto and sacrosanctity are Republican; under the High Empire the* princeps *holds* tribunicia potestas *and a tribune can no longer check him.)*
     chars:
       Br: '2'
       Ag: '2'
@@ -2086,7 +2086,66 @@ chapters:
         Counsel: as an action, grant an ally within earshot [[boost]] [[boost]] on their next social or Discipline check and remove a point of strain.
     - label: Standing
       text: Dignitas 2 (the authority of wisdom, not of office).
+    - label: Doctrine & the Good Death
+      text: |-
+        He holds that a providential cosmos governs all and that externals — wealth, pain, reputation, even bodily harm — are *things indifferent*. **Things Indifferent:** remove [[setback]] imposed by threats to his comfort or standing, and ignore strain from insult or mockery. **The Good Death:** cornered by a tyrant, he may choose a dignified suicide that denies the enemy the kill and preserves, even raises, his Dignitas — the Stoic's final freedom (Cato, Seneca).
     type: statblock
+  - type: statblock
+    name: Vestal Virgin
+    kind: Nemesis
+    desc: |-
+      One of the six priestesses of Vesta — legally free of father and husband alike, keeper of the sacred flame and of Rome's most important wills. Her person is sacrosanct: to lay hands on her is death.
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '4'
+      Pr: '4'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '20'
+      Def (M/R): 1/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: Rome's safety & the *pax deorum*. Fear: pollution of the sacred. Strength: unassailable standing. Flaw: the terror of the living-burial penalty for unchastity.
+    - label: Skills
+      text: |-
+        Charm 2, Cool 2, Discipline 3, Knowledge (the Gods) 3, Knowledge (Law) 2, Knowledge (Rome) 3, Vigilance 2.
+    - label: Talents
+      text: Adversary 2; Nobody's Fool 2; Patronus.
+    - label: Abilities
+      text: |-
+        **Sacrosanct:** any attempt to coerce, seize, or harm her suffers [[setback setback]] and courts ruin; violence against her is a capital sacrilege. **Keeper of Wills:** she safeguards the sealed wills and treasures of the great (Caesar's, later Antony's), and so knows secrets coin cannot reach — call it a Web-of-Letters Favor once per session. **Sacral Authority:** her reading of an omen or the *pax deorum* can feed a [[Fated]] party's Story Points or halt a public act as surely as an augur's, and her testimony is accepted without the oath required of others.
+  - type: statblock
+    name: Epicurean Philosopher (Advisor)
+    kind: Rival
+    desc: |-
+      A serene teacher who holds the cosmos to be blind atoms and void, the soul mortal, and the gods wholly indifferent — so neither death nor omen is to be feared. He counsels withdrawal from the mad race for office.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '4'
+      Cun: '3'
+      Will: '3'
+      Pr: '2'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: *ataraxia* (tranquillity). Fear: needless pain. Strength: fearlessness of gods and death. Flaw: detachment mistaken for indifference.
+    - label: Skills
+      text: Charm 2, Cool 3, Discipline 2, Knowledge (the Gods) 2, Knowledge (Rome) 3, Medicine 1.
+    - label: Talents
+      text: Adversary 1; Master Orator; Stoic Discipline 1.
+    - label: Abilities
+      text: |-
+        **Unmoved by Omens:** immune to fear effects drawn from portents, curses, or the wrath of the gods — a pointed foil in a [[Fated]] or [[Mythic]] Rome where the gods may be real. **Counsel of the Garden:** once per session he talks an ally off a rash course, granting [[boost boost]] to resist a provocation or removing a Fear-based [[setback]]. **Withdrawal:** he gains no Dignitas from office and scorns the Favor economy, which makes him incorruptible and infuriating.
 - title: The Theater of Power
   blocks:
   - type: p
@@ -2139,10 +2198,12 @@ chapters:
       **It lends weight to authority.** When your character makes an *Ethos* appeal (see Oratory) or any social check that leans on their standing, add [[boost]] if their Dignitas is 3+, or [[boost boost]] if it is 5.
     - |-
       **It funds Auctoritas.** At the start of any social set-piece, your character gains a pool of **Auctoritas** equal to their Dignitas (minimum 1). Each point may be spent as an incidental to add [[boost]] to a social check, to a crowd/vote track, or to a favor — the influence their name buys in the room. The pool refreshes each set-piece.
+    - |-
+      **Revelatory Appeal** (*Logos*) — claim privileged knowledge the audience cannot check (Cicero's ever-wakeful “I know their every plan”): add [[boost boost]] to the appeal, but a [[despair]] exposes the bluff and costs you Dignitas for the scene.
   - type: p
     style: body
     text: |-
-      **Gaining and losing it.** The GM raises a character's Dignitas by 1 for a landmark public success — winning a notorious trial, election to a great office, sponsoring magnificent games, a military triumph, saving a citizen's life (the *corona civica*). It falls by 1 for *infamia*: losing such a trial, public cowardice or bankruptcy, a ruinous scandal, or conviction for a crime. Dignitas is slow to earn and ruinous to lose — which is precisely why Romans killed for it.
+      **Gaining and losing it.** The GM raises a character's Dignitas by 1 for a landmark public success — winning a notorious trial, election to a great office, sponsoring magnificent games, a military triumph, saving a citizen's life (the *corona civica*). It falls by 1 for *infamia*: losing such a trial, public cowardice or bankruptcy, a ruinous scandal, or conviction for a crime. Dignitas is slow to earn and ruinous to lose — which is precisely why Romans killed for it. **Optional — the hunger of prestige.** Pedigree alone never sustained a Roman house; standing had to be renewed each generation (by the early Empire, idle heirs of the Fabii were mocked for coasting on ancestral glory). A high-Dignitas character who wins no landmark success across a long stretch of play slowly loses a point of Dignitas, unless renewed by office, magnificent games, or martial glory.
   - type: h3
     text: Roman Motivations
   - type: p
@@ -2228,7 +2289,7 @@ chapters:
   - type: p
     style: body
     text: |-
-      The trained speech was the Roman superweapon — years of Greek schooling turned into a performance that could carry a vote, acquit a murderer, or turn a crowd into a weapon. Run a major speech as a short structured social encounter (3–5 rounds) against an **audience**, treating the audience as a single target with a **strain threshold** set by its size and mood. Exceed the threshold and the audience is *won* (the motion carries, the verdict swings, the mob is yours); exceed half and you win a **partial** result (a hung outcome, a divided crowd).
+      Trained oratory was a Roman's sharpest tool — but only one of several. Ancestry, wealth, patronage, military glory, and sheer *dignitas* carried as many arguments as eloquence did: Marius won seven consulships with almost no gift for speech, and Pompey and Antony leaned on reputation and spectacle over rhetoric. So treat a great speech as a force-multiplier for a strong position, not a substitute for one — a character rich in standing and connections can rule the Forum on a middling check. The Republican model is the **contio**, the non-voting public meeting a magistrate called to work the People before a vote; only a magistrate could summon one, so a private citizen needed a friendly magistrate's invitation to speak — contio-access as a currency of alliance. Run a major speech as a short structured social encounter (3–5 rounds) against an **audience**, treated as a single target with a **strain threshold** set by its size and mood. Exceed the threshold and the audience is *won*; exceed half for a **partial** result. *(Under the emperors the contio and the voting assemblies lose their teeth; the imperial stages for this same mechanic are the crowd's acclamation at the games and the Circus, and a general's address to his troops.)*
   - type: table
     style: gear
     columns:
@@ -2293,11 +2354,11 @@ chapters:
     title: Procedural Trump Cards
     steps:
     - |-
-      **Relatio & sententiae.** The presiding consul sets the motion and calls senators to speak *in order of rank* — the *princeps senatus* first. High Dignitas literally speaks first, framing the debate (add [[boost]] to the opening side).
+      **Relatio & sententiae.** The presiding consul sets the motion and calls senators for their *sententiae* — the consuls-designate and senior *consulares* first, not by raw seniority. High standing literally speaks first and frames the debate (add [[boost]] to the opening side); under the Empire the consuls, and the emperor's wishes, set the order.
     - |-
-      **Intercessio — the Tribune's veto.** A Tribune of the Plebs may, once per session, veto the motion outright: a hard stop. The only answers are to win the tribune over in a side social encounter, out-wait him, or… arrange that he is not present.
+      **Intercessio — the Tribune's veto.** In the Republic a Tribune of the Plebs may, once per session, veto the motion outright: a hard stop, answered only by winning him over, out-waiting him, or arranging his absence. *(By the High Empire this is a dead letter — the* princeps *himself holds* tribunicia potestas *and sacrosanctity, and the real veto is simply his known wish, below.)*
     - |-
-      **Obnuntiatio — the omens.** A magistrate or augur who “observes the sky” and declares the auspices unfavorable (Knowledge (the Gods)) suspends all business for the day. A classic delaying tactic (and a plot hook, if the omens are faked).
+      **Obnuntiatio & the auspices — the omens.** Most Romans believed the auspices truly spoke Jupiter's will, so this is a weapon of faith, not mere theatre, and a man caught fabricating a sign faced ruin. Two moves: a magistrate who **“watches the sky”** (Knowledge (the Gods)) declares the day's omens foul and *suspends all business for the day* (Bibulus paralysed Caesar's consulship this way); an **augur's formal ruling** that an act was taken *vitio* (flawed) can void a law already passed or compel a magistrate's abdication — a harder check and a graver blow. Faking either is a desperate, capital gamble, and a fine plot hook.
     - |-
       **Filibuster.** Talk until nightfall ends the session with no vote (Cato's trick). Resolve as an endurance contest — repeated Discipline or Resilience checks against rising difficulty.
     - |-
@@ -2311,6 +2372,10 @@ chapters:
     style: body
     text: |-
       Run a Roman trial as a speech-contest with the **jury** (*iudices*) as the audience. Prosecutor and defender alternate appeals against the jury's strain threshold; exceed it to carry the verdict. Roman advocacy was gloriously dirty — the law mattered less than the performance.
+  - type: p
+    style: body
+    text: |-
+      **Which court?** Roman justice ran across several tribunals, each a different flavour of this set-piece: the standing criminal courts (*quaestiones perpetuae*, the model for most trials), trials before the people (*iudicia populi*), and religious courts — a priest or a Vestal accused of *incestum* answered to the pontifical college, not a lay jury. In a sacral trial, swap **Knowledge (Law)** for **Knowledge (the Gods)** as the *Logos* skill and make the college the audience.
   - type: list
     items:
     - |-
@@ -2327,6 +2392,10 @@ chapters:
     style: body
     text: |-
       Every morning, clients call on their patron (the *salutatio*) to pay respects and ask favors; the patron hands out the *sportula* (a dole of coin or food) and banks their loyalty. Mechanize this web with **Favors**: tradeable tokens representing a specific obligation owed.
+  - type: p
+    style: body
+    text: |-
+      **Two kinds of bond.** Favors run *down* **clientela** (patron over client) and *across* **amicitia** — reciprocal “friendship” between near-equals that was itself a political institution: letters of recommendation, invitations, a magistrate's leave to address a meeting. An *amicitia* Favor is called in between equals with no Dignitas-gap limit, but breaking one costs extra reputation, because it shames both parties.
   - type: procedure
     title: Using Favors
     steps:
@@ -2371,6 +2440,10 @@ chapters:
     style: body
     text: |-
       **What's going on:** Catiline is real, the plot is real, but he is untouchable — a senator with friends — until the PCs produce *physical, written* evidence. Combat here is a street ambush by hired muscle (*Street Tough* minions, 1 *Bandit/Latro* rival) meant to scare the PCs off.
+  - type: p
+    style: body
+    text: |-
+      **A clue you cannot buy.** A **Vestal Virgin** carries an omen no bribe can reach: at a December sacrifice the altar-flame suddenly flares, and she reads it as a warning — word goes to a sympathetic magistrate (or the PCs) to strike *now*. In a [[Fated]] Rome the portent feeds the party's Story Point pool. (Historically, Vestals including Fabia — once tried for *incestum* with Catiline himself, and acquitted — did exactly this in 63 BCE.)
   - type: p
     style: act
     text: Act II — The Trap at the Bridge
@@ -2435,7 +2508,7 @@ chapters:
     text: II. The Trial of the Governor
   - type: synopsis
     text: |-
-      70 BCE. **Gaius Verres** has returned from three years as governor of Sicily, having stripped the province of its art, its grain, and its justice — crucifying even a Roman citizen who dared appeal. The wronged Sicilians have hired the PCs (or an advocate they serve) to bring him to court. But Verres is rich, his jury is buyable, and his agents are already silencing witnesses. Two acts: build the case, then win the trial. A pure showcase for the **courtroom** rules and the social engine.
+      70 BCE. **Gaius Verres** has returned from three years as governor of Sicily, having stripped the province of its art, its grain, and its justice — crucifying even a Roman citizen who dared appeal. The wronged Sicilians have hired the PCs (or an advocate they serve) to bring him to court. But Verres is rich, his jury is buyable, and his agents are already silencing witnesses. Two acts: build the case, then win the trial. A pure showcase for the **courtroom** rules and the social engine. This is the archetypal *repetundae* (provincial-extortion) case before the *quaestio de repetundis*, brought — as such cases were — the year after his command ended. Cicero's real victory came not from a grand oration but from burying Verres under witnesses and documents before the delaying tricks could push the trial into next year's friendlier court; the jury's composition (senators vs *equites*) was itself a political prize.
   - type: p
     style: act
     text: Act I — Building the Case
@@ -2578,6 +2651,10 @@ chapters:
     style: body
     text: |-
       Nobody in Rome stands alone. Every character should know who their **patron** is (who protects and funds them, and expects loyalty, votes, and the morning *salutatio*) and who their **clients** are. Favors flow up and down this web constantly — the *Client Network* and *Client of a Great House* abilities model it, but the GM should make the web a living thing. A patron's enemy is your enemy; a patron's fall can drag you down with him.
+  - type: p
+    style: body
+    text: |-
+      **Adoption and the household.** A great family is a going concern — a name, its cults, and its capital — and adoption was the tool used to preserve it; the age this book defaults to is the era of the *adoptive emperors* (Nerva to Hadrian). An heirless senator who adopts a PC (or a rival's son) transfers Dignitas and obligations at a stroke, and a contested adoption or a disputed will is a whole campaign frame. Within the *domus*, the working household has its own offices — the *vilicus* (overseer) and *vilica* (housekeeper) run the estate and its cult under a quasi-moral code — ready-made authority, and ready-made friction, for Slave and Freedman characters.
   - type: sidebar
     title: The Thin Empire
     body:
@@ -2606,7 +2683,35 @@ chapters:
     - |-
       **The streets are lethal.** Rome had no street lighting and emptied its chamber-pots from windows; wheeled traffic was banned by day. Night in the Subura is its own adventure.
     - |-
-      **Everyone is religious.** An atheist is unthinkable; even the cynical sacrifice. Christians and Jews stand out precisely because they will *not*.
+      **Religion is everywhere — but belief varies.** The gods are woven into every public act, and *open* denial is socially radioactive; yet philosophically-grounded disbelief existed — educated Epicureans held the gods indifferent and the soul mortal (Lucretius) and still performed the civic rites. Christians and Jews stand out because they will *not*. The auspices are consulted before almost anything that matters.
+  - type: h3
+    text: Sources & Further Reading
+  - type: p
+    style: body
+    text: |-
+      This supplement stands on real scholarship. For GMs who want to dig deeper — or settle a table argument — these are good next steps, Imperial sources starred where the setting's own era is best served.
+  - type: list
+    items:
+    - |-
+      **Republic & its fall** — Mommsen, *The History of Rome*; Watts, *Mortal Republic*; Marin, *Blood in the Forum*; Beard, *SPQR* ★.
+    - |-
+      **Oratory, the contio & assemblies** — Morstein-Marx, *Mass Oratory and Political Power*; van der Blom, *Oratory and Political Career in the Late Roman Republic*; Botsford, *The Roman Assemblies*.
+    - |-
+      **Senate & magistracies** — Piña Polo, *The Consul at Rome*; Sandberg, *Magistrates and Assemblies*; Talbert, *The Senate of Imperial Rome* ★.
+    - |-
+      **Law & the courts** — Alexander, *Trials in the Late Roman Republic*; Robinson, *The Criminal Law of Ancient Rome* ★.
+    - |-
+      **Religion & augury** — Driediger-Murphy, *Roman Republican Augury*; Wildfang, *Rome's Vestal Virgins*; Beard, North & Price, *Religions of Rome* ★.
+    - |-
+      **Philosophy** — Seneca (Hadas, ed.), *Stoic Philosophy of Seneca*; Lucretius, *On the Nature of Things*.
+    - |-
+      **Household, slavery & family** — Draycott, *Roman Domestic Medical Practice*; Cato & Varro, *Roman Farm Management*; Bradley, *Slavery and Society at Rome* ★; McCall, *Clan Fabius*.
+    - |-
+      **Empire, patronage & informers** — Millar, *The Emperor in the Roman World* ★; Saller, *Personal Patronage under the Early Empire* ★; Rutledge, *Imperial Inquisitions* ★ (the *delatores*).
+    - |-
+      **Arena & games** — Fagan, *The Lure of the Arena* ★; Futrell, *Blood in the Arena* ★.
+    - |-
+      **Comparative empire** — Scheidel (ed.), *Rome and China* ★.
 - title: Common Terms
   blocks:
   - type: p
