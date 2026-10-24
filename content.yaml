@@ -3486,3 +3486,115 @@ chapters:
   - type: p
     style: body
     text: — *Roma invicta.* —
+- title: 'Appendix: Sources & Resources'
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      This setting is built on real scholarship and the words of the Romans themselves. Everything here was drawn from the texts below — the same shelf a GM can raid to go deeper, settle an argument, or steal a plot. The digital tools at the end turn that reading into maps, journeys, and props at the table.
+  - type: h3
+    text: Primary Sources (the Ancient Voices)
+  - type: list
+    items:
+    - |-
+      **Cato & Varro** — *Roman Farm Management*.
+    - |-
+      **Cicero** — *De Amicitia, Scipio's Dream*.
+    - |-
+      **Lucretius** — *On the Nature of Things*.
+    - |-
+      **Seneca** — *Stoic Philosophy of Seneca*.
+    - |-
+      **Virgil** — *The Aeneid*.
+  - type: h3
+    text: Modern Scholarship
+  - type: list
+    items:
+    - |-
+      **Alexander, Michael C.** — *Trials in the Late Roman Republic, 149 BC to 50 BC (Phoenix Supplementary Volumes 26)*.
+    - |-
+      **Armstrong, Jeremy; Fronda, Michael P. (eds.)** — *Romans at War: Soldiers, Citizens, and Society in the Roman Republic*.
+    - |-
+      **Astin, A.E.** — *Cato the Censor*.
+    - |-
+      **Bang, Peter Fibiger** — *The Roman Bazaar: A Comparative Study of Trade and Markets in a Tributary Empire*.
+    - |-
+      **Botsford, George Willis** — *The Roman Assemblies from their Origin to the End of the Republic*.
+    - |-
+      **Campbell** — *The Ancient World (From the Dawn of History to the Conversion of Constantine)*.
+    - |-
+      **Casson, Lionel** — *Travel in the Ancient World*.
+    - |-
+      **DiLuzio, Meghan J.** — *A Place at the Altar: Priestesses in Republican Rome*.
+    - |-
+      **Draycott, Jane** — *Roman Domestic Medical Practice in Central Italy: From the Middle Republic to the Early Empire*.
+    - |-
+      **Driediger-Murphy, Lindsay G.** — *Roman Republican Augury: Freedom and Control*.
+    - |-
+      **Gargola, Daniel J.** — *The Shape of the Roman Order: The Republic and Its Space*.
+    - |-
+      **Golyzniak, Pawel** — *Engraved Gems and Propaganda in the Roman Republic and under Augustus*.
+    - |-
+      **Goodman, Penelope J.** — *The Roman City and its Periphery: From Rome to Gaul*.
+    - |-
+      **Greenidge, A.H.J.** — *A History of Rome During the Later Republic and Early Principate*.
+    - |-
+      **Gruen, Erich S.** — *Culture and National Identity in Republican Rome*.
+    - |-
+      **Hudson, Jared** — *The Rhetoric of Roman Transportation: Vehicles in Latin Literature*.
+    - |-
+      **Marin, Pamela** — *Blood in the Forum: The Struggle for the Roman Republic*.
+    - |-
+      **Marquardt, Joachim (transl. Victor Henry)** — *La Vie Privée des Romains (Manuel des Antiquités Romaines, vol. XIV)*.
+    - |-
+      **McCall, Jeremiah** — *Clan Fabius, Defenders of Rome: A History of the Republic's Most Illustrious Family*.
+    - |-
+      **Mommsen, Theodor** — *The History of Rome (Books 1-5)*.
+    - |-
+      **Morstein-Marx, Robert** — *Mass Oratory and Political Power in the Late Roman Republic*.
+    - |-
+      **Pearson, Elizabeth H.** — *Exploring the Mid-Republican Origins of Roman Military Administration: With Stylus and Spear*.
+    - |-
+      **Pennell, Robert Franklin** — *Ancient Rome: From the Earliest Times Down to 476 A.D.*.
+    - |-
+      **Pina Polo, Francisco** — *The Consul at Rome: The Civil Functions of the Consuls in the Roman Republic*.
+    - |-
+      **Roselaar, Saskia T.** — *Public Land in the Roman Republic: A Social and Economic History of Ager Publicus in Italy, 396-89 BC*.
+    - |-
+      **Rosenstein, Nathan** — *Rome and the Mediterranean 290 to 146 BC: The Imperial Republic*.
+    - |-
+      **Sage, Michael M.** — *The Republican Roman Army: A Sourcebook*.
+    - |-
+      **Sandberg, Kaj** — *Magistrates and Assemblies: A Study of Legislative Practice in Republican Rome (Acta Instituti Romani Finlandiae)*.
+    - |-
+      **Scarre, Chris** — *The Penguin Historical Atlas of Ancient Rome*.
+    - |-
+      **van der Blom, Henriette; Gray, Christa; Steel, Catherine (eds.)** — *Institutions and Ideology in Republican Rome: Speech, Audience and Decision*.
+    - |-
+      **van der Blom, Henriette** — *Oratory and Political Career in the Late Roman Republic*.
+    - |-
+      **Watts, Edward J.** — *Mortal Republic: How Rome Fell into Tyranny*.
+    - |-
+      **Wildfang, Robin Lorsch** — *Rome's Vestal Virgins*.
+  - type: h3
+    text: Digital Tools & Resources
+  - type: list
+    items:
+    - |-
+      **Itiner-e** (*itiner-e.org*) — A digital gazetteer of the roads of the Roman Empire — map a journey, province to province, along the roads your characters would actually walk.
+    - |-
+      **ORBIS** (*orbis.stanford.edu*) — Stanford's geospatial network model of the Roman world: the time and cost of travel between cities by road, river, and sea, season by season.
+    - |-
+      **Pleiades** (*pleiades.stoa.org*) — The community gazetteer of ancient places — the canonical reference for where a town, road, or river actually was.
+    - |-
+      **Digital Atlas of the Roman Empire (DARE)** (*dh.gu.se/dare*) — A zoomable map of the empire's cities, roads, and provinces, layered over modern geography.
+    - |-
+      **ToposText** (*topostext.org*) — Ancient texts geo-linked to every place they mention — read the sources and see the map at once.
+    - |-
+      **LacusCurtius** (*penelope.uchicago.edu/Thayer/E/Roman*) — A deep online library of Roman texts and topography, including Platner & Ashby's *Topographical Dictionary of Ancient Rome*.
+    - |-
+      **Perseus Digital Library** (*perseus.tufts.edu*) — Greek and Latin primary texts with translations and commentary — the originals behind the quotations in this book.
+    - |-
+      **Vici.org** (*vici.org*) — A crowd-sourced archaeological atlas of classical antiquity: find the fort, villa, or temple nearest any point.
+    - |-
+      **OCRE: Online Coins of the Roman Empire** (*numismatics.org/ocre*) — Every imperial coin type, searchable — ready-made portraits, propaganda, and props for the table.
