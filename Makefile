@@ -7,8 +7,8 @@ render:
 
 pdf: render
 	mkdir -p dist
-	weasyprint build/book.html "dist/The Eternal City.pdf"
-	@echo "PDF -> dist/The Eternal City.pdf"
+	weasyprint build/book.html "dist/Gens Togata.pdf"
+	@echo "PDF -> dist/Gens Togata.pdf"
 
 audio: render
 	@echo "Narration -> audio/part_*.txt and audio/transcript.txt"

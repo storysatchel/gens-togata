@@ -39,8 +39,8 @@ jobs:
         run: |
           mkdir -p dist
           VERSION="${GITHUB_REF_NAME:-dev}"
-          weasyprint build/book.html "dist/The-Eternal-City-${VERSION}.pdf"
-          cp audio/transcript.txt "dist/The-Eternal-City-${VERSION}-transcript.txt" || true
+          weasyprint build/book.html "dist/Gens-Togata-${VERSION}.pdf"
+          cp audio/transcript.txt "dist/Gens-Togata-${VERSION}-transcript.txt" || true
           ls -la dist
 
       - name: Publish GitHub Release (on tag)
@@ -56,5 +56,5 @@ jobs:
         if: "!startsWith(github.ref, 'refs/tags/')"
         uses: actions/upload-artifact@v4
         with:
-          name: the-eternal-city-pdf
+          name: gens-togata-pdf
           path: dist/*.pdf

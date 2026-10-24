@@ -1,4 +1,4 @@
-# The Eternal City
+# Gens Togata
 
 *An Imperial Rome setting for the Genesys Roleplaying Game.*
 
@@ -26,7 +26,7 @@ Inline emphasis in `content.yaml` uses light markdown the renderers translate:
 Requires [`uv`](https://docs.astral.sh/uv/) and WeasyPrint's system libraries (Pango, fonts).
 
 ```sh
-make pdf      # content.yaml -> build/book.html -> dist/The Eternal City.pdf
+make pdf      # content.yaml -> build/book.html -> dist/Gens Togata.pdf
 make audio    # content.yaml -> audio/part_*.txt + audio/transcript.txt (narration)
 make clean
 ```

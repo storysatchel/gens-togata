@@ -1,6 +1,6 @@
 meta:
-  title: The Eternal City
-  subtitle: Urbs Aeterna
+  title: Gens Togata
+  subtitle: ''
   tagline: Bread and circuses, the sword and the Senate.
   system: An Imperial Rome setting for the Genesys Roleplaying Game
   legal:
@@ -81,7 +81,7 @@ chapters:
   - type: list
     items:
     - |-
-      **“The glory of Rome.”** The marble is painted, the triumph is paid for in captives, and the Eternal City floods, burns, and starves like any other.
+      **“The glory of Rome.”** The marble is painted, the triumph is paid for in captives, and the “eternal city” floods, burns, and starves like any other.
     - |-
       **The all-powerful Emperor.** He rules only so long as the legions, the grain fleet, and the mob allow it — and the knives are always out.
   - type: h3
