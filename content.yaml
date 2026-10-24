@@ -2712,6 +2712,394 @@ chapters:
       **Arena & games** — Fagan, *The Lure of the Arena* ★; Futrell, *Blood in the Arena* ★.
     - |-
       **Comparative empire** — Scheidel (ed.), *Rome and China* ★.
+- title: A Gazetteer of the Roman World
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      Rome is two geographies at once: the city within the walls, carved into *regiones* and *vici*, and the empire beyond, carved into *provinciae*. This gazetteer gives you both at a glance — enough to place a scene, name a street, or send the party to the edge of the world.
+  - type: h3
+    text: 'The City: Regiones & Quarters'
+  - type: p
+    style: body
+    text: |-
+      Augustus divided the city into **fourteen *regiones*** (numbered regions), each cut into **_vici_** (neighborhood wards with their own local officials and crossroads shrines). Romans still navigate by the older landmarks, though — the seven hills, the Forum, and the river. Use *regio* as the in-world word for “district” and *vicus* for “neighborhood.”
+  - type: p
+    style: body
+    text: |-
+      **Forum Romanum (*the Forum*).** The paved heart of the city, in the valley below the Palatine and Capitoline. Temples, law-courts, shops, and senators jostle along the Via Sacra; at its head stand the *curia* (senate house), the *comitium*, and the *rostra* from which speakers work the crowd. *Every public drama happens here — elections, *contiones*, trials, the funerals of the great — and so does the bloodshed: more than one Roman generation has seen the Forum run red. Stage speeches, riots, and assassinations here.*
+  - type: p
+    style: body
+    text: |-
+      **The Palatine (*Palatium*).** The hill above the Forum, the most fashionable address in Rome — dense with senatorial *domus* rather than tenements, and hung with the myth of Romulus, whose reed hut was piously preserved here. *Under the emperors this is *the* imperial residence (the word *palace* is its name); in the default era it is the seat of the ruling house. A PC invited up the Palatine has arrived — or is walking into a trap.*
+  - type: p
+    style: body
+    text: |-
+      **The Capitoline (*Capitolium & the arx*).** The steep citadel-hill looming over the Forum, crowned by the great Temple of Jupiter Optimus Maximus and the Temple of Concord; its northern summit, the *arx*, holds the *auguraculum* where the augurs read the sky. *The religious summit of the state: consuls take office and triumphs end here with a sacrifice to Jupiter. It has also been a killing-ground. A natural site for an omen, a vow, or a last stand.*
+  - type: p
+    style: body
+    text: |-
+      **The Subura (*Subura*).** The crowded, low-lying warren between the Esquiline, Viminal, and Quirinal: teetering *insulae*, workshops, taverns, brothels, and markets, loud and filthy and perpetually about to catch fire. Even Caesar grew up here. *Rome's great slum and underworld — the place for a fence, a hired knife, a safe house, or a chase across the rooftops. Fire is always one spark away.*
+  - type: p
+    style: body
+    text: |-
+      **The Aventine (*Mons Aventinus*).** The hill south of the Forum, outside the old pomerium — Marin's sources call it flatly “the region of the plebs.” Home to the cults of Ceres and Diana and to the long memory of plebeian revolt; Gaius Gracchus made his last armed stand here. *The people's hill, the counterweight to the Palatine. Where a tribune raises the mob, where a secession begins, where the poor have numbers on their side.*
+  - type: p
+    style: body
+    text: |-
+      **The Esquiline, Quirinal, Viminal & Caelian (*the lesser hills*).** The remaining canonical hills: the Esquiline a place of contrasts (old paupers' graveyards on its edge, luxury *horti* within); the Quirinal a respectable temple-dotted ridge; the Viminal the quiet, small one; the Caelian a mixed quarter growing ever more aristocratic toward the Colosseum valley. *Good “filler” districts — residential, mixed, each with a different social flavour. Drop a patron's *domus*, a philosopher's rented rooms, or a quiet murder here.*
+  - type: p
+    style: body
+    text: |-
+      **The Campus Martius (*the Field of Mars*).** The broad Tiber-bend plain *outside* the pomerium, sacred to Mars: muster-ground and drill-field, the *ovile* where the centuriate assembly votes, and the temples (Apollo, Bellona) where the Senate meets generals who may not enter the city under arms. *The threshold between war and the city. Armies assemble here, triumphs form up here, and a general who wants his triumph waits here — barred, like his soldiers, from crossing the sacred line.*
+  - type: p
+    style: body
+    text: |-
+      **Transtiberim (*Trans Tiberim*).** The working quarter on the right bank, across the river: docks, warehouses, tanneries, and a mixed immigrant population — Jews, Syrians, and sailors — connected by the bridges and the island. Augustus's fourteenth region. *The “wrong side of the river”: the port economy, foreign cults, smuggling, and communities that keep their own customs. A place to land cargo quietly or vanish into a crowd.*
+  - type: p
+    style: body
+    text: |-
+      **The Markets: Boarium, Velabrum & Argiletum (*the trade quarters*).** The commercial connective tissue of the lower city: the Forum Boarium (cattle market and river port beside the ancient temples of Hercules and Portunus), the Velabrum (a corridor of food- and oil-sellers), and the Argiletum (the “book street” of booksellers and craftsmen running up toward the Subura). *Where goods and gossip change hands. Shops, warehouses, a bookseller who copies more than he should, and the river wharves where everything enters the city.*
+  - type: p
+    style: body
+    text: |-
+      **The Circus Maximus (*Circus Maximus*).** The vast chariot-racing arena in the valley between Palatine and Aventine, ringed by shops, food-stalls, and bars, seating a crowd that can be counted in the hundreds of thousands. *The one place the whole city gathers and the ruler must show his face. Run the races (see *The Arena & the Races*), and remember that a crowd this size is a political force — acclamation here is the Imperial *contio*.*
+  - type: sidebar
+    title: "The Pomerium: Rome's Sacred Line"
+    body:
+    - |-
+      The **pomerium** is not a wall but a line — the augurally-defined sacred boundary that separates the *urbs* (the holy city) from the *ager* (the land outside). It is the master rule of Roman space. Inside it, military *imperium* cannot be exercised: soldiers may not march under arms, weapons are set aside, a general lays down his command, and the dead may not be buried. Crossing it changes a magistrate's powers and his dress. This is why a triumph-seeking general and his army wait on the Campus Martius, why the Senate meets commanders in temples outside the line, and why an armed intrusion into the city is not a mere crime but a sacrilege — a fact worth a whole adventure.
+  - type: h3
+    text: The Provinces of the Empire
+  - type: p
+    style: body
+    text: |-
+      To a Roman of the Republic, a *provincia* was not a place but a **task** — a sphere of command the Senate handed a magistrate: an army, a named enemy, an enemy homeland. Only slowly did the word harden into *territory*. By the age of the emperors the empire is a collection of provinces, and they come in two kinds, plus one that is neither.
+  - type: list
+    items:
+    - |-
+      **Imperial provinces** — the frontier commands where the legions stand. They are the emperor's, run for him by a *legatus Augustus pro praetore* who serves at his pleasure. Power, danger, and armies live here.
+    - |-
+      **Senatorial provinces** — the pacified interior, allotted by the Senate to an ex-consul or ex-praetor as *proconsul* for a single year, usually with no legion. Wealth and prestige, little force.
+    - |-
+      **Aegyptus (Egypt)** — neither: the emperor's private domain, run by an equestrian prefect. No senator may even enter without his leave, for whoever holds Egypt's grain holds Rome by the throat.
+  - type: p
+    style: body
+    text: |-
+      **Italia** — *the core, not a province.* The citizen heartland — no tribute, no governor, source of soldiers and legitimacy. Inside it lies Rome, and inside Rome the pomerium. **Rome wants:** Soldiers, legitimacy, grain, and the senatorial class itself.
+  - type: p
+    style: body
+    text: |-
+      **Sicilia** — *senatorial.* Rome's first overseas conquest, a quiet grain-island of old Greek and Punic cities, long past its war-front days — but it remembers its slave revolts. **Rome wants:** Grain for the city, and the quiet corruption of the grain fleet.
+  - type: p
+    style: body
+    text: |-
+      **Sardinia et Corsica** — *imperial/senatorial.* Mountainous islands whose interior tribes — the *Barbaria* — were never truly subdued; a place of banditry, mines, and exiles. **Rome wants:** Grain, minerals, and a hold on the western sea.
+  - type: p
+    style: body
+    text: |-
+      **Hispania** — *imperial (Tarraconensis, Lusitania) & senatorial (Baetica).* Rome's hardest school of empire; two centuries of Celtiberian guerrilla war and legendary sieges. Now the greatest mines in the empire honeycomb its hills. **Rome wants:** Silver and gold above all, oil from Baetica, and hard northern soldiers.
+  - type: p
+    style: body
+    text: |-
+      **Gallia** — *senatorial (Narbonensis) & imperial (the Three Gauls).* Narbonensis is “Italy outside Italy”; beyond it Caesar's conquered Three Gauls face the Rhine, their druids driven under and their tribes gathered yearly at the great altar of Lugdunum. **Rome wants:** Manpower, grain and wine, and the roads to the Rhine and Britain.
+  - type: p
+    style: body
+    text: |-
+      **Africa** — *senatorial (with an imperial legion in Numidia).* The land of destroyed Carthage — ritually cursed, then refounded — now booming with oil-rich estates, with desert nomads raiding the frontier road. **Rome wants:** Grain and olive oil on a vast scale; the breadbasket beside Egypt.
+  - type: p
+    style: body
+    text: |-
+      **Asia** — *senatorial.* Rich western Anatolia, willed to Rome by the last king of Pergamon: a glittering string of proud Greek cities (Ephesus, Pergamon, Smyrna) that still remember the tax-farmers' extortions. **Rome wants:** Tax revenue, trade wealth, and the prestige of the richest proconsulship.
+  - type: p
+    style: body
+    text: |-
+      **Macedonia et Achaea** — *senatorial.* Greece: a land living on its glorious past — philosophy, the Games, and the great sanctuaries — with a still-restless northern frontier against Thracian raiders. **Rome wants:** Cultural prestige, tourists and students, and a northern buffer.
+  - type: p
+    style: body
+    text: |-
+      **Aegyptus** — *the emperor's domain.* Ancient, bureaucratic, and polyglot along the Nile, crowned by seething Alexandria and temples older than Rome. No senator enters without the emperor's word. **Rome wants:** Grain — a huge share of the city's dole — plus papyrus, glass, and the Red Sea trade.
+  - type: p
+    style: body
+    text: |-
+      **Syria** — *imperial (great command).* The eastern military command facing Parthia — several legions far from Rome, every ambitious general's dream and every emperor's fear — astride the caravan trade through Palmyra. **Rome wants:** A strong frontier army, the eastern luxury trade, and the revenues of ancient cities.
+  - type: p
+    style: body
+    text: |-
+      **Britannia** — *imperial.* The wild northwestern frontier at the edge of the world: a three-legion island of mist, druids, and the burnt memory of Boudica's revolt. Hadrian's Wall is coming. **Rome wants:** Prestige and conquest-glory, metals, hides, slaves — though many doubt it ever pays for its legions.
+  - type: p
+    style: body
+    text: |-
+      **The Rhine & Danube Frontier** — *imperial (Germania, the Danube provinces).* The empire's armed edge and densest concentration of legions since the lost eagles of Teutoburg: a continuous line of forts facing Germans and Sarmatians, with Trajan's gold-rich Dacia freshly won. **Rome wants:** Defense above all — this is where the army lives — plus Dacian gold and frontier recruits.
+  - type: p
+    style: body
+    text: |-
+      **Iudaea** — *imperial (equestrian governor, backed by Syria).* A small, turbulent province whose people will die rather than set the emperor's image in their Temple; the Great Revolt ended with that Temple in ashes. **Rome wants:** Order and the security of the east, taxes and balsam — and above all, quiet.
+  - type: p
+    style: small
+    text: |-
+      **At the table.** Provinces are where careers are made and lost: a governorship is a licence to grow rich (and a *repetundae* trial waiting to happen — see Scenario II), a frontier command is a springboard to the purple (and to civil war), and the edge of the map is where a campaign can leave the city behind entirely.
+- title: Dramatis Personae
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      The great names of the age — ready to walk into the Republican scenarios in this book, drop in as cameos, or serve as models for the patrons and rivals of your own cast. They are drawn from the research wiki's figures; several make the book's own point that eloquence is only one road to power (Pompey and Marius ruled with almost none).
+  - type: statblock
+    name: Marcus Tullius Cicero
+    kind: Nemesis
+    desc: |-
+      The Republic's greatest orator — a *novus homo* who climbed to the consulship on his voice alone, and never lets anyone forget it. Vain, brilliant, and politically brave in bursts.
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '4'
+      Cun: '3'
+      Will: '2'
+      Pr: '4'
+    derived:
+      Soak: '2'
+      W.T.: '13'
+      S.T.: '16'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: the Republic (and his own glory). Fear: obscurity and exile. Strength: unmatched eloquence. Flaw: vanity — flatter him and he talks.
+    - label: Skills
+      text: |-
+        Charm 3, Coercion 2, Deception 3, Knowledge (Law) 3, Knowledge (Rome) 3, Leadership 2, Negotiation 3, Vigilance 2.
+    - label: Talents
+      text: Adversary 2; Master Orator; Nobody's Fool; Captatio Benevolentiae.
+    - label: Abilities
+      text: |-
+        **The Superweapon of Eloquence:** once per encounter, when Cicero wins an oratorical appeal he may upgrade its effect twice; on a [[triumph]] he sways the entire audience at a stroke. **Appeal to Pity:** he wins trials with weeping families and bared scars — add [[boost boost]] to a Pathos appeal.
+    - label: At the Table
+      text: |-
+        The advocate for — or against — the PCs in any courtroom (Scenario II); the consul racing to expose Catiline (Scenario I). A dangerous ally whose pride is a handle.
+  - type: statblock
+    name: Marcus Porcius Cato (the Younger)
+    kind: Nemesis
+    desc: |-
+      The incorruptible Stoic, great-grandson of the Censor: rigid, fearless, and theatrically principled — yet capable of cold pragmatic alliance when the Republic needs it.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '2'
+      Will: '5'
+      Pr: '3'
+    derived:
+      Soak: '3'
+      W.T.: '15'
+      S.T.: '18'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: the *mos maiorum* restored. Fear: tyranny and corruption. Strength: integrity no coin can touch. Flaw: rigidity — he will break before he bends.
+    - label: Skills
+      text: |-
+        Coercion 2, Cool 3, Discipline 4, Knowledge (Law) 2, Knowledge (Rome) 3, Leadership 2, Vigilance 2.
+    - label: Talents
+      text: Adversary 2; Stoic Discipline 2; Filibuster; Consular Gravitas.
+    - label: Abilities
+      text: |-
+        **Unbuyable:** immune to bribery and to strain inflicted by insult, temptation, or flattery (*things indifferent*). **The Filibuster:** may talk out the Senate's clock to kill a motion without a vote. **The Good Death:** cornered, he will take his own life rather than submit — and the gesture only raises his Dignitas.
+    - label: At the Table
+      text: |-
+        The conscience of the Senate and the hardest bloc to move (The Theater of Power). Use him to make the players *earn* a vote, or as the Stoic adversary given a name.
+  - type: statblock
+    name: Gaius Julius Caesar
+    kind: Nemesis
+    desc: |-
+      The colossus: a patrician *popularis* of terrifying energy and charm whose oratory was merely the springboard for the fastest, boldest career Rome ever saw. The people adore him; the optimates are right to be afraid.
+    chars:
+      Br: '3'
+      Ag: '3'
+      Int: '4'
+      Cun: '4'
+      Will: '3'
+      Pr: '4'
+    derived:
+      Soak: '4'
+      W.T.: '18'
+      S.T.: '18'
+      Def (M/R): 1/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: Dignitas above all — to be first in everything. Fear: to be any man's second. Strength: speed, genius, and the common people's love. Flaw: ambition, and a clemency that spares his killers.
+    - label: Skills
+      text: |-
+        Melee 3, Ranged 2, Athletics 2, Charm 3, Coercion 3, Deception 3, Knowledge (Rome) 3, Knowledge (Warfare) 4, Leadership 4, Negotiation 3.
+    - label: Talents
+      text: Adversary 3; Master Orator; Commanding Presence; Patronus.
+    - label: Abilities
+      text: |-
+        **Celeritas:** Caesar takes two actions on his turn where another takes one, in war and in politics alike. **The People's Champion:** against any attempt to check or shame him publicly, the plebs rally — add [[success]] and [[boost]] to his social checks before a crowd. **The Legions Are His:** his veterans' loyalty is to him, not the state.
+    - label: At the Table
+      text: |-
+        The rising threat behind every late-Republican scene; a patron whose favour is intoxicating and ruinous. The event-horizon the whole setting bends toward.
+  - type: statblock
+    name: Gnaeus Pompeius Magnus
+    kind: Nemesis
+    desc: |-
+      “The Great” — Rome's conquering hero, who reached unheard-of commands on military glory and patronage, not words. A reactive, uneasy public speaker who lets his reputation do the talking.
+    chars:
+      Br: '3'
+      Ag: '3'
+      Int: '3'
+      Cun: '3'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '4'
+      W.T.: '20'
+      S.T.: '16'
+      Def (M/R): 1/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: to be first citizen, and loved for it. Fear: a rival greater than himself (and there is one). Strength: an unmatched military record and a vast clientela. Flaw: vanity and indecision when the crowd is cold.
+    - label: Skills
+      text: Melee 2, Ranged 2, Leadership 4, Knowledge (Warfare) 4, Coercion 2, Cool 2, Negotiation 2.
+    - label: Talents
+      text: Adversary 3; Field Commander; Patronus.
+    - label: Abilities
+      text: |-
+        **Reputation Precedes Him:** Pompey's Dignitas argues for him — add an automatic [[success]] to Leadership and first-impression checks. **But No Orator:** he is a reactive speaker; he suffers [[setback]] on improvised oratory before a hostile crowd, and must rely on spectacle, patronage, and his record instead.
+    - label: At the Table
+      text: |-
+        The model of the general-statesman — proof that in Rome standing, not eloquence, often wins the Forum. A patron, a rival, or the looming power behind a command.
+  - type: statblock
+    name: Lucius Cornelius Sulla
+    kind: Nemesis
+    desc: |-
+      The dictator who first marched a Roman army on Rome and proscribed his enemies by name — the precedent that haunts every civil war to come. Charming, cruel, and convinced of his own luck.
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '3'
+      Cun: '4'
+      Will: '4'
+      Pr: '3'
+    derived:
+      Soak: '4'
+      W.T.: '18'
+      S.T.: '18'
+      Def (M/R): 1/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: to restore the aristocracy's rule — by terror if need be. Fear: the mob and chaos. Strength: ruthlessness and uncanny fortune. Flaw: cruelty that outlives its usefulness.
+    - label: Skills
+      text: |-
+        Melee 3, Ranged 2, Coercion 4, Deception 3, Knowledge (Warfare) 3, Leadership 3, Knowledge (Rome) 2.
+    - label: Talents
+      text: Adversary 3; Commanding Presence; fearsome reputation.
+    - label: Abilities
+      text: |-
+        **Felix (the Fortunate):** once per session Sulla may reroll any one check, trusting his luck. **Proscription:** he can post a name to a public list and make murder legal — terror that adds [[setback setback]] to anyone who would oppose him openly.
+    - label: At the Table
+      text: |-
+        The dark precedent and a towering past (or present) menace for Republican play — the man who proved the army could take the city.
+  - type: statblock
+    name: Marcus Antonius (Mark Antony)
+    kind: Nemesis
+    desc: |-
+      The soldier's soldier and crisis careerist: blunt, brave, hard-drinking, a reactive orator who sways troops and mobs with spectacle and plain speech rather than polished rhetoric.
+    chars:
+      Br: '4'
+      Ag: '3'
+      Int: '2'
+      Cun: '3'
+      Will: '3'
+      Pr: '4'
+    derived:
+      Soak: '5'
+      W.T.: '20'
+      S.T.: '16'
+      Def (M/R): 1/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: glory, pleasure, and a great man's favour. Fear: being sidelined. Strength: soldiers love him. Flaw: his appetites — wine, women, and loyalty to the wrong patron.
+    - label: Skills
+      text: |-
+        Melee 3, Ranged 3, Brawl 2, Athletics 2, Charm 2, Coercion 3, Leadership 3, Knowledge (Warfare) 2.
+    - label: Talents
+      text: Adversary 2; Field Commander; a rousing, reactive speaker.
+    - label: Abilities
+      text: |-
+        **The Soldier's Friend:** add [[boost boost]] to rally troops or a crowd with blunt words and spectacle (the funeral oration that turned Rome). **Hard to Keep Down:** reduce Critical Injury results against him by 10 (minimum 1).
+    - label: At the Table
+      text: |-
+        Muscle with a name — a dangerous ally or enforcer, and the model of the general who leads by swagger rather than Senate-craft.
+  - type: statblock
+    name: Gaius Marius
+    kind: Nemesis
+    desc: |-
+      The new man from Arpinum who held the consulship an unheard-of seven times, reformed the army, and saved Rome from the northern tribes — a military genius and a political blunt instrument.
+    chars:
+      Br: '4'
+      Ag: '3'
+      Int: '2'
+      Cun: '3'
+      Will: '4'
+      Pr: '2'
+    derived:
+      Soak: '5'
+      W.T.: '22'
+      S.T.: '16'
+      Def (M/R): 1/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: recognition the nobles deny him. Fear: being despised as a jumped-up peasant. Strength: the legions are his creation and his own. Flaw: no gift for politics or speech — clumsy and resentful in the Forum.
+    - label: Skills
+      text: |-
+        Melee 3, Ranged 2, Athletics 2, Leadership 4, Knowledge (Warfare) 4, Discipline 3, Resilience 3.
+    - label: Talents
+      text: Adversary 3; Field Commander; Commanding Presence.
+    - label: Abilities
+      text: |-
+        **Third Founder of Rome:** in command of an army Marius is nearly unbeatable — add [[success]] to his Knowledge (Warfare) and Leadership checks in the field. **The New-Model Army:** his landless recruits are loyal to *him*, not the state — the seed of every civil war to follow. **No Orator:** [[setback setback]] to formal oratory.
+    - label: At the Table
+      text: |-
+        The template of the people's general whose soldiers outrank the Senate — and living proof that Rome can be ruled with a sword and almost no rhetoric at all.
+  - type: statblock
+    name: Imperator Caesar Augustus
+    kind: Nemesis
+    desc: |-
+      The first citizen — model for every emperor who follows. He rules absolutely while seeming to rule not at all, having rebuilt one-man power behind the restored forms of the Republic. Patient, cold, and almost impossible to out-wait.
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '4'
+      Cun: '5'
+      Will: '4'
+      Pr: '4'
+    derived:
+      Soak: '3'
+      W.T.: '16'
+      S.T.: '22'
+      Def (M/R): 1/2
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: a stable order — with himself at its centre. Fear: a return to the chaos of the civil wars. Strength: patience and concealment. Flaw: he must control everything, and trusts almost no one.
+    - label: Skills
+      text: |-
+        Charm 3, Coercion 3, Deception 4, Negotiation 4, Knowledge (Rome) 4, Knowledge (Law) 3, Leadership 3, Vigilance 3, Cool 3.
+    - label: Talents
+      text: Adversary 3; Nobody's Fool 2; Plausible Deniability; Consular Gravitas; Pater Patriae.
+    - label: Abilities
+      text: |-
+        **The Mask of the Republic:** Augustus's *known wish* is law — against any faction he opposes, every check suffers [[setback]] (the Emperor's trump card, made flesh). **The Long Game:** immune to being out-waited or pressured; he can defer any decision without losing face. **Auctoritas Without Equal:** no one in Rome may raise their Dignitas against his in a public contest.
+    - label: At the Table
+      text: |-
+        In the default Imperial era his heirs sit the throne — use Augustus as the template for *your* princeps: the distant, all-seeing power whose favour makes careers and whose suspicion ends them.
 - title: Common Terms
   blocks:
   - type: p
