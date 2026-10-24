@@ -163,7 +163,7 @@ chapters:
       text: One rank in Knowledge (Rome) or Charm (max 2 at creation).
     - label: The Weight of Ancestors
       text: |-
-        Once per session, when making a social check that leans on your name and lineage, add advantage advantage. Your blood opens doors that gold cannot.
+        Once per session, when making a social check that leans on your name and lineage, add [[advantage]] [[advantage]]. Your blood opens doors that gold cannot.
     type: statblock
   - name: Equestrian
     kind: The Knightly Class
@@ -268,7 +268,7 @@ chapters:
       text: One rank in Ranged (Heavy), Riding, or Survival (max 2 at creation).
     - label: Skills of the Frontier
       text: |-
-        Once per encounter, add advantage to a Ranged, Riding, Survival, or Perception check in the field. Should your character gain Roman citizenship in play (by service, grant, or purchase), raise their Dignitas by 1.
+        Once per encounter, add [[advantage]] to a Ranged, Riding, Survival, or Perception check in the field. Should your character gain Roman citizenship in play (by service, grant, or purchase), raise their Dignitas by 1.
     type: statblock
   - name: Slave
     kind: Servus — Property
@@ -294,7 +294,7 @@ chapters:
       text: One rank in Resilience, or in any single skill reflecting your duties (max 2 at creation).
     - label: Unbroken
       text: |-
-        Add boost to Discipline and Resilience checks while enslaved, bound, imprisoned, or outnumbered. If your character is manumitted in play, they become a
+        Add [[boost]] to Discipline and Resilience checks while enslaved, bound, imprisoned, or outnumbered. If your character is manumitted in play, they become a
     - label: Freedman
       text: (gaining its ability and Dignitas).
     type: statblock
@@ -322,7 +322,7 @@ chapters:
       text: One rank in Survival or Melee (max 2 at creation).
     - label: Untamed Fury
       text: |-
-        Add boost to melee combat checks on any round in which your character first engages a new target. Civilization has not dulled you.
+        Add [[boost]] to melee combat checks on any round in which your character first engages a new target. Civilization has not dulled you.
     type: statblock
   - type: h3
     text: Careers
@@ -1206,7 +1206,7 @@ chapters:
       text: Brawl 2, Cool 2, Discipline 3, Melee 3, Ranged (Light) 2, Vigilance 3
     - label: Talents
       text: |-
-        Adversary 1; Quick Strike (add boost to combat checks against targets that have not yet acted).
+        Adversary 1; Quick Strike (add [[boost]] to combat checks against targets that have not yet acted).
     - label: Equipment
       text: |-
         Gladius (Dam 6; Crit 2; Pierce 1), ornate scutum (+1 def), lorica (+2 soak), concealed pugio (Dam 4; Crit 3; Accurate 1).
@@ -1233,7 +1233,7 @@ chapters:
         Coercion 3, Cool 2, Deception 2, Discipline 3, Leadership 3, Melee 3, Ranged (Light) 2, Vigilance 3, Knowledge (Rome) 2, Knowledge (Warfare) 2
     - label: Talents
       text: |-
-        Adversary 2; Imperator (allies within short range add boost to Discipline/Cool/fear checks); Field Commander (Maneuver: Average Leadership lets 3 allies take an immediate maneuver).
+        Adversary 2; Imperator (allies within short range add [[boost]] to Discipline/Cool/fear checks); Field Commander (Maneuver: Average Leadership lets 3 allies take an immediate maneuver).
     - label: Abilities
       text: |-
         Command the Guard: once per encounter, summon a minion group of Praetorians (minions equal to the PCs) that arrives at the end of the round.
@@ -1262,7 +1262,7 @@ chapters:
         Charm 3, Coercion 2, Deception 3, Discipline 2, Knowledge (Law) 2, Knowledge (Rome) 3, Leadership 2, Negotiation 3
     - label: Talents
       text: |-
-        Adversary 2; Nobody's Fool 2 (remove up to 2 setback from checks to deceive/coerce him); Scathing Tirade (Improved) (Average Coercion: enemies in short range suffer strain and add setback to checks).
+        Adversary 2; Nobody's Fool 2 (remove up to 2 [[setback]] from checks to deceive/coerce him); Scathing Tirade (Improved) (Average Coercion: enemies in short range suffer strain and add [[setback]] to checks).
     - label: Abilities
       text: |-
         Clientela: a Senator travels with a minion group of 2–4 clients/bodyguards. Let’s Make a Deal: if he knows an opponent’s Desire, when he inflicts strain on them they suffer 3 additional strain.
@@ -1292,7 +1292,7 @@ chapters:
       text: Adversary 1.
     - label: Abilities
       text: |-
-        By the Magistrate’s Authority: add boost to Coercion checks made to compel citizens in the magistrate’s name.
+        By the Magistrate’s Authority: add [[boost]] to Coercion checks made to compel citizens in the magistrate’s name.
     - label: Equipment
       text: Fasces (Melee; Dam 5; Crit 3; Vicious 1), leather (+1 soak).
     type: statblock
@@ -1418,7 +1418,7 @@ chapters:
     - label: Talents
       text: Adversary 1.
     - label: Abilities
-      text: 'Ambush: add boost boost to the first check against a surprised target.'
+      text: 'Ambush: add [[boost]] [[boost]] to the first check against a surprised target.'
     - label: Equipment
       text: Sword or spear (Dam 5–6; Crit 2–4), sling or bow, leather (+1 soak), stolen goods.
     type: statblock
@@ -1466,7 +1466,7 @@ chapters:
     - label: Skills (group only)
       text: Brawl, Melee, Resilience, Survival
     - label: Abilities
-      text: 'Furious Charge: add boost to melee checks on a round the warrior engaged a new target.'
+      text: 'Furious Charge: add [[boost]] to melee checks on a round the warrior engaged a new target.'
     - label: Equipment
       text: Spear or long blade (Dam 5–6; Crit 3), oval shield (+1 def), furs (+1 soak).
     type: statblock
@@ -1492,7 +1492,7 @@ chapters:
       text: Adversary 1.
     - label: Abilities
       text: |-
-        Thunderous Charge: when attacking from a mounted charge with the kontos, add success and the Knockdown quality.
+        Thunderous Charge: when attacking from a mounted charge with the kontos, add [[success]] and the Knockdown quality.
     - label: Equipment
       text: |-
         Kontos (lance; Melee; Dam 6; Crit 3; Cumbersome 3, Pierce 2), composite bow, scale armor & barding (+2 soak, included), armored warhorse.
@@ -1518,7 +1518,7 @@ chapters:
       text: Brawl 2, Coercion 3, Cool 2, Leadership 3, Melee 4, Resilience 3, Survival 2
     - label: Talents
       text: |-
-        Adversary 2; Frenzy 2 (add success to melee checks, suffer setback to be hit); Inspiring Rhetoric (rally the war-band).
+        Adversary 2; Frenzy 2 (add [[success]] to melee checks, suffer [[setback]] to be hit); Inspiring Rhetoric (rally the war-band).
     - label: Abilities
       text: |-
         War Host: once per encounter, summon a minion group of barbarian warriors (minions equal to the PCs).
@@ -1551,7 +1551,7 @@ chapters:
         Adversary 1; Dark Insight (may use Knowledge (the Gods) in place of a social skill when invoking the divine).
     - label: Abilities
       text: |-
-        Curse (fear): as an action, target makes a Hard Discipline check or suffers 3 strain and adds setback to checks for the encounter. Omens: once per session, foresee an event and gain a Story Point.
+        Curse (fear): as an action, target makes a Hard Discipline check or suffers 3 strain and adds [[setback]] to checks for the encounter. Omens: once per session, foresee an event and gain a Story Point.
     - label: Equipment
       text: Ritual knife, herbs and relics, the dread of those who believe.
     type: statblock
@@ -1599,7 +1599,7 @@ chapters:
     - label: Skills
       text: Brawl 3, Resilience 3, Vigilance 1
     - label: Abilities
-      text: 'Fearsome 2. Swipe: on a hit, may spend advantage advantage to knock the target prone.'
+      text: 'Fearsome 2. Swipe: on a hit, may spend [[advantage]] [[advantage]] to knock the target prone.'
     - label: Equipment
       text: Claws / horns (Brawl; Dam 8; Crit 3; Knockdown).
     type: statblock
@@ -1823,7 +1823,7 @@ chapters:
       **Peroratio** (climax): a final *Pathos* appeal. If it generates a [[triumph]] or [[advantage advantage advantage advantage]], it lands as a **Critical Remark** (5 strain) — the moment the hall erupts.
   - type: example
     text: |-
-      Example — Marcus before the mob. The aedile Marcus (Dignitas 2) must calm a bread-riot (Forum mob: Formidable, threshold 22). **Round 1 — Exordium + Ethos:** he opens humbly (maneuver: [[boost]]) then invokes his record feeding them (Charm, +boost from exordium). He rolls 2 successes, 2 advantage → 3 strain, and spends the [[advantage advantage]] to learn the crowd's Fear: *hunger*. **Round 2 — Narratio + Logos:** a Knowledge (Rome) maneuver recalls the grain-fleet's arrival (upgrade), then Negotiation promising a distribution, now adding [[boost boost]] for playing to their Fear. The upgraded pool throws a [[triumph]] → a Critical Remark, 5 strain, “the ships are in the Tiber *tonight!*” Total 8+ strain, past half-threshold — the riot sags into a wary cheer. One more good round and they are his.
+      Example — Marcus before the mob. The aedile Marcus (Dignitas 2) must calm a bread-riot (Forum mob: Formidable, threshold 22). **Round 1 — Exordium + Ethos:** he opens humbly (maneuver: [[boost]]) then invokes his record feeding them (Charm, +[[boost]] from exordium). He rolls 2 [[success]], 2 [[advantage]] → 3 strain, and spends the [[advantage advantage]] to learn the crowd's Fear: *hunger*. **Round 2 — Narratio + Logos:** a Knowledge (Rome) maneuver recalls the grain-fleet's arrival (upgrade), then Negotiation promising a distribution, now adding [[boost boost]] for playing to their Fear. The upgraded pool throws a [[triumph]] → a Critical Remark, 5 strain, “the ships are in the Tiber *tonight!*” Total 8+ strain, past half-threshold — the riot sags into a wary cheer. One more good round and they are his.
   - type: h3
     text: 'The Senate: A Contest of Blocs'
   - type: p
@@ -1985,7 +1985,7 @@ chapters:
       text: Adversary 1; Cross-Examine; Nobody's Fool 1.
     - label: Abilities
       text: |-
-        Dossier of Dirt: begins any social scene knowing one Flaw of each PC. Denunciation: may spend a triumph or a Story Point to open a treason case against a target — a legal threat resolved in a later encounter.
+        Dossier of Dirt: begins any social scene knowing one Flaw of each PC. Denunciation: may spend a [[triumph]] or a Story Point to open a treason case against a target — a legal threat resolved in a later encounter.
     - label: Standing
       text: Dignitas 2 — and climbing on other men's ruin.
     type: statblock
@@ -2045,7 +2045,7 @@ chapters:
       text: Adversary 2; Patronus; Nobody's Fool 2.
     - label: Abilities
       text: |-
-        Web of Letters: may call in a Favor from almost any great house once per session. Poisoner's Reputation: adds boost to Coercion through sheer dread of what she might do.
+        Web of Letters: may call in a Favor from almost any great house once per session. Poisoner's Reputation: adds [[boost]] to Coercion through sheer dread of what she might do.
     - label: Standing
       text: Dignitas 4 (through her house and her dead).
     type: statblock
@@ -2074,7 +2074,7 @@ chapters:
       text: Adversary 1; Stoic Discipline 2; Master Orator.
     - label: Abilities
       text: |-
-        Counsel: as an action, grant an ally within earshot boost boost on their next social or Discipline check and remove a point of strain.
+        Counsel: as an action, grant an ally within earshot [[boost]] [[boost]] on their next social or Discipline check and remove a point of strain.
     - label: Standing
       text: Dignitas 2 (the authority of wisdom, not of office).
     type: statblock
@@ -2185,7 +2185,7 @@ chapters:
   - type: p
     style: body
     text: |-
-      **What's going on:** every secured witness and exhibit is banked advantage for Act II; every one lost or discredited becomes a [[setback]] the defense will wield. Verres's strategy is delay — drag the trial past the holidays and into next year's friendlier court.
+      **What's going on:** every secured witness and exhibit is banked [[advantage]] for Act II; every one lost or discredited becomes a [[setback]] the defense will wield. Verres's strategy is delay — drag the trial past the holidays and into next year's friendlier court.
   - type: p
     style: act
     text: Act II — The Court
@@ -2223,7 +2223,7 @@ chapters:
       text: Charm 2, Coercion 2, Deception 3, Negotiation 3, Knowledge (Law) 2, Knowledge (Rome) 2.
     - label: Abilities
       text: |-
-        Deep Purse — may spend a Story Point to pre-bribe one juror (+setback to a prosecution appeal) or to buy a thug.
+        Deep Purse — may spend a Story Point to pre-bribe one juror (+[[setback]] to a prosecution appeal) or to buy a thug.
     - label: Dignitas 3.
       text: |-
         Defended by a Stoic Philosopher-style advocate (use that stat block as the opposing orator).

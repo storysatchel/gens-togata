@@ -11,10 +11,25 @@ DOC=yaml.load(open(f"{BASE}/content.yaml"))
 CSS=open(f"{BASE}/styles.css").read()
 
 # ---------- inline markup ----------
+# Genesys glyph font mappings (themensch/FFG-Genesys-Glyphs-and-Dice).
+_GLY_SYM={"advantage":"a","success":"s","triumph":"t","threat":"h","failure":"f","despair":"d"}
+_GLY_DIE={"boost":("j","boost"),"setback":("j","setback"),"difficulty":("k","difficulty"),
+          "ability":("k","ability"),"proficiency":("l","proficiency"),"challenge":("l","challenge")}
+_DICE=set(_GLY_SYM)|set(_GLY_DIE)
+def _glyph(word):
+    w=word.lower()
+    if w in _GLY_SYM: return f'<span class="gly" aria-label="{w}">{_GLY_SYM[w]}</span>'
+    ch,color=_GLY_DIE[w]; return f'<span class="gly {color}" aria-label="{w}">{ch}</span>'
+def _token(m):
+    token=m.group(1); words=token.split()
+    if words and all(w.lower() in _DICE for w in words):
+        return "".join(_glyph(w) for w in words)
+    return f'<span class="tag">{token}</span>'
 def _esc(s): return s.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
 def md_html(s):
     s=_esc(s)
-    s=re.sub(r'\[\[(.+?)\]\]', r'<span class="tag">\1</span>', s)
+    s=re.sub(r'\[\[(.+?)\]\]', _token, s)
+    s=s.replace("\u25cf", '<span class="gly difficulty" aria-label="difficulty">k</span>')
     s=re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
     s=re.sub(r'\*(.+?)\*', r'<em>\1</em>', s)
     return s
