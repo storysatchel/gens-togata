@@ -886,10 +886,32 @@ chapters:
       Scutum: grants +1 melee and ranged defense; Cumbersome 3. May be used as a Brawl weapon (Dam +0, Crit 6, Knockdown).
   - type: h3
     text: Gear & Tools
-  - type: p
-    style: body
-    text: |-
-      **Surgeon's Kit (Greek medicine).** Scalpels, probes, forceps, herbs, and wine; counts as a medical kit for Medicine checks. The wise also carry it for the arena. — **Wax Tablet & Stylus** and **Papyrus, Ink & Reed Pen:** for accounts, letters, and incriminating evidence. — **Oil Lamp / Torch:** removes [[setback]] from darkness in short range. — **Manacles & Chain:** for slaves and prisoners. — **Grappling Hook & Rope:** a Coordination check to anchor; then climb and remove [[setback]] from Athletics. — **Marching Pack (sarcina):** the legionary's carried kit — entrenching tool, stakes, rations, cook-pot. — **Contubernium Tent & Camp Kit:** shelters eight; adds [[boost]] to Resilience/Survival checks against weather. — **Rations (frumentum):** grain, oil, sour wine; 5 days' worth is Encumbrance 1. — **Signet Ring:** seals documents; a forged one is a felony and a plot hook. — **Toga:** the citizen's formal dress; cumbersome, impressive, and worn only by citizens — adds [[boost]] to formal social checks but [[setback]] to physical ones. — **Caltrops (murex):** scatter to slow pursuers; difficult terrain and a Coordination check or 3 strain to cross. — **Poison:** a Roman specialty; from a bad-oyster purge to a senatorial favorite — GM sets the Resilience difficulty and effect.
+  - type: list
+    items:
+    - |-
+      **Surgeon's Kit (Greek medicine).** Scalpels, probes, forceps, herbs, and wine; counts as a medical kit for Medicine checks. The wise also carry it for the arena.
+    - |-
+      **Wax Tablet & Stylus** and **Papyrus, Ink & Reed Pen:** for accounts, letters, and incriminating evidence.
+    - |-
+      **Oil Lamp / Torch:** removes [[setback]] from darkness in short range.
+    - |-
+      **Manacles & Chain:** for slaves and prisoners.
+    - |-
+      **Grappling Hook & Rope:** a Coordination check to anchor; then climb and remove [[setback]] from Athletics.
+    - |-
+      **Marching Pack (sarcina):** the legionary's carried kit — entrenching tool, stakes, rations, cook-pot.
+    - |-
+      **Contubernium Tent & Camp Kit:** shelters eight; adds [[boost]] to Resilience/Survival checks against weather.
+    - |-
+      **Rations (frumentum):** grain, oil, sour wine; 5 days' worth is Encumbrance 1.
+    - |-
+      **Signet Ring:** seals documents; a forged one is a felony and a plot hook.
+    - |-
+      **Toga:** the citizen's formal dress; cumbersome, impressive, and worn only by citizens — adds [[boost]] to formal social checks but [[setback]] to physical ones.
+    - |-
+      **Caltrops (murex):** scatter to slow pursuers; difficult terrain and a Coordination check or 3 strain to cross.
+    - |-
+      **Poison:** a Roman specialty; from a bad-oyster purge to a senatorial favorite — GM sets the Resilience difficulty and effect.
   - type: h3
     text: Beasts & Vehicles
   - type: p
@@ -1949,10 +1971,20 @@ chapters:
       Allies within earshot of your character add [[boost]] to all social checks, and treat crowds as one step more sympathetic. Once per session, your character may spend a Story Point to cause a hostile crowd or committee to grant them a single hearing, no matter the circumstances — the authority of a living institution.
   - type: h3
     text: Social Gear & Traits
-  - type: p
-    style: body
-    text: |-
-      **Toga Candida:** the whitened toga of the election candidate (*candidatus*); adds [[boost]] to canvassing checks and marks you, for better or worse, as a man seeking power. — **Litterae Commendaticiae** (letter of recommendation): a named patron's written favor; spend it as a Favor, or add [[boost boost]] to a single first-meeting social check with its addressee. — **Nomenclator:** an educated slave who whispers the names and histories of those you meet; grants the benefit of the *Nomenclator's Whisper* talent once per scene even to an owner who lacks the talent. — **A Claque:** a hired body of applauders (treat as a minion group); while present, your character may spend their reactions to bank [[boost]] for the crowd-mood of a speech. — **A Dossier of Dirt:** evidence of a target's guilty secret; reveals one Flaw automatically and, if made public, costs the target 1 Dignitas — the *delator's* stock-in-trade. — **A Well-Placed Bribe:** coin as an argument; adds [[boost]] to a Negotiation or Coercion check per 1,000 HS offered (max [[boost boost boost]]), but a [[despair]] means it is remembered, and talked about.
+  - type: list
+    items:
+    - |-
+      **Toga Candida:** the whitened toga of the election candidate (*candidatus*); adds [[boost]] to canvassing checks and marks you, for better or worse, as a man seeking power.
+    - |-
+      **Litterae Commendaticiae** (letter of recommendation): a named patron's written favor; spend it as a Favor, or add [[boost boost]] to a single first-meeting social check with its addressee.
+    - |-
+      **Nomenclator:** an educated slave who whispers the names and histories of those you meet; grants the benefit of the *Nomenclator's Whisper* talent once per scene even to an owner who lacks the talent.
+    - |-
+      **A Claque:** a hired body of applauders (treat as a minion group); while present, your character may spend their reactions to bank [[boost]] for the crowd-mood of a speech.
+    - |-
+      **A Dossier of Dirt:** evidence of a target's guilty secret; reveals one Flaw automatically and, if made public, costs the target 1 Dignitas — the *delator's* stock-in-trade.
+    - |-
+      **A Well-Placed Bribe:** coin as an argument; adds [[boost]] to a Negotiation or Coercion check per 1,000 HS offered (max [[boost boost boost]]), but a [[despair]] means it is remembered, and talked about.
   - type: h3
     text: Adversaries of the Forum
   - type: p
