@@ -975,49 +975,255 @@ chapters:
     text: |-
       Scutum: grants +1 melee and ranged defense; Cumbersome 3. May be used as a Brawl weapon (Dam +0, Crit 6, Knockdown).
   - type: h3
+    text: Arms & Armor of Quality
+  - type: p
+    style: body
+    text: |-
+      A smith's art separates a legionary's issue blade from a senator's heirloom. Any weapon or piece of armour may be commissioned with one or more of the modifications below; add the listed cost to the base item, and use the higher of the two rarities.
+  - type: p
+    style: body
+    text: |-
+      **Superior (*opus nobile*).** Forged and finished by a master; the item is of *superior quality* and adds an automatic [[advantage]] to every check made with it. Cost: five times the base price, Rarity 7.
+  - type: p
+    style: body
+    text: |-
+      **Balanced (*libratum*).** A blade weighted true to the hand or a sling cut for distance; decreases the weapon's Critical rating by 1, to a minimum of 1. Cost: +500 HS, Rarity 5.
+  - type: p
+    style: body
+    text: |-
+      **Serrated (*dentatum*).** A barbed or saw-backed edge that worries a wound; adds the Vicious 1 quality, or increases an existing Vicious rating by 1. Cost: +300 HS, Rarity 5 (R).
+  - type: p
+    style: body
+    text: |-
+      **Gilded (*inauratum*).** Silvered, chased, and jewelled for display; adds [[boost]] to social checks made while bearing it openly, but [[setback]] to Stealth. Cost: +1,000 HS, Rarity 6.
+  - type: p
+    style: body
+    text: |-
+      **Poisoner's Groove (*toxicatum*).** A hollow channel holds a dose of venom; the first hit each encounter that deals damage forces the target to make a Resilience check against the applied Poison. Preparing it consumes one dose. Cost: +200 HS, Rarity 7 (R).
+  - type: h3
     text: Gear & Tools
-  - type: list
-    items:
-    - |-
-      **Surgeon's Kit (Greek medicine).** Scalpels, probes, forceps, herbs, and wine; counts as a medical kit for Medicine checks. The wise also carry it for the arena.
-    - |-
-      **Wax Tablet & Stylus** and **Papyrus, Ink & Reed Pen:** for accounts, letters, and incriminating evidence.
-    - |-
-      **Oil Lamp / Torch:** removes [[setback]] from darkness in short range.
-    - |-
-      **Manacles & Chain:** for slaves and prisoners.
-    - |-
-      **Grappling Hook & Rope:** a Coordination check to anchor; then climb and remove [[setback]] from Athletics.
-    - |-
-      **Marching Pack (sarcina):** the legionary's carried kit — entrenching tool, stakes, rations, cook-pot.
-    - |-
-      **Contubernium Tent & Camp Kit:** shelters eight; adds [[boost]] to Resilience/Survival checks against weather.
-    - |-
-      **Rations (frumentum):** grain, oil, sour wine; 5 days' worth is Encumbrance 1.
-    - |-
-      **Signet Ring:** seals documents; a forged one is a felony and a plot hook.
-    - |-
-      **Toga:** the citizen's formal dress; cumbersome, impressive, and worn only by citizens — adds [[boost]] to formal social checks but [[setback]] to physical ones.
-    - |-
-      **Caltrops (murex):** scatter to slow pursuers; difficult terrain and a Coordination check or 3 strain to cross.
-    - |-
-      **Poison:** a Roman specialty; from a bad-oyster purge to a senatorial favorite — GM sets the Resilience difficulty and effect.
+  - type: p
+    style: body
+    text: |-
+      Beyond arms and armour, an adventurer in Rome needs tools, documents, and the small gear of travel and intrigue. Each entry ends with its Encumbrance, price in sesterces (HS), and Rarity; an (R) marks goods that are restricted, stolen, or illegal to carry openly.
+  - type: h4
+    text: Tools & Documents
+  - type: p
+    style: body
+    text: |-
+      **Writing Kit (*tabulae ceratae & stylus*).** Wax tablets and a bone stylus for letters, accounts, and notes scratched out and smoothed again. A character carrying one adds [[boost]] to Knowledge checks to recall something they recorded, and may attempt Skulduggery to forge a casual note. — *Encumbrance 1 · 15 HS · Rarity 1.*
+  - type: p
+    style: body
+    text: |-
+      **Scribe's Papyrus & Ink (*papyrus, atramentum, calamus*).** Reed pen, lamp-black ink, and a roll of Egyptian papyrus for permanent letters, contracts, and wills. Forging a convincing document is a **Hard** ([[difficulty difficulty difficulty]]) Skulduggery check with these to hand, and impossible without. — *Encumbrance 0 · 25 HS · Rarity 2.*
+  - type: p
+    style: body
+    text: |-
+      **Signet Ring (*anulus signatorius*).** A carved gem or gold bezel that presses an owner's seal into wax. It adds [[boost]] to social checks that turn on proof of identity or authority; counterfeiting a seal is a **Daunting** ([[difficulty difficulty difficulty difficulty]]) Skulduggery check and a capital crime. — *Encumbrance 0 · 200 HS · Rarity 3.*
+  - type: p
+    style: body
+    text: |-
+      **Abacus & Counting-Board (*abacus*).** Beads in grooves for sums no Roman does in his head. Adds [[boost]] to Knowledge or Negotiation checks involving accounts, tallies, or large transactions. — *Encumbrance 1 · 40 HS · Rarity 2.*
+  - type: p
+    style: body
+    text: |-
+      **Oil Lamp (*lucerna*).** A terracotta lamp burning olive oil for an evening's light. It removes up to [[setback setback]] imposed by darkness within short range, but gutters in wind and shatters if dropped. — *Encumbrance 1 · 8 HS · Rarity 0.*
+  - type: p
+    style: body
+    text: |-
+      **Torch (*fax*).** Pitch-soaked, bright, and short-lived. It removes [[setback]] from darkness at short range, sets fires readily, and serves in a pinch as an improvised Brawl weapon that deals fire damage. — *Encumbrance 1 · 2 HS · Rarity 0.*
+  - type: h4
+    text: Travel & Survival
+  - type: p
+    style: body
+    text: |-
+      **Marching Pack (*sarcina*).** The legionary's burden slung from a furca pole: entrenching tool, stakes, mess-tin, cook-pot, and three days' hard rations. It serves as a survival kit, removing [[setback]] from Survival checks to make or break camp. — *Encumbrance 4 · 60 HS · Rarity 2.*
+  - type: p
+    style: body
+    text: |-
+      **Field Tent & Camp Kit (*papilio*).** Goat-hide shelter for a contubernium of eight. While camped within it, characters add [[boost]] to Resilience and Survival checks to resist weather and to recover strain overnight. — *Encumbrance 6 · 150 HS · Rarity 3.*
+  - type: p
+    style: body
+    text: |-
+      **Military Cloak (*sagum / paenula*).** Heavy wool that sheds rain and doubles as a bedroll; adds [[boost]] to Resilience checks against cold and exposure. — *Encumbrance 1 · 30 HS · Rarity 1.*
+  - type: p
+    style: body
+    text: |-
+      **Rations & Posca (*frumentum, posca*).** Grain, oil, salt, and sour wine-vinegar cut with water. Five days' worth is Encumbrance 1; the posca wards off foul water, removing [[setback]] from Resilience checks against tainted supplies. — *Encumbrance 1 · 5 HS · Rarity 0.*
+  - type: p
+    style: body
+    text: |-
+      **Grappling Hook & Rope (*harpago & funis*).** An iron hook and forty feet of hemp. Anchoring it is an **Average** ([[difficulty difficulty]]) Coordination check; once set, climbers remove [[setback]] from Athletics checks to scale the wall. — *Encumbrance 2 · 25 HS · Rarity 1.*
+  - type: p
+    style: body
+    text: |-
+      **Manacles & Chain (*catenae*).** Iron cuffs for slaves and prisoners. A bound captive escapes only on a **Hard** ([[difficulty difficulty difficulty]]) Skulduggery or Athletics check. — *Encumbrance 2 · 20 HS · Rarity 1.*
+  - type: h4
+    text: Medicine
+  - type: p
+    style: body
+    text: |-
+      **Surgeon's Kit (*capsa medica*).** The *medicus*'s case: scalpels, probes, forceps, clamps, sutures, wine, and herbs. It counts as a medical kit, so Medicine checks to treat wounds suffer no penalty, and it removes [[setback]] imposed by rough field conditions. — *Encumbrance 2 · 400 HS · Rarity 4.*
+  - type: p
+    style: body
+    text: |-
+      **Herbs & Theriac (*herbae, theriaca*).** Compounded salves, poppy, and the physician's famous antidote-paste. Once per encounter a successful **Average** ([[difficulty difficulty]]) Medicine check lets a patient heal 3 strain or suppress a poison's effects until the end of the scene. — *Encumbrance 0 · 150 HS · Rarity 4.*
+  - type: h4
+    text: Clandestine Gear
+  - type: p
+    style: body
+    text: |-
+      **Lockpicks & False Keys (*claves adulterinae*).** Hooks and shims for Roman wards and padlocks. Without them, picking a lock suffers [[setback setback]]; the tools themselves are evidence of ill intent if found. — *Encumbrance 0 · 75 HS (R) · Rarity 5.*
+  - type: p
+    style: body
+    text: |-
+      **Disguise (*mutatio*).** A change of station in cloth — a slave's tunic, a stolen livery, a freedman's cap. Adds [[boost]] (or [[boost boost]] with a nomenclator's coaching) to Deception checks to pass as another class. — *Encumbrance 1 · 50 HS · Rarity 2.*
+  - type: p
+    style: body
+    text: |-
+      **Caltrops (*murex / tribulus*).** A handful of four-spiked iron, scattered as a maneuver. The area becomes difficult terrain; anyone crossing at speed makes an **Average** ([[difficulty difficulty]]) Coordination check or suffers 3 strain and is knocked prone. — *Encumbrance 1 · 30 HS · Rarity 3.*
+  - type: p
+    style: body
+    text: |-
+      **Poison (*venenum*).** From a bad-oyster purge to a senator's favourite. An attacker who applies or administers a dose forces a Resilience check whose difficulty the GM sets by potency — **Average** for a crude purge, up to **Daunting** for a king's draught — inflicting wounds, strain, or a Critical Injury on a failure. — *Encumbrance 0 · 300 HS (R) · Rarity 7.*
   - type: h3
     text: Social Gear & Traits
-  - type: list
-    items:
-    - |-
-      **Toga Candida:** the whitened toga of the election candidate (*candidatus*); adds [[boost]] to canvassing checks and marks you, for better or worse, as a man seeking power.
-    - |-
-      **Litterae Commendaticiae** (letter of recommendation): a named patron's written favor; spend it as a Favor, or add [[boost boost]] to a single first-meeting social check with its addressee.
-    - |-
-      **Nomenclator:** an educated slave who whispers the names and histories of those you meet; grants the benefit of the *Nomenclator's Whisper* talent once per scene even to an owner who lacks the talent.
-    - |-
-      **A Claque:** a hired body of applauders (treat as a minion group); while present, your character may spend their reactions to bank [[boost]] for the crowd-mood of a speech.
-    - |-
-      **A Dossier of Dirt:** evidence of a target's guilty secret; reveals one Flaw automatically and, if made public, costs the target 1 Dignitas — the *delator's* stock-in-trade.
-    - |-
-      **A Well-Placed Bribe:** coin as an argument; adds [[boost]] to a Negotiation or Coercion check per 1,000 HS offered (max [[boost boost boost]]), but a [[despair]] means it is remembered, and talked about.
+  - type: p
+    style: body
+    text: |-
+      The instruments of *dignitas* and influence are gear as surely as any blade. They are bought, hired, or extorted, and spent in the Forum, the Senate, and the courts.
+  - type: p
+    style: body
+    text: |-
+      **Toga Candida.** The artificially whitened toga of the *candidatus*; adds [[boost]] to canvassing and public social checks and marks you, for better or worse, as a man seeking office. — *Encumbrance 2 · 150 HS · Rarity 3.*
+  - type: p
+    style: body
+    text: |-
+      **Letter of Recommendation (*litterae commendaticiae*).** A named patron's written favour. Spend it as a Favour, or add [[boost boost]] to a single first-meeting social check with its addressee. — *Encumbrance 0 · 100 HS or a Favour owed · Rarity 4.*
+  - type: p
+    style: body
+    text: |-
+      **Nomenclator.** An educated slave who murmurs the names, offices, and histories of those you meet; grants the benefit of the *Nomenclator's Whisper* talent once per scene even to an owner who lacks it. — *Encumbrance — · 2,000 HS (R) · Rarity 5.*
+  - type: p
+    style: body
+    text: |-
+      **A Claque.** A hired body of applauders, treated as a minion group. While present, your character may spend their reactions to bank [[boost]] toward the crowd-mood of a speech. — *Encumbrance — · 500 HS per performance · Rarity 4.*
+  - type: p
+    style: body
+    text: |-
+      **A Dossier of Dirt.** Evidence of a target's guilty secret, the *delator's* stock-in-trade. It reveals one of the target's Flaws automatically and, if made public, costs them 1 Dignitas. — *Encumbrance 0 · 1,000 HS (R) · Rarity 6.*
+  - type: p
+    style: body
+    text: |-
+      **A Well-Placed Bribe.** Coin as argument; adds [[boost]] to a Negotiation or Coercion check per 1,000 HS offered (to a maximum of [[boost boost boost]]), but a [[despair]] means the offer is remembered, and talked about. — *Cost as offered · Rarity varies.*
+  - type: p
+    style: small
+    text: |-
+      **Gear, Tools & Services.** A quick reference to everything above; see each entry for its full effect.
+  - type: table
+    style: gear
+    columns:
+    - Item
+    - Enc
+    - Price (HS)
+    - Rarity
+    rows:
+    - - Writing kit
+      - '1'
+      - '15'
+      - '1'
+    - - Papyrus & ink
+      - '0'
+      - '25'
+      - '2'
+    - - Signet ring
+      - '0'
+      - '200'
+      - '3'
+    - - Abacus
+      - '1'
+      - '40'
+      - '2'
+    - - Oil lamp
+      - '1'
+      - '8'
+      - '0'
+    - - Torch
+      - '1'
+      - '2'
+      - '0'
+    - - Marching pack
+      - '4'
+      - '60'
+      - '2'
+    - - Field tent
+      - '6'
+      - '150'
+      - '3'
+    - - Military cloak
+      - '1'
+      - '30'
+      - '1'
+    - - Rations (5 days)
+      - '1'
+      - '5'
+      - '0'
+    - - Grappling hook & rope
+      - '2'
+      - '25'
+      - '1'
+    - - Manacles & chain
+      - '2'
+      - '20'
+      - '1'
+    - - Surgeon's kit
+      - '2'
+      - '400'
+      - '4'
+    - - Herbs & theriac
+      - '0'
+      - '150'
+      - '4'
+    - - Lockpicks
+      - '0'
+      - 75 (R)
+      - '5'
+    - - Disguise
+      - '1'
+      - '50'
+      - '2'
+    - - Caltrops
+      - '1'
+      - '30'
+      - '3'
+    - - Poison (dose)
+      - '0'
+      - 300 (R)
+      - '7'
+    - - Toga candida
+      - '2'
+      - '150'
+      - '3'
+    - - Letter of rec.
+      - '0'
+      - '100'
+      - '4'
+    - - Nomenclator
+      - —
+      - 2,000 (R)
+      - '5'
+    - - Claque
+      - —
+      - '500'
+      - '4'
+    - - Dossier of dirt
+      - '0'
+      - 1,000 (R)
+      - '6'
+    - - Bribe
+      - —
+      - 1,000/step
+      - —
   - type: h3
     text: Beasts & Vehicles
   - type: p
