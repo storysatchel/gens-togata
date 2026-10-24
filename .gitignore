@@ -1,0 +1,12 @@
+# Build outputs
+build/
+dist/
+audio/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store

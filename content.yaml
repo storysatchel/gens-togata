@@ -1,0 +1,2398 @@
+meta:
+  title: The Eternal City
+  subtitle: Urbs Aeterna
+  tagline: Bread and circuses, the sword and the Senate.
+  system: An Imperial Rome setting for the Genesys Roleplaying Game
+  legal:
+  - |-
+    This product was created under license. Genesys and its logo, and Genesys Foundry and its logo, are trademarks of Fantasy Flight Games.
+  - |-
+    Published under the Community Content Agreement for Genesys Foundry. Historical material is drawn from the public historical record. This is an unofficial, non-commercial fan supplement, not affiliated with or endorsed by any other publisher.
+chapters:
+- title: Introduction
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      The Roman Empire was the most impressive civilization the ancient West ever produced. Never before had so many nations, peoples, and cultures been bound under a single government, a single law, and a single road network whose every mile-marker pointed home. Rome is legendary for the discipline of its legions, the decadence of its nobility, and the blood its people cheered for in the arena. It is a world rich in adventure, intrigue, and history — a setting from which nearly any kind of campaign can spring.
+  - type: p
+    style: body
+    text: |-
+      This supplement adds options for players and GMs who want to run **Genesys** in Imperial Rome. The default “present day” is the **High Empire** — roughly the reign of Trajan and Hadrian (*c.* 100–120 CE), when the Empire stood at its greatest extent, from the rains of Britannia to the sands of Mesopotamia. The material works equally well anywhere across the Principate, from Augustus (27 BCE) to the death of Marcus Aurelius (180 CE). As the Core Rulebook notes, almost anything you can imagine from the historical world can be used as a trope here; this book simply sharpens the tools for one of them.
+  - type: p
+    style: body
+    text: |-
+      Because the setting is a specific time and place rather than an open genre, this supplement opens with a compact **Setting Overview** that fixes its tropes, tone, technology, factions, and the gods — everything a table needs to agree on before play. From there it follows a familiar shape.
+  - type: p
+    style: body
+    text: |-
+      **Chapter 1: Character Creation** presents seven status-based Roman archetypes, a set of careers suited to Roman life, three new Knowledge skills tuned to the setting, and a selection of new talents.
+  - type: p
+    style: body
+    text: |-
+      **Chapter 2: Gear and Vehicles** describes the arms, armor, tools, and conveyances of the Roman world — from the *gladius* to the war-galley.
+  - type: p
+    style: body
+    text: |-
+      The **Adversaries** section stats the people and beasts the characters will contend with, from the lowliest street tough to the Praetorian Prefect and the lion in the sand.
+  - type: p
+    style: body
+    text: |-
+      The final section gives advice for **running Imperial Rome stories**, several campaign frames, and a glossary of Latin terms to sprinkle into play.
+  - type: sidebar
+    title: A Note on Slavery and History
+    body:
+    - |-
+      Rome was built on slavery, conquest, and brutal spectacle. This book does not sanitize that, but it is a game played by friends: treat enslaved characters as people with agency and goals (many of this book's archetypes and careers assume exactly that), keep the real cruelty at the “tasteful fade” your table prefers, and talk openly about lines and veils before you start. The horror is part of the drama; it is never the point.
+- title: Setting Overview
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      **Base Setting / Genre:** Historical (Antiquity), with optional low-magic or “the gods are real” dials.   **Tone:** Grand, sweaty, and dangerous — glory and corruption in equal measure; *panem et circenses*.
+  - type: p
+    style: body
+    text: |-
+      The single element that best defines this setting: **a civilization that believes it *is* civilization** — and will crucify, conquer, or co-opt anyone who says otherwise.
+  - type: h3
+    text: Tropes & Themes Used
+  - type: list
+    items:
+    - |-
+      **Bread and circuses.** Power is bought with spectacle. The mob is a force of nature; the arena is the pulse of the city.
+    - |-
+      **The *cursus honorum*.** Ambition is a ladder of offices, and everyone is climbing or being climbed over. Patron and client bind society top to bottom.
+    - |-
+      **Eagles on the frontier.** The legions are both Rome's shield and its most dangerous political actor.
+    - |-
+      **Decadence and duty.** Stoic virtue set against luxury, vice, and the knife in the bath-house.
+    - |-
+      **A cosmopolitan metropolis.** A million souls, every tongue and god of the known world jostling in one city.
+  - type: h3
+    text: Tropes Excluded
+  - type: list
+    items:
+    - |-
+      **Anachronistic technology.** No gunpowder, no printing, no clockwork automata (unless your Rome is a *fantastika* variant — see below).
+    - |-
+      **Modern morality as default.** Citizens assume slavery, patriarchy, and conquest are the natural order; drama comes from characters who push against it, not from a world that already agrees with us.
+  - type: h3
+    text: Tropes Subverted
+  - type: list
+    items:
+    - |-
+      **“The glory of Rome.”** The marble is painted, the triumph is paid for in captives, and the Eternal City floods, burns, and starves like any other.
+    - |-
+      **The all-powerful Emperor.** He rules only so long as the legions, the grain fleet, and the mob allow it — and the knives are always out.
+  - type: h3
+    text: Technology Level
+  - type: p
+    style: body
+    text: |-
+      Classical antiquity (iron age, pre-gunpowder). **Notable technologies:** paved roads and the *cursus publicus* courier relay; aqueducts, hypocaust heating, and public baths; concrete (*opus caementicium*) and the arch; siege engines (*ballista*, *onager*, *scorpio*); war-galleys; coined money and sophisticated banking; Greek medicine and surgery. **Deliberately excluded:** firearms, the printing press, mechanical timekeeping, and the stirrup.
+  - type: sidebar
+    title: Dialing the Supernatural
+    body:
+    - |-
+      [[Grounded:]] the gods are belief, politics, and theatre; omens and curses work only in the players' heads. [[Fated:]] Story Points are the will of the gods — omens, dreams, and auguries give real mechanical nudges (see GM Advice). [[Mythic:]] full Genesys magic, with priests, sibyls, and Egyptian sorcerers wielding it; monsters of myth stalk the provinces. Pick one before session zero.
+  - type: h3
+    text: Major Factions & Powers
+  - type: list
+    items:
+    - |-
+      **The Emperor & the *Domus*.** The *princeps* and his household, freedmen secretaries, and the Praetorian Guard. *Objective:* survive, be adored, and keep anyone else from becoming adored.
+    - |-
+      **The Senate.** Several hundred of the richest men alive, nostalgic for a Republic they would never actually restore. *Objective:* dignity, offices, and advantage — without being noticed wanting too much of it.
+    - |-
+      **The Legions.** Thirty-odd legions and their auxiliaries on the frontiers. *Objective:* pay, plunder, land on retirement — and loyalty to whichever general delivers them.
+    - |-
+      **The *Collegia* & the Mob.** Trade guilds, burial clubs, racing-faction supporters, and the gangs beneath them. *Objective:* grain, games, and turf.
+    - |-
+      **The Cults.** The old gods and their priesthoods, the Imperial Cult, and the rising “eastern” faiths — Isis, Mithras, the Christians. *Objective:* souls, status, and (for some) survival of persecution.
+    - |-
+      **Beyond the *Limes*.** Germans and Caledonians in the north, Parthia and its cataphracts in the east, desert tribes to the south — and, past them all, the half-legendary empires of the silk routes. *Objective:* raid, trade, or break Rome.
+  - type: sidebar
+    title: 'The Edge of the World: Serica'
+    body:
+    - |-
+      At the far end of the silk routes lay *Serica* — the land of the *Seres*, the “Silk-People,” of whom Rome knew almost nothing and imagined almost everything. Roman writers reported them as atheists who lived more than two hundred years, who scraped silk from the leaves of trees, who were at once fierce and warlike and gentle and peaceful, blue-eyed and flaxen-haired, and who would never speak to a stranger. The road to them was said to be blocked by lions and tigers that devoured any party of fewer than a hundred armed men. The truth — a second vast empire of tens of millions, a mirror to Rome at the other end of the earth — never reached the Forum: Parthia sat astride the trade and jealously kept Roman and Eastern merchants from ever meeting. For a campaign this is a gift: the East is a place of rumor and fortune where the GM may invent freely, and a caravan that reaches *Serica* and returns is the stuff of legend. (Grounded in Scheidel, *Rome and China*.)
+  - type: h3
+    text: Species
+  - type: p
+    style: body
+    text: |-
+      Everyone is **Human** (use the Human profile from the Core Rulebook). What matters in Rome is not *species* but *status* — citizen or non-citizen, free or enslaved, patrician or plebeian, Roman or provincial. Those are role-played and reflected in the archetypes, careers, and talents below, not in different stat lines. (In a [[Mythic]] Rome, the GM may of course admit fauns, nymphs, and the half-divine.)
+- title: 'Chapter 1: Character Creation'
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      Rome rewarded some kinds of person and ground down others, and a character’s origin mattered more than any die roll. The archetypes below turn that truth into mechanics: seven concrete Roman origins, each with its own starting profile, a signature ability drawn from its place in the world, and a starting Dignitas. Build a Roman character with one of these, or with any archetype from the Core Rulebook if your concept demands it.
+  - type: h3
+    text: Archetypes
+  - type: p
+    style: body
+    text: |-
+      Rome sorted people not by what they could do but by *what they were born* — free or enslaved, citizen or foreigner, highborn or common. The seven archetypes below capture that axis of status and origin. Each gives starting characteristics, derived thresholds, starting experience, one free skill rank (gained before spending XP, to a maximum of rank 2 at creation), a signature ability, and a **starting Dignitas** for the reputation economy (see *The Theater of Power*). This choice is permanent; spend your starting XP to raise characteristics, skills, and talents.
+  - type: sidebar
+    title: Archetype and Career Are Independent
+    body:
+    - |-
+      Your **archetype** is who you were born; your **career** (next page) is what you have made of yourself. The two axes run orthogonally — *any archetype may take any career.* A Patrician who serves as a Legionary, a Slave trained as a Gladiator or a Medicus, a Freedman who argues as an Advocate, a Barbarian turned Explorator: all are classic Roman stories, and all are built by crossing one origin with one profession. Pick your origin here; pick your trade on the pages that follow.
+  - name: Patrician
+    kind: Highborn
+    desc: |-
+      Born to one of the families whose ancestors' wax masks line the atrium. You have never wanted for anything but respect — and that you intend to earn, or seize.
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '3'
+    fields:
+    - label: Wound Threshold
+      text: 10 + Brawn
+    - label: Strain Threshold
+      text: 10 + Willpower
+    - label: Starting XP
+      text: '100'
+    - label: Starting Dignitas
+      text: '3'
+    - label: Starting Skills
+      text: One rank in Knowledge (Rome) or Charm (max 2 at creation).
+    - label: The Weight of Ancestors
+      text: |-
+        Once per session, when making a social check that leans on your name and lineage, add advantage advantage. Your blood opens doors that gold cannot.
+    type: statblock
+  - name: Equestrian
+    kind: The Knightly Class
+    desc: |-
+      Of the *ordo equester* — rich enough to matter, not noble enough to be trusted with it. Yours is the class of financiers, officers, and tax-farmers who really make the Empire run.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '2'
+      Cun: '3'
+      Will: '1'
+      Pr: '2'
+    fields:
+    - label: Wound Threshold
+      text: 10 + Brawn
+    - label: Strain Threshold
+      text: 8 + Willpower
+    - label: Starting XP
+      text: '100'
+    - label: Starting Dignitas
+      text: '2'
+    - label: Starting Skills
+      text: One rank in Negotiation or Knowledge (Rome) (max 2 at creation).
+    - label: Men of Business
+      text: |-
+        Once per session, spend a Story Point to declare you have the capital, credit, cargo, or well-placed contact already arranged — the quiet machinery of money working on your behalf.
+    type: statblock
+  - name: Plebeian
+    kind: Freeborn Commoner
+    desc: |-
+      A freeborn citizen of the teeming city — raised on the grain dole and the games, you know every alley and every man worth knowing, and you have survived them all.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    fields:
+    - label: Wound Threshold
+      text: 10 + Brawn
+    - label: Strain Threshold
+      text: 10 + Willpower
+    - label: Starting XP
+      text: '110'
+    - label: Starting Dignitas
+      text: '1'
+    - label: Starting Skills
+      text: One rank in each of two different non-career skills (max 2 at creation).
+    - label: A Nose for Trouble
+      text: |-
+        Once per session, as an out-of-turn incidental, move one Story Point from the GM's pool to the players' pool. The street always finds a way.
+    type: statblock
+  - name: Freedman
+    kind: Libertus — Ex-Slave
+    desc: |-
+      Once property, now free — but the brand of servitude never quite fades. You owe duties still to the master who freed you, and you mean to make your sons his equals.
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '3'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    fields:
+    - label: Wound Threshold
+      text: 8 + Brawn
+    - label: Strain Threshold
+      text: 12 + Willpower
+    - label: Starting XP
+      text: '100'
+    - label: Starting Dignitas
+      text: '1'
+    - label: Starting Skills
+      text: |-
+        One rank in any single skill, reflecting the trade you were trained to (max 2 at creation).
+    - label: The Master's Education
+      text: |-
+        Once per session, spend a Story Point as an incidental; during your next check that turn, count your ranks in the skill used as equal to your Intellect. They schooled you well — perhaps too well.
+    type: statblock
+  - name: Provincial
+    kind: Peregrinus — Non-Citizen
+    desc: |-
+      A free man or woman of the provinces — Gaul, Syria, Egypt, Africa — living under Rome's peace without its citizenship, and quietly determined to earn, buy, or marry your way to it.
+    chars:
+      Br: '2'
+      Ag: '3'
+      Int: '1'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    fields:
+    - label: Wound Threshold
+      text: 10 + Brawn
+    - label: Strain Threshold
+      text: 10 + Willpower
+    - label: Starting XP
+      text: '100'
+    - label: Starting Dignitas
+      text: '1'
+    - label: Starting Skills
+      text: One rank in Ranged (Heavy), Riding, or Survival (max 2 at creation).
+    - label: Skills of the Frontier
+      text: |-
+        Once per encounter, add advantage to a Ranged, Riding, Survival, or Perception check in the field. Should your character gain Roman citizenship in play (by service, grant, or purchase), raise their Dignitas by 1.
+    type: statblock
+  - name: Slave
+    kind: Servus — Property
+    desc: |-
+      In law you are a thing, not a person — yet the household turns on your skill and your silence. You endure, you watch, and you wait for the day the cap of freedom is set on your head.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '3'
+      Pr: '1'
+    fields:
+    - label: Wound Threshold
+      text: 8 + Brawn
+    - label: Strain Threshold
+      text: 12 + Willpower
+    - label: Starting XP
+      text: '100'
+    - label: Starting Dignitas
+      text: '0'
+    - label: Starting Skills
+      text: One rank in Resilience, or in any single skill reflecting your duties (max 2 at creation).
+    - label: Unbroken
+      text: |-
+        Add boost to Discipline and Resilience checks while enslaved, bound, imprisoned, or outnumbered. If your character is manumitted in play, they become a
+    - label: Freedman
+      text: (gaining its ability and Dignitas).
+    type: statblock
+  - name: Barbarian
+    kind: From Beyond the Limes
+    desc: |-
+      A German, Briton, Dacian, or Parthian — brought to Rome by trade, treaty, or iron chains. To the Romans you are a savage; let them keep thinking so.
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '1'
+      Pr: '2'
+    fields:
+    - label: Wound Threshold
+      text: 12 + Brawn
+    - label: Strain Threshold
+      text: 8 + Willpower
+    - label: Starting XP
+      text: '100'
+    - label: Starting Dignitas
+      text: 0 (outsider)
+    - label: Starting Skills
+      text: One rank in Survival or Melee (max 2 at creation).
+    - label: Untamed Fury
+      text: |-
+        Add boost to melee combat checks on any round in which your character first engages a new target. Civilization has not dulled you.
+    type: statblock
+  - type: h3
+    text: Careers
+  - type: p
+    style: body
+    text: |-
+      A career defines what your character is *trained* to do, independent of the archetype (origin) you chose above — cross any origin with any of these professions. Players can use any of the careers in the Core Rulebook, create their own at GM discretion, or select one of the careers below, each tuned to Roman life. As usual, before spending experience during character creation, a character may choose **four** of their eight career skills and gain one rank in each.
+  - type: h4
+    text: Legionary
+  - type: p
+    style: body
+    text: |-
+      The backbone of the Empire: a professional soldier of a citizen legion, drilled in formation fighting, field engineering, and the long march. Career skills: **Athletics, Brawl, Discipline, Melee, Ranged (Light), Resilience, Survival, Knowledge (Warfare)**.
+  - type: h4
+    text: Centurion & Officer
+  - type: p
+    style: body
+    text: |-
+      The men (and, in the auxilia, sometimes the chieftains) who lead Rome's soldiers and, often, its politics. Career skills: **Coercion, Cool, Discipline, Leadership, Melee, Ranged (Light), Vigilance, Knowledge (Warfare)**.
+  - type: h4
+    text: Gladiator
+  - type: p
+    style: body
+    text: |-
+      A fighter of the arena — condemned, enslaved, volunteer, or freed champion — schooled in a particular style of spectacular, lethal combat. Career skills: **Athletics, Brawl, Coordination, Melee, Charm, Cool, Resilience, Vigilance**.
+  - type: h4
+    text: Senator & Magistrate
+  - type: p
+    style: body
+    text: |-
+      The aristocrat climbing the *cursus honorum*: lawmaker, judge, provincial governor, spider at the center of a web of clients. Career skills: **Charm, Coercion, Deception, Leadership, Negotiation, Knowledge (Law), Knowledge (Rome), Discipline**.
+  - type: h4
+    text: Negotiator (Merchant)
+  - type: p
+    style: body
+    text: |-
+      Trader, banker, ship-owner, or tax-farmer — the people who actually move the Empire's wealth and know where every body is buried. Career skills: **Charm, Cool, Deception, Negotiation, Streetwise, Knowledge (Rome), Operating, Perception**.
+  - type: h4
+    text: Augur & Priest
+  - type: p
+    style: body
+    text: |-
+      Reader of omens, keeper of ritual, intermediary with the gods — and, not incidentally, a political power in their own right. Career skills: **Charm, Cool, Discipline, Knowledge (the Gods), Knowledge (Rome), Medicine, Vigilance, Leadership**.
+  - type: h4
+    text: Rhetor & Advocate
+  - type: p
+    style: body
+    text: |-
+      The orator, lawyer, and teacher: trained in Greek rhetoric to sway juries, assemblies, and dinner-parties. Career skills: **Charm, Cool, Deception, Negotiation, Knowledge (Law), Knowledge (Rome), Perception, Discipline**.
+  - type: h4
+    text: Medicus
+  - type: p
+    style: body
+    text: |-
+      The physician — army surgeon, arena doctor, or fashionable Greek practitioner — skilled in the limited but real medicine of the age. Career skills: **Cool, Knowledge (the Gods), Knowledge (Rome), Medicine, Perception, Resilience, Streetwise, Vigilance**.
+  - type: h4
+    text: Charioteer (Auriga)
+  - type: p
+    style: body
+    text: |-
+      Driver of the racing factions or the war-cart: idolized, short-lived, and the closest thing Rome has to a sports superstar. Career skills: **Athletics, Cool, Coordination, Driving, Operating, Mechanics, Streetwise, Vigilance**.
+  - type: h4
+    text: Explorator & Frumentarius
+  - type: p
+    style: body
+    text: |-
+      The scout, spy, and courier — eyes beyond the frontier and ears within it. Rome's intelligence service wore many hats. Career skills: **Deception, Perception, Ranged (Light), Riding, Skullduggery, Stealth, Streetwise, Survival**.
+  - type: sidebar
+    title: Status, Not Species
+    body:
+    - |-
+      Consider noting each character's legal standing: [[Citizen]] (protected by Roman law, cannot lawfully be crucified or flogged), [[Peregrine]] (free provincial, not a citizen), [[Freedman]] (*libertus* — an ex-slave who owes duties to a former master), or [[Slave]] (property, with no legal person, but often skilled and trusted). Status should shape what a character can get away with far more than any die roll — see GM Advice.
+- title: New Skills
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      Instead of a single general Knowledge skill, this setting uses three Knowledge skills tuned to the Roman world. They cover the specialized learning a Roman character is likely to have, and let players show different depths of expertise. Use these in place of the generic Knowledge skill, splitting its uses as described below. All three are Knowledge skills linked to **Intellect**.
+  - type: h3
+    text: Knowledge (Rome)
+  - type: p
+    style: body
+    text: |-
+      The Empire itself — its geography, provinces, peoples, roads, trade, history, and the tangle of its politics and bureaucracy. If it concerns how the Roman world is put together and who runs it, it falls here.
+  - type: h4
+    text: Your character should use this skill if…
+  - type: list
+    items:
+    - They want to recall which family controls a province, or who the current governor is.
+    - They want to plot the fastest road or sea route between two cities.
+    - |-
+      They want to know the correct office to bribe, the right festival to exploit, or the going rate for grain.
+  - type: h4
+    text: Your character should NOT use this skill if…
+  - type: list
+    items:
+    - They want to argue a point of law before a magistrate — use **Knowledge (Law)**.
+    - They want to interpret an omen or name a god's festival — use **Knowledge (the Gods)**.
+    - |-
+      They want to recall the deployment of a legion in battle — use **Knowledge (Warfare)** (a fourth, optional skill for military campaigns; GMs may fold it into Knowledge (Rome) for non-military games).
+  - type: h3
+    text: Knowledge (Law)
+  - type: p
+    style: body
+    text: |-
+      Roman law was vast, precedent-bound, and the chief weapon of the ambitious. This skill covers statute, precedent, contracts, citizenship, inheritance, and courtroom procedure.
+  - type: h4
+    text: Your character should use this skill if…
+  - type: list
+    items:
+    - They want to find the clause that voids a contract or frees a slave.
+    - They want to recall whether an action is lawful — and what the penalty is if it is not.
+    - They want to tie an opponent in procedural knots before a court.
+  - type: h4
+    text: Your character should NOT use this skill if…
+  - type: list
+    items:
+    - |-
+      They want to *persuade* a jury rather than cite the law — that is Charm, Coercion, or Negotiation (though a Knowledge (Law) check can add [[boost]] to it).
+    - They want to recall a historical event — use Knowledge (Rome).
+  - type: sidebar
+    title: Using Knowledge (Law) in a Trial
+    body:
+    - |-
+      Run a Roman trial as a social encounter. Let a successful Knowledge (Law) check (difficulty by the obscurity of the point) establish a fact, upgrade the next speaker's social check, or add [[setback]] to the opposing advocate. [[Triumph]] might unearth a devastating precedent that reframes the case; [[despair]] might reveal that your own client is guilty of something worse.
+  - type: h3
+    text: Knowledge (the Gods)
+  - type: p
+    style: body
+    text: |-
+      The crowded religion of Rome: the Olympian gods and their Roman forms, household and state cults, ritual, festivals, omens, the reading of entrails and the flight of birds, and the strange new faiths from the East.
+  - type: h4
+    text: Your character should use this skill if…
+  - type: list
+    items:
+    - They want to perform a rite correctly — a sacrifice, a purification, a funeral.
+    - They want to read an omen, or recognize a bad one others have missed.
+    - They want to identify a foreign cult, its practices, and who follows it.
+  - type: h4
+    text: Your character should NOT use this skill if…
+  - type: list
+    items:
+    - |-
+      They want to actually cast a spell in a [[Mythic]] Rome — that uses the relevant magic skill.
+    - They want to heal the sick by mundane means — use Medicine.
+  - type: sidebar
+    title: Reading Omens (Fated / Mythic Rome)
+    body:
+    - |-
+      In a Rome where the gods take a hand, let a character spend a maneuver and make a Knowledge (the Gods) check before a major undertaking. On success, the GM reveals one true thing about the near future (a boon or a warning); each [[advantage]] adds a [[boost]] the party may spend on a related check this session; [[triumph]] grants a free Story Point to the players' pool. On a [[despair]], the omen is misread — the GM gains a Story Point and a complication.
+- title: New Talents
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      The following talents suit Roman characters. They use the standard talent format; where a talent grants a career skill, it does so only when the character gains the talent.
+  - type: h3
+    text: Tier 1
+  - type: h4
+    text: Testudo
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Active (Maneuver)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      While your character is engaged with at least one ally who also has this talent, they may form a shield-wall. Until the start of your character's next turn, they and each such ally increase their melee and ranged defense by 1 (to a maximum of 2), but may not move.
+  - type: h4
+    text: Client Network
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      When your character takes this talent, they gain Streetwise or Knowledge (Rome) as a career skill. In addition, once per session they may call on a client or patron to collect a small favor — lodging, a meal, a message carried, a door left unlocked — even if none is owed.
+  - type: h4
+    text: Legion Veteran
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      When your character takes this talent, they gain Discipline or Melee as a career skill. In addition, once per session they may collect a small favor from a current or former soldier of the legions, even if none is owed.
+  - type: h4
+    text: Freedman's Hustle
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      When your character takes this talent, they gain Negotiation or Skullduggery as a career skill. In addition, once per session they may collect a small favor from a fellow freedman or slave in a Roman household, even if none is owed.
+  - type: h4
+    text: Gladiatorial Training
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Your character treats one chosen arena weapon type (sword, trident, net, or shield) as having the Accurate 1 quality, and may re-roll the Critical Injury once when striking with it (keeping the result of their choice).
+  - type: h3
+    text: Tier 2
+  - type: h4
+    text: Pilum Volley
+  - type: p
+    style: body
+    text: '**Tier:** 2   **Activation:** Active (Incidental)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Once per encounter, immediately before making a ranged combat check with a thrown javelin or *pilum*, your character may suffer 2 strain. If the attack hits, the target's shield (if any) is rendered useless until they spend a maneuver to free it, and the attack gains Pierce 2.
+  - type: h4
+    text: Field Engineer
+  - type: p
+    style: body
+    text: '**Tier:** 2   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Mechanics, Survival, and Knowledge (Warfare) are now career skills for your character. Once per session, given tools and an hour, they may improvise a bridge, rampart, ram, or siege work sufficient for the scene.
+  - type: h4
+    text: Senatorial Connections
+  - type: p
+    style: body
+    text: '**Tier:** 2   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Charm, Deception, and Knowledge (Rome) are now career skills for your character. Once per session, they may spend a Story Point to have a person of senatorial or equestrian rank owe them an audience.
+  - type: h4
+    text: Stoic Discipline
+  - type: p
+    style: body
+    text: '**Tier:** 2   **Activation:** Passive   **Ranked:** Yes'
+  - type: p
+    style: body
+    text: |-
+      Once per encounter per rank of this talent, when your character suffers strain, they may reduce that strain by 2.
+  - type: h3
+    text: Tier 3
+  - type: h4
+    text: Centurion's Command
+  - type: p
+    style: body
+    text: '**Tier:** 3   **Activation:** Active (Maneuver)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Your character may make an Average Leadership check. For each [[success]], one ally within short range may perform an immediate maneuver as an out-of-turn incidental; for each [[advantage]], one such ally adds [[boost]] to their next combat check.
+  - type: h4
+    text: Arena Showmanship
+  - type: p
+    style: body
+    text: '**Tier:** 3   **Activation:** Active (Incidental)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Once per encounter, after your character deals damage in melee with the crowd watching, they may make an Average Charm or Coercion check. On success, they recover strain equal to [[success]] rolled and add [[boost]] to their next check as the crowd roars their name.
+  - type: h4
+    text: Dirty Fighting
+  - type: p
+    style: body
+    text: '**Tier:** 3   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: Your character's unarmed and improvised-weapon attacks gain the Disorient 2 quality.
+  - type: h3
+    text: Tier 4
+  - type: h4
+    text: Master Orator
+  - type: p
+    style: body
+    text: '**Tier:** 4   **Activation:** Active (Action)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Your character may make an opposed Charm, Coercion, or Negotiation check (vs. Discipline) against every listener within earshot at once, rather than one at a time. Resolve it as a single check; apply the result to each target individually.
+  - type: h4
+    text: Primus Pilus
+  - type: p
+    style: body
+    text: '**Tier:** 4   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Once per round, when an ally within short range of your character suffers a hit, your character may suffer 2 strain to let that ally increase their melee and ranged defense by 1 until the end of the round, barking orders to hold the line.
+  - type: h3
+    text: Tier 5
+  - type: h4
+    text: Will of Mars
+  - type: p
+    style: body
+    text: '**Tier:** 5   **Activation:** Active (Incidental, out of turn)   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Once per session, when your character or an ally within short range would be incapacitated or slain, your character may spend a Story Point: that character instead remains standing with 1 wound below their threshold and gains [[boost boost]] on their next check, as the war-god stays the blade.
+  - type: h4
+    text: Imperator
+  - type: p
+    style: body
+    text: '**Tier:** 5   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: |-
+      Allies within short range of your character add [[boost]] to all Discipline, Cool, and fear checks. Once per encounter, your character may spend a Story Point to let every ally within short range immediately recover strain equal to your character's Presence.
+- title: 'Chapter 2: Gear and Vehicles'
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      For the generic weapons and tools of a pre-gunpowder world, the Genesys Core Rulebook and its genre terminals serve well. This chapter describes the arms, armor, and equipment that give an Imperial Roman game its flavor, followed by the beasts and vehicles that carry Romans to war, to market, and around the race-track. Prices are given in **sesterces** (abbreviated HS). As a rough guide: 1 *denarius* = 4 sesterces = a laborer's daily wage; 1 gold *aureus* = 100 sesterces; a legionary earned about 900 sesterces a year before Domitian's raise.
+  - type: h3
+    text: Weapons
+  - type: p
+    style: body
+    text: |-
+      **Gladius.** The short, broad stabbing sword of the legions — the weapon that conquered the world, designed for close, disciplined butchery behind a shield wall.
+  - type: p
+    style: body
+    text: |-
+      **Pugio.** The military dagger; a sidearm, a tool, and — famously — the blade of choice for assassinating emperors.
+  - type: p
+    style: body
+    text: |-
+      **Spatha.** A longer sword favored by cavalry and, later, the whole army; more reach than the gladius but less suited to the press of the shield wall.
+  - type: p
+    style: body
+    text: |-
+      **Hasta.** The thrusting spear, carried by auxiliaries, triarii of old, and guardsmen. Its reach keeps enemies at bay.
+  - type: p
+    style: body
+    text: |-
+      **Pilum.** The heavy legionary javelin, hurled in a volley just before contact. Its soft iron shank bends on impact, fouling an enemy's shield and rendering it useless — and it cannot easily be thrown back (see the *Pilum Volley* talent).
+  - type: p
+    style: body
+    text: |-
+      **Fuscina & Rete (Trident and Net).** The signature arms of the *retiarius* gladiator: a long trident for reach and a weighted net to entangle and trip a foe before the kill.
+  - type: p
+    style: body
+    text: |-
+      **Caestus.** A leather boxing-glove bound with iron or lead and sometimes studded with spikes — the brutal gauntlet of the arena pugilist.
+  - type: p
+    style: body
+    text: |-
+      **Flagellum.** The whip — a tool of overseers and animal-handlers, occasionally a weapon, better at humiliation and control than killing.
+  - type: p
+    style: body
+    text: |-
+      **Funda (Sling).** Cheap, silent, and in trained Balearic hands astonishingly deadly; hurls stones or cast-lead bullets.
+  - type: p
+    style: body
+    text: |-
+      **Arcus (Composite Bow).** The recurved bow of eastern auxiliaries — Syrian, Cretan, and Parthian archers who gave Rome its missile power.
+  - type: h3
+    text: Armor & Shields
+  - type: p
+    style: body
+    text: |-
+      **Lorica Segmentata.** The iconic banded iron plate of the Imperial legionary: excellent protection, issued by the army and rarely seen in civilian hands.
+  - type: p
+    style: body
+    text: |-
+      **Lorica Hamata.** Mail; heavier but more flexible, worn by legionaries, auxiliaries, and the wealthy for centuries.
+  - type: p
+    style: body
+    text: |-
+      **Lorica Squamata.** Scale armor — bronze or iron scales sewn to a backing; flashy, favored by officers, standard-bearers, and some auxiliaries.
+  - type: p
+    style: body
+    text: |-
+      **Galea.** The military helmet, with cheek-guards and neck-flare. (If a character already wears body armor granting Soak, the helmet's benefit is included; worn alone it grants Soak +1.)
+  - type: p
+    style: body
+    text: |-
+      **Scutum.** The great curved rectangular shield — a wall of plywood and iron that is half the legion's doctrine. It can also be punched into a foe's face.
+  - type: p
+    style: body
+    text: |-
+      **Parma / Gladiator Shield.** Smaller round or rectangular shields used by lighter troops and arena fighters, trading protection for mobility.
+  - type: p
+    style: body
+    text: |-
+      **Manica.** A segmented arm-guard worn by some gladiators and eastern legionaries; when worn, grant the fighter Defensive 1 with their weapon arm (does not stack with a shield's defense).
+  - type: table
+    style: gear
+    columns:
+    - Weapon
+    - Skill
+    - Dam
+    - Crit
+    - Range
+    - Enc
+    - HP
+    - Price/Rarity
+    - Special
+    rows:
+    - - Pugio (dagger)
+      - Melee
+      - '+1'
+      - '3'
+      - Engaged
+      - '1'
+      - '0'
+      - 25 / 1
+      - Accurate 1
+    - - Gladius
+      - Melee
+      - '+3'
+      - '2'
+      - Engaged
+      - '1'
+      - '0'
+      - 100 / 3
+      - Pierce 1
+    - - Spatha
+      - Melee
+      - '+3'
+      - '2'
+      - Engaged
+      - '2'
+      - '0'
+      - 150 / 4
+      - Defensive 1
+    - - Hasta (spear)
+      - Melee
+      - '+2'
+      - '4'
+      - Engaged
+      - '2'
+      - '0'
+      - 40 / 2
+      - Defensive 1, Pierce 1
+    - - Pilum
+      - Ranged (Light)
+      - '+2'
+      - '3'
+      - Short
+      - '2'
+      - '0'
+      - 30 / 2
+      - Limited Ammo 1, Pierce 2, fouls shields
+    - - Fuscina (trident)
+      - Melee
+      - '+2'
+      - '3'
+      - Engaged
+      - '2'
+      - '0'
+      - 60 / 3
+      - Defensive 1, Pierce 1
+    - - Rete (net)
+      - Ranged (Light)
+      - '+0'
+      - –
+      - Short
+      - '2'
+      - '0'
+      - 20 / 2
+      - Ensnare 2, Knockdown, Limited Ammo 1
+    - - Caestus
+      - Brawl
+      - '+1'
+      - '4'
+      - Engaged
+      - '1'
+      - '0'
+      - 30 / 2
+      - Disorient 2, Pierce 1
+    - - Flagellum (whip)
+      - Melee
+      - '+0'
+      - '5'
+      - Short
+      - '1'
+      - '0'
+      - 15 / 1
+      - Ensnare 1, Disorient 1
+    - - Funda (sling)
+      - Ranged (Light)
+      - '3'
+      - '5'
+      - Short
+      - '1'
+      - '0'
+      - 10 / 1
+      - Disorient 1
+    - - Arcus (bow)
+      - Ranged (Heavy)
+      - '7'
+      - '3'
+      - Medium
+      - '3'
+      - '1'
+      - 225 / 4
+      - Unwieldy 2
+  - type: table
+    style: gear
+    columns:
+    - Armor / Shield
+    - Soak
+    - Def
+    - Enc
+    - HP
+    - Price/Rarity
+    rows:
+    - - Heavy cloak / padded tunic (subarmalis)
+      - '+1'
+      - '0'
+      - '1'
+      - '0'
+      - 25 / 1
+    - - Leather / studded corselet
+      - '+1'
+      - '0'
+      - '2'
+      - '1'
+      - 50 / 1
+    - - Lorica squamata (scale)
+      - '+2'
+      - '0'
+      - '5'
+      - '1'
+      - 250 / 4
+    - - Lorica hamata (mail)
+      - '+2'
+      - '0'
+      - '5'
+      - '1'
+      - 300 / 4
+    - - Lorica segmentata (plate)
+      - '+2'
+      - '1'
+      - '6'
+      - '1'
+      - 500 / 6 (R)
+    - - Galea (helmet, worn alone)
+      - '+1'
+      - '0'
+      - '1'
+      - '0'
+      - 75 / 3
+    - - Scutum (legionary shield)
+      - –
+      - '1'
+      - '3'
+      - '0'
+      - 120 / 3
+    - - Parma (light/arena shield)
+      - –
+      - '1'
+      - '1'
+      - '0'
+      - 50 / 2
+  - type: p
+    style: small
+    text: |-
+      Scutum: grants +1 melee and ranged defense; Cumbersome 3. May be used as a Brawl weapon (Dam +0, Crit 6, Knockdown).
+  - type: h3
+    text: Gear & Tools
+  - type: p
+    style: body
+    text: |-
+      **Surgeon's Kit (Greek medicine).** Scalpels, probes, forceps, herbs, and wine; counts as a medical kit for Medicine checks. The wise also carry it for the arena. — **Wax Tablet & Stylus** and **Papyrus, Ink & Reed Pen:** for accounts, letters, and incriminating evidence. — **Oil Lamp / Torch:** removes [[setback]] from darkness in short range. — **Manacles & Chain:** for slaves and prisoners. — **Grappling Hook & Rope:** a Coordination check to anchor; then climb and remove [[setback]] from Athletics. — **Marching Pack (sarcina):** the legionary's carried kit — entrenching tool, stakes, rations, cook-pot. — **Contubernium Tent & Camp Kit:** shelters eight; adds [[boost]] to Resilience/Survival checks against weather. — **Rations (frumentum):** grain, oil, sour wine; 5 days' worth is Encumbrance 1. — **Signet Ring:** seals documents; a forged one is a felony and a plot hook. — **Toga:** the citizen's formal dress; cumbersome, impressive, and worn only by citizens — adds [[boost]] to formal social checks but [[setback]] to physical ones. — **Caltrops (murex):** scatter to slow pursuers; difficult terrain and a Coordination check or 3 strain to cross. — **Poison:** a Roman specialty; from a bad-oyster purge to a senatorial favorite — GM sets the Resilience difficulty and effect.
+  - type: h3
+    text: Beasts & Vehicles
+  - type: p
+    style: body
+    text: |-
+      Roman “vehicles” are drawn by muscle and wind. The profiles below use the standard Genesys vehicle format (Silhouette / Speed / Handling, Defense, Armor, Hull Trauma and System Strain thresholds). Mounts use the simplified animal rules; treat a horse's “system strain” as its fatigue.
+  - name: Racing Chariot (Biga / Quadriga)
+    desc: |-
+      A light wicker-and-wood car drawn by two or four horses, built for the *Circus Maximus*: terrifyingly fast, almost no protection, and prone to the spectacular wreck (*naufragium*) that the crowds adore.
+    fields:
+    - label: Sil
+      text: '2'
+    - label: Speed
+      text: '4'
+    - label: Handling
+      text: +1 (biga) / −1 (quadriga)
+    - label: Def
+      text: '0'
+    - label: Armor
+      text: '0'
+    - label: HT
+      text: '4'
+    - label: SS
+      text: '4'
+    - label: Control Skill
+      text: Driving
+    - label: Complement
+      text: 1 driver
+    - label: Passengers
+      text: 0–1
+    - label: Enc Cap
+      text: '2'
+    - label: Price/Rarity
+      text: 2,000 / 5
+    - label: Weapons
+      text: none (the driver carries a knife to cut the reins lashed to his waist).
+    - label: Note
+      text: |-
+        On a despair at speed, the chariot may overturn — the driver, reins bound to his body, is dragged (see Chariot Racing, GM Advice).
+    type: statblock
+  - name: Travel Carriage & Ox-Cart (Raeda / Plaustrum)
+    desc: |-
+      The four-wheeled *raeda* carried people and baggage along the great roads; the ox-drawn *plaustrum* hauled freight at a crawl. Slow, but the lifeblood of overland trade.
+    fields:
+    - label: Sil
+      text: '2'
+    - label: Speed
+      text: '1'
+    - label: Handling
+      text: −2
+    - label: Def
+      text: '0'
+    - label: Armor
+      text: '0'
+    - label: HT
+      text: '7'
+    - label: SS
+      text: '3'
+    - label: Control Skill
+      text: Driving
+    - label: Complement
+      text: 1 driver
+    - label: Passengers
+      text: up to 6
+    - label: Enc Cap
+      text: '75'
+    - label: Price/Rarity
+      text: 1,500 / 2
+    type: statblock
+  - name: Liburnian (Light Galley)
+    desc: |-
+      The fast, two-banked warship that became the workhorse of the Imperial navy — patrol, anti-piracy, and dispatch. Drawn from the pirate craft of Illyria.
+    fields:
+    - label: Sil
+      text: '4'
+    - label: Speed
+      text: '4'
+    - label: Handling
+      text: '0'
+    - label: Def
+      text: '1'
+    - label: Armor
+      text: '2'
+    - label: HT
+      text: '20'
+    - label: SS
+      text: '12'
+    - label: Control Skill
+      text: Operating
+    - label: Complement
+      text: ~2 officers, 80 rowers & marines (minion groups)
+    - label: Passengers
+      text: 40 troops
+    - label: Enc Cap
+      text: '150'
+    - label: Price/Rarity
+      text: — / 7 (R, military)
+    - label: Weapons
+      text: |-
+        Bronze ram (fore; Gunnery; Dam 20; Crit 3; Range [Engaged]; Breach 2, Massive 1, Slow-Firing — requires a ramming maneuver). May mount 1–2 light ballistae (see below).
+    type: statblock
+  - name: Trireme (War Galley)
+    desc: |-
+      The classic three-banked galley of Mediterranean warfare — a floating battering-ram crewed by free oarsmen (Rome, unlike legend, rarely used slave rowers in its war fleets).
+    fields:
+    - label: Sil
+      text: '5'
+    - label: Speed
+      text: '3'
+    - label: Handling
+      text: −1
+    - label: Def
+      text: '1'
+    - label: Armor
+      text: '3'
+    - label: HT
+      text: '35'
+    - label: SS
+      text: '20'
+    - label: Control Skill
+      text: Operating
+    - label: Complement
+      text: ~15 officers & sailors, 170 rowers, 40 marines (minion groups)
+    - label: Enc Cap
+      text: '300'
+    - label: Price/Rarity
+      text: — / 8 (R, military)
+    - label: Weapons
+      text: |-
+        Bronze ram (fore; Gunnery; Dam 25; Crit 2; Range [Engaged]; Breach 3, Massive 2, Slow-Firing). Deck ballistae and a boarding-bridge (corvus) optional.
+    type: statblock
+  - name: Merchantman (Corbita)
+    desc: |-
+      The broad-bellied sailing freighter that carried Egyptian grain to feed the million mouths of Rome. Slow, unarmed, and a pirate's dream.
+    fields:
+    - label: Sil
+      text: '5'
+    - label: Speed
+      text: '1'
+    - label: Handling
+      text: −2
+    - label: Def
+      text: '0'
+    - label: Armor
+      text: '1'
+    - label: HT
+      text: '30'
+    - label: SS
+      text: '10'
+    - label: Control Skill
+      text: Operating
+    - label: Complement
+      text: ~10 crew
+    - label: Passengers
+      text: 100+ (deck)
+    - label: Enc Cap
+      text: 2,000
+    - label: Price/Rarity
+      text: 40,000 / 4
+    type: statblock
+  - name: Warhorse / Riding Horse
+    desc: |-
+      Rome fought mainly on foot, but cavalry — auxiliary and allied — scouted, pursued, and flanked. Remember: no stirrups, so mounted fighting is harder than later eras.
+    fields:
+    - label: Sil
+      text: '1'
+    - label: Speed
+      text: 3–4
+    - label: Handling
+      text: '+0'
+    - label: Def
+      text: '0'
+    - label: Armor
+      text: '0'
+    - label: HT
+      text: 5–7
+    - label: Control Skill
+      text: Riding
+    - label: Enc Cap
+      text: '25'
+    - label: Price/Rarity
+      text: 500 (riding) – 2,500 (warhorse) / 2–4
+    - label: Note
+      text: |-
+        Without stirrups, upgrade the difficulty of melee checks made from horseback once unless the rider has a relevant talent or racial training.
+    type: statblock
+  - type: sidebar
+    title: Siege Engines
+    body:
+    - |-
+      **Scorpio** (bolt-thrower): Gunnery; Dam 10; Crit 2; Range [Extreme]; Pierce 3, Prepare 1. **Ballista:** Dam 12; Crit 3; Range [Extreme]; Breach 1, Cumbersome 4, Prepare 2. **Onager** (stone-thrower): Dam 18; Crit 4; Range [Extreme]; Blast 8, Breach 2, Cumbersome 5, Prepare 3, Limited Ammo — by stones at hand. Each legion fielded dozens of the lighter engines.
+- title: Adversaries
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      The people and beasts the characters will face, from the city watch to the war-band beyond the Rhine. As usual, scale an encounter by swapping Minion / Rival / Nemesis versions and adjusting ranks of *Adversary*. Characteristics are listed Brawn / Agility / Intellect / Cunning / Willpower / Presence.
+  - type: h3
+    text: The State & the Legions
+  - name: Legionary
+    kind: Minion
+    desc: |-
+      The professional heavy infantryman of a citizen legion: drilled, armored, and deadly in a block. Alone he is formidable; eight of him are a wall.
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '7'
+      W.T.: '5'
+      Def (M/R): 1/0
+    fields:
+    - label: Skills (group only)
+      text: Athletics, Discipline, Melee, Ranged (Light)
+    - label: Abilities
+      text: |-
+        Shield Wall: while two or more legionaries are engaged together, each gains +1 melee defense.
+    - label: Equipment
+      text: |-
+        Gladius (Melee; Dam 6; Crit 2; Pierce 1), 2 pila (Ranged [Light]; Dam 5; Crit 3; Short; Pierce 2), scutum (+1 def), lorica segmentata & galea (+2 soak, included).
+    type: statblock
+  - name: Auxiliary Archer
+    kind: Minion
+    desc: |-
+      Non-citizen troops — Syrian, Cretan, or Balkan bowmen who gave the legions their missile reach.
+    chars:
+      Br: '2'
+      Ag: '3'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '4'
+      W.T.: '4'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills (group only)
+      text: Ranged (Heavy), Survival, Vigilance
+    - label: Equipment
+      text: |-
+        Composite bow (Ranged [Heavy]; Dam 7; Crit 3; Medium; Unwieldy 2), lorica hamata (+2 soak), dagger.
+    type: statblock
+  - name: Urban Cohort / Vigil (City Watch)
+    kind: Minion
+    desc: |-
+      Rome's watchmen and firefighters — part police, part fire brigade. They keep order in the streets with clubs and buckets, and answer to the Urban Prefect.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '3'
+      W.T.: '4'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills (group only)
+      text: Brawl, Coercion, Perception, Vigilance
+    - label: Abilities
+      text: |-
+        Sound the Alarm: once per encounter, a vigil may summon another watch minion group that arrives in two rounds.
+    - label: Equipment
+      text: Club (Brawl; Dam 4; Crit 5; Disorient 1), staff, fire-bucket & grapnel, leather (+1 soak).
+    type: statblock
+  - name: Centurion
+    kind: Rival
+    desc: |-
+      The hard professional at the heart of the legion — promoted from the ranks, feared by his men, and carrying the vine-staff with which he beats them into line.
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '2'
+      Cun: '3'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '8'
+      W.T.: '16'
+      Def (M/R): 1/0
+    fields:
+    - label: Skills
+      text: |-
+        Coercion 2, Cool 2, Discipline 3, Leadership 2, Melee 3, Ranged (Light) 2, Vigilance 2, Knowledge (Warfare) 2
+    - label: Talents
+      text: |-
+        Adversary 1 (upgrade combat checks against him once); Centurion's Command (Maneuver: Average Leadership — allies within short range may take an immediate maneuver per success); Testudo.
+    - label: Equipment
+      text: |-
+        Gladius (Dam 6; Crit 2; Pierce 1), vine-staff (vitis; Melee; Dam 4; Crit 5; Disorient 1), scutum (+1 def), transverse-crested galea & lorica (+2 soak, included).
+    type: statblock
+  - name: Praetorian Guardsman
+    kind: Rival
+    desc: |-
+      The Emperor's household soldier: elite, pampered, and — when the price is right — a maker and unmaker of emperors.
+    chars:
+      Br: '3'
+      Ag: '3'
+      Int: '2'
+      Cun: '2'
+      Will: '3'
+      Pr: '2'
+    derived:
+      Soak: '7'
+      W.T.: '15'
+      Def (M/R): 1/0
+    fields:
+    - label: Skills
+      text: Brawl 2, Cool 2, Discipline 3, Melee 3, Ranged (Light) 2, Vigilance 3
+    - label: Talents
+      text: |-
+        Adversary 1; Quick Strike (add boost to combat checks against targets that have not yet acted).
+    - label: Equipment
+      text: |-
+        Gladius (Dam 6; Crit 2; Pierce 1), ornate scutum (+1 def), lorica (+2 soak), concealed pugio (Dam 4; Crit 3; Accurate 1).
+    type: statblock
+  - name: Praetorian Prefect
+    kind: Nemesis
+    desc: |-
+      Commander of the Guard and often the second most powerful man in the Empire — Sejanus is the cautionary tale. He rarely draws a sword; he arranges for others to.
+    chars:
+      Br: '3'
+      Ag: '3'
+      Int: '3'
+      Cun: '3'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '7'
+      W.T.: '18'
+      S.T.: '16'
+      Def (M/R): 1/1
+    fields:
+    - label: Skills
+      text: |-
+        Coercion 3, Cool 2, Deception 2, Discipline 3, Leadership 3, Melee 3, Ranged (Light) 2, Vigilance 3, Knowledge (Rome) 2, Knowledge (Warfare) 2
+    - label: Talents
+      text: |-
+        Adversary 2; Imperator (allies within short range add boost to Discipline/Cool/fear checks); Field Commander (Maneuver: Average Leadership lets 3 allies take an immediate maneuver).
+    - label: Abilities
+      text: |-
+        Command the Guard: once per encounter, summon a minion group of Praetorians (minions equal to the PCs) that arrives at the end of the round.
+    - label: Equipment
+      text: Gilded armor (+2 soak), gladius (Dam 6; Crit 2; Pierce 1), the Emperor's ear.
+    type: statblock
+  - name: Senator / Patrician
+    kind: Nemesis
+    desc: |-
+      Among the richest men alive: lawmaker, patron, and intriguer. His weapons are the law, the dinner-party, the mob, and the hired knife — never his own hand.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '3'
+      Pr: '4'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '18'
+      Def (M/R): 1/1
+    fields:
+    - label: Skills
+      text: |-
+        Charm 3, Coercion 2, Deception 3, Discipline 2, Knowledge (Law) 2, Knowledge (Rome) 3, Leadership 2, Negotiation 3
+    - label: Talents
+      text: |-
+        Adversary 2; Nobody's Fool 2 (remove up to 2 setback from checks to deceive/coerce him); Scathing Tirade (Improved) (Average Coercion: enemies in short range suffer strain and add setback to checks).
+    - label: Abilities
+      text: |-
+        Clientela: a Senator travels with a minion group of 2–4 clients/bodyguards. Let’s Make a Deal: if he knows an opponent’s Desire, when he inflicts strain on them they suffer 3 additional strain.
+    - label: Equipment
+      text: |-
+        Toga & signet ring, concealed dagger, a purse that opens any door in Rome, bodyguards (use Bodyguard or Gladiator).
+    type: statblock
+  - name: Lictor
+    kind: Rival
+    desc: |-
+      The magistrate's official attendant and enforcer, bearing the *fasces* — the bundle of rods and axe that is the naked symbol of the state's power to flog and behead.
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '4'
+      W.T.: '12'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills
+      text: Coercion 2, Discipline 2, Melee 2, Vigilance 2
+    - label: Talents
+      text: Adversary 1.
+    - label: Abilities
+      text: |-
+        By the Magistrate’s Authority: add boost to Coercion checks made to compel citizens in the magistrate’s name.
+    - label: Equipment
+      text: Fasces (Melee; Dam 5; Crit 3; Vicious 1), leather (+1 soak).
+    type: statblock
+  - type: h3
+    text: The Arena & the Underworld
+  - name: Gladiator (Murmillo)
+    kind: Rival
+    desc: |-
+      The heavy ‘fish-man’ of the sand: big shield, short sword, crested helm. A crowd favorite built to grind down flashier opponents.
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '3'
+    derived:
+      Soak: '5'
+      W.T.: '14'
+      Def (M/R): 1/0
+    fields:
+    - label: Skills
+      text: Athletics 2, Brawl 2, Cool 2, Coordination 2, Melee 3, Resilience 2
+    - label: Talents
+      text: Adversary 1; Gladiatorial Training (sword); Arena Showmanship.
+    - label: Equipment
+      text: |-
+        Gladius (Dam 6; Crit 2; Pierce 1), great shield (+1 def), manica (Defensive 1), galea (+1 soak).
+    type: statblock
+  - name: Gladiator (Retiarius)
+    kind: Rival
+    desc: |-
+      The net-fighter: lightly armored, fast, and tricky, trying to tangle a heavier foe and finish him with the trident.
+    chars:
+      Br: '2'
+      Ag: '3'
+      Int: '2'
+      Cun: '3'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '3'
+      W.T.: '12'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills
+      text: Athletics 2, Coordination 3, Cool 2, Melee 3, Ranged (Light) 2, Vigilance 2
+    - label: Talents
+      text: Adversary 1; Net and Trident.
+    - label: Equipment
+      text: |-
+        Fuscina (trident; Dam 4; Crit 3; Defensive 1, Pierce 1), rete (net; Ensnare 2, Knockdown), manica & shoulder-guard (galerus; +1 soak).
+    type: statblock
+  - name: Lanista / Crime Boss
+    kind: Nemesis
+    desc: |-
+      Owner of a gladiator school or boss of a *collegium* gang — a dealer in violence who profits whether his fighters live or die, and whose reach runs through every tavern and dockside in the district.
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '2'
+      Cun: '4'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '4'
+      W.T.: '16'
+      S.T.: '16'
+      Def (M/R): 0/1
+    fields:
+    - label: Skills
+      text: |-
+        Coercion 3, Deception 2, Melee 2, Negotiation 2, Streetwise 3, Discipline 2, Knowledge (Rome) 2
+    - label: Talents
+      text: |-
+        Adversary 1; Threaten 2 (after an ally is damaged, suffer 3 strain to inflict 4 strain on the attacker).
+    - label: Abilities
+      text: |-
+        Criminal Assets 3: accompanied by a minion group of 3 (thugs or gladiators) at short range; may redirect a hit to one of them, eliminating it. Bribe: if cornered, offers up to 20,000 HS to walk free.
+    - label: Equipment
+      text: |-
+        Flagellum (whip; Ensnare 1, Disorient 1), concealed dagger, strongbox, a stable of fighters.
+    type: statblock
+  - name: Street Tough / Collegia Thug
+    kind: Minion
+    desc: |-
+      The muscle of the tenement districts: a gang member who smashes windows, collects ‘protection,’ and swings the vote at election time with fists.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '2'
+      Cun: '3'
+      Will: '1'
+      Pr: '2'
+    derived:
+      Soak: '3'
+      W.T.: '4'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills (group only)
+      text: Brawl, Coercion, Melee, Streetwise
+    - label: Equipment
+      text: Cudgel (Brawl; Dam 4; Crit 5; Disorient 1), knife (Dam 3; Crit 3), ragged tunic.
+    type: statblock
+  - name: Bandit / Latro
+    kind: Rival
+    desc: |-
+      Deserter, runaway, or desperate provincial turned highway robber. The roads between cities are only as safe as the nearest patrol.
+    chars:
+      Br: '2'
+      Ag: '3'
+      Int: '2'
+      Cun: '3'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '4'
+      W.T.: '12'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills
+      text: Coercion 2, Melee 2, Ranged (Light) 2, Stealth 3, Streetwise 2, Survival 2
+    - label: Talents
+      text: Adversary 1.
+    - label: Abilities
+      text: 'Ambush: add boost boost to the first check against a surprised target.'
+    - label: Equipment
+      text: Sword or spear (Dam 5–6; Crit 2–4), sling or bow, leather (+1 soak), stolen goods.
+    type: statblock
+  - name: Pirate
+    kind: Rival
+    desc: |-
+      Though Pompey had broken the great pirate fleets, raiders still haunted the eastern seas and river deltas, preying on grain ships and coastal towns.
+    chars:
+      Br: '3'
+      Ag: '3'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '4'
+      W.T.: '12'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills
+      text: Athletics 2, Coordination 2, Melee 2, Operating 2, Ranged (Light) 1, Vigilance 2
+    - label: Talents
+      text: Adversary 1.
+    - label: Equipment
+      text: Boarding axe or spatha (Dam 6; Crit 2), grapnels & rope, leather (+1 soak).
+    type: statblock
+  - type: h3
+    text: Enemies of Rome
+  - name: Barbarian Warrior
+    kind: Minion
+    desc: |-
+      German, Gaul, Briton, or Dacian: individually a fierce fighter with more courage than discipline, dangerous in the ambush and the first wild charge.
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '4'
+      W.T.: '5'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills (group only)
+      text: Brawl, Melee, Resilience, Survival
+    - label: Abilities
+      text: 'Furious Charge: add boost to melee checks on a round the warrior engaged a new target.'
+    - label: Equipment
+      text: Spear or long blade (Dam 5–6; Crit 3), oval shield (+1 def), furs (+1 soak).
+    type: statblock
+  - name: Parthian Cataphract
+    kind: Rival
+    desc: |-
+      The armored lancer of the East — horse and rider sheathed in scale — the heavy cavalry that annihilated Crassus at Carrhae. Paired with horse-archers, nearly unanswerable in open country.
+    chars:
+      Br: '3'
+      Ag: '3'
+      Int: '2'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '8'
+      W.T.: '14'
+      Def (M/R): 1/1
+    fields:
+    - label: Skills
+      text: Melee 3, Ranged (Heavy) 2, Resilience 2, Riding 3
+    - label: Talents
+      text: Adversary 1.
+    - label: Abilities
+      text: |-
+        Thunderous Charge: when attacking from a mounted charge with the kontos, add success and the Knockdown quality.
+    - label: Equipment
+      text: |-
+        Kontos (lance; Melee; Dam 6; Crit 3; Cumbersome 3, Pierce 2), composite bow, scale armor & barding (+2 soak, included), armored warhorse.
+    type: statblock
+  - name: Barbarian Warlord
+    kind: Nemesis
+    desc: |-
+      The chieftain who has bound a dozen tribes into a host — an Arminius or a Decebalus — charismatic, cunning, and the one enemy who can make Rome bleed on its own terms.
+    chars:
+      Br: '4'
+      Ag: '3'
+      Int: '2'
+      Cun: '3'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '6'
+      W.T.: '20'
+      S.T.: '15'
+      Def (M/R): 1/0
+    fields:
+    - label: Skills
+      text: Brawl 2, Coercion 3, Cool 2, Leadership 3, Melee 4, Resilience 3, Survival 2
+    - label: Talents
+      text: |-
+        Adversary 2; Frenzy 2 (add success to melee checks, suffer setback to be hit); Inspiring Rhetoric (rally the war-band).
+    - label: Abilities
+      text: |-
+        War Host: once per encounter, summon a minion group of barbarian warriors (minions equal to the PCs).
+    - label: Equipment
+      text: |-
+        Great blade or spatha (Dam 7; Crit 2; Pierce 1), shield (+1 def), captured mail & gold torcs (+2 soak).
+    type: statblock
+  - name: Druid / Eastern Mystic
+    kind: Nemesis
+    desc: |-
+      Keeper of forbidden rites — a Gaulish druid Rome outlawed, an Egyptian temple-sorcerer, a prophet of a jealous god. In a [[Grounded]] Rome his power is fear and influence; in a [[Mythic]] one, it is terribly real.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '4'
+      Cun: '3'
+      Will: '4'
+      Pr: '3'
+    derived:
+      Soak: '3'
+      W.T.: '12'
+      S.T.: '16'
+      Def (M/R): 0/1
+    fields:
+    - label: Skills
+      text: |-
+        Charm 2, Coercion 3, Cool 2, Discipline 3, Knowledge (the Gods) 4, Vigilance 2 — (Mythic Rome:) one magic skill 3
+    - label: Talents
+      text: |-
+        Adversary 1; Dark Insight (may use Knowledge (the Gods) in place of a social skill when invoking the divine).
+    - label: Abilities
+      text: |-
+        Curse (fear): as an action, target makes a Hard Discipline check or suffers 3 strain and adds setback to checks for the encounter. Omens: once per session, foresee an event and gain a Story Point.
+    - label: Equipment
+      text: Ritual knife, herbs and relics, the dread of those who believe.
+    type: statblock
+  - type: h3
+    text: Beasts of the Arena & the Wild
+  - name: Lion
+    kind: Rival
+    desc: |-
+      Star of the *venatio* (beast-hunt) and executioner of the condemned. Shipped from Africa in their thousands to die — and to kill — on the sand.
+    chars:
+      Br: '4'
+      Ag: '3'
+      Int: '1'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '5'
+      W.T.: '16'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills
+      text: Brawl 3, Coordination 2, Perception 2, Vigilance 2
+    - label: Abilities
+      text: 'Pounce: may engage a target up to short range as part of a combat check. Fearsome 2.'
+    - label: Equipment
+      text: Claws & fangs (Brawl; Dam 7; Crit 3; Pierce 1, Vicious 1).
+    type: statblock
+  - name: Bear / Aurochs
+    kind: Rival
+    desc: |-
+      The great beasts of the northern forests, hauled south to maul criminals and gladiators — or pitted against each other for the mob's delight.
+    chars:
+      Br: '5'
+      Ag: '1'
+      Int: '1'
+      Cun: '2'
+      Will: '3'
+      Pr: '1'
+    derived:
+      Soak: '6'
+      W.T.: '20'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills
+      text: Brawl 3, Resilience 3, Vigilance 1
+    - label: Abilities
+      text: 'Fearsome 2. Swipe: on a hit, may spend advantage advantage to knock the target prone.'
+    - label: Equipment
+      text: Claws / horns (Brawl; Dam 8; Crit 3; Knockdown).
+    type: statblock
+  - name: War Elephant
+    kind: Nemesis
+    desc: |-
+      Rare by the Imperial era but unforgettable — a living siege-tower that tramples ranks and panics horses, as fearsome to its own side as the enemy when it breaks.
+    chars:
+      Br: '6'
+      Ag: '1'
+      Int: '1'
+      Cun: '2'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '8'
+      W.T.: '30'
+      S.T.: '12'
+      Def (M/R): 0/0
+    fields:
+    - label: Skills
+      text: Brawl 3, Resilience 3
+    - label: Abilities
+      text: |-
+        Silhouette 2. Fearsome 3. Trample: when it moves through engaged enemies, each suffers a Brawl hit. Panic: if it suffers a Critical Injury, it may rampage uncontrolled (GM's discretion).
+    - label: Equipment
+      text: Tusks & bulk (Brawl; Dam 10; Crit 3; Knockdown, Vicious 2), tower with 2–3 archers.
+    type: statblock
+- title: The Theater of Power
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      Genesys models a conversation as a kind of combat — opposed social checks, **strain** as the health bar of an argument, and **Motivations** as the soft points in a target's guard. No historical setting rewards that framework like Rome, a civilization where a man could be destroyed in the Forum without a blade being drawn, and where the Senate, the law-court, and the dinner-couch were the real battlefields. This chapter supplies Roman tools that plug directly into the Social Encounters rules (Core Rulebook, Chapter 7): a reputation economy, four set-piece encounter structures (the **speech**, the **Senate**, the **court**, and the **salutatio**), Roman Motivation tables, new talents and gear, and purely social adversaries to be beaten with words.
+  - type: p
+    style: body
+    text: |-
+      *Everything here is an overlay on the standard rules.* Inflicting strain, compromise at half the strain threshold, capitulation above it, the [[advantage]]/[[triumph]] and [[threat]]/[[despair]] spends, learning a Motivation facet, and the group-size difficulty table all work exactly as written. The Roman flavor is in *which* skill fits, *which* Motivation is exposed, and *what the stakes are.*
+  - type: h3
+    text: 'Dignitas & Auctoritas: The Reputation Economy'
+  - type: p
+    style: body
+    text: |-
+      A Roman was his reputation. **Dignitas** is a character's public standing — the accumulated weight of ancestry, offices held, favors owed, and victories won. It is an optional setting trait rated **0–5**, set at creation by status and changed in play.
+  - type: table
+    style: gear
+    columns:
+    - Starting Dignitas
+    - Who
+    - Dignitas
+    rows:
+    - - Slave / outlaw / infamis
+      - No standing in law; an actor or gladiator is *infamis*
+      - '0'
+    - - Commoner / freedman / provincial
+      - A free plebeian, a *libertus*, a *peregrinus*
+      - '1'
+    - - Equestrian / notable
+      - A wealthy knight, officer, or respected local
+      - '2'
+    - - Senatorial family
+      - A senator or his heir
+      - '3'
+    - - Ex-magistrate (consular)
+      - One who has held the great offices; a famous general
+      - '4'
+    - - First men of the state
+      - The *princeps senatus*, the imperial house
+      - '5'
+  - type: p
+    style: body
+    text: '**What Dignitas does:**'
+  - type: list
+    items:
+    - |-
+      **It armors your reputation.** When another character makes a social check to *shame, discredit, insult, or publicly coerce* your character, they add [[setback]] equal to the amount your Dignitas exceeds theirs (to a maximum of two [[setback]]). The high and mighty are simply harder to bring low.
+    - |-
+      **It lends weight to authority.** When your character makes an *Ethos* appeal (see Oratory) or any social check that leans on their standing, add [[boost]] if their Dignitas is 3+, or [[boost boost]] if it is 5.
+    - |-
+      **It funds Auctoritas.** At the start of any social set-piece, your character gains a pool of **Auctoritas** equal to their Dignitas (minimum 1). Each point may be spent as an incidental to add [[boost]] to a social check, to a crowd/vote track, or to a favor — the influence their name buys in the room. The pool refreshes each set-piece.
+  - type: p
+    style: body
+    text: |-
+      **Gaining and losing it.** The GM raises a character's Dignitas by 1 for a landmark public success — winning a notorious trial, election to a great office, sponsoring magnificent games, a military triumph, saving a citizen's life (the *corona civica*). It falls by 1 for *infamia*: losing such a trial, public cowardice or bankruptcy, a ruinous scandal, or conviction for a crime. Dignitas is slow to earn and ruinous to lose — which is precisely why Romans killed for it.
+  - type: h3
+    text: Roman Motivations
+  - type: p
+    style: body
+    text: |-
+      Give every recurring Roman NPC (and encourage players to give their characters) Motivations from the lists below, used exactly as in the Core Rulebook: work *with* a Strength or Flaw to add [[boost]]; work *with* a Desire or Fear to add [[boost boost]]; work against them to add [[setback]] or [[setback setback]]. Players learn an NPC's Strength/Flaw by spending [[advantage advantage]], a Desire/Fear with [[advantage advantage advantage]], or any facet with a [[triumph]].
+  - type: table
+    style: motiv
+    columns:
+    - d10
+    - Desire (what they chase)
+    - Fear (what they dread)
+    rows:
+    - - '1'
+      - '**Gloria** — fame that outlives them'
+      - '**Obscurity** — to be forgotten, a nobody'
+    - - '2'
+      - '**The consulship** / high office'
+      - '**Exile** — banishment from Rome'
+    - - '3'
+      - '**Wealth** — estates, slaves, silver'
+      - '**Poverty & debt** — the shame of the ruined'
+    - - '4'
+      - '**Vengeance** on a rival house'
+      - "**A powerful enemy's malice**"
+    - - '5'
+      - '**Freedom** / citizenship (for the enslaved)'
+      - '**The mob** — riot, lynching, the arena'
+    - - '6'
+      - '**Pleasure** — luxury, love, the table'
+      - "**The Emperor's suspicion**"
+    - - '7'
+      - '**The old Republic** / restoring virtue'
+      - '**Impiety** — angering the gods, bad omens'
+    - - '8'
+      - "**Family** — heirs, the line's honor"
+      - '**Betrayal** by a friend or freedman'
+    - - '9'
+      - '**Knowledge** — philosophy, the mysteries'
+      - "**Loss of face** before one's peers"
+    - - '10'
+      - '**Power** for its own sake — the purple itself'
+      - '**Death without a good name**'
+  - type: table
+    style: motiv
+    columns:
+    - d10
+    - Strength (what steadies them)
+    - Flaw (what undoes them)
+    rows:
+    - - '1'
+      - '**Gravitas** — unshakeable dignity'
+      - '**Pride** — cannot bear a slight'
+    - - '2'
+      - '**Eloquence** — a golden tongue'
+      - '**Avarice** — greed clouds judgment'
+    - - '3'
+      - '**Loyalty** — to patron, legion, or friend'
+      - '**Lust** / appetite — a notorious weakness'
+    - - '4'
+      - '**Piety** — the gods on their side'
+      - '**Superstition** — ruled by omens'
+    - - '5'
+      - '**Cunning** — the long game'
+      - '**Cruelty** — overreaches, makes enemies'
+    - - '6'
+      - '**Discipline** — Stoic self-command'
+      - '**Rashness** — acts before thinking'
+    - - '7'
+      - '**Generosity** — a famous patron'
+      - '**Vanity** — easily flattered'
+    - - '8'
+      - '**Industry** — tireless, competent'
+      - '**Drink / the dice** — a vice to exploit'
+    - - '9'
+      - '**Courage** — faces down the mob'
+      - '**A guilty secret** — a lever for blackmail'
+    - - '10'
+      - '**Nobility** — the weight of ancestors'
+      - '**Naivety** — trusts the wrong people'
+  - type: h3
+    text: 'Oratory: The Set-Piece Speech'
+  - type: p
+    style: body
+    text: |-
+      The trained speech was the Roman superweapon — years of Greek schooling turned into a performance that could carry a vote, acquit a murderer, or turn a crowd into a weapon. Run a major speech as a short structured social encounter (3–5 rounds) against an **audience**, treating the audience as a single target with a **strain threshold** set by its size and mood. Exceed the threshold and the audience is *won* (the motion carries, the verdict swings, the mob is yours); exceed half and you win a **partial** result (a hung outcome, a divided crowd).
+  - type: table
+    style: gear
+    columns:
+    - Audience
+    - Size
+    - Check difficulty
+    - Strain threshold
+    rows:
+    - - A dinner-table, a handful of senators
+      - 2–5
+      - Average ( ●● )
+      - '10'
+    - - A jury, a committee, a cohort
+      - 6–15
+      - Hard ( ●●● )
+      - '14'
+    - - The full Senate, a theatre
+      - 16–50
+      - Daunting ( ●●●● )
+      - '18'
+    - - The Forum mob, the Circus
+      - 51+
+      - Formidable ( ●●●●● )
+      - '22'
+  - type: p
+    style: body
+    text: |-
+      Adjust the threshold by ±4 for an audience already hostile or already sympathetic. On each of the orator's turns they make **one appeal** — a social check that inflicts strain as normal (1, plus 1 per uncanceled [[advantage]]). The three classical appeals map cleanly to Genesys social skills:
+  - type: list
+    items:
+    - |-
+      **Ethos — authority and character.** *Leadership* or *Charm.* “I, who have served Rome for thirty years, tell you…” Add the Dignitas bonus.
+    - |-
+      **Pathos — emotion.** *Charm* (to inspire love, hope, pity) or *Coercion* (to rouse fear, anger, hatred). The crowd's favorite.
+    - |-
+      **Logos — reason and proof.** *Negotiation*, or first spend a maneuver on a *Knowledge (Law)* or *Knowledge (Rome)* check to marshal evidence and **upgrade** the following appeal.
+  - type: p
+    style: body
+    text: |-
+      **Working the audience's Motivation** (give a crowd a collective Desire and Fear — the plebs *desire* grain and games, and *fear* hunger and foreign kings) adds [[boost boost]] as usual. A hostile orator may spend their turn **heckling** (an opposed Coercion or Deception check) to inflict strain back on the speaker and add [[setback]] to their next appeal.
+  - type: procedure
+    title: The Five Parts (optional maneuvers & once-per-speech beats)
+    steps:
+    - |-
+      **Exordium** (opening): a maneuver — a disarming *captatio benevolentiae*. Add [[boost]] to the first appeal.
+    - '**Narratio** (the facts): a *Knowledge* maneuver that upgrades the next *Logos* appeal.'
+    - '**Confirmatio** (proof): your strongest *Logos* appeal.'
+    - |-
+      **Refutatio** (rebuttal): an action that removes an opposing orator's banked [[advantage]] / crowd goodwill, or adds [[setback setback]] to their next appeal.
+    - |-
+      **Peroratio** (climax): a final *Pathos* appeal. If it generates a [[triumph]] or [[advantage advantage advantage advantage]], it lands as a **Critical Remark** (5 strain) — the moment the hall erupts.
+  - type: example
+    text: |-
+      Example — Marcus before the mob. The aedile Marcus (Dignitas 2) must calm a bread-riot (Forum mob: Formidable, threshold 22). **Round 1 — Exordium + Ethos:** he opens humbly (maneuver: [[boost]]) then invokes his record feeding them (Charm, +boost from exordium). He rolls 2 successes, 2 advantage → 3 strain, and spends the [[advantage advantage]] to learn the crowd's Fear: *hunger*. **Round 2 — Narratio + Logos:** a Knowledge (Rome) maneuver recalls the grain-fleet's arrival (upgrade), then Negotiation promising a distribution, now adding [[boost boost]] for playing to their Fear. The upgraded pool throws a [[triumph]] → a Critical Remark, 5 strain, “the ships are in the Tiber *tonight!*” Total 8+ strain, past half-threshold — the riot sags into a wary cheer. One more good round and they are his.
+  - type: h3
+    text: 'The Senate: A Contest of Blocs'
+  - type: p
+    style: body
+    text: |-
+      A Senate debate is a tug-of-war over a motion (a *senatus consultum*). Model the undecided house as 2–4 **bloc** minion groups — e.g., the *Old Guard* (traditionalists), the *Novi Homines* (ambitious new men), the *Military Clique*, and the *Emperor's Men* — each with a vote-weight and a Discipline/Cool to resist. Speakers (PC and NPC) take turns delivering appeals (as Oratory, above) aimed at a chosen bloc; inflicting strain past that bloc's wound threshold **commits** its votes to that side. When every bloc has committed (or the session ends), tally the votes.
+  - type: procedure
+    title: Procedural Trump Cards
+    steps:
+    - |-
+      **Relatio & sententiae.** The presiding consul sets the motion and calls senators to speak *in order of rank* — the *princeps senatus* first. High Dignitas literally speaks first, framing the debate (add [[boost]] to the opening side).
+    - |-
+      **Intercessio — the Tribune's veto.** A Tribune of the Plebs may, once per session, veto the motion outright: a hard stop. The only answers are to win the tribune over in a side social encounter, out-wait him, or… arrange that he is not present.
+    - |-
+      **Obnuntiatio — the omens.** A magistrate or augur who “observes the sky” and declares the auspices unfavorable (Knowledge (the Gods)) suspends all business for the day. A classic delaying tactic (and a plot hook, if the omens are faked).
+    - |-
+      **Filibuster.** Talk until nightfall ends the session with no vote (Cato's trick). Resolve as an endurance contest — repeated Discipline or Resilience checks against rising difficulty.
+    - |-
+      **The Emperor's known wish.** If the *princeps* is believed to favor a side, every check for the other side suffers [[setback]] — and generating a [[despair]] may earn a *delator's* whispered report (see below).
+  - type: example
+    text: |-
+      Example — swinging the Old Guard. The PCs back a motion to grant a frontier command. The Old Guard bloc (threshold 12) leans against. A PC with Senatorial Connections opens with Ethos, inflicts 4, then spends [[advantage advantage advantage]] to learn the bloc's collective Fear: *a new Caesar*. Next round, Logos reframes the command as temporary and defensive — [[boost boost]] for the Fear — 5 more strain, bloc committed. But a hostile Tribune raises *intercessio*; the party must spend a scene persuading (or compromising) him before the *discessio* (division) can be called.
+  - type: h3
+    text: 'The Courtroom: Advocacy'
+  - type: p
+    style: body
+    text: |-
+      Run a Roman trial as a speech-contest with the **jury** (*iudices*) as the audience. Prosecutor and defender alternate appeals against the jury's strain threshold; exceed it to carry the verdict. Roman advocacy was gloriously dirty — the law mattered less than the performance.
+  - type: list
+    items:
+    - |-
+      **Knowledge (Law)** as a maneuver marshals statute and precedent, upgrading the next appeal (your *Logos*).
+    - |-
+      **Witnesses & evidence** are banked [[boost]] (helpful) or [[setback]] (hostile) the GM hands out; discrediting a witness (opposed Coercion/Deception) flips one.
+    - |-
+      **Character assassination** — attack the opposing party's reputation directly, targeting a known Flaw (Coercion/Deception) to inflict strain on *their* advocate and lower their Dignitas for the scene.
+    - |-
+      **Appeal to pity** — the weeping family, the old general baring his scars — is a *Pathos* appeal with a prop, adding [[boost boost]]. Cicero won cases this way.
+  - type: h3
+    text: The Salutatio & the Favor Economy
+  - type: p
+    style: body
+    text: |-
+      Every morning, clients call on their patron (the *salutatio*) to pay respects and ask favors; the patron hands out the *sportula* (a dole of coin or food) and banks their loyalty. Mechanize this web with **Favors**: tradeable tokens representing a specific obligation owed.
+  - type: procedure
+    title: Using Favors
+    steps:
+    - |-
+      A character **banks a Favor** by doing a meaningful service, winning one in a social encounter (a capitulation can be “you owe me”), or via the *Client Network* / *Patronus* talents.
+    - |-
+      **Spend a Favor** to call in a concrete, bounded help from that person: a letter of introduction, a sum of coin, a door opened, a witness produced, a vote in the Senate, a blind eye turned.
+    - |-
+      Favors have a **face**: a Favor from a senator is worth more than one from a shopkeeper. The GM caps what any single Favor can buy by the grantor's Dignitas and the risk involved.
+    - |-
+      **Breaking faith** — refusing a reasonable call on a Favor you owe — costs 1 Dignitas and makes an enemy. Rome remembered.
+  - type: p
+    style: body
+    text: |-
+      The same frame runs the **convivium** (dinner party), where seating is position — the place of honor (*locus consularis*) grants its occupant [[boost]] to social checks — and the intimacy lets guests learn one another's Motivations a step cheaper; and the **election**, a canvass that targets the voting tribes as blocs, won with promises, games, the *sportula*, and (illegally) outright bribery — *ambitus*, a [[triumph]]-worthy gamble that courts a ruinous prosecution if a [[despair]] turns up.
+- title: Social Tools & Adversaries
+  blocks:
+  - type: h3
+    text: New Social Talents
+  - type: h4
+    text: Morning Clients  (Tier 1 · Passive)
+  - type: p
+    style: body
+    text: |-
+      Your character begins each session with a number of banked Favors equal to their Dignitas (minimum 1), from petty clients met at the *salutatio*. These expire at session's end if unused.
+  - type: h4
+    text: Nomenclator's Whisper  (Tier 1 · Active, Incidental)
+  - type: p
+    style: body
+    text: |-
+      Once per social encounter, your character (or their accompanying *nomenclator* slave) recalls a stranger's name, family, and weakness: make an Average Knowledge (Rome) check; on success, immediately learn one Strength or Flaw of a present character without spending [[advantage]].
+  - type: h4
+    text: Captatio Benevolentiae  (Tier 2 · Active, Maneuver)
+  - type: p
+    style: body
+    text: |-
+      When your character opens a speech or social encounter, they may make this disarming overture: add [[boost boost]] to their first social check, and remove [[setback]] from it equal to their ranks in Charm.
+  - type: h4
+    text: Cross-Examine  (Tier 2 · Active, Action)
+  - type: p
+    style: body
+    text: |-
+      Make an opposed Coercion or Deception check against a target. On success, you learn whether a statement they made is a lie, and inflict strain as normal; with [[advantage advantage]], flip one of the target's banked [[boost]] (a witness, an alibi) into a [[setback]].
+  - type: h4
+    text: Filibuster  (Tier 2 · Active, Action · Ranked)
+  - type: p
+    style: body
+    text: |-
+      Your character may speak to run out the clock. Once per encounter per rank, make a Resilience check; each success adds a “round” to the time a formal body must wait before it can vote or act.
+  - type: h4
+    text: Patronus  (Tier 3 · Passive)
+  - type: p
+    style: body
+    text: |-
+      Charm, Leadership, and Knowledge (Rome) are career skills for your character. Once per session they may spend a Story Point to produce an appropriate client — a witness, a thug, a craftsman, a minor official — who owes them a Favor and arrives when needed.
+  - type: h4
+    text: Demagogue  (Tier 3 · Active, Action)
+  - type: p
+    style: body
+    text: |-
+      When addressing a crowd of 16 or more, your character may make a single Coercion or Charm check against the whole audience at once (using the group-size difficulty). On success the crowd takes one collective action your character names — cheer, disperse, march, or riot.
+  - type: h4
+    text: Consular Gravitas  (Tier 4 · Passive)
+  - type: p
+    style: body
+    text: |-
+      Your character's Dignitas counts as 1 higher for the purpose of its armoring and authority effects, and when they speak first in a formal body, their side adds [[boost boost]] rather than [[boost]].
+  - type: h4
+    text: Devastating Peroration  (Tier 4 · Active, Action)
+  - type: p
+    style: body
+    text: |-
+      Once per encounter, when making a Pathos appeal, your character may suffer 3 strain to treat the check as having rolled one additional [[triumph]] for the purpose of landing a Critical Remark.
+  - type: h4
+    text: Pater Patriae  (Tier 5 · Passive)
+  - type: p
+    style: body
+    text: |-
+      Allies within earshot of your character add [[boost]] to all social checks, and treat crowds as one step more sympathetic. Once per session, your character may spend a Story Point to cause a hostile crowd or committee to grant them a single hearing, no matter the circumstances — the authority of a living institution.
+  - type: h3
+    text: Social Gear & Traits
+  - type: p
+    style: body
+    text: |-
+      **Toga Candida:** the whitened toga of the election candidate (*candidatus*); adds [[boost]] to canvassing checks and marks you, for better or worse, as a man seeking power. — **Litterae Commendaticiae** (letter of recommendation): a named patron's written favor; spend it as a Favor, or add [[boost boost]] to a single first-meeting social check with its addressee. — **Nomenclator:** an educated slave who whispers the names and histories of those you meet; grants the benefit of the *Nomenclator's Whisper* talent once per scene even to an owner who lacks the talent. — **A Claque:** a hired body of applauders (treat as a minion group); while present, your character may spend their reactions to bank [[boost]] for the crowd-mood of a speech. — **A Dossier of Dirt:** evidence of a target's guilty secret; reveals one Flaw automatically and, if made public, costs the target 1 Dignitas — the *delator's* stock-in-trade. — **A Well-Placed Bribe:** coin as an argument; adds [[boost]] to a Negotiation or Coercion check per 1,000 HS offered (max [[boost boost boost]]), but a [[despair]] means it is remembered, and talked about.
+  - type: h3
+    text: Adversaries of the Forum
+  - type: p
+    style: lead
+    text: |-
+      Opponents meant to be beaten with words, not blades. Each carries Motivations ready to exploit — or to be exploited by.
+  - name: Delator (Informer)
+    kind: Nemesis
+    desc: |-
+      The professional accuser: a man who makes his fortune denouncing the rich to the Emperor and pocketing a share of their confiscated estates. Smiling, well-dressed, and feared in every dining room.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '4'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '3'
+      W.T.: '13'
+      S.T.: '17'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: "Desire: wealth. Fear: a powerful enemy's malice. Strength: cunning. Flaw: avarice."
+    - label: Skills
+      text: |-
+        Charm 2, Coercion 3, Deception 4, Knowledge (Law) 3, Knowledge (Rome) 2, Streetwise 2, Vigilance 2
+    - label: Talents
+      text: Adversary 1; Cross-Examine; Nobody's Fool 1.
+    - label: Abilities
+      text: |-
+        Dossier of Dirt: begins any social scene knowing one Flaw of each PC. Denunciation: may spend a triumph or a Story Point to open a treason case against a target — a legal threat resolved in a later encounter.
+    - label: Standing
+      text: Dignitas 2 — and climbing on other men's ruin.
+    type: statblock
+  - name: Popularis Tribune (Demagogue)
+    kind: Nemesis
+    desc: |-
+      A tribune of the plebs who has learned that the mob is a weapon. He champions the poor, the grain dole, and land reform — sincerely, cynically, or both — and can veto the Senate and summon a riot in an afternoon.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '4'
+      Pr: '4'
+    derived:
+      Soak: '3'
+      W.T.: '14'
+      S.T.: '18'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: "Desire: power / the people's love. Fear: obscurity. Strength: eloquence. Flaw: vanity."
+    - label: Skills
+      text: |-
+        Charm 3, Coercion 3, Deception 2, Knowledge (Rome) 2, Leadership 3, Negotiation 2, Streetwise 2
+    - label: Talents
+      text: Adversary 1; Demagogue; Scathing Tirade.
+    - label: Abilities
+      text: |-
+        Intercessio: once per Senate encounter, veto a motion outright (see The Senate). Voice of the Mob: may rally a Forum crowd to a single collective action.
+    - label: Standing
+      text: Dignitas 3 (sacrosanct — his person is legally inviolable).
+    type: statblock
+  - name: Matrona (The Grande Dame)
+    kind: Nemesis
+    desc: |-
+      A great lady of a senatorial house — a Livia, a Servilia — who wields through sons, lovers, and letters a power no office could give a woman. Underestimate her and be destroyed.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '4'
+      Will: '4'
+      Pr: '4'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '19'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: family's ascent. Fear: her line's disgrace. Strength: patience / the long game. Flaw: pride.
+    - label: Skills
+      text: Charm 3, Coercion 2, Deception 3, Knowledge (Rome) 3, Negotiation 3, Vigilance 2
+    - label: Talents
+      text: Adversary 2; Patronus; Nobody's Fool 2.
+    - label: Abilities
+      text: |-
+        Web of Letters: may call in a Favor from almost any great house once per session. Poisoner's Reputation: adds boost to Coercion through sheer dread of what she might do.
+    - label: Standing
+      text: Dignitas 4 (through her house and her dead).
+    type: statblock
+  - name: Stoic Philosopher (Advisor)
+    kind: Rival
+    desc: |-
+      The learned Greek or Roman who sits at a great man's elbow — a Seneca — and whose counsel can steady an empire or, misjudged, flatter a tyrant into ruin. An ally as often as an obstacle.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '4'
+      Cun: '3'
+      Will: '4'
+      Pr: '3'
+    derived:
+      Soak: '3'
+      W.T.: '13'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: |-
+        Desire: knowledge / virtue. Fear: impiety to reason. Strength: discipline. Flaw: a guilty compromise with power.
+    - label: Skills
+      text: Charm 2, Cool 3, Discipline 3, Knowledge (the Gods) 2, Knowledge (Rome) 3, Negotiation 2
+    - label: Talents
+      text: Adversary 1; Stoic Discipline 2; Master Orator.
+    - label: Abilities
+      text: |-
+        Counsel: as an action, grant an ally within earshot boost boost on their next social or Discipline check and remove a point of strain.
+    - label: Standing
+      text: Dignitas 2 (the authority of wisdom, not of office).
+    type: statblock
+- title: Starter Scenarios
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      Three ready-to-run scenarios, each drawn from a real episode of Roman history, and each built in the three-act shape of a published one-shot: a **synopsis** for the GM, **acts** broken into scenes with *read-aloud* boxes, GM notes on “what's really going on,” suggested skill checks, and a **conclusion** with rewards. Adversaries refer to the stat blocks earlier in this book; a scenario's named villain gets a quick custom profile. Together they exercise the whole toolkit — intrigue and the Senate, the law-court, and the burning city — and lean hard on the social engine in *The Theater of Power.*
+  - type: p
+    style: small
+    text: |-
+      **On era:** these events belong to the late Republic and early Empire (70–63 BCE and 64 CE). Run them in their own period, or shift them into the default High Empire by swapping “consul” for “Prefect,” “Senate vote” for “the Emperor's council,” and the named historicals for original figures — the bones work in any Roman century. **Rewards** assume 15–20 XP per scenario and note Dignitas/Favor changes that feed the reputation economy.
+  - type: scenario
+    text: I. The Enemy Within
+  - type: synopsis
+    text: |-
+      Rome, 63 BCE. A bankrupt, charismatic aristocrat — Lucius Sergius **Catilina** — is plotting to murder the consuls, burn the city, and cancel all debts in the chaos. The consul Cicero knows something is afoot but cannot prove it. The PCs are his agents (or the city's *tresviri*/watch). Over three acts they survive an assassination, spring a trap to seize written proof, and then win — or lose — the **Senate debate** that decides whether captured conspirators die without trial. A showcase for investigation, intrigue, and the Senate rules.
+  - type: p
+    style: act
+    text: Act I — The Knock at Dawn
+  - type: readaloud
+    text: |-
+      Before cock-crow, a hammering at the door. Your patron's man is breathless: “Two strangers came to kill the consul in his bed this very hour — turned away at the door. The master wants you. There is a plot, and he must have proof before the Senate will believe a word of it.”
+  - type: p
+    style: body
+    text: |-
+      The PCs are set to uncover Catiline's conspiracy. Starting threads: question the would-be assassins' contacts in the Subura; shadow known malcontents — indebted nobles and Sulla's dispossessed veterans; trace a rumor that the plotters mean to rise in **Etruria** under the old centurion **Manlius**.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** Catiline is real, the plot is real, but he is untouchable — a senator with friends — until the PCs produce *physical, written* evidence. Combat here is a street ambush by hired muscle (*Street Tough* minions, 1 *Bandit/Latro* rival) meant to scare the PCs off.
+  - type: p
+    style: act
+    text: Act II — The Trap at the Bridge
+  - type: p
+    style: body
+    text: |-
+      The PCs learn the conspirators are courting a visiting embassy of the Gallic **Allobroges** — promising them debt relief for a rebellion in Gaul. The envoys are wavering. The play: persuade the Allobroges to turn double-agent and demand *signed letters* from the plotters as “proof of good faith,” then intercept those letters as the envoys leave the city by night over the **Mulvian Bridge**.
+  - type: readaloud
+    text: |-
+      The torches of the envoys' escort bob toward the Mulvian Bridge. Somewhere in a saddlebag ride letters sealed with the rings of men who dine at the best tables in Rome — enough to hang them all. Across the span, you hear the escort's hooves slow. It is time.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** this is the historical masterstroke — the plot was broken by paperwork, not swords. Reward clever capture of the sealed letters; a botched grab means the PCs must testify on their own word in Act III, with every check upgraded.
+  - type: p
+    style: act
+    text: Act III — The Senate Decides
+  - type: p
+    style: body
+    text: |-
+      With ringleaders arrested and the letters read aloud, one question remains and it tears the Senate apart: **execute Roman citizens without trial?** Run this as the Senate contest from *The Theater of Power.* Blocs: the *Hardliners* (behind Cato, for death), the *Moderates* (behind Caesar, for life imprisonment), and the *Undecided*. The PCs speak, sway blocs, and manage the trump cards.
+  - type: readaloud
+    text: |-
+      Cicero yields the floor. A young Gaius Julius Caesar rises: “Death is a release from suffering, not a punishment… I propose their property be seized and their persons confined.” A cold silence — then Marcus Cato, on his feet, voice like a hammer: “We have talked long enough. While we debate, the enemy is at the gates. These men are traitors. Let them die as traitors.” Every eye turns to you.
+  - type: p
+    style: body
+    text: |-
+      **The choice:** there is no “correct” outcome. Execution ends the crisis but stains everyone who voted for it (history hounded Cicero into exile for exactly this). Clemency is lawful but leaves live enemies. Let the PCs own the consequence.
+  - name: Lucius Sergius Catilina
+    kind: Nemesis
+    desc: |-
+      Ruined nobility turned revolutionary — magnetic, fearless, genuinely dangerous. If cornered in Rome he flees to Manlius's army in Etruria, to die sword in hand at **Pistoria** (a climactic battle, if your group wants one).
+    chars:
+      Br: '3'
+      Ag: '3'
+      Int: '3'
+      Cun: '3'
+      Will: '3'
+      Pr: '4'
+    derived:
+      Soak: '5'
+      W.T.: '16'
+      S.T.: '16'
+      Def: 1/1
+    fields:
+    - label: Motivations
+      text: 'Desire: power / to remake Rome. Fear: obscurity & debt. Strength: courage. Flaw: pride.'
+    - label: Skills
+      text: Charm 3, Coercion 3, Cool 2, Deception 2, Leadership 3, Melee 3, Knowledge (Rome) 2.
+    - label: Talents
+      text: Adversary 2; Demagogue; Scathing Tirade.
+    - label: Equipment
+      text: gladius, the loyalty of desperate men.
+    - label: Dignitas 3
+      text: (falling fast).
+    type: statblock
+  - type: p
+    style: small
+    text: |-
+      **Rewards:** 20 XP. Exposing the plot with hard proof: +1 Dignitas and a powerful Favor from Cicero. Botching the proof or siding with the losing Senate bloc: no Dignitas, and a watchful enemy among the survivors.
+  - type: scenario
+    text: II. The Trial of the Governor
+  - type: synopsis
+    text: |-
+      70 BCE. **Gaius Verres** has returned from three years as governor of Sicily, having stripped the province of its art, its grain, and its justice — crucifying even a Roman citizen who dared appeal. The wronged Sicilians have hired the PCs (or an advocate they serve) to bring him to court. But Verres is rich, his jury is buyable, and his agents are already silencing witnesses. Two acts: build the case, then win the trial. A pure showcase for the **courtroom** rules and the social engine.
+  - type: p
+    style: act
+    text: Act I — Building the Case
+  - type: readaloud
+    text: |-
+      Sicily remembers. In a dim Syracusan portico a shipowner shows you the whip-scars; a priest weeps over an empty plinth where a god once stood in bronze; a widow presses a tally-stick of stolen grain into your hand. “He took everything,” she says. “Make them listen in Rome.”
+  - type: p
+    style: body
+    text: |-
+      The PCs gather witnesses, documents, and stolen treasures to exhibit. Verres's men work against them: bribing officials to “lose” records, intimidating or buying off witnesses, and — if that fails — arranging accidents.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** every secured witness and exhibit is banked advantage for Act II; every one lost or discredited becomes a [[setback]] the defense will wield. Verres's strategy is delay — drag the trial past the holidays and into next year's friendlier court.
+  - type: p
+    style: act
+    text: Act II — The Court
+  - type: p
+    style: body
+    text: |-
+      Run the trial as the **courtroom** set-piece. The jury (Hard audience, strain threshold 14; raise it for every juror Verres has bribed) must be driven past its threshold to convict. Verres's defense is led by the most famous advocate in Rome; the PCs (or their patron) prosecute.
+  - type: readaloud
+    text: |-
+      The benches are packed; half of Rome has come to watch the great advocate defend the indefensible. He smiles at you across the court, utterly confident. Then you do the unexpected: instead of a grand opening oration, you simply call your first witness, and let Sicily speak for itself.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** as in history, overwhelming evidence can break a defendant's nerve before the verdict — if the PCs land a [[triumph]] Critical Remark or drive Verres himself past a personal strain threshold, he may bolt into **voluntary exile** (to Massilia, with his loot) rather than face the vote. A full conviction is possible but harder.
+  - name: Gaius Verres
+    kind: Nemesis
+    desc: |-
+      A plump, pleasure-loving plunderer who believes money can buy anything — because so far it always has.
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '4'
+      Will: '2'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '14'
+      Def: 0/1
+    fields:
+    - label: Motivations
+      text: 'Desire: wealth & comfort. Fear: poverty / ruin. Strength: cunning. Flaw: avarice.'
+    - label: Skills
+      text: Charm 2, Coercion 2, Deception 3, Negotiation 3, Knowledge (Law) 2, Knowledge (Rome) 2.
+    - label: Abilities
+      text: |-
+        Deep Purse — may spend a Story Point to pre-bribe one juror (+setback to a prosecution appeal) or to buy a thug.
+    - label: Dignitas 3.
+      text: |-
+        Defended by a Stoic Philosopher-style advocate (use that stat block as the opposing orator).
+    type: statblock
+  - type: p
+    style: small
+    text: |-
+      **Rewards:** 15 XP. A conviction or a flight-into-exile: +1 Dignitas for the lead prosecutor and the gratitude (Favors) of a whole province. Losing a bought jury: the Sicilians are ruined, and the PCs have made a rich, vindictive enemy.
+  - type: scenario
+    text: III. The City Burns
+  - type: synopsis
+    text: |-
+      Rome, July 64 CE. Fire erupts near the Circus Maximus and races through the tinder-dry tenements. For six days and seven nights it devours the city. The PCs — *vigiles*, or simply people caught in it — fight the flames, save who they can, and then confront the ugly aftermath: a terrified city demanding someone to blame, an Emperor under suspicion, and a convenient scapegoat in a small, strange sect. Three fast acts of disaster, investigation, and moral weight; a showcase for the watch, crowds, and hard choices.
+  - type: p
+    style: act
+    text: Act I — The Red Night
+  - type: readaloud
+    text: |-
+      You smell it before you see it — then the sky over the Circus goes orange, and the screaming starts. The fire is already in the shops under the stands, running on the wind faster than a man. Narrow streets choke with people and carts. Somewhere above you, a tenement block of five storeys begins to burn, and it is full of families.
+  - type: p
+    style: body
+    text: |-
+      A disaster set-piece: the PCs fight fire and save lives. Use skill challenges, not a monster to kill — the enemy is the blaze, the crowd, and the clock.
+  - type: p
+    style: act
+    text: Act II — Ash and Rumor
+  - type: p
+    style: body
+    text: |-
+      The fire dies. In the smoking ruin, the city gropes for a reason. Three rumors spread like a second fire: that it was an accident (lamp-oil and wind); that criminals set it to loot; and — most dangerous — that the **Emperor himself** ordered it, to clear ground for a golden palace. The authorities need another answer, fast.
+  - type: readaloud
+    text: |-
+      A magistrate's man finds you in the ash. “The Prefect wants the truth — or something that will pass for it before the mob turns on the Palatine. There's a sect down by the river. Foreigners. They talk of the world ending in fire and a kingdom not of Rome. People are already saying it was them. Go and… confirm it.”
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** the PCs will find the Christians are innocent. The pressure to say otherwise — from a frightened Prefect, a *Delator* smelling reward, and a mob that wants blood — is enormous.
+  - type: p
+    style: act
+    text: Act III — The Scapegoats
+  - type: p
+    style: body
+    text: |-
+      The choice lands. The sect is to be rounded up and butchered in the arena and the imperial gardens — burned as living torches — “as if they were to blame for the great fire.” The PCs can go along with the lie (safe, rewarded, complicit); expose the truth (dangerous — it points back at the Palatine); or try to get innocents out of the city before the arrests (a tense extraction).
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** there is no clean win, which is the point. History records the slaughter went ahead, and even bloodthirsty Romans came to pity the victims. Let the PCs' courage or complicity echo — in their Dignitas, in who owes them, and in who now watches them.
+  - type: p
+    style: small
+    text: |-
+      **Adversaries:** the fire (environmental), *Street Tough* looters and *Urban Cohort* watchmen, a *Delator*, and a crowd run with the *Demagogue*/mob rules. **Rewards:** 15–20 XP scaled to lives saved in Act I. Saving the innocent at real risk: +1 Dignitas with those who value honor (and a dangerous secret about the fire's true cause). Taking the safe, complicit path: coin and a Favor from the Prefect — and a quiet 1-point loss of Dignitas among those who know what you did.
+- title: Running Imperial Rome
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      A historical setting is a gift and a trap. The gift is that players already know Rome — legions, togas, gladiators, “hail Caesar.” The trap is that they know the *movie* Rome, and will bring every assumption with them. Lean into the familiar iconography, then surprise them with the real strangeness: a world where the gods are in the gutters and the Senate, where a man's name tells you who owns him, and where a bad omen can stop an army.
+  - type: h3
+    text: Choosing a Campaign Frame
+  - type: p
+    style: body
+    text: |-
+      Rome is too big to “play Rome.” Pick a lens — a group with a reason to adventure together — the way the setting this book is modeled on gathers its heroes into a single unit.
+  - type: list
+    items:
+    - |-
+      **The Contubernium (Soldiers).** A tent-group of eight legionaries and their specialists on the frontier: patrols, skirmishes, building roads and forts, and the long boredom between terrors. Great for tactical play and the *band-of-brothers* tone. The legion is also a political animal — who does the army back?
+    - |-
+      **The Familia Gladiatoria (The Arena).** Fighters, a trainer, a doctor, and a sponsor in one gladiator school. Survival, rivalry, celebrity, and the dream of the wooden sword (*rudis*) of freedom. Combine spectacle with the intrigue of who bets on whom.
+    - |-
+      **The Cohortes Vigilum (Roman ‘Police’).** The nearest thing to the setting this book honors: the watch and the fire brigade of a great city. Investigate murders, arson, missing persons, and conspiracies in the tenements — a procedural, but one where the detectives have almost no forensic science and a great deal of politics. The *frumentarii* and a provincial governor's staff serve the same role for imperial-level intrigue.
+    - |-
+      **The Domus (Household & Intrigue).** A senator's extended household — heirs, freedmen, clients, slaves — navigating the *cursus honorum*, the courts, and the knife-work of high politics. Social combat is the main event.
+    - |-
+      **The Negotiatores (Trade & Travel).** Merchants, ship-owners, and their guards crossing the Empire and beyond — Egypt, Parthia, and the western end of the Silk Road, where fortunes ride on pepper, incense, and bolts of Chinese silk worth their weight in gold. A caravan pressing east toward rumored *Serica* (see *The Edge of the World*) turns a trade game into an odyssey past Parthian tolls, bandit passes, and the limits of the known map. Sandbox exploration with cargo manifests, pirates, and the lure of the unreachable East.
+    - |-
+      **The Mysteries (Supernatural).** In a [[Fated]] or [[Mythic]] Rome, investigators of cults, curses, and the old powers under the new marble — the Roman answer to cosmic horror or sword-and-sandal fantasy.
+  - type: h3
+    text: Status Is the Real Rulebook
+  - type: p
+    style: body
+    text: |-
+      Let legal status do heavy narrative lifting. A **citizen** can demand a proper trial and appeal to the Emperor (*Civis Romanus sum*); a **slave**'s testimony was legally admissible only under torture, and a slave who struck a citizen could be crucified. These are not die rolls — they are the stakes. The most Roman dramas come from characters trapped by their status and clawing to change it: the slave earning manumission, the freedman buying respectability, the provincial grasping for the citizenship that makes him untouchable.
+  - type: h3
+    text: Patron and Client
+  - type: p
+    style: body
+    text: |-
+      Nobody in Rome stands alone. Every character should know who their **patron** is (who protects and funds them, and expects loyalty, votes, and the morning *salutatio*) and who their **clients** are. Favors flow up and down this web constantly — the *Client Network* and *Client of a Great House* abilities model it, but the GM should make the web a living thing. A patron's enemy is your enemy; a patron's fall can drag you down with him.
+  - type: sidebar
+    title: The Thin Empire
+    body:
+    - |-
+      Remember how *few* Romans actually governed Rome. An empire of perhaps sixty million people was run, at the top, by only a few hundred senior officials — a governor might administer a province of millions with a personal staff you could seat at one dinner-table. The Empire held together not through bureaucracy but through **local elites, patronage, religion, and sheer bluff.** This is why the reputation economy matters so much: in a thin state, who you know and how you are regarded *is* the government. It also hands the GM a sandbox — out in the provinces the PCs may be the only arm of Rome for a hundred miles, and what they decide simply becomes Roman policy. (Grounded in Scheidel, *Rome and China*.)
+  - type: h3
+    text: Story Points as the Will of the Gods
+  - type: p
+    style: body
+    text: |-
+      In a [[Fated]] Rome, re-skin the Story Point economy as divine favor. When players spend a Story Point, something goes *right* because the gods smiled — a timely omen, a lucky gust, a rival's stumble. When the GM spends one, the gods are displeased: an ill omen manifests. Tie omen-reading (Knowledge (the Gods), above) to the pool, and let a [[triumph]] at a sacrifice feed the players' side. It makes Roman religion mechanically present without any spellcasting.
+  - type: h3
+    text: The Arena & the Races
+  - type: p
+    style: body
+    text: |-
+      Run a gladiatorial bout as a duel with the crowd as a third participant: track the audience's mood as a pool of [[advantage]]/[[threat]] the fighters spend on *Arena Showmanship* and on the final appeal for mercy (*missio*) — the editor of the games grants life or death partly on the crowd's roar. For chariot racing, use chase/structured rules: a long track, *Driving* checks each round, [[advantage]] to gain position and [[threat]] toward the dreaded wreck (*naufragium*). Remember Roman drivers lashed the reins around their waists and carried a knife to cut free — a failed check at speed can be lethal.
+  - type: h3
+    text: Keeping It Roman
+  - type: list
+    items:
+    - |-
+      **No clocks, no minutes.** Time is told by sun, water-clock, and the watch; appointments are “at the third hour.”
+    - |-
+      **Money is coin and credit.** No paper; wealth is land, slaves, and chests of silver — and a web of IOUs (*nomina*) among the elite.
+    - |-
+      **The streets are lethal.** Rome had no street lighting and emptied its chamber-pots from windows; wheeled traffic was banned by day. Night in the Subura is its own adventure.
+    - |-
+      **Everyone is religious.** An atheist is unthinkable; even the cynical sacrifice. Christians and Jews stand out precisely because they will *not*.
+- title: Common Terms
+  blocks:
+  - type: p
+    style: body
+    text: 'A sprinkling of Latin brings the table to Rome. A few of the most useful:'
+  - type: list
+    items:
+    - |-
+      **SPQR** — *Senatus Populusque Romanus*, “the Senate and People of Rome,” the state itself; stamped on standards, coins, and buildings.
+    - |-
+      **Serica / Seres** — the distant land of silk at the eastern edge of the world (China), and its people; known to Rome only through Parthian middlemen and wild rumor.
+    - "**Princeps** — “first citizen,” the Emperor's polite title; he pretends not to be a king."
+    - |-
+      **Cursus honorum** — the “course of offices,” the fixed ladder of political posts (quaestor, aedile, praetor, consul) an ambitious man climbs.
+    - |-
+      **Patronus / Cliens** — patron and client; the bond of protection and loyalty that structures all society.
+    - |-
+      **Salutatio** — the dawn reception where clients call on their patron to pay respects and ask favors.
+    - |-
+      **Civis Romanus sum** — “I am a Roman citizen”; the phrase that demands legal protection and the right of appeal.
+    - |-
+      **Legio / Centuria / Contubernium** — legion (~5,000 men) / century (~80, led by a centurion) / tent-group (8, the squad).
+    - "**Pilum / Gladius / Scutum** — javelin / short sword / shield: the legionary's core kit."
+    - '**Testudo** — “tortoise,” the shield formation that covers a unit front and top.'
+    - '**Limes** — the fortified frontier of the Empire.'
+    - '**Auxilia** — non-citizen support troops; earn citizenship on discharge.'
+    - |-
+      **Denarius / Sesterce / As / Aureus** — the silver, brass, copper, and gold of Roman coinage (1 aureus = 25 denarii = 100 sesterces = 400 asses).
+    - |-
+      **Panem et circenses** — “bread and circuses”: the grain dole and public games that kept the mob content.
+    - |-
+      **Editor** — the sponsor who pays for and presides over the games; he decides *missio* (mercy) with the crowd.
+    - |-
+      **Missio / Rudis** — the reprieve of a defeated gladiator / the wooden sword awarded at his freedom.
+    - '**Lanista / Familia / Ludus** — the owner-trainer / the troupe / the gladiator school.'
+    - |-
+      **Collegium** — a guild or association (trade, burial, religious) — and often a front for a street gang.
+    - |-
+      **Vigiles / Cohortes Urbanae** — the night-watch/fire-brigade and the city military police.
+    - |-
+      **Frumentarius** — a soldier-courier who doubled as the Empire's nearest thing to a secret agent.
+    - '**Libertus / Peregrinus** — a freed slave / a free non-citizen provincial.'
+    - '**Pater familias** — the male head of a household, with legal power over its members.'
+    - |-
+      **Toga / Tunica / Stola** — the citizen's formal wrap / everyday garment / a married woman's dress.
+    - |-
+      **Haruspex / Augur** — a reader of entrails / a reader of birds and omens; official diviners of the state.
+    - |-
+      **Imperium** — the formal power to command (armies, the law); held by consuls, praetors, governors, and the Emperor.
+    - '**Ave / Vale / Salve** — “hail” / “farewell” / “be well” (a common greeting).'
+  - type: p
+    style: body
+    text: — *Roma invicta.* —
