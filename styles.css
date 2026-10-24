@@ -1,5 +1,5 @@
 @page {
-  size: 5.5in 4.25in;
+  size: 4.25in 5.5in;
   margin: 0.3in 0.3in 0.32in 0.3in;
   @bottom-center { content: counter(page); font-family: "DejaVu Serif"; font-size: 6pt; color: #6b4a1b; }
 }
@@ -13,7 +13,7 @@ h4 { font-size: 7.5pt; color: #6e1b1b; margin: 5px 0 1px 0; }
 p { margin: 0 0 3px 0; text-align: justify; }
 ul { margin: 2px 0 4px 0; padding-left: 11px; }
 li { margin-bottom: 1px; text-align: justify; }
-.cols { column-count: 2; column-gap: 0.32cm; column-rule: 0.5px solid #d8c9a8; }
+.cols { column-count: 1; }
 .chapter { page-break-before: always; }
 .lead { font-size: 7.4pt; }
 .small { font-size: 6.2pt; }
@@ -36,7 +36,7 @@ table.gear tr:nth-child(even) td { background: #f3ead6; }
 .sidebar h4 { margin-top: 1px; color: #8a5a12; }
 .tag { font-variant: small-caps; font-weight: bold; color: #8a5a12; }
 .cover { height: 100vh; background: #6e1b1b; color: #f3e3bf; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; page-break-after: always; }
-.cover .spqr { font-size: 26pt; letter-spacing: 2px; margin: 0; color: #e8c766; font-weight: bold; }
+.cover .spqr { font-size: 22pt; letter-spacing: 1px; margin: 0; color: #e8c766; font-weight: bold; }
 .cover .sub { font-size: 11pt; letter-spacing: 2px; margin-top: 5px; color: #f3e3bf; text-transform: uppercase; }
 .cover .tag2 { font-size: 8pt; margin-top: 14px; font-style: italic; color: #d9b98a; }
 .cover .sys { position: absolute; bottom: 0.5cm; font-size: 6.5pt; letter-spacing: 1px; color: #e8c766; padding: 0 0.3in; }
