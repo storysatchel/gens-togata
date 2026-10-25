@@ -110,7 +110,7 @@ def block_html(b, cols):
         return f'<div class="endnotes"><h4>{md_html(b.get("title","Notes"))}</h4><ol>{lis}</ol></div>', True
     return "", False
 
-def to_html():
+def to_html(out_path=None):
     m=DOC["meta"]
     out=[f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>{m["title"]}</title>
 <style>{CSS}</style></head><body>
@@ -155,7 +155,7 @@ def to_html():
                 openc(); out.append(frag)
         closec(); out.append('</div>')
     out.append('</body></html>')
-    open(f"{BASE}/build/book.html","w").write("".join(out))
+    open(out_path or f"{BASE}/build/book.html","w").write("".join(out))
 
 # ================= SPEECH RENDER =================
 def sb_speech(b):
@@ -221,8 +221,14 @@ def to_speech():
 
 if __name__=="__main__":
     os.makedirs(f"{BASE}/build",exist_ok=True)
-    to_html(); to_speech()
-    import glob
-    print("rendered build/book.html bytes:", os.path.getsize(f"{BASE}/build/book.html"))
-    for p in sorted(glob.glob(f"{BASE}/audio/part_*.txt")):
-        print(os.path.basename(p), len(open(p).read().split()), "words")
+    content = sys.argv[1] if len(sys.argv)>1 else None
+    out = sys.argv[2] if len(sys.argv)>2 else f"{BASE}/build/book.html"
+    if content:                     # alternate doc (e.g. styleguide.yaml); no narration
+        DOC = yaml.load(open(content))
+    to_html(out)
+    print("rendered", out, os.path.getsize(out), "bytes")
+    if not content:
+        to_speech()
+        import glob
+        for p in sorted(glob.glob(f"{BASE}/audio/part_*.txt")):
+            print(os.path.basename(p), len(open(p).read().split()), "words")

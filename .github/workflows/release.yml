@@ -32,14 +32,17 @@ jobs:
       - name: Install Python dependencies
         run: pip install "weasyprint>=60" "ruamel.yaml"
 
-      - name: Render HTML + narration from content.yaml
-        run: python render.py
+      - name: Render HTML (rulebook + style guide) + narration
+        run: |
+          python render.py
+          python render.py styleguide.yaml build/styleguide.html
 
       - name: Build PDF
         run: |
           mkdir -p dist
           VERSION="${GITHUB_REF_NAME:-dev}"
           weasyprint build/book.html "dist/Gens-Togata-${VERSION}.pdf"
+          weasyprint build/styleguide.html "dist/Gens-Togata-Style-Guide-${VERSION}.pdf"
           cp audio/transcript.txt "dist/Gens-Togata-${VERSION}-transcript.txt" || true
           ls -la dist
 

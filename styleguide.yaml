@@ -1,0 +1,250 @@
+meta:
+  title: Gens Togata
+  subtitle: Style Guide & Component Showcase
+  tagline: Every block, labeled — so we can talk about it by name.
+  system: A component reference for the Genesys Roleplaying Game supplement
+  legal:
+  - |-
+    Gens Togata Style Guide — a living reference rendered with the same render.py and styles.css as the rulebook. Every block is labeled with its YAML `type` (and `style`, where relevant) so the layout can be discussed precisely. This page is the **legal** component; the title page before it is the **cover**; the page number below is the **footer**; the Contents page that follows is the **toc**.
+chapters:
+- title: 'Part I: Headings & Text'
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      This document shows every component in *Gens Togata*, each labeled with the block `type` that produces it, so we can discuss the design literally. The banner above this paragraph (“Part I: Headings & Text”) is the **chapter h2** — a full-width banner that opens every chapter on a new page. This paragraph is a **lead** paragraph. What follows are the heading levels and text styles.
+  - type: h2
+    text: In-Chapter H2 Banner
+  - type: p
+    style: small
+    text: |-
+      `type: h2` used *inside* a chapter — a full-width banner spanning both columns, for a major division such as Archetypes or Careers. Same style as the chapter title, but without a page break.
+  - type: h3
+    text: H3 — Section Head
+  - type: p
+    style: small
+    text: |-
+      `type: h3` — a column-width section heading (gold), with a clear line-break of space above it. Flows within the two columns.
+  - type: h4
+    text: H4 — Sub-Head
+  - type: p
+    style: small
+    text: |-
+      `type: h4` — a minor heading within a section (dark red).
+  - type: p
+    style: body
+    text: |-
+      **Body** — `type: p`, default style. Justified, the default measure; this is the workhorse paragraph used for ordinary prose throughout the book.
+  - type: p
+    style: small
+    text: |-
+      **Small** — `style: small`. For captions, asides, and the labels in this guide.
+  - type: p
+    style: deriv
+    text: |-
+      **Deriv** — `style: deriv`. Used for derived-stat lines and tight secondary text.
+  - type: p
+    style: act
+    text: |-
+      Act style — style act
+  - type: p
+    style: chk
+    text: |-
+      **Chk** — `style: chk`. A dashed box for checklists and at-the-table prompts.
+  - type: h3
+    text: List
+  - type: p
+    style: small
+    text: |-
+      `type: list` — a bulleted list. Dice glyphs and markup work inside items.
+  - type: list
+    items:
+    - |-
+      A first bullet, with **bold** and *italic* inline.
+    - |-
+      A second bullet showing a die reference: upgrade the pool, then roll [[ability]][[ability]].
+- title: 'Part II: Callouts & Asides'
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      The boxed and set-apart components. Each is labeled above with its `type`.
+  - type: h3
+    text: Sidebar
+  - type: p
+    style: small
+    text: |-
+      `type: sidebar` — a boxed aside. Its `body` is a **list** of paragraph strings (not `text`).
+  - type: sidebar
+    title: Example Sidebar
+    body:
+    - |-
+      This is a sidebar. It carries optional rules, designer notes, or historical colour out of the main flow.
+    - |-
+      A second paragraph shows paragraph spacing inside the box.
+  - type: h3
+    text: Read-Aloud
+  - type: p
+    style: small
+    text: |-
+      `type: readaloud` — italic, boxed text the GM reads aloud to the players.
+  - type: readaloud
+    text: |-
+      The lictors part the crowd, and the magistrate ascends the Rostra. A hush falls over the Forum as he raises his hand to speak.
+  - type: h3
+    text: Synopsis
+  - type: p
+    style: small
+    text: |-
+      `type: synopsis` — a one-line summary with a bold “Synopsis.” lead-in.
+  - type: synopsis
+    text: |-
+      The player characters must recover a stolen will before the funeral at dusk.
+  - type: h3
+    text: Example
+  - type: p
+    style: small
+    text: |-
+      `type: example` — a worked example of a rule in play, set apart from the prose.
+  - type: example
+    text: |-
+      Marcus makes a Coercion check against a frightened clerk. He rolls [[success]][[success]][[threat]] — the clerk talks, but resents it.
+  - type: h3
+    text: Procedure
+  - type: p
+    style: small
+    text: |-
+      `type: procedure` — a titled, numbered how-to.
+  - type: procedure
+    title: Running a Contio
+    steps:
+    - |-
+      Set the audience's strain threshold by size and mood.
+    - |-
+      Each speaker makes a social check across three to five rounds.
+    - |-
+      Exceed the threshold to win the crowd; exceed half for a partial result.
+- title: 'Part III: Game Content'
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      The mechanical components: stat blocks and tables.
+  - type: h3
+    text: Stat Block
+  - type: p
+    style: small
+    text: |-
+      `type: statblock` — `name`, `kind`, `desc`, a characteristics row, `derived` stats, and labeled `fields`.
+  - type: statblock
+    name: Aulus the Example
+    kind: Rival
+    desc: |-
+      A sample adversary, shown only to demonstrate the stat-block component.
+    chars:
+      Br: 3
+      Ag: 2
+      Int: 2
+      Cun: 3
+      Will: 2
+      Pr: 2
+    derived:
+      Soak: 4
+      'W.T.': 12
+      'S.T.': 12
+      'Def (M/R)': 1/0
+    fields:
+    - label: Skills
+      text: |-
+        Coercion 2, Deception 3, Melee 2, Vigilance 1.
+    - label: Talents
+      text: |-
+        Adversary 1; Plausible Deniability.
+    - label: Equipment
+      text: |-
+        Dagger (Dam 3; Crit 2; Pierce 1), a fine toga, a purse of favours.
+  - type: h3
+    text: Table — Gear
+  - type: p
+    style: small
+    text: |-
+      `type: table` — a full-width table that breaks out of the columns and spans the page.
+  - type: table
+    columns: [Item, Enc, Price, Rarity]
+    rows:
+    - [Writing kit, '1', 25 HS, '2']
+    - [Surgeon's kit, '2', 200 HS, '4']
+    - [Lockpicks, '0', 150 HS, 5 (R)]
+  - type: h3
+    text: Table — Motivation (d10)
+  - type: p
+    style: small
+    text: |-
+      `style: motiv` — a table whose first column is centered and bold, for d10 result tables.
+  - type: table
+    style: motiv
+    columns: ['d10', Result]
+    rows:
+    - ['1–3', A debt comes due at the worst moment.]
+    - ['4–6', An old patron calls in a favour.]
+    - ['7–10', A rival moves against the character openly.]
+  - type: h3
+    text: Scenario Banner
+  - type: p
+    style: small
+    text: |-
+      `type: scenario` — a full-width banner that opens a scenario (small-caps, ruled).
+  - type: scenario
+    text: |-
+      I. The Example Affair
+  - type: p
+    style: body
+    text: |-
+      Scenario body follows the banner in the normal two-column flow.
+- title: 'Part IV: Inline Elements & Notes'
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      Inline markup and the citation apparatus.
+  - type: h3
+    text: Dice Glyphs
+  - type: p
+    style: small
+    text: |-
+      Written as `[[token]]`; the renderer swaps in the vendored Genesys glyph font.
+  - type: p
+    style: body
+    text: |-
+      Dice — ability [[ability]], proficiency [[proficiency]], difficulty [[difficulty]], boost [[boost]], setback [[setback]], challenge [[challenge]]. Symbols — success [[success]], advantage [[advantage]], triumph [[triumph]], failure [[failure]], threat [[threat]], despair [[despair]].
+  - type: h3
+    text: Keyword Tags
+  - type: p
+    style: small
+    text: |-
+      Also `[[token]]`, but non-dice words render as small-caps tags.
+  - type: p
+    style: body
+    text: |-
+      Setting dials and keywords: [[Grounded]], [[Fated]], [[Mythic]]; status tags like [[Citizen]], [[Patrician]], [[Slave]].
+  - type: h3
+    text: Endnote Markers & Notes
+  - type: p
+    style: small
+    text: |-
+      A superscript marker is written `{{1}}`; the `endnotes` block collects them as a numbered Notes list.
+  - type: p
+    style: body
+    text: |-
+      Augury was load-bearing civic infrastructure, not mere theatre.{{1}} Oratory was one tool among several, not a sole superweapon.{{2}}
+  - type: endnotes
+    title: Notes
+    items:
+    - |-
+      The `endnotes` block renders this numbered list; the numbers match the `{{N}}` markers above.
+    - |-
+      A second note, to show the list.
+  - type: p
+    style: small
+    text: |-
+      Structural components added automatically by the renderer: the **cover**, the **legal** page, the **toc** (Contents — dotted leaders and real page numbers via WeasyPrint `target-counter`), and the page **footer**.
