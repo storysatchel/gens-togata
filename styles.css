@@ -64,3 +64,9 @@ table.gear tr:nth-child(even) td { background: #f3ead6; }
 .synopsis { font-size: 6.6pt; background:#f1e7cf; padding: 3px 6px; border-left: 2px solid #8a5a12; margin: 4px 0 5px 0; }
 .act { color: #8a5a12; font-size: 8pt; font-weight: bold; text-transform: uppercase; letter-spacing: .4px; margin: 6px 0 1px 0; }
 .chk { font-size: 6.4pt; background:#faf5e6; border:0.8px dashed #b89b63; padding: 2px 5px; margin: 3px 0; }
+
+sup.en { font-size: .64em; line-height: 0; vertical-align: super; color: #8a5a12; font-weight: bold; padding-left: .3pt; }
+.endnotes { margin-top: 7px; border-top: 0.8px solid #b89b63; padding-top: 3px; column-span: all; }
+.endnotes h4 { font-size: 7pt; color: #6e1b1b; text-transform: uppercase; letter-spacing: .5px; margin: 0 0 2px 0; }
+.endnotes ol { margin: 0; padding-left: 11pt; }
+.endnotes li { font-size: 6.2pt; line-height: 1.28; margin-bottom: 1.5px; text-align: left; }

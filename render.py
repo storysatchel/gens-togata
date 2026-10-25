@@ -30,11 +30,13 @@ def md_html(s):
     s=_esc(s)
     s=re.sub(r'\[\[(.+?)\]\]', _token, s)
     s=s.replace("\u25cf", '<span class="gly difficulty" aria-label="difficulty">k</span>')
+    s=re.sub(r'\{\{(\d+)\}\}', r'<sup class="en">\1</sup>', s)
     s=re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
     s=re.sub(r'\*(.+?)\*', r'<em>\1</em>', s)
     return s
 def md_plain(s):
     s=re.sub(r'\[\[(.+?)\]\]', r'\1', s)
+    s=re.sub(r'\{\{\d+\}\}', '', s)
     return s.replace("**","").replace("*","")
 
 # ---------- speech normalization ----------
@@ -103,6 +105,9 @@ def block_html(b, cols):
         body=''.join('<tr>'+''.join(f'<td>{md_html(c)}</td>' for c in r)+'</tr>' for r in b["rows"])
         return f'<table class="{cls}">{head}{body}</table>', True
     if t=="statblock": return sb_html(b), False
+    if t=="endnotes":
+        lis=''.join(f'<li>{md_html(i)}</li>' for i in b["items"])
+        return f'<div class="endnotes"><h4>{md_html(b.get("title","Notes"))}</h4><ol>{lis}</ol></div>', True
     return "", False
 
 def to_html():
