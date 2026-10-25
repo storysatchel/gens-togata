@@ -127,7 +127,7 @@ chapters:
   - type: p
     style: lead
     text: |-
-      Rome rewarded some kinds of person and ground down others, and a character’s origin mattered more than any die roll. The archetypes below turn that truth into mechanics: seven concrete Roman origins, each with its own starting profile, a signature ability drawn from its place in the world, and a starting Dignitas. Build a Roman character with one of these, or with any archetype from the Core Rulebook if your concept demands it.
+      Rome rewarded some kinds of person and ground down others. The archetypes below turn that truth into mechanics: seven concrete Roman origins, each with its own starting profile, a signature ability drawn from its place in the world, and a starting Dignitas that fixes where you stand before a word is spoken or a die is cast. Build a Roman character with one of these, or with any archetype from the Core Rulebook if your concept demands it.
   - type: h3
     text: Archetypes
   - type: p
@@ -394,7 +394,7 @@ chapters:
     title: Status, Not Species
     body:
     - |-
-      Consider noting each character's legal standing: [[Citizen]] (protected by Roman law, cannot lawfully be crucified or flogged), [[Peregrine]] (free provincial, not a citizen), [[Freedman]] (*libertus* — an ex-slave who owes duties to a former master), or [[Slave]] (property, with no legal person, but often skilled and trusted). Status should shape what a character can get away with far more than any die roll — see GM Advice.
+      Consider noting each character's legal standing: [[Citizen]] (protected by Roman law, cannot lawfully be crucified or flogged), [[Peregrine]] (free provincial, not a citizen), [[Freedman]] (*libertus* — an ex-slave who owes duties to a former master), or [[Slave]] (property, with no legal person, but often skilled and trusted). Status feeds the dice rather than replacing them: it sets a social check's difficulty, adds [[boost]] or [[setback]] before the roll, decides who will deign to deal with you at all, and raises or lowers the stakes of being caught — see GM Advice.
 - title: New Skills
   blocks:
   - type: p
