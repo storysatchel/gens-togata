@@ -1,6 +1,6 @@
 meta:
   title: Gens Togata
-  subtitle: ''
+  subtitle: Roleplaying in the Roman Republic
   tagline: Bread and circuses, the sword and the Senate.
   system: An Imperial Rome setting for the Genesys Roleplaying Game
   legal:
@@ -55,25 +55,25 @@ chapters:
   - type: p
     style: body
     text: |-
-      Birth set the baseline, not achievement. At the centre of every household stood the *paterfamilias*, its eldest living male, holding *patria potestas* — a power over children and dependants that the law scarcely limited. Mommsen puts it without softening: a father “might convey his son as well as his slave in property to a third person,” and “in reality the paternal and marital power was subject to no legal restrictions at all.”{{1}} Above the household, society was banded into fixed orders — senatorial, equestrian, ordinary citizen, freedman, free non-citizen, slave — and a Roman judged a stranger's rank from dress, name, and retinue before either of them spoke.
+      Birth set the baseline, not achievement. At the centre of every household stood the *paterfamilias*, its eldest living male, holding *patria potestas* — a power over children and dependants that the law scarcely limited: a father “might convey his son as well as his slave in property to a third person,” and “in reality the paternal and marital power was subject to no legal restrictions at all.”{{1}} Above the household, society was banded into fixed orders — senatorial, equestrian, ordinary citizen, freedman, free non-citizen, slave — and a Roman judged a stranger's rank from dress, name, and retinue before either of them spoke.
   - type: h3
     text: Slavery
   - type: p
     style: body
     text: |-
-      Slaves were property, “looked upon in law as the property of the household and not as members of it.”{{2}} The farming manuals treat them exactly so: Cato, listing what a prudent owner should clear out each year, ends with “the old and sick slaves, and if any thing else is superfluous you should sell that. The appetite of the good farmer is to sell, not to buy.”{{3}} That the Stoic Seneca had to argue the contrary — “‘They are slaves,’ people declare. Nay, rather they are men”{{4}} — shows how total the ordinary contempt was. A freed slave (*libertus*) became a citizen, but still owed duties, and deference, to the master who had owned him.
+      Slaves were property, “looked upon in law as the property of the household and not as members of it.”{{2}} The farming manuals treat them exactly so: the standard advice on what a prudent owner should clear out each year ends with “the old and sick slaves, and if any thing else is superfluous you should sell that. The appetite of the good farmer is to sell, not to buy.”{{3}} That a moralist could feel the need to argue the contrary — “‘They are slaves,’ people declare. Nay, rather they are men”{{4}} — shows how total the ordinary contempt was. A freed slave (*libertus*) became a citizen, but still owed duties, and deference, to the master who had owned him.
   - type: h3
     text: Patronage
   - type: p
     style: body
     text: |-
-      Roman society was tied together, top to bottom, by *clientela*. The client (*cliens*) came to his patron's house for the morning *salutatio*, lent him votes, voice, and presence, and received protection, legal backing, loans, and introductions in return. The bond was sworn and sacred, not a mere bargain: from the earliest law, Mommsen notes, “if a patron violated his obligation to keep faith with his … dependent, the civil law had no penalty for such outrages, but the burden of the curse of the gods lay thenceforth on the head of the offender.”{{5}}
+      Roman society was tied together, top to bottom, by *clientela*. The client (*cliens*) came to his patron's house for the morning *salutatio*, lent him votes, voice, and presence, and received protection, legal backing, loans, and introductions in return. The bond was sworn and sacred, not a mere bargain: in the earliest Roman law, “if a patron violated his obligation to keep faith with his … dependent, the civil law had no penalty for such outrages, but the burden of the curse of the gods lay thenceforth on the head of the offender.”{{5}}
   - type: h3
     text: The Law
   - type: p
     style: body
     text: |-
-      Roman law did not pretend to treat everyone alike; it was built on rank. A citizen could not lawfully be flogged or crucified, and could appeal against a magistrate's sentence; a slave had no legal person at all, and a slave's evidence was admissible only when extracted under torture. The principle “of the slave being completely destitute of legal rights,” Mommsen writes, “was maintained by the Romans with merciless rigour, and carried out to all its consequences.”{{6}} The same act — a blow, a theft, a killing — carried wholly different consequences according to who did it, and to whom.
+      Roman law did not pretend to treat everyone alike; it was built on rank. A citizen could not lawfully be flogged or crucified, and could appeal against a magistrate's sentence; a slave had no legal person at all, and a slave's evidence was admissible only when extracted under torture. The principle “of the slave being completely destitute of legal rights … was maintained by the Romans with merciless rigour, and carried out to all its consequences.”{{6}} The same act — a blow, a theft, a killing — carried wholly different consequences according to who did it, and to whom.
   - type: h3
     text: The Crowd
   - type: p
@@ -115,7 +115,7 @@ chapters:
     title: 'The Edge of the World: Serica'
     body:
     - |-
-      At the far end of the silk routes lay *Serica* — the land of the *Seres*, the “Silk-People,” of whom Rome knew almost nothing and imagined almost everything. Roman writers reported them as atheists who lived more than two hundred years, who scraped silk from the leaves of trees, who were at once fierce and warlike and gentle and peaceful, blue-eyed and flaxen-haired, and who would never speak to a stranger. The road to them was said to be blocked by lions and tigers that devoured any party of fewer than a hundred armed men. The truth — a second vast empire of tens of millions, a mirror to Rome at the other end of the earth — never reached the Forum: Parthia sat astride the trade and jealously kept Roman and Eastern merchants from ever meeting. For a campaign this is a gift: the East is a place of rumor and fortune where the GM may invent freely, and a caravan that reaches *Serica* and returns is the stuff of legend. (Grounded in Scheidel, *Rome and China*.)
+      At the far end of the silk routes lay *Serica* — the land of the *Seres*, the “Silk-People,” of whom Rome knew almost nothing and imagined almost everything. Roman writers reported them as atheists who lived more than two hundred years, who scraped silk from the leaves of trees, who were at once fierce and warlike and gentle and peaceful, blue-eyed and flaxen-haired, and who would never speak to a stranger. The road to them was said to be blocked by lions and tigers that devoured any party of fewer than a hundred armed men. The truth — a second vast empire of tens of millions, a mirror to Rome at the other end of the earth — never reached the Forum: Parthia sat astride the trade and jealously kept Roman and Eastern merchants from ever meeting. For a campaign this is a gift: the East is a place of rumor and fortune where the GM may invent freely, and a caravan that reaches *Serica* and returns is the stuff of legend.
   - type: h3
     text: Species
   - type: p
@@ -2674,7 +2674,7 @@ chapters:
     title: The Thin Empire
     body:
     - |-
-      Remember how *few* Romans actually governed Rome. An empire of perhaps sixty million people was run, at the top, by only a few hundred senior officials — a governor might administer a province of millions with a personal staff you could seat at one dinner-table. The Empire held together not through bureaucracy but through **local elites, patronage, religion, and sheer bluff.** This is why the reputation economy matters so much: in a thin state, who you know and how you are regarded *is* the government. It also hands the GM a sandbox — out in the provinces the PCs may be the only arm of Rome for a hundred miles, and what they decide simply becomes Roman policy. (Grounded in Scheidel, *Rome and China*.)
+      Remember how *few* Romans actually governed Rome. An empire of perhaps sixty million people was run, at the top, by only a few hundred senior officials — a governor might administer a province of millions with a personal staff you could seat at one dinner-table. The Empire held together not through bureaucracy but through **local elites, patronage, religion, and sheer bluff.** This is why the reputation economy matters so much: in a thin state, who you know and how you are regarded *is* the government. It also hands the GM a sandbox — out in the provinces the PCs may be the only arm of Rome for a hundred miles, and what they decide simply becomes Roman policy.
   - type: h3
     text: Story Points as the Will of the Gods
   - type: p
