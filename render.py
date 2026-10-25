@@ -120,9 +120,19 @@ def to_html():
 <div class="tag2">&ldquo;{m["tagline"]}&rdquo;</div>
 <div class="sys">{m["system"].upper()}</div></div>
 <div style="padding:1.6cm 1.5cm;">'''+''.join(f'<p class="legal">{md_html(p)}</p>' for p in m["legal"])+'</div>']
-    for ch in DOC["chapters"]:
-        out.append(f'<div class="chapter"><h2>{md_html(ch["title"])}</h2>')
-        in_cols=False
+    # ---- table of contents (target-counter fills in the real page numbers) ----
+    toc=['<div class="toc"><h2>Contents</h2>']
+    for ci,ch in enumerate(DOC["chapters"]):
+        toc.append(f'<p class="toc-l1"><a href="#c{ci}">{md_html(str(ch["title"]))}</a></p>')
+        si=0
+        for b in ch["blocks"]:
+            if b.get("type") in ("h3","scenario"):
+                toc.append(f'<p class="toc-l2"><a href="#c{ci}s{si}">{md_html(b["text"])}</a></p>'); si+=1
+    toc.append('</div>')
+    out.append(''.join(toc))
+    for ci,ch in enumerate(DOC["chapters"]):
+        out.append(f'<div class="chapter"><h2 id="c{ci}">{md_html(ch["title"])}</h2>')
+        in_cols=False; si=0
         def openc():
             nonlocal in_cols
             if not in_cols: out.append('<div class="cols">'); in_cols=True
@@ -130,7 +140,13 @@ def to_html():
             nonlocal in_cols
             if in_cols: out.append('</div>'); in_cols=False
         for b in ch["blocks"]:
-            frag,full=block_html(b,in_cols)
+            bt=b.get("type")
+            if bt=="h3":
+                frag=f'<h3 id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1
+            elif bt=="scenario":
+                frag=f'<h3 class="scenario-h" id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1
+            else:
+                frag,full=block_html(b,in_cols)
             if full:
                 closec(); out.append(f'<div class="fullw">{frag}</div>')
             else:

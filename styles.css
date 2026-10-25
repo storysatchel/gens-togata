@@ -70,3 +70,12 @@ sup.en { font-size: .64em; line-height: 0; vertical-align: super; color: #8a5a12
 .endnotes h4 { font-size: 7pt; color: #6e1b1b; text-transform: uppercase; letter-spacing: .5px; margin: 0 0 2px 0; }
 .endnotes ol { margin: 0; padding-left: 11pt; }
 .endnotes li { font-size: 6.2pt; line-height: 1.28; margin-bottom: 1.5px; text-align: left; }
+
+.toc { break-before: page; break-after: page; }
+.toc h2 { margin-bottom: 6px; }
+.toc p { margin: 0; line-height: 1.32; }
+.toc a { text-decoration: none; color: #1c1206; }
+.toc-l1 { margin-top: 5px; font-weight: bold; font-size: 8pt; }
+.toc-l1 a { color: #6e1b1b; text-transform: uppercase; letter-spacing: .3px; }
+.toc-l2 { padding-left: 13pt; font-size: 6.6pt; }
+.toc-l1 a::after, .toc-l2 a::after { content: leader('.') target-counter(attr(href url), page); color: #6b4a1b; font-weight: normal; text-transform: none; letter-spacing: 0; }
