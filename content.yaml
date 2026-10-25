@@ -143,7 +143,7 @@ chapters:
     style: lead
     text: |-
       Rome rewarded some kinds of person and ground down others. The archetypes below turn that truth into mechanics: seven concrete Roman origins, each with its own starting profile, a signature ability drawn from its place in the world, and a starting Dignitas that fixes where you stand before a word is spoken or a die is cast. Build a Roman character with one of these, or with any archetype from the Core Rulebook if your concept demands it.
-  - type: h3
+  - type: h2
     text: Archetypes
   - type: p
     style: body
@@ -339,7 +339,7 @@ chapters:
       text: |-
         Add [[boost]] to melee combat checks on any round in which your character first engages a new target. Civilization has not dulled you.
     type: statblock
-  - type: h3
+  - type: h2
     text: Careers
   - type: p
     style: body

@@ -126,7 +126,7 @@ def to_html():
         toc.append(f'<p class="toc-l1"><a href="#c{ci}">{md_html(str(ch["title"]))}</a></p>')
         si=0
         for b in ch["blocks"]:
-            if b.get("type") in ("h3","scenario"):
+            if b.get("type") in ("h2","h3","scenario"):
                 toc.append(f'<p class="toc-l2"><a href="#c{ci}s{si}">{md_html(b["text"])}</a></p>'); si+=1
     toc.append('</div>')
     out.append(''.join(toc))
@@ -141,7 +141,9 @@ def to_html():
             if in_cols: out.append('</div>'); in_cols=False
         for b in ch["blocks"]:
             bt=b.get("type")
-            if bt=="h3":
+            if bt=="h2":
+                frag=f'<h2 id="c{ci}s{si}">{md_html(b["text"])}</h2>'; full=True; si+=1
+            elif bt=="h3":
                 frag=f'<h3 id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1
             elif bt=="scenario":
                 frag=f'<h3 class="scenario-h" id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1
@@ -175,7 +177,7 @@ def sb_speech(b):
 
 def block_speech(b):
     t=b["type"]
-    if t in ("h3","h4","scenario"):
+    if t in ("h2","h3","h4","scenario"):
         pre="Scenario. " if t=="scenario" else ""
         return pre+md_plain(b["text"]).rstrip('.')+"."
     if t=="p": return md_plain(b["text"])
