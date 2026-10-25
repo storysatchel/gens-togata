@@ -142,7 +142,7 @@ def to_html(out_path=None):
         for b in ch["blocks"]:
             bt=b.get("type")
             if bt=="h2":
-                frag=f'<h2 id="c{ci}s{si}">{md_html(b["text"])}</h2>'; full=True; si+=1
+                frag=f'<h2 class="sec" id="c{ci}s{si}">{md_html(b["text"])}</h2>'; full=True; si+=1
             elif bt=="h3":
                 frag=f'<h3 id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1
             elif bt=="scenario":
