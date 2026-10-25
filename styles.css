@@ -7,13 +7,13 @@
 html { font-family: "DejaVu Serif", serif; font-size: 7pt; color: #1c1206; line-height: 1.26; }
 body { margin: 0; }
 h1, h2, h3, h4 { font-family: "DejaVu Serif", serif; color: #6e1b1b; line-height: 1.1; }
-h2 { font-size: 12pt; border-bottom: 1.8px solid #6e1b1b; padding-bottom: 1px; margin: 0 0 5px 0; column-span: all; text-transform: uppercase; letter-spacing: .6px; }
+h2 { font-size: 12pt; border-bottom: 1.8px solid #6e1b1b; padding-bottom: 1px; margin: 4px 0 5px 0; break-after: avoid; text-transform: uppercase; letter-spacing: .6px; }
 h3 { font-size: 8.6pt; color: #8a5a12; margin: 7px 0 2px 0; text-transform: uppercase; letter-spacing: .4px; }
 h4 { font-size: 7.5pt; color: #6e1b1b; margin: 5px 0 1px 0; }
 p { margin: 0 0 3px 0; text-align: justify; }
 ul { margin: 2px 0 4px 0; padding-left: 11px; }
 li { margin-bottom: 1px; text-align: justify; }
-.cols { column-count: 1; }
+.cols { column-count: 2; column-gap: 0.15in; }
 .chapter { page-break-before: always; }
 .lead { font-size: 7.4pt; }
 .small { font-size: 6.2pt; }
