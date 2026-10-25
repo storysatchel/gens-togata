@@ -12,13 +12,13 @@ chapters:
   - type: p
     style: lead
     text: |-
-      This document shows every component in *Gens Togata*, each labeled with the block `type` that produces it, so we can discuss the design literally. The banner above this paragraph (“Part I: Headings & Text”) is the **chapter h2** — a full-width banner that opens every chapter on a new page. This paragraph is a **lead** paragraph. What follows are the heading levels and text styles.
+      This document shows every component in *Gens Togata*, each labeled with the block `type` that produces it, so we can discuss the design literally. The banner above this paragraph (“Part I: Headings & Text”) is the **chapter title (H1)** — a full-width, underlined, full-caps banner that opens every chapter on a new page. This paragraph is a **lead** paragraph. What follows are the heading levels and text styles.
   - type: h2
     text: In-Chapter H2 Banner
   - type: p
     style: small
     text: |-
-      `type: h2` used *inside* a chapter — a full-width banner spanning both columns, for a major division such as Archetypes or Careers. Same style as the chapter title, but without a page break.
+      `type: h2` — a full-width **small-caps** banner for a major division such as Archetypes or Careers. One level below the chapter title (which is H1): no underline, no page break.
   - type: h3
     text: H3 — Section Head
   - type: p

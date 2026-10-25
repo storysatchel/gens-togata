@@ -121,7 +121,7 @@ def to_html(out_path=None):
 <div class="sys">{m["system"].upper()}</div></div>
 <div style="padding:1.6cm 1.5cm;">'''+''.join(f'<p class="legal">{md_html(p)}</p>' for p in m["legal"])+'</div>']
     # ---- table of contents (target-counter fills in the real page numbers) ----
-    toc=['<div class="toc"><h2>Contents</h2>']
+    toc=['<div class="toc"><h1 class="ch">Contents</h1>']
     for ci,ch in enumerate(DOC["chapters"]):
         toc.append(f'<p class="toc-l1"><a href="#c{ci}">{md_html(str(ch["title"]))}</a></p>')
         si=0
@@ -131,7 +131,7 @@ def to_html(out_path=None):
     toc.append('</div>')
     out.append(''.join(toc))
     for ci,ch in enumerate(DOC["chapters"]):
-        out.append(f'<div class="chapter"><h2 id="c{ci}">{md_html(ch["title"])}</h2>')
+        out.append(f'<div class="chapter"><h1 class="ch" id="c{ci}">{md_html(ch["title"])}</h1>')
         in_cols=False; si=0
         def openc():
             nonlocal in_cols
@@ -142,7 +142,7 @@ def to_html(out_path=None):
         for b in ch["blocks"]:
             bt=b.get("type")
             if bt=="h2":
-                frag=f'<h2 class="sec" id="c{ci}s{si}">{md_html(b["text"])}</h2>'; full=True; si+=1
+                frag=f'<h2 id="c{ci}s{si}">{md_html(b["text"])}</h2>'; full=True; si+=1
             elif bt=="h3":
                 frag=f'<h3 id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1
             elif bt=="scenario":
