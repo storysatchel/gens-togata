@@ -131,7 +131,7 @@ def to_html():
     toc.append('</div>')
     out.append(''.join(toc))
     for ci,ch in enumerate(DOC["chapters"]):
-        out.append('<div class="chapter">')
+        out.append(f'<div class="chapter"><h2 id="c{ci}">{md_html(ch["title"])}</h2>')
         in_cols=False; si=0
         def openc():
             nonlocal in_cols
@@ -139,8 +139,6 @@ def to_html():
         def closec():
             nonlocal in_cols
             if in_cols: out.append('</div>'); in_cols=False
-        openc()
-        out.append(f'<h2 id="c{ci}">{md_html(ch["title"])}</h2>')
         for b in ch["blocks"]:
             bt=b.get("type")
             if bt=="h3":
