@@ -44,12 +44,12 @@ table.gear tr:nth-child(even) td { background: #f3ead6; }
 .gly.ability { color: #2e8b43; }
 .gly.proficiency { color: #b99400; }
 .gly.challenge { color: #771214; }
-.cover { height: 100vh; background: #6e1b1b; color: #f3e3bf; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; page-break-after: always; }
-.cover .spqr { font-size: 22pt; letter-spacing: 1px; margin: 0; color: #e8c766; font-weight: bold; }
-.cover .sub { font-size: 11pt; letter-spacing: 2px; margin-top: 5px; color: #f3e3bf; text-transform: uppercase; }
-.cover .tag2 { font-size: 8pt; margin-top: 14px; font-style: italic; color: #d9b98a; }
-.cover .sys { position: absolute; bottom: 0.5cm; font-size: 6.5pt; letter-spacing: 1px; color: #e8c766; padding: 0 0.3in; }
-.eagle { font-size: 20pt; margin: 8px 0; }
+.cover { height: 100vh; position: relative; background: #fff; color: #111; display: flex; flex-direction: column; align-items: center; text-align: center; page-break-after: always; box-sizing: border-box; padding: 0.55in 0.5in; }
+.cover .festoon { width: 100%; margin: 0.1in 0 0.3in; }
+.cover .ptitle { font-size: 34pt; font-weight: bold; letter-spacing: 1px; margin: 0; color: #111; }
+.cover .psub { font-size: 13pt; letter-spacing: 2.5px; margin-top: 9px; text-transform: uppercase; color: #333; }
+.cover .ptag { font-size: 10.5pt; margin-top: 13px; font-style: italic; color: #333; }
+.cover .psys { position: absolute; bottom: 0.5in; left: 0; right: 0; font-size: 8pt; letter-spacing: 1.5px; text-transform: uppercase; color: #444; }
 .legal { font-size: 6pt; color: #555; }
 
 .proc { break-inside: avoid; border: 1px solid #8a5a12; background: #faf5e6; padding: 3px 6px; margin: 5px 0; }

@@ -114,11 +114,11 @@ def to_html(out_path=None):
     m=DOC["meta"]
     out=[f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>{m["title"]}</title>
 <style>{CSS}</style></head><body>
-<div class="cover"><div class="eagle">&#9812;</div>
-<h1 class="spqr" style="font-family:'DejaVu Serif';">{m["title"]}</h1>
-<div class="sub">{m["subtitle"]}</div>
-<div class="tag2">&ldquo;{m["tagline"]}&rdquo;</div>
-<div class="sys">{m["system"].upper()}</div></div>
+<div class="cover"><img class="festoon" src="../assets/cover-festoon.png" alt="">
+<h1 class="ptitle" style="font-family:'DejaVu Serif';">{m["title"]}</h1>
+<div class="psub">{m["subtitle"]}</div>
+<div class="ptag">&ldquo;{m["tagline"]}&rdquo;</div>
+<div class="psys">{m["system"].upper()}</div></div>
 <div style="padding:1.6cm 1.5cm;">'''+''.join(f'<p class="legal">{md_html(p)}</p>' for p in m["legal"])+'</div>']
     # ---- table of contents (target-counter fills in the real page numbers) ----
     toc=['<div class="toc"><h1 class="ch">Contents</h1>']
