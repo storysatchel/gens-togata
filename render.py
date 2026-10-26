@@ -132,7 +132,7 @@ def to_html(out_path=None):
     out.append(''.join(toc))
     for ci,ch in enumerate(DOC["chapters"]):
         out.append(f'<div class="chapter"><h1 class="ch" id="c{ci}">{md_html(ch["title"])}</h1>')
-        in_cols=False; si=0
+        in_cols=False; si=0; after_head=True
         def openc():
             nonlocal in_cols
             if not in_cols: out.append('<div class="cols">'); in_cols=True
@@ -142,13 +142,15 @@ def to_html(out_path=None):
         for b in ch["blocks"]:
             bt=b.get("type")
             if bt=="h2":
-                frag=f'<h2 id="c{ci}s{si}">{md_html(b["text"])}</h2>'; full=True; si+=1
+                frag=f'<h2 id="c{ci}s{si}">{md_html(b["text"])}</h2>'; full=True; si+=1; after_head=True
             elif bt=="h3":
-                frag=f'<h3 id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1
+                frag=f'<h3 id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1; after_head=False
             elif bt=="scenario":
-                frag=f'<h3 class="scenario-h" id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1
+                frag=f'<h3 class="scenario-h" id="c{ci}s{si}">{md_html(b["text"])}</h3>'; full=False; si+=1; after_head=False
+            elif bt=="p" and after_head:
+                frag=block_html(b,in_cols)[0]; full=True          # bare paragraph right after H1/H2 spans full width
             else:
-                frag,full=block_html(b,in_cols)
+                frag,full=block_html(b,in_cols); after_head=False
             if full:
                 closec(); out.append(f'<div class="fullw">{frag}</div>')
             else:
