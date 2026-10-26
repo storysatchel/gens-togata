@@ -1,7 +1,7 @@
 @page {
-  size: 4.25in 5.5in;
-  margin: 0.3in 0.3in 0.32in 0.3in;
-  @bottom-center { content: counter(page); font-family: "DejaVu Serif"; font-size: 6pt; color: #6b4a1b; }
+  size: 5.5in 8.5in;
+  margin: 0.5in 0.5in 0.55in 0.5in;
+  @bottom-center { content: counter(page); font-family: "DejaVu Serif"; font-size: 8pt; color: #6b4a1b; }
 }
 @page :first { @bottom-center { content: ""; } margin: 0; }
 html { font-family: "DejaVu Serif", serif; font-size: 7pt; color: #1c1206; line-height: 1.26; }
