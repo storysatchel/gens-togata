@@ -60,28 +60,30 @@ def speechclean(t):
     return t
 
 # ================= HTML RENDER =================
-def sb_html(b):
-    o=['<section class="statblock">']
+def adversary_profile_html(b):
+    o=['<section class="statblock adversary-profile">']
     nm=b.get("name",""); kind=b.get("kind","")
-    o.append('<header class="stat-head">')
-    o.append(f'<div><span class="nm">{md_html(nm)}</span>'+(f' <span class="typ">{md_html(kind)}</span>' if kind else '')+'</div>')
+    o.append(f'<h4 class="profile-title">{md_html(nm)}'+(f' <span class="typ">{md_html(kind)}</span>' if kind else '')+'</h4>')
     if b.get("desc"): o.append(f'<p class="sb-desc">{md_html(b["desc"])}</p>')
-    o.append('</header>')
     chars=b.get("chars"); deriv=b.get("derived")
     if chars:
-        o.append('<div class="stat-panels">')
-        o.append('<table class="chars"><tr>'+''.join(f'<th>{h}</th>' for h in chars)+'</tr>'
-                 +'<tr>'+''.join(f'<td>{v}</td>' for v in chars.values())+'</tr></table>')
-        if deriv:
-            o.append('<table class="derived"><tr>'+''.join(f'<th>{h}</th>' for h in deriv)+'</tr>'
-                     +'<tr>'+''.join(f'<td>{v}</td>' for v in deriv.values())+'</tr></table>')
+        char_labels={"Br":"Brawn","Ag":"Agility","Int":"Intellect","Cun":"Cunning","Will":"Willpower","Pr":"Presence"}
+        o.append('<div class="profile-characteristics">')
+        o.append(''.join(f'<div class="char-pod"><span class="char-badge">{v}</span><span class="char-label">{md_html(char_labels.get(k,k))}</span></div>' for k,v in chars.items()))
+        o.append('</div>')
+    if deriv:
+        o.append('<div class="profile-derived">')
+        for label,value in deriv.items():
+            parts=str(value).split("/",1)
+            display=f'<span>{md_html(parts[0])}</span><i></i><span>{md_html(parts[1])}</span>' if len(parts)==2 else md_html(str(value))
+            o.append(f'<div class="profile-stat"><strong>{md_html(label)}</strong><span class="profile-value">{display}</span></div>')
         o.append('</div>')
     fields=b.get("fields",[])
     if fields:
         o.append('<div class="sb-fields">')
         for f in fields:
             lbl=f.get("label",""); txt=md_html(f.get("text",""))
-            o.append(f'<p class="sb-field">'+(f'<strong>{md_html(lbl)}.</strong> ' if lbl else '')+txt+'</p>')
+            o.append(f'<p class="sb-field">'+(f'<strong>{md_html(lbl)}:</strong> ' if lbl else '')+txt+'</p>')
         o.append('</div>')
     o.append('</section>')
     return "".join(o)
@@ -113,7 +115,7 @@ def block_html(b, cols):
         head='<tr>'+''.join(f'<th>{md_html(c)}</th>' for c in b["columns"])+'</tr>'
         body=''.join('<tr>'+''.join(f'<td>{md_html(c)}</td>' for c in r)+'</tr>' for r in b["rows"])
         return f'<table class="{cls}">{head}{body}</table>', True
-    if t=="statblock": return sb_html(b), False
+    if t=="statblock": return adversary_profile_html(b), False
     if t=="endnotes":
         lis=''.join(f'<li>{md_html(i)}</li>' for i in b["items"])
         return f'<div class="endnotes"><h4>{md_html(b.get("title","Notes"))}</h4><ol>{lis}</ol></div>', True

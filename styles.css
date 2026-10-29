@@ -19,22 +19,22 @@ li { margin-bottom: 1px; text-align: justify; }
 .lead { font-size: 7.4pt; }
 .small { font-size: 6.2pt; }
 .latin { font-style: italic; }
-.statblock { break-inside: avoid; border: 1px solid #b89b63; border-left: 3px solid #6e1b1b; background: #fffdf7; margin: 7px 0; }
-.stat-head { padding: 5px 7px 3px; border-bottom: 1px solid #d8c9a8; }
-.statblock .nm { font-family: "DejaVu Serif"; font-weight: bold; color: #6e1b1b; font-size: 9pt; text-transform: uppercase; }
-.statblock .typ { font-variant: small-caps; color: #8a5a12; font-size: 7pt; }
-.sb-desc { font-size: 7pt; line-height: 1.35; margin: 2px 0 1px; text-align: left; }
-.stat-panels { padding: 4px 6px 2px; }
-.chars, .derived { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 0 0 3px; font-size: 7pt; }
-.chars td, .chars th, .derived td, .derived th { border: 0.5px solid #cdb78c; padding: 2px 1px; text-align: center; }
-.chars th, .derived th { background: #f0e6d0; color: #6e1b1b; font-weight: bold; }
-.chars td, .derived td { background: #fffdf7; font-size: 8pt; }
-.derived { table-layout: auto; }
-.derived th { font-size: 6.4pt; white-space: nowrap; }
-.chars td, .chars th, .derived td, .derived th { padding: 2px 2px; }
-.sb-fields { padding: 2px 7px 4px; }
-.sb-field { font-size: 7pt; line-height: 1.35; margin: 2px 0 3px; text-align: left; }
-.sb-field strong { color: #6e1b1b; }
+.statblock { break-inside: avoid; border: 1px solid #dcd4c3; border-left: 2px solid #236894; background: #fbf9f4; padding: 5px 6px; margin: 5px 0; }
+.profile-title { color: #6e1b1b; font-size: 8pt; font-weight: bold; text-transform: uppercase; margin: 0 0 3px; }
+.statblock .typ { color: #8a5a12; font-size: 6pt; font-variant: small-caps; }
+.sb-desc { font-size: 6.6pt; line-height: 1.26; margin: 0 0 4px; text-align: left; }
+.profile-characteristics { display: table; width: 100%; table-layout: fixed; border-spacing: 1px 0; margin: 3px 0 5px; }
+.char-pod { display: table-cell; width: 16.666%; text-align: center; vertical-align: bottom; }
+.char-badge { display: block; width: 18px; height: 18px; margin: 0 auto -2px; border: 1px solid #6e1b1b; border-radius: 50%; background: white; font-size: 8pt; font-weight: bold; line-height: 16px; position: relative; z-index: 1; }
+.char-label { display: block; padding: 3px 0 1px; background: #6e1b1b; color: #fffdf7; font-size: 4.8pt; line-height: 1; text-transform: uppercase; white-space: nowrap; letter-spacing: -.25px; }
+.profile-derived { display: flex; gap: 2px; margin: 4px 0 5px; }
+.profile-stat { flex: 1; min-width: 0; text-align: center; }
+.profile-stat strong { display: block; padding: 2px 1px; background: #8a5a12; color: #fffdf7; font-size: 4.7pt; line-height: 1.05; text-transform: uppercase; white-space: nowrap; letter-spacing: -.2px; }
+.profile-value { min-height: 14px; display: flex; align-items: center; justify-content: center; gap: 3px; border: 1px solid #cdb78c; background: #fffdf7; font-size: 8pt; font-weight: bold; }
+.profile-value i { height: 9px; border-left: 1px solid #8a5a12; }
+.sb-fields { padding: 1px 1px 0; }
+.sb-field { font-size: 6.6pt; line-height: 1.25; margin: 2px 0; text-align: left; }
+.sb-field strong { color: #111; }
 table.gear { width: 100%; border-collapse: collapse; font-size: 5.9pt; margin: 4px 0; }
 .fullw { margin: 3px 0 6px 0; }
 table.gear tr { break-inside: avoid; }
