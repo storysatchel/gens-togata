@@ -8,8 +8,9 @@ Authoring and build conventions for this repository. Read before editing content
 ## Architecture — source of truth is decoupled from presentation
 - `content.yaml` is the **single source of truth**: metadata + chapters of typed blocks (`h3`, `p`, `list`, `table`, `statblock`, `sidebar`, `procedure`, `scenario`, `endnotes`, …). It knows nothing of markup.
 - `styles.css` is presentation only.
-- `render.py` is the **only** display-aware code: `content.yaml` → `build/book.html` (→ PDF via WeasyPrint) and → `audio/*.txt` (TTS narration).
-- Never parse rendered HTML to recover content. Never hard-code prose in `render.py` or `styles.css`.
+- `src/content/` loads YAML and declares the typed content model. `src/templates/` contains reusable TSX templates; `src/inline/` handles inline markup.
+- `src/render.tsx` is the CLI entry point: `content.yaml` → PDF via `takumi-pdf`; `src/output/speech.ts` renders `audio/*.txt` from the same content model.
+- Never parse rendered output to recover content. Never hard-code book prose in renderer modules or `styles.css`.
 
 ## Citations & attribution
 - **No inline attribution.** Do **not** name the source in the prose ("Mommsen writes", "as Cato notes", "according to…", "(Grounded in …)"). A quotation stands on its own, carrying only a superscript endnote marker `{{N}}`. **All attribution lives in the endnotes** (and the Appendix bibliography).

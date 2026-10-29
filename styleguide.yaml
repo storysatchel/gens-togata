@@ -5,7 +5,7 @@ meta:
   system: A component reference for the Genesys Roleplaying Game supplement
   legal:
   - |-
-    Gens Togata Style Guide — a living reference rendered with the same render.py and styles.css as the rulebook. Every block is labeled with its YAML `type` (and `style`, where relevant) so the layout can be discussed precisely. This page is the **legal** component; the title page before it is the **cover**; the page number below is the **footer**; the Contents page that follows is the **toc**.
+    Gens Togata Style Guide — a living reference rendered with the same TSX templates and styles.css as the rulebook. Every block is labeled with its YAML `type` (and `style`, where relevant) so the layout can be discussed precisely. This page is the **legal** component; the title page before it is the **cover**; the page number below is the **footer**; the Contents page that follows is the **toc**.
 chapters:
 - title: 'Part I: Headings & Text'
   blocks:
@@ -247,4 +247,4 @@ chapters:
   - type: p
     style: small
     text: |-
-      Structural components added automatically by the renderer: the **cover**, the **legal** page, the **toc** (Contents — dotted leaders and real page numbers via WeasyPrint `target-counter`), and the page **footer**.
+      Structural components added automatically by the renderer: the **cover**, the **legal** page, the **toc** (Contents — dotted leaders and page numbers from Takumi's target-page primitive), and the page **footer**.

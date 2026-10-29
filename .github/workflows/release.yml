@@ -17,38 +17,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install WeasyPrint system libraries + fonts
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Type-check renderer
+        run: bun run typecheck
+
+      - name: Install PDF imposition tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends \
-            libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 \
-            libharfbuzz0b libharfbuzz-subset0 fonts-dejavu-core \
-            texlive-extra-utils texlive-latex-recommended
-          sudo fc-cache -f
+          sudo apt-get install -y --no-install-recommends texlive-extra-utils texlive-latex-recommended
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install Python dependencies
-        run: pip install "weasyprint>=60" "ruamel.yaml"
-
-      - name: Render HTML (rulebook + style guide) + narration
-        run: |
-          python render.py
-          python render.py styleguide.yaml build/styleguide.html
-
-      - name: Build PDFs
+      - name: Build PDFs and narration
         run: |
           mkdir -p dist
           VERSION="${GITHUB_REF_NAME:-dev}"
           INPUT="dist/Gens-Togata-${VERSION}.pdf"
-          weasyprint build/book.html "$INPUT"
+          bun run src/render.tsx content.yaml "$INPUT"
+          bun run src/render.tsx styleguide.yaml "dist/Gens-Togata-Style-Guide-${VERSION}.pdf"
           pdfbook2 --short-edge --no-crop --paper=letterpaper "$INPUT"
           mv "dist/Gens-Togata-${VERSION}-book.pdf" \
             "dist/Gens-Togata-${VERSION}-folio.pdf"
-          weasyprint build/styleguide.html "dist/Gens-Togata-Style-Guide-${VERSION}.pdf"
-          cp audio/transcript.txt "dist/Gens-Togata-${VERSION}-transcript.txt" || true
+          cp audio/transcript.txt "dist/Gens-Togata-${VERSION}-transcript.txt"
           ls -la dist
 
       - name: Publish GitHub Release (on tag)
