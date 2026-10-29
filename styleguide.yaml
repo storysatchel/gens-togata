@@ -135,7 +135,7 @@ chapters:
   - type: p
     style: small
     text: |-
-      `type: statblock` — `name`, `kind`, `desc`, a characteristics row, `derived` stats, and labeled `fields`.
+      `type: statblock` — a full-width adversary profile with a flavor line, six named characteristics, derived-stat badges, and labeled fields.
   - type: statblock
     name: Aulus the Example
     kind: Rival

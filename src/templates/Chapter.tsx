@@ -80,7 +80,7 @@ export function Chapter({ chapter, chapterIndex }: { chapter: ChapterData; chapt
 
   chapter.blocks.forEach((block, index) => {
     const id = ["h2", "h3", "scenario"].includes(block.type) ? `c${chapterIndex}s${subsection++}` : undefined;
-    const fullWidth = block.type === "h2" || block.type === "table" || block.type === "endnotes" || (block.type === "p" && afterHeading);
+    const fullWidth = block.type === "h2" || block.type === "table" || block.type === "statblock" || block.type === "endnotes" || (block.type === "p" && afterHeading);
     if (block.type === "h2") afterHeading = true;
     else if (block.type === "p" && afterHeading) afterHeading = false;
     else if (block.type !== "p") afterHeading = false;

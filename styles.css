@@ -11,11 +11,23 @@ li { margin-bottom: 1px; text-align: justify; }
 .lead { font-size: 7.4pt; }
 .small { font-size: 6.2pt; }
 .statblock { break-inside: avoid; border: 1px solid #6e1b1b; background: #f6efdf; padding: 3px 5px; margin: 4px 0; border-radius: 2px; }
-.statblock .nm { font-family: "Libre Baskerville", "DejaVu Sans", serif; font-weight: bold; color: #6e1b1b; font-size: 7.6pt; text-transform: uppercase; }
-.statblock .typ { font-style: italic; color: #8a5a12; font-size: 6.2pt; }
-.chars { width: 100%; border-collapse: collapse; margin: 3px 0; font-size: 6pt; }
-.chars td, .chars th { border: 0.5px solid #b89b63; padding: 0.5px 2px; text-align: center; }
-.chars th { background: #6e1b1b; color: #f6efdf; font-weight: bold; }
+.statblock.adversary-profile { border-color: #dcd4c3; background: #fbf9f4; padding: 7px 9px; color: #2b2823; }
+.adv-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-bottom: 1px solid #c9dce8; margin-bottom: 4px; }
+.adv-name { margin: 0; color: #236894; font-family: "DejaVu Sans", sans-serif; font-size: 12pt; font-weight: bold; text-transform: uppercase; letter-spacing: .3px; }
+.adv-kind { border-radius: 3px; background: #106395; color: #fff; padding: 2px 5px; font-family: "DejaVu Sans", sans-serif; font-size: 6pt; font-weight: bold; text-transform: uppercase; }
+.adv-flavor { margin: 0 0 5px; font-size: 7.2pt; line-height: 1.25; }
+.adv-characteristics { width: 100%; border-collapse: collapse; margin: 3px 0 5px; border-bottom: 3px solid #d87621; }
+.adv-characteristics td { width: 16.666%; padding: 2px 1px 3px; text-align: center; vertical-align: bottom; }
+.adv-char-value { display: block; width: 22px; height: 22px; margin: 0 auto 2px; border: 1.5px solid #236894; border-radius: 50%; background: #fff; color: #111; font-family: "DejaVu Sans", sans-serif; font-size: 8pt; font-weight: bold; line-height: 22px; }
+.adv-char-label { display: block; padding: 2px 1px; border-radius: 2px; background: #106395; color: #fff; font-family: "DejaVu Sans", sans-serif; font-size: 5.2pt; font-weight: bold; text-transform: uppercase; }
+.adv-derived { display: flex; justify-content: center; gap: 5px; margin: 4px 0 6px; }
+.adv-derived-item { flex: 1; border: 1px solid #d9ccb9; background: #fff; text-align: center; }
+.adv-derived-label { padding: 2px; background: #8f281e; color: #fff; font-family: "DejaVu Sans", sans-serif; font-size: 5.7pt; font-weight: bold; text-transform: uppercase; }
+.adv-derived-value { padding: 2px; color: #111; font-family: "DejaVu Sans", sans-serif; font-size: 10pt; font-weight: bold; }
+.adv-derived-note { display: block; color: #555; font-size: 4.8pt; font-weight: normal; }
+.adv-details { border-top: 1px solid #d9ccb9; padding-top: 3px; }
+.adv-detail { margin: 0 0 2px; font-size: 7pt; line-height: 1.22; }
+.adv-detail-label { color: #111; }
 .deriv { font-size: 6.2pt; margin: 1px 0; }
 table.gear { width: 100%; border-collapse: collapse; font-size: 5.9pt; margin: 4px 0; }
 .fullw { margin: 3px 0 6px 0; }
