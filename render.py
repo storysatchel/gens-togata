@@ -61,20 +61,29 @@ def speechclean(t):
 
 # ================= HTML RENDER =================
 def sb_html(b):
-    o=['<div class="statblock">']
+    o=['<section class="statblock">']
     nm=b.get("name",""); kind=b.get("kind","")
-    o.append(f'<span class="nm">{md_html(nm)}</span>'+(f' <span class="typ">({md_html(kind)})</span>' if kind else '')+'<br>')
-    if b.get("desc"): o.append(f'<span class="small">{md_html(b["desc"])}</span>')
+    o.append('<header class="stat-head">')
+    o.append(f'<div><span class="nm">{md_html(nm)}</span>'+(f' <span class="typ">{md_html(kind)}</span>' if kind else '')+'</div>')
+    if b.get("desc"): o.append(f'<p class="sb-desc">{md_html(b["desc"])}</p>')
+    o.append('</header>')
     chars=b.get("chars"); deriv=b.get("derived")
     if chars:
-        hs=list(chars)+(list(deriv) if deriv else [])
-        vs=[chars[k] for k in chars]+([deriv[k] for k in deriv] if deriv else [])
-        o.append('<table class="chars"><tr>'+''.join(f'<th>{h}</th>' for h in hs)+'</tr>'
-                 +'<tr>'+''.join(f'<td>{v}</td>' for v in vs)+'</tr></table>')
-    for f in b.get("fields",[]):
-        lbl=f.get("label",""); txt=md_html(f.get("text",""))
-        o.append(f'<p class="deriv">'+(f'<strong>{md_html(lbl)}:</strong> ' if lbl else '')+txt+'</p>')
-    o.append('</div>')
+        o.append('<div class="stat-panels">')
+        o.append('<table class="chars"><tr>'+''.join(f'<th>{h}</th>' for h in chars)+'</tr>'
+                 +'<tr>'+''.join(f'<td>{v}</td>' for v in chars.values())+'</tr></table>')
+        if deriv:
+            o.append('<table class="derived"><tr>'+''.join(f'<th>{h}</th>' for h in deriv)+'</tr>'
+                     +'<tr>'+''.join(f'<td>{v}</td>' for v in deriv.values())+'</tr></table>')
+        o.append('</div>')
+    fields=b.get("fields",[])
+    if fields:
+        o.append('<div class="sb-fields">')
+        for f in fields:
+            lbl=f.get("label",""); txt=md_html(f.get("text",""))
+            o.append(f'<p class="sb-field">'+(f'<strong>{md_html(lbl)}.</strong> ' if lbl else '')+txt+'</p>')
+        o.append('</div>')
+    o.append('</section>')
     return "".join(o)
 
 def block_html(b, cols):

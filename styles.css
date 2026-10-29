@@ -19,13 +19,22 @@ li { margin-bottom: 1px; text-align: justify; }
 .lead { font-size: 7.4pt; }
 .small { font-size: 6.2pt; }
 .latin { font-style: italic; }
-.statblock { break-inside: avoid; border: 1px solid #6e1b1b; background: #f6efdf; padding: 3px 5px; margin: 4px 0; border-radius: 2px; }
-.statblock .nm { font-family: "DejaVu Serif"; font-weight: bold; color: #6e1b1b; font-size: 7.6pt; text-transform: uppercase; }
-.statblock .typ { font-style: italic; color: #8a5a12; font-size: 6.2pt; }
-.chars { width: 100%; border-collapse: collapse; margin: 3px 0; font-size: 6pt; }
-.chars td, .chars th { border: 0.5px solid #b89b63; padding: 0.5px 2px; text-align: center; }
-.chars th { background: #6e1b1b; color: #f6efdf; font-weight: bold; }
-.deriv { font-size: 6.2pt; margin: 1px 0; }
+.statblock { break-inside: avoid; border: 1px solid #b89b63; border-left: 3px solid #6e1b1b; background: #fffdf7; margin: 7px 0; }
+.stat-head { padding: 5px 7px 3px; border-bottom: 1px solid #d8c9a8; }
+.statblock .nm { font-family: "DejaVu Serif"; font-weight: bold; color: #6e1b1b; font-size: 9pt; text-transform: uppercase; }
+.statblock .typ { font-variant: small-caps; color: #8a5a12; font-size: 7pt; }
+.sb-desc { font-size: 7pt; line-height: 1.35; margin: 2px 0 1px; text-align: left; }
+.stat-panels { padding: 4px 6px 2px; }
+.chars, .derived { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 0 0 3px; font-size: 7pt; }
+.chars td, .chars th, .derived td, .derived th { border: 0.5px solid #cdb78c; padding: 2px 1px; text-align: center; }
+.chars th, .derived th { background: #f0e6d0; color: #6e1b1b; font-weight: bold; }
+.chars td, .derived td { background: #fffdf7; font-size: 8pt; }
+.derived { table-layout: auto; }
+.derived th { font-size: 6.4pt; white-space: nowrap; }
+.chars td, .chars th, .derived td, .derived th { padding: 2px 2px; }
+.sb-fields { padding: 2px 7px 4px; }
+.sb-field { font-size: 7pt; line-height: 1.35; margin: 2px 0 3px; text-align: left; }
+.sb-field strong { color: #6e1b1b; }
 table.gear { width: 100%; border-collapse: collapse; font-size: 5.9pt; margin: 4px 0; }
 .fullw { margin: 3px 0 6px 0; }
 table.gear tr { break-inside: avoid; }
