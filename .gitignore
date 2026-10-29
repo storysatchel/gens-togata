@@ -2,6 +2,8 @@
 build/
 dist/
 audio/
+node_modules/
+*.tsbuildinfo
 
 # Python
 __pycache__/
