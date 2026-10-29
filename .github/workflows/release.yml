@@ -22,7 +22,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
             libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 \
-            libharfbuzz0b libharfbuzz-subset0 fonts-dejavu-core
+            libharfbuzz0b libharfbuzz-subset0 fonts-dejavu-core \
+            texlive-extra-utils texlive-latex-recommended
           sudo fc-cache -f
 
       - uses: actions/setup-python@v5
@@ -37,11 +38,15 @@ jobs:
           python render.py
           python render.py styleguide.yaml build/styleguide.html
 
-      - name: Build PDF
+      - name: Build PDFs
         run: |
           mkdir -p dist
           VERSION="${GITHUB_REF_NAME:-dev}"
-          weasyprint build/book.html "dist/Gens-Togata-${VERSION}.pdf"
+          INPUT="dist/Gens-Togata-${VERSION}.pdf"
+          weasyprint build/book.html "$INPUT"
+          pdfbook2 --short-edge --no-crop --paper=letterpaper "$INPUT"
+          mv "dist/Gens-Togata-${VERSION}-book.pdf" \
+            "dist/Gens-Togata-${VERSION}-folio.pdf"
           weasyprint build/styleguide.html "dist/Gens-Togata-Style-Guide-${VERSION}.pdf"
           cp audio/transcript.txt "dist/Gens-Togata-${VERSION}-transcript.txt" || true
           ls -la dist

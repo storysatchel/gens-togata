@@ -32,18 +32,23 @@ make clean
 ```
 
 `render.py` writes the HTML and the narration transcript; WeasyPrint turns the HTML into the PDF.
+The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). CI also creates a letter-size 2-up folio PDF for duplex booklet printing.
 Always verify the PDF visually (overflow/overlap are silent) before release.
 
 ## Releases (CI/CD)
 
 GitHub Actions (`.github/workflows/release.yml`):
 
-- **push to `main` / PRs** — renders the PDF and uploads it as a build artifact (validation).
-- **push a `v*` tag** — builds the PDF and publishes a GitHub Release with the PDF
-  and narration transcript attached.
+- **push to `main` / PRs** — builds the whole-page rulebook PDF, 2-up folio PDF, and style-guide PDF; uploads all three as build artifacts.
+- **push a `v*` tag** — publishes all three PDFs and the narration transcript.
+
+- `Gens-Togata-vX.Y.Z.pdf` — whole-page rulebook PDF.
+- `Gens-Togata-vX.Y.Z-folio.pdf` — 2-up booklet-imposed PDF for letter paper; print duplex using the short-edge flip setting.
+- `Gens-Togata-Style-Guide-vX.Y.Z.pdf` — style-guide PDF.
+- `Gens-Togata-vX.Y.Z-transcript.txt` — narration transcript.
 
 ```sh
-git tag v0.1.0 && git push origin v0.1.0   # -> release with the PDF attached
+git tag v0.1.0 && git push origin v0.1.0   # -> release with all three PDFs attached
 ```
 
 ## Licensing

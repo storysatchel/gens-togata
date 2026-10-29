@@ -25,5 +25,5 @@ Authoring and build conventions for this repository. Read before editing content
 - Keep mechanics honest to Genesys: status and origin **feed** the dice (difficulty, boost/setback, available options, stakes); they do not override rolls.
 
 ## Build & release
-- Build: `make pdf` → `dist/Gens Togata.pdf`. Page is a portrait digest, **4.25in × 5.5in (306 × 396 pt)**, single column — verify with `pdfinfo`.
-- Release: push a `vX.Y.Z` tag; CI builds and publishes a GitHub Release with the PDF + narration transcript (`Gens-Togata-vX.Y.Z.pdf`). Always verify the published asset's page size and that the `Genesys` glyph font is embedded.
+- Build: `make pdf` → `dist/Gens Togata.pdf`. Source page is **5.5in × 8.5in (396 × 612 pt)**; verify with `pdfinfo`.
+- Release: push a `vX.Y.Z` tag; CI publishes the whole-page PDF, a letter-size 2-up folio PDF, and narration transcript. Print the folio duplex with the short-edge flip setting. Verify the page sizes and that the `Genesys` glyph font is embedded.
