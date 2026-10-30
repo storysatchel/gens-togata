@@ -45,8 +45,9 @@ Always verify the PDF visually (overflow/overlap are silent) before release.
 
 GitHub Actions (`.github/workflows/release.yml`):
 
-- **push to `main` / PRs** — builds the whole-page rulebook PDF, 2-up folio PDF, and style-guide PDF; uploads all three as build artifacts.
-- **push a `v*` tag** — publishes all three PDFs and the narration transcript.
+- **PRs** — builds the whole-page rulebook PDF, 2-up folio PDF, and style-guide PDF; uploads all three as build artifacts.
+- **push to `main`** — if the build passes, cuts the next patch release automatically (latest `vX.Y.Z` → `vX.Y.(Z+1)`), tagging the commit and publishing all three PDFs and the narration transcript. Skipped when the commit already carries a `v*` tag.
+- **push a `v*` tag** — publishes a release at that version. Use this for minor/major bumps; later patches continue from it.
 
 - `Gens-Togata-vX.Y.Z.pdf` — whole-page rulebook PDF.
 - `Gens-Togata-vX.Y.Z-folio.pdf` — 2-up booklet-imposed PDF for letter paper; print duplex using the short-edge flip setting.
@@ -54,7 +55,7 @@ GitHub Actions (`.github/workflows/release.yml`):
 - `Gens-Togata-vX.Y.Z-transcript.txt` — narration transcript.
 
 ```sh
-git tag v0.1.0 && git push origin v0.1.0   # -> release with all three PDFs attached
+git tag v0.21.0 && git push origin v0.21.0   # minor/major bump; patches are automatic
 ```
 
 ## Licensing
