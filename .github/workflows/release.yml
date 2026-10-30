@@ -51,11 +51,6 @@ jobs:
       - name: Type-check renderer
         run: bun run typecheck
 
-      - name: Install PDF imposition tools
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends texlive-extra-utils texlive-latex-recommended
-
       - name: Build PDFs and narration
         run: |
           mkdir -p dist
@@ -63,9 +58,7 @@ jobs:
           INPUT="dist/Gens-Togata-${VERSION}.pdf"
           bun run src/render.tsx content.yaml "$INPUT"
           bun run src/render.tsx styleguide.yaml "dist/Gens-Togata-Style-Guide-${VERSION}.pdf"
-          pdfbook2 --short-edge --no-crop --paper=letterpaper --signature=16 "$INPUT"
-          mv "dist/Gens-Togata-${VERSION}-book.pdf" \
-            "dist/Gens-Togata-${VERSION}-folio.pdf"
+          bun run src/impose.ts "$INPUT" "dist/Gens-Togata-${VERSION}-folio.pdf" --signature=16
           cp audio/transcript.txt "dist/Gens-Togata-${VERSION}-transcript.txt"
           ls -la dist
 

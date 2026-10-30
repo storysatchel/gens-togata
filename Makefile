@@ -1,4 +1,4 @@
-.PHONY: all pdf styleguide audio excerpt typecheck clean
+.PHONY: all pdf folio styleguide audio excerpt typecheck clean
 
 all: pdf styleguide
 
@@ -10,6 +10,9 @@ $(DEPS): package.json bun.lock
 
 pdf: $(DEPS)
 	bun run src/render.tsx content.yaml "dist/Gens Togata.pdf"
+
+folio: pdf
+	bun run src/impose.ts "dist/Gens Togata.pdf" "dist/Gens Togata - Folio.pdf" --signature=16
 
 styleguide: $(DEPS)
 	bun run src/render.tsx styleguide.yaml "dist/Gens Togata - Style Guide.pdf"

@@ -38,7 +38,7 @@ bun run typecheck # TypeScript static check
 ```
 
 `takumi-pdf` renders `.tsx` templates directly to a paged PDF; no intermediate HTML or headless browser is required. The narration renderer remains a separate output path over the same YAML data.
-The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). CI also creates a letter-size 2-up folio PDF for duplex booklet printing.
+The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). `make folio` (and CI) imposes it 2-up on letter paper in 16-page signatures for duplex booklet printing, using `src/impose.ts` (pdf-lib; no TeX needed).
 Always verify the PDF visually (overflow/overlap are silent) before release.
 
 ## Releases (CI/CD)
