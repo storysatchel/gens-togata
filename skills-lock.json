@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "rpg-critic": {
+      "source": "mburnamfink/rpg-dev-skills",
+      "sourceType": "github",
+      "skillPath": "skills/rpg-critic/SKILL.md",
+      "computedHash": "a1a6a9b4c58c3adbc8456bd4d2a332e4b6c3c17e33532d2a764600da6111d2a9"
+    },
+    "rpg-dev": {
+      "source": "mburnamfink/rpg-dev-skills",
+      "sourceType": "github",
+      "skillPath": "skills/rpg-dev/SKILL.md",
+      "computedHash": "5c26d6e52350cb5cac7715efa8342f929f23360b5f4b31323f3b99bcee1e459a"
+    },
+    "rpg-npc-cast": {
+      "source": "mburnamfink/rpg-dev-skills",
+      "sourceType": "github",
+      "skillPath": "skills/rpg-npc-cast/SKILL.md",
+      "computedHash": "dc098c3a0bb8a113b27ec2fe92a46b4325817af533ae3581184946d7c8acf2fa"
+    },
+    "rpg-publish": {
+      "source": "mburnamfink/rpg-dev-skills",
+      "sourceType": "github",
+      "skillPath": "skills/rpg-publish/SKILL.md",
+      "computedHash": "b2f7ac0dab6e54bc3185b127422eeb3c4da32befcaa11fc8ad47dd66ce22cbd8"
+    },
+    "rpg-revise": {
+      "source": "mburnamfink/rpg-dev-skills",
+      "sourceType": "github",
+      "skillPath": "skills/rpg-revise/SKILL.md",
+      "computedHash": "b57e69401de2f965811fc1c2ffe0d92306bd7f446fceb2969f0e60ef970c7c5e"
+    }
+  }
+}
