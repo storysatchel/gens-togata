@@ -38,7 +38,7 @@ bun run typecheck # TypeScript static check
 ```
 
 `takumi-pdf` renders `.tsx` templates directly to a paged PDF; no intermediate HTML or headless browser is required. The narration renderer remains a separate output path over the same YAML data.
-The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). `make folio` (and CI) imposes it 2-up on letter paper in 16-page signatures for duplex booklet printing, using the [`pdfbooklet`](https://www.npmjs.com/package/pdfbooklet) CLI (installed by `bun install`; no TeX needed).
+The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). `make folio` (and CI) imposes it 2-up on letter paper in 16-page signatures for duplex booklet printing, using [`pdfimpose`](https://framagit.org/spalax/pdfimpose) (`hardcover --signature 2x1 --group 4`), run pinned through `uvx` — install [uv](https://docs.astral.sh/uv/); no TeX needed.
 Always verify the PDF visually (overflow/overlap are silent) before release.
 
 ## Releases (CI/CD)
@@ -50,7 +50,7 @@ GitHub Actions (`.github/workflows/release.yml`):
 - **push a `v*` tag** — publishes a release at that version. Use this for minor/major bumps; later patches continue from it.
 
 - `Gens-Togata-vX.Y.Z.pdf` — whole-page rulebook PDF.
-- `Gens-Togata-vX.Y.Z-folio.pdf` — 2-up booklet-imposed PDF for letter paper, in signatures of 4 sheets (16 pages) each; print duplex using the **long-edge** flip setting (back sides are pre-rotated), then fold and nest each 4-sheet group separately.
+- `Gens-Togata-vX.Y.Z-folio.pdf` — 2-up booklet-imposed PDF for letter paper, in signatures of 4 sheets (16 pages) each; print duplex using the short-edge flip setting, then fold and nest each 4-sheet group separately.
 - `Gens-Togata-Style-Guide-vX.Y.Z.pdf` — style-guide PDF.
 - `Gens-Togata-vX.Y.Z-transcript.txt` — narration transcript.
 

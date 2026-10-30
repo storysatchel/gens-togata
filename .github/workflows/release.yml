@@ -48,6 +48,8 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      - uses: astral-sh/setup-uv@v6
+
       - name: Type-check renderer
         run: bun run typecheck
 
@@ -58,7 +60,7 @@ jobs:
           INPUT="dist/Gens-Togata-${VERSION}.pdf"
           bun run src/render.tsx content.yaml "$INPUT"
           bun run src/render.tsx styleguide.yaml "dist/Gens-Togata-Style-Guide-${VERSION}.pdf"
-          bunx pdfbooklet --paper-size letter --signature-size 16 --output "dist/Gens-Togata-${VERSION}-folio.pdf" "$INPUT"
+          uvx pdfimpose==2.10.0 hardcover --signature 2x1 --group 4 --output "dist/Gens-Togata-${VERSION}-folio.pdf" "$INPUT"
           cp audio/transcript.txt "dist/Gens-Togata-${VERSION}-transcript.txt"
           ls -la dist
 
