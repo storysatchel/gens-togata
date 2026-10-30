@@ -2431,11 +2431,11 @@ chapters:
   - type: p
     style: lead
     text: |-
-      Three ready-to-run scenarios, each drawn from a real episode of Roman history, and each built in the three-act shape of a published one-shot: a **synopsis** for the GM, **acts** broken into scenes with *read-aloud* boxes, GM notes on “what's really going on,” suggested skill checks, and a **conclusion** with rewards. Adversaries refer to the stat blocks earlier in this book; a scenario's named villain gets a quick custom profile. Together they exercise the whole toolkit — intrigue and the Senate, the law-court, and the burning city — and lean hard on the social engine in *The Theater of Power.*
+      Six ready-to-run scenarios, each drawn from a real episode of Roman history, and each built in the three-act shape of a published one-shot: a **synopsis** for the GM, **acts** broken into scenes with *read-aloud* boxes, GM notes on “what's really going on,” suggested skill checks, and a **conclusion** with rewards. Adversaries refer to the stat blocks earlier in this book; a scenario's named villain gets a quick custom profile. Together they exercise the whole toolkit — intrigue and the Senate, the law-court, the burning city, the pontifical college, the treasury's seals, and the voting assembly — and lean hard on the social engine in *The Theater of Power.*
   - type: p
     style: small
     text: |-
-      **On era:** these events belong to the late Republic and early Empire (70–63 BCE and 64 CE). Run them in their own period, or shift them into the default High Empire by swapping “consul” for “Prefect,” “Senate vote” for “the Emperor's council,” and the named historicals for original figures — the bones work in any Roman century. **Rewards** assume 15–20 XP per scenario and note Dignitas/Favor changes that feed the reputation economy.
+      **On era:** scenarios I–III belong to the late Republic and early Empire (70–63 BCE and 64 CE); IV is set under Domitian (*c.* 90 CE), V under Trajan (*c.* 103 CE), and VI in the Republic (117 BCE), because only a Republican assembly voted on laws. IV–VI use original characters against a documented background. Run each in its own period, or shift the older ones into the default High Empire by swapping “consul” for “Prefect,” “Senate vote” for “the Emperor's council,” and the named historicals for original figures — the bones work in any Roman century. **Rewards** assume 15–20 XP per scenario and note Dignitas/Favor changes that feed the reputation economy.
   - type: scenario
     text: I. The Enemy Within
   - type: synopsis
@@ -2628,6 +2628,889 @@ chapters:
     style: small
     text: |-
       **Adversaries:** the fire (environmental), *Street Tough* looters and *Urban Cohort* watchmen, a *Delator*, and a crowd run with the *Demagogue*/mob rules. **Rewards:** 15–20 XP scaled to lives saved in Act I. Saving the innocent at real risk: +1 Dignitas with those who value honor (and a dangerous secret about the fire's true cause). Taking the safe, complicit path: coin and a Favor from the Prefect — and a quiet 1-point loss of Dignitas among those who know what you did.
+  - type: scenario
+    text: IV. The Lightning Girl
+  - type: synopsis
+    text: |-
+      Rome and the Alban Hills, autumn, c. 90 CE, in the reign of Domitian — who is also *Pontifex Maximus*, head of the college that judges the Vestal Virgins. A storm on the Via Appia below Bovillae kills a knight's fourteen-year-old daughter as she rides a horse loosed from the family carriage. The bolt strips her body bare and kills the horse. The priests read the omen as their predecessors did in 114 BCE: a virgin's vow has been broken, and a knight shares the guilt.{{1}} Two days later a slave comes forward and offers to swear that his own master and the Vestal **Numisia Procula** have been lovers, and he names others, among them the PCs' patron. **Stakes:** if the charge stands, a Vestal is buried alive by the Colline Gate and the men are beaten to death with rods. If it is false, an informer has used the city's fear of the gods to take rich men's estates. **Hook:** find out who coached the slave before he swears his statement to the college. **Tone:** grim and paranoid. Nobody can be trusted, and fear of the emperor decides as much as the evidence does. **Length:** one long session, or two if Act II is played in full. **Showcases:** investigation against a clock, the Favor economy, Cross-Examine, and the sacral trial from *The Theater of Power* (a courtroom where the pontifical college is the audience). Several endings are possible, and none is clean. The Chief Vestal Cornelia stays off-stage. She has been acquitted once already, and this affair can lead into her own second trial.
+  - type: p
+    style: act
+    text: Act I — The Road Below Alba
+  - type: readaloud
+    text: |-
+      The storm has passed by the time you reach the twelfth milestone. A carriage stands in the ditch with its traces cut. Twenty paces off, under a cloak someone has thrown over her, lies a girl. Her clothes, her sandals, and the gold at her throat were torn from her and scattered across the paving. Near her is a dead bay mare, its harness split and burnt. A haruspex in a fringed cloak is pacing out a square around the place with cord and stakes. A man in a knight's narrow-striped tunic kneels in the mud and does not look up. On the road behind you a rider is already heading for Rome.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** the strike was a real accident. The use being made of it was planned in advance. **Gaius Turpilius Naso**, an informer (*delator*) who prosecutes for a share of condemned men's estates, has kept a coached witness ready for months and was waiting for a public sign to use him. When word came from the Appia, Naso's freedman reported the prodigy to the consuls' office before the girl's own father could, and he handed the priests the 114 BCE precedent written out on a tablet. A second rider reached the body before the haruspex and took the girl's scattered ornaments. Naso wants them in case he needs a “sign” to show the college later. The girl is **Herennia Paulla**, and her father is the knight **Lucius Herennius Macer**. He is broken with grief and wants someone to pay for it.
+  - type: p
+    style: body
+    text: |-
+      **The informer.** At dusk on the second day, **Phileros**, door-slave (*ostiarius*) to the knight **Aulus Mettius Varus**, presents himself at the house of the promagister of the pontiffs. He says his master has visited the House of the Vestals at night for two years and lain with Numisia Procula, and that other men came too. He names the PCs' patron, the praetorian senator **Lucius Sabidius Gallus**, who is also Numisia's cousin. Under Roman law a slave could not ordinarily give evidence against his master, but incest was the exception.{{2}} His sworn statement to the college is set for the Nones, three days off.
+  - type: p
+    style: body
+    text: |-
+      **Routes in:** *the patron* — Sabidius Gallus calls the PCs in before dawn: “I am named. Find who taught that slave his lines before the pontiffs hear them.” *A named PC* — a PC of Dignitas 2–3 is one of the men Phileros named, and their own neck is at stake. *The father* — Herennius Macer hires the PCs to find “who defiled the gods.” They start on the prosecution's side and find the frame from the inside. *The Atrium* — the Vestal's steward calls in a Favor the PCs owe the order. *The watch* — *Urban Cohort* PCs are posted to guard the lightning-ground, or to escort the informer to the promagister.
+  - type: p
+    style: body
+    text: |-
+      **Checks.** *At the road:* an **Average** ([[difficulty difficulty]]) Medicine check reads the body. The branching burns and the shredded seams are the work of lightning, and of nothing else. With [[advantage advantage]], the PC sees that her necklace, ear-drops, and bulla are missing; they were picked up, not blown away. A **Hard** ([[difficulty difficulty difficulty]]) Perception check finds the second rider's hoofprints, which come and go before the haruspex's. An **Average** ([[difficulty difficulty]]) Knowledge (the Gods) check predicts the reading the priests will give: nakedness means a broken vow, and the horse means a knight. A [[triumph]] notices that the haruspex is reading the old precedent off a tablet someone handed him. *In the city:* an **Average** ([[difficulty difficulty]]) Streetwise or Knowledge (Rome) check finds out who reported the prodigy first. A **Hard** ([[difficulty difficulty difficulty]]) Charm check with Herennius Macer gets him to talk instead of strike. He says a well-dressed stranger offered him “justice for the girl” that same night.
+  - type: p
+    style: body
+    text: |-
+      **Complications:** a [[despair]] at the road makes Macer take the PCs for agents of the polluted. He is then a hostile witness in Act III, and he adds a [[setback]] to every defense appeal. Country people gather at the stakes, and pushing through them in a hurry provokes a *Street Tough*-grade crowd.
+  - type: procedure
+    title: 'The Expiation Clock (start at 1; Act III opens at 6)'
+    steps:
+    - |-
+      **Ticks:** +1 for each day that passes (a major investigative scene takes half a day). +1 for each [[despair]] on a public-facing check. +1 when Naso learns the PCs are working against him. +1 when the GM reports a new prodigy (a mule foaling, blood in a spring at Lanuvium). **−1, once:** a PC arranges and pays for a public expiatory sacrifice through a friendly pontiff. This takes a **Hard** ([[difficulty difficulty difficulty]]) Knowledge (the Gods) check and a Favor of senatorial weight.
+    - |-
+      **2 — Suspension.** The college suspends Numisia from the rites and orders her to keep her household under her own authority, so that none of her slaves can be sold or freed out of reach of torture.{{3}} Lictors watch the Atrium. From now on her slaves can be put to the question.
+    - |-
+      **3 — The Question.** Phileros is examined under torture to “confirm” his statement, since Roman courts valued a slave's evidence only when it was taken that way. If the PCs have not reached him yet, he keeps to the coached story through the pain, and every later attempt to shake it is upgraded once.
+    - |-
+      **4 — The Turn.** The emperor moves the hearing from the Regia to his villa at Alba (see the Midpoint Turn).
+    - |-
+      **5 — Arrests.** Mettius Varus is seized. Sabidius Gallus's house is watched, and he must decide whether to stay or leave Rome. The Atrium is searched.
+    - |-
+      **6 — The college sits.** Act III begins whether or not the PCs are ready.
+  - type: p
+    style: body
+    text: |-
+      **Advances:** finding the missing ornaments or the early report points the PCs at Naso's household, and they skip the first lead in Act II. If they also get the precedent tablet, it is banked as a [[boost]] for Act III, because it proves the omen was interpreted for the priests in advance. Failing every check means the PCs reach Rome with the clock at 2 and Naso aware of them.
+  - type: p
+    style: act
+    text: Act II — The Porter's Story
+  - type: readaloud
+    text: |-
+      The room is a storeroom behind the promagister's kitchen, and it smells of lamp-oil and onions. The slave sits on a grain jar with his hands folded. His tunic is new and much too clean. He recites without being asked: “My master went out after the second hour of night. I kept the door. He came home before the bakers' fires. He told me, 'You saw nothing.' But I saw.” He stops, then goes on, as if picking up a line he had dropped. “Her coverlet was saffron. The lamp was shaped like a ship.”
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** Phileros has never been inside the House of the Vestals. He is telling the truth about his master's late returns, but the bedchamber details were taught to him. They came from **Callityche**, a former hairdresser of the Atrium whom Numisia freed and dismissed last year, and whom Naso now keeps on a farm near Fidenae on the Via Salaria. Mettius Varus did go to the Atrium after dark, because he manages the leases on the order's shops along the Via Sacra and the Nova Via and settles the rents at the end of the day.{{4}} Phileros has his own reasons: his master sold his woman to a fuller in Ostia. Naso has promised him his freedom and a purse. Under Domitian, slaves who accused their masters were encouraged and paid.{{5}}
+  - type: p
+    style: body
+    text: |-
+      **Threads (any order; each costs half a day):** *The informer* — the PCs need access to Phileros. They can spend a Favor of a pontiff or senator, pass a **Hard** ([[difficulty difficulty difficulty]]) Negotiation check with the promagister **Aulus Didius Pollio**, or bribe a guard with a **Daunting** ([[difficulty difficulty difficulty difficulty]]) Deception or Skulduggery check. Questioning him uses *Cross-Examine* against his rehearsed story. The tell is that he can describe the inside of her chamber but not the Atrium's own porter's lodge, which he would have had to pass. *The Atrium* — Numisia's household receives callers by day. An **Average** ([[difficulty difficulty]]) Charm check with a slave girl brings out that Callityche came by last month asking after her old mistress's rooms. *The master* — Mettius Varus is terrified and close to running. With an **Average** ([[difficulty difficulty]]) Negotiation or **Hard** ([[difficulty difficulty difficulty]]) Skulduggery check the PCs get his rent tablets, which date every night visit to a settlement day. *The money* — a banker in the Basilica Julia (use *Caecilia Attica*) shows that Phileros's savings (*peculium*) doubled this month, paid in by one of Naso's freedmen. That takes a **Hard** ([[difficulty difficulty difficulty]]) Streetwise check, or a Favor. *Fidenae* — the farm is guarded by four *Street Tough* minions. Callityche is frightened and badly fed. A **Hard** ([[difficulty difficulty difficulty]]) Charm check, together with a real promise of safety, persuades her to say who taught her what to tell.
+  - type: p
+    style: body
+    text: |-
+      **Naso's offer.** Once the clock reaches 3, or as soon as Naso notices the PCs, he invites them to dinner and speaks plainly. He wants Mettius Varus's estate. The Vestal is “the price the gods have set.” The patron can be “forgotten” if the PCs give the college one more piece of corroboration, or hand him whatever the Atrium search would have turned up. This is how the complicit ending begins. Run it as a social encounter in which he tries to learn each PC's Desire.
+  - type: p
+    style: body
+    text: |-
+      **The Midpoint Turn (clock 4, or after the PCs crack their first thread):** two things happen together. *First*, a rumor arrives from the Palatine. The emperor will not let the college meet in the Regia, and has summoned it to his Alban villa, where the accused will be judged in her absence. Historically, this was how Cornelia was condemned.{{6}} *Second*, Sabidius Gallus admits something to the PCs. He did go to the Atrium at night once, to collect letters Numisia had written him. In them she mourned the Vestals Domitian condemned at the start of his reign and called the emperor's justice impious. Some letters are still hidden in her rooms. They prove nothing about incest, but they could be read as treason against the emperor (*maiestas*). From here on, saving the patron and saving the Vestal may pull in different directions. Gallus suggests two ways out. He could confess to something and take exile, as a man of praetorian rank once did in the Cornelia affair.{{7}} Or the PCs could break into the House of the Vestals and burn the letters. That is a **Daunting** ([[difficulty difficulty difficulty difficulty]]) Stealth or Skulduggery check and a sacrilege if they are caught.
+  - type: p
+    style: body
+    text: |-
+      **Advances:** each thread that is cracked is banked for Act III. Callityche's testimony is worth [[boost boost]] and flips the informer, so Phileros becomes a [[setback]] for the prosecution. The rent tablets and the banker's entries are worth [[boost]] each. A recantation obtained from Phileros himself is worth [[success]] on the first defense appeal, but the PCs must keep him alive until the hearing. Each thread left unworked is a [[setback]] the prosecution can use. If the letters are still in the Atrium at clock 5, Naso has them, and that opens his Act III trump.
+  - type: p
+    style: act
+    text: Act III — The College at Alba
+  - type: readaloud
+    text: |-
+      The villa sits above the lake on the slope of the Alban Mount, and from its terrace you can see the Appia running down toward Bovillae. The pontiffs have come in their purple-bordered togas. Some have come from Rome by litter, and others from their own villas nearby, and none of them wants to be here. There is no chair for the accused. A freedman of the household reads out the slave's statement from a tablet. At the head of the room the emperor's chair stands empty, but nobody in the room acts as though it were.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** run the hearing as the courtroom set-piece in its sacral form. The audience is the college, a **Daunting** body with a strain threshold of 18, and Knowledge (the Gods) is the *Logos* skill. Naso presents the witness. The emperor wants an example; he is the kind of ruler who believes that “exemplary severities of this kind conferred lustre upon his reign.”{{8}} *The Emperor's known wish* adds a [[setback]] to every defense check until the PCs break it, either with a [[triumph]] Critical Remark or by producing proof the college cannot pretend not to have heard. **Getting in:** Praetorians guard the villa. The PCs can get in with Pollio's goodwill (a Favor, or his capitulation in Act II), as the patron's companions if he chooses to appear, or with a **Daunting** ([[difficulty difficulty difficulty difficulty]]) Deception check. **Numisia cannot speak**, because she is not there. A written statement from her, obtained in Act II, is an [[boost boost]] *Ethos* appeal read aloud. By old custom, Vestals were heard in person in the Forum and the courts whenever they gave evidence. Under Tiberius, a woman of the palace who refused to come to court still had a praetor sent to her house to take her evidence. Those precedents give a PC a **Hard** ([[difficulty difficulty difficulty]]) Knowledge (Law) argument that the accused must at least be heard.{{9}} **Naso's trump:** if he has the letters, he reads them, and the college's strain threshold rises by 4 against the defense. **Filibuster** buys time but nothing else, since an empty chair cannot be talked into going home.
+  - type: p
+    style: body
+    text: |-
+      **Endings.** *Testimony broken:* Callityche testifies, or Phileros recants before the college. The college finds Numisia “not proven” and returns her to the fire. Naso is not punished; under this emperor, informers seldom were. He notes the PCs' names, and Phileros is sent back to the master he accused. Unless the PCs buy him and get him out of Rome, he will be crucified. *Vestal saved, patron sacrificed:* Sabidius Gallus takes the letters on himself and goes into exile on an island. Without a senator to frame, Naso drops the slave's statement for a share of Gallus's confiscated estate, and the incest charge collapses. *Complicit:* the PCs give Naso what he asked for. Numisia is carried bound in a closed litter to the field by the Colline Gate and goes down a ladder into a chamber with a lamp, bread, and water. The entrance is then filled in.{{10}} Cornelia, carried the same way, kept calling out: “Is it possible that Cæsar can think me polluted, under the influence of whose sacred functions he has conquered and triumphed?”{{11}} Mettius Varus is beaten with rods in the Comitium and cries out, as a knight once did there: “What have I done?—I have done nothing.”{{12}} The patron survives and owes the PCs, and he knows the price they paid. *The clock runs out:* if the PCs never reach the college, everyone Phileros named is condemned without being present or heard.
+  - type: p
+    style: body
+    text: |-
+      In a [[Fated]] or [[Mythic]] Rome, the omen may have been true and simply misread. Another Vestal really has broken her vow, and the prodigies continue whatever the college decides. Whether the gods accept the wrong victim is left to the GM. The record of Cornelia's own case is no clearer: the man who wrote it down could not say whether the woman buried was innocent or guilty.{{8}}
+  - type: statblock
+    name: Gaius Turpilius Naso
+    kind: Nemesis
+    desc: |-
+      A knight who prosecutes for profit and has never lost a case brought under a sign from the gods. **Wants:** Mettius Varus's estate, and the emperor's attention, which is worth more. **Toward the PCs:** polite and generous; he would rather buy them than fight them. **Secret:** the bedchamber details in Phileros's story came from Callityche, whom he keeps at Fidenae, and his freedman took the dead girl's ornaments. **Voice:** “I accuse no one. I only make sure the gods are heard.”
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '4'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '16'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: 'Desire: wealth taken from other men''s ruin. Fear: an informer who is better than he is. Strength: patience. Flaw: he cannot stop collecting.'
+    - label: Skills
+      text: Charm 2, Coercion 3, Deception 4, Knowledge (Law) 3, Knowledge (the Gods) 1, Knowledge (Rome) 2, Streetwise 2, Vigilance 2.
+    - label: Talents
+      text: Adversary 2; Cross-Examine; Nobody's Fool 1.
+    - label: Abilities
+      text: |-
+        **Dossier of Dirt** and **Denunciation** (as *Delator*). **The Coach:** while Phileros testifies where Naso can see him, Phileros adds [[boost]] to checks to hold his story. Getting Naso out of the room is a maneuver-sized problem worth solving.
+    - label: Equipment
+      text: Wax tablets in a strap, gold equestrian ring, a freedman runner, four *Street Tough* minions at Fidenae.
+    - label: Look
+      text: Thin grey hair combed forward; clean-shaven, long-nosed, pleasant smile; narrow-shouldered; knight's narrow-striped tunic under a plain fine toga; tablets always in hand.
+    - label: Standing
+      text: Dignitas 2, and rising with every man he ruins.
+  - type: statblock
+    name: Phileros
+    kind: Rival
+    desc: |-
+      A Bithynian-born door-slave who has spent eleven years at Mettius Varus's door, chained to it for the first three. **Wants:** his freedom, and the woman his master sold to Ostia. **Toward the PCs:** frightened and stubborn; he thinks they serve the people he has accused. **Secret:** he has never set foot in the House of the Vestals. Everything he says about the inside of it he learned word for word at Fidenae. **Voice:** “I keep the door. I see who comes and goes. That is what a door-slave is for.”
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '2'
+      Cun: '2'
+      Will: '1'
+      Pr: '2'
+    derived:
+      Soak: '2'
+      W.T.: '11'
+      S.T.: '—'
+      Def (M/R): 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: freedom. Fear: the rack. Strength: a doorkeeper''s memory for faces and hours. Flaw: he believes promises from anyone who holds power over him.'
+    - label: Skills
+      text: Cool 1, Deception 1, Perception 2, Vigilance 2.
+    - label: Abilities
+      text: |-
+        **Coached:** on the rehearsed points (the chamber, the coverlet, the lamp), upgrade the difficulty of checks to shake him once. Questions off the script are not upgraded. **True Hours:** what he says about his master's comings and goings is accurate, and a PC who checks it against the rent tablets turns his own evidence against Naso. **The Question:** after torture (clock 3) he suffers 4 wounds and will repeat the story only to Naso, or to someone who can guarantee his freedom.
+    - label: Equipment
+      text: A new tunic Naso gave him; the porter's key on a cord.
+    - label: Look
+      text: Close-cropped hair growing out; broad flat face, wary eyes; thick neck and heavy hands; an undyed tunic too clean for him; a pale ring of old chain-scar around one ankle.
+    - label: Standing
+      text: Dignitas 0.
+  - type: statblock
+    name: Numisia Procula
+    kind: Nemesis
+    desc: |-
+      A Vestal who entered the order at seven and has kept the fire for twenty-four years. She is second in rank to the Chief Vestal. **Wants:** to keep her order's honor and her own life, in that order. **Toward the PCs:** haughty; she will not plead, and she will not be touched. **Secret:** her letters to her cousin Sabidius Gallus mourn the Vestals the emperor condemned and call his justice impious. They do not show she broke her vow, but they could still kill her. **Voice:** “I have kept the fire twenty-four years. Ask the fire.”
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '4'
+      Pr: '4'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '20'
+      Def (M/R): 1/1
+    fields:
+    - label: Motivations
+      text: 'Desire: the pax deorum and her order''s honor. Fear: the Campus Sceleratus. Strength: composure. Flaw: pride that will not ask for help.'
+    - label: Skills
+      text: Cool 3, Discipline 3, Knowledge (the Gods) 3, Knowledge (Law) 2, Knowledge (Rome) 3, Negotiation 2, Vigilance 2.
+    - label: Talents
+      text: Adversary 2; Nobody's Fool 2; Patronus.
+    - label: Abilities
+      text: |-
+        **Sacrosanct** and **Keeper of Wills** (as *Vestal Virgin*). **Suspended:** from clock 2 she loses *Sacral Authority* and cannot free or sell her slaves. **Will Not Plead:** checks to make her beg, flatter, or confess suffer [[setback setback]]. A written statement in her own words, if the PCs earn it, becomes an [[boost boost]] *Ethos* appeal for the defense.
+    - label: Equipment
+      text: White stola and woollen fillets; a ring of bronze keys to the will-chests; a lictor (not present after suspension).
+    - label: Look
+      text: Hair cropped short beneath the woollen fillets; long pale face, still eyes; tall and very upright; the white veil pinned at the throat with a brooch; the keys at her belt.
+    - label: Standing
+      text: Dignitas 4 (suspended from 2 on the clock).
+  - type: statblock
+    name: Aulus Didius Pollio
+    kind: Nemesis
+    desc: |-
+      Promagister of the pontifical college, the elderly senator who runs its business while the emperor holds the office of *Pontifex Maximus*. **Wants:** to get through the reign with the college's dignity and his own life intact. **Toward the PCs:** wary but persuadable; he dislikes informers almost as much as he fears the emperor. **Secret:** he sat with the college that acquitted the Chief Vestal Cornelia. The Palatine has made it clear the college was too lenient, and he needs either a conviction or an acquittal so well documented that nobody can call it lax. **Voice:** “The college does not hurry. The college is not permitted to be wrong.”
+    chars:
+      Br: '2'
+      Ag: '1'
+      Int: '4'
+      Cun: '3'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '11'
+      S.T.: '16'
+      Def (M/R): 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: correct procedure, on the record. Fear: the emperor''s displeasure. Strength: he knows every precedent. Flaw: caution that can look like cowardice, and sometimes is.'
+    - label: Skills
+      text: Cool 3, Discipline 2, Knowledge (the Gods) 4, Knowledge (Law) 3, Knowledge (Rome) 3, Negotiation 2, Perception 2.
+    - label: Talents
+      text: Adversary 1; Nobody's Fool 2.
+    - label: Abilities
+      text: |-
+        **The College's Door:** he decides who may address the college and in what order. With his goodwill the defense speaks first and gains [[boost]]; without it, the defense is heard last and in writing only. **Precedent:** a defense argument backed by a precedent he respects upgrades the next *Logos* appeal, as *Narratio*. Examples are Postumia, acquitted and told to dress more soberly; Minucia, condemned on a slave's word; and Licinia, acquitted by the pontiffs and then condemned by a special commission.
+    - label: Equipment
+      text: Purple-bordered toga; tablets of precedents copied from the pontiffs' records; two household attendants.
+    - label: Look
+      text: Sparse white hair; heavy-lidded, deeply lined face; stooped and thin; purple-bordered toga worn carefully; a stack of tablets bound with a cord.
+    - label: Standing
+      text: Dignitas 4.
+  - type: p
+    style: small
+    text: |-
+      **Adversaries:** *Lictor* and *Praetorian Guardsman* at the Atrium and the villa; *Street Tough* minions at Fidenae; use *Senator / Patrician* for Sabidius Gallus, and the same profile at Dignitas 2 for Mettius Varus and Herennius Macer. **Rewards:** 20 XP for a full run, 15 if the clock ran out. *Testimony broken:* +1 Dignitas for the PC who spoke before the college, a Favor from Numisia (the order keeps the wills of the great), and Naso's lasting enmity; he begins the next scenario knowing a Flaw of each PC. *Vestal saved, patron sacrificed:* the Vestal's Favor; the PCs lose their patron and the Favors he owed them, and Gallus's clients turn to the PCs; no Dignitas change. *Complicit:* coin, and a Favor of senatorial weight from Gallus; −1 Dignitas among those who know, and Naso now holds something over the PCs. *The clock runs out:* −1 Dignitas for each named PC who stayed in Rome, the patron's Favors are lost, and the PCs have an enemy in Herennius Macer for having stood with the condemned.
+  - type: scenario
+    text: V. Before the Verdict
+  - type: synopsis
+    text: |-
+      Rome, the ninth of November, c. 103 CE — the sixth year of Trajan. **Publius Caesellius Varus**, the PCs' patron and lately proconsul of Crete and Cyrene, stands accused by the Cyrenaeans of extortion (*repetundae*). Like Marius Priscus three years earlier, he has asked the Senate only for judges to assess what he must repay: a ruinous fine, but one a man survives. The province's advocates and an ambitious co-accuser mean to prove more — that he took money to condemn an innocent man — which would put him before the full Senate on a charge that can end in deportation to an island, the loss of his citizenship, and the confiscation of everything he owns.{{13}} The Senate decides on the **Ides** (13 November). Varus will not wait for the answer. In four days the PCs must move his silver, his household, his freedmen, and his records beyond the treasury's reach — or slow the Senate down — before the seals go on his doors. The sailing season is already closing, and the last ship he can hire will not wait past the dawn after the Ides.{{14}} **The hook:** the PCs eat at his table; if he falls, so do they. **Tone:** a heist run through counting-rooms, wharves, and the Curia, and morally grey, because Varus may well be guilty. **Length:** two sessions (Acts I–II, then Act III), or one long one-shot if the PCs commit early to moving or to stalling. **Showcases:** Favors and *clientela*, the Senate contest and its Procedural Trump Cards, and a heist run against a clock. It does not re-run the extortion trial of Scenario II: it covers the days before any verdict.
+  - type: p
+    style: act
+    text: Act I — Four Days to the Ides
+  - type: readaloud
+    text: |-
+      By the second hour the atrium of the house on the Esquiline is usually loud with clients. This morning you can count them: nine, standing apart, none quite meeting your eye. Your patron receives you in a dark, unwashed toga, hair and beard let grow as an accused man's should. He takes you into the tablinum and draws the folding doors shut. “They mean to make it a matter of blood,” he says. “If the House lets them, I lose everything — and so does everyone who eats at my table. I do not intend to be in Rome when they count the votes.”
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** Varus took a great deal of money in Cyrenaica, as many governors did, and the province can prove much of it. A plain extortion verdict costs him repayment and his seat in the Senate. The danger is the second charge. **Aristion**, a councillor of Cyrene, was flogged and sent to the quarries on Varus's sentence and died there; his brother says the sentence was bought. The accusers will cite the precedent set against Priscus, whose advocates told the House that “the crimes alleged against Priscus were of too atrocious a nature to fall within the cognizance of a commission; for he was charged with accepting bribes to condemn, and even to execute, innocent persons.”{{13}} If the Senate agrees that Varus's case is of that kind, he faces a full hearing and the heavier penalties. **Relegation** (*relegatio*) sends a man away but leaves him his citizenship and his property; **deportation** (*deportatio*) to an island strips both, and his estate goes to the treasury.{{15}} The co-accuser, the junior senator **Aulus Fadius Crispinus**, wants the second outcome: accusers have long expected a share of a condemned man's estate.{{16}}
+  - type: p
+    style: body
+    text: |-
+      **Why run, and why now.** Trajan has ruled that an absent man is not to be condemned on a criminal charge.{{17}} Flight therefore saves Varus's person — but not what he leaves behind. Crispinus's motion for the Ides asks the House both to send the case to a full hearing and to have the estate inventoried and sealed by the prefects of the Treasury of Saturn until it is heard. The Senate has pursued a governor's estate before, even after the governor himself was beyond its reach.{{18}} Whatever is still in the house when the seals go on is lost. And even a lawful exile may keep only so much: no more than twenty slaves and freedmen, half a million sesterces, one merchant ship, and two oared boats.{{19}} Varus means to keep more than that, under other men's names.
+  - type: p
+    style: body
+    text: |-
+      **The four holdings.** Track each one as **Exposed** (still in reach), **Secured** (moved or protected), or **Sealed** (lost to the treasury). Each Secured holding pays off in Act III; each Sealed one costs someone.
+  - type: list
+    items:
+    - |-
+      **The Silver** — about 1,200,000 sesterces in coin and plate in the strongroom, and a deposit of 800,000 with the banker **Lucius Cominius Hilarus** at his counter in the Forum.
+    - |-
+      **The Household** — sixty-odd slaves. Varus wants a dozen of the skilled and trusted ones freed or taken with him; the rest would go under the auctioneer's spear with the house.
+    - |-
+      **The Freedmen** — eleven freedmen and their families live on his patronage. With him gone they have no protector against the accusers' questions or their own creditors. Their chief is the steward, **Publius Caesellius Eutychus**.
+    - |-
+      **The Records** — the household accounts, the letter-boxes (*scrinia*) from the province, and Varus's will.
+  - type: procedure
+    title: The Seal Clock (eight segments)
+    steps:
+    - |-
+      **Ticks.** Tick 1 at the dawns of the tenth, eleventh, and twelfth. Tick 1 when a move made in public fails, or when a check to stay unseen shows [[threat threat threat]]; tick 2 on a [[despair]]. Crispinus can tick it himself (see his profile).
+    - |-
+      **Unticks.** Remove 1 for each successful stall: a senatorial Favor spent to have the consuls put the motion late in the Ides' business, where it may run out of daylight; Theochrestos persuaded to ask for more time; or the informer in the household exposed. A [[triumph]] on any of these removes 2.
+    - |-
+      **3 — Watchers.** Crispinus's hired men and the Cyrenaeans' own freedmen watch the house, the banker's counter, and the Emporium wharves. Add [[setback]] to every check to move a holding unseen.
+    - |-
+      **5 — Information laid.** Crispinus reports concealed property to the treasury prefects. Hilarus, and every banker in the Forum, now refuses a large transfer without a [[triumph]] or a senator's Favor. At Portus, the shipmasters have heard the name Varus.
+    - |-
+      **7 — The prefects move.** Public slaves of the treasury, with an *Urban Cohort* escort, are ordered to the house at the next dawn to begin the inventory.
+    - |-
+      **8 — Sealed.** Seals on the strongroom and the doors. Every holding not yet Secured becomes Sealed. Varus can now leave only by the night run in Act III.
+  - type: p
+    style: body
+    text: |-
+      **Routes in.** The PCs can come at the problem from any of these directions, in any order. Each takes roughly half a day; Varus wants all four holdings attended to and will not say which matters most.
+  - type: list
+    items:
+    - |-
+      **The strongroom and the daybook.** Eutychus opens the accounts. An **Average** ([[difficulty difficulty]]) Perception or Knowledge (Rome) check reconciles coin against the book. With [[advantage advantage]], a PC notices that entries for one season of the governorship have been struck out and that the series of tablets has a gap — the first sign of a second ledger.
+    - |-
+      **The banker's counter.** Hilarus can move the 800,000 to a correspondent at Corinth by an entry in his books, with no coin on the road — but a banker must keep complete accounts and produce them when a court orders it, and he knows those entries are exactly what the treasury will ask for.{{20}} Persuading him is a **Hard** ([[difficulty difficulty difficulty]]) Negotiation check; add [[boost]] if Varus signs a sale on paper to cover the transfer, [[setback]] at clock 3 or higher. Success Secures half the Silver and leaves a written trail.
+    - |-
+      **The freedmen's dinner.** Varus's freedmen gather in the steward's quarters, frightened. An **Average** ([[difficulty difficulty]]) Charm or Leadership check steadies them; a Knowledge (Law) check of the same difficulty explains their position: a patron and his freedman cannot be compelled to give criminal evidence against each other.{{21}} The law does not protect them from creditors or from losing his protection. Securing the Freedmen takes a new protector: a Favor spent with a friendly senator who will receive them as clients, or a **Hard** ([[difficulty difficulty difficulty]]) Negotiation check to win one.
+    - |-
+      **Watching the watchers.** An **Average** ([[difficulty difficulty]]) Streetwise check near the Cyrenaean embassy's lodgings by the Porta Capena, or on the steps of the Temple of Saturn where the treasury sits, shows who calls on Crispinus. With success, the PCs learn that the household's doorkeeper, **Callistus**, sells him the house's comings and goings.
+    - |-
+      **Meeting the accuser.** **Theochrestos**, the dead man's brother and the province's envoy, agrees to see the PCs at his lodging. He wants Varus to admit, before the Senate, that the sentence was bought. He refuses a bribe outright. Money paid to the city of Cyrene as restitution is another matter — an **Average** ([[difficulty difficulty]]) Charm or Negotiation check, against his Discipline, keeps that door open.
+  - type: p
+    style: body
+    text: |-
+      **Complications.** A client turns up at the door demanding his *sportula* loudly enough for the street to hear (an **Easy** ([[difficulty]]) Charm check, or tick the clock). Varus's wife, **Vettia Procula**, will not let her own silver leave the house unless she goes with it. A [[despair]] at the counter or the lodging means Crispinus hears of the visit the same hour.
+  - type: p
+    style: body
+    text: |-
+      **Advances:** Each holding the PCs have a plan for can be moved in Act II without a fresh approach. Noticing the gap in the tablets lets the PCs see the Turn coming and act before Eutychus does. Unmasking Callistus removes 1 from the clock — or, better, lets the PCs feed Crispinus a false location (an opposed Deception check against his Vigilance); if it works, his next tick lands on an empty storeroom. Leaving Theochrestos respected keeps the settlement open in Act III; insulting him closes it and gives the prosecution [[boost]] on every *Pathos* appeal on the Ides. Freedmen left without a protector stay Exposed into Act III.
+  - type: p
+    style: act
+    text: Act II — Carts After Dark
+  - type: readaloud
+    text: |-
+      Rome's carts move at night. From dusk the streets fill with the grind of iron tyres and the shouts of drivers backing mules into lanes too narrow for them. Below the Aventine the Emporium quays are dressed stone, with iron rings set in them for the mooring lines; the river barges lying against them each carry a single towing-mast stepped far forward. The barge-master lifts one of your amphorae, feels the weight of what is packed in the straw, sets it down, and names a price three times what wine would cost.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** wagons may not be driven in Rome's streets from sunrise to the tenth hour of the day, except for public building work,{{22}} so a train of carts after dark draws no notice — unless it leaves the house of a senator under accusation. The Tiber barges (*naves codicariae*) that haul cargo up from Portus take up to three days against the current, towed by men and animals along the bank;{{23}} downstream, a barge cast off at midnight is at Portus by the next evening. There, **Zenon of Corinth**, master of the merchantman *Euploia*, will make one last run to the Isthmus and will not sail later than the dawn after the Ides. Run each holding as its own short operation over the nights of the tenth, eleventh, and twelfth.
+  - type: list
+    items:
+    - |-
+      **The Silver run.** Load quietly (an **Average** ([[difficulty difficulty]]) Stealth check, [[setback]] at clock 3 or higher), drive it down the Vicus Patricius and around the Palatine to the Emporium (**Average** ([[difficulty difficulty]]) Driving; a Vigilance check spots the night fire-patrol, *Urban Cohort / Vigil* minions, before they spot the carts), and strike a bargain with the barge-master (**Hard** ([[difficulty difficulty difficulty]]) Negotiation, or pay double and skip the check). Success Secures the strongroom's half of the Silver. A [[despair]] breaks an axle at a corner with the watch in sight.
+    - |-
+      **The Household.** Freeing slaves informally, by a declaration among friends at dinner, makes them free in fact and costs nothing at law that day. A formal manumission before a praetor is public and quick to be noticed. Either way, a manumission made to defraud creditors is void,{{24}} and Crispinus will argue that the treasury is a creditor. Framing the manumissions as rewards for long service, with dated documents, takes a **Hard** ([[difficulty difficulty difficulty]]) Knowledge (Law) check. Men fleeing a verdict have used this device before; whether the freed could make their freedom stick was never certain.{{25}} The grey part: Varus's list frees his cook, his secretaries, and his physician. It leaves out the old, the field hands — and Eutychus's own partner and children.
+    - |-
+      **The Records.** The accounts can be burned (a **Hard** ([[difficulty difficulty difficulty]]) Skulduggery check to do it without the neighbours smelling a whole archive going up), hidden in a friend's house, or sent down the river with the Silver. They matter more than they look. Another governor was convicted largely because “there was found among his papers an account under his own hand of the several sums he had taken, and upon what occasions.”{{26}} The will can be lodged with the Vestals, who keep the wills of the great (see the *Vestal Virgin*'s Keeper of Wills); that Secures it beyond any prefect's seal.
+    - |-
+      **The Freedmen, again.** Any freedman not yet given a new protector can be brought along — but every one counts against the twenty souls an exile may keep — or sent out of Rome to Varus's friends in Campania (an **Average** ([[difficulty difficulty]]) Leadership check to get eleven frightened families moving by morning).
+  - type: p
+    style: body
+    text: |-
+      **The Turn — the second ledger.** On the night of the eleventh (or as soon as the clock reaches 4), Eutychus is gone. He has taken a small codex of wax tablets bound in boards: his own account, in his own hand, of 250,000 sesterces paid by **Ptolemaios son of Ptolemaios**, Aristion's rival in the council of Cyrene, for Aristion's sentence, and of how the money was passed through two estates to reach Varus. Varus is guilty. Eutychus's price is the freedom of his partner **Chloe** and their two children, still Varus's slaves, who will be sold with the house if it is sealed. He has gone to the Cyrenaeans' lodging by the Porta Capena — or, if the PCs treated him with contempt in Act I, to Crispinus's door. No court can make Eutychus testify against his patron. With the ledger, it does not need him to.
+  - type: p
+    style: body
+    text: |-
+      **The choice.** Finding him is an **Average** ([[difficulty difficulty]]) Streetwise check. Then: **take it back by force** (two groups of *Street Tough* minions hired by Crispinus are on the same errand; a fight in a dark lane, or a **Hard** ([[difficulty difficulty difficulty]]) Stealth or Skulduggery check to lift the codex first); **buy Eutychus** by making Varus free Chloe and the children tonight (a **Hard** ([[difficulty difficulty difficulty]]) Negotiation or Coercion check against Varus, who counts slaves as silver); **let it go** to the accusers, which turns Act III from a fight over proof into a fight over the penalty; or **keep it** as a lever to force Varus into the settlement. Confronted, Varus does not deny it: “Every proconsul in that province sold something. I sold one man's sentence to another man. Ask Cyrene how many councillors it has buried.”
+  - type: p
+    style: body
+    text: |-
+      **Complications.** Crispinus's men watch the Emporium after clock 3 and try to stop a loaded barge at the quay (*Street Tough* minions, his freedman as their leader). The barge-master sells word of a second run to whoever pays him. November rain raises the Tiber, and a fast river adds [[setback]] to any Operating check to bring a barge off the quay at night. A [[despair]] on any run puts a holding's location in Crispinus's tablets: tick the clock, and that holding can be Sealed at clock 7 even if moved.
+  - type: p
+    style: body
+    text: |-
+      **Advances:** Count the holdings: each Secured one gives the PCs one banked [[boost]] in Act III, to be spent in the Curia or on the road. Whoever holds the ledger sets the shape of the Ides: in the PCs' hands, it is a lever on Varus; in Theochrestos's hands, the prosecution's *Logos* appeals are upgraded once; in Crispinus's hands, he opens the debate with [[boost boost]]. The clock's position carries over: at 5 or more, the prefects are ready to seal the same day the motion passes; at 7 or more, they have already begun.
+  - type: p
+    style: act
+    text: Act III — The Ides
+  - type: readaloud
+    text: |-
+      The Curia doors stand open to the Forum, and the November light falls across the floor in a long bar. The consul has read the province's complaint again. Down the benches the senators who used to dine with your patron look at their hands. Crispinus is already standing, a set of tablets held against his chest. At the far end, a tall Greek in an unbleached cloak, beard untrimmed for a dead brother, waits to be called. Somewhere across the river, a barge is waiting too, and a ship that will not wait past tomorrow's dawn.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** the Ides runs on two fronts, and a split party can play both. **The Curia, by day:** run the Senate contest from *The Theater of Power*. **The road to Portus, by night:** if Varus means to go, he goes tonight. First, Varus decides whether to attend. **Present**, he speaks in his own defence and his friends' bloc gains [[boost]], but he must leave by the night run. **Already gone**, his side's *Ethos* appeals suffer [[setback]] — flight reads as guilt — but the *notice* trump card below becomes available.
+  - type: p
+    style: body
+    text: |-
+      **The motions.** Three *sententiae* are on the floor. **(1)** The consul-designate's: grant Varus judges to assess repayment only. **(2)** Crispinus's, carried by a consular friend: a full hearing, the witnesses summoned, and the estate inventoried and sealed. **(3)** A middle course on the Priscus precedent, where the House first granted judges provisionally and summoned the men said to have bought innocent blood:{{27}} judges for now, Ptolemaios summoned from Cyrene, and no seals today. Motion 3 buys Varus a winter; it does not acquit him.
+  - type: list
+    items:
+    - |-
+      **The Consulares** (weight 3, threshold 12). Desire: the House's authority over its own members. Fear: a precedent that lets a governor buy a death and pay a fine for it. Lean toward motion 3.
+    - |-
+      **Varus's friends** (weight 2, threshold 8). Desire: to protect one of their own. Fear: being named accessories, as the governor's go-between was in Priscus's case. Lean toward motion 1. If the ledger is in the accusers' hands, their threshold drops by 4.
+    - |-
+      **The Emperor's men** (weight 2, threshold 10). Desire: a reign seen to punish rapacious governors. Fear: being seen to bring back the informers. Undecided.
+    - |-
+      **The back-benchers** (*pedarii*, weight 3, threshold 10). They follow seniority. When the Consulares commit, the back-benchers suffer 4 strain toward the same side.
+  - type: procedure
+    title: Trump Cards on the Ides
+    steps:
+    - |-
+      **Serve notice on the accused.** If Varus is absent, any senator may demand that he be formally summoned to answer; in Priscus's case such a demand put the matter over to the next meeting.{{28}} An **Average** ([[difficulty difficulty]]) Knowledge (Law) check and a consular's Favor; success postpones motions 1–3 and removes 2 from the clock — but Crispinus may still ask for the seals as an interim measure, and that runs as a short contest of its own.
+    - |-
+      **Divide the house.** When the harsh motion and the middle motion are counted together against the lenient one, insist on separate counts. The presiding consul calls the division with a set form: “You who are of such an opinion, come to this side; you who are of any other, go over to the side of him whose opinion you follow.”{{29}} A **Hard** ([[difficulty difficulty difficulty]]) Knowledge (Law) check, and an *Ethos* appeal to the consul himself, gets the three counted apart; the motion with the most committed weight then wins on its own.
+    - |-
+      **Talk out the day.** *Filibuster* as usual: a decree of the Senate made after sunset is not valid.{{30}} A filibuster kills the vote and the seals with it — and leaves Varus's ship sailing at dawn without a decision behind it.
+    - |-
+      **The Emperor's known wish.** The new reign made a public show of punishing the informers of the last one.{{31}} If a PC proves that Crispinus prosecuted under Domitian, his side suffers [[setback]] and he must pass a **Hard** ([[difficulty difficulty difficulty]]) Discipline check or withdraw as co-accuser. The wish cuts both ways: if the ledger is read aloud, every appeal for motion 1 suffers [[setback]].
+    - |-
+      **The consuls' chairs.** At the division the senior men take their places first, and waverers drift to whichever side they stand on.{{32}} A PC with Dignitas 3 or more who crosses the floor early adds [[boost]] to their side's next appeal to the back-benchers.
+  - type: p
+    style: body
+    text: |-
+      **The road to Portus.** Out over the river by the Pons Aemilius, through Transtiberim, and some twenty miles of the Via Portuensis in the dark. An **Average** ([[difficulty difficulty]]) Driving or Riding check covers the road; a Vigilance check spots the *Urban Cohort* post or Crispinus's men before they see the carriage. At the post by the river, a **Hard** ([[difficulty difficulty difficulty]]) Deception or Negotiation check gets through — or a Coercion check that leans on a senator's rank ([[boost]] for Dignitas 3 or more, as for any check that leans on standing), which works only until the seal order exists. At the quay, Zenon has heard that a senator may not leave Italy without the emperor's leave, except for Sicily and Narbonese Gaul.{{33}} He wants a **Hard** ([[difficulty difficulty difficulty]]) Negotiation check or a fifth of what is aboard.
+  - type: p
+    style: body
+    text: |-
+      **Endings.** Combine as the dice fall; none of them is clean.
+  - type: list
+    items:
+    - |-
+      **Gone, with the silver.** Varus is aboard the *Euploia* at dawn with every Secured holding. Trajan's ruling protects his person; his Italian lands and anything Sealed go on the treasury's register. He will live at Athens on money held in his freedmen's names. Freedmen left behind without a protector face creditors and questions alone.
+    - |-
+      **Relegated, solvent.** If the PCs broker it with Theochrestos, Varus stays, admits the extortion and the bought sentence, repays the Cyrenaeans, pays the price of Aristion's sentence into the treasury, and accepts banishment from Italy — what the Senate imposed on Priscus. He keeps his citizenship and the rest of his estate, and his freedmen keep their patron. Crispinus gets nothing.
+    - |-
+      **Sealed.** Motion 2 passes with the holdings still Exposed. The prefects inventory the house; the slaves are sold at the treasury's auction, Chloe and the children among them unless someone buys them first. Varus can still run, poor, or stay to be deported.
+    - |-
+      **Read into the record.** The ledger is read in the Curia. Varus faces a full hearing; present, he will likely be deported; absent, his estate is held against his return. Theochrestos has what he came for.
+    - |-
+      **The informer falls.** Crispinus is exposed and withdraws. His motion loses its advocate and the Emperor's men harden against it — but the province's case goes on, honestly, and Varus's guilt is unchanged.
+  - type: statblock
+    name: Publius Caesellius Varus
+    kind: Rival
+    desc: |-
+      The PCs' patron: a praetorian senator of fifty-five, able, generous to his people, and a governor who sold a man's death. **Wants:** to leave Rome with his fortune, and to be remembered as a man who looked after his own. **Stance:** depends on the PCs utterly and says so; he gives orders as favours. **Secret:** the bought sentence, recorded in Eutychus's ledger. **Voice:** “I have fed your families for twelve years. I am asking for four days.”
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '2'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '—'
+      Def (M/R): 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: wealth kept. Fear: poverty in exile. Strength: generosity to his own. Flaw: avarice.'
+    - label: Skills
+      text: Charm 2, Deception 2, Knowledge (Law) 2, Knowledge (Rome) 3, Leadership 2, Negotiation 3.
+    - label: Talents
+      text: Adversary 1.
+    - label: Abilities
+      text: |-
+        **A Proconsul's Seal:** his signet and letters add [[boost]] to checks with bankers and shipmasters — until the Seal Clock reaches 5, when his name adds [[setback]] instead. **Counts Slaves as Silver:** checks to make him free anyone not on his own list are **Hard** ([[difficulty difficulty difficulty]]) at least.
+    - label: Equipment
+      text: Signet ring, strongroom key on a cord, letters of credit drafted on a banker at Corinth.
+    - label: Standing
+      text: Dignitas 4 — for now.
+    - label: Look
+      text: Grey hair and a week's grey beard grown out in mourning; heavy jowls going slack under the stubble; broad build gone soft; a dark, unwashed toga; the signet he turns on his finger while he talks.
+  - type: statblock
+    name: Aulus Fadius Crispinus
+    kind: Nemesis
+    desc: |-
+      A quaestorian senator of forty, co-accuser (*subscriptor*) beside the province's advocates, and a man who learned his trade under Domitian. Use the *Delator (Informer)* as his base. **Wants:** an informer's share of Varus's estate, to clear his own debts. **Stance:** courteous to the PCs and quietly building a case that they are Varus's accessories. **Secret:** he prosecuted two senators under Domitian, and under Trajan that record could finish him. **Voice:** “I accuse no one. I only ask the House to count what is in the strongroom before it walks to the river.”
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '4'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '15'
+      Def (M/R): 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: wealth. Fear: his past under Domitian. Strength: patience. Flaw: debt.'
+    - label: Skills
+      text: Charm 2, Coercion 3, Deception 3, Knowledge (Law) 3, Knowledge (Rome) 2, Streetwise 2, Vigilance 2.
+    - label: Talents
+      text: Adversary 1; Cross-Examine; Nobody's Fool 1.
+    - label: Abilities
+      text: |-
+        **Dossier of Dirt** (as the Delator). **Laying Information:** once per session, he may spend a Story Point to tick the Seal Clock once, naming a holding he has located. **The Old Reign:** see *The Emperor's known wish* on the Ides.
+    - label: Equipment
+      text: Wax tablets with an inventory of Varus's house bought from the doorkeeper; two groups of hired *Street Tough* minions led by his freedman; a creditor's letter he keeps hidden.
+    - label: Standing
+      text: Dignitas 2.
+    - label: Look
+      text: Black hair oiled flat; a smooth, pleasant face with a ready smile; slight and neat; a very white toga with the narrow senatorial stripe; a stylus always in his hand.
+  - type: statblock
+    name: Publius Caesellius Eutychus
+    kind: Rival
+    desc: |-
+      Varus's freedman and steward for twenty years, who keeps every account in the house. **Wants:** freedom for his partner Chloe and their two children, still his patron's slaves. **Stance:** loyal and frightened; he will help the PCs as long as they treat his family as people, and he notices if they do not. **Secret:** the second ledger, kept as insurance since the governorship. **Voice:** “The master promised them their freedom every Saturnalia for six years. I wrote it down each time, like everything else.”
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '2'
+      Pr: '2'
+    derived:
+      Soak: '2'
+      W.T.: '11'
+      S.T.: '—'
+      Def (M/R): 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: his family free. Fear: the auction block. Strength: diligence. Flaw: a grudge long kept.'
+    - label: Skills
+      text: Deception 2, Discipline 1, Knowledge (Law) 1, Negotiation 2, Perception 2, Streetwise 1.
+    - label: Abilities
+      text: |-
+        **Keeper of the Accounts:** while he cooperates, add [[boost]] to every check to move the Silver, the Household, or the Records. **Patron's Freedman:** no court can compel his evidence against Varus; Coercion cannot make him testify, though he may choose to.
+    - label: Equipment
+      text: Ring of keys, the household daybook, and (hidden) the second ledger — a small codex of wax tablets bound in boards.
+    - label: Standing
+      text: Dignitas 1.
+    - label: Look
+      text: Thinning grey-brown hair cropped short; a lined, careful face; narrow-shouldered and stooped from the writing-desk; a plain tunic, the toga only on formal days; ink on the second finger of his right hand.
+  - type: statblock
+    name: Theochrestos son of Philon
+    kind: Rival
+    desc: |-
+      Councillor of Cyrene, envoy of the province, and brother of the dead Aristion. **Wants:** Varus to say, in the Curia, that the sentence was bought. **Stance:** courteous, unbribable, and willing to deal with PCs who deal honestly — money for the city, never for him. **Secret:** his council wants restitution more than it wants Varus ruined, and has told him to settle if he can. **Voice:** “My brother was worth exactly two hundred and fifty thousand sesterces to your patron. I would like the Senate to hear the figure.”
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '2'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '—'
+      Def (M/R): 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: justice for his brother. Fear: going home with nothing. Strength: integrity. Flaw: grief.'
+    - label: Skills
+      text: Charm 1, Coercion 2, Discipline 3, Knowledge (Law) 1, Leadership 2, Negotiation 2.
+    - label: Abilities
+      text: |-
+        **The Dead Man's Brother:** heard as the province's envoy, he adds [[boost boost]] to any *Pathos* appeal in the Curia. **Unbuyable:** offers of money to him personally automatically fail and tick the Seal Clock once.
+    - label: Equipment
+      text: The city council's decree of accusation; Aristion's sentence, copied from the provincial records; a Greek travelling cloak.
+    - label: Standing
+      text: Dignitas 1 in Rome, as a provincial; first among his own city.
+    - label: Look
+      text: Dark curling hair and beard left untrimmed in mourning; a long, sun-browned face; tall and spare; an unbleached wool cloak (*himation*) over a plain tunic; a cylinder case of documents carried under one arm.
+  - type: p
+    style: small
+    text: |-
+      **Rewards:** 15–20 XP — 15 for bringing the Ides to an outcome, +5 if three or more holdings were Secured or the settlement was struck. **Win** (Varus gone with his household intact, or relegated and solvent): a Favor from Varus, who still has money and friends if not a seat, and a Favor from each freedman family the PCs protected; +1 Dignitas for the PC who carried the Senate on the Ides in public. **Costly win** (the silver escapes but the household or freedmen are Sealed): the Favors from Varus, but each PC who left a freedman's family to the auction loses 1 Dignitas among the clients who watched. **Loss** (seals before the move): no Favors, and Crispinus opens a Denunciation against one PC as Varus's accessory. **Giving the ledger to the accusers** breaks faith with a patron (−1 Dignitas, as in *Using Favors*) but earns a Favor from the city of Cyrene and from Theochrestos. **Exposing Crispinus** earns a Favor from one of the Emperor's men and leaves a Nemesis with nothing left to lose.
+  - type: scenario
+    text: VI. The Veto
+  - type: synopsis
+    text: |-
+      Rome, spring of 117 BCE — a fictional episode set sixteen years after Tiberius Gracchus died on the Capitol. A law of the previous year stopped the distribution of public land{{34}}, and the tribune **Gaius Titinius Calvus** has promulgated a bill to reopen it. The countrymen of the rural tribes have walked in from the hill farms to vote it, and they are camped in the porticoes around the Forum. Tomorrow at dawn his colleague **Aulus Plautius Venno** will forbid the reading of the bill, as Marcus Octavius forbade Gracchus's — and in a Roman assembly “the wishes of the majority avail nothing if one tribune is in opposition.”{{35}} Overnight, money moves through the camp to pay men to go home before the vote. The PCs are clients with obligations on both sides, and both sides are calling them in.
+
+      **Stakes:** a riot on the Comitium, or a bill that dies quietly while the countrymen walk home with nothing. **Hook:** every PC owes a Favor to someone for the bill and someone against it (Act I). **Tone:** tense and procedural; most of the danger is in the crowd. **Length:** a fast one-shot of 3–4 hours — one afternoon, one night, one dawn. **Showcases:** the speech and bloc rules from *The Theater of Power* applied to a voting assembly; the Procedural Trump Cards (*intercessio*, *obnuntiatio*, the Filibuster); Favors that pull two ways; and a crowd run with the *Demagogue* rules. It shares a toolkit with scenarios I and II but not their stage: here the audience votes with its feet.
+  - type: p
+    style: act
+    text: Act I — The Last Contio
+  - type: readaloud
+    text: |-
+      The Comitium is a ring of stone steps below the Senate house, and this afternoon it is full and spilling out into the Forum. Men stand here who have walked three days from the hills, cloaks rolled on their shoulders, smelling of woodsmoke and mule. Above them on the Rostra, among the bronze beaks of old warships, the tribune Titinius finishes his speech, and the cheer comes up off the stones. Then a second man in a plain toga steps to the edge of the platform — Plautius, his colleague, his friend since boyhood — and the cheer dies away by stages until you can hear a dog barking on the Capitol. “Tomorrow,” he says, “when the scribe begins to read, I will forbid it.”
+  - type: p
+    style: body
+    text: |-
+      **Two claims on every PC.** Before play, each PC chooses (or rolls d6 twice) one claim from each column below. Each claim is a Favor the PC *owes*. Honoring it discharges the debt; refusing it is **breaking faith** — 1 Dignitas lost and an enemy made (see *The Salutatio & the Favor Economy*). Claims are made this afternoon and called in by dawn. Some pairs can be honored together with ingenuity; some cannot.
+  - type: table
+    style: motiv
+    columns:
+    - d6
+    - Called in for the bill
+    - Called in against the bill
+    rows:
+    - - '1'
+      - "Titinius's freedman Philargyrus asks you to serve as a *custos* at the Pollia tribe's gangway tomorrow and see the count is honest."
+      - "Veturius's steward Hermon asks you to carry a sealed purse to the distributor Otacilius before the first watch."
+    - - '2'
+      - "Quintus Cominius, who carried you off the field at Numantia, asks you to find bread for two hundred men of the Quirina."
+      - "Your landlord is Veturius; his steward asks you to stand with the household's clients in front of the Rostra before dawn and hold the ground."
+    - - '3'
+      - "Titinius's scribe, son of your father's friend, asks you to stand beside him tomorrow when he reads — and to keep him from being dragged down."
+      - "Vibia, Plautius's widowed mother and your family's patroness, asks you to keep her son alive and his name unshamed."
+    - - '4'
+      - "Your kinsmen of the Teretina have walked in; they ask you to stand and vote with them as a tribesman."
+      - "Veturius, as augur, asks you to stand with his attendant at dawn, bear witness to any sign you see, and swear to it."
+    - - '5'
+      - "Titinius asks you to carry one last offer to Plautius's open door tonight."
+      - "Otacilius Eros, who lent you money last winter, asks you to help him count the men who take his coin and leave."
+    - - '6'
+      - "Cominius asks you to keep his younger men from answering the city clients' jeers with their fists."
+      - "A senator of Veturius's circle asks you to bring him word the moment anyone lays a hand on Plautius — and to remember who."
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** Plautius's veto is lawful, and it is enough. His generation still regarded the veto as a brake, not a weapon: “The veto was a mode of encouraging reflection; it might yield to a prolonged campaign, but it was regarded as a barrier against a hasty popular impulse which, if unchecked, might prove ruinous to some portion of the community.”{{36}} Titinius has no prolonged campaign left. The countrymen cannot stay away from their fields past this week, and his year of office ends in December. He has three answers: talk his colleague round, have the tribes strip him of office as Gracchus did to Octavius, or force the vote. The landholders behind the veto, led by the consular augur **Marcus Veturius Philo**, have two: pay the countrymen to go home tonight, and, failing that, stop the day with an omen at dawn. The veto holds only as long as Plautius does, and both sides know it.
+  - type: procedure
+    title: The Order of a Tribal Assembly (117 BCE)
+    steps:
+    - |-
+      **Contiones.** A bill is posted and argued at public meetings called by a magistrate. A private citizen speaks only if the presiding magistrate invites him, from a step below the Rostra, for as long as the president allows. No fixed waiting period yet stands between posting and vote; that comes by law in 98.{{37}}
+    - |-
+      **The reading.** On voting morning the president's scribe reads the bill aloud. This is where a colleague interposes: he bids the scribe be silent, and nothing can be put to the vote.{{38}}
+    - |-
+      **The division.** The president orders the citizens into their tribes; ropes divide the Comitium into thirty-five pens. A tribe is drawn by lot to vote first — the *principium*. **Once the principium is called, the right to veto and the right to announce an omen from watching the sky are both at an end.**{{39}}
+    - |-
+      **The ballot.** Since the ballot laws, each man takes a small tablet marked V (*uti rogas*, “as you propose”) or A (*antiquo*, “I keep the old law”), crosses the narrow gangway (*pons*), and drops it in the basket (*cista*) under the eyes of the *custodes*, who count it and report.{{40}}
+    - |-
+      **The announcement.** The president has the tribes' results proclaimed in an order drawn by lot. Eighteen of thirty-five carries. If he halts the announcement before a majority, the vote is void. All business must begin and end between sunrise and sunset.{{41}}
+  - type: p
+    style: body
+    text: |-
+      **Ways into the scene.** The contio runs about an hour after Plautius speaks: Titinius answers him, then lets a few voices from the steps be heard. Let the PCs work it however they like:
+  - type: list
+    items:
+    - |-
+      **Hear it from the crowd.** An **Average** ([[difficulty difficulty]]) Perception check notices men with wax tablets moving among the rural contingents, stopping by one fire and then another, writing down names.
+    - |-
+      **Ask for the step.** Titinius's invitation (an **Average** ([[difficulty difficulty]]) Charm or Negotiation check, or claim 3 or 5) lets a PC address the meeting. Run the speech set-piece against the crowd: Formidable, strain threshold 18 (22, less 4 for an audience already sympathetic). Exceeding half the threshold steadies the camp for the night.
+    - |-
+      **Meet the countrymen.** An **Average** ([[difficulty difficulty]]) Charm check with Quintus Cominius — sixty, a veteran of Numantia, leader of the Quirina men — earns his trust; [[advantage advantage advantage]] or a [[triumph]] learns the camp's collective Motivations. **Desire:** land of their own before the sowing is over. **Fear:** walking home in debt with nothing to show, past their landlords' gates. Their fathers heard it said on these steps that the men who fight for Italy “fight and die to support others in wealth and luxury, and though they are styled masters of the world, they have not a single clod of earth that is their own.”{{42}}
+    - |-
+      **Read the law.** **Average** ([[difficulty difficulty]]) Knowledge (Law): the principium rule above, and the precedent of 133. **Hard** ([[difficulty difficulty difficulty]]): a tribune has been deposed by the tribes exactly once, and most of the Senate calls it sacrilege. [[triumph]]: a tribune's door must stand open all night.
+    - |-
+      **Watch the steps.** **Hard** ([[difficulty difficulty difficulty]]) Knowledge (the Gods): Veturius is an augur, and nothing forbids him to report a sign to tomorrow's assembly.
+    - |-
+      **Work the edges.** **Average** ([[difficulty difficulty]]) Streetwise among the cookshops of the Forum: someone has paid the bakers along the Vicus Tuscus for tomorrow's loaves in advance, and told them to keep the ovens cold tonight.
+  - type: p
+    style: body
+    text: |-
+      **Complications.** The city clients of the noble houses, packed on the Senate-house steps, jeer the countrymen as Gracchans and clodhoppers. An **Average** ([[difficulty difficulty]]) Leadership or Coercion check keeps the young Quirina men from answering; failure is a brawl with a *Street Tough* minion group of four, and blood on the steps. A [[despair]] on any Act I check means the PC is seen plainly helping one side: the other side's claim on them is called in tonight, not at dawn.
+  - type: p
+    style: body
+    text: |-
+      **Advances:** **Bread** (Act II) starts at 5; a speech that passes half the crowd's threshold, or Cominius's trust, raises it to 6. **Heat** starts at 1, or 2 if blood was drawn. Knowing the principium rule removes [[setback]] from every Act III check to time an intervention; without it, the PCs learn the rule only when Titinius sends for them at midnight. Spotting the name-takers makes the first search for a distributor **Average** instead of **Hard**. Learning the camp's Motivations adds [[boost boost]] to every appeal that works them. Finding the cold ovens is the lead for the bread scene. Knowing Veturius can report a sign points the PCs at his house.
+  - type: p
+    style: act
+    text: Act II — The Four Watches
+  - type: readaloud
+    text: |-
+      The Forum after dark belongs to the countrymen. They sleep under the porticoes and on temple steps, around small fires the aediles' men keep telling them to put out. Somewhere a man sings a harvest song, badly, and is told to be quiet. A boy with a lantern moves between the sleepers — stopping, bending to whisper, moving on. When he straightens up from the third fire, a man rises, picks up his bundle, and walks away toward the Vicus Tuscus and the road.
+  - type: p
+    style: body
+    text: |-
+      **What's going on:** two engines run all night — Veturius's money and Titinius's anger. Otacilius and three other freedmen are paying men by name: a denarius and a place on a cart at first light, more for each kinsman brought along. (The trade will be called *divisores*, “distributors,” within a generation.){{43}} Under the secret ballot nobody can buy a vote and check the goods; absence can be checked, so absence is what is bought. Every countryman who leaves hands his tribe's vote to the men still in the city who are enrolled in it — landholders, their stewards, their clients — and the city's tribesmen lean the landholders' way.{{44}} The bribery statutes of the last sixty years were written for elections, and they have failed even there;{{45}} whether paying a man to skip a vote on a law is a crime is a question a prosecutor would enjoy. Meanwhile Titinius has his deposition motion drafted, and his freedman has three hundred cudgels in a storehouse below the Aventine.
+  - type: procedure
+    title: 'The Night Clock: Bread and Heat'
+    steps:
+    - |-
+      **Two tracks.** **Bread** (0–6) is how many countrymen will still be standing in the pens at dawn. **Heat** (0–6) is how close the Forum is to blood. Start values come from Act I.
+    - |-
+      **Four watches.** Run the night as four watches. Each watch, each PC takes one scene (below). At the end of each watch, Bread falls by 1 — the loaves are gone and the fields are waiting — and by 1 more unless a PC stopped a distributor that watch.
+    - |-
+      **Moving the tracks.** A success in the camp or bread scenes restores Bread +1. Calming a confrontation lowers Heat by 1. A [[triumph]] on any night scene may do both; a [[despair]] raises Heat by 1. Heat also rises by 1 whenever blood is drawn, a purse is found in public, or the city clients jeer the camp unanswered.
+    - |-
+      **Heat 6** at any moment is a riot: skip to Act III, ending D.
+    - |-
+      **At dawn, Bread decides the pens.** The countrymen hold **10 + (2 × Bread)** of the 31 rural tribes: 22 at Bread 6, 18 at Bread 4, 12 at Bread 1. At Bread 0 the Comitium is half empty and Titinius will not risk a vote (ending E).
+  - type: p
+    style: body
+    text: |-
+      **Night scenes** — the routes to the dawn. Each costs a PC their watch:
+  - type: list
+    items:
+    - |-
+      **The camp.** Sit with the men and talk them into staying: Leadership or Charm, **Hard** ([[difficulty difficulty difficulty]]), with [[boost boost]] for working their Desire or Fear. Success: Bread +1. A PC with *Demagogue* may instead give the whole camp one collective order — “sleep,” “stay,” or “march on Plautius's door” (Heat +2).
+    - |-
+      **The bread.** An **Average** ([[difficulty difficulty]]) Negotiation check and 500 HS, or a Favor spent, buys a night's baking from a mill-bakery on the Aventine slope: Bread +1. If the ovens were bought cold, the baker must be out-bid or shamed: **Hard** ([[difficulty difficulty difficulty]]).
+    - |-
+      **The money.** Find a distributor: Streetwise, **Hard** ([[difficulty difficulty difficulty]]), or **Average** with the Act I lead. Stopping him quietly is an opposed Coercion or Deception check against his Cool, and cancels this watch's distributor tick; *Cross-Examine* catches his lies about whose money it is. Stopping him in front of the camp also cancels the tick, but raises Heat by 1.
+    - |-
+      **The open door.** A tribune's door stands open day and night for any citizen who needs him, and he may not spend more than a night away from the city.{{46}} Plautius receives the PCs in his atrium, under his ancestors' death-masks. Run it as a social encounter against his Discipline. [[advantage advantage advantage]] learns his Fear; [[triumph]] learns his secret. He will accept one honorable way out: that Titinius restore a price paid to holders who must give up public land above the legal limit — the concession Gracchus's first bill offered and his second took away{{47}} — and ask him for it in public. Agreed terms mean the veto can be withdrawn at dawn without a deposition.
+    - |-
+      **The presiding tribune.** Titinius holds court at his house on the Aventine with dockmen and freedmen. Getting him to offer the clause is a **Hard** ([[difficulty difficulty difficulty]]) Negotiation check; add [[setback]] for his pride unless the offer is framed as his own generosity. [[advantage advantage]] reveals the cudgels.
+    - |-
+      **The augur's house.** Veturius receives the PCs on the Palatine and will not discuss the sky. A **Hard** ([[difficulty difficulty difficulty]]) Perception check in his hall, or an **Average** ([[difficulty difficulty]]) Streetwise check with his doorkeeper, turns up Hermon's errand: a fuller from the Argiletum who suffers from the falling sickness has been paid to stand in the Teretina's pen at dawn. A man seized by a fit vitiates the business of an assembly; the Romans called epilepsy the comitial sickness for that reason.{{48}} Finding the fuller is an **Average** ([[difficulty difficulty]]) Streetwise check; turning him takes coin, a Favor, or an opposed Coercion check.
+    - |-
+      **The cudgels.** Philargyrus's storehouse by the river holds the staves and a *Street Tough* group who mean to use them. Taking or spoiling them quietly (**Hard** ([[difficulty difficulty difficulty]]) Skulduggery, or a Favor on Titinius) lowers Heat by 1. Left alone, they come to the Comitium at dawn.
+  - type: p
+    style: body
+    text: |-
+      **The Turn (end of the second watch).** Cominius's men catch Otacilius in the Teretina's camp with a purse in one hand and a wax tablet in the other: names, sums, and the impression of the seal under which each purse came. Forty of them carry him toward the great drain to drown him. Heat +2. Then Titinius, told the news on his doorstep, announces to the street that at dawn he will move the deposition first. Plautius hears within the hour. The PCs choose:
+  - type: list
+    items:
+    - |-
+      **Save him.** Leadership or Coercion against the group: **Daunting** ([[difficulty difficulty difficulty difficulty]]), with [[boost boost]] if Cominius trusts the speaker. Success lowers Heat by 1 and makes Otacilius owe the PC a Favor; failure leaves a corpse and Heat where it is.
+    - |-
+      **Take the tablet.** Whoever holds it has proof on wax. It can upgrade a Revelatory Appeal at dawn without risking the bluff, buy Veturius's silence (an **Average** ([[difficulty difficulty]]) Negotiation check makes him forbid the fit and keep his report to himself), or discharge a claim by being handed to the patron who asked.
+    - |-
+      **Let it happen.** Otacilius dies in the drain. Veturius's friends now call the countrymen murderers: add [[setback]] to every appeal for the bill at dawn, and the Senate has the violence it needs to call any law void.
+  - type: p
+    style: body
+    text: |-
+      **Advances:** at first light, record **Bread** (the tribes held), **Heat** (carried forward; at 4–5 add [[setback]] to every check to calm or hold a crowd, and any [[despair]] in Act III makes it 6), **Plautius** (firm, wavering if his Fear is known, or agreed if Titinius has promised the clause), **the fuller** (in place, turned, or exposed), **the tablet** (who holds it), and **the cudgels** (armed or spoiled). Every claim still owed is called in before the sun clears the Esquiline.
+  - type: p
+    style: act
+    text: Act III — Dawn at the Gangways
+  - type: readaloud
+    text: |-
+      The sky is grey over the Esquiline when the ropes go up, thirty-five pens across the Comitium, and the men find their tribes by the shouting of their names. A slave carries the urn for the lot to the foot of the Rostra and sets it down with care. Up on the platform Titinius nods to his scribe. The scribe unrolls the bill and draws breath. Beside them Plautius lifts one hand, not high. “I forbid it,” he says. The scribe looks at Titinius, and Titinius looks out at the crowd.
+  - type: procedure
+    title: Dawn, Step by Step
+    steps:
+    - |-
+      **The morning contio.** Titinius holds the chair (see his stat block). Run the speech set-piece against the assembled crowd — Formidable, strain threshold 18 if Bread is 4 or more, 22 if 3 or less, 26 if 1 or less. Veturius (or a *Senator / Patrician*) speaks for the veto; PCs speak only if the chair calls them. If Titinius denies the other side the floor, the day looks lawless: [[setback]] to every later appeal to the Wavering tribes. If he grants it, Plautius uses *Filibuster*: every 2 rounds he adds cost Bread 1 and add Heat 1, as the sun climbs and the men think of the road.
+    - |-
+      **The veto.** Plautius forbids the reading. Titinius now chooses, and the PCs may sway him: **accept the veto** (ending E); **offer the clause** in public, if Act II arranged it — if Plautius agreed, he lifts the veto at once (ending A); if he is only wavering, make the final appeal described under *Seventeen tribes* now, with the threat of deposition standing behind it; or **move the deposition**. Whichever way the veto falls, the bill itself then goes to the same pens and the same count: the countrymen's tribes, plus the Wavering bloc if it was committed for the bill.
+    - |-
+      **The deposition vote.** The question “that Aulus Plautius be deprived of the tribunate” goes to the tribes. The countrymen hold the rural tribes Bread allows. The four urban tribes vote with the noble houses. Four tribes form a **Wavering** bloc, run with the Senate rules (Hard audience, threshold 14): commit it and it adds 4 tribes to the side that broke it; left uncommitted it votes no, as does every other rural tribe. A PC serving honestly as *custos* (claim 1) adds [[boost]] to appeals to the Wavering bloc — the men trust the count.
+    - |-
+      **Seventeen tribes.** If the deposition is carrying, Titinius halts the announcement at seventeen tribes and appeals to his colleague a last time, as Gracchus did in 133.{{49}} A PC at Plautius's side may make the appeal: an opposed Charm or Negotiation check against his Discipline. Add [[boost boost]] for working his Fear, [[boost]] if the clause is on the table, [[boost]] if Vibia's claim was honored. Add [[setback]] if Veturius and the nobles are standing together in his sight — in 133 Octavius looked at the men of wealth, and held. Success: he withdraws the veto, as a tribune facing seventeen tribes did in 67 BCE{{50}} — ending A. Failure: the eighteenth tribe is proclaimed — ending B.
+    - |-
+      **The omen.** Each vote of the day — the deposition, then the bill — has its own principium, and Hermon's man waits for whichever vote is going against his master. If the fuller falls in his fit before that principium is called, Veturius reports it to the chair: *alio die*, “on another day.” The president is bound to dismiss the assembly{{51}} — ending C. To stop it, spot the fuller in the Teretina's pen (**Hard** ([[difficulty difficulty difficulty]]) Perception) and get him out (Athletics or Coercion), or have Veturius forbid it (the tablet, or an appeal to his Piety upgraded by a Knowledge (the Gods) maneuver). Laying hands on an augur in the Comitium raises Heat by 2. In a [[Grounded]] game the fit is the only omen. In a [[Fated]] Rome, a clap of thunder from a clear sky as the lot is drawn belongs to Jupiter, and nobody paid for it.
+    - |-
+      **Heat 6.** Riot — ending D.
+  - type: p
+    style: body
+    text: |-
+      **Arguments both sides will reach for.** For the deposition: a tribune is sacred because he serves the plebs, and a tribune who acts against them has unmade his own sanctity — what the tribes gave, the tribes may take back. Against it: if a tribune who protects one citizen can be voted out for displeasing a colleague, the tribune's protection is dead. Both were argued in the Forum in 133, and both still work as Logos appeals.{{52}}
+  - type: p
+    style: body
+    text: |-
+      **Endings.** **A. The veto withdrawn.** The bill passes with the clause; Plautius keeps his office and his name; the commissioners will measure land this summer. The quietest win, and the one the governing class can live with. **B. The tribune deposed.** The bill passes. Plautius, now a private man, will not leave the Rostra until Titinius's *viator* drags him down (Heat +1). A tribune has been unmade a second time, and men who were on the Capitol in 133 count the precedent; Titinius must now hold office or face what Gracchus faced. **C. Another day.** The fuller falls, Veturius says two words, the ropes come down. The countrymen have no other day — they go home to sow — and the bill dies quietly. If the PCs can prove the fit was bought, Veturius's house is ruined, but the day is still lost. **D. Sticks and stones.** City clients with staves meet countrymen with cudgels (if the storehouse was left alone). Use *Street Tough* minion groups, the lictors of any magistrate present, and *Legionary* veterans under Cominius. The PCs' work is to get people out alive — Athletics or Coordination to clear a pen, a **Hard** ([[difficulty difficulty difficulty]]) Leadership check to turn a group — and to keep hands off Plautius, whose person is sacrosanct. In 133, “more than three hundred were slain by blows from sticks and stones, but not one by the sword.”{{53}} Any law carried in a riot may be voided by the Senate as passed by violence.{{54}} **E. The veto stands.** Titinius yields, or the pens are empty. Plautius kept his word, the countrymen walk home past their landlords' gates, and nothing has changed except the price of bread.
+  - type: statblock
+    name: Aulus Plautius Venno
+    kind: Nemesis
+    desc: |-
+      Thirty-one, grave and exact, Titinius's friend since they learned their letters together; his family has farmed more public land in the Quirina's country than the law allows for three generations. **Wants:** to keep the pledge he gave the landholders without becoming the second Octavius. **Stance:** courteous to everyone; hears the PCs at his open door at any hour, and assumes they were sent. **Secret:** his late father borrowed heavily from Veturius, and the veto is the price of the creditor's patience; he will take any honorable way out that does not look bought. **Voice:** “I gave my word before I knew what it would cost. That is the only kind of word worth giving.”
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '2'
+      Will: '4'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '12'
+      S.T.: '17'
+      Def: 0/0
+    fields:
+    - label: Motivations
+      text: "Desire: family — his father's name and debts. Fear: loss of face — to be the second tribune unmade by the tribes. Strength: gravitas. Flaw: loyalty — to a creditor who has never had to ask."
+    - label: Skills
+      text: Cool 3, Discipline 3, Knowledge (Law) 2, Knowledge (Rome) 2, Leadership 2, Negotiation 2, Resilience 2.
+    - label: Talents
+      text: Adversary 1; Filibuster 2.
+    - label: Abilities
+      text: |-
+        **Intercessio:** forbids the reading of the bill; nothing may be voted while the veto stands, and only he can lift it — until the principium is called (see *Procedural Trump Cards*). **Sacrosanct:** anyone who lays hands on him in anger loses 1 Dignitas, and Heat rises by 2. **The Open Door:** he may not turn a citizen away at night; at his own house, social checks against him suffer no [[setback]] for his higher Dignitas.
+    - label: Equipment
+      text: Plain toga (a tribune wears no purple and has no lictors), a wax copy of the bill annotated in his hand, one *viator* (use *Lictor*, without the fasces).
+    - label: Look
+      text: Close-cropped dark hair thinning early; a long, serious, clean-shaven face; slight build; plain undyed toga worn exactly; ink-stained fingers turning a bronze stylus.
+  - type: statblock
+    name: Gaius Titinius Calvus
+    kind: Nemesis
+    desc: |-
+      Thirty-eight, the first of his family on the tribunes' bench, a fine speaker in the open air and a poor listener indoors. Built on the *Popularis Tribune*. **Wants:** the bill, and to be the man who finished what the Gracchi began — and lived. **Stance:** wants the PCs as custodes, witnesses, and messengers; generous, impatient, bad at hearing no. **Secret:** the deposition motion was drafted a week ago, and his freedman Philargyrus keeps three hundred cudgels below the Aventine “to keep order.” **Voice:** “The People gave him the office. The People can take it back. Tell me which part of that is not Roman.”
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '3'
+      Pr: '4'
+    derived:
+      Soak: '3'
+      W.T.: '14'
+      S.T.: '16'
+      Def: 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: gloria. Fear: obscurity — ending his year with nothing to show. Strength: eloquence. Flaw: pride — cannot bear to be seen to yield.'
+    - label: Skills
+      text: Charm 3, Coercion 2, Knowledge (Law) 2, Knowledge (Rome) 2, Leadership 3, Negotiation 2, Streetwise 1.
+    - label: Talents
+      text: Adversary 1; Demagogue; Scathing Tirade.
+    - label: Abilities
+      text: |-
+        **The Chair:** as presiding tribune he decides who speaks, from where, and for how long; draws the lot for the principium; and may halt the proclamation of the tribes at any count. **Voice of the Mob:** as *Popularis Tribune*.
+    - label: Equipment
+      text: Plain toga, the master copy of the bill, a scribe, two *viatores*, a signet ring cut with a yoked ox.
+    - label: Look
+      text: Bald before forty under a sunburned scalp; quick black eyes and a heavy jaw; broad shoulders; toga hitched short for pacing the Rostra; a yoked-ox signet on a thick finger.
+  - type: statblock
+    name: Marcus Veturius Philo
+    kind: Nemesis
+    desc: |-
+      Sixty, a consular and an augur for twenty years, holder of public land in three districts that his grandfather first leased from the state. He was on the Capitol in 133. **Wants:** to keep his family's land, and to keep Rome from another 133. **Stance:** treats the PCs as useful men, pays promptly, and never asks for anything he could be quoted on. **Secret:** the distributors' money is his, and his steward Hermon has hired the fuller to fall in a fit at dawn; Veturius has guessed and has not asked. He will not invent a sign, but he will report one he is given. **Voice:** “I was on the Capitol when they killed Gracchus. I did not pick up a bench-leg. I should like to die without having been asked to.”
+    chars:
+      Br: '2'
+      Ag: '1'
+      Int: '3'
+      Cun: '4'
+      Will: '4'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '11'
+      S.T.: '16'
+      Def: 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: family — the land of his ancestors. Fear: the mob. Strength: piety. Flaw: a guilty secret — the purses, and the fit.'
+    - label: Skills
+      text: Charm 2, Cool 3, Deception 2, Discipline 2, Knowledge (Law) 3, Knowledge (the Gods) 3, Negotiation 3.
+    - label: Talents
+      text: Adversary 2.
+    - label: Abilities
+      text: |-
+        **Alio Die:** before the principium is called he may report an unfavorable sign to the presiding tribune, and the assembly must disperse (*obnuntiatio*; see *Procedural Trump Cards*). The report needs no roll; its cost comes later, if a lie is proved. **Deep Purse:** once per watch in Act II he may spend a Story Point to put a stopped distributor back to work. **Consular Standing:** Dignitas 4.
+    - label: Equipment
+      text: The curved augural staff (*lituus*), broad-striped senatorial tunic and red senator's shoes, a signet whose impression is all over Otacilius's tablet.
+    - label: Look
+      text: White hair cropped to the skull; heavy-lidded eyes in a lined, clean-shaven face; tall and stooped; broad purple stripe under a heavy toga; red shoes; the curled lituus in his left hand.
+  - type: statblock
+    name: Gnaeus Otacilius Eros
+    kind: Rival
+    desc: |-
+      A freedman hide-dealer of forty with friends in every rural tribe that sends men to market in Rome. **Wants:** his tenth of every purse, and to stay out of court. **Stance:** friendly to anyone with coin; sells what he knows to both sides, once each. **Secret:** he keeps a wax tablet of names, sums, and the seal under which each purse came, as insurance against his patron — and has kept back a third of the money. **Voice:** “Nobody is buying votes, sir. The ballot is secret now. I am paying for a cart ride home.”
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '2'
+      Cun: '3'
+      Will: '2'
+      Pr: '3'
+    derived:
+      Soak: '2'
+      W.T.: '11'
+      S.T.: '—'
+      Def: 0/0
+    fields:
+    - label: Motivations
+      text: "Desire: wealth. Fear: a powerful enemy's malice — from either side. Strength: cunning. Flaw: avarice."
+    - label: Skills
+      text: Charm 2, Cool 1, Deception 2, Negotiation 2, Streetwise 3, Vigilance 1.
+    - label: Talents
+      text: Adversary 1.
+    - label: Abilities
+      text: |-
+        **Cart Ride Home:** each watch he works unopposed is the distributor tick on the Night Clock (Bread −1). **The Tablet:** whoever holds it may upgrade one Revelatory Appeal against Veturius and ignores that appeal's [[despair]] penalty — the proof is in wax.
+    - label: Equipment
+      text: A leather purse of denarii, a folding wax tablet on a cord, a lantern-boy, two *Street Tough* minders.
+    - label: Look
+      text: Grey-streaked curly hair oiled flat; a round smiling face with a broken nose; short and thickset; a good tunic under a cheap cloak; the tablet hanging at his belt.
+  - type: p
+    style: small
+    text: |-
+      **Adversaries:** *Street Tough* minion groups (both sides), *Lictor* (for *viatores* and any magistrate's attendants), *Legionary* (Cominius's veterans), *Senator / Patrician* (the nobles on the Senate-house steps). **Rewards:** 15–20 XP. **Win** (ending A, or B with Heat never above 4): 20 XP; +1 Dignitas for the PC who carried the decisive appeal; a Favor from Titinius and one from the Quirina — a door open to the PCs in every village that sent men. **Costly win** (B with blood, or a law carried through D): 15–20 XP; +1 Dignitas with the plebs, a lasting enemy in Veturius's house; any PC who struck Plautius or the augur loses 1 Dignitas instead. **Loss** (C or E): 15 XP and no Dignitas gained; claims honored still bank a Favor from that side, and every claim refused costs 1 Dignitas for breaking faith. Whoever holds Otacilius's tablet at the end banks a Favor from Veturius — or the makings of a prosecution.
+  - type: endnotes
+    title: Notes
+    items:
+    - "The prodigy of 114 BCE, in which the knight's daughter Helvia and her horse were struck down and stripped by lightning while travelling toward Apulia: Plutarch, *Roman Questions* 83; Orosius 5.15.20–22; Obsequens 37; Livy, *Periochae* 63. The narrative is in A. H. J. Greenidge, *A History of Rome During the Later Republic and Early Principate*, vol. 1 (1904), on the Vestal trials of 114–113 BCE. On the haruspices' reading (nakedness meaning a broken vow, the horse meaning the knights), and its timing just before the pontiffs took up the case, see Federico Santangelo, *Divination, Prediction and the End of the Roman Republic* (2013) (paraphrased)."
+    - "Cicero, *Pro Milone* 59: under no law were slaves examined against their master except in a case of incest (*de servis nulla lege quaestio est in dominum nisi de incestu*; some editors bracket the sentence). In 114 BCE the informer was the slave of a knight (the name is often restored as Barrus), and he named his own master: Plutarch, *Roman Questions* 83; Greenidge, *History of Rome*, vol. 1. A slave of the orator M. Antonius was racked, scourged, and burned in the same affair without incriminating his master: Valerius Maximus 6.8.1."
+    - "Livy 8.15.7–8 (337 BCE): the Vestal Minucia, first suspected for dressing more elegantly than was proper, was denounced to the pontiffs by a slave informer (*ab indice servo*). They ordered her to abstain from the rites and to keep her household in her power (*familiam in potestate habere*), and she was buried alive by the Colline Gate, to the right of the paved road, in the *Campus Sceleratus*. On the purpose of the order (to keep her slaves available for examination), see Robin Lorsch Wildfang, *Rome's Vestal Virgins* (2006), on the *crimen incesti* (paraphrased). The witnesses in Domitian's prosecution of Cornelia were tortured: Suetonius, *Domitian* 8.4."
+    - "On the rows of shops along the Via Sacra and the Nova Via that belonged to the Atrium Vestae and were let for rent, some of them absorbed in the Flavian rebuilding: Wildfang, *Rome's Vestal Virgins* (2006), on the order's property (paraphrased). The knight who manages the leases is invented."
+    - "Pliny the Younger, *Panegyricus* 42: Trajan is praised for freeing every household from the “domestic accuser” (*accusatore domestico*) and for ending what Pliny calls a “servile war,” a time when slaves had been the emperor's friends and their masters had not."
+    - "Pliny the Younger, *Letters* 4.11; Suetonius, *Domitian* 8.3–4. Domitian, as *Pontifex Maximus*, summoned the pontiffs to his Alban villa instead of the Regia and condemned the Chief Vestal Cornelia in her absence, without hearing her. Earlier in the reign, the Vestals Varronilla and the Oculatae sisters had been convicted and allowed to choose how they died, and their lovers were banished. The date of Cornelia's burial is disputed (c. 89–91 CE)."
+    - "Pliny the Younger, *Letters* 4.11; Suetonius, *Domitian* 8.4. Valerius Licinianus, a man of praetorian rank, confessed while the case against him was still unproven, and he was granted exile rather than death."
+    - "Pliny the Younger, *Letters* 4.11, trans. William Melmoth, rev. F. C. T. Bosanquet, *Letters of Pliny* (Project Gutenberg #2811). The same letter declines to say whether Cornelia was innocent or guilty."
+    - "Tacitus, *Annals* 2.34 (16 CE). Urgulania, a friend of Livia, refused to appear as a witness, and a praetor was sent to question her at home, even though by old custom the Vestal Virgins were heard in the Forum and the courts whenever they gave evidence."
+    - "Plutarch, *Numa* 10; Dionysius of Halicarnassus, *Roman Antiquities* 2.67; Livy 8.15.8. The condemned Vestal was carried bound in a closed litter, as in a funeral procession, to the field by the Colline Gate. She went down a ladder into an underground chamber furnished with a bed, a lamp, and a little bread, water, milk, and oil, and the opening was filled in. Summarized in Wildfang, *Rome's Vestal Virgins* (2006) (paraphrased)."
+    - "Pliny the Younger, *Letters* 4.11, trans. Melmoth, rev. Bosanquet (Project Gutenberg #2811)."
+    - "Pliny the Younger, *Letters* 4.11, trans. Melmoth, rev. Bosanquet (Project Gutenberg #2811), on the Roman knight Celer, scourged in the Forum as Cornelia's alleged lover. On her lovers being whipped to death with rods in the Comitium, see Suetonius, *Domitian* 8.4, trans. Alexander Thomson, rev. T. Forester (Project Gutenberg #6400)."
+    - "Pliny the Younger, *Letters* 2.11 (the Senate's trial of Marius Priscus, proconsul of Africa, January 100 CE), trans. William Melmoth, rev. W. M. L. Hutchinson, Loeb Classical Library (1915) — the quotation is from this translation."
+    - "Vegetius, *Epitoma rei militaris* 4.39 — sailing uncertain and dangerous from mid-September, and the seas closed from the third day before the Ides of November (11 November) to the sixth day before the Ides of March (10 March)."
+    - "Ovid, *Tristia* 5.11.15 — the relegated poet keeps his life, his wealth, and his citizenship. Deportation to an island as an innovation of Tiberius: paraphrasing Gordon P. Kelly, *A History of Exile in the Roman Republic* (Cambridge, 2006), ch. 2."
+    - "Tacitus, *Annals* 4.20 — the accusers' legal quarter of a condemned man's estate. On informers hoping for that share: paraphrasing John S. McHugh, *Rome's Enemies Within: Imperial Conspiracies and Assassinations in the Roman Empire during the First Century AD*."
+    - "*Digest* 48.19.5 pr. (Ulpian), reporting Trajan's rescript to Julius Fronto that an absent man is not to be condemned on a criminal charge. The later practice of registering and holding an absent defendant's property is described in *Digest* 48.17.1 (Marcian); here it is moved a century early as Crispinus's motion."
+    - "Pliny the Younger, *Letters* 3.9 — the Senate's proceedings against the estate of Caecilius Classicus, proconsul of Baetica, who died before he could be tried. The Senate gave his daughter what he had owned before his governorship, divided the rest among his victims, and made his creditors repay what he had paid them since his return."
+    - "Cassius Dio, *Roman History* 56.27.2–3 — Augustus's limits on an exile's ships, slaves and freedmen, and fortune (12 CE). On the decree as a check on carrying wealth into exile: paraphrasing Kelly, *A History of Exile in the Roman Republic*."
+    - "On transfers by written entry in a banker's books, and the banker's duty to keep complete accounts and produce them (*Digest* 2.13): paraphrasing Koenraad Verboven and Paul Erdkamp (eds.), *Law and Economic Performance in the Roman World* (Brill, 2022)."
+    - "*Digest* 22.5.4 (Paul) — patron and freedman cannot be compelled to give criminal evidence against each other. Paraphrasing Egbert Koops, “Masters and Freedmen: Junian Latins and the Struggle for Citizenship,” in G. de Kleijn and S. Benoist (eds.), *Integration in Rome and in the Roman World* (Brill, 2014)."
+    - "Tabula Heracleensis (*CIL* I² 593), the clause on wagons in the streets of Rome — no wagon to be driven after sunrise or before the tenth hour of the day, with exceptions for building temples and public works, demolition under public contract, and the wagons of priests, triumphs, and games."
+    - "On the *naves codicariae* and the up-to-three-day haul from Portus to Rome: paraphrasing David J. Mattingly and Gregory S. Aldrete, “The Feeding of Imperial Rome: The Mechanics of the Food Supply System,” in J. Coulston and H. Dodge (eds.), *Ancient Rome: The Archaeology of the Eternal City* (Oxford, 2000)."
+    - "Gaius, *Institutes* 1.37 — under the *lex Aelia Sentia*, a manumission made to defraud creditors is void."
+    - "Kelly, *A History of Exile in the Roman Republic* — exiles' devices against confiscation: buying costly slaves as portable wealth, estates in free cities, friends buying at the auction, and informal manumission before departure, as Cicero arranged in 58 BCE without being sure it would hold. Paraphrased."
+    - "Pliny the Younger, *Letters* 3.9 (the case of Caecilius Classicus), trans. Melmoth, rev. Hutchinson, Loeb Classical Library (1915) — the quotation is from this translation."
+    - "Pliny the Younger, *Letters* 2.11 — the consul-designate Julius Ferox's motion to grant Priscus judges provisionally while summoning the men said to have bought innocent blood."
+    - "Pliny the Younger, *Letters* 2.11 — the consular Tuccius Cerealis demands that Priscus be notified to attend, and the matter is adjourned to the next meeting of the Senate."
+    - "Pliny the Younger, *Letters* 8.14 (to Titius Aristo, on the Senate's vote over the freedmen of Afranius Dexter), trans. William Melmoth, rev. F. C. T. Bosanquet (1895) — the quotation is from this translation. Pliny there insisted that death, banishment, and acquittal be counted as three separate opinions."
+    - "Aulus Gellius, *Attic Nights* 14.7.8, reporting Varro — a decree of the Senate made before sunrise or after sunset is not valid."
+    - "Pliny the Younger, *Panegyricus* 34–35 — Trajan's public punishment of the informers of Domitian's reign."
+    - "Pliny the Younger, *Letters* 2.11 — at the division on Priscus's sentence, those standing by the consuls' chairs went over to Cornutus Tertullus's motion, and the waverers followed."
+    - "Tacitus, *Annals* 12.23; Cassius Dio, *Roman History* 52.42.6 — senators might not leave Italy without the emperor's leave, except to visit Sicily and, from Claudius, Narbonese Gaul."
+    - "Appian, *Civil Wars* 1.27; George Willis Botsford, *The Roman Assemblies from Their Origin to the End of the Republic* (1909) — on the plebiscites after Gaius Gracchus's death that first let allottees sell their land and then, in 118 BCE, ended the distributions; A. H. J. Greenidge, *A History of Rome During the Later Republic and Early Principate*, vol. I (1904), on the later law of Spurius Thorius."
+    - "Plutarch, *Tiberius Gracchus* 10.2, trans. Bernadotte Perrin (Loeb Classical Library, 1921) — on Marcus Octavius's veto of the agrarian bill, 133 BCE."
+    - "Greenidge, *History of Rome*, vol. I (1904) — on Octavius's first veto. The same passage describes the country voters streaming into Rome for the vote and Octavius bidding the scribe be silent."
+    - "Botsford, *The Roman Assemblies* (1909) — on the contio: private speakers addressing the meeting from below the platform, the president's control of the order and length of speeches, and adjournment. The fixed interval of three market days (*trinundinum*) between promulgation and vote was imposed by the lex Caecilia Didia of 98 BCE; see Francisco Pina Polo, *The Consul at Rome* (2011)."
+    - "Plutarch, *Tiberius Gracchus* 10–11 (Perrin); Greenidge, vol. I — the veto delivered by silencing the clerk, the meeting melting away, and, on the next voting day, the voting urns carried off by the party of the rich and a near-riot."
+    - "Botsford, *The Roman Assemblies* (1909) — on the tribal assembly: the lot for the tribe of the Latins and for the *principium*, ropes stretched to divide the assembly-place, and the rule that calling the principium ended the right of intercession and of announcing an omen seen while watching the sky."
+    - "Ballot laws: the lex Gabinia (139 BCE, elections), lex Cassia (137, trials), and lex Papiria (c. 131/130, legislation); Marius's law of 119 narrowing the gangways, Cicero, *De Legibus* 3.38–39. Botsford (1909) on the tablets marked for *uti rogas* and *antiquo*, the *cistae*, and the *custodes*. On the layout of the *pontes*: Antonio López García, *Running Rome and Its Empire* (2024), and Henrik Mouritsen, *Plebs and Politics in the Late Roman Republic* (2001)."
+    - "Botsford, *The Roman Assemblies* (1909) — the tribal returns proclaimed in an order usually drawn by lot; a vote without effect if the president halted the announcement before a majority; every session to begin and end between sunrise and sunset."
+    - "Plutarch, *Tiberius Gracchus* 9.5, trans. Perrin (1921) — from Tiberius Gracchus's speeches for the land bill."
+    - "Mouritsen, *Plebs and Politics* (2001) — on the *divisores*, first attested in the early first century BCE; on bribes given mostly as promises and aimed at the rural tribes; and on Verres summoning the distributors of every tribe to block Cicero's election as aedile (Cicero, *In Verrem* 1.22–23)."
+    - "Greenidge, vol. I — on the urban voters of 133, indifferent or hostile to the land bill and many of them clients of the noble houses, and on the country voters scattering home once the vote was over."
+    - "Greenidge, vol. I; Botsford (1909) — on the laws against electoral bribery of 181 BCE (the lex Baebia, ten years' disqualification from office), 166, and 159 (the lex Cornelia Fulvia, a capital penalty, in practice exile), none of which ended the practice."
+    - "Plutarch, *Roman Questions* 81 — why a tribune wears no purple, and why his door stands open night and day; Daniel J. Gargola, *The Shape of the Roman Order* (2017), on the rule that tribunes of the plebs might not be absent from the city for more than one night."
+    - "Plutarch, *Tiberius Gracchus* 9.2 and 10.3 (Perrin) — the first bill paid holders the value of the land they surrendered; after Octavius's veto, Tiberius withdrew it for a harsher bill without compensation. Greenidge, vol. I, on the redrafting."
+    - "Botsford, *The Roman Assemblies* (1909) — on prohibitive omens: an attack of epilepsy vitiated an assembly's business and forced an adjournment, hence the name *morbus comitialis*, the comitial sickness."
+    - "Plutarch, *Tiberius Gracchus* 12 (Perrin); Greenidge, vol. I — the deposition of Octavius: the halt after seventeen tribes, the last appeal, Octavius looking to the men of wealth standing together, and his removal from the Rostra by one of Tiberius's freedmen."
+    - "Asconius, commentary on Cicero's *Pro Cornelio* (p. 72 Clark); Cassius Dio 36.30 — the tribune Trebellius withdrew his veto of Gabinius's law in 67 BCE after seventeen tribes had voted to depose him. Mouritsen, *Plebs and Politics* (2001), on the limits of tribunician intercession."
+    - "Botsford, *The Roman Assemblies* (1909) — on *obnuntiatio*: a president was bound to dismiss the assembly on an augur's or magistrate's report of an evil omen, whatever their relative rank, and the Aelian and Fufian laws (c. 150 BCE) extended the device. For the augur's *alio die*, Cicero, *De Legibus* 2.31 and *Philippics* 2.83."
+    - "Plutarch, *Tiberius Gracchus* 14–15 (Perrin); Greenidge, vol. I — Titus Annius's challenge to Tiberius over the deposition, and Tiberius's reply that a tribune's sanctity comes from the people and is forfeited by injuring them."
+    - "Plutarch, *Tiberius Gracchus* 19.6, trans. Perrin (1921) — the killing of Tiberius Gracchus and his supporters on the Capitol, 133 BCE."
+    - "Botsford, *The Roman Assemblies* (1909) — the Senate's annulment of Saturninus's measures (100 BCE) and of Sextus Titius's agrarian law (99 BCE) as passed by violence or against the intercession."
 - title: Running Imperial Rome
   blocks:
   - type: p
