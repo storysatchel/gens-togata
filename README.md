@@ -50,7 +50,7 @@ GitHub Actions (`.github/workflows/release.yml`):
 - **push a `v*` tag** — publishes a release at that version. Use this for minor/major bumps; later patches continue from it.
 
 - `Gens-Togata-vX.Y.Z.pdf` — whole-page rulebook PDF.
-- `Gens-Togata-vX.Y.Z-folio.pdf` — 2-up booklet-imposed PDF for letter paper; print duplex using the short-edge flip setting.
+- `Gens-Togata-vX.Y.Z-folio.pdf` — 2-up booklet-imposed PDF for letter paper, in signatures of 4 sheets (16 pages) each; print duplex using the short-edge flip setting, then fold and nest each 4-sheet group separately.
 - `Gens-Togata-Style-Guide-vX.Y.Z.pdf` — style-guide PDF.
 - `Gens-Togata-vX.Y.Z-transcript.txt` — narration transcript.
 
