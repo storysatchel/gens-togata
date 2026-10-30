@@ -27,4 +27,4 @@ Authoring and build conventions for this repository. Read before editing content
 
 ## Build & release
 - Build: `make pdf` → `dist/Gens Togata.pdf`. Source page is **5.5in × 8.5in (396 × 612 pt)**; verify with `pdfinfo`.
-- Release: every green push to `main` auto-cuts the next patch release (`vX.Y.Z` → `vX.Y.Z+1`); push a `vX.Y.0` tag for minor/major bumps. CI publishes the whole-page PDF, a letter-size 2-up folio PDF, and narration transcript. Print the folio duplex with the short-edge flip setting. Verify the page sizes and that the `Genesys` glyph font is embedded.
+- Release: every green push to `main` auto-cuts the next patch release (`vX.Y.Z` → `vX.Y.Z+1`); push a `vX.Y.0` tag for minor/major bumps. CI publishes the whole-page PDF, a letter-size 2-up folio PDF (imposed by the `pdfbooklet` CLI in 16-page signatures), and narration transcript. Print the folio duplex with the long-edge flip setting. Verify the page sizes and that the `Genesys` glyph font is embedded.

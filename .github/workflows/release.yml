@@ -58,7 +58,7 @@ jobs:
           INPUT="dist/Gens-Togata-${VERSION}.pdf"
           bun run src/render.tsx content.yaml "$INPUT"
           bun run src/render.tsx styleguide.yaml "dist/Gens-Togata-Style-Guide-${VERSION}.pdf"
-          bun run src/impose.ts "$INPUT" "dist/Gens-Togata-${VERSION}-folio.pdf" --signature=16
+          bunx pdfbooklet --paper-size letter --signature-size 16 --output "dist/Gens-Togata-${VERSION}-folio.pdf" "$INPUT"
           cp audio/transcript.txt "dist/Gens-Togata-${VERSION}-transcript.txt"
           ls -la dist
 

@@ -12,7 +12,7 @@ pdf: $(DEPS)
 	bun run src/render.tsx content.yaml "dist/Gens Togata.pdf"
 
 folio: pdf
-	bun run src/impose.ts "dist/Gens Togata.pdf" "dist/Gens Togata - Folio.pdf" --signature=16
+	bunx pdfbooklet --paper-size letter --signature-size 16 --output "dist/Gens Togata - Folio.pdf" "dist/Gens Togata.pdf"
 
 styleguide: $(DEPS)
 	bun run src/render.tsx styleguide.yaml "dist/Gens Togata - Style Guide.pdf"
