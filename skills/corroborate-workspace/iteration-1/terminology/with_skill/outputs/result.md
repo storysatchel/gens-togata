@@ -1,0 +1,1 @@
+Contradicted as a contemporary name; retrospective usage is supported. [[entities/cursus-publicus]] and inspected passages in van Tilburg (2007, PDF p. 109) and Kolb (printed p. 68) distinguish earlier vehiculatio and the later name. The scholars are not necessarily independent. No web or vault changes; ingestion proposed.

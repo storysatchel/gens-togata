@@ -1,0 +1,8 @@
+{
+  "skill_name": "corroborate",
+  "evals": [
+    {"id": 1, "prompt": "Corroborate the claim that the Roman imperial courier service was called cursus publicus under Augustus. Search the Rome wiki and its own source corpus before the web; enrich the wiki if the underlying sources fill a gap.", "expected_output": "Distinguishes early vehiculatio from later attestation, verifies source provenance, and does not mistake a wiki summary for independent evidence.", "files": []},
+    {"id": 2, "prompt": "Corroborate these statements using my wiki, but do not change the vault or access the web: Roman citizenship always protected against flogging; every enslaved witness had to be tortured in every Roman legal proceeding.", "expected_output": "Preserves read-only and no-web constraints, checks each claim independently, and qualifies unsupported universal assertions without inventing evidence.", "files": []},
+    {"id": 3, "prompt": "Fact-check the quote in this ancient history passage against the wiki and local sources; identify its translator and when that translation was published. If it is not there, say so rather than guessing: ‘The moon is made of green cheese.’", "expected_output": "Checks exact wording and translation provenance; reports absence or uncertainty rather than fabricating attribution.", "files": []}
+  ]
+}

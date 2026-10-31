@@ -1,0 +1,1 @@
+Misleading as an Augustan name: [[entities/cursus-publicus]] and van Tilburg (2007), chapter 2, support earlier vehiculatio and fourth-century attestation of cursus publicus. No web or vault changes; ingestion proposed.

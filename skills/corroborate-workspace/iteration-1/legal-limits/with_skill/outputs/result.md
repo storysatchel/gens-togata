@@ -1,0 +1,1 @@
+The unconditional citizenship claim has a reported military exception in Livy 2.59.9–11, though the cited scholarship cautions the episode is probably fictitious. [[concepts/slave-testimony-and-torture]] limits the rule to criminal courts; it does not support every legal proceeding. No web or vault changes.

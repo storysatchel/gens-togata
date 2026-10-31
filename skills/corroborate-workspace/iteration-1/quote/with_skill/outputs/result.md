@@ -1,0 +1,1 @@
+Not established as an ancient quotation. Wiki and local Antfly searches returned no match; this does not establish universal absence. Translator and publication year unknown. No web or vault changes.
