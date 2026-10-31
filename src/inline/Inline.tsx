@@ -19,8 +19,9 @@ function marked(token: string, key: number): ReactNode {
   return <span key={key} className="tag">{token}</span>;
 }
 
-// Inline markup spans; text must not be split inside one.
-export const inlinePattern = /(\[\[(.+?)\]\]|\{\{(\d+)\}\}|●|\*\*(.+?)\*\*|\*(.+?)\*|\{\{sidebar\}\})/gs;
+// Inline markup spans; text must not be split inside one. Each emphasis
+// delimiter can contain the other kind, including shared closing runs (***).
+export const inlinePattern = /(\[\[(.+?)\]\]|\{\{(\d+)\}\}|●|\*\*((?:[^*]|\*(?!\*)[^*]+\*)+?)\*\*|\*((?:\*\*[^*]+\*\*|[^*])+?)\*(?!\*)|\{\{sidebar\}\})/gs;
 
 export function Inline({ text, sidebar }: { text: string; sidebar?: ReactNode }): ReactNode {
   const parts: ReactNode[] = [];
@@ -32,8 +33,8 @@ export function Inline({ text, sidebar }: { text: string; sidebar?: ReactNode })
     else if (match[3] !== undefined) parts.push(<sup key={index} className="en">{match[3]}</sup>);
     else if (match[0] === "●") parts.push(<span key={index} className="gly difficulty" aria-label="difficulty">k</span>);
     else if (match[0] === "{{sidebar}}") parts.push(sidebar);
-    else if (match[4] !== undefined) parts.push(<strong key={index}>{match[4]}</strong>);
-    else parts.push(<em key={index}>{match[5]}</em>);
+    else if (match[4] !== undefined) parts.push(<strong key={index}>{Inline({ text: match[4], sidebar })}</strong>);
+    else parts.push(<em key={index}>{Inline({ text: match[5], sidebar })}</em>);
     last = index + match[0].length;
   }
   if (last < text.length) parts.push(text.slice(last));

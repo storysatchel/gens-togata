@@ -26,9 +26,9 @@ export async function DocumentTemplate({ document, root, assets }: { document: D
     <main className="document" style={{ padding: `0 ${SIDEBAR_HANG}px` }}>
       <section className="cover">
         <img className="festoon" src="cover-festoon.png" alt="" />
-        <h1 className="ptitle">{m.title}</h1>
-        <div className="psub">{m.subtitle}</div><div className="ptag">“{m.tagline}”</div>
-        <div className="psys">{m.system.toUpperCase()}</div>
+        <h1 className="ptitle"><Inline text={m.title} /></h1>
+        <div className="psub"><Inline text={m.subtitle} /></div><div className="ptag">“<Inline text={m.tagline} />”</div>
+        <div className="psys"><Inline text={m.system.toUpperCase()} /></div>
       </section>
       {legal}
       {contents}

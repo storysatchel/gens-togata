@@ -25,6 +25,16 @@ Authoring and build conventions for this repository. Read before editing content
 ## Voice
 - Speak literally about documented Roman reality. No hyperbole or LLM-slop (e.g. "mattered more than any die roll").
 - Keep mechanics honest to Genesys: status and origin **feed** the dice (difficulty, boost/setback, available options, stakes); they do not override rolls.
+- Treat Latin terms as **diegetic vocabulary**, like the names of peoples or institutions in a fantasy setting: use the Latin term naturally in the sentence, not as a parenthetical label attached to an English substitute. On first use, italicize the term and explain it in context, preferably with a concise appositive set off by commas. Continue using the term where appropriate, repeating the explanation when readers need it. Keep explanations historically accurate rather than treating loose translations as exact equivalents.
+
+  | English-first parenthetical | Preferred Latin-first appositive |
+  | --- | --- |
+  | A freedman (*libertus*) owed duties to his former owner. | A *libertus*, a man freed from slavery, owed duties to his former owner. |
+  | A client (*cliens*) visited a patron. | A *cliens*, or client, visited a patron. |
+
+- Make game terminology accessible: introduce setting-specific terms in plain English, explain unfamiliar mechanics when they first matter, and use established Genesys terms consistently. Say what players or the GM actually do and what a rule changes; do not rely on jargon or a Latin label as an explanation.
+- Prefer concrete, qualified claims to sweeping generalizations. Name the people, institutions, action, and conditions that matter; distinguish historical description from game procedure. Make each pronoun's referent unmistakable, repeating a noun when needed. Avoid unsupported contrasts such as “not X but Y”: establish both sides if the contrast is relevant, or state the positive claim directly.
+- Quotations must follow **Quotation & copyright** above: use only verified public-domain wording and translations, with a superscript endnote marker. Keep source and translator attribution in the endnotes and bibliography, never in the surrounding prose; paraphrase modern scholarship in your own words and cite it as appropriate.
 
 ## Build & release
 - Build: `make pdf` → `dist/Gens Togata.pdf`. Source page is **5.5in × 8.5in (396 × 612 pt)**; verify with `pdfinfo`.

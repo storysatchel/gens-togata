@@ -62,68 +62,109 @@ chapters:
   - type: p
     style: lead
     text: |-
-      Rome was less a nation than a legal order laid over tens of millions of people, and a person's place in it was fixed less by what they did than by what they were — free or enslaved, citizen or foreigner, the head of a household or someone owned by one. What follows sets out, plainly, the realities of that order; the chapters after it turn them into mechanics.
+      Rome was less a nation than a legal order laid over tens of millions of people. A person's place in that order depended heavily on legal standing: free or enslaved, citizen or foreigner, independent head of a household or subject to another person's authority. This chapter describes that world; later chapters translate its conditions into game mechanics, the rules used to play.
+  - type: h2
+    text: Roman Society
+  - type: sidebar
+    title: A Brief Roman Timeline
+    body:
+    - |-
+      **Kingdom (traditionally 753–509 BCE).** Romans traced their city's founding to Romulus and its early rule to a succession of kings. The dates and stories of this period belong partly to legend.
+    - |-
+      **Republic (traditionally 509–27 BCE).** After the kings, elected magistrates, the Senate, and citizen assemblies shared government unequally. Rome conquered Italy and expanded across the Mediterranean. Political violence and civil wars undermined the Republic; Julius Caesar's assassination in 44 BCE did not end the fighting.
+    - |-
+      **Principate (27 BCE–later third century CE).** After defeating his rivals, Augustus established rule by an emperor while retaining Republican institutions. The transition was gradual; 27 BCE is a conventional starting date, not a single day on which every institution changed.
+    - |-
+      **The book's present (about 100–120 CE).** Trajan rules until 117 CE; Hadrian succeeds him. This falls within the Principate and what historians often call the High Empire, a modern name for the earlier imperial period, not a separate form of government. Campaigns may also move to other reigns or to the Republic.
+    - |-
+      **Later empire.** Third-century civil wars and external threats preceded reforms under Diocletian, who became emperor in 284 CE. The western imperial court ended in 476 CE; Roman rule continued in the east, centred on Constantinople, until 1453.{{1}}
   - type: h3
     text: A World Run on Status
   - type: p
     style: body
     text: |-
-      Birth set the baseline, not achievement. At the centre of every household stood the *paterfamilias*, its eldest living male, holding *patria potestas* — a power over children and dependants that the law scarcely limited: a father “might convey his son as well as his slave in property to a third person,” and “in reality the paternal and marital power was subject to no legal restrictions at all.”{{1}} Above the household, society was banded into fixed orders — senatorial, equestrian, ordinary citizen, freedman, free non-citizen, slave — and a Roman judged a stranger's rank from dress, name, and retinue before either of them spoke.
+      Roman law distinguished people by freedom, citizenship, family authority, and membership in privileged orders. These categories overlapped rather than forming one simple ladder: a plebeian could be wealthy, a provincial could be free without Roman citizenship, and a freedman could be a citizen while owing obligations to a former owner. The character archetypes use names such as Patrician, Equestrian, Plebeian, Freedman, Provincial, and Slave to bring different origins into play; they are not a complete list of Roman legal orders.
+  - type: p
+    style: body
+    text: |-
+      The *paterfamilias*, the legally independent head of a Roman family, held *patria potestas*, legal authority over children and further descendants in his power, even after they became adults. That authority changed over time and was not identical to ownership of a slave. A father “might convey his son as well as his slave in property to a third person.”{{2}} Dress, name, and attendants could signal a person's standing before a conversation began.
   - type: h3
     text: Slavery
   - type: p
     style: body
     text: |-
-      Slaves were property, “looked upon in law as the property of the household and not as members of it.”{{2}} The farming manuals treat them exactly so: the standard advice on what a prudent owner should clear out each year ends with “the old and sick slaves, and if any thing else is superfluous you should sell that. The appetite of the good farmer is to sell, not to buy.”{{3}} That a moralist could feel the need to argue the contrary — “‘They are slaves,’ people declare. Nay, rather they are men”{{4}} — shows how total the ordinary contempt was. A freed slave (*libertus*) became a citizen, but still owed duties, and deference, to the master who had owned him.
+      Roman law treated enslaved people as possessions, “looked upon in law as the property of the household and not as members of it.”{{3}} Advice to a landowner on clearing out a farm includes “the old and sick slaves, and if any thing else is superfluous you should sell that.”{{4}} Another Roman view challenged the reduction of people to their legal condition: “‘They are slaves,’ people declare. Nay, rather they are men.”{{5}} A *libertus*, a man freed from slavery, could become a Roman citizen when freed by a citizen under the appropriate legal conditions, but still owed duties and deference to his former owner.
   - type: h3
     text: Patronage
   - type: p
     style: body
     text: |-
-      Roman society was tied together, top to bottom, by *clientela*. The client (*cliens*) came to his patron's house for the morning *salutatio*, lent him votes, voice, and presence, and received protection, legal backing, loans, and introductions in return. The bond was sworn and sacred, not a mere bargain: in the earliest Roman law, “if a patron violated his obligation to keep faith with his … dependent, the civil law had no penalty for such outrages, but the burden of the curse of the gods lay thenceforth on the head of the offender.”{{5}}
+      *Clientela*, the relationship between patron and client, connected people of unequal standing through obligations and assistance. A *cliens*, or client, might visit a patron's house for the *salutatio*, the morning greeting, lend votes or public support, and receive protection, legal backing, loans, or introductions. The relationship carried religious as well as social obligations: in early Roman law, “if a patron violated his obligation to keep faith with his … dependent, the civil law had no penalty for such outrages, but the burden of the curse of the gods lay thenceforth on the head of the offender.”{{6}}
   - type: h3
     text: The Law
   - type: p
     style: body
     text: |-
-      Roman law did not pretend to treat everyone alike; it was built on rank. A citizen could not lawfully be flogged or crucified, and could appeal against a magistrate's sentence; a slave had no legal person at all, and a slave's evidence was admissible only when extracted under torture. The principle “of the slave being completely destitute of legal rights … was maintained by the Romans with merciless rigour, and carried out to all its consequences.”{{6}} The same act — a blow, a theft, a killing — carried wholly different consequences according to who did it, and to whom.
+      Roman law regulated marriage, inheritance, contracts, property, and public conduct as well as crimes and penalties. The distinctions of freedom and citizenship described above shaped both legal capacity and treatment before the courts. Citizens had protections against some punishments, including flogging and crucifixion, though the protections varied over time and were not always respected. Enslaved people had severely restricted legal standing. In criminal proceedings, enslaved witnesses were ordinarily interrogated under torture; their proximity to owners made their testimony valuable, while a general prohibition on using it against those owners had exceptions.{{7}} Torture was not proof of truth, but a coercive practice built into the treatment of such witnesses.
   - type: h3
     text: The Crowd
   - type: p
     style: body
     text: |-
-      The city of Rome held perhaps a million people, most of them poor and many idle. The free citizens among them were a political force in their own right: they voted in the assemblies, could be courted with grain-doles and games or inflamed in the Forum, and, in the Republic's last century, were organised into the street-gangs that rival politicians turned on one another.{{7}} The “bread and circuses” a later satirist sneered at were less decadence than statecraft — the standing cost of keeping a vast, armed-when-it-chose population quiet.
+      Rome's imperial population is uncertain: estimates range from several hundred thousand to around a million.{{8}} In crowded *insulae*, apartment buildings above shops and workshops, tenants lived alongside markets and monumental public spaces. Citizens gathered for grain distributions and spectacles as well as business and worship. In the Republic's final decades, Clodius drew supporters from neighbourhood associations, including the *collegia compitalicia*, associations connected to crossroads shrines. His rival Milo deployed armed followers and hired gladiators; their clashes brought political violence into Rome's streets.{{9}} Under emperors, grain distributions and games remained occasions when rulers and crowds encountered one another.
   - type: p
     style: body
     text: |-
-      This book is set under the Principate, two generations into rule by one man. The outward machinery had shifted — genuine elections had passed from the people to the Senate, and the *princeps* now sat at the apex of patronage — but the substance beneath did not. Status by birth, chattel slavery, the *salutatio*, and *patria potestas* all outlived the Republic by centuries; the sources quoted above describe that enduring order, and this setting runs on it.
+      Under the Principate, emperors held power while Republican institutions survived in altered form. Elections passed from the people to the Senate, and the *princeps*, the emperor as Rome's leading citizen, stood at the centre of an extensive network of patronage. Legal distinctions of birth and citizenship, slavery, the *salutatio*, and *patria potestas* all survived the Republic; adventures in this setting unfold within that enduring order.
   - type: h3
-    text: Technology Level
+    text: Technology
   - type: p
     style: body
     text: |-
-      Classical antiquity (iron age, pre-gunpowder). **Notable technologies:** paved roads and the *cursus publicus* courier relay; aqueducts, hypocaust heating, and public baths; concrete (*opus caementicium*) and the arch; siege engines (*ballista*, *onager*, *scorpio*); war-galleys; coined money and sophisticated banking; Greek medicine and surgery. **Deliberately excluded:** firearms, the printing press, mechanical timekeeping, and the stirrup.
+      Roman roads carried armies, traders, and travellers across the empire. The *vehiculatio*, a state transport system, moved officials and imperial business between stations where travellers could obtain fresh animals; later sources call the system the *cursus publicus*.{{10}} Aqueducts supplied cities with water, and baths and wealthy houses could be heated by a *hypocaust*, a system that circulated hot air beneath floors. Builders used concrete and arches; armies deployed siege engines and warships. Coinage, credit, and banking supported trade, while physicians drew on Greek medical learning and surgical instruments. Firearms, printing presses, mechanical clocks, and stirrups do not belong to the default setting.
   - type: sidebar
     title: Dialing the Supernatural
     body:
     - |-
       [[Grounded:]] the gods are belief, politics, and theatre; omens and curses work only in the players' heads. [[Fated:]] Story Points are the will of the gods — omens, dreams, and auguries give real mechanical nudges (see GM Advice). [[Mythic:]] full Genesys magic, with priests, sibyls, and Egyptian sorcerers wielding it; monsters of myth stalk the provinces. Pick one before session zero.
-  - type: h3
+  - type: h2
     text: Major Factions & Powers
-  - type: list
-    items:
-    - |-
-      **The Emperor & the *Domus*.** The *princeps* and his household, freedmen secretaries, and the Praetorian Guard. *Objective:* survive, be adored, and keep anyone else from becoming adored.
-    - |-
-      **The Senate.** Several hundred of the richest men alive, nostalgic for a Republic they would never actually restore. *Objective:* dignity, offices, and advantage — without being noticed wanting too much of it.
-    - |-
-      **The Legions.** Thirty-odd legions and their auxiliaries on the frontiers. *Objective:* pay, plunder, land on retirement — and loyalty to whichever general delivers them.
-    - |-
-      **The *Collegia* & the Mob.** Trade guilds, burial clubs, racing-faction supporters, and the gangs beneath them. *Objective:* grain, games, and turf.
-    - |-
-      **The Cults.** The old gods and their priesthoods, the Imperial Cult, and the rising “eastern” faiths — Isis, Mithras, the Christians. *Objective:* souls, status, and (for some) survival of persecution.
-    - |-
-      **Beyond the *Limes*.** Germans and Caledonians in the north, Parthia and its cataphracts in the east, desert tribes to the south — and, past them all, the half-legendary empires of the silk routes. *Objective:* raid, trade, or break Rome.
+  - type: h3
+    text: The Emperor and His Household
+  - type: p
+    style: body
+    text: |-
+      The emperor's *domus*, or household, includes family, freedmen secretaries, and servants; the Praetorian Guard protects the ruler. Access to the emperor brings influence, but also rivalry among those who seek it.
+  - type: h3
+    text: The Senate
+  - type: p
+    style: body
+    text: |-
+      Senators are wealthy men whose families compete for office, prestige, and imperial favour. The Senate still administers some provinces and conducts public business, though the emperor controls the greatest concentration of power.
+  - type: h3
+    text: The Legions
+  - type: p
+    style: body
+    text: |-
+      A legion is a Roman army formation of roughly 5,000 citizen soldiers, chiefly infantry. Around thirty legions serve across the empire, supported by separate auxiliary units that provide infantry and cavalry. Soldiers and commanders have interests in pay, rewards, and the loyalty of the army.{{11}}
+  - type: h3
+    text: Associations and the Crowd
+  - type: p
+    style: body
+    text: |-
+      *Collegia*, voluntary associations formed around trades, worship, or burial, give members ties beyond their households. Crowds gather at games, in neighbourhoods, and around the grain supply; their concerns can attract the attention of officials and patrons.
+  - type: h3
+    text: Religious Communities
+  - type: p
+    style: body
+    text: |-
+      Public priesthoods honour Rome's gods and the emperor. Isis, whose worship began in Egypt, has temples and devotees across the empire; the mysteries of Mithras developed within the Roman imperial world and attracted followers including soldiers. Christians meet in communities of their own and may face official persecution. These communities differ in their practices and in their relationships with Roman authorities.{{12}}
+  - type: h3
+    text: Beyond the Frontier
+  - type: p
+    style: body
+    text: |-
+      Beyond the *limes*, the frontier zone, lie peoples and powers with varied relations to Rome. Germanic communities and Caledonians live north of imperial territory; Parthia rules a powerful empire to the east. South of Roman Africa, the Garamantes have a kingdom centred on Garama in the Sahara. Underground irrigation channels water their oasis fields, and trade routes connect them to Roman Africa and lands farther south. Their relations with Rome include diplomacy and trade as well as fighting.{{13}}
   - type: sidebar
     title: 'The Edge of the World: Serica'
     body:
@@ -139,6 +180,8 @@ chapters:
     title: Notes
     items:
     - |-
+      Chris Scarre, *The Penguin Historical Atlas of Ancient Rome* (1995); “Timeline of the Roman Empire,” *Encyclopaedia Britannica*, https://www.britannica.com/place/Timeline-of-the-Roman-Empire.
+    - |-
       Theodor Mommsen, *The History of Rome*, trans. W. P. Dickson — on *patria potestas*, the power of the household head.
     - |-
       Mommsen, *The History of Rome* (Dickson) — on the legal standing of slaves as property of the household.
@@ -147,9 +190,20 @@ chapters:
     - Seneca, *Moral Letters to Lucilius* 47.1, trans. Richard M. Gummere (Loeb Classical Library, 1917) — public domain.
     - |-
       Mommsen, *The History of Rome* (Dickson) — the archaic law of client-faith; cf. the Twelve Tables, *patronus si clienti fraudem fecerit, sacer esto*.
-    - Mommsen, *The History of Rome* (Dickson) — on the slave's total absence of legal rights.
     - |-
-      On the urban crowd as a political actor: Pamela Marin, *Blood in the Forum: The Struggle for the Roman Republic*; and Fergus Millar, *The Crowd in Republican Rome* (1998).
+      Elżbieta Loska, “Inconvenient Witnesses: Testimonies of Slaves in a Criminal Trial During the Republic and the Principate,” *Studia Iuridica Lublinensia* 30, no. 1 (2021), 197–204, doi:10.17951/sil.2021.30.1.197-204.
+    - |-
+      Glenn R. Storey, “The Population of Ancient Rome,” *Antiquity* 71 (1997), 966–978, doi:10.1017/S0003598X00085859.
+    - |-
+      Henrik Mouritsen, *Plebs and Politics in the Late Roman Republic* (2001), pp. 66, 91, 150; Fergus Millar, *The Crowd in Republican Rome* (1998).
+    - |-
+      Lionel Casson, *Travel in the Ancient World* (1974), p. 192; Suetonius, *Augustus* 49.3.
+    - |-
+      “The Roman Legion,” *Encyclopaedia Romana*, University of Chicago, https://penelope.uchicago.edu/encyclopaedia_romana/britannia/wales/legio.html.
+    - |-
+      John North, “Religious Diversity,” in *Ancient Rome: The Archaeology of the Eternal City* (2000), pp. 592–607; Michael Kulikowski, *The Triumph of Empire* (2016), on Mithraic worship; Pliny, *Letters* 10.96–97.
+    - |-
+      David J. Mattingly, *The Archaeology of Fazzan*, vol. 1, *Synthesis* (2003); “Garamantes,” *Livius*, https://www.livius.org/articles/place/garamantes/.
 - title: Character Creation
   part: { label: Part I, title: Playing in Imperial Rome }
   blocks:
@@ -1741,7 +1795,7 @@ chapters:
   - type: p
     style: body
     text: |-
-      Let legal status do heavy narrative lifting. A **citizen** can demand a proper trial and appeal to the Emperor (*Civis Romanus sum*); a **slave**'s testimony was legally admissible only under torture, and a slave who struck a citizen could be crucified. These are not die rolls — they are the stakes. The most Roman dramas come from characters trapped by their status and clawing to change it: the slave earning manumission, the freedman buying respectability, the provincial grasping for the citizenship that makes him untouchable.
+      Let legal status shape the stakes. A **citizen** could claim legal protections and, in some cases, appeal to the emperor, though those protections varied over time and were not always respected. In criminal proceedings, enslaved witnesses were ordinarily interrogated under torture, with restrictions and exceptions concerning evidence against their owners; a slave who struck a citizen could face severe punishment. These conditions can guide the GM's decisions about who hears a character and what risks a scene presents. A character might seek freedom, defend a freedman's livelihood, or pursue citizenship without any of those changes guaranteeing safety.
   - type: h3
     text: Patron and Client
   - type: p

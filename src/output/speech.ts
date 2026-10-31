@@ -42,12 +42,12 @@ function blockSpeech(block: ContentBlock): string {
   }
 }
 function chapterSpeech(chapter: DocumentData["chapters"][number]): string {
-  const part = chapter.part ? `${chapter.part.label ? `${chapter.part.label}: ` : ""}${chapter.part.title}. ` : "";
-  return speechclean([`${part}${chapter.title.replace(/\.+$/, "")}.`, ...chapter.blocks.map(blockSpeech).map(text => text.trim()).filter(Boolean)].join(" "));
+  const part = chapter.part ? `${chapter.part.label ? `${plain(chapter.part.label)}: ` : ""}${plain(chapter.part.title)}. ` : "";
+  return speechclean([`${part}${plain(chapter.title).replace(/\.+$/, "")}.`, ...chapter.blocks.map(blockSpeech).map(text => text.trim()).filter(Boolean)].join(" "));
 }
 
 export async function writeNarration(document: DocumentData, root: string): Promise<void> {
-  const intro = `${document.meta.title}. ${document.meta.subtitle}. ${document.meta.system}. “${document.meta.tagline}” This is an audiobook edition; tables and stat blocks are read as spoken lists, so keep the PDF nearby for reference during play. We begin.`;
+  const intro = `${plain(document.meta.title)}. ${plain(document.meta.subtitle)}. ${plain(document.meta.system)}. “${plain(document.meta.tagline)}” This is an audiobook edition; tables and stat blocks are read as spoken lists, so keep the PDF nearby for reference during play. We begin.`;
   const chapters = document.chapters.map(chapterSpeech);
   const groups: Record<number, number[]> = { 1: [0, 1], 2: [2], 3: [3], 4: [4, 5], 5: [6], 6: [7], 7: [8], 8: [9], 9: [10, 11, 12] };
   const audioDir = `${root}/audio`;
