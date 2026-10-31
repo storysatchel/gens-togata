@@ -14,27 +14,23 @@ chapters:
   - type: p
     style: lead
     text: |-
-      The Roman Empire was the most impressive civilization the ancient West ever produced. Never before had so many nations, peoples, and cultures been bound under a single government, a single law, and a single road network whose every mile-marker pointed home. Rome is legendary for the discipline of its legions, the decadence of its nobility, and the blood its people cheered for in the arena. It is a world rich in adventure, intrigue, and history — a setting from which nearly any kind of campaign can spring.
+      In Rome, a person's standing shapes what doors open, whose word is believed, and what a mistake may cost. A legionary, an advocate, a trader, and a freed artisan may have little in common, but each has ties to other people: a patron to satisfy, a household to protect, a rival to answer, or a favor to repay. Those ties can draw them into the same trouble.
   - type: p
     style: body
     text: |-
-      This supplement adds options for players and GMs who want to run **Genesys** in Imperial Rome. The default “present day” is the **High Empire** — roughly the reign of Trajan and Hadrian (*c.* 100–120 CE), when the Empire stood at its greatest extent, from the rains of Britannia to the sands of Mesopotamia. The material works equally well anywhere across the Principate, from Augustus (27 BCE) to the death of Marcus Aurelius (180 CE). As the Core Rulebook notes, almost anything you can imagine from the historical world can be used as a trope here; this book simply sharpens the tools for one of them.
+      **Gens Togata** is a setting supplement for **Genesys**. Its default setting is the High Empire, roughly the reigns of Trajan and Hadrian (*c.* 100–120 CE), though its material can be used elsewhere in the Principate. Players might serve together in a legion, pursue a case through the courts, keep a household's affairs in order, trade across the provinces, or investigate a sign the gods have sent. Their adventures can move from a crowded street to a governor's audience chamber, from a roadside shrine to the Senate.
   - type: p
     style: body
     text: |-
-      Because the setting is a specific time and place rather than an open genre, the book opens with a compact **Setting Overview** that fixes what a table needs to agree on before play: a world run on status, slavery, patronage, the law, the crowd, the level of technology, the major factions and powers, and the question of species. The rest of the book falls into three parts.
+      At the table, the GM describes the world and portrays the people the characters meet; the players decide what their characters attempt. When an outcome is uncertain and consequential, the group uses a Genesys check: the dice establish whether the attempt succeeds and what advantages, complications, or other consequences accompany it. Those results change the situation, and play continues from there. A successful plea can win a hearing while making an enemy; a failed investigation can still uncover a useful lead.
   - type: p
     style: body
     text: |-
-      **Part I: Playing in Imperial Rome** builds characters and gives them a social game to play. **Character Creation** presents seven status-based archetypes — Patrician, Equestrian, Plebeian, Freedman, Provincial, Slave, and Barbarian — and ten careers suited to Roman life, from Legionary and Gladiator to Augur and Medicus. **The Theater of Power** adds a reputation economy of *dignitas* and *auctoritas*, Roman Motivations, and set-piece rules for the speech, the Senate, the courtroom, and the morning *salutatio* with its economy of favors. **New Skills** tunes three Knowledge skills to the setting — Rome, Law, and the Gods — and **New Talents** offers twenty-six talents across five tiers. **Gear and Vehicles** covers the arms, armor, and equipment of the Roman world, arms of quality, social gear, and the beasts and vehicles that carry Romans to war, to market, and around the race-track.
+      Roman status is a starting point for play, not a substitute for a check. Citizenship, wealth, occupation, enslavement, and connections affect what a character can attempt, the difficulty or dice involved, and the stakes of success or failure. Reputation and favors can open opportunities or create obligations. Swords and law both have their place, and a dangerous situation need not end in a fight; agree together on the sort of risks and consequences the campaign will bring.
   - type: p
     style: body
     text: |-
-      **Part II: Running Imperial Rome** is for the GM. **Game Mastering Rome** offers six campaign frames — soldiers, the arena, the *vigiles*, the household, traders, and the mysteries — and advice on status, patronage, Story Points, the games, and keeping a table's Rome Roman. **Adversaries** stats twenty-seven foes, minions to nemeses: the state and the legions, the arena and the underworld, the enemies of Rome, beasts of the arena and the wild, and the purely social opponents of the Forum. Six **Starter Scenarios**, set between 117 BCE and 103 CE and all but one drawn from a real episode of Roman history, are ready to run.
-  - type: p
-    style: body
-    text: |-
-      The **Appendices** hold a **Lexicon** of Latin terms to sprinkle into play; **A Gazetteer of the Roman World**, which tours the city's quarters and the provinces with a dozen locals to meet and closes with a **Dramatis Personae** of eight great names, from Marius to Augustus; and **Sources & Resources** — the ancient and modern works the book draws on, further reading by topic, and digital tools for the table.
+      Start with the **Genesys Core Rulebook**, its narrative dice, and character sheets or another way to record characters and results. Players can use **Character Creation** to choose an archetype and career, then consult the skills, talents, and equipment that interest them. The GM can use **Game Mastering Rome** to choose a campaign frame and **Starter Scenarios** for an adventure; **The Theater of Power** provides social-encounter options for the whole table. The Gazetteer and Lexicon are references to visit as needed, not prerequisites for play.
   - type: sidebar
     title: A Note on Slavery and History
     body:
