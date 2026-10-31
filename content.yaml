@@ -23,6 +23,11 @@ chapters:
     style: body
     text: |-
       At the table, the GM describes the world and portrays the people the characters meet; the players decide what their characters attempt. When an outcome is uncertain and consequential, the group uses a Genesys check: the dice establish whether the attempt succeeds and what advantages, complications, or other consequences accompany it. Those results change the situation, and play continues from there. A successful plea can win a hearing while making an enemy; a failed investigation can still uncover a useful lead.
+  - type: sidebar
+    title: A Note on Slavery and History
+    body:
+    - |-
+      Rome was built on slavery, conquest, and brutal spectacle. This book does not sanitize that, but it is a game played by friends: treat enslaved characters as people with agency and goals (many of this book's archetypes and careers assume exactly that), keep the real cruelty at the “tasteful fade” your table prefers, and talk openly about lines and veils before you start. The horror is part of the drama; it is never the point.
   - type: p
     style: body
     text: |-
@@ -30,12 +35,7 @@ chapters:
   - type: p
     style: body
     text: |-
-      Start with the **Genesys Core Rulebook**, its narrative dice, and character sheets or another way to record characters and results. Players can use **Character Creation** to choose an archetype and career, then consult the skills, talents, and equipment that interest them. The GM can use **Game Mastering Rome** to choose a campaign frame and **Starter Scenarios** for an adventure; **The Theater of Power** provides social-encounter options for the whole table. The Gazetteer and Lexicon are references to visit as needed, not prerequisites for play.
-  - type: sidebar
-    title: A Note on Slavery and History
-    body:
-    - |-
-      Rome was built on slavery, conquest, and brutal spectacle. This book does not sanitize that, but it is a game played by friends: treat enslaved characters as people with agency and goals (many of this book's archetypes and careers assume exactly that), keep the real cruelty at the “tasteful fade” your table prefers, and talk openly about lines and veils before you start. The horror is part of the drama; it is never the point.
+      Start with the **Genesys Core Rulebook**, narrative dice, and character sheets. Players can choose an archetype and career in **Character Creation**, then consult the skills, talents, and equipment that interest them. The GM can use **Game Mastering Rome** for a campaign frame and **Starter Scenarios** for an adventure; **The Theater of Power** provides social-encounter options for everyone. The Gazetteer and Lexicon are references to visit as needed.
 - title: Setting Overview
   blocks:
   - type: p

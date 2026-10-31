@@ -38,6 +38,7 @@ bun run typecheck # TypeScript static check
 ```
 
 `takumi-pdf` renders `.tsx` templates directly to a paged PDF; no intermediate HTML or headless browser is required. The narration renderer remains a separate output path over the same YAML data.
+Body copy uses 8 pt type with 1.4 line-height and ragged-right alignment to avoid excessive word spacing in narrow columns. Specialized text, including sidebars and stat blocks, uses its own sizes.
 The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). `make folio` (and CI) imposes it 2-up on letter paper in 16-page signatures for duplex booklet printing, using [`pdfimpose`](https://framagit.org/spalax/pdfimpose) (`hardcover --signature 2x1 --group 4`), run pinned through `uvx` — install [uv](https://docs.astral.sh/uv/); no TeX needed.
 Always verify the PDF visually (overflow/overlap are silent) before release.
 

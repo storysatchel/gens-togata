@@ -1,12 +1,12 @@
-.document { margin: 0; font-family: "Libre Baskerville", "DejaVu Sans", serif; font-size: 9.333px; color: #1c1206; line-height: 1.26; }
+.document { margin: 0; font-family: "Libre Baskerville", "DejaVu Sans", serif; font-size: 8pt; color: #1c1206; line-height: 1.4; }
 h1, h2, h3, h4 { font-family: "Libre Baskerville", "DejaVu Sans", serif; color: #6e1b1b; line-height: 1.1; }
 h1.ch { font-size: 15pt; border-bottom: 2px solid #6e1b1b; padding-bottom: 1px; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: .7px; }
 h2 { font-size: 12pt; margin: 0 0 5px 0; font-variant: small-caps; letter-spacing: .5px; }
 h3 { font-size: 8.6pt; color: #8a5a12; margin: 13px 0 2px 0; break-after: avoid; text-transform: uppercase; letter-spacing: .4px; }
 h4 { font-size: 7.5pt; color: #6e1b1b; margin: 5px 0 1px 0; }
-p { margin: 0 0 3px 0; text-align: justify; }
+p { margin: 0 0 3px 0; text-align: left; }
 ul { margin: 2px 0 4px 0; padding-left: 11px; }
-li { margin-bottom: 1px; text-align: justify; }
+li { margin-bottom: 1px; text-align: left; }
 .chapter { break-before: page; }
 .lead { font-size: 7.4pt; }
 .small { font-size: 6.2pt; }
@@ -95,5 +95,5 @@ sup.en { font-size: .64em; line-height: 0; vertical-align: super; color: #8a5a12
 .column { min-width: 0; }
 .page { display: flow-root; }
 .page + .page { break-before: page; }
-p.runs-on { text-align-last: justify; margin-bottom: 0; }
+p.runs-on { margin-bottom: 0; }
 .endnotes.continued { margin-top: 0; border-top: 0; padding-top: 0; }
