@@ -103,6 +103,11 @@ export class Flow {
     this.pageNumber = firstPage;
   }
 
+  // Count a page laid out outside the flow (a part title page).
+  skipPage() {
+    this.pageNumber += 1;
+  }
+
   private async pageHeight(segments: Segment[]): Promise<number> {
     const recto = this.pageNumber % 2 === 1;
     const key = `${recto ? "r" : "v"} ${segments.map(segmentKey).join(" ")}`;

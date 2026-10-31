@@ -84,6 +84,10 @@ sup.en { font-size: .64em; line-height: 0; vertical-align: super; color: #8a5a12
 .toc a { display: flex; align-items: baseline; gap: 4px; text-decoration: none; color: #1c1206; }
 .toc-l1 { margin-top: 5px; font-weight: bold; font-size: 8pt; color: #6e1b1b !important; text-transform: uppercase; letter-spacing: .3px; }
 .toc-l2 { padding-left: 13pt; font-size: 6.6pt; }
+.toc-part { margin-top: 9px; padding-bottom: 1px; border-bottom: 1px solid #6e1b1b; font-weight: bold; font-size: 9pt; font-variant: small-caps; letter-spacing: .5px; color: #6e1b1b !important; }
+.part-page { height: 100vh; break-before: page; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.part-label { font-size: 11pt; letter-spacing: 3px; text-transform: uppercase; color: #8a5a12; margin-bottom: 8px; }
+.part-title { font-size: 24pt; margin: 0; padding-top: 8px; border-top: 2px solid #6e1b1b; }
 .toc .leader { flex: 1; border-bottom: 1px dotted #6b4a1b; }
 .page-footer { width: 100%; text-align: center; color: #6b4a1b; font-size: 8pt; font-family: "Libre Baskerville", serif; }
 .legal-page { padding-top: 3px; break-after: page; }

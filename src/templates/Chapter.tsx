@@ -14,6 +14,11 @@ export async function Chapter({ chapter, chapterIndex, flow }: { chapter: Chapte
     return { piece, full };
   });
   const title = <h1 className="ch" id={`c${chapterIndex}`}><span>{chapter.title}</span></h1>;
+  // The part title page fills one page ahead of the chapter; count it so the flow keeps recto/verso right.
+  if (chapter.part) flow.skipPage();
   const pages = await flow.paginate([{ kind: "node", key: `c${chapterIndex}`, node: title }], entries);
-  return <article className="chapter">{pages.map((layout, i) => <Page key={i} {...layout} />)}</article>;
+  return <>
+    {chapter.part ? <section className="part-page" id={`p${chapterIndex}`}>{chapter.part.label ? <div className="part-label">{chapter.part.label}</div> : null}<h1 className="part-title">{chapter.part.title}</h1></section> : null}
+    <article className="chapter">{pages.map((layout, i) => <Page key={i} {...layout} />)}</article>
+  </>;
 }

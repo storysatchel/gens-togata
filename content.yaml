@@ -26,19 +26,23 @@ chapters:
   - type: p
     style: body
     text: |-
-      **Chapter 1: Character Creation** presents seven status-based Roman archetypes, a set of careers suited to Roman life, three new Knowledge skills tuned to the setting, and a selection of new talents.
+      **Part I: Playing in Imperial Rome** is for players. **Character Creation** presents seven status-based Roman archetypes and a set of careers suited to Roman life; **The Theater of Power** supplies a reputation economy and set-piece social encounters; and **New Skills** and **New Talents** add three Knowledge skills tuned to the setting and a selection of new talents.
   - type: p
     style: body
     text: |-
-      **Chapter 2: Gear and Vehicles** describes the arms, armor, tools, and conveyances of the Roman world — from the *gladius* to the war-galley.
+      **Gear and Vehicles** describes the arms, armor, tools, and conveyances of the Roman world — from the *gladius* to the war-galley.
   - type: p
     style: body
     text: |-
-      The **Adversaries** section stats the people and beasts the characters will contend with, from the lowliest street tough to the Praetorian Prefect and the lion in the sand.
+      **Part II: Running Imperial Rome** is for the GM. **Game Mastering Rome** gives advice for running Imperial Rome stories and several campaign frames.
   - type: p
     style: body
     text: |-
-      The final section gives advice for **running Imperial Rome stories**, several campaign frames, and a glossary of Latin terms to sprinkle into play.
+      The **Adversaries** chapter stats the people and beasts the characters will contend with, from the lowliest street tough to the Praetorian Prefect and the lion in the sand, and six **Starter Scenarios**, each drawn from a real episode of Roman history, are ready to run.
+  - type: p
+    style: body
+    text: |-
+      The **Appendices** collect a **Lexicon** of Latin terms to sprinkle into play, a **Gazetteer** of the city and its provinces with a **Dramatis Personae** of the age's great names, and **Sources & Resources**.
   - type: sidebar
     title: A Note on Slavery and History
     body:
@@ -137,7 +141,8 @@ chapters:
     - Mommsen, *The History of Rome* (Dickson) — on the slave's total absence of legal rights.
     - |-
       On the urban crowd as a political actor: Pamela Marin, *Blood in the Forum: The Struggle for the Roman Republic*; and Fergus Millar, *The Crowd in Republican Rome* (1998).
-- title: 'Chapter 1: Character Creation'
+- title: Character Creation
+  part: { label: Part I, title: Playing in Imperial Rome }
   blocks:
   - type: p
     style: lead
@@ -410,6 +415,271 @@ chapters:
     body:
     - |-
       Consider noting each character's legal standing: [[Citizen]] (protected by Roman law, cannot lawfully be crucified or flogged), [[Peregrine]] (free provincial, not a citizen), [[Freedman]] (*libertus* — an ex-slave who owes duties to a former master), or [[Slave]] (property, with no legal person, but often skilled and trusted). Status feeds the dice rather than replacing them: it sets a social check's difficulty, adds [[boost]] or [[setback]] before the roll, decides who will deign to deal with you at all, and raises or lowers the stakes of being caught — see GM Advice.
+- title: The Theater of Power
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      Genesys models a conversation as a kind of combat — opposed social checks, **strain** as the health bar of an argument, and **Motivations** as the soft points in a target's guard. No historical setting rewards that framework like Rome, a civilization where a man could be destroyed in the Forum without a blade being drawn, and where the Senate, the law-court, and the dinner-couch were the real battlefields. This chapter supplies Roman tools that plug directly into the Social Encounters rules (Core Rulebook, Chapter 7): a reputation economy, four set-piece encounter structures (the **speech**, the **Senate**, the **court**, and the **salutatio**), Roman Motivation tables, new talents and gear, and purely social adversaries to be beaten with words.
+  - type: p
+    style: body
+    text: |-
+      *Everything here is an overlay on the standard rules.* Inflicting strain, compromise at half the strain threshold, capitulation above it, the [[advantage]]/[[triumph]] and [[threat]]/[[despair]] spends, learning a Motivation facet, and the group-size difficulty table all work exactly as written. The Roman flavor is in *which* skill fits, *which* Motivation is exposed, and *what the stakes are.*
+  - type: h3
+    text: 'Dignitas & Auctoritas: The Reputation Economy'
+  - type: p
+    style: body
+    text: |-
+      A Roman was his reputation. **Dignitas** is a character's public standing — the accumulated weight of ancestry, offices held, favors owed, and victories won. It is an optional setting trait rated **0–5**, set at creation by status and changed in play.
+  - type: table
+    style: gear
+    columns:
+    - Starting Dignitas
+    - Who
+    - Dignitas
+    rows:
+    - - Slave / outlaw / infamis
+      - No standing in law; an actor or gladiator is *infamis*
+      - '0'
+    - - Commoner / freedman / provincial
+      - A free plebeian, a *libertus*, a *peregrinus*
+      - '1'
+    - - Equestrian / notable
+      - A wealthy knight, officer, or respected local
+      - '2'
+    - - Senatorial family
+      - A senator or his heir
+      - '3'
+    - - Ex-magistrate (consular)
+      - One who has held the great offices; a famous general
+      - '4'
+    - - First men of the state
+      - The *princeps senatus*, the imperial house
+      - '5'
+  - type: p
+    style: body
+    text: '**What Dignitas does:**'
+  - type: list
+    items:
+    - |-
+      **It armors your reputation.** When another character makes a social check to *shame, discredit, insult, or publicly coerce* your character, they add [[setback]] equal to the amount your Dignitas exceeds theirs (to a maximum of two [[setback]]). The high and mighty are simply harder to bring low.
+    - |-
+      **It lends weight to authority.** When your character makes an *Ethos* appeal (see Oratory) or any social check that leans on their standing, add [[boost]] if their Dignitas is 3+, or [[boost boost]] if it is 5.
+    - |-
+      **It funds Auctoritas.** At the start of any social set-piece, your character gains a pool of **Auctoritas** equal to their Dignitas (minimum 1). Each point may be spent as an incidental to add [[boost]] to a social check, to a crowd/vote track, or to a favor — the influence their name buys in the room. The pool refreshes each set-piece.
+    - |-
+      **Revelatory Appeal** (*Logos*) — claim privileged knowledge the audience cannot check (Cicero's ever-wakeful “I know their every plan”): add [[boost boost]] to the appeal, but a [[despair]] exposes the bluff and costs you Dignitas for the scene.
+  - type: p
+    style: body
+    text: |-
+      **Gaining and losing it.** The GM raises a character's Dignitas by 1 for a landmark public success — winning a notorious trial, election to a great office, sponsoring magnificent games, a military triumph, saving a citizen's life (the *corona civica*). It falls by 1 for *infamia*: losing such a trial, public cowardice or bankruptcy, a ruinous scandal, or conviction for a crime. Dignitas is slow to earn and ruinous to lose — which is precisely why Romans killed for it. **Optional — the hunger of prestige.** Pedigree alone never sustained a Roman house; standing had to be renewed each generation (by the early Empire, idle heirs of the Fabii were mocked for coasting on ancestral glory). A high-Dignitas character who wins no landmark success across a long stretch of play slowly loses a point of Dignitas, unless renewed by office, magnificent games, or martial glory.
+  - type: h3
+    text: Roman Motivations
+  - type: p
+    style: body
+    text: |-
+      Give every recurring Roman NPC (and encourage players to give their characters) Motivations from the lists below, used exactly as in the Core Rulebook: work *with* a Strength or Flaw to add [[boost]]; work *with* a Desire or Fear to add [[boost boost]]; work against them to add [[setback]] or [[setback setback]]. Players learn an NPC's Strength/Flaw by spending [[advantage advantage]], a Desire/Fear with [[advantage advantage advantage]], or any facet with a [[triumph]].
+  - type: table
+    style: motiv
+    columns:
+    - d10
+    - Desire (what they chase)
+    - Fear (what they dread)
+    rows:
+    - - '1'
+      - '**Gloria** — fame that outlives them'
+      - '**Obscurity** — to be forgotten, a nobody'
+    - - '2'
+      - '**The consulship** / high office'
+      - '**Exile** — banishment from Rome'
+    - - '3'
+      - '**Wealth** — estates, slaves, silver'
+      - '**Poverty & debt** — the shame of the ruined'
+    - - '4'
+      - '**Vengeance** on a rival house'
+      - "**A powerful enemy's malice**"
+    - - '5'
+      - '**Freedom** / citizenship (for the enslaved)'
+      - '**The mob** — riot, lynching, the arena'
+    - - '6'
+      - '**Pleasure** — luxury, love, the table'
+      - "**The Emperor's suspicion**"
+    - - '7'
+      - '**The old Republic** / restoring virtue'
+      - '**Impiety** — angering the gods, bad omens'
+    - - '8'
+      - "**Family** — heirs, the line's honor"
+      - '**Betrayal** by a friend or freedman'
+    - - '9'
+      - '**Knowledge** — philosophy, the mysteries'
+      - "**Loss of face** before one's peers"
+    - - '10'
+      - '**Power** for its own sake — the purple itself'
+      - '**Death without a good name**'
+  - type: table
+    style: motiv
+    columns:
+    - d10
+    - Strength (what steadies them)
+    - Flaw (what undoes them)
+    rows:
+    - - '1'
+      - '**Gravitas** — unshakeable dignity'
+      - '**Pride** — cannot bear a slight'
+    - - '2'
+      - '**Eloquence** — a golden tongue'
+      - '**Avarice** — greed clouds judgment'
+    - - '3'
+      - '**Loyalty** — to patron, legion, or friend'
+      - '**Lust** / appetite — a notorious weakness'
+    - - '4'
+      - '**Piety** — the gods on their side'
+      - '**Superstition** — ruled by omens'
+    - - '5'
+      - '**Cunning** — the long game'
+      - '**Cruelty** — overreaches, makes enemies'
+    - - '6'
+      - '**Discipline** — Stoic self-command'
+      - '**Rashness** — acts before thinking'
+    - - '7'
+      - '**Generosity** — a famous patron'
+      - '**Vanity** — easily flattered'
+    - - '8'
+      - '**Industry** — tireless, competent'
+      - '**Drink / the dice** — a vice to exploit'
+    - - '9'
+      - '**Courage** — faces down the mob'
+      - '**A guilty secret** — a lever for blackmail'
+    - - '10'
+      - '**Nobility** — the weight of ancestors'
+      - '**Naivety** — trusts the wrong people'
+  - type: h3
+    text: 'Oratory: The Set-Piece Speech'
+  - type: p
+    style: body
+    text: |-
+      Trained oratory was a Roman's sharpest tool — but only one of several. Ancestry, wealth, patronage, military glory, and sheer *dignitas* carried as many arguments as eloquence did: Marius won seven consulships with almost no gift for speech, and Pompey and Antony leaned on reputation and spectacle over rhetoric. So treat a great speech as a force-multiplier for a strong position, not a substitute for one — a character rich in standing and connections can rule the Forum on a middling check. The Republican model is the **contio**, the non-voting public meeting a magistrate called to work the People before a vote; only a magistrate could summon one, so a private citizen needed a friendly magistrate's invitation to speak — contio-access as a currency of alliance. Run a major speech as a short structured social encounter (3–5 rounds) against an **audience**, treated as a single target with a **strain threshold** set by its size and mood. Exceed the threshold and the audience is *won*; exceed half for a **partial** result. *(Under the emperors the contio and the voting assemblies lose their teeth; the imperial stages for this same mechanic are the crowd's acclamation at the games and the Circus, and a general's address to his troops.)*
+  - type: table
+    style: gear
+    columns:
+    - Audience
+    - Size
+    - Check difficulty
+    - Strain threshold
+    rows:
+    - - A dinner-table, a handful of senators
+      - 2–5
+      - Average ( ●● )
+      - '10'
+    - - A jury, a committee, a cohort
+      - 6–15
+      - Hard ( ●●● )
+      - '14'
+    - - The full Senate, a theatre
+      - 16–50
+      - Daunting ( ●●●● )
+      - '18'
+    - - The Forum mob, the Circus
+      - 51+
+      - Formidable ( ●●●●● )
+      - '22'
+  - type: p
+    style: body
+    text: |-
+      Adjust the threshold by ±4 for an audience already hostile or already sympathetic. On each of the orator's turns they make **one appeal** — a social check that inflicts strain as normal (1, plus 1 per uncanceled [[advantage]]). The three classical appeals map cleanly to Genesys social skills:
+  - type: list
+    items:
+    - |-
+      **Ethos — authority and character.** *Leadership* or *Charm.* “I, who have served Rome for thirty years, tell you…” Add the Dignitas bonus.
+    - |-
+      **Pathos — emotion.** *Charm* (to inspire love, hope, pity) or *Coercion* (to rouse fear, anger, hatred). The crowd's favorite.
+    - |-
+      **Logos — reason and proof.** *Negotiation*, or first spend a maneuver on a *Knowledge (Law)* or *Knowledge (Rome)* check to marshal evidence and **upgrade** the following appeal.
+  - type: p
+    style: body
+    text: |-
+      **Working the audience's Motivation** (give a crowd a collective Desire and Fear — the plebs *desire* grain and games, and *fear* hunger and foreign kings) adds [[boost boost]] as usual. A hostile orator may spend their turn **heckling** (an opposed Coercion or Deception check) to inflict strain back on the speaker and add [[setback]] to their next appeal.
+  - type: procedure
+    title: The Five Parts (optional maneuvers & once-per-speech beats)
+    steps:
+    - |-
+      **Exordium** (opening): a maneuver — a disarming *captatio benevolentiae*. Add [[boost]] to the first appeal.
+    - '**Narratio** (the facts): a *Knowledge* maneuver that upgrades the next *Logos* appeal.'
+    - '**Confirmatio** (proof): your strongest *Logos* appeal.'
+    - |-
+      **Refutatio** (rebuttal): an action that removes an opposing orator's banked [[advantage]] / crowd goodwill, or adds [[setback setback]] to their next appeal.
+    - |-
+      **Peroratio** (climax): a final *Pathos* appeal. If it generates a [[triumph]] or [[advantage advantage advantage advantage]], it lands as a **Critical Remark** (5 strain) — the moment the hall erupts.
+  - type: example
+    text: |-
+      Example — Marcus before the mob. The aedile Marcus (Dignitas 2) must calm a bread-riot (Forum mob: Formidable, threshold 22). **Round 1 — Exordium + Ethos:** he opens humbly (maneuver: [[boost]]) then invokes his record feeding them (Charm, +[[boost]] from exordium). He rolls 2 [[success]], 2 [[advantage]] → 3 strain, and spends the [[advantage advantage]] to learn the crowd's Fear: *hunger*. **Round 2 — Narratio + Logos:** a Knowledge (Rome) maneuver recalls the grain-fleet's arrival (upgrade), then Negotiation promising a distribution, now adding [[boost boost]] for playing to their Fear. The upgraded pool throws a [[triumph]] → a Critical Remark, 5 strain, “the ships are in the Tiber *tonight!*” Total 8+ strain, past half-threshold — the riot sags into a wary cheer. One more good round and they are his.
+  - type: h3
+    text: 'The Senate: A Contest of Blocs'
+  - type: p
+    style: body
+    text: |-
+      A Senate debate is a tug-of-war over a motion (a *senatus consultum*). Model the undecided house as 2–4 **bloc** minion groups — e.g., the *Old Guard* (traditionalists), the *Novi Homines* (ambitious new men), the *Military Clique*, and the *Emperor's Men* — each with a vote-weight and a Discipline/Cool to resist. Speakers (PC and NPC) take turns delivering appeals (as Oratory, above) aimed at a chosen bloc; inflicting strain past that bloc's wound threshold **commits** its votes to that side. When every bloc has committed (or the session ends), tally the votes.
+  - type: procedure
+    title: Procedural Trump Cards
+    steps:
+    - |-
+      **Relatio & sententiae.** The presiding consul sets the motion and calls senators for their *sententiae* — the consuls-designate and senior *consulares* first, not by raw seniority. High standing literally speaks first and frames the debate (add [[boost]] to the opening side); under the Empire the consuls, and the emperor's wishes, set the order.
+    - |-
+      **Intercessio — the Tribune's veto.** In the Republic a Tribune of the Plebs may, once per session, veto the motion outright: a hard stop, answered only by winning him over, out-waiting him, or arranging his absence. *(By the High Empire this is a dead letter — the* princeps *himself holds* tribunicia potestas *and sacrosanctity, and the real veto is simply his known wish, below.)*
+    - |-
+      **Obnuntiatio & the auspices — the omens.** Most Romans believed the auspices truly spoke Jupiter's will, so this is a weapon of faith, not mere theatre, and a man caught fabricating a sign faced ruin. Two moves: a magistrate who **“watches the sky”** (Knowledge (the Gods)) declares the day's omens foul and *suspends all business for the day* (Bibulus paralysed Caesar's consulship this way); an **augur's formal ruling** that an act was taken *vitio* (flawed) can void a law already passed or compel a magistrate's abdication — a harder check and a graver blow. Faking either is a desperate, capital gamble, and a fine plot hook.
+    - |-
+      **Filibuster.** Talk until nightfall ends the session with no vote (Cato's trick). Resolve as an endurance contest — repeated Discipline or Resilience checks against rising difficulty.
+    - |-
+      **The Emperor's known wish.** If the *princeps* is believed to favor a side, every check for the other side suffers [[setback]] — and generating a [[despair]] may earn a *delator's* whispered report (see below).
+  - type: example
+    text: |-
+      Example — swinging the Old Guard. The PCs back a motion to grant a frontier command. The Old Guard bloc (threshold 12) leans against. A PC with Senatorial Connections opens with Ethos, inflicts 4, then spends [[advantage advantage advantage]] to learn the bloc's collective Fear: *a new Caesar*. Next round, Logos reframes the command as temporary and defensive — [[boost boost]] for the Fear — 5 more strain, bloc committed. But a hostile Tribune raises *intercessio*; the party must spend a scene persuading (or compromising) him before the *discessio* (division) can be called.
+  - type: h3
+    text: 'The Courtroom: Advocacy'
+  - type: p
+    style: body
+    text: |-
+      Run a Roman trial as a speech-contest with the **jury** (*iudices*) as the audience. Prosecutor and defender alternate appeals against the jury's strain threshold; exceed it to carry the verdict. Roman advocacy was gloriously dirty — the law mattered less than the performance.
+  - type: p
+    style: body
+    text: |-
+      **Which court?** Roman justice ran across several tribunals, each a different flavour of this set-piece: the standing criminal courts (*quaestiones perpetuae*, the model for most trials), trials before the people (*iudicia populi*), and religious courts — a priest or a Vestal accused of *incestum* answered to the pontifical college, not a lay jury. In a sacral trial, swap **Knowledge (Law)** for **Knowledge (the Gods)** as the *Logos* skill and make the college the audience.
+  - type: list
+    items:
+    - |-
+      **Knowledge (Law)** as a maneuver marshals statute and precedent, upgrading the next appeal (your *Logos*).
+    - |-
+      **Witnesses & evidence** are banked [[boost]] (helpful) or [[setback]] (hostile) the GM hands out; discrediting a witness (opposed Coercion/Deception) flips one.
+    - |-
+      **Character assassination** — attack the opposing party's reputation directly, targeting a known Flaw (Coercion/Deception) to inflict strain on *their* advocate and lower their Dignitas for the scene.
+    - |-
+      **Appeal to pity** — the weeping family, the old general baring his scars — is a *Pathos* appeal with a prop, adding [[boost boost]]. Cicero won cases this way.
+  - type: h3
+    text: The Salutatio & the Favor Economy
+  - type: p
+    style: body
+    text: |-
+      Every morning, clients call on their patron (the *salutatio*) to pay respects and ask favors; the patron hands out the *sportula* (a dole of coin or food) and banks their loyalty. Mechanize this web with **Favors**: tradeable tokens representing a specific obligation owed.
+  - type: p
+    style: body
+    text: |-
+      **Two kinds of bond.** Favors run *down* **clientela** (patron over client) and *across* **amicitia** — reciprocal “friendship” between near-equals that was itself a political institution: letters of recommendation, invitations, a magistrate's leave to address a meeting. An *amicitia* Favor is called in between equals with no Dignitas-gap limit, but breaking one costs extra reputation, because it shames both parties.
+  - type: procedure
+    title: Using Favors
+    steps:
+    - |-
+      A character **banks a Favor** by doing a meaningful service, winning one in a social encounter (a capitulation can be “you owe me”), or via the *Client Network* / *Patronus* talents.
+    - |-
+      **Spend a Favor** to call in a concrete, bounded help from that person: a letter of introduction, a sum of coin, a door opened, a witness produced, a vote in the Senate, a blind eye turned.
+    - |-
+      Favors have a **face**: a Favor from a senator is worth more than one from a shopkeeper. The GM caps what any single Favor can buy by the grantor's Dignitas and the risk involved.
+    - |-
+      **Breaking faith** — refusing a reasonable call on a Favor you owe — costs 1 Dignitas and makes an enemy. Rome remembered.
+  - type: p
+    style: body
+    text: |-
+      The same frame runs the **convivium** (dinner party), where seating is position — the place of honor (*locus consularis*) grants its occupant [[boost]] to social checks — and the intimacy lets guests learn one another's Motivations a step cheaper; and the **election**, a canvass that targets the voting tribes as blocs, won with promises, games, the *sportula*, and (illegally) outright bribery — *ambitus*, a [[triumph]]-worthy gamble that courts a ruinous prosecution if a [[despair]] turns up.
 - title: New Skills
   blocks:
   - type: p
@@ -737,7 +1007,7 @@ chapters:
     style: body
     text: |-
       Allies within earshot of your character add [[boost]] to all social checks, and treat crowds as one step more sympathetic. Once per session, your character may spend a Story Point to cause a hostile crowd or committee to grant them a single hearing, no matter the circumstances — the authority of a living institution.
-- title: 'Chapter 2: Gear and Vehicles'
+- title: Gear and Vehicles
   blocks:
   - type: p
     style: lead
@@ -1430,6 +1700,78 @@ chapters:
     body:
     - |-
       **Scorpio** (bolt-thrower): Gunnery; Dam 10; Crit 2; Range [Extreme]; Pierce 3, Prepare 1. **Ballista:** Dam 12; Crit 3; Range [Extreme]; Breach 1, Cumbersome 4, Prepare 2. **Onager** (stone-thrower): Dam 18; Crit 4; Range [Extreme]; Blast 8, Breach 2, Cumbersome 5, Prepare 3, Limited Ammo — by stones at hand. Each legion fielded dozens of the lighter engines.
+- title: Game Mastering Rome
+  part: { label: Part II, title: Running Imperial Rome }
+  blocks:
+  - type: p
+    style: lead
+    text: |-
+      A historical setting is a gift and a trap. The gift is that players already know Rome — legions, togas, gladiators, “hail Caesar.” The trap is that they know the *movie* Rome, and will bring every assumption with them. Lean into the familiar iconography, then surprise them with the real strangeness: a world where the gods are in the gutters and the Senate, where a man's name tells you who owns him, and where a bad omen can stop an army.
+  - type: h3
+    text: Choosing a Campaign Frame
+  - type: p
+    style: body
+    text: |-
+      Rome is too big to “play Rome.” Pick a lens — a group with a reason to adventure together — the way the setting this book is modeled on gathers its heroes into a single unit.
+  - type: list
+    items:
+    - |-
+      **The Contubernium (Soldiers).** A tent-group of eight legionaries and their specialists on the frontier: patrols, skirmishes, building roads and forts, and the long boredom between terrors. Great for tactical play and the *band-of-brothers* tone. The legion is also a political animal — who does the army back?
+    - |-
+      **The Familia Gladiatoria (The Arena).** Fighters, a trainer, a doctor, and a sponsor in one gladiator school. Survival, rivalry, celebrity, and the dream of the wooden sword (*rudis*) of freedom. Combine spectacle with the intrigue of who bets on whom.
+    - |-
+      **The Cohortes Vigilum (Roman ‘Police’).** The nearest thing to the setting this book honors: the watch and the fire brigade of a great city. Investigate murders, arson, missing persons, and conspiracies in the tenements — a procedural, but one where the detectives have almost no forensic science and a great deal of politics. The *frumentarii* and a provincial governor's staff serve the same role for imperial-level intrigue.
+    - |-
+      **The Domus (Household & Intrigue).** A senator's extended household — heirs, freedmen, clients, slaves — navigating the *cursus honorum*, the courts, and the knife-work of high politics. Social combat is the main event.
+    - |-
+      **The Negotiatores (Trade & Travel).** Merchants, ship-owners, and their guards crossing the Empire and beyond — Egypt, Parthia, and the western end of the Silk Road, where fortunes ride on pepper, incense, and bolts of Chinese silk worth their weight in gold. A caravan pressing east toward rumored *Serica* (see *The Edge of the World*) turns a trade game into an odyssey past Parthian tolls, bandit passes, and the limits of the known map. Sandbox exploration with cargo manifests, pirates, and the lure of the unreachable East.
+    - |-
+      **The Mysteries (Supernatural).** In a [[Fated]] or [[Mythic]] Rome, investigators of cults, curses, and the old powers under the new marble — the Roman answer to cosmic horror or sword-and-sandal fantasy.
+  - type: h3
+    text: Status Is the Real Rulebook
+  - type: p
+    style: body
+    text: |-
+      Let legal status do heavy narrative lifting. A **citizen** can demand a proper trial and appeal to the Emperor (*Civis Romanus sum*); a **slave**'s testimony was legally admissible only under torture, and a slave who struck a citizen could be crucified. These are not die rolls — they are the stakes. The most Roman dramas come from characters trapped by their status and clawing to change it: the slave earning manumission, the freedman buying respectability, the provincial grasping for the citizenship that makes him untouchable.
+  - type: h3
+    text: Patron and Client
+  - type: p
+    style: body
+    text: |-
+      Nobody in Rome stands alone. Every character should know who their **patron** is (who protects and funds them, and expects loyalty, votes, and the morning *salutatio*) and who their **clients** are. Favors flow up and down this web constantly — the *Client Network* and *Client of a Great House* abilities model it, but the GM should make the web a living thing. A patron's enemy is your enemy; a patron's fall can drag you down with him.
+  - type: p
+    style: body
+    text: |-
+      **Adoption and the household.** A great family is a going concern — a name, its cults, and its capital — and adoption was the tool used to preserve it; the age this book defaults to is the era of the *adoptive emperors* (Nerva to Hadrian). An heirless senator who adopts a PC (or a rival's son) transfers Dignitas and obligations at a stroke, and a contested adoption or a disputed will is a whole campaign frame. Within the *domus*, the working household has its own offices — the *vilicus* (overseer) and *vilica* (housekeeper) run the estate and its cult under a quasi-moral code — ready-made authority, and ready-made friction, for Slave and Freedman characters.
+  - type: sidebar
+    title: The Thin Empire
+    body:
+    - |-
+      Remember how *few* Romans actually governed Rome. An empire of perhaps sixty million people was run, at the top, by only a few hundred senior officials — a governor might administer a province of millions with a personal staff you could seat at one dinner-table. The Empire held together not through bureaucracy but through **local elites, patronage, religion, and sheer bluff.** This is why the reputation economy matters so much: in a thin state, who you know and how you are regarded *is* the government. It also hands the GM a sandbox — out in the provinces the PCs may be the only arm of Rome for a hundred miles, and what they decide simply becomes Roman policy.
+  - type: h3
+    text: Story Points as the Will of the Gods
+  - type: p
+    style: body
+    text: |-
+      In a [[Fated]] Rome, re-skin the Story Point economy as divine favor. When players spend a Story Point, something goes *right* because the gods smiled — a timely omen, a lucky gust, a rival's stumble. When the GM spends one, the gods are displeased: an ill omen manifests. Tie omen-reading (Knowledge (the Gods), above) to the pool, and let a [[triumph]] at a sacrifice feed the players' side. It makes Roman religion mechanically present without any spellcasting.
+  - type: h3
+    text: The Arena & the Races
+  - type: p
+    style: body
+    text: |-
+      Run a gladiatorial bout as a duel with the crowd as a third participant: track the audience's mood as a pool of [[advantage]]/[[threat]] the fighters spend on *Arena Showmanship* and on the final appeal for mercy (*missio*) — the editor of the games grants life or death partly on the crowd's roar. For chariot racing, use chase/structured rules: a long track, *Driving* checks each round, [[advantage]] to gain position and [[threat]] toward the dreaded wreck (*naufragium*). Remember Roman drivers lashed the reins around their waists and carried a knife to cut free — a failed check at speed can be lethal.
+  - type: h3
+    text: Keeping It Roman
+  - type: list
+    items:
+    - |-
+      **No clocks, no minutes.** Time is told by sun, water-clock, and the watch; appointments are “at the third hour.”
+    - |-
+      **Money is coin and credit.** No paper; wealth is land, slaves, and chests of silver — and a web of IOUs (*nomina*) among the elite.
+    - |-
+      **The streets are lethal.** Rome had no street lighting and emptied its chamber-pots from windows; wheeled traffic was banned by day. Night in the Subura is its own adventure.
+    - |-
+      **Religion is everywhere — but belief varies.** The gods are woven into every public act, and *open* denial is socially radioactive; yet philosophically-grounded disbelief existed — educated Epicureans held the gods indifferent and the soul mortal (Lucretius) and still performed the civic rites. Christians and Jews stand out because they will *not*. The auspices are consulted before almost anything that matters.
 - title: Adversaries
   blocks:
   - type: p
@@ -2161,271 +2503,6 @@ chapters:
     - label: Abilities
       text: |-
         **Unmoved by Omens:** immune to fear effects drawn from portents, curses, or the wrath of the gods — a pointed foil in a [[Fated]] or [[Mythic]] Rome where the gods may be real. **Counsel of the Garden:** once per session he talks an ally off a rash course, granting [[boost boost]] to resist a provocation or removing a Fear-based [[setback]]. **Withdrawal:** he gains no Dignitas from office and scorns the Favor economy, which makes him incorruptible and infuriating.
-- title: The Theater of Power
-  blocks:
-  - type: p
-    style: lead
-    text: |-
-      Genesys models a conversation as a kind of combat — opposed social checks, **strain** as the health bar of an argument, and **Motivations** as the soft points in a target's guard. No historical setting rewards that framework like Rome, a civilization where a man could be destroyed in the Forum without a blade being drawn, and where the Senate, the law-court, and the dinner-couch were the real battlefields. This chapter supplies Roman tools that plug directly into the Social Encounters rules (Core Rulebook, Chapter 7): a reputation economy, four set-piece encounter structures (the **speech**, the **Senate**, the **court**, and the **salutatio**), Roman Motivation tables, new talents and gear, and purely social adversaries to be beaten with words.
-  - type: p
-    style: body
-    text: |-
-      *Everything here is an overlay on the standard rules.* Inflicting strain, compromise at half the strain threshold, capitulation above it, the [[advantage]]/[[triumph]] and [[threat]]/[[despair]] spends, learning a Motivation facet, and the group-size difficulty table all work exactly as written. The Roman flavor is in *which* skill fits, *which* Motivation is exposed, and *what the stakes are.*
-  - type: h3
-    text: 'Dignitas & Auctoritas: The Reputation Economy'
-  - type: p
-    style: body
-    text: |-
-      A Roman was his reputation. **Dignitas** is a character's public standing — the accumulated weight of ancestry, offices held, favors owed, and victories won. It is an optional setting trait rated **0–5**, set at creation by status and changed in play.
-  - type: table
-    style: gear
-    columns:
-    - Starting Dignitas
-    - Who
-    - Dignitas
-    rows:
-    - - Slave / outlaw / infamis
-      - No standing in law; an actor or gladiator is *infamis*
-      - '0'
-    - - Commoner / freedman / provincial
-      - A free plebeian, a *libertus*, a *peregrinus*
-      - '1'
-    - - Equestrian / notable
-      - A wealthy knight, officer, or respected local
-      - '2'
-    - - Senatorial family
-      - A senator or his heir
-      - '3'
-    - - Ex-magistrate (consular)
-      - One who has held the great offices; a famous general
-      - '4'
-    - - First men of the state
-      - The *princeps senatus*, the imperial house
-      - '5'
-  - type: p
-    style: body
-    text: '**What Dignitas does:**'
-  - type: list
-    items:
-    - |-
-      **It armors your reputation.** When another character makes a social check to *shame, discredit, insult, or publicly coerce* your character, they add [[setback]] equal to the amount your Dignitas exceeds theirs (to a maximum of two [[setback]]). The high and mighty are simply harder to bring low.
-    - |-
-      **It lends weight to authority.** When your character makes an *Ethos* appeal (see Oratory) or any social check that leans on their standing, add [[boost]] if their Dignitas is 3+, or [[boost boost]] if it is 5.
-    - |-
-      **It funds Auctoritas.** At the start of any social set-piece, your character gains a pool of **Auctoritas** equal to their Dignitas (minimum 1). Each point may be spent as an incidental to add [[boost]] to a social check, to a crowd/vote track, or to a favor — the influence their name buys in the room. The pool refreshes each set-piece.
-    - |-
-      **Revelatory Appeal** (*Logos*) — claim privileged knowledge the audience cannot check (Cicero's ever-wakeful “I know their every plan”): add [[boost boost]] to the appeal, but a [[despair]] exposes the bluff and costs you Dignitas for the scene.
-  - type: p
-    style: body
-    text: |-
-      **Gaining and losing it.** The GM raises a character's Dignitas by 1 for a landmark public success — winning a notorious trial, election to a great office, sponsoring magnificent games, a military triumph, saving a citizen's life (the *corona civica*). It falls by 1 for *infamia*: losing such a trial, public cowardice or bankruptcy, a ruinous scandal, or conviction for a crime. Dignitas is slow to earn and ruinous to lose — which is precisely why Romans killed for it. **Optional — the hunger of prestige.** Pedigree alone never sustained a Roman house; standing had to be renewed each generation (by the early Empire, idle heirs of the Fabii were mocked for coasting on ancestral glory). A high-Dignitas character who wins no landmark success across a long stretch of play slowly loses a point of Dignitas, unless renewed by office, magnificent games, or martial glory.
-  - type: h3
-    text: Roman Motivations
-  - type: p
-    style: body
-    text: |-
-      Give every recurring Roman NPC (and encourage players to give their characters) Motivations from the lists below, used exactly as in the Core Rulebook: work *with* a Strength or Flaw to add [[boost]]; work *with* a Desire or Fear to add [[boost boost]]; work against them to add [[setback]] or [[setback setback]]. Players learn an NPC's Strength/Flaw by spending [[advantage advantage]], a Desire/Fear with [[advantage advantage advantage]], or any facet with a [[triumph]].
-  - type: table
-    style: motiv
-    columns:
-    - d10
-    - Desire (what they chase)
-    - Fear (what they dread)
-    rows:
-    - - '1'
-      - '**Gloria** — fame that outlives them'
-      - '**Obscurity** — to be forgotten, a nobody'
-    - - '2'
-      - '**The consulship** / high office'
-      - '**Exile** — banishment from Rome'
-    - - '3'
-      - '**Wealth** — estates, slaves, silver'
-      - '**Poverty & debt** — the shame of the ruined'
-    - - '4'
-      - '**Vengeance** on a rival house'
-      - "**A powerful enemy's malice**"
-    - - '5'
-      - '**Freedom** / citizenship (for the enslaved)'
-      - '**The mob** — riot, lynching, the arena'
-    - - '6'
-      - '**Pleasure** — luxury, love, the table'
-      - "**The Emperor's suspicion**"
-    - - '7'
-      - '**The old Republic** / restoring virtue'
-      - '**Impiety** — angering the gods, bad omens'
-    - - '8'
-      - "**Family** — heirs, the line's honor"
-      - '**Betrayal** by a friend or freedman'
-    - - '9'
-      - '**Knowledge** — philosophy, the mysteries'
-      - "**Loss of face** before one's peers"
-    - - '10'
-      - '**Power** for its own sake — the purple itself'
-      - '**Death without a good name**'
-  - type: table
-    style: motiv
-    columns:
-    - d10
-    - Strength (what steadies them)
-    - Flaw (what undoes them)
-    rows:
-    - - '1'
-      - '**Gravitas** — unshakeable dignity'
-      - '**Pride** — cannot bear a slight'
-    - - '2'
-      - '**Eloquence** — a golden tongue'
-      - '**Avarice** — greed clouds judgment'
-    - - '3'
-      - '**Loyalty** — to patron, legion, or friend'
-      - '**Lust** / appetite — a notorious weakness'
-    - - '4'
-      - '**Piety** — the gods on their side'
-      - '**Superstition** — ruled by omens'
-    - - '5'
-      - '**Cunning** — the long game'
-      - '**Cruelty** — overreaches, makes enemies'
-    - - '6'
-      - '**Discipline** — Stoic self-command'
-      - '**Rashness** — acts before thinking'
-    - - '7'
-      - '**Generosity** — a famous patron'
-      - '**Vanity** — easily flattered'
-    - - '8'
-      - '**Industry** — tireless, competent'
-      - '**Drink / the dice** — a vice to exploit'
-    - - '9'
-      - '**Courage** — faces down the mob'
-      - '**A guilty secret** — a lever for blackmail'
-    - - '10'
-      - '**Nobility** — the weight of ancestors'
-      - '**Naivety** — trusts the wrong people'
-  - type: h3
-    text: 'Oratory: The Set-Piece Speech'
-  - type: p
-    style: body
-    text: |-
-      Trained oratory was a Roman's sharpest tool — but only one of several. Ancestry, wealth, patronage, military glory, and sheer *dignitas* carried as many arguments as eloquence did: Marius won seven consulships with almost no gift for speech, and Pompey and Antony leaned on reputation and spectacle over rhetoric. So treat a great speech as a force-multiplier for a strong position, not a substitute for one — a character rich in standing and connections can rule the Forum on a middling check. The Republican model is the **contio**, the non-voting public meeting a magistrate called to work the People before a vote; only a magistrate could summon one, so a private citizen needed a friendly magistrate's invitation to speak — contio-access as a currency of alliance. Run a major speech as a short structured social encounter (3–5 rounds) against an **audience**, treated as a single target with a **strain threshold** set by its size and mood. Exceed the threshold and the audience is *won*; exceed half for a **partial** result. *(Under the emperors the contio and the voting assemblies lose their teeth; the imperial stages for this same mechanic are the crowd's acclamation at the games and the Circus, and a general's address to his troops.)*
-  - type: table
-    style: gear
-    columns:
-    - Audience
-    - Size
-    - Check difficulty
-    - Strain threshold
-    rows:
-    - - A dinner-table, a handful of senators
-      - 2–5
-      - Average ( ●● )
-      - '10'
-    - - A jury, a committee, a cohort
-      - 6–15
-      - Hard ( ●●● )
-      - '14'
-    - - The full Senate, a theatre
-      - 16–50
-      - Daunting ( ●●●● )
-      - '18'
-    - - The Forum mob, the Circus
-      - 51+
-      - Formidable ( ●●●●● )
-      - '22'
-  - type: p
-    style: body
-    text: |-
-      Adjust the threshold by ±4 for an audience already hostile or already sympathetic. On each of the orator's turns they make **one appeal** — a social check that inflicts strain as normal (1, plus 1 per uncanceled [[advantage]]). The three classical appeals map cleanly to Genesys social skills:
-  - type: list
-    items:
-    - |-
-      **Ethos — authority and character.** *Leadership* or *Charm.* “I, who have served Rome for thirty years, tell you…” Add the Dignitas bonus.
-    - |-
-      **Pathos — emotion.** *Charm* (to inspire love, hope, pity) or *Coercion* (to rouse fear, anger, hatred). The crowd's favorite.
-    - |-
-      **Logos — reason and proof.** *Negotiation*, or first spend a maneuver on a *Knowledge (Law)* or *Knowledge (Rome)* check to marshal evidence and **upgrade** the following appeal.
-  - type: p
-    style: body
-    text: |-
-      **Working the audience's Motivation** (give a crowd a collective Desire and Fear — the plebs *desire* grain and games, and *fear* hunger and foreign kings) adds [[boost boost]] as usual. A hostile orator may spend their turn **heckling** (an opposed Coercion or Deception check) to inflict strain back on the speaker and add [[setback]] to their next appeal.
-  - type: procedure
-    title: The Five Parts (optional maneuvers & once-per-speech beats)
-    steps:
-    - |-
-      **Exordium** (opening): a maneuver — a disarming *captatio benevolentiae*. Add [[boost]] to the first appeal.
-    - '**Narratio** (the facts): a *Knowledge* maneuver that upgrades the next *Logos* appeal.'
-    - '**Confirmatio** (proof): your strongest *Logos* appeal.'
-    - |-
-      **Refutatio** (rebuttal): an action that removes an opposing orator's banked [[advantage]] / crowd goodwill, or adds [[setback setback]] to their next appeal.
-    - |-
-      **Peroratio** (climax): a final *Pathos* appeal. If it generates a [[triumph]] or [[advantage advantage advantage advantage]], it lands as a **Critical Remark** (5 strain) — the moment the hall erupts.
-  - type: example
-    text: |-
-      Example — Marcus before the mob. The aedile Marcus (Dignitas 2) must calm a bread-riot (Forum mob: Formidable, threshold 22). **Round 1 — Exordium + Ethos:** he opens humbly (maneuver: [[boost]]) then invokes his record feeding them (Charm, +[[boost]] from exordium). He rolls 2 [[success]], 2 [[advantage]] → 3 strain, and spends the [[advantage advantage]] to learn the crowd's Fear: *hunger*. **Round 2 — Narratio + Logos:** a Knowledge (Rome) maneuver recalls the grain-fleet's arrival (upgrade), then Negotiation promising a distribution, now adding [[boost boost]] for playing to their Fear. The upgraded pool throws a [[triumph]] → a Critical Remark, 5 strain, “the ships are in the Tiber *tonight!*” Total 8+ strain, past half-threshold — the riot sags into a wary cheer. One more good round and they are his.
-  - type: h3
-    text: 'The Senate: A Contest of Blocs'
-  - type: p
-    style: body
-    text: |-
-      A Senate debate is a tug-of-war over a motion (a *senatus consultum*). Model the undecided house as 2–4 **bloc** minion groups — e.g., the *Old Guard* (traditionalists), the *Novi Homines* (ambitious new men), the *Military Clique*, and the *Emperor's Men* — each with a vote-weight and a Discipline/Cool to resist. Speakers (PC and NPC) take turns delivering appeals (as Oratory, above) aimed at a chosen bloc; inflicting strain past that bloc's wound threshold **commits** its votes to that side. When every bloc has committed (or the session ends), tally the votes.
-  - type: procedure
-    title: Procedural Trump Cards
-    steps:
-    - |-
-      **Relatio & sententiae.** The presiding consul sets the motion and calls senators for their *sententiae* — the consuls-designate and senior *consulares* first, not by raw seniority. High standing literally speaks first and frames the debate (add [[boost]] to the opening side); under the Empire the consuls, and the emperor's wishes, set the order.
-    - |-
-      **Intercessio — the Tribune's veto.** In the Republic a Tribune of the Plebs may, once per session, veto the motion outright: a hard stop, answered only by winning him over, out-waiting him, or arranging his absence. *(By the High Empire this is a dead letter — the* princeps *himself holds* tribunicia potestas *and sacrosanctity, and the real veto is simply his known wish, below.)*
-    - |-
-      **Obnuntiatio & the auspices — the omens.** Most Romans believed the auspices truly spoke Jupiter's will, so this is a weapon of faith, not mere theatre, and a man caught fabricating a sign faced ruin. Two moves: a magistrate who **“watches the sky”** (Knowledge (the Gods)) declares the day's omens foul and *suspends all business for the day* (Bibulus paralysed Caesar's consulship this way); an **augur's formal ruling** that an act was taken *vitio* (flawed) can void a law already passed or compel a magistrate's abdication — a harder check and a graver blow. Faking either is a desperate, capital gamble, and a fine plot hook.
-    - |-
-      **Filibuster.** Talk until nightfall ends the session with no vote (Cato's trick). Resolve as an endurance contest — repeated Discipline or Resilience checks against rising difficulty.
-    - |-
-      **The Emperor's known wish.** If the *princeps* is believed to favor a side, every check for the other side suffers [[setback]] — and generating a [[despair]] may earn a *delator's* whispered report (see below).
-  - type: example
-    text: |-
-      Example — swinging the Old Guard. The PCs back a motion to grant a frontier command. The Old Guard bloc (threshold 12) leans against. A PC with Senatorial Connections opens with Ethos, inflicts 4, then spends [[advantage advantage advantage]] to learn the bloc's collective Fear: *a new Caesar*. Next round, Logos reframes the command as temporary and defensive — [[boost boost]] for the Fear — 5 more strain, bloc committed. But a hostile Tribune raises *intercessio*; the party must spend a scene persuading (or compromising) him before the *discessio* (division) can be called.
-  - type: h3
-    text: 'The Courtroom: Advocacy'
-  - type: p
-    style: body
-    text: |-
-      Run a Roman trial as a speech-contest with the **jury** (*iudices*) as the audience. Prosecutor and defender alternate appeals against the jury's strain threshold; exceed it to carry the verdict. Roman advocacy was gloriously dirty — the law mattered less than the performance.
-  - type: p
-    style: body
-    text: |-
-      **Which court?** Roman justice ran across several tribunals, each a different flavour of this set-piece: the standing criminal courts (*quaestiones perpetuae*, the model for most trials), trials before the people (*iudicia populi*), and religious courts — a priest or a Vestal accused of *incestum* answered to the pontifical college, not a lay jury. In a sacral trial, swap **Knowledge (Law)** for **Knowledge (the Gods)** as the *Logos* skill and make the college the audience.
-  - type: list
-    items:
-    - |-
-      **Knowledge (Law)** as a maneuver marshals statute and precedent, upgrading the next appeal (your *Logos*).
-    - |-
-      **Witnesses & evidence** are banked [[boost]] (helpful) or [[setback]] (hostile) the GM hands out; discrediting a witness (opposed Coercion/Deception) flips one.
-    - |-
-      **Character assassination** — attack the opposing party's reputation directly, targeting a known Flaw (Coercion/Deception) to inflict strain on *their* advocate and lower their Dignitas for the scene.
-    - |-
-      **Appeal to pity** — the weeping family, the old general baring his scars — is a *Pathos* appeal with a prop, adding [[boost boost]]. Cicero won cases this way.
-  - type: h3
-    text: The Salutatio & the Favor Economy
-  - type: p
-    style: body
-    text: |-
-      Every morning, clients call on their patron (the *salutatio*) to pay respects and ask favors; the patron hands out the *sportula* (a dole of coin or food) and banks their loyalty. Mechanize this web with **Favors**: tradeable tokens representing a specific obligation owed.
-  - type: p
-    style: body
-    text: |-
-      **Two kinds of bond.** Favors run *down* **clientela** (patron over client) and *across* **amicitia** — reciprocal “friendship” between near-equals that was itself a political institution: letters of recommendation, invitations, a magistrate's leave to address a meeting. An *amicitia* Favor is called in between equals with no Dignitas-gap limit, but breaking one costs extra reputation, because it shames both parties.
-  - type: procedure
-    title: Using Favors
-    steps:
-    - |-
-      A character **banks a Favor** by doing a meaningful service, winning one in a social encounter (a capitulation can be “you owe me”), or via the *Client Network* / *Patronus* talents.
-    - |-
-      **Spend a Favor** to call in a concrete, bounded help from that person: a letter of introduction, a sum of coin, a door opened, a witness produced, a vote in the Senate, a blind eye turned.
-    - |-
-      Favors have a **face**: a Favor from a senator is worth more than one from a shopkeeper. The GM caps what any single Favor can buy by the grantor's Dignitas and the risk involved.
-    - |-
-      **Breaking faith** — refusing a reasonable call on a Favor you owe — costs 1 Dignitas and makes an enemy. Rome remembered.
-  - type: p
-    style: body
-    text: |-
-      The same frame runs the **convivium** (dinner party), where seating is position — the place of honor (*locus consularis*) grants its occupant [[boost]] to social checks — and the intimacy lets guests learn one another's Motivations a step cheaper; and the **election**, a canvass that targets the voting tribes as blocs, won with promises, games, the *sportula*, and (illegally) outright bribery — *ambitus*, a [[triumph]]-worthy gamble that courts a ruinous prosecution if a [[despair]] turns up.
 - title: Starter Scenarios
   blocks:
   - type: p
@@ -3511,105 +3588,60 @@ chapters:
     - "Plutarch, *Tiberius Gracchus* 14–15 (Perrin); Greenidge, vol. I — Titus Annius's challenge to Tiberius over the deposition, and Tiberius's reply that a tribune's sanctity comes from the people and is forfeited by injuring them."
     - "Plutarch, *Tiberius Gracchus* 19.6, trans. Perrin (1921) — the killing of Tiberius Gracchus and his supporters on the Capitol, 133 BCE."
     - "Botsford, *The Roman Assemblies* (1909) — the Senate's annulment of Saturninus's measures (100 BCE) and of Sextus Titius's agrarian law (99 BCE) as passed by violence or against the intercession."
-- title: Running Imperial Rome
+- title: Lexicon
+  part: { title: Appendices }
   blocks:
   - type: p
-    style: lead
-    text: |-
-      A historical setting is a gift and a trap. The gift is that players already know Rome — legions, togas, gladiators, “hail Caesar.” The trap is that they know the *movie* Rome, and will bring every assumption with them. Lean into the familiar iconography, then surprise them with the real strangeness: a world where the gods are in the gutters and the Senate, where a man's name tells you who owns him, and where a bad omen can stop an army.
-  - type: h3
-    text: Choosing a Campaign Frame
-  - type: p
     style: body
-    text: |-
-      Rome is too big to “play Rome.” Pick a lens — a group with a reason to adventure together — the way the setting this book is modeled on gathers its heroes into a single unit.
+    text: 'A sprinkling of Latin brings the table to Rome. A few of the most useful:'
   - type: list
     items:
     - |-
-      **The Contubernium (Soldiers).** A tent-group of eight legionaries and their specialists on the frontier: patrols, skirmishes, building roads and forts, and the long boredom between terrors. Great for tactical play and the *band-of-brothers* tone. The legion is also a political animal — who does the army back?
+      **SPQR** — *Senatus Populusque Romanus*, “the Senate and People of Rome,” the state itself; stamped on standards, coins, and buildings.
     - |-
-      **The Familia Gladiatoria (The Arena).** Fighters, a trainer, a doctor, and a sponsor in one gladiator school. Survival, rivalry, celebrity, and the dream of the wooden sword (*rudis*) of freedom. Combine spectacle with the intrigue of who bets on whom.
+      **Serica / Seres** — the distant land of silk at the eastern edge of the world (China), and its people; known to Rome only through Parthian middlemen and wild rumor.
+    - "**Princeps** — “first citizen,” the Emperor's polite title; he pretends not to be a king."
     - |-
-      **The Cohortes Vigilum (Roman ‘Police’).** The nearest thing to the setting this book honors: the watch and the fire brigade of a great city. Investigate murders, arson, missing persons, and conspiracies in the tenements — a procedural, but one where the detectives have almost no forensic science and a great deal of politics. The *frumentarii* and a provincial governor's staff serve the same role for imperial-level intrigue.
+      **Cursus honorum** — the “course of offices,” the fixed ladder of political posts (quaestor, aedile, praetor, consul) an ambitious man climbs.
     - |-
-      **The Domus (Household & Intrigue).** A senator's extended household — heirs, freedmen, clients, slaves — navigating the *cursus honorum*, the courts, and the knife-work of high politics. Social combat is the main event.
+      **Patronus / Cliens** — patron and client; the bond of protection and loyalty that structures all society.
     - |-
-      **The Negotiatores (Trade & Travel).** Merchants, ship-owners, and their guards crossing the Empire and beyond — Egypt, Parthia, and the western end of the Silk Road, where fortunes ride on pepper, incense, and bolts of Chinese silk worth their weight in gold. A caravan pressing east toward rumored *Serica* (see *The Edge of the World*) turns a trade game into an odyssey past Parthian tolls, bandit passes, and the limits of the known map. Sandbox exploration with cargo manifests, pirates, and the lure of the unreachable East.
+      **Salutatio** — the dawn reception where clients call on their patron to pay respects and ask favors.
     - |-
-      **The Mysteries (Supernatural).** In a [[Fated]] or [[Mythic]] Rome, investigators of cults, curses, and the old powers under the new marble — the Roman answer to cosmic horror or sword-and-sandal fantasy.
-  - type: h3
-    text: Status Is the Real Rulebook
+      **Civis Romanus sum** — “I am a Roman citizen”; the phrase that demands legal protection and the right of appeal.
+    - |-
+      **Legio / Centuria / Contubernium** — legion (~5,000 men) / century (~80, led by a centurion) / tent-group (8, the squad).
+    - "**Pilum / Gladius / Scutum** — javelin / short sword / shield: the legionary's core kit."
+    - '**Testudo** — “tortoise,” the shield formation that covers a unit front and top.'
+    - '**Limes** — the fortified frontier of the Empire.'
+    - '**Auxilia** — non-citizen support troops; earn citizenship on discharge.'
+    - |-
+      **Denarius / Sesterce / As / Aureus** — the silver, brass, copper, and gold of Roman coinage (1 aureus = 25 denarii = 100 sesterces = 400 asses).
+    - |-
+      **Panem et circenses** — “bread and circuses”: the grain dole and public games that kept the mob content.
+    - |-
+      **Editor** — the sponsor who pays for and presides over the games; he decides *missio* (mercy) with the crowd.
+    - |-
+      **Missio / Rudis** — the reprieve of a defeated gladiator / the wooden sword awarded at his freedom.
+    - '**Lanista / Familia / Ludus** — the owner-trainer / the troupe / the gladiator school.'
+    - |-
+      **Collegium** — a guild or association (trade, burial, religious) — and often a front for a street gang.
+    - |-
+      **Vigiles / Cohortes Urbanae** — the night-watch/fire-brigade and the city military police.
+    - |-
+      **Frumentarius** — a soldier-courier who doubled as the Empire's nearest thing to a secret agent.
+    - '**Libertus / Peregrinus** — a freed slave / a free non-citizen provincial.'
+    - '**Pater familias** — the male head of a household, with legal power over its members.'
+    - |-
+      **Toga / Tunica / Stola** — the citizen's formal wrap / everyday garment / a married woman's dress.
+    - |-
+      **Haruspex / Augur** — a reader of entrails / a reader of birds and omens; official diviners of the state.
+    - |-
+      **Imperium** — the formal power to command (armies, the law); held by consuls, praetors, governors, and the Emperor.
+    - '**Ave / Vale / Salve** — “hail” / “farewell” / “be well” (a common greeting).'
   - type: p
     style: body
-    text: |-
-      Let legal status do heavy narrative lifting. A **citizen** can demand a proper trial and appeal to the Emperor (*Civis Romanus sum*); a **slave**'s testimony was legally admissible only under torture, and a slave who struck a citizen could be crucified. These are not die rolls — they are the stakes. The most Roman dramas come from characters trapped by their status and clawing to change it: the slave earning manumission, the freedman buying respectability, the provincial grasping for the citizenship that makes him untouchable.
-  - type: h3
-    text: Patron and Client
-  - type: p
-    style: body
-    text: |-
-      Nobody in Rome stands alone. Every character should know who their **patron** is (who protects and funds them, and expects loyalty, votes, and the morning *salutatio*) and who their **clients** are. Favors flow up and down this web constantly — the *Client Network* and *Client of a Great House* abilities model it, but the GM should make the web a living thing. A patron's enemy is your enemy; a patron's fall can drag you down with him.
-  - type: p
-    style: body
-    text: |-
-      **Adoption and the household.** A great family is a going concern — a name, its cults, and its capital — and adoption was the tool used to preserve it; the age this book defaults to is the era of the *adoptive emperors* (Nerva to Hadrian). An heirless senator who adopts a PC (or a rival's son) transfers Dignitas and obligations at a stroke, and a contested adoption or a disputed will is a whole campaign frame. Within the *domus*, the working household has its own offices — the *vilicus* (overseer) and *vilica* (housekeeper) run the estate and its cult under a quasi-moral code — ready-made authority, and ready-made friction, for Slave and Freedman characters.
-  - type: sidebar
-    title: The Thin Empire
-    body:
-    - |-
-      Remember how *few* Romans actually governed Rome. An empire of perhaps sixty million people was run, at the top, by only a few hundred senior officials — a governor might administer a province of millions with a personal staff you could seat at one dinner-table. The Empire held together not through bureaucracy but through **local elites, patronage, religion, and sheer bluff.** This is why the reputation economy matters so much: in a thin state, who you know and how you are regarded *is* the government. It also hands the GM a sandbox — out in the provinces the PCs may be the only arm of Rome for a hundred miles, and what they decide simply becomes Roman policy.
-  - type: h3
-    text: Story Points as the Will of the Gods
-  - type: p
-    style: body
-    text: |-
-      In a [[Fated]] Rome, re-skin the Story Point economy as divine favor. When players spend a Story Point, something goes *right* because the gods smiled — a timely omen, a lucky gust, a rival's stumble. When the GM spends one, the gods are displeased: an ill omen manifests. Tie omen-reading (Knowledge (the Gods), above) to the pool, and let a [[triumph]] at a sacrifice feed the players' side. It makes Roman religion mechanically present without any spellcasting.
-  - type: h3
-    text: The Arena & the Races
-  - type: p
-    style: body
-    text: |-
-      Run a gladiatorial bout as a duel with the crowd as a third participant: track the audience's mood as a pool of [[advantage]]/[[threat]] the fighters spend on *Arena Showmanship* and on the final appeal for mercy (*missio*) — the editor of the games grants life or death partly on the crowd's roar. For chariot racing, use chase/structured rules: a long track, *Driving* checks each round, [[advantage]] to gain position and [[threat]] toward the dreaded wreck (*naufragium*). Remember Roman drivers lashed the reins around their waists and carried a knife to cut free — a failed check at speed can be lethal.
-  - type: h3
-    text: Keeping It Roman
-  - type: list
-    items:
-    - |-
-      **No clocks, no minutes.** Time is told by sun, water-clock, and the watch; appointments are “at the third hour.”
-    - |-
-      **Money is coin and credit.** No paper; wealth is land, slaves, and chests of silver — and a web of IOUs (*nomina*) among the elite.
-    - |-
-      **The streets are lethal.** Rome had no street lighting and emptied its chamber-pots from windows; wheeled traffic was banned by day. Night in the Subura is its own adventure.
-    - |-
-      **Religion is everywhere — but belief varies.** The gods are woven into every public act, and *open* denial is socially radioactive; yet philosophically-grounded disbelief existed — educated Epicureans held the gods indifferent and the soul mortal (Lucretius) and still performed the civic rites. Christians and Jews stand out because they will *not*. The auspices are consulted before almost anything that matters.
-  - type: h3
-    text: Sources & Further Reading
-  - type: p
-    style: body
-    text: |-
-      This supplement stands on real scholarship. For GMs who want to dig deeper — or settle a table argument — these are good next steps, Imperial sources starred where the setting's own era is best served.
-  - type: list
-    items:
-    - |-
-      **Republic & its fall** — Mommsen, *The History of Rome*; Watts, *Mortal Republic*; Marin, *Blood in the Forum*; Beard, *SPQR* ★.
-    - |-
-      **Oratory, the contio & assemblies** — Morstein-Marx, *Mass Oratory and Political Power*; van der Blom, *Oratory and Political Career in the Late Roman Republic*; Botsford, *The Roman Assemblies*.
-    - |-
-      **Senate & magistracies** — Piña Polo, *The Consul at Rome*; Sandberg, *Magistrates and Assemblies*; Talbert, *The Senate of Imperial Rome* ★.
-    - |-
-      **Law & the courts** — Alexander, *Trials in the Late Roman Republic*; Robinson, *The Criminal Law of Ancient Rome* ★.
-    - |-
-      **Religion & augury** — Driediger-Murphy, *Roman Republican Augury*; Wildfang, *Rome's Vestal Virgins*; Beard, North & Price, *Religions of Rome* ★.
-    - |-
-      **Philosophy** — Seneca (Hadas, ed.), *Stoic Philosophy of Seneca*; Lucretius, *On the Nature of Things*.
-    - |-
-      **Household, slavery & family** — Draycott, *Roman Domestic Medical Practice*; Cato & Varro, *Roman Farm Management*; Bradley, *Slavery and Society at Rome* ★; McCall, *Clan Fabius*.
-    - |-
-      **Empire, patronage & informers** — Millar, *The Emperor in the Roman World* ★; Saller, *Personal Patronage under the Early Empire* ★; Rutledge, *Imperial Inquisitions* ★ (the *delatores*).
-    - |-
-      **Arena & games** — Fagan, *The Lure of the Arena* ★; Futrell, *Blood in the Arena* ★.
-    - |-
-      **Comparative empire** — Scheidel (ed.), *Rome and China* ★.
+    text: — *Roma invicta.* —
 - title: A Gazetteer of the Roman World
   blocks:
   - type: p
@@ -4070,8 +4102,8 @@ chapters:
     style: small
     text: |-
       **At the table.** Provinces are where careers are made and lost: a governorship is a licence to grow rich (and a *repetundae* trial waiting to happen — see Scenario II), a frontier command is a springboard to the purple (and to civil war), and the edge of the map is where a campaign can leave the city behind entirely.
-- title: Dramatis Personae
-  blocks:
+  - type: h3
+    text: Dramatis Personae
   - type: p
     style: lead
     text: |-
@@ -4331,60 +4363,7 @@ chapters:
     - label: At the Table
       text: |-
         In the default Imperial era his heirs sit the throne — use Augustus as the template for *your* princeps: the distant, all-seeing power whose favour makes careers and whose suspicion ends them.
-- title: Common Terms
-  blocks:
-  - type: p
-    style: body
-    text: 'A sprinkling of Latin brings the table to Rome. A few of the most useful:'
-  - type: list
-    items:
-    - |-
-      **SPQR** — *Senatus Populusque Romanus*, “the Senate and People of Rome,” the state itself; stamped on standards, coins, and buildings.
-    - |-
-      **Serica / Seres** — the distant land of silk at the eastern edge of the world (China), and its people; known to Rome only through Parthian middlemen and wild rumor.
-    - "**Princeps** — “first citizen,” the Emperor's polite title; he pretends not to be a king."
-    - |-
-      **Cursus honorum** — the “course of offices,” the fixed ladder of political posts (quaestor, aedile, praetor, consul) an ambitious man climbs.
-    - |-
-      **Patronus / Cliens** — patron and client; the bond of protection and loyalty that structures all society.
-    - |-
-      **Salutatio** — the dawn reception where clients call on their patron to pay respects and ask favors.
-    - |-
-      **Civis Romanus sum** — “I am a Roman citizen”; the phrase that demands legal protection and the right of appeal.
-    - |-
-      **Legio / Centuria / Contubernium** — legion (~5,000 men) / century (~80, led by a centurion) / tent-group (8, the squad).
-    - "**Pilum / Gladius / Scutum** — javelin / short sword / shield: the legionary's core kit."
-    - '**Testudo** — “tortoise,” the shield formation that covers a unit front and top.'
-    - '**Limes** — the fortified frontier of the Empire.'
-    - '**Auxilia** — non-citizen support troops; earn citizenship on discharge.'
-    - |-
-      **Denarius / Sesterce / As / Aureus** — the silver, brass, copper, and gold of Roman coinage (1 aureus = 25 denarii = 100 sesterces = 400 asses).
-    - |-
-      **Panem et circenses** — “bread and circuses”: the grain dole and public games that kept the mob content.
-    - |-
-      **Editor** — the sponsor who pays for and presides over the games; he decides *missio* (mercy) with the crowd.
-    - |-
-      **Missio / Rudis** — the reprieve of a defeated gladiator / the wooden sword awarded at his freedom.
-    - '**Lanista / Familia / Ludus** — the owner-trainer / the troupe / the gladiator school.'
-    - |-
-      **Collegium** — a guild or association (trade, burial, religious) — and often a front for a street gang.
-    - |-
-      **Vigiles / Cohortes Urbanae** — the night-watch/fire-brigade and the city military police.
-    - |-
-      **Frumentarius** — a soldier-courier who doubled as the Empire's nearest thing to a secret agent.
-    - '**Libertus / Peregrinus** — a freed slave / a free non-citizen provincial.'
-    - '**Pater familias** — the male head of a household, with legal power over its members.'
-    - |-
-      **Toga / Tunica / Stola** — the citizen's formal wrap / everyday garment / a married woman's dress.
-    - |-
-      **Haruspex / Augur** — a reader of entrails / a reader of birds and omens; official diviners of the state.
-    - |-
-      **Imperium** — the formal power to command (armies, the law); held by consuls, praetors, governors, and the Emperor.
-    - '**Ave / Vale / Salve** — “hail” / “farewell” / “be well” (a common greeting).'
-  - type: p
-    style: body
-    text: — *Roma invicta.* —
-- title: 'Appendix: Sources & Resources'
+- title: Sources & Resources
   blocks:
   - type: p
     style: lead
@@ -4417,7 +4396,13 @@ chapters:
     - |-
       **Bang, Peter Fibiger** — *The Roman Bazaar: A Comparative Study of Trade and Markets in a Tributary Empire*.
     - |-
+      **Beard, Mary** — *SPQR: A History of Ancient Rome*.
+    - |-
+      **Beard, Mary; North, John; Price, Simon** — *Religions of Rome*.
+    - |-
       **Botsford, George Willis** — *The Roman Assemblies from their Origin to the End of the Republic*.
+    - |-
+      **Bradley, Keith** — *Slavery and Society at Rome*.
     - |-
       **Campbell** — *The Ancient World (From the Dawn of History to the Conversion of Constantine)*.
     - |-
@@ -4428,6 +4413,10 @@ chapters:
       **Draycott, Jane** — *Roman Domestic Medical Practice in Central Italy: From the Middle Republic to the Early Empire*.
     - |-
       **Driediger-Murphy, Lindsay G.** — *Roman Republican Augury: Freedom and Control*.
+    - |-
+      **Fagan, Garrett G.** — *The Lure of the Arena: Social Psychology and the Crowd at the Roman Games*.
+    - |-
+      **Futrell, Alison** — *Blood in the Arena: The Spectacle of Roman Power*.
     - |-
       **Gargola, Daniel J.** — *The Shape of the Roman Order: The Republic and Its Space*.
     - |-
@@ -4447,6 +4436,8 @@ chapters:
     - |-
       **McCall, Jeremiah** — *Clan Fabius, Defenders of Rome: A History of the Republic's Most Illustrious Family*.
     - |-
+      **Millar, Fergus** — *The Emperor in the Roman World*.
+    - |-
       **Mommsen, Theodor** — *The History of Rome (Books 1-5)*.
     - |-
       **Morstein-Marx, Robert** — *Mass Oratory and Political Power in the Late Roman Republic*.
@@ -4457,15 +4448,25 @@ chapters:
     - |-
       **Pina Polo, Francisco** — *The Consul at Rome: The Civil Functions of the Consuls in the Roman Republic*.
     - |-
+      **Robinson, O.F.** — *The Criminal Law of Ancient Rome*.
+    - |-
       **Roselaar, Saskia T.** — *Public Land in the Roman Republic: A Social and Economic History of Ager Publicus in Italy, 396-89 BC*.
     - |-
       **Rosenstein, Nathan** — *Rome and the Mediterranean 290 to 146 BC: The Imperial Republic*.
     - |-
+      **Rutledge, Steven H.** — *Imperial Inquisitions: Prosecutors and Informants from Tiberius to Domitian*.
+    - |-
       **Sage, Michael M.** — *The Republican Roman Army: A Sourcebook*.
+    - |-
+      **Saller, Richard P.** — *Personal Patronage under the Early Empire*.
     - |-
       **Sandberg, Kaj** — *Magistrates and Assemblies: A Study of Legislative Practice in Republican Rome (Acta Instituti Romani Finlandiae)*.
     - |-
       **Scarre, Chris** — *The Penguin Historical Atlas of Ancient Rome*.
+    - |-
+      **Scheidel, Walter (ed.)** — *Rome and China: Comparative Perspectives on Ancient World Empires*.
+    - |-
+      **Talbert, Richard J.A.** — *The Senate of Imperial Rome*.
     - |-
       **van der Blom, Henriette; Gray, Christa; Steel, Catherine (eds.)** — *Institutions and Ideology in Republican Rome: Speech, Audience and Decision*.
     - |-
@@ -4474,6 +4475,34 @@ chapters:
       **Watts, Edward J.** — *Mortal Republic: How Rome Fell into Tyranny*.
     - |-
       **Wildfang, Robin Lorsch** — *Rome's Vestal Virgins*.
+  - type: h3
+    text: Further Reading by Topic
+  - type: p
+    style: body
+    text: |-
+      For GMs who want to dig deeper — or settle a table argument — these are good next steps from the shelf above, grouped by subject. A star (★) marks works on the Imperial era, where the setting's default period is best served.
+  - type: list
+    items:
+    - |-
+      **Republic & its fall** — Mommsen, *The History of Rome*; Watts, *Mortal Republic*; Marin, *Blood in the Forum*; Beard, *SPQR* ★.
+    - |-
+      **Oratory, the contio & assemblies** — Morstein-Marx, *Mass Oratory and Political Power*; van der Blom, *Oratory and Political Career in the Late Roman Republic*; Botsford, *The Roman Assemblies*.
+    - |-
+      **Senate & magistracies** — Piña Polo, *The Consul at Rome*; Sandberg, *Magistrates and Assemblies*; Talbert, *The Senate of Imperial Rome* ★.
+    - |-
+      **Law & the courts** — Alexander, *Trials in the Late Roman Republic*; Robinson, *The Criminal Law of Ancient Rome* ★.
+    - |-
+      **Religion & augury** — Driediger-Murphy, *Roman Republican Augury*; Wildfang, *Rome's Vestal Virgins*; Beard, North & Price, *Religions of Rome* ★.
+    - |-
+      **Philosophy** — Seneca (Hadas, ed.), *Stoic Philosophy of Seneca*; Lucretius, *On the Nature of Things*.
+    - |-
+      **Household, slavery & family** — Draycott, *Roman Domestic Medical Practice*; Cato & Varro, *Roman Farm Management*; Bradley, *Slavery and Society at Rome* ★; McCall, *Clan Fabius*.
+    - |-
+      **Empire, patronage & informers** — Millar, *The Emperor in the Roman World* ★; Saller, *Personal Patronage under the Early Empire* ★; Rutledge, *Imperial Inquisitions* ★ (the *delatores*).
+    - |-
+      **Arena & games** — Fagan, *The Lure of the Arena* ★; Futrell, *Blood in the Arena* ★.
+    - |-
+      **Comparative empire** — Scheidel (ed.), *Rome and China* ★.
   - type: h3
     text: Digital Tools & Resources
   - type: list
