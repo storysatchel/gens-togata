@@ -36,7 +36,13 @@ table.gear td, table.gear th { vertical-align: top; }
 table.gear th { background: #6e1b1b; color: #f6efdf; padding: 1px 3px; text-align: left; }
 table.gear td { border-bottom: 0.5px solid #cdb78c; padding: 0.5px 3px; }
 table.gear tr:nth-child(even) td { background: #f3ead6; }
-.sidebar { break-inside: avoid; border-left: 2px solid #8a5a12; background: #f1e7cf; padding: 3px 6px; margin: 5px 0; font-size: 6.4pt; }
+.sidebar { break-inside: avoid; border-top: 2px solid #8a5a12; background: #f1e7cf; padding: 3px 6px; margin: 5px 0; font-size: 6.4pt; }
+.sidebar p { text-align: left; }
+/* In the outer column a sidebar is a Tufte-style margin note: floated to the outer edge and pulled into the margin by a
+   negative margin, with the following text wrapping beside it. Outer is right on a recto, left on a verso (page classes
+   stand in for @page :right/:left). The hang must not exceed SIDEBAR_HANG in src/templates/page.ts. */
+.recto .column-right .sidebar { float: right; clear: right; width: 136px; margin: 2px -30px 4px 8px; }
+.verso .column-left .sidebar { float: left; clear: left; width: 136px; margin: 2px 8px 4px -30px; }
 .sidebar h4 { margin-top: 1px; color: #8a5a12; }
 .tag { font-variant: small-caps; font-weight: bold; color: #8a5a12; }
 .gly { font-family: 'Genesys'; font-style: normal; font-weight: normal; font-size: 1.15em; line-height: 1; vertical-align: -0.08em; letter-spacing: 0.5px; }
@@ -83,3 +89,7 @@ sup.en { font-size: .64em; line-height: 0; vertical-align: super; color: #8a5a12
 .legal-page { padding-top: 3px; break-after: page; }
 .column-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.15in; align-items: start; margin: 3px 0 6px 0; }
 .column { min-width: 0; }
+.page { display: flow-root; }
+.page + .page { break-before: page; }
+p.runs-on { text-align-last: justify; margin-bottom: 0; }
+.endnotes.continued { margin-top: 0; border-top: 0; padding-top: 0; }

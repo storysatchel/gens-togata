@@ -19,11 +19,13 @@ function marked(token: string, key: number): ReactNode {
   return <span key={key} className="tag">{token}</span>;
 }
 
+// Inline markup spans; text must not be split inside one.
+export const inlinePattern = /(\[\[(.+?)\]\]|\{\{(\d+)\}\}|●|\*\*(.+?)\*\*|\*(.+?)\*)/gs;
+
 export function Inline({ text }: { text: string }): ReactNode {
-  const pattern = /(\[\[(.+?)\]\]|\{\{(\d+)\}\}|●|\*\*(.+?)\*\*|\*(.+?)\*)/gs;
   const parts: ReactNode[] = [];
   let last = 0;
-  for (const match of text.matchAll(pattern)) {
+  for (const match of text.matchAll(inlinePattern)) {
     const index = match.index ?? 0;
     if (index > last) parts.push(text.slice(last, index));
     if (match[2] !== undefined) parts.push(marked(match[2], index));

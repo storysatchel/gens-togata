@@ -74,14 +74,7 @@ chapters:
   - type: p
     style: small
     text: |-
-      `type: sidebar` — a boxed aside. Its `body` is a **list** of paragraph strings (not `text`).
-  - type: sidebar
-    title: Example Sidebar
-    body:
-    - |-
-      This is a sidebar. It carries optional rules, designer notes, or historical colour out of the main flow.
-    - |-
-      A second paragraph shows paragraph spacing inside the box.
+      `type: sidebar` — a boxed aside. In the page's outer column (right on a recto, left on a verso) it floats to the outer edge and hangs into the margin, with the text after it wrapping beside it; in the inner column it is a plain box. Its `body` is a **list** of paragraph strings (not `text`).
   - type: h3
     text: Read-Aloud
   - type: p
@@ -124,6 +117,21 @@ chapters:
       Each speaker makes a social check across three to five rounds.
     - |-
       Exceed the threshold to win the crowd; exceed half for a partial result.
+  - type: p
+    style: body
+    text: |-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  - type: sidebar
+    title: Example Sidebar
+    body:
+    - |-
+      This is a sidebar. It carries optional rules, designer notes, or historical colour out of the main flow.
+    - |-
+      A second paragraph shows paragraph spacing inside the box.
+  - type: p
+    style: body
+    text: |-
+      A sidebar sits beside the surrounding prose when it falls in the outer column. This paragraph follows the sidebar in the source, so its lines should wrap around the box before returning to the full column width. The gap keeps the prose distinct from the sidebar, while the box extends beyond the edge of the text block into the page margin. Continue reading to see how the text resumes its ordinary measure below the aside.
 - title: 'Part III: Game Content'
   blocks:
   - type: p
