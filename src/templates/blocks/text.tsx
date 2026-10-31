@@ -1,7 +1,7 @@
 import { Inline } from "../../inline/Inline";
 import type { TextBlock, SidebarBlock, ProcedureBlock, ListBlock, EndnotesBlock } from "../../content/types";
 
-const paragraphClasses: Record<string, string> = { body: "", lead: "lead", small: "small", deriv: "deriv", act: "act", chk: "chk" };
+const paragraphClasses: Record<string, string> = { body: "", lead: "lead", small: "small", deriv: "deriv", act: "act", chk: "chk", opening: "opening" };
 
 export function TextBlockView({ block, id, runsOn }: { block: TextBlock; id?: string; runsOn?: boolean }) {
   switch (block.type) {
@@ -9,7 +9,7 @@ export function TextBlockView({ block, id, runsOn }: { block: TextBlock; id?: st
     case "h3": return <h3 id={id}><Inline text={block.text} /></h3>;
     case "h4": return <h4 id={id}><Inline text={block.text} /></h4>;
     case "scenario": return <h3 id={id} className="scenario-h"><Inline text={block.text} /></h3>;
-    case "p": return <p className={[paragraphClasses[block.style ?? "body"] ?? "", runsOn ? "runs-on" : ""].filter(Boolean).join(" ")}><Inline text={block.text} /></p>;
+    case "p": return <p className={[paragraphClasses[block.style ?? "body"] ?? "", runsOn ? "runs-on" : ""].filter(Boolean).join(" ")}><Inline text={block.text} sidebar={block.sidebar ? <Sidebar block={block.sidebar} /> : undefined} /></p>;
     case "readaloud": return <div className="readaloud"><Inline text={block.text} /></div>;
     case "synopsis": return <div className="synopsis"><strong>Synopsis.</strong> <Inline text={block.text} /></div>;
     case "example": return <div className="ex"><Inline text={block.text} /></div>;

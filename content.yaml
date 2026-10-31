@@ -12,6 +12,22 @@ chapters:
 - title: Introduction
   blocks:
   - type: p
+    style: opening
+    text: |-
+      “Julius Kanus, a man of peculiar greatness, whom even the fact of his having been born in this century does not prevent our admiring, had a long dispute with Gaius, and when as he was going away that Phalaris of a man said to him, ‘That you may not delude yourself with any foolish hopes, I have ordered you to be executed,’ he answered, ‘I thank you, most excellent prince.’ I am not sure what he meant: for many ways of explaining his conduct occur to me. Did he wish to be reproachful, and to show him how great his cruelty must be if death became a kindness? or did he upbraid him with his accustomed insanity? for even those whose children were put to death, and whose goods were confiscated, used to thank him: or was it that he willingly received death, regarding it as freedom? Whatever he meant, it was a magnanimous answer.
+  - type: p
+    style: opening
+    text: |-
+      Some one may say, ‘After this Gaius might have let him live.’ Kanus had no fear of this: the good faith with which Gaius carried out such orders as these was well known. Will you believe that he passed the ten intervening days before his execution without the slightest despondency? it is marvellous how that man spoke and acted, and how peaceful he was.
+  - type: p
+    style: opening
+    text: |-
+      He was playing at draughts when the centurion in charge of a number of those who where going to be executed bade him join them: on the summons he counted his men and said to his companion, ‘Mind you do not tell a lie after my death, and say that you won;’ then, turning to the centurion, he said ‘You will bear me witness that I am one man ahead of him.’ Do you think that Kanus played upon that draught-board? nay, he played with it.
+  - type: p
+    style: opening
+    text: |-
+      His friends were sad at being about to lose so great a man: ‘Why,’ asked he, ‘are you sorrowful? you are enquiring whether our souls are immortal, but I shall presently know.’ Nor did he up to the very end cease his search after truth, and raised arguments upon the subject of his own death. His own teacher of philosophy accompanied him, and they were not far from the hill on which the daily sacrifice to Caesar our god was offered, when he said, ‘What are you thinking of now, Kanus? or what are your ideas?’ ‘I have decided,’ answered Kanus, ‘at that most swiftly-passing moment of all to watch whether the spirit will be conscious of the act of leaving the body.’ He promised, too, that if he made any discoveries, he would come round to his friends and tell them what the condition of the souls of the departed might be.”{{1}}
+  - type: p
     style: lead
     text: |-
       In Rome, a person's standing shapes what doors open, whose word is believed, and what a mistake may cost. A legionary, an advocate, a trader, and a freed artisan may have little in common, but each has ties to other people: a patron to satisfy, a household to protect, a rival to answer, or a favor to repay. Those ties can draw them into the same trouble.
@@ -22,12 +38,13 @@ chapters:
   - type: p
     style: body
     text: |-
-      At the table, the GM describes the world and portrays the people the characters meet; the players decide what their characters attempt. When an outcome is uncertain and consequential, the group uses a Genesys check: the dice establish whether the attempt succeeds and what advantages, complications, or other consequences accompany it. Those results change the situation, and play continues from there. A successful plea can win a hearing while making an enemy; a failed investigation can still uncover a useful lead.
-  - type: sidebar
-    title: A Note on Slavery and History
-    body:
-    - |-
-      Rome was built on slavery, conquest, and brutal spectacle. This book does not sanitize that, but it is a game played by friends: treat enslaved characters as people with agency and goals (many of this book's archetypes and careers assume exactly that), keep the real cruelty at the “tasteful fade” your table prefers, and talk openly about lines and veils before you start. The horror is part of the drama; it is never the point.
+      At the table, the GM describes the world and portrays the people the characters meet; the players decide what their characters attempt. {{sidebar}} When an outcome is uncertain and consequential, the group uses a Genesys check: the dice establish whether the attempt succeeds and what advantages, complications, or other consequences accompany it. Those results change the situation, and play continues from there. A successful plea can win a hearing while making an enemy; a failed investigation can still uncover a useful lead.
+    sidebar:
+      type: sidebar
+      title: A Note on Slavery and History
+      body:
+      - |-
+        Rome was built on slavery, conquest, and brutal spectacle. This book does not sanitize that, but it is a game played by friends: treat enslaved characters as people with agency and goals (many of this book's archetypes and careers assume exactly that), keep the real cruelty at the “tasteful fade” your table prefers, and talk openly about lines and veils before you start. The horror is part of the drama; it is never the point.
   - type: p
     style: body
     text: |-
@@ -36,6 +53,10 @@ chapters:
     style: body
     text: |-
       Start with the **Genesys Core Rulebook**, narrative dice, and character sheets. Players can choose an archetype and career in **Character Creation**, then consult the skills, talents, and equipment that interest them. The GM can use **Game Mastering Rome** for a campaign frame and **Starter Scenarios** for an adventure; **The Theater of Power** provides social-encounter options for everyone. The Gazetteer and Lexicon are references to visit as needed.
+  - type: endnotes
+    title: Notes
+    items:
+    - Seneca, *De Tranquillitate Animi* 14.4–9, trans. Aubrey Stewart, in *Minor Dialogues, Together with the Dialogue on Clemency* (London, 1889), pp. 280–281.
 - title: Setting Overview
   blocks:
   - type: p

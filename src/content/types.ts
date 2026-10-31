@@ -1,6 +1,6 @@
 export type InlineBlockType = "h2" | "h3" | "h4" | "scenario" | "p" | "readaloud" | "synopsis" | "example" | "sidebar" | "procedure" | "list" | "table" | "statblock" | "endnotes";
 
-export interface TextBlock { type: "h2" | "h3" | "h4" | "scenario" | "p" | "readaloud" | "synopsis" | "example"; text: string; style?: string }
+export interface TextBlock { type: "h2" | "h3" | "h4" | "scenario" | "p" | "readaloud" | "synopsis" | "example"; text: string; style?: string; sidebar?: SidebarBlock }
 export interface SidebarBlock { type: "sidebar"; title: string; body?: string[] }
 export interface ProcedureBlock { type: "procedure"; title: string; steps: string[] }
 export interface ListBlock { type: "list"; items: string[] }

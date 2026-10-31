@@ -24,6 +24,10 @@ Content and presentation are decoupled. One source file renders to multiple form
 Inline emphasis in `content.yaml` uses light markdown the renderers translate:
 `**bold**`, `*italic*`, and `[[keyword]]` for domain-styled runs (dice symbols, tags).
 
+Paragraphs with `style: opening` use the full text width and a distinct quotation treatment; they can continue onto subsequent pages.
+
+A paragraph can place a sidebar at a specific point in its text: add one `{{sidebar}}` marker and a `sidebar` field containing `type: sidebar`, `title`, and `body` (a list of paragraphs). The marker travels with its paragraph when columns split; narration reads the sidebar at the marker. In an outer column the sidebar floats into the page margin and subsequent text wraps around it. In an inner column it remains a full-width box.
+
 ## Build
 
 Requires [Bun](https://bun.sh/) and the locked npm dependencies (`bun install`).
@@ -38,7 +42,7 @@ bun run typecheck # TypeScript static check
 ```
 
 `takumi-pdf` renders `.tsx` templates directly to a paged PDF; no intermediate HTML or headless browser is required. The narration renderer remains a separate output path over the same YAML data.
-Body copy uses 8 pt type with 1.4 line-height and ragged-right alignment to avoid excessive word spacing in narrow columns. Specialized text, including sidebars and stat blocks, uses its own sizes.
+Body copy uses 7 pt type with 1.4 line-height and justified alignment. Specialized text, including sidebars and stat blocks, uses its own sizes and alignment.
 The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). `make folio` (and CI) imposes it 2-up on letter paper in 16-page signatures for duplex booklet printing, using [`pdfimpose`](https://framagit.org/spalax/pdfimpose) (`hardcover --signature 2x1 --group 4`), run pinned through `uvx` — install [uv](https://docs.astral.sh/uv/); no TeX needed.
 Always verify the PDF visually (overflow/overlap are silent) before release.
 

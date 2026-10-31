@@ -29,7 +29,7 @@ function statSpeech(block: StatBlock): string {
 function blockSpeech(block: ContentBlock): string {
   switch (block.type) {
     case "h2": case "h3": case "h4": case "scenario": return `${block.type === "scenario" ? "Scenario. " : ""}${plain(block.text).replace(/\.+$/, "")}.`;
-    case "p": return plain(block.text);
+    case "p": return plain(block.text.replace("{{sidebar}}", block.sidebar ? ` ${block.sidebar.title}. ${(block.sidebar.body ?? []).join(" ")} ` : ""));
     case "readaloud": return `Read aloud. ${plain(block.text)}`;
     case "synopsis": return `Synopsis. ${plain(block.text)}`;
     case "example": return plain(block.text);
