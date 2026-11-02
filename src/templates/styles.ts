@@ -36,9 +36,7 @@ const glyph: ElementStyle = {
 };
 const note: ElementStyle = { fontSize: 4.48, baselineShift: 2.8, inlineMarginLeft: 0.3, color: colors.annotation, fontWeight: "bold" };
 const keyword: ElementStyle = { fontWeight: "bold", color: colors.annotation };
-const table = {
-  statCellStyle: { fontSize: 4.2, paddingTop: 1.5, paddingBottom: 1.5, paddingLeft: 0.5, paddingRight: 0.5, textAlign: "center" },
-} satisfies { statCellStyle: ElementStyle };
+const statCell: ElementStyle = { fontSize: 4.2, paddingTop: 1.5, paddingBottom: 1.5, paddingLeft: 0.5, paddingRight: 0.5, textAlign: "center" };
 
 const heading: ElementStyle = { fontWeight: 700, textAlign: "left", keepWithNext: true, marginTop: 8, marginBottom: 4 };
 const panel: ElementStyle = { backgroundColor: colors.panel, paddingLeft: 6, paddingRight: 6, marginBottom: 6, textAlign: "left", allowLineSplit: true };
@@ -77,14 +75,13 @@ const styles = {
 
 /** The book's layout and visual vocabulary, independent of any output adapter. */
 export const bookTheme = {
-  name: "Gens Togata",
   geometry,
   typography,
   colors,
   note,
   keyword,
   glyph,
-  table,
+  statCell,
   styles,
 } as const;
 

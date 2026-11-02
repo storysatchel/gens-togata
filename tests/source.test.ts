@@ -36,6 +36,6 @@ test("dice, keywords, note references, and metric tables obtain their presentati
   expect(prose.children![1]!.properties?.style).toMatchObject({ fontWeight: "bold", color: bookTheme.colors.annotation });
   expect(prose.children![2]!.properties?.style).toMatchObject({ baselineShift: 2.8 });
   const cell = input.elements.find(element => element.properties?.sourceId === "metrics")!.children![0]!.children![0]!;
-  expect(cell.properties?.style).toMatchObject(bookTheme.table.statCellStyle);
+  expect(cell.properties?.style).toMatchObject(bookTheme.statCell);
   expect(runs[1]!.properties?.style).toBeUndefined();
 });

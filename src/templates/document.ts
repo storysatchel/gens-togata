@@ -73,7 +73,7 @@ export async function documentInput(document: DocumentData, root: string, pageNu
       : kind === "dice" || kind === "result" ? { ...bookTheme.glyph, ...(kind === "dice" ? { color: bookTheme.colors.dice[name as keyof typeof bookTheme.colors.dice] } : {}) } : undefined;
     if (style) element.properties = { ...props, style: { ...props.style, ...style } };
     if (role === "stat-metrics") for (const row of element.children ?? []) for (const cell of row.children ?? []) {
-      cell.properties = { ...cell.properties, style: { ...bookTheme.table.statCellStyle, ...cell.properties?.style } };
+      cell.properties = { ...cell.properties, style: { ...bookTheme.statCell, ...cell.properties?.style } };
     }
   }
   // The pinned engine overlaps a full-width child with the preceding column, so each band becomes its own root element.
