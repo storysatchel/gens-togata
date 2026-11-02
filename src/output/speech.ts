@@ -13,7 +13,7 @@ function speechclean(text: string): string {
 
 function role(element: Element): string { return element.properties?.semanticRole ?? ""; }
 function omitted(element: Element): boolean {
-  return ["notes", "note", "note-ref", "decoration"].includes(role(element)) || ["image", "rule", "spacer"].includes(element.type);
+  return ["notes", "note", "note-ref"].includes(role(element)) || element.type === "image";
 }
 
 // Inline children are runs, not separately spaced blocks. Their semantic roles,
@@ -41,11 +41,7 @@ function blockSpeech(element: Element): string {
   if (omitted(element)) return "";
   if (element.type === "table") return tableSpeech(element);
   if (element.type === "list" && element.list?.kind === "ordered") {
-    const start = Number(element.list.start ?? 1);
-    return (element.children ?? []).map((item, index) => {
-      const spoken = blockSpeech(item);
-      return spoken ? `${start + index}. ${spoken}` : "";
-    }).filter(Boolean).join(" ");
+    return (element.children ?? []).map((item, index) => `${index + 1}. ${blockSpeech(item)}`).join(" ");
   }
   if (element.type === "story" || element.type === "list") return (element.children ?? []).map(blockSpeech).filter(Boolean).join(" ");
   const { partLabel, partTitle } = element.properties ?? {};
