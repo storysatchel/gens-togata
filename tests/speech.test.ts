@@ -14,7 +14,7 @@ test("narrates the authored logical tree and groups chapters by authored audio p
         { type: "story", content: "", columns: 2, gutter: 12, children: [
           { type: "p", content: "Before the first part." },
         ] },
-        { type: "h1", content: "Part I: The Empire", properties: { semanticRole: "part" } },
+        { type: "h1", content: "Part I: The Empire", properties: { semanticRole: "part", partLabel: "Part I", partTitle: "The Empire" } },
         { type: "h1", content: "The Collegia", properties: { semanticRole: "chapter", audioPart: 1 } },
         { type: "story", content: "", columns: 2, gutter: 12, children: [
           { type: "p", content: "", children: [
@@ -62,24 +62,4 @@ test("narrates the authored logical tree and groups chapters by authored audio p
   } finally {
     await rm(root, { recursive: true, force: true });
   }
-});
-
-test("narration keeps part labels and aside titles as separate spoken sentences", async () => {
-  const root = await mkdtemp(join(tmpdir(), "gens-speech-"));
-  try {
-    const run = (content: string, properties: Record<string, unknown>) => ({ type: "text", content, properties: { sourceId: `run-${content}` } });
-    await writeNarration({
-      meta: { title: "T", subtitle: "S", tagline: "G", system: "Genesys", legal: [] },
-      elements: [
-        { type: "h1", content: "Part I: Playing", properties: { sourceId: "part", semanticRole: "part", partLabel: "Part I", partTitle: "Playing" } },
-        { type: "h1", content: "", children: [run("Chapter", {})], properties: { sourceId: "chapter", semanticRole: "chapter", audioPart: 1 } },
-        { type: "story", content: "", columns: 2, gutter: 12, balance: false, properties: { sourceId: "story" }, children: [
-          { type: "sidebar", content: "", children: [run("A Brief Timeline", {})], properties: { sourceId: "aside-title", semanticRole: "aside" } },
-          { type: "sidebar", content: "", children: [run("Kingdom began early.", {})], properties: { sourceId: "aside-body", semanticRole: "aside" } },
-        ] },
-      ],
-    }, root);
-    const transcript = await readFile(join(root, "audio", "transcript.txt"), "utf8");
-    expect(transcript).toContain("Part I: Playing. Chapter. A Brief Timeline. Kingdom began early.");
-  } finally { await rm(root, { recursive: true, force: true }); }
 });
