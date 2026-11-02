@@ -3,7 +3,7 @@ import type { Element } from "@vmprint/engine";
 import type { DocumentData } from "../content/types";
 
 function speechclean(text: string): string {
-  const replacements: Array<[string, string]> = [["HS", "sesterces"], [" HP:", " Hard Points:"], ["Price/Rarity", "price and rarity"], ["(R, military)", "rare, military only"], ["(R)", "rare"], [" | ", ". "], ["|", ". "]];
+  const replacements: Array<[string, string]> = [["HS", "sesterces"], [" HP:", " Hard Points:"], ["Price/Rarity", "price and rarity"], ["(R, military)", "rare, military only"], ["(R)", "rare"]];
   for (const [a, b] of replacements) text = text.replaceAll(a, b);
   text = text.replace(/&/g, "and");
   const patterns: Array<[RegExp, string]> = [[/\bXP\b/g, "experience points"], [/\bGMs\b/g, "Game Masters"], [/\bGM\b/g, "Game Master"], [/\bPCs\b/g, "player characters"], [/\bPC\b/g, "player character"], [/\bEnc\b/g, "Encumbrance"], [/\bDam\b/g, "Damage"], [/\bCrit\b/g, "Critical"], [/\bSil\b/g, "Silhouette"], [/\bd10\b/g, "d-ten"], [/\bc\.\s/g, "circa "]];
@@ -31,29 +31,10 @@ function sentence(text: string): string {
 }
 
 function tableSpeech(element: Element): string {
-  const rows = element.children ?? [];
-  const headerCount = element.table?.headerRows ?? 1;
-  const headers: string[] = [];
-  const result: string[] = [];
-  rows.forEach((row, index) => {
-    const cells = row.children ?? [];
-    const isHeader = index < headerCount || ["header", "table-header", "thead"].includes(role(row));
-    let column = 0;
-    const fields: string[] = [];
-    for (const cell of cells) {
-      const text = inlineSpeech(cell).trim();
-      const span = Math.max(1, Number(cell.properties?.colSpan) || 1);
-      if (isHeader) {
-        for (let offset = 0; offset < span; offset++) headers[column + offset] = text;
-      } else if (text) {
-        const heading = headers[column];
-        fields.push(heading ? `${heading}: ${text}` : text);
-      }
-      column += span;
-    }
-    if (fields.length) result.push(sentence(fields.join("; ")));
-  });
-  return result.join(" ");
+  const [header, ...rows] = element.children ?? [];
+  const headers = (header?.children ?? []).map(cell => inlineSpeech(cell).trim());
+  return rows.map(row => sentence((row.children ?? []).map((cell, column) => [headers[column], inlineSpeech(cell).trim()] as const)
+    .filter(([, text]) => text).map(([heading, text]) => heading ? `${heading}: ${text}` : text).join("; "))).filter(Boolean).join(" ");
 }
 
 function blockSpeech(element: Element): string {
