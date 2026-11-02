@@ -3,7 +3,6 @@ import { resolve } from "node:path";
 import type { DocumentInput, Element } from "@vmprint/engine";
 import LocalFontManager from "@vmprint/local-fonts";
 import type { DocumentData } from "../content/types";
-import { inline } from "../inline/inline";
 import { bookTheme } from "./styles";
 
 export interface ContentsEntry { id: string; label: string; level: number }
@@ -47,7 +46,7 @@ export function fontManager(root: string): LocalFontManager {
     source("DejaVu Sans", "node_modules/@fontsource/dejavu-sans/files/dejavu-sans-latin-400-normal.woff"),
   ] });
 }
-const text = (type: string, value: string): Element => ({ type, content: "", children: inline(value) });
+const text = (type: string, content: string): Element => ({ type, content });
 const pageStart = (element: Element): Element => ({ ...element, properties: { ...element.properties, style: { ...element.properties?.style, pageBreakBefore: true } } });
 
 export async function documentInput(document: DocumentData, root: string, pageNumbers: ReadonlyMap<string, number> = new Map()): Promise<DocumentInput> {

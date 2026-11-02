@@ -4,7 +4,7 @@ meta:
   tagline: Every block, labeled — so we can talk about it by name.
   system: A component reference for the Genesys Roleplaying Game supplement
   legal:
-    - Gens Togata Style Guide — a living reference rendered with the same VMPrint document builders and typed styles as the rulebook. Every block is labeled with its YAML `type` (and `style`, where relevant) so the layout can be discussed precisely. This page is the **legal** component; the title page before it is the **cover**; the page number below is the **footer**; the Contents page that follows is the **toc**.
+    - Gens Togata Style Guide — a living reference rendered with the same VMPrint document builders and typed styles as the rulebook. Every block is labeled with its YAML `type` (and `style`, where relevant) so the layout can be discussed precisely. This page is the legal component; the title page before it is the cover; the page number below is the footer; the Contents page that follows is the toc.
 elements:
   - type: h1
     content: ""
