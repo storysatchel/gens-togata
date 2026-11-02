@@ -35,7 +35,7 @@ const glyph: ElementStyle = {
   fontSize: 8.05, baselineShift: -0.56, letterSpacing: 0.375,
 };
 const note: ElementStyle = { fontSize: 4.48, baselineShift: 2.8, inlineMarginLeft: 0.3, color: colors.annotation, fontWeight: "bold" };
-const keyword: ElementStyle = { fontWeight: "bold", color: colors.annotation };
+const keyword: ElementStyle = { fontVariant: "small-caps", letterSpacing: 0.25, fontWeight: "bold", color: colors.annotation };
 const statCell: ElementStyle = { fontSize: 4.2, paddingTop: 1.5, paddingBottom: 1.5, paddingLeft: 0.5, paddingRight: 0.5, textAlign: "center" };
 
 const heading: ElementStyle = { fontWeight: 700, textAlign: "left", keepWithNext: true, marginTop: 8, marginBottom: 4 };

@@ -9,6 +9,11 @@ import { bookTheme } from "../src/templates/styles";
 
 const whitespace = (value: string) => value.replace(/\s/g, "");
 const containers: Record<string, true> = { story: true, table: true, "table-row": true, "table-cell": true, list: true, text: true };
+const expectedLaidOutText = (element: any): string => {
+  if (element.children?.length) return element.children.map(expectedLaidOutText).join("");
+  const text = element.content ?? "";
+  return element.properties?.semanticRole === "keyword" ? text.toUpperCase() : text;
+};
 
 for (const file of ["content.yaml", "styleguide.yaml"]) {
   test(`${file}: every authored element is laid out exactly once, inside the margins, with resolved navigation`, async () => {
@@ -29,7 +34,7 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
     for (const element of walkElements(document.elements)) {
       const id = element.properties?.sourceId;
       if (!id || containers[element.type]) continue;
-      const expected = whitespace(elementText(element));
+      const expected = whitespace(expectedLaidOutText(element));
       if (expected && whitespace(laidOut.get(id) ?? "") !== expected) wrong.push(id);
     }
     expect(wrong).toEqual([]);
