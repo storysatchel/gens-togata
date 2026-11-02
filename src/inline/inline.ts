@@ -1,15 +1,8 @@
 import type { Element, ElementStyle } from "@vmprint/engine";
-
 const symbols: Record<string, string> = { advantage: "a", success: "s", triumph: "t", threat: "h", failure: "f", despair: "d" };
-const dice: Record<string, [string, string]> = {
-  boost: ["j", "#1f8f80"], setback: ["j", "#231f20"], difficulty: ["k", "#552c7f"],
-  ability: ["k", "#2e8b43"], proficiency: ["l", "#b99400"], challenge: ["l", "#771214"],
-};
+/** Genesys glyph codes in the Genesys font; appearance (font, colour, size) is the theme's, selected by semantic role. */
+const dice: Record<string, string> = { boost: "j", setback: "j", difficulty: "k", ability: "k", proficiency: "l", challenge: "l" };
 const diceWords = new Set([...Object.keys(symbols), ...Object.keys(dice)]);
-const glyphStyle: ElementStyle = {
-  fontFamily: "Genesys", fontStyle: "normal", fontWeight: "normal",
-  fontSize: 8.05, baselineShift: -0.56, letterSpacing: 0.375,
-};
 
 // Keep complete nested spans together, including shared closing runs (***).
 const inlinePattern = /(\[\[(.+?)\]\]|\{\{(\d+)\}\}|●|\*\*((?:[^*]|\*(?!\*)[^*]+\*)+?)\*\*|\*((?:\*\*[^*]+\*\*|[^*])+?)\*(?!\*)|\{\{sidebar\}\})/gs;
@@ -17,15 +10,19 @@ const inlinePattern = /(\[\[(.+?)\]\]|\{\{(\d+)\}\}|●|\*\*((?:[^*]|\*(?!\*)[^*
 /** Normalize authored markup into VMPrint text runs; sidebar placement belongs to the parent block. */
 export function inline(text: string): Element[] {
   const runs: Element[] = [];
-  function push(content: string, style: ElementStyle): void {
+  function push(content: string, style: ElementStyle, semanticRole?: string): void {
     if (!content) return;
-    runs.push(Object.keys(style).length
-      ? { type: "text", content, properties: { style } }
+    const properties = {
+      ...(Object.keys(style).length ? { style } : {}),
+      ...(semanticRole ? { semanticRole } : {}),
+    };
+    runs.push(Object.keys(properties).length
+      ? { type: "text", content, properties }
       : { type: "text", content });
   }
   function glyph(name: string, style: ElementStyle): void {
     const die = dice[name];
-    push(symbols[name] ?? die![0], { ...style, ...glyphStyle, ...(die ? { color: die[1] } : {}) });
+    push(symbols[name] ?? die!, style, `${die ? "dice" : "result"}:${name}`);
   }
   function parse(value: string, style: ElementStyle): void {
     let last = 0;
@@ -37,10 +34,10 @@ export function inline(text: string): Element[] {
         if (words.every(word => diceWords.has(word.toLowerCase()))) {
           for (const word of words) glyph(word.toLowerCase(), style);
         } else {
-          push(match[2], { ...style, fontWeight: "bold", color: "#8a5a12" });
+          push(match[2], style, "keyword");
         }
       } else if (match[3] !== undefined) {
-        push(match[3], { ...style, fontSize: 4.48, baselineShift: 2.8, inlineMarginLeft: 0.3, color: "#8a5a12", fontWeight: "bold" });
+        push(match[3], style, "note-ref");
       } else if (match[0] === "●") {
         glyph("difficulty", style);
       } else if (match[4] !== undefined) {

@@ -4,256 +4,1729 @@ meta:
   tagline: Every block, labeled — so we can talk about it by name.
   system: A component reference for the Genesys Roleplaying Game supplement
   legal:
-  - |-
-    Gens Togata Style Guide — a living reference rendered with the same VMPrint document builders and typed styles as the rulebook. Every block is labeled with its YAML `type` (and `style`, where relevant) so the layout can be discussed precisely. This page is the **legal** component; the title page before it is the **cover**; the page number below is the **footer**; the Contents page that follows is the **toc**.
-chapters:
-- title: 'Part I: Headings & Text'
-  blocks:
-  - type: p
-    style: lead
-    text: |-
-      This document shows every component in *Gens Togata*, each labeled with the block `type` that produces it, so we can discuss the design literally. The heading above this paragraph (“Part I: Headings & Text”) is the **chapter title (H1)** — a full-width heading that opens every chapter on a new page. This paragraph is a **lead** paragraph. What follows are the heading levels and text styles.
-  - type: h2
-    text: In-Chapter H2 Banner
-  - type: p
-    style: small
-    text: |-
-      `type: h2` — a full-width bold heading for a major division such as Archetypes or Careers. One level below the chapter title (which is H1): no underline or forced page break.
-  - type: h3
-    text: H3 — Section Head
-  - type: p
-    style: small
-    text: |-
-      `type: h3` — a column-width bold section heading, with space above it. Flows within the two columns.
-  - type: h4
-    text: H4 — Sub-Head
-  - type: p
-    style: small
-    text: |-
-      `type: h4` — a smaller bold heading within a section.
-  - type: p
-    style: body
-    text: |-
-      **Body** — `type: p`, default style. Justified, the default measure; this is the workhorse paragraph used for ordinary prose throughout the book.
-  - type: p
-    style: small
-    text: |-
-      **Small** — `style: small`. For captions, asides, and the labels in this guide.
-  - type: p
-    style: deriv
-    text: |-
-      **Deriv** — `style: deriv`. Used for derived-stat lines and tight secondary text.
-  - type: p
-    style: act
-    text: |-
-      Act style — style act
-  - type: p
-    style: chk
-    text: |-
-      **Chk** — `style: chk`. A dashed box for checklists and at-the-table prompts.
-  - type: h3
-    text: List
-  - type: p
-    style: small
-    text: |-
-      `type: list` — a bulleted list. Dice glyphs and markup work inside items.
-  - type: list
-    items:
-    - |-
-      A first bullet, with **bold** and *italic* inline.
-    - |-
-      A second bullet showing a die reference: upgrade the pool, then roll [[ability]][[ability]].
-- title: 'Part II: Callouts & Asides'
-  blocks:
-  - type: p
-    style: lead
-    text: |-
-      The boxed and set-apart components. Each is labeled above with its `type`.
-  - type: h3
-    text: Sidebar
-  - type: p
-    style: small
-    text: |-
-      `type: sidebar` — an aside marked by a thin vertical rule. Its title and body paragraphs flow in reading order within the column and can continue into the next column or page. Its `body` is a **list** of paragraph strings (not `text`).
-  - type: h3
-    text: Read-Aloud
-  - type: p
-    style: small
-    text: |-
-      `type: readaloud` — italic, boxed text the GM reads aloud to the players.
-  - type: readaloud
-    text: |-
-      The lictors part the crowd, and the magistrate ascends the Rostra. A hush falls over the Forum as he raises his hand to speak.
-  - type: h3
-    text: Synopsis
-  - type: p
-    style: small
-    text: |-
-      `type: synopsis` — a one-line summary with a bold “Synopsis.” lead-in.
-  - type: synopsis
-    text: |-
-      The player characters must recover a stolen will before the funeral at dusk.
-  - type: h3
-    text: Example
-  - type: p
-    style: small
-    text: |-
-      `type: example` — a worked example of a rule in play, set apart from the prose.
-  - type: example
-    text: |-
-      Marcus makes a Coercion check against a frightened clerk. He rolls [[success]][[success]][[threat]] — the clerk talks, but resents it.
-  - type: h3
-    text: Procedure
-  - type: p
-    style: small
-    text: |-
-      `type: procedure` — a titled, numbered how-to.
-  - type: procedure
-    title: Running a Contio
-    steps:
-    - |-
-      Set the audience's strain threshold by size and mood.
-    - |-
-      Each speaker makes a social check across three to five rounds.
-    - |-
-      Exceed the threshold to win the crowd; exceed half for a partial result.
-  - type: p
-    style: body
-    text: |-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. {{sidebar}} Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    sidebar:
-      type: sidebar
-      title: Example Sidebar
-      body:
-      - |-
-        This is a sidebar. It carries optional rules, designer notes, or historical colour out of the main flow.
-      - |-
-        A second paragraph shows paragraph spacing within the aside.
-  - type: p
-    style: body
-    text: |-
-      The marker in the preceding paragraph anchors the sidebar after its second sentence. The PDF inserts the aside at that point, then resumes the surrounding prose. Narration follows the same reading order. Sidebars use native column flow rather than hanging into the page margin.
-- title: 'Part III: Game Content'
-  blocks:
-  - type: p
-    style: lead
-    text: |-
-      The mechanical components: stat blocks and tables.
-  - type: h3
-    text: Stat Block
-  - type: p
-    style: small
-    text: |-
-      `type: statblock` — a column-width adversary profile with a flavor line, six named characteristics, derived-stat badges, and labeled fields.
-  - type: statblock
-    name: Aulus the Example
-    kind: Rival
-    desc: |-
-      A sample adversary, shown only to demonstrate the stat-block component.
-    chars:
-      Br: 3
-      Ag: 2
-      Int: 2
-      Cun: 3
-      Will: 2
-      Pr: 2
-    derived:
-      Soak: 4
-      'W.T.': 12
-      'S.T.': 12
-      'Def (M/R)': 1/0
-    fields:
-    - label: Skills
-      text: |-
-        Coercion 2, Deception 3, Melee 2, Vigilance 1.
-    - label: Talents
-      text: |-
-        Adversary 1; Plausible Deniability.
-    - label: Equipment
-      text: |-
-        Dagger (Dam 3; Crit 2; Pierce 1), a fine toga, a purse of favours.
-  - type: h3
-    text: Table — Gear
-  - type: p
-    style: small
-    text: |-
-      `type: table` — a full-width table that breaks out of the columns and spans the page.
-  - type: table
-    columns: [Item, Enc, Price, Rarity]
-    rows:
-    - [Writing kit, '1', 25 HS, '2']
-    - [Surgeon's kit, '2', 200 HS, '4']
-    - [Lockpicks, '0', 150 HS, 5 (R)]
-  - type: h3
-    text: Table — Motivation (d10)
-  - type: p
-    style: small
-    text: |-
-      `style: motiv` — a table whose first column is centered and bold, for d10 result tables.
-  - type: table
-    style: motiv
-    columns: ['d10', Result]
-    rows:
-    - ['1–3', A debt comes due at the worst moment.]
-    - ['4–6', An old patron calls in a favour.]
-    - ['7–10', A rival moves against the character openly.]
-  - type: h3
-    text: Scenario Banner
-  - type: p
-    style: small
-    text: |-
-      `type: scenario` — a full-width bold, ruled heading that opens a scenario.
-  - type: scenario
-    text: |-
-      I. The Example Affair
-  - type: p
-    style: body
-    text: |-
-      Scenario body follows the banner in the normal two-column flow.
-- title: 'Part IV: Inline Elements & Notes'
-  blocks:
-  - type: p
-    style: lead
-    text: |-
-      Inline markup and the citation apparatus.
-  - type: h3
-    text: Dice Glyphs
-  - type: p
-    style: small
-    text: |-
-      Written as `[[token]]`; the renderer swaps in the vendored Genesys glyph font.
-  - type: p
-    style: body
-    text: |-
-      Dice — ability [[ability]], proficiency [[proficiency]], difficulty [[difficulty]], boost [[boost]], setback [[setback]], challenge [[challenge]]. Symbols — success [[success]], advantage [[advantage]], triumph [[triumph]], failure [[failure]], threat [[threat]], despair [[despair]].
-  - type: h3
-    text: Keyword Tags
-  - type: p
-    style: small
-    text: |-
-      Also `[[token]]`, but non-dice words render as bold, gold-colored keyword tags.
-  - type: p
-    style: body
-    text: |-
-      Setting dials and keywords: [[Grounded]], [[Fated]], [[Mythic]]; status tags like [[Citizen]], [[Patrician]], [[Slave]].
-  - type: h3
-    text: Endnote Markers & Notes
-  - type: p
-    style: small
-    text: |-
-      A superscript marker is written `{{1}}`; the `endnotes` block collects them as a numbered Notes list.
-  - type: p
-    style: body
-    text: |-
-      Augury was load-bearing civic infrastructure, not mere theatre.{{1}} Oratory was one tool among several, not a sole superweapon.{{2}}
-  - type: endnotes
-    title: Notes
-    items:
-    - |-
-      The `endnotes` block renders this numbered list; the numbers match the `{{N}}` markers above.
-    - |-
-      A second note, to show the list.
-  - type: p
-    style: small
-    text: |-
-      Structural components added automatically by the renderer: the **cover**, the **legal** page, the **toc** (Contents — linked entries with page numbers resolved from VMPrint layout), and the page **footer**. PDF bookmarks point to the same headings.
+    - Gens Togata Style Guide — a living reference rendered with the same VMPrint document builders and typed styles as the rulebook. Every block is labeled with its YAML `type` (and `style`, where relevant) so the layout can be discussed precisely. This page is the **legal** component; the title page before it is the **cover**; the page number below is the **footer**; the Contents page that follows is the **toc**.
+elements:
+  - type: h1
+    content: ""
+    children:
+      - type: text
+        content: "Part I: Headings & Text"
+        properties:
+          sourceId: part-i-headings-text-f02cb810cbb2
+    properties:
+      semanticRole: chapter
+      sourceId: part-i-headings-text-cc421146a596
+      style:
+        pageBreakBefore: true
+      audioPart: 1
+  - type: story
+    content: ""
+    columns: 2
+    gutter: 12
+    balance: false
+    children:
+      - type: lead
+        content: ""
+        children:
+          - type: text
+            content: "This document shows every component in "
+            properties:
+              sourceId: this-document-shows-every-component-5c96246bc919
+          - type: text
+            content: Gens Togata
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: gens-togata-0ef68ee26bfd
+          - type: text
+            content: ", each labeled with the native element `type` that produces it, so we can discuss the design literally. The heading above this paragraph (“Part I: Headings & Text”) is the "
+            properties:
+              sourceId: each-labeled-with-the-block-type-tha-65ea356688ac
+          - type: text
+            content: chapter title (H1)
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: chapter-title-h1-a6b692be1672
+          - type: text
+            content: " — a full-width heading that opens every chapter on a new page. This paragraph is a "
+            properties:
+              sourceId: a-full-width-heading-that-opens-ever-1485c677c1eb
+          - type: text
+            content: lead
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: lead-1a1d43cf1e6f
+          - type: text
+            content: " paragraph. What follows are the heading levels and text styles."
+            properties:
+              sourceId: paragraph-what-follows-are-the-headi-43836db3b821
+        columnSpan: all
+        properties:
+          sourceId: this-document-shows-every-component-74261d0c566c
+      - type: h2
+        content: ""
+        children:
+          - type: text
+            content: In-Chapter H2 Banner
+            properties:
+              sourceId: in-chapter-h2-banner-a95b93157784
+        properties:
+          semanticRole: heading
+          sourceId: in-chapter-h2-banner-bb34f4033010
+        columnSpan: all
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: h2` — a full-width bold heading for a major division such as Archetypes or Careers. One level below the chapter title (which is H1): no underline or forced page break."
+            properties:
+              sourceId: type-h2-a-full-width-bold-heading-fo-28a8f86db0b5
+        columnSpan: all
+        properties:
+          sourceId: type-h2-a-full-width-bold-heading-fo-5409b5741051
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: H3 — Section Head
+            properties:
+              sourceId: h3-section-head-80927b33b2fa
+        properties:
+          semanticRole: heading
+          sourceId: h3-section-head-7b411e90808d
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: h3` — a column-width bold section heading, with space above it. Flows within the two columns."
+            properties:
+              sourceId: type-h3-a-column-width-bold-section-2db6153ac82a
+        properties:
+          sourceId: type-h3-a-column-width-bold-section-c47f6ae16307
+      - type: h4
+        content: ""
+        children:
+          - type: text
+            content: H4 — Sub-Head
+            properties:
+              sourceId: h4-sub-head-000fd382e414
+        properties:
+          semanticRole: subheading
+          sourceId: h4-sub-head-aa66a175a942
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: h4` — a smaller bold heading within a section."
+            properties:
+              sourceId: type-h4-a-smaller-bold-heading-withi-9ac5f87ea450
+        properties:
+          sourceId: type-h4-a-smaller-bold-heading-withi-8d123320c069
+      - type: p
+        content: ""
+        children:
+          - type: text
+            content: Body
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: body-6ec6024e2acc
+          - type: text
+            content: " — `type: p`. Justified, the default measure; this is the workhorse paragraph used for ordinary prose throughout the book."
+            properties:
+              sourceId: type-p-default-style-justified-the-d-f0ade8bc98f8
+        properties:
+          sourceId: body-type-p-default-style-justified-1bee854fe5ff
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: Small
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: small-26e160959c26
+          - type: text
+            content: " — `type: small`. For captions, asides, and the labels in this guide."
+            properties:
+              sourceId: style-small-for-captions-asides-and-e18b25db88d9
+        properties:
+          sourceId: small-style-small-for-captions-aside-b6dce5d7adb1
+      - type: deriv
+        content: ""
+        children:
+          - type: text
+            content: Deriv
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: deriv-34f92e376bb1
+          - type: text
+            content: " — `type: deriv`. Used for derived-stat lines and tight secondary text."
+            properties:
+              sourceId: style-deriv-used-for-derived-stat-li-6acec549d2c0
+        properties:
+          sourceId: deriv-style-deriv-used-for-derived-s-6a65d2b8be2b
+      - type: act
+        content: ""
+        children:
+          - type: text
+            content: Act style — type act
+            properties:
+              sourceId: act-style-style-act-6d4dbfd35d45
+        properties:
+          sourceId: act-style-style-act-f8211182d10b
+      - type: chk
+        content: ""
+        children:
+          - type: text
+            content: Chk
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: chk-47573e0793dc
+          - type: text
+            content: " — `type: chk`. A dashed box for checklists and at-the-table prompts."
+            properties:
+              sourceId: style-chk-a-dashed-box-for-checklist-55331cb3dd62
+        properties:
+          sourceId: chk-style-chk-a-dashed-box-for-check-389ab4ec7980
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: List
+            properties:
+              sourceId: list-2308599cc5e5
+        properties:
+          semanticRole: heading
+          sourceId: list-206c08ee0e5c
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: list` — a native bulleted list. Items can contain styled and semantic text runs."
+            properties:
+              sourceId: type-list-a-bulleted-list-dice-glyph-a06229949704
+        properties:
+          sourceId: type-list-a-bulleted-list-dice-glyph-5b44c79f2eb5
+      - type: list
+        content: ""
+        list:
+          kind: unordered
+          indent: 10
+          itemSpacing: 3
+        children:
+          - type: list-item
+            content: ""
+            children:
+              - type: text
+                content: "A first bullet, with "
+                properties:
+                  sourceId: a-first-bullet-with-16954a19a9ac
+              - type: text
+                content: bold
+                properties:
+                  style:
+                    fontWeight: bold
+                  sourceId: bold-f97a18a4dba8
+              - type: text
+                content: " and "
+                properties:
+                  sourceId: and-70756942259f
+              - type: text
+                content: italic
+                properties:
+                  style:
+                    fontStyle: italic
+                  sourceId: italic-1c41b7a0c635
+              - type: text
+                content: " inline."
+                properties:
+                  sourceId: inline-05fb920aee53
+            properties:
+              sourceId: a-first-bullet-with-bold-and-italic-c94066954cea
+          - type: list-item
+            content: ""
+            children:
+              - type: text
+                content: "A second bullet showing a die reference: upgrade the pool, then roll "
+                properties:
+                  sourceId: a-second-bullet-showing-a-die-refere-6b2c9bec9e32
+              - type: text
+                content: k
+                properties:
+                  semanticRole: dice:ability
+                  sourceId: k-db1ec052f529
+              - type: text
+                content: k
+                properties:
+                  semanticRole: dice:ability
+                  sourceId: k-db1ec052f529-2
+              - type: text
+                content: .
+                properties:
+                  sourceId: text-0085f661f7f2
+            properties:
+              sourceId: a-second-bullet-showing-a-die-refere-e6ee1e0893d5
+        properties:
+          sourceId: list-3e3bbcd79f15
+    properties:
+      sourceId: story-0790a403fc36
+  - type: h1
+    content: ""
+    children:
+      - type: text
+        content: "Part II: Callouts & Asides"
+        properties:
+          sourceId: part-ii-callouts-asides-d96081a365bd
+    properties:
+      semanticRole: chapter
+      sourceId: part-ii-callouts-asides-6027e2bbe61c
+      style:
+        pageBreakBefore: true
+      audioPart: 2
+  - type: story
+    content: ""
+    columns: 2
+    gutter: 12
+    balance: false
+    children:
+      - type: lead
+        content: ""
+        children:
+          - type: text
+            content: The boxed and set-apart components. Each is labeled above with its `type`.
+            properties:
+              sourceId: the-boxed-and-set-apart-components-e-a30a2c6748f5
+        columnSpan: all
+        properties:
+          sourceId: the-boxed-and-set-apart-components-e-55e5ede9e1dc
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Sidebar
+            properties:
+              sourceId: sidebar-889d57412fec
+        properties:
+          semanticRole: heading
+          sourceId: sidebar-2026698671db
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: sidebar` — an aside marked by a thin vertical rule. Sidebar elements carry semanticRole aside and flow in reading order within the story."
+            properties:
+              sourceId: type-sidebar-an-aside-marked-by-a-th-2c08917e0919
+        properties:
+          sourceId: type-sidebar-an-aside-marked-by-a-th-705067c6f3f7
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Read-Aloud
+            properties:
+              sourceId: read-aloud-411c9e4c7056
+        properties:
+          semanticRole: heading
+          sourceId: read-aloud-1929a613bfd3
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: readaloud` — italic, boxed text the GM reads aloud to the players."
+            properties:
+              sourceId: type-readaloud-italic-boxed-text-the-c12e26e0505c
+        properties:
+          sourceId: type-readaloud-italic-boxed-text-the-5d9079ff3988
+      - type: readaloud
+        content: ""
+        children:
+          - type: text
+            content: The lictors part the crowd, and the magistrate ascends the Rostra. A hush falls over the Forum as he raises his hand to speak.
+            properties:
+              sourceId: the-lictors-part-the-crowd-and-the-m-c3a55c78965a
+        properties:
+          sourceId: the-lictors-part-the-crowd-and-the-m-c06d7e09a4ff
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Synopsis
+            properties:
+              sourceId: synopsis-59ca1853a474
+        properties:
+          semanticRole: heading
+          sourceId: synopsis-b6f574492057
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: synopsis` — a one-line summary with a bold “Synopsis.” lead-in."
+            properties:
+              sourceId: type-synopsis-a-one-line-summary-wit-b96ed2fd6293
+        properties:
+          sourceId: type-synopsis-a-one-line-summary-wit-39d8c6c1a176
+      - type: synopsis
+        content: ""
+        children:
+          - type: text
+            content: Synopsis.
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: synopsis-07144e516fe4
+          - type: text
+            content: " The player characters must recover a stolen will before the funeral at dusk."
+            properties:
+              sourceId: the-player-characters-must-recover-a-e518b021cfbc
+        properties:
+          sourceId: synopsis-the-player-characters-must-a6629413dff5
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Example
+            properties:
+              sourceId: example-269b86315eee
+        properties:
+          semanticRole: heading
+          sourceId: example-97d44da26ad9
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: example` — a worked example of a rule in play, set apart from the prose."
+            properties:
+              sourceId: type-example-a-worked-example-of-a-r-11ffafe08642
+        properties:
+          sourceId: type-example-a-worked-example-of-a-r-ff4e90415ec8
+      - type: example
+        content: ""
+        children:
+          - type: text
+            content: "Marcus makes a Coercion check against a frightened clerk. He rolls "
+            properties:
+              sourceId: marcus-makes-a-coercion-check-agains-de08e997a192
+          - type: text
+            content: s
+            properties:
+              semanticRole: result:success
+              sourceId: s-91e9c5eccfe1
+          - type: text
+            content: s
+            properties:
+              semanticRole: result:success
+              sourceId: s-91e9c5eccfe1-2
+          - type: text
+            content: h
+            properties:
+              semanticRole: result:threat
+              sourceId: h-a6dda51add8f
+          - type: text
+            content: " — the clerk talks, but resents it."
+            properties:
+              sourceId: the-clerk-talks-but-resents-it-78d6e380e7ab
+        properties:
+          sourceId: marcus-makes-a-coercion-check-agains-b1466b821304
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Procedure
+            properties:
+              sourceId: procedure-e7e0a7f2ca03
+        properties:
+          semanticRole: heading
+          sourceId: procedure-bf7d9db700b2
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: A procedure combines a heading with a native ordered list.
+            properties:
+              sourceId: type-procedure-a-titled-numbered-how-6d8fac99eb50
+        properties:
+          sourceId: type-procedure-a-titled-numbered-how-82b8c10e4f28
+      - type: h4
+        content: ""
+        children:
+          - type: text
+            content: Running a Contio
+            properties:
+              sourceId: running-a-contio-1dee064534bd
+        properties:
+          semanticRole: heading
+          sourceId: running-a-contio-212fb2027f12
+      - type: list
+        content: ""
+        list:
+          kind: ordered
+          indent: 10
+          itemSpacing: 3
+        children:
+          - type: list-item
+            content: ""
+            children:
+              - type: text
+                content: Set the audience's strain threshold by size and mood.
+                properties:
+                  sourceId: set-the-audience-s-strain-threshold-77e3eb7b3e69
+            properties:
+              sourceId: set-the-audience-s-strain-threshold-e94e5f22927d
+          - type: list-item
+            content: ""
+            children:
+              - type: text
+                content: Each speaker makes a social check across three to five rounds.
+                properties:
+                  sourceId: each-speaker-makes-a-social-check-ac-f45f7c8055f7
+            properties:
+              sourceId: each-speaker-makes-a-social-check-ac-be1ffe58d936
+          - type: list-item
+            content: ""
+            children:
+              - type: text
+                content: Exceed the threshold to win the crowd; exceed half for a partial result.
+                properties:
+                  sourceId: exceed-the-threshold-to-win-the-crow-0e3bbbb1e53d
+            properties:
+              sourceId: exceed-the-threshold-to-win-the-crow-88f4243513f0
+        properties:
+          sourceId: list-bd7466b12554
+      - type: p
+        content: ""
+        children:
+          - type: text
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            properties:
+              sourceId: lorem-ipsum-dolor-sit-amet-consectet-be0b7d63fb4f
+        properties:
+          sourceId: lorem-ipsum-dolor-sit-amet-consectet-32a5c3425a3b
+      - type: sidebar
+        content: ""
+        children:
+          - type: text
+            content: Example Sidebar
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: example-sidebar-b90d9c64e605
+        properties:
+          semanticRole: aside
+          keepWithNext: true
+          sourceId: example-sidebar-2ce916fac437
+      - type: sidebar
+        content: ""
+        children:
+          - type: text
+            content: This is a sidebar. It carries optional rules, designer notes, or historical colour out of the main flow.
+            properties:
+              sourceId: this-is-a-sidebar-it-carries-optiona-509d364e76a7
+        properties:
+          semanticRole: aside
+          sourceId: this-is-a-sidebar-it-carries-optiona-fa561b509add
+      - type: sidebar
+        content: ""
+        children:
+          - type: text
+            content: A second paragraph shows paragraph spacing within the aside.
+            properties:
+              sourceId: a-second-paragraph-shows-paragraph-s-b31b6e456a63
+        properties:
+          semanticRole: aside
+          sourceId: a-second-paragraph-shows-paragraph-s-187931e9307e
+      - type: p
+        content: ""
+        children:
+          - type: text
+            content: " Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            properties:
+              sourceId: ut-enim-ad-minim-veniam-quis-nostrud-78dae5e766c2
+        properties:
+          sourceId: ut-enim-ad-minim-veniam-quis-nostrud-209036de1c9c
+      - type: p
+        content: ""
+        children:
+          - type: text
+            content: The preceding sidebar is placed between the two pieces of its paragraph in the logical story. PDF and narration follow that same reading order.
+            properties:
+              sourceId: the-marker-in-the-preceding-paragrap-d97db757f0c5
+        properties:
+          sourceId: the-marker-in-the-preceding-paragrap-231dbab7dfa1
+    properties:
+      sourceId: story-983173a13376
+  - type: h1
+    content: ""
+    children:
+      - type: text
+        content: "Part III: Game Content"
+        properties:
+          sourceId: part-iii-game-content-3e3a9f0b7ee5
+    properties:
+      semanticRole: chapter
+      sourceId: part-iii-game-content-5ccc6ca42054
+      style:
+        pageBreakBefore: true
+      audioPart: 3
+  - type: story
+    content: ""
+    columns: 2
+    gutter: 12
+    balance: false
+    children:
+      - type: lead
+        content: ""
+        children:
+          - type: text
+            content: "The mechanical components: stat blocks and tables."
+            properties:
+              sourceId: the-mechanical-components-stat-block-a722fb8f39e6
+        columnSpan: all
+        properties:
+          sourceId: the-mechanical-components-stat-block-cab692c9c670
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Stat Block
+            properties:
+              sourceId: stat-block-24f568f3e0e0
+        properties:
+          semanticRole: heading
+          sourceId: stat-block-d838611dc1ff
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: An adversary profile combines stat-name, stat-kind, stat-desc, native metric tables, and stat-field elements.
+            properties:
+              sourceId: type-statblock-a-column-width-advers-4ac6463f6fbc
+        properties:
+          sourceId: type-statblock-a-column-width-advers-b1a9bc730211
+      - type: stat-name
+        content: ""
+        children:
+          - type: text
+            content: Aulus the Example
+            properties:
+              sourceId: aulus-the-example-622e3a793e28
+        properties:
+          semanticRole: statblock
+          sourceId: aulus-the-example-56bd1e7d8704
+      - type: stat-kind
+        content: ""
+        children:
+          - type: text
+            content: Rival
+            properties:
+              sourceId: rival-696e84439cfe
+        properties:
+          sourceId: rival-635d8e1bc62a
+      - type: stat-desc
+        content: ""
+        children:
+          - type: text
+            content: A sample adversary, shown only to demonstrate the stat-block component.
+            properties:
+              sourceId: a-sample-adversary-shown-only-to-dem-7652e32e7749
+        properties:
+          sourceId: a-sample-adversary-shown-only-to-dem-64818af9dce9
+      - type: table
+        content: ""
+        table:
+          headerRows: 1
+          repeatHeader: true
+          columns:
+            - mode: fixed
+              value: 26
+            - mode: fixed
+              value: 26
+            - mode: fixed
+              value: 26
+            - mode: fixed
+              value: 26
+            - mode: fixed
+              value: 26
+            - mode: fixed
+              value: 26
+          headerCellStyle:
+            fontWeight: 700
+            backgroundColor: "#e6dece"
+        children:
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Brawn
+                    properties:
+                      sourceId: brawn-8bf9213b00fd
+                properties:
+                  sourceId: brawn-7a492198a610
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Agility
+                    properties:
+                      sourceId: agility-ae26e0ad0964
+                properties:
+                  sourceId: agility-2fe661c7c2d4
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Intellect
+                    properties:
+                      sourceId: intellect-5d2523925680
+                properties:
+                  sourceId: intellect-5d4ea676902f
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Cunning
+                    properties:
+                      sourceId: cunning-27c0f80e9311
+                properties:
+                  sourceId: cunning-ecd8b734edcb
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Willpower
+                    properties:
+                      sourceId: willpower-fad2b1ae8045
+                properties:
+                  sourceId: willpower-93a5bb675ba1
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Presence
+                    properties:
+                      sourceId: presence-9c9a5e03af39
+                properties:
+                  sourceId: presence-921e0d514d94
+            properties:
+              semanticRole: header
+              sourceId: table-row-9aafed571afc
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "3"
+                    properties:
+                      sourceId: 3-4306b704780d
+                properties:
+                  sourceId: 3-5b8cc1c65942
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "2"
+                    properties:
+                      sourceId: 2-e155f8d139ba
+                properties:
+                  sourceId: 2-1cefcdd6e441
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "2"
+                    properties:
+                      sourceId: 2-e155f8d139ba-2
+                properties:
+                  sourceId: 2-1cefcdd6e441-2
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "3"
+                    properties:
+                      sourceId: 3-4306b704780d-2
+                properties:
+                  sourceId: 3-5b8cc1c65942-2
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "2"
+                    properties:
+                      sourceId: 2-e155f8d139ba-3
+                properties:
+                  sourceId: 2-1cefcdd6e441-3
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "2"
+                    properties:
+                      sourceId: 2-e155f8d139ba-4
+                properties:
+                  sourceId: 2-1cefcdd6e441-4
+            properties:
+              sourceId: table-row-5be1d3c35bc9
+        properties:
+          sourceId: table-bf707e66b4e9
+          semanticRole: stat-metrics
+      - type: table
+        content: ""
+        table:
+          headerRows: 1
+          repeatHeader: true
+          columns:
+            - mode: fixed
+              value: 39
+            - mode: fixed
+              value: 39
+            - mode: fixed
+              value: 39
+            - mode: fixed
+              value: 39
+          headerCellStyle:
+            fontWeight: 700
+            backgroundColor: "#e6dece"
+        children:
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Soak Value
+                    properties:
+                      sourceId: soak-value-dccd00d79737
+                properties:
+                  sourceId: soak-value-23130d6c9909
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Wound Threshold
+                    properties:
+                      sourceId: wound-threshold-1acbf2d0d968
+                properties:
+                  sourceId: wound-threshold-099254b1533c
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Strain Threshold
+                    properties:
+                      sourceId: strain-threshold-3332a78e2b5e
+                properties:
+                  sourceId: strain-threshold-d0501d602d60
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Defense (Melee / Ranged)
+                    properties:
+                      sourceId: defense-melee-ranged-d6d943b261dc
+                properties:
+                  sourceId: defense-melee-ranged-be1fe258bc33
+            properties:
+              semanticRole: header
+              sourceId: table-row-9aafed571afc-2
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "4"
+                    properties:
+                      sourceId: 4-75b0a2f54ce7
+                properties:
+                  sourceId: 4-bd36a3731a02
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "12"
+                    properties:
+                      sourceId: 12-55a26e034bb2
+                properties:
+                  sourceId: 12-cec4667581b0
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "12"
+                    properties:
+                      sourceId: 12-55a26e034bb2-2
+                properties:
+                  sourceId: 12-cec4667581b0-2
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: 1/0
+                    properties:
+                      sourceId: 1-0-468e7526f6cc
+                properties:
+                  sourceId: 1-0-af918c3530c8
+            properties:
+              sourceId: table-row-5be1d3c35bc9-2
+        properties:
+          sourceId: table-bf707e66b4e9-2
+          semanticRole: stat-metrics
+      - type: stat-field
+        content: ""
+        children:
+          - type: text
+            content: "Skills:"
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: skills-81d3432c3ad9
+          - type: text
+            content: " Coercion 2, Deception 3, Melee 2, Vigilance 1."
+            properties:
+              sourceId: coercion-2-deception-3-melee-2-vigil-f79e8aae57b0
+        properties:
+          sourceId: skills-coercion-2-deception-3-melee-f527186de86a
+      - type: stat-field
+        content: ""
+        children:
+          - type: text
+            content: "Talents:"
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: talents-bcd51c8c0ec5
+          - type: text
+            content: " Adversary 1; Plausible Deniability."
+            properties:
+              sourceId: adversary-1-plausible-deniability-1c4f2d38f31e
+        properties:
+          sourceId: talents-adversary-1-plausible-deniab-823dbbcaf9d4
+      - type: stat-field
+        content: ""
+        children:
+          - type: text
+            content: "Equipment:"
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: equipment-1731f47dd4a0
+          - type: text
+            content: " Dagger (Dam 3; Crit 2; Pierce 1), a fine toga, a purse of favours."
+            properties:
+              sourceId: dagger-dam-3-crit-2-pierce-1-a-fine-4eb06894fe55
+        properties:
+          sourceId: equipment-dagger-dam-3-crit-2-pierce-eafb55a39ee4
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Table — Gear
+            properties:
+              sourceId: table-gear-4fad146d1181
+        properties:
+          semanticRole: heading
+          sourceId: table-gear-c4a4dffad95c
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: table` — a full-width table that breaks out of the columns and spans the page."
+            properties:
+              sourceId: type-table-a-full-width-table-that-b-9ae0482be9ab
+        properties:
+          sourceId: type-table-a-full-width-table-that-b-8a3f64bd0411
+      - type: table
+        content: ""
+        table:
+          headerRows: 1
+          repeatHeader: true
+          columns:
+            - mode: flex
+              fr: 1
+            - mode: flex
+              fr: 1
+            - mode: flex
+              fr: 1
+            - mode: flex
+              fr: 1
+          headerCellStyle:
+            fontWeight: 700
+            backgroundColor: "#e6dece"
+        children:
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Item
+                    properties:
+                      sourceId: item-58746ce7db3f
+                properties:
+                  sourceId: item-a1bf050b7244
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Enc
+                    properties:
+                      sourceId: enc-6a55920fbbd0
+                properties:
+                  sourceId: enc-75d09e79b705
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Price
+                    properties:
+                      sourceId: price-a66b12cb16b9
+                properties:
+                  sourceId: price-d3a108d6bf40
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Rarity
+                    properties:
+                      sourceId: rarity-7879c9d868fd
+                properties:
+                  sourceId: rarity-45ae56dcebc3
+            properties:
+              semanticRole: header
+              sourceId: table-row-9aafed571afc-3
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Writing kit
+                    properties:
+                      sourceId: writing-kit-8a04beb999a6
+                properties:
+                  sourceId: writing-kit-8ed573efd30d
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "1"
+                    properties:
+                      sourceId: 1-5bd22f0d6544
+                properties:
+                  sourceId: 1-93c0f19ddc07
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: 25 HS
+                    properties:
+                      sourceId: 25-hs-a28411558efb
+                properties:
+                  sourceId: 25-hs-faf697c42889
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "2"
+                    properties:
+                      sourceId: 2-e155f8d139ba-5
+                properties:
+                  sourceId: 2-1cefcdd6e441-5
+            properties:
+              sourceId: table-row-5be1d3c35bc9-3
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Surgeon's kit
+                    properties:
+                      sourceId: surgeon-s-kit-99d4e33f58dd
+                properties:
+                  sourceId: surgeon-s-kit-93e4853a73e9
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "2"
+                    properties:
+                      sourceId: 2-e155f8d139ba-6
+                properties:
+                  sourceId: 2-1cefcdd6e441-6
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: 200 HS
+                    properties:
+                      sourceId: 200-hs-264410865d91
+                properties:
+                  sourceId: 200-hs-db83f0a2c436
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "4"
+                    properties:
+                      sourceId: 4-75b0a2f54ce7-2
+                properties:
+                  sourceId: 4-bd36a3731a02-2
+            properties:
+              sourceId: table-row-5be1d3c35bc9-4
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Lockpicks
+                    properties:
+                      sourceId: lockpicks-b3b9834e3bb9
+                properties:
+                  sourceId: lockpicks-5a5576b7ca6e
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: "0"
+                    properties:
+                      sourceId: 0-7b7ea168ca56
+                properties:
+                  sourceId: 0-1c71813878ef
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: 150 HS
+                    properties:
+                      sourceId: 150-hs-3697b027a7af
+                properties:
+                  sourceId: 150-hs-5406d847aecd
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: 5 (R)
+                    properties:
+                      sourceId: 5-r-c4b16a72478d
+                properties:
+                  sourceId: 5-r-f41686de913a
+            properties:
+              sourceId: table-row-5be1d3c35bc9-5
+        columnSpan: all
+        properties:
+          sourceId: table-bf707e66b4e9-3
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Table — Motivation (d10)
+            properties:
+              sourceId: table-motivation-d10-2b3fe0cfeabc
+        properties:
+          semanticRole: heading
+          sourceId: table-motivation-d10-c69c5fb49d3a
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: A motivation table uses a fixed first column with centered bold cells for d10 results.
+            properties:
+              sourceId: style-motiv-a-table-whose-first-colu-71bfc8628548
+        properties:
+          sourceId: style-motiv-a-table-whose-first-colu-3abef24ee3f2
+      - type: table
+        content: ""
+        table:
+          headerRows: 1
+          repeatHeader: true
+          columns:
+            - mode: fixed
+              value: 30
+            - mode: flex
+              fr: 1
+          headerCellStyle:
+            fontWeight: 700
+            backgroundColor: "#e6dece"
+        children:
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: d10
+                    properties:
+                      sourceId: d10-a318a909ca2b
+                properties:
+                  style:
+                    textAlign: center
+                    fontWeight: 700
+                  sourceId: d10-cc287604faf0
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: Result
+                    properties:
+                      sourceId: result-05e2648cd537
+                properties:
+                  sourceId: result-66ee40d2b167
+            properties:
+              semanticRole: header
+              sourceId: table-row-9aafed571afc-4
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: 1–3
+                    properties:
+                      sourceId: 1-3-85160859951c
+                properties:
+                  style:
+                    textAlign: center
+                    fontWeight: 700
+                  sourceId: 1-3-da9a7456f7f7
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: A debt comes due at the worst moment.
+                    properties:
+                      sourceId: a-debt-comes-due-at-the-worst-moment-5664def35f2f
+                properties:
+                  sourceId: a-debt-comes-due-at-the-worst-moment-d809cfb1a6ab
+            properties:
+              sourceId: table-row-5be1d3c35bc9-6
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: 4–6
+                    properties:
+                      sourceId: 4-6-3696b6bcc581
+                properties:
+                  style:
+                    textAlign: center
+                    fontWeight: 700
+                  sourceId: 4-6-c2a18a00b702
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: An old patron calls in a favour.
+                    properties:
+                      sourceId: an-old-patron-calls-in-a-favour-8dec8798ab99
+                properties:
+                  sourceId: an-old-patron-calls-in-a-favour-32fb7bd37985
+            properties:
+              sourceId: table-row-5be1d3c35bc9-7
+          - type: table-row
+            content: ""
+            children:
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: 7–10
+                    properties:
+                      sourceId: 7-10-9718b0b0cbc4
+                properties:
+                  style:
+                    textAlign: center
+                    fontWeight: 700
+                  sourceId: 7-10-5ffde9f1609e
+              - type: table-cell
+                content: ""
+                children:
+                  - type: text
+                    content: A rival moves against the character openly.
+                    properties:
+                      sourceId: a-rival-moves-against-the-character-991f8114232b
+                properties:
+                  sourceId: a-rival-moves-against-the-character-5b930be41a28
+            properties:
+              sourceId: table-row-5be1d3c35bc9-8
+        columnSpan: all
+        properties:
+          sourceId: table-bf707e66b4e9-4
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Scenario Banner
+            properties:
+              sourceId: scenario-banner-324c3ad558d9
+        properties:
+          semanticRole: heading
+          sourceId: scenario-banner-836230cd858c
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "`type: scenario` — a full-width bold, ruled heading that opens a scenario."
+            properties:
+              sourceId: type-scenario-a-full-width-bold-rule-a91f2682f2a7
+        properties:
+          sourceId: type-scenario-a-full-width-bold-rule-abf3d6092fb1
+      - type: scenario
+        content: ""
+        children:
+          - type: text
+            content: I. The Example Affair
+            properties:
+              sourceId: i-the-example-affair-fe66c4c6b09a
+        properties:
+          semanticRole: heading
+          sourceId: i-the-example-affair-136ec82bf72b
+        columnSpan: all
+      - type: p
+        content: ""
+        children:
+          - type: text
+            content: Scenario body follows the banner in the normal two-column flow.
+            properties:
+              sourceId: scenario-body-follows-the-banner-in-f559b737ad8f
+        properties:
+          sourceId: scenario-body-follows-the-banner-in-42de8bd9c4de
+    properties:
+      sourceId: story-1b5533b0c434
+  - type: h1
+    content: ""
+    children:
+      - type: text
+        content: "Part IV: Inline Elements & Notes"
+        properties:
+          sourceId: part-iv-inline-elements-notes-a24315bd4655
+    properties:
+      semanticRole: chapter
+      sourceId: part-iv-inline-elements-notes-dda7d40397d5
+      style:
+        pageBreakBefore: true
+      audioPart: 4
+  - type: story
+    content: ""
+    columns: 2
+    gutter: 12
+    balance: false
+    children:
+      - type: lead
+        content: ""
+        children:
+          - type: text
+            content: Semantic text runs and the citation apparatus.
+            properties:
+              sourceId: inline-markup-and-the-citation-appar-418f06f98c83
+        columnSpan: all
+        properties:
+          sourceId: inline-markup-and-the-citation-appar-4efde816ba1f
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Dice Glyphs
+            properties:
+              sourceId: dice-glyphs-fd8f8030a6c5
+        properties:
+          semanticRole: heading
+          sourceId: dice-glyphs-3720d1a971cb
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: Written as `
+            properties:
+              sourceId: written-as-d71488a6e8b9
+          - type: text
+            content: token
+            properties:
+              sourceId: token-43c8db72e413
+              semanticRole: keyword
+          - type: text
+            content: "`; the renderer swaps in the vendored Genesys glyph font."
+            properties:
+              sourceId: the-renderer-swaps-in-the-vendored-g-e8ee063ecd70
+        properties:
+          sourceId: written-as-token-the-renderer-swaps-424d88fc9bd6
+      - type: p
+        content: ""
+        children:
+          - type: text
+            content: "Dice — ability "
+            properties:
+              sourceId: dice-ability-11881ec1a2cc
+          - type: text
+            content: k
+            properties:
+              semanticRole: dice:ability
+              sourceId: k-ab2025ab09e8
+          - type: text
+            content: ", proficiency "
+            properties:
+              sourceId: proficiency-c631d3c783c4
+          - type: text
+            content: l
+            properties:
+              semanticRole: dice:proficiency
+              sourceId: l-e8b6f58e2f2b
+          - type: text
+            content: ", difficulty "
+            properties:
+              sourceId: difficulty-41b872fcc9fc
+          - type: text
+            content: k
+            properties:
+              semanticRole: dice:difficulty
+              sourceId: k-ad38087f7ef8
+          - type: text
+            content: ", boost "
+            properties:
+              sourceId: boost-bfbdf004f10b
+          - type: text
+            content: j
+            properties:
+              semanticRole: dice:boost
+              sourceId: j-c5cba119eb78
+          - type: text
+            content: ", setback "
+            properties:
+              sourceId: setback-f90cc78efb3b
+          - type: text
+            content: j
+            properties:
+              semanticRole: dice:setback
+              sourceId: j-b3363dac9fea
+          - type: text
+            content: ", challenge "
+            properties:
+              sourceId: challenge-871d45921b97
+          - type: text
+            content: l
+            properties:
+              semanticRole: dice:challenge
+              sourceId: l-4d8008b6d03c
+          - type: text
+            content: ". Symbols — success "
+            properties:
+              sourceId: symbols-success-50ffc2f39ce6
+          - type: text
+            content: s
+            properties:
+              semanticRole: result:success
+              sourceId: s-bde985f82126
+          - type: text
+            content: ", advantage "
+            properties:
+              sourceId: advantage-65f199e9574f
+          - type: text
+            content: a
+            properties:
+              semanticRole: result:advantage
+              sourceId: a-4b9d77220227
+          - type: text
+            content: ", triumph "
+            properties:
+              sourceId: triumph-dc0e9664e990
+          - type: text
+            content: t
+            properties:
+              semanticRole: result:triumph
+              sourceId: t-007c019f954a
+          - type: text
+            content: ", failure "
+            properties:
+              sourceId: failure-92485a885783
+          - type: text
+            content: f
+            properties:
+              semanticRole: result:failure
+              sourceId: f-0634f80da1ab
+          - type: text
+            content: ", threat "
+            properties:
+              sourceId: threat-ca433b472fe8
+          - type: text
+            content: h
+            properties:
+              semanticRole: result:threat
+              sourceId: h-6e09f1eb6d38
+          - type: text
+            content: ", despair "
+            properties:
+              sourceId: despair-3123f05c1179
+          - type: text
+            content: d
+            properties:
+              semanticRole: result:despair
+              sourceId: d-874041463fab
+          - type: text
+            content: .
+            properties:
+              sourceId: text-07092626d1cd
+        properties:
+          sourceId: dice-ability-k-proficiency-l-difficu-ee533ee59efd
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Keyword Tags
+            properties:
+              sourceId: keyword-tags-0d4a5ff277cb
+        properties:
+          semanticRole: heading
+          sourceId: keyword-tags-93510fbfe8ce
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: Also `
+            properties:
+              sourceId: also-cd61f9f253eb
+          - type: text
+            content: token
+            properties:
+              sourceId: token-2962b1698f98
+              semanticRole: keyword
+          - type: text
+            content: "`, but non-dice words render as bold, gold-colored keyword tags."
+            properties:
+              sourceId: but-non-dice-words-render-as-bold-go-595cbafce1a5
+        properties:
+          sourceId: also-token-but-non-dice-words-render-e1f2ecdeb39d
+      - type: p
+        content: ""
+        children:
+          - type: text
+            content: "Setting dials and keywords: "
+            properties:
+              sourceId: setting-dials-and-keywords-25abc7f52734
+          - type: text
+            content: Grounded
+            properties:
+              sourceId: grounded-eff9293d81b1
+              semanticRole: keyword
+          - type: text
+            content: ", "
+            properties:
+              sourceId: text-4176662b5db5
+          - type: text
+            content: Fated
+            properties:
+              sourceId: fated-97783221450c
+              semanticRole: keyword
+          - type: text
+            content: ", "
+            properties:
+              sourceId: text-4176662b5db5-2
+          - type: text
+            content: Mythic
+            properties:
+              sourceId: mythic-216f02d543e0
+              semanticRole: keyword
+          - type: text
+            content: "; status tags like "
+            properties:
+              sourceId: status-tags-like-36c76a321f93
+          - type: text
+            content: Citizen
+            properties:
+              sourceId: citizen-b09bb95b844a
+              semanticRole: keyword
+          - type: text
+            content: ", "
+            properties:
+              sourceId: text-4176662b5db5-3
+          - type: text
+            content: Patrician
+            properties:
+              sourceId: patrician-20939c3ccc22
+              semanticRole: keyword
+          - type: text
+            content: ", "
+            properties:
+              sourceId: text-4176662b5db5-4
+          - type: text
+            content: Slave
+            properties:
+              sourceId: slave-d54a2f4fcaf2
+              semanticRole: keyword
+          - type: text
+            content: .
+            properties:
+              sourceId: text-a46b7939ca5b
+        properties:
+          sourceId: setting-dials-and-keywords-grounded-4accf6f8f6b1
+      - type: h3
+        content: ""
+        children:
+          - type: text
+            content: Endnote Markers & Notes
+            properties:
+              sourceId: endnote-markers-notes-790edb3f466e
+        properties:
+          semanticRole: heading
+          sourceId: endnote-markers-notes-2802231878bb
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: A note-ref text run contains a number such as
+            properties:
+              sourceId: a-superscript-marker-is-written-b6ecf490cddf
+          - type: text
+            content: "1"
+            properties:
+              semanticRole: note-ref
+              sourceId: 1-7352794ddd85
+          - type: text
+            content: ; an ordered list of note items collects the chapter’s notes.
+            properties:
+              sourceId: the-endnotes-block-collects-them-as-12730d29f8fb
+        properties:
+          sourceId: a-superscript-marker-is-written-1-th-e511eb008c94
+      - type: p
+        content: ""
+        children:
+          - type: text
+            content: Augury was load-bearing civic infrastructure, not mere theatre.
+            properties:
+              sourceId: augury-was-load-bearing-civic-infras-5be6f9a6734f
+          - type: text
+            content: "1"
+            properties:
+              semanticRole: note-ref
+              sourceId: 1-94abce1885fc
+          - type: text
+            content: " Oratory was one tool among several, not a sole superweapon."
+            properties:
+              sourceId: oratory-was-one-tool-among-several-n-b4b41c6dbf19
+          - type: text
+            content: "2"
+            properties:
+              semanticRole: note-ref
+              sourceId: 2-a7fb51e0c133
+        properties:
+          sourceId: augury-was-load-bearing-civic-infras-ba07a0051f6e
+      - type: h4
+        content: ""
+        children:
+          - type: text
+            content: Notes
+            properties:
+              sourceId: notes-a4b13e8d39ee
+        properties:
+          semanticRole: notes
+          style:
+            fontSize: 6
+          sourceId: notes-d1f6305ec0f0
+        columnSpan: all
+      - type: list
+        content: ""
+        list:
+          kind: ordered
+          indent: 10
+          itemSpacing: 3
+        children:
+          - type: list-item
+            content: ""
+            children:
+              - type: text
+                content: This native ordered note list supplies the numbered references above.
+                properties:
+                  sourceId: the-endnotes-block-renders-this-numb-b1a1c353fccc
+            properties:
+              semanticRole: note
+              noteNumber: 1
+              sourceId: the-endnotes-block-renders-this-numb-ec22ac512aa9
+          - type: list-item
+            content: ""
+            children:
+              - type: text
+                content: A second note, to show the list.
+                properties:
+                  sourceId: a-second-note-to-show-the-list-fc5401c8bd6f
+            properties:
+              semanticRole: note
+              noteNumber: 2
+              sourceId: a-second-note-to-show-the-list-57921363c4fa
+        properties:
+          semanticRole: notes
+          style:
+            fontSize: 6
+          sourceId: list-64c6e4cf4342
+        columnSpan: all
+      - type: small
+        content: ""
+        children:
+          - type: text
+            content: "Structural components added automatically by the renderer: the "
+            properties:
+              sourceId: structural-components-added-automati-164c9a9064a3
+          - type: text
+            content: cover
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: cover-666d77c080ec
+          - type: text
+            content: ", the "
+            properties:
+              sourceId: the-f863533eff79
+          - type: text
+            content: legal
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: legal-2144f8f6fbe3
+          - type: text
+            content: " page, the "
+            properties:
+              sourceId: page-the-976f93c8b255
+          - type: text
+            content: toc
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: guide-toc-1a1558e5dbee
+          - type: text
+            content: " (Contents — linked entries with page numbers resolved from VMPrint layout), and the page "
+            properties:
+              sourceId: contents-linked-entries-with-page-nu-e2dcf985f5ec
+          - type: text
+            content: footer
+            properties:
+              style:
+                fontWeight: bold
+              sourceId: footer-ade7df08bd4b
+          - type: text
+            content: . PDF bookmarks point to the same headings.
+            properties:
+              sourceId: pdf-bookmarks-point-to-the-same-head-f64d7bf15e07
+        properties:
+          sourceId: structural-components-added-automati-30391bfb1906
+    properties:
+      sourceId: story-a04d2ab71547

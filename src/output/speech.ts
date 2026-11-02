@@ -1,60 +1,131 @@
 import { mkdir, writeFile } from "node:fs/promises";
-import type { ContentBlock, DocumentData, StatBlock } from "../content/types";
+import type { Element } from "@vmprint/engine";
+import type { DocumentData } from "../content/types";
 
-const HMAP: Record<string, string> = { Br: "Brawn", Ag: "Agility", Int: "Intellect", Cun: "Cunning", Will: "Willpower", Pr: "Presence" };
 function plain(text: string): string { return text.replace(/\[\[(.+?)\]\]/g, "$1").replace(/\{\{\d+\}\}/g, "").replace(/\*\*/g, "").replace(/\*/g, ""); }
 function speechclean(text: string): string {
-  const replacements: Array<[string, string]> = [["W.T.", "Wound Threshold"], ["S.T.", "Strain Threshold"], ["(M/R)", "melee and ranged"], ["M/R", "melee and ranged"], ["HS", "sesterces"], ["●", " difficulty "], ["vitis ", "vitis"], [" HP:", " Hard Points:"], ["Price/Rarity", "price and rarity"], ["Encumbrance Cap", "cargo capacity"], [" HT ", " Hull Trauma "], [" SS ", " System Strain "], ["(R, military)", "rare, military only"], ["(R)", "rare"], [" | ", ". "], ["|", ". "]];
+  const replacements: Array<[string, string]> = [["W.T.", "Wound Threshold"], ["S.T.", "Strain Threshold"], ["(M/R)", "melee and ranged"], ["M/R", "melee and ranged"], ["HS", "sesterces"], ["vitis ", "vitis"], [" HP:", " Hard Points:"], ["Price/Rarity", "price and rarity"], ["Encumbrance Cap", "cargo capacity"], [" HT ", " Hull Trauma "], [" SS ", " System Strain "], ["(R, military)", "rare, military only"], ["(R)", "rare"], [" | ", ". "], ["|", ". "]];
   for (const [a, b] of replacements) text = text.replaceAll(a, b);
   text = text.replace(/&/g, "and");
   const patterns: Array<[RegExp, string]> = [[/\bXP\b/g, "experience points"], [/\bGMs\b/g, "Game Masters"], [/\bGM\b/g, "Game Master"], [/\bPCs\b/g, "player characters"], [/\bPC\b/g, "player character"], [/\bEnc\b/g, "Encumbrance"], [/\bDam\b/g, "Damage"], [/\bCrit\b/g, "Critical"], [/\bSil\b/g, "Silhouette"], [/\bd10\b/g, "d-ten"], [/\bc\.\s/g, "circa "]];
   for (const [pattern, replacement] of patterns) text = text.replace(pattern, replacement);
-  return text.replace(/price and rarity: ([\d,]+) [/ ]*(\w+)/g, "price $1 sesterces, rarity $2").replace(/\s+/g, " ").trim();
+  return text.replace(/price and rarity: ([\d,]+) [/ ]*(\w+)/g, "price $1 sesterces, rarity $2").replace(/\s+([,.!?;:)])/g, "$1").replace(/\s+/g, " ").trim();
 }
-function statSpeech(block: StatBlock): string {
-  const parts: string[] = [];
-  const name = plain(block.name ?? "").trim();
-  const kind = plain(block.kind ?? "").trim();
-  parts.push(name + (name && !name.endsWith(".") ? "." : ""));
-  if (kind) parts.push(`(${kind}).`);
-  if (block.chars) {
-    const values = Object.entries(block.chars).map(([key, value]) => `${HMAP[key] ?? key} ${value}`);
-    if (block.derived) values.push(...Object.entries(block.derived).map(([key, value]) => `${key} ${value}`));
-    parts.push(`Characteristics: ${values.join(", ")}.`);
+
+function role(element: Element): string { return element.properties?.semanticRole ?? ""; }
+function omitted(element: Element): boolean {
+  return ["notes", "note", "note-ref", "decoration"].includes(role(element)) || ["image", "rule", "spacer"].includes(element.type);
+}
+
+// Inline children are runs, not separately spaced blocks. Their semantic roles,
+// rather than their font-specific glyphs, determine what is spoken.
+function inlineSpeech(element: Element): string {
+  if (omitted(element)) return "";
+  const semantic = role(element);
+  if (semantic.startsWith("dice:") || semantic.startsWith("result:")) return ` ${semantic.slice(semantic.indexOf(":") + 1)} `;
+  return element.children?.length ? element.children.map(inlineSpeech).join("") : plain(element.content ?? "");
+}
+
+function sentence(text: string): string {
+  const value = text.trim();
+  return value && !/[.!?:]$/.test(value) ? `${value}.` : value;
+}
+
+function tableSpeech(element: Element): string {
+  const rows = element.children ?? [];
+  const headerCount = element.table?.headerRows ?? 1;
+  const headers: string[] = [];
+  const result: string[] = [];
+  rows.forEach((row, index) => {
+    const cells = row.children ?? [];
+    const isHeader = index < headerCount || ["header", "table-header", "thead"].includes(role(row));
+    let column = 0;
+    const fields: string[] = [];
+    for (const cell of cells) {
+      const text = inlineSpeech(cell).trim();
+      const span = Math.max(1, Number(cell.properties?.colSpan) || 1);
+      if (isHeader) {
+        for (let offset = 0; offset < span; offset++) headers[column + offset] = text;
+      } else if (text) {
+        const heading = headers[column];
+        fields.push(heading ? `${heading}: ${text}` : text);
+      }
+      column += span;
+    }
+    if (fields.length) result.push(sentence(fields.join("; ")));
+  });
+  return result.join(" ");
+}
+
+function blockSpeech(element: Element): string {
+  if (omitted(element)) return "";
+  if (element.type === "table") return tableSpeech(element);
+  if (element.type === "strip") return (element.slots ?? []).flatMap(slot => slot.elements).map(blockSpeech).filter(Boolean).join(" ");
+  if (element.type === "zone-map") return (element.zones ?? []).flatMap(zone => zone.elements).map(blockSpeech).filter(Boolean).join(" ");
+  if (element.type === "list" && element.list?.kind === "ordered") {
+    const start = Number(element.list.start ?? 1);
+    return (element.children ?? []).map((item, index) => {
+      const spoken = blockSpeech(item);
+      return spoken ? `${start + index}. ${spoken}` : "";
+    }).filter(Boolean).join(" ");
   }
-  if (block.desc) parts.push(plain(block.desc));
-  for (const field of block.fields ?? []) parts.push(`${field.label ? `${plain(field.label).trim()}: ` : ""}${plain(field.text ?? "").trim()}`);
-  return parts.join(" ");
-}
-function blockSpeech(block: ContentBlock): string {
-  switch (block.type) {
-    case "h2": case "h3": case "h4": case "scenario": return `${block.type === "scenario" ? "Scenario. " : ""}${plain(block.text).replace(/\.+$/, "")}.`;
-    case "p": return plain(block.text.replace("{{sidebar}}", block.sidebar ? ` ${block.sidebar.title}. ${(block.sidebar.body ?? []).join(" ")} ` : ""));
-    case "readaloud": return `Read aloud. ${plain(block.text)}`;
-    case "synopsis": return `Synopsis. ${plain(block.text)}`;
-    case "example": return plain(block.text);
-    case "sidebar": return `${plain(block.title)}. ${(block.body ?? []).map(plain).join(" ")}`;
-    case "procedure": return `${plain(block.title)}. ${block.steps.map((step, i) => `${i + 1}. ${plain(step)}`).join(" ")}`;
-    case "list": return block.items.map(item => { const value = plain(item); return value + (/([.!?:])$/.test(item.trim()) ? "" : "."); }).join(" ");
-    case "table": return block.rows.map(row => row.map((value, i) => ({ value, column: block.columns[i] })).filter(cell => cell.value && cell.column).map(cell => `${plain(cell.column!)}: ${plain(String(cell.value))}`).join("; ") + ".").join(" ");
-    case "statblock": return statSpeech(block);
-    case "endnotes": return "";
+  if (element.type === "story" || element.type === "list") return (element.children ?? []).map(blockSpeech).filter(Boolean).join(" ");
+  const { partLabel, partTitle } = element.properties ?? {};
+  if (role(element) === "part" && typeof partTitle === "string") return sentence(`${typeof partLabel === "string" && partLabel ? `${partLabel}: ` : ""}${plain(partTitle)}`);
+  const value = inlineSpeech(element).trim();
+  if (!value) return "";
+  if (["h1", "h2", "h3", "h4", "scenario", "list-item", "stat-name", "sidebar"].includes(element.type)) {
+    return `${element.type === "scenario" ? "Scenario. " : ""}${sentence(value)}`;
   }
-}
-function chapterSpeech(chapter: DocumentData["chapters"][number]): string {
-  const part = chapter.part ? `${chapter.part.label ? `${plain(chapter.part.label)}: ` : ""}${plain(chapter.part.title)}. ` : "";
-  return speechclean([`${part}${plain(chapter.title).replace(/\.+$/, "")}.`, ...chapter.blocks.map(blockSpeech).map(text => text.trim()).filter(Boolean)].join(" "));
+  if (element.type === "stat-kind") return `(${value}).`;
+  if (element.type === "readaloud") return `Read aloud. ${value}`;
+  return value;
 }
 
 export async function writeNarration(document: DocumentData, root: string): Promise<void> {
   const intro = `${plain(document.meta.title)}. ${plain(document.meta.subtitle)}. ${plain(document.meta.system)}. “${plain(document.meta.tagline)}” This is an audiobook edition; tables and stat blocks are read as spoken lists, so keep the PDF nearby for reference during play. We begin.`;
-  const chapters = document.chapters.map(chapterSpeech);
-  const groups: Record<number, number[]> = { 1: [0, 1], 2: [2], 3: [3], 4: [4, 5], 5: [6], 6: [7], 7: [8], 8: [9], 9: [10, 11, 12] };
+  const chapters: string[][] = [[]];
+  const groups = new Map<number, string[]>([[1, []]]);
+  const explicitGroups = document.elements.some(element => role(element) === "chapter" && Number.isInteger(element.properties?.audioPart));
+  let groupNumber = 1;
+  let sawPart = false;
+  let pendingPart = false;
+  let pendingAudio: string[] = [];
+  for (const element of document.elements) {
+    const semantic = role(element);
+    if (semantic === "part") {
+      if (chapters[chapters.length - 1]!.length) chapters.push([]);
+      if (!explicitGroups && sawPart) groupNumber++;
+      sawPart = true;
+      pendingPart = true;
+    } else if (semantic === "chapter") {
+      if (!pendingPart && chapters[chapters.length - 1]!.length) chapters.push([]);
+      pendingPart = false;
+    }
+    const text = blockSpeech(element);
+    if (text) chapters[chapters.length - 1]!.push(text);
+    if (explicitGroups && semantic === "part") {
+      if (text) pendingAudio.push(text);
+      continue;
+    }
+    if (explicitGroups && semantic === "chapter" && Number.isInteger(element.properties?.audioPart)) {
+      groupNumber = element.properties!.audioPart;
+    }
+    if (explicitGroups && pendingAudio.length && semantic !== "chapter") {
+      if (text) pendingAudio.push(text);
+      continue;
+    }
+    if (!groups.has(groupNumber)) groups.set(groupNumber, []);
+    const group = groups.get(groupNumber)!;
+    group.push(...pendingAudio);
+    pendingAudio = [];
+    if (text) group.push(text);
+  }
+  groups.get(groupNumber)!.push(...pendingAudio);
   const audioDir = `${root}/audio`;
   await mkdir(audioDir, { recursive: true });
-  for (const [part, indexes] of Object.entries(groups)) {
-    const text = indexes.map(index => chapters[index]).join(" ");
-    await writeFile(`${audioDir}/part_${part}.txt`, `${part === "1" ? `${intro}\n\n` : ""}${text}`);
+  for (const [number, group] of groups) {
+    await writeFile(`${audioDir}/part_${number}.txt`, `${number === 1 ? `${intro}\n\n` : ""}${speechclean(group.join(" "))}`);
   }
-  await writeFile(`${audioDir}/transcript.txt`, `${intro}\n\n${chapters.join("\n\n")}`);
+  await writeFile(`${audioDir}/transcript.txt`, `${intro}\n\n${chapters.filter(chapter => chapter.length).map(chapter => speechclean(chapter.join(" "))).join("\n\n")}`);
 }

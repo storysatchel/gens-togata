@@ -9,26 +9,85 @@ archetypes, careers, Roman gear and vehicles, adversaries, a full social-encount
 
 ## Single source of truth
 
-Content and presentation are decoupled. One source file renders to multiple formats.
+Content and presentation are decoupled. The rulebook and style guide use the same
+VMPrint-native logical document format; the PDF and narration are separate views of
+the authored content.
 
 | Source | Responsibility |
 | --- | --- |
-| `content.yaml` | **The source of truth.** Typed content blocks only — no markup. |
-| `src/templates/styles.ts` | Typed VMPrint styles and print typography. |
-| `src/content/` | YAML loading and document/block types. |
-| `src/templates/` | Typed VMPrint document, chapter, TOC, and block builders. |
-| `src/inline/` | Converts light inline markup into styled VMPrint text runs. |
-| `src/output/` | VMPrint PDF rendering and separate narration formatting. |
+| `content.yaml` | **The source of truth:** metadata and authored VMPrint elements. |
+| `styleguide.yaml` | A document in the same format demonstrating the components. |
+| `src/content/` | YAML loading, source validation, and document types. |
+| `src/content/compositions.ts` | Authoring helpers for native tables and adversaries. |
+| `src/templates/` | Typed theme and PDF document presentation, including generated material. |
+| `src/output/` | PDF output and narration from the logical content tree. |
 | `src/render.ts` | CLI entry point: YAML → paged PDF and narration. |
-| `src/excerpt.ts` | Reuses the PDF builders to render selected chapters. |
-| `tools/importer.py` | One-time HTML→YAML migration (retired; kept for provenance). |
+| `src/excerpt.ts` | Renders a selection of the document as a PDF. |
+| `tools/importer.py` | Historical HTML→YAML migration; not the native authoring pipeline. |
 
-Inline emphasis in `content.yaml` uses light markdown the renderers translate:
-`**bold**`, `*italic*`, and `[[keyword]]` for domain-styled runs (dice symbols, tags).
+### Authoring the document
 
-Paragraphs with `style: opening` use the full text width and a distinct quotation treatment; they can continue onto subsequent pages.
+The YAML root contains `meta` (title, subtitle, tagline, system, and legal text)
+and `elements`, an ordered array of VMPrint elements. It has no `chapters` or
+`blocks` wrapper. Elements use `content` and, where needed, nested `children`.
+Give authored elements stable, unique `properties.sourceId` values: identities
+must survive insertion or reordering and must not be derived from positions.
+Use `properties.semanticRole` for meaning, independently of visual styling.
 
-A paragraph can place a sidebar at a specific point in its text: add one `{{sidebar}}` marker and a `sidebar` field containing `type: sidebar`, `title`, and `body` (a list of paragraphs). Both outputs read the sidebar at the marker. In the PDF, sidebar paragraphs have a thin vertical rule and flow within the column; they do not float into the page margin.
+For example, a chapter heading and a two-column story are expressed directly:
+
+```yaml
+meta:
+  title: Example
+  subtitle: A supplement
+  tagline: An example document
+  system: Genesys
+  legal: []
+elements:
+  - type: h1
+    content: The Forum
+    properties:
+      sourceId: forum-chapter
+      semanticRole: chapter
+  - type: story
+    content: ""
+    columns: 2
+    gutter: 12
+    balance: false
+    properties:
+      sourceId: forum-story
+    children:
+      - type: p
+        content: Citizens gather in the Forum.
+        properties:
+          sourceId: forum-introduction
+```
+
+Use native headings (`h1`, `h2`, `h3`, and `scenario`), stories with explicit
+`columns` and `gutter`, and native lists and tables. A story child can use
+`columnSpan` for full-width material. Roles distinguish, for example, chapter and
+part headings, asides, and notes. Inline semantic runs are `text` elements:
+roles such as `dice:ability`, `result:success`, and `note-ref` carry meaning
+without inferring it from a glyph. Preserve endnote numbers and place aside
+elements in their intended reading order. See `styleguide.yaml` for component
+examples.
+
+For generated source, `composeTable(columns, rows)` and
+`composeAdversary(profile)` in `src/content/compositions.ts` build native
+elements. Assign stable unique `sourceId` values to every returned element and
+run before saving; the YAML stores the expanded elements, not helper calls.
+
+Two codemods keep the persisted YAML consistent; both parse and rewrite YAML structurally and never assign or change identities:
+
+- `bun tools/migrate-vmprint.ts LEGACY.yaml NATIVE.yaml` converts a legacy `chapters`/`blocks` document to native elements (stories, spans, lists, tables, semantic dice/result/note runs). It is deterministic, rejects unknown or ambiguous legacy input (unsupported block types, unknown table styles, malformed tables, anchored-sidebar misuse), refuses to overwrite an existing output, and leaves an already-native file untouched. A regenerated legacy file is a fresh run: identities already persisted in `content.yaml` are authoritative and are never recomputed.
+- `bun tools/normalize-source.ts [--check] content.yaml styleguide.yaml` runs structural passes over the native tree: it fixes `stat-metrics` table widths and strips per-cell styles, and turns runs carrying exactly the keyword presentation into `semanticRole: keyword` (the theme owns that styling). Ambiguous styling raises an error instead of being guessed.
+
+`tests/book.test.ts` lays out both sources and checks that every authored element appears exactly once with its full text, inside the margins, with resolved navigation.
+
+Source validation checks the logical document before output. Cover and contents
+are presentation-generated, not authored into the shared tree. Narration walks
+that logical tree in reading order rather than recovering text from PDF layout;
+the typed theme controls visual presentation rather than source meaning.
 
 ## Build
 
@@ -41,13 +100,15 @@ make audio      # content.yaml -> narration only
 make excerpt    # default: Chapter 1 preview PDF
 make clean
 bun run typecheck # TypeScript static check
-make test         # inline semantics, continuation fidelity, TOC targets, and full-width separation
+make test         # project tests
 ```
 
-[VMPrint](https://github.com/cosmiciron/vmprint) lays out typed document objects and writes the paged PDF without JSX, intermediate HTML, or a headless browser. Native VMPrint columns handle text flow and pagination; presentation is defined in `src/templates/styles.ts`, not CSS or a custom page-measurement loop. The narration renderer remains a separate output path over the same YAML data.
+[VMPrint](https://github.com/cosmiciron/vmprint) lays out typed document objects and writes the paged PDF without JSX, intermediate HTML, or a headless browser. Native VMPrint columns handle text flow and pagination; the typed theme defines presentation without CSS or a custom page-measurement loop. Narration traverses the same logical document independently of PDF layout.
 Body copy uses 7 pt type with 1.4 line-height and justified alignment. Specialized text, including sidebars and stat blocks, uses its own sizes and alignment. The PDF renderer registers the bundled text fonts and Genesys glyph font for embedding, so dice symbols remain glyphs rather than substituted text.
-VMPrint source is pinned by the `vendor/vmprint` Git submodule to commit [`a69394f06aa08bd97da11f92a718758eb5ea403d`](https://github.com/cosmiciron/vmprint/commit/a69394f06aa08bd97da11f92a718758eb5ea403d); its packages are built locally from that revision, not the npm releases with the same version numbers. Upstream's `package-lock.json` pins its build dependencies, and `bun.lock` pins the application dependencies. Font registration uses the packaged WOFF text fonts and the Genesys TTF; WOFF2 composite-glyph embedding fails in PDFKit. Full-width headings, tables, opening quotations, and notes separate native two-column stories. Contents page numbers are resolved from layout in fixed-width cells; `pdf-lib` adds matching TOC links, bookmarks, and document metadata without changing geometry.
-At this revision, upstream's `test:zone-continue` fails its nested story/column-span check inside an expandable continued zone (`engine/tests/zone-map-continue.spec.ts:886`). The rulebook does not use that composition. Do not rely on it until upstream fixes the regression and the fixture passes.
+VMPrint source is pinned by the `vendor/vmprint` Git submodule to commit [`a69394f06aa08bd97da11f92a718758eb5ea403d`](https://github.com/cosmiciron/vmprint/commit/a69394f06aa08bd97da11f92a718758eb5ea403d); its packages are built locally from that revision, not the npm releases with the same version numbers. Upstream's `package-lock.json` pins its build dependencies, and `bun.lock` pins the application dependencies. Font registration uses the packaged WOFF text fonts and the Genesys TTF; WOFF2 composite-glyph embedding fails in PDFKit. Contents page numbers are resolved from layout in fixed-width cells; `pdf-lib` adds matching TOC links, bookmarks, and document metadata without changing geometry.
+Upstream's own `test:zone-continue` fails at this revision (nested story/column-span check inside an expandable continued zone, `engine/tests/zone-map-continue.spec.ts:886`); the rulebook does not use that composition, so do not rely on it until upstream fixes it.
+
+The pinned tree is patched at build time by `tools/patches/*.patch` (applied by `tools/build-vmprint.sh`, then reverted so the submodule stays at the pinned commit; the build stamp records the commit and the patch hash). `vmprint-story-continuation.patch` fixes `StoryPackager.pourColumns`, which emitted a block twice when it did not fit the last column of a multi-column story (reproduces on upstream v1.4.0 and `a69394f`; the engine's own `test:engine`, `test:flat`, `test:strip`, `test:modules`, `test:publication`, `test:spatial-ir`, `test:scripting`, `test:standard-fonts` and `test:collider-field` are unchanged by it). `tests/vmprint-revision.test.ts` guards it. Drop the patch when upstream carries an equivalent fix.
 The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). `make folio` (and CI) imposes it 2-up on letter paper in 16-page signatures for duplex booklet printing, using [`pdfimpose`](https://framagit.org/spalax/pdfimpose) (`hardcover --signature 2x1 --group 4`), run pinned through `uvx` — install [uv](https://docs.astral.sh/uv/); no TeX needed.
 Always verify the PDF visually (overflow/overlap are silent) before release.
 

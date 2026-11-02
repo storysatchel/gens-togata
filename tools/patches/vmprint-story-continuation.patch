@@ -1,0 +1,25 @@
+# VMPrint a69394f: StoryPackager.pourColumns emitted a block twice when it did not fit the last column.
+# Upstream-bound fix; verified against engine fixtures (test:engine, flat, strip, modules, publication, spatial-ir, scripting, standard-fonts, collider-field).
+diff --git a/engine/src/engine/layout/packagers/story-packager.ts b/engine/src/engine/layout/packagers/story-packager.ts
+index 1f3263e..8ff80ad 100644
+--- a/engine/src/engine/layout/packagers/story-packager.ts
++++ b/engine/src/engine/layout/packagers/story-packager.ts
+@@ -1842,8 +1842,16 @@ export class StoryPackager implements PackagerUnit {
+ 
+                 if (goNextRegion()) continue;
+                 hasOverflow = true;
+-                continuationElement = workingElement;
+-                nextChildIndex = i;
++                if (workingElement !== child.element) {
++                    // Earlier regions already consumed part of this child: the sliced
++                    // remainder stands in for it, so resume after the original.
++                    continuationElement = workingElement;
++                    nextChildIndex = i + 1;
++                } else {
++                    // Nothing of this child was placed: the untouched original is
++                    // re-poured from `children[i]`; do not also carry it as a remainder.
++                    nextChildIndex = i;
++                }
+                 break outer;
+             }
+         }

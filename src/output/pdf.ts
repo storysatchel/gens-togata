@@ -4,7 +4,7 @@ import { VMPrintEngine, loadDocument, type Page } from "@vmprint/engine";
 import PdfContext from "@vmprint/context-pdf";
 import type { DocumentData } from "../content/types";
 import { contentsEntries, documentInput, fontManager } from "../templates/document";
-import { PAGE_SIZE } from "../templates/styles";
+import { bookTheme } from "../templates/styles";
 import { finishPdf } from "./navigation";
 
 export function sourcePages(pages: Page[]): Map<string, number> {
@@ -25,7 +25,7 @@ export async function layoutDocument(document: DocumentData, root: string): Prom
     const pages = await engine.layout();
     // VMPrint omits empty viewports; preserve their physical sheets and destination indices.
     for (let index = 0; index < pages.length; index++) {
-      if (pages[index]!.index > index) pages.splice(index, 0, { index, boxes: [], width: PAGE_SIZE.width, height: PAGE_SIZE.height });
+      if (pages[index]!.index > index) pages.splice(index, 0, { index, boxes: [], width: bookTheme.geometry.pageSize.width, height: bookTheme.geometry.pageSize.height });
     }
     const resolved = sourcePages(pages);
     for (const entry of entries) if (!resolved.has(entry.id)) throw new Error(`Missing contents target: ${entry.id}`);
@@ -38,7 +38,7 @@ export async function writePdf(document: DocumentData, root: string, outputPath:
   const { engine, pages } = await layoutDocument(document, root);
   const chunks: Uint8Array[] = [];
   const { promise: completion, resolve: finish } = Promise.withResolvers<void>();
-  const context = new PdfContext({ size: [PAGE_SIZE.width, PAGE_SIZE.height], margins: { top: 0, right: 0, bottom: 0, left: 0 }, autoFirstPage: false, bufferPages: false });
+  const context = new PdfContext({ size: [bookTheme.geometry.pageSize.width, bookTheme.geometry.pageSize.height], margins: { top: 0, right: 0, bottom: 0, left: 0 }, autoFirstPage: false, bufferPages: false });
   context.pipe({ write: chunk => { chunks.push(typeof chunk === "string" ? Buffer.from(chunk) : chunk); }, end: finish, waitForFinish: () => completion });
   await engine.render(context);
   await completion;

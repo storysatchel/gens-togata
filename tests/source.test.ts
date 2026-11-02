@@ -1,0 +1,61 @@
+import { expect, test } from "bun:test";
+import { mkdtemp, rm, writeFile } from "node:fs/promises";
+import { join } from "node:path";
+import { tmpdir } from "node:os";
+import { loadDocument } from "../src/content/load";
+import { composeAdversary } from "../src/content/compositions";
+import { contentsEntries, documentInput } from "../src/templates/document";
+import { bookTheme } from "../src/templates/styles";
+import type { Element } from "@vmprint/engine";
+
+const metadata = { title: "Proof", subtitle: "", tagline: "", system: "Genesys", legal: [] };
+const chapter = (id: string): Element => ({ type: "h1", content: id, properties: { sourceId: id, semanticRole: "chapter" } });
+
+test("source rejects duplicate identities, malformed table rows, and dangling notes", async () => {
+  const dir = await mkdtemp(join(tmpdir(), "book-source-"));
+  const path = join(dir, "input.yaml");
+  try {
+    const load = async (elements: unknown[]) => {
+      await writeFile(path, JSON.stringify({ meta: metadata, elements }));
+      return loadDocument(path);
+    };
+    await expect(load([chapter("same"), chapter("same")])).rejects.toThrow("duplicate sourceId same");
+    await expect(load([chapter("first"), { type: "table", content: "", properties: { sourceId: "table" }, table: { columns: [{ mode: "flex" }, { mode: "flex" }] }, children: [{ type: "table-row", content: "", properties: { sourceId: "row" }, children: [{ type: "table-cell", content: "short", properties: { sourceId: "cell" } }] }] }])).rejects.toThrow("does not fill all 2 columns");
+    await expect(load([chapter("first"), { type: "p", content: "", properties: { sourceId: "paragraph" }, children: [{ type: "text", content: "3", properties: { sourceId: "ref", semanticRole: "note-ref" } }] }])).rejects.toThrow("note 3 does not exist");
+  } finally { await rm(dir, { recursive: true, force: true }); }
+});
+
+test("authored identities survive reordering and semantic glyphs obtain theme styling", async () => {
+  const a = chapter("chapter-a"), b = chapter("chapter-b");
+  const die: Element = { type: "text", content: "k", properties: { sourceId: "die", semanticRole: "dice:ability" } };
+  const paragraph: Element = { type: "p", content: "", children: [die], properties: { sourceId: "paragraph" } };
+  const first = { meta: metadata, elements: [a, paragraph, b] };
+  const reordered = { meta: metadata, elements: [b, a, paragraph] };
+  expect(contentsEntries(first).map(entry => entry.id)).toEqual(["chapter-a", "chapter-b"]);
+  expect(contentsEntries(reordered).map(entry => entry.id)).toEqual(["chapter-b", "chapter-a"]);
+  const result = await documentInput(first, process.cwd());
+  const pdfRun = result.elements.find(element => element.properties?.sourceId === "paragraph")!.children![0]!;
+  expect(pdfRun.properties?.style).toMatchObject({ fontFamily: "Genesys", color: "#2e8b43" });
+  expect(die.properties?.style).toBeUndefined();
+});
+
+
+test("keywords, note references, and metric tables obtain their presentation only from the theme", async () => {
+  const runs: Element[] = [
+    { type: "text", content: "Talent", properties: { sourceId: "kw", semanticRole: "keyword" } },
+    { type: "text", content: "1", properties: { sourceId: "ref", semanticRole: "note-ref" } },
+  ];
+  const metrics: Element = { type: "table", content: "", properties: { sourceId: "metrics", semanticRole: "stat-metrics" }, table: { columns: [{ mode: "fixed", value: 78 }] }, children: [{ type: "table-row", content: "", properties: { sourceId: "metrics-row" }, children: [{ type: "table-cell", content: "3", properties: { sourceId: "metrics-cell" } }] }] };
+  const input = await documentInput({ meta: metadata, elements: [{ type: "p", content: "", children: runs, properties: { sourceId: "prose" } }, metrics] }, process.cwd());
+  const prose = input.elements.find(element => element.properties?.sourceId === "prose")!;
+  expect(prose.children![0]!.properties?.style).toMatchObject({ fontWeight: "bold", color: bookTheme.colors.annotation });
+  expect(prose.children![1]!.properties?.style).toMatchObject({ baselineShift: 2.8 });
+  const cell = input.elements.find(element => element.properties?.sourceId === "metrics")!.children![0]!.children![0]!;
+  expect(cell.properties?.style).toMatchObject(bookTheme.table.statCellStyle);
+  expect(runs[0]!.properties?.style).toBeUndefined();
+});
+test("adversary composition retains meaningful metric labels and values", () => {
+  const elements = composeAdversary({ name: "Test adversary", characteristics: { Brawn: 3 }, derived: { Soak: 4 }, fields: [{ label: "Skills", text: "Melee 2" }] });
+  const tables = elements.filter(element => element.type === "table");
+  expect(tables.map(table => table.children!.map(row => row.children!.map(cell => cell.children!.map(run => run.content).join(""))))).toEqual([[["Brawn"], ["3"]], [["Soak"], ["4"]]]);
+});

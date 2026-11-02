@@ -1,13 +1,66 @@
 import type { ElementStyle } from "@vmprint/engine";
 
 // VMPrint uses physical points throughout (72 pt per inch).
-export const PAGE_SIZE = { width: 396, height: 612 };
-export const PAGE_MARGIN = { top: 36, right: 36, bottom: 40, left: 36 };
-export const CONTENT_WIDTH = PAGE_SIZE.width - PAGE_MARGIN.left - PAGE_MARGIN.right;
-export const COLUMN_GAP = 12;
+const pageSize = { width: 396, height: 612 };
+const margins = { top: 36, right: 36, bottom: 40, left: 36 };
+const geometry = {
+  pageSize,
+  margins,
+  contentWidth: pageSize.width - margins.left - margins.right,
+  columnGap: 12,
+};
+const typography = {
+  fontFamily: "Libre Baskerville",
+  fontSize: 7,
+  lineHeight: 1.4,
+  lang: "en",
+};
+const colors = {
+  panel: "#f2eee5",
+  accent: "#8b3027",
+  sidebarBorder: "#9b8b72",
+  tableBorder: "#c6bda9",
+  tableHeader: "#e6dece",
+  annotation: "#8a5a12",
+  dice: {
+    boost: "#1f8f80",
+    setback: "#231f20",
+    difficulty: "#552c7f",
+    ability: "#2e8b43",
+    proficiency: "#b99400",
+    challenge: "#771214",
+  },
+} as const;
+const glyph: ElementStyle = {
+  fontFamily: "Genesys", fontStyle: "normal", fontWeight: "normal",
+  fontSize: 8.05, baselineShift: -0.56, letterSpacing: 0.375,
+};
+const note: ElementStyle = { fontSize: 4.48, baselineShift: 2.8, inlineMarginLeft: 0.3, color: colors.annotation, fontWeight: "bold" };
+const keyword: ElementStyle = { fontWeight: "bold", color: colors.annotation };
+const table = {
+  motivationFirstColumnWidth: 30,
+  headerCellStyle: { fontWeight: 700, backgroundColor: colors.tableHeader },
+  motivationCellStyle: { textAlign: "center", fontWeight: 700 },
+  statCellStyle: { fontSize: 4.2, paddingTop: 1.5, paddingBottom: 1.5, paddingLeft: 0.5, paddingRight: 0.5, textAlign: "center" },
+} satisfies {
+  motivationFirstColumnWidth: number;
+  headerCellStyle: ElementStyle;
+  motivationCellStyle: ElementStyle;
+  statCellStyle: ElementStyle;
+};
+
 const heading: ElementStyle = { fontWeight: 700, textAlign: "left", keepWithNext: true, marginTop: 8, marginBottom: 4 };
-const panel: ElementStyle = { backgroundColor: "#f2eee5", paddingLeft: 6, paddingRight: 6, marginBottom: 6, textAlign: "left", allowLineSplit: true };
-export const styles: Record<string, ElementStyle> = {
+const panel: ElementStyle = { backgroundColor: colors.panel, paddingLeft: 6, paddingRight: 6, marginBottom: 6, textAlign: "left", allowLineSplit: true };
+
+export type BookStyleKey =
+  | "p" | "lead" | "small" | "deriv" | "act" | "chk" | "opening"
+  | "h1" | "h2" | "h3" | "h4" | "scenario"
+  | "readaloud" | "synopsis" | "example" | "sidebar" | "list-item" | "table-cell"
+  | "stat-name" | "stat-kind" | "stat-desc" | "stat-field" | "legal"
+  | "cover-title" | "cover-subtitle" | "cover-tagline" | "cover-system"
+  | "part-label" | "part-title" | "footer";
+
+const styles = {
   p: { marginBottom: 5, textAlign: "justify", allowLineSplit: true, orphans: 2, widows: 2 },
   lead: { fontSize: 8, marginBottom: 6, allowLineSplit: true },
   small: { fontSize: 6, marginBottom: 4, allowLineSplit: true },
@@ -20,14 +73,14 @@ export const styles: Record<string, ElementStyle> = {
   h2: { ...heading, fontSize: 12, keepWithNext: false },
   h3: { ...heading, fontSize: 9 },
   h4: { ...heading, fontSize: 8 },
-  scenario: { ...heading, fontSize: 10, borderBottomWidth: 0.5, borderBottomColor: "#8b3027", keepWithNext: false },
+  scenario: { ...heading, fontSize: 10, borderBottomWidth: 0.5, borderBottomColor: colors.accent, keepWithNext: false },
   readaloud: { ...panel, fontStyle: "italic" },
   synopsis: panel,
   example: { ...panel, fontSize: 6.5 },
-  sidebar: { fontSize: 6, lineHeight: 1.3, textAlign: "left", paddingLeft: 6, borderLeftWidth: 0.5, borderLeftColor: "#9b8b72", marginBottom: 5, allowLineSplit: true },
-  "list-item": { marginBottom: 3, allowLineSplit: true, textAlign: "left" },
-  "table-cell": { fontSize: 6, padding: 3, textAlign: "left", borderBottomWidth: 0.3, borderBottomColor: "#c6bda9" },
-  "stat-name": { ...heading, fontSize: 10, color: "#8b3027" },
+  sidebar: { fontSize: 6, lineHeight: 1.3, textAlign: "left", paddingLeft: 6, borderLeftWidth: 0.5, borderLeftColor: colors.sidebarBorder, marginBottom: 5, allowLineSplit: true },
+  "list-item": { marginBottom: 3, allowLineSplit: true, overflowPolicy: "move-whole", textAlign: "left" },
+  "table-cell": { fontSize: 6, padding: 3, textAlign: "left", borderBottomWidth: 0.3, borderBottomColor: colors.tableBorder },
+  "stat-name": { ...heading, fontSize: 10, color: colors.accent },
   "stat-kind": { fontSize: 6, fontWeight: 700, marginBottom: 4 },
   "stat-desc": { fontSize: 6.5, fontStyle: "italic", marginBottom: 5, allowLineSplit: true },
   "stat-field": { fontSize: 6.5, marginBottom: 4, allowLineSplit: true, textAlign: "left" },
@@ -39,4 +92,18 @@ export const styles: Record<string, ElementStyle> = {
   "part-label": { fontSize: 12, textAlign: "center", marginTop: 140, marginBottom: 15 },
   "part-title": { fontSize: 26, textAlign: "center" },
   footer: { fontSize: 6, textAlign: "center" },
-};
+} satisfies Record<BookStyleKey, ElementStyle>;
+
+/** The book's layout and visual vocabulary, independent of any output adapter. */
+export const bookTheme = {
+  name: "Gens Togata",
+  geometry,
+  typography,
+  colors,
+  note,
+  keyword,
+  glyph,
+  table,
+  styles,
+} as const;
+

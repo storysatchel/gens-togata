@@ -6,17 +6,18 @@ Authoring and build conventions for this repository. Read before editing content
 *Gens Togata* — a fan-made setting supplement for the **Genesys** roleplaying game, set in ancient Rome. Published under the Genesys Foundry Community Content Agreement; unofficial and non-commercial.
 
 ## Architecture — source of truth is decoupled from presentation
-- `content.yaml` is the **single source of truth**: metadata + chapters of typed blocks (`h3`, `p`, `list`, `table`, `statblock`, `sidebar`, `procedure`, `scenario`, `endnotes`, …). It knows nothing of markup.
-- `src/templates/styles.ts` defines typed VMPrint presentation styles; there is no CSS or JSX rendering layer.
-- `src/content/` loads YAML and declares the typed content model. `src/templates/` builds VMPrint document elements; `src/inline/` handles inline markup as styled text runs.
-- Two-column text uses native VMPrint stories and pagination, not manually measured pages or a custom column splitter. Full-width headings, tables, opening quotations, and notes separate stories. Keep page geometry at **396 × 612 pt** and express styles and dimensions in points. Preserve empty physical viewports when normalizing the layout's sparse page indices.
-- `src/render.ts` is the CLI entry point: `content.yaml` → PDF via [VMPrint](https://github.com/cosmiciron/vmprint); `src/excerpt.ts` reuses that pipeline for selected chapters, and `src/output/speech.ts` renders `audio/*.txt` from the same content model.
-- Never parse rendered output to recover content. Never hard-code book prose in renderer modules or `src/templates/styles.ts`. Preserve bundled text-font registration and embedded `Genesys` glyphs when changing the PDF output path.
+- `content.yaml` is the **single source of truth**: `meta` and an ordered `elements` array of native VMPrint elements. Do not reintroduce chapter/block wrappers or put generated cover or contents pages into the shared source tree. `styleguide.yaml` uses the same model.
+- Assign authored nodes stable, unique `properties.sourceId` strings; never derive identities from array positions. Use `properties.semanticRole` to record meaning, not appearance: chapter and part headings, ordinary headings, asides, notes, and inline `dice:<name>`, `result:<name>`, and `note-ref` runs.
+- Use native `content` and `children`, stories with explicit `columns` and `gutter`, native lists and tables, and story-child `columnSpan` for full-width material. List items are `list-item` children; table rows and cells are `table-row` and `table-cell` children. Preserve logical reading order, including asides embedded within prose, and preserve endnote numbers.
+- Styles are named by element type or `properties.style`; the typed VMPrint theme controls presentation without encoding semantics in typography. `src/content/` loads and validates the logical source; `src/templates/` supplies presentation. Keep output adapters thin and reuse the source tree instead of maintaining a parallel content model.
+- Two-column text uses native VMPrint stories and pagination, not manually measured pages or a custom column splitter. Keep page geometry at **396 × 612 pt** and express styles and dimensions in points. Preserve empty physical viewports when normalizing the layout's sparse page indices.
+- `src/render.ts` is the CLI entry point: `content.yaml` → PDF via [VMPrint](https://github.com/cosmiciron/vmprint); `src/excerpt.ts` renders selected content, and `src/output/speech.ts` renders `audio/*.txt` by traversing the logical tree in reading order.
+- Never parse rendered output to recover content or infer semantic roles from glyphs. Never hard-code book prose in renderer modules or the theme. Preserve bundled text-font registration and embedded `Genesys` glyphs when changing the PDF output path.
 - Register text fonts from the npm packages' WOFF files, not WOFF2 (PDFKit fails to subset some WOFF2 composite glyphs). Contents numbers come from VMPrint layout; `src/output/navigation.ts` uses that geometry only to add PDF metadata, bookmarks, and links.
 
 ## Citations & attribution
-- **No inline attribution.** Do **not** name the source in the prose ("Mommsen writes", "as Cato notes", "according to…", "(Grounded in …)"). A quotation stands on its own, carrying only a superscript endnote marker `{{N}}`. **All attribution lives in the endnotes** (and the Appendix bibliography).
-- Endnote apparatus: inline `{{N}}` renders as a superscript; a block of `type: endnotes` (with `title` + ordered `items`) renders the numbered **Notes** list at the end of the chapter. Order `items` to match the markers 1..N.
+- **No inline attribution.** Do **not** name the source in the prose ("Mommsen writes", "as Cato notes", "according to…", "(Grounded in …)"). A quotation stands on its own, carrying only a superscript endnote marker. **All attribution lives in the endnotes** (and the Appendix bibliography).
+- Represent references as semantic `text` runs with `properties.semanticRole: note-ref`, preserving the printed number. Keep each chapter's numbered notes in order matching its references.
 
 ## Quotation & copyright (fair use in a game product is narrow)
 - **Verbatim quotes only from public-domain sources** (US: first published before 1931). Facts and history are never copyrightable — paraphrase modern scholarship freely, in your own words.
