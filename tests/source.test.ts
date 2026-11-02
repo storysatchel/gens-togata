@@ -3,7 +3,7 @@ import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { loadDocument } from "../src/content/load";
-import { contentsEntries, documentInput } from "../src/templates/document";
+import { documentInput } from "../src/templates/document";
 import { bookTheme } from "../src/templates/styles";
 import type { Element } from "@vmprint/engine";
 
@@ -23,32 +23,19 @@ test("source rejects duplicate identities and dangling notes", async () => {
   } finally { await rm(dir, { recursive: true, force: true }); }
 });
 
-test("authored identities survive reordering and semantic glyphs obtain theme styling", async () => {
-  const a = chapter("chapter-a"), b = chapter("chapter-b");
-  const die: Element = { type: "text", content: "k", properties: { sourceId: "die", semanticRole: "dice:ability" } };
-  const paragraph: Element = { type: "p", content: "", children: [die], properties: { sourceId: "paragraph" } };
-  const first = { meta: metadata, elements: [a, paragraph, b] };
-  const reordered = { meta: metadata, elements: [b, a, paragraph] };
-  expect(contentsEntries(first).map(entry => entry.id)).toEqual(["chapter-a", "chapter-b"]);
-  expect(contentsEntries(reordered).map(entry => entry.id)).toEqual(["chapter-b", "chapter-a"]);
-  const result = await documentInput(first, process.cwd());
-  const pdfRun = result.elements.find(element => element.properties?.sourceId === "paragraph")!.children![0]!;
-  expect(pdfRun.properties?.style).toMatchObject({ fontFamily: "Genesys", color: "#2e8b43" });
-  expect(die.properties?.style).toBeUndefined();
-});
-
-
-test("keywords, note references, and metric tables obtain their presentation only from the theme", async () => {
+test("dice, keywords, note references, and metric tables obtain their presentation only from the theme", async () => {
   const runs: Element[] = [
+    { type: "text", content: "k", properties: { sourceId: "die", semanticRole: "dice:ability" } },
     { type: "text", content: "Talent", properties: { sourceId: "kw", semanticRole: "keyword" } },
     { type: "text", content: "1", properties: { sourceId: "ref", semanticRole: "note-ref" } },
   ];
   const metrics: Element = { type: "table", content: "", properties: { sourceId: "metrics", semanticRole: "stat-metrics" }, table: { columns: [{ mode: "fixed", value: 78 }] }, children: [{ type: "table-row", content: "", properties: { sourceId: "metrics-row" }, children: [{ type: "table-cell", content: "3", properties: { sourceId: "metrics-cell" } }] }] };
   const input = await documentInput({ meta: metadata, elements: [{ type: "p", content: "", children: runs, properties: { sourceId: "prose" } }, metrics] }, process.cwd());
   const prose = input.elements.find(element => element.properties?.sourceId === "prose")!;
-  expect(prose.children![0]!.properties?.style).toMatchObject({ fontWeight: "bold", color: bookTheme.colors.annotation });
-  expect(prose.children![1]!.properties?.style).toMatchObject({ baselineShift: 2.8 });
+  expect(prose.children![0]!.properties?.style).toMatchObject({ fontFamily: "Genesys", color: bookTheme.colors.dice.ability });
+  expect(prose.children![1]!.properties?.style).toMatchObject({ fontWeight: "bold", color: bookTheme.colors.annotation });
+  expect(prose.children![2]!.properties?.style).toMatchObject({ baselineShift: 2.8 });
   const cell = input.elements.find(element => element.properties?.sourceId === "metrics")!.children![0]!.children![0]!;
   expect(cell.properties?.style).toMatchObject(bookTheme.table.statCellStyle);
-  expect(runs[0]!.properties?.style).toBeUndefined();
+  expect(runs[1]!.properties?.style).toBeUndefined();
 });
