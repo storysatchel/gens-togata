@@ -7,11 +7,12 @@ Authoring and build conventions for this repository. Read before editing content
 
 ## Architecture — source of truth is decoupled from presentation
 - `content.yaml` is the **single source of truth**: metadata + chapters of typed blocks (`h3`, `p`, `list`, `table`, `statblock`, `sidebar`, `procedure`, `scenario`, `endnotes`, …). It knows nothing of markup.
-- `styles.css` is presentation only.
-- `src/content/` loads YAML and declares the typed content model. `src/templates/` contains reusable TSX templates; `src/inline/` handles inline markup.
-- Two-column pages are laid out by `src/templates/flow.tsx`, not CSS (takumi-pdf has no multicol): it measures candidate pages with takumi's `measure()`, fills the left column to the page foot before the right, splits paragraphs/lists/tables/endnotes at word or item boundaries, and emits explicit `.page` boxes tagged `recto`/`verso` so outer-column sidebars float into the correct margin. Page geometry lives in `src/templates/page.ts`; keep `measure` options in step with the `render` options.
-- `src/render.tsx` is the CLI entry point: `content.yaml` → PDF via `takumi-pdf`; `src/output/speech.ts` renders `audio/*.txt` from the same content model.
-- Never parse rendered output to recover content. Never hard-code book prose in renderer modules or `styles.css`.
+- `src/templates/styles.ts` defines typed VMPrint presentation styles; there is no CSS or JSX rendering layer.
+- `src/content/` loads YAML and declares the typed content model. `src/templates/` builds VMPrint document elements; `src/inline/` handles inline markup as styled text runs.
+- Two-column text uses native VMPrint stories and pagination, not manually measured pages or a custom column splitter. Full-width headings, tables, opening quotations, and notes separate stories. Keep page geometry at **396 × 612 pt** and express styles and dimensions in points. Preserve empty physical viewports when normalizing the layout's sparse page indices.
+- `src/render.ts` is the CLI entry point: `content.yaml` → PDF via [VMPrint](https://github.com/cosmiciron/vmprint); `src/excerpt.ts` reuses that pipeline for selected chapters, and `src/output/speech.ts` renders `audio/*.txt` from the same content model.
+- Never parse rendered output to recover content. Never hard-code book prose in renderer modules or `src/templates/styles.ts`. Preserve bundled text-font registration and embedded `Genesys` glyphs when changing the PDF output path.
+- Register text fonts from the npm packages' WOFF files, not WOFF2 (PDFKit fails to subset some WOFF2 composite glyphs). Contents numbers come from VMPrint layout; `src/output/navigation.ts` uses that geometry only to add PDF metadata, bookmarks, and links.
 
 ## Citations & attribution
 - **No inline attribution.** Do **not** name the source in the prose ("Mommsen writes", "as Cato notes", "according to…", "(Grounded in …)"). A quotation stands on its own, carrying only a superscript endnote marker `{{N}}`. **All attribution lives in the endnotes** (and the Appendix bibliography).

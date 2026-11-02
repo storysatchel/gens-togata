@@ -11,14 +11,16 @@ archetypes, careers, Roman gear and vehicles, adversaries, a full social-encount
 
 Content and presentation are decoupled. One source file renders to multiple formats.
 
+| Source | Responsibility |
+| --- | --- |
 | `content.yaml` | **The source of truth.** Typed content blocks only — no markup. |
-| `styles.css` | Print presentation rules consumed by Takumi. |
+| `src/templates/styles.ts` | Typed VMPrint styles and print typography. |
 | `src/content/` | YAML loading and document/block types. |
-| `src/templates/` | Cohesive TSX templates for the document, chapters, TOC, and block families. |
-| `src/inline/` | Converts the content's light inline markup into safe JSX. |
-| `src/output/` | Takumi PDF rendering and separate narration formatting. |
-| `src/render.tsx` | CLI entry point: YAML → paged PDF and narration. |
-| `src/excerpt.tsx` | Reuses the PDF templates to render selected chapters. |
+| `src/templates/` | Typed VMPrint document, chapter, TOC, and block builders. |
+| `src/inline/` | Converts light inline markup into styled VMPrint text runs. |
+| `src/output/` | VMPrint PDF rendering and separate narration formatting. |
+| `src/render.ts` | CLI entry point: YAML → paged PDF and narration. |
+| `src/excerpt.ts` | Reuses the PDF builders to render selected chapters. |
 | `tools/importer.py` | One-time HTML→YAML migration (retired; kept for provenance). |
 
 Inline emphasis in `content.yaml` uses light markdown the renderers translate:
@@ -26,23 +28,26 @@ Inline emphasis in `content.yaml` uses light markdown the renderers translate:
 
 Paragraphs with `style: opening` use the full text width and a distinct quotation treatment; they can continue onto subsequent pages.
 
-A paragraph can place a sidebar at a specific point in its text: add one `{{sidebar}}` marker and a `sidebar` field containing `type: sidebar`, `title`, and `body` (a list of paragraphs). The marker travels with its paragraph when columns split; narration reads the sidebar at the marker. In an outer column the sidebar floats into the page margin and subsequent text wraps around it. In an inner column it remains a full-width box.
+A paragraph can place a sidebar at a specific point in its text: add one `{{sidebar}}` marker and a `sidebar` field containing `type: sidebar`, `title`, and `body` (a list of paragraphs). Both outputs read the sidebar at the marker. In the PDF, sidebar paragraphs have a thin vertical rule and flow within the column; they do not float into the page margin.
 
 ## Build
 
-Requires [Bun](https://bun.sh/) and the locked npm dependencies (`bun install`).
+Requires [Bun](https://bun.sh/), Git, Node.js, and npm. `make` initializes the VMPrint submodule and builds its packages from upstream's locked dependencies before installing this project's locked dependencies. A fresh checkout can also be prepared explicitly with `sh tools/build-vmprint.sh && bun install --frozen-lockfile`.
 
 ```sh
-make pdf        # content.yaml -> Takumi PDF + narration
+make pdf        # content.yaml -> VMPrint PDF + narration
 make styleguide # styleguide.yaml -> style-guide PDF
 make audio      # content.yaml -> narration only
 make excerpt    # default: Chapter 1 preview PDF
 make clean
 bun run typecheck # TypeScript static check
+make test         # inline semantics, continuation fidelity, TOC targets, and full-width separation
 ```
 
-`takumi-pdf` renders `.tsx` templates directly to a paged PDF; no intermediate HTML or headless browser is required. The narration renderer remains a separate output path over the same YAML data.
-Body copy uses 7 pt type with 1.4 line-height and justified alignment. Specialized text, including sidebars and stat blocks, uses its own sizes and alignment.
+[VMPrint](https://github.com/cosmiciron/vmprint) lays out typed document objects and writes the paged PDF without JSX, intermediate HTML, or a headless browser. Native VMPrint columns handle text flow and pagination; presentation is defined in `src/templates/styles.ts`, not CSS or a custom page-measurement loop. The narration renderer remains a separate output path over the same YAML data.
+Body copy uses 7 pt type with 1.4 line-height and justified alignment. Specialized text, including sidebars and stat blocks, uses its own sizes and alignment. The PDF renderer registers the bundled text fonts and Genesys glyph font for embedding, so dice symbols remain glyphs rather than substituted text.
+VMPrint source is pinned by the `vendor/vmprint` Git submodule to commit [`a69394f06aa08bd97da11f92a718758eb5ea403d`](https://github.com/cosmiciron/vmprint/commit/a69394f06aa08bd97da11f92a718758eb5ea403d); its packages are built locally from that revision, not the npm releases with the same version numbers. Upstream's `package-lock.json` pins its build dependencies, and `bun.lock` pins the application dependencies. Font registration uses the packaged WOFF text fonts and the Genesys TTF; WOFF2 composite-glyph embedding fails in PDFKit. Full-width headings, tables, opening quotations, and notes separate native two-column stories. Contents page numbers are resolved from layout in fixed-width cells; `pdf-lib` adds matching TOC links, bookmarks, and document metadata without changing geometry.
+At this revision, upstream's `test:zone-continue` fails its nested story/column-span check inside an expandable continued zone (`engine/tests/zone-map-continue.spec.ts:886`). The rulebook does not use that composition. Do not rely on it until upstream fixes the regression and the fixture passes.
 The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). `make folio` (and CI) imposes it 2-up on letter paper in 16-page signatures for duplex booklet printing, using [`pdfimpose`](https://framagit.org/spalax/pdfimpose) (`hardcover --signature 2x1 --group 4`), run pinned through `uvx` — install [uv](https://docs.astral.sh/uv/); no TeX needed.
 Always verify the PDF visually (overflow/overlap are silent) before release.
 
