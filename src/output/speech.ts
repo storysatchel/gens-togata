@@ -2,7 +2,6 @@ import { mkdir, writeFile } from "node:fs/promises";
 import type { Element } from "@vmprint/engine";
 import type { DocumentData } from "../content/types";
 
-function plain(text: string): string { return text.replace(/\[\[(.+?)\]\]/g, "$1").replace(/\{\{\d+\}\}/g, "").replace(/\*\*/g, "").replace(/\*/g, ""); }
 function speechclean(text: string): string {
   const replacements: Array<[string, string]> = [["W.T.", "Wound Threshold"], ["S.T.", "Strain Threshold"], ["(M/R)", "melee and ranged"], ["M/R", "melee and ranged"], ["HS", "sesterces"], ["vitis ", "vitis"], [" HP:", " Hard Points:"], ["Price/Rarity", "price and rarity"], ["Encumbrance Cap", "cargo capacity"], [" HT ", " Hull Trauma "], [" SS ", " System Strain "], ["(R, military)", "rare, military only"], ["(R)", "rare"], [" | ", ". "], ["|", ". "]];
   for (const [a, b] of replacements) text = text.replaceAll(a, b);
@@ -23,7 +22,7 @@ function inlineSpeech(element: Element): string {
   if (omitted(element)) return "";
   const semantic = role(element);
   if (semantic.startsWith("dice:") || semantic.startsWith("result:")) return ` ${semantic.slice(semantic.indexOf(":") + 1)} `;
-  return element.children?.length ? element.children.map(inlineSpeech).join("") : plain(element.content ?? "");
+  return element.children?.length ? element.children.map(inlineSpeech).join("") : element.content ?? "";
 }
 
 function sentence(text: string): string {
@@ -71,7 +70,7 @@ function blockSpeech(element: Element): string {
   }
   if (element.type === "story" || element.type === "list") return (element.children ?? []).map(blockSpeech).filter(Boolean).join(" ");
   const { partLabel, partTitle } = element.properties ?? {};
-  if (role(element) === "part" && typeof partTitle === "string") return sentence(`${typeof partLabel === "string" && partLabel ? `${partLabel}: ` : ""}${plain(partTitle)}`);
+  if (role(element) === "part" && typeof partTitle === "string") return sentence(`${typeof partLabel === "string" && partLabel ? `${partLabel}: ` : ""}${partTitle}`);
   const value = inlineSpeech(element).trim();
   if (!value) return "";
   if (["h1", "h2", "h3", "h4", "scenario", "list-item", "stat-name", "sidebar"].includes(element.type)) {
@@ -83,49 +82,25 @@ function blockSpeech(element: Element): string {
 }
 
 export async function writeNarration(document: DocumentData, root: string): Promise<void> {
-  const intro = `${plain(document.meta.title)}. ${plain(document.meta.subtitle)}. ${plain(document.meta.system)}. “${plain(document.meta.tagline)}” This is an audiobook edition; tables and stat blocks are read as spoken lists, so keep the PDF nearby for reference during play. We begin.`;
+  const { title, subtitle, system, tagline } = document.meta;
+  const intro = `${title}. ${subtitle}. ${system}. “${tagline}” This is an audiobook edition; tables and stat blocks are read as spoken lists, so keep the PDF nearby for reference during play. We begin.`;
   const chapters: string[][] = [[]];
-  const groups = new Map<number, string[]>([[1, []]]);
-  const explicitGroups = document.elements.some(element => role(element) === "chapter" && Number.isInteger(element.properties?.audioPart));
-  let groupNumber = 1;
-  let sawPart = false;
-  let pendingPart = false;
-  let pendingAudio: string[] = [];
+  const groups = new Map<number, string[]>();
+  let part = 1, lead: string[] = [], afterPart = false;
   for (const element of document.elements) {
-    const semantic = role(element);
-    if (semantic === "part") {
-      if (chapters[chapters.length - 1]!.length) chapters.push([]);
-      if (!explicitGroups && sawPart) groupNumber++;
-      sawPart = true;
-      pendingPart = true;
-    } else if (semantic === "chapter") {
-      if (!pendingPart && chapters[chapters.length - 1]!.length) chapters.push([]);
-      pendingPart = false;
-    }
+    const kind = role(element);
+    if (kind === "part" || (kind === "chapter" && !afterPart)) chapters.push([]);
+    afterPart = kind === "part" || (afterPart && kind !== "chapter");
     const text = blockSpeech(element);
-    if (text) chapters[chapters.length - 1]!.push(text);
-    if (explicitGroups && semantic === "part") {
-      if (text) pendingAudio.push(text);
-      continue;
-    }
-    if (explicitGroups && semantic === "chapter" && Number.isInteger(element.properties?.audioPart)) {
-      groupNumber = element.properties!.audioPart;
-    }
-    if (explicitGroups && pendingAudio.length && semantic !== "chapter") {
-      if (text) pendingAudio.push(text);
-      continue;
-    }
-    if (!groups.has(groupNumber)) groups.set(groupNumber, []);
-    const group = groups.get(groupNumber)!;
-    group.push(...pendingAudio);
-    pendingAudio = [];
-    if (text) group.push(text);
+    if (text) chapters.at(-1)!.push(text);
+    // A part title is spoken with the first chapter that follows it, in that chapter's audio group.
+    if (kind === "part" || (lead.length && kind !== "chapter")) { if (text) lead.push(text); continue; }
+    if (kind === "chapter") part = element.properties!.audioPart;
+    groups.set(part, [...(groups.get(part) ?? []), ...lead, ...(text ? [text] : [])]);
+    lead = [];
   }
-  groups.get(groupNumber)!.push(...pendingAudio);
   const audioDir = `${root}/audio`;
   await mkdir(audioDir, { recursive: true });
-  for (const [number, group] of groups) {
-    await writeFile(`${audioDir}/part_${number}.txt`, `${number === 1 ? `${intro}\n\n` : ""}${speechclean(group.join(" "))}`);
-  }
+  for (const [number, group] of groups) await writeFile(`${audioDir}/part_${number}.txt`, `${number === 1 ? `${intro}\n\n` : ""}${speechclean(group.join(" "))}`);
   await writeFile(`${audioDir}/transcript.txt`, `${intro}\n\n${chapters.filter(chapter => chapter.length).map(chapter => speechclean(chapter.join(" "))).join("\n\n")}`);
 }

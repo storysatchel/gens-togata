@@ -4,18 +4,18 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { writeNarration } from "../src/output/speech";
 
-test("narrates the authored logical tree and groups chapters by part markers", async () => {
+test("narrates the authored logical tree and groups chapters by authored audio parts", async () => {
   const root = await mkdtemp(join(tmpdir(), "gens-speech-"));
   try {
     await writeNarration({
       meta: { title: "Title", subtitle: "Subtitle", system: "System", tagline: "Tagline", legal: [] },
       elements: [
-        { type: "h1", content: "Introduction", properties: { semanticRole: "chapter" } },
+        { type: "h1", content: "Introduction", properties: { semanticRole: "chapter", audioPart: 1 } },
         { type: "story", content: "", columns: 2, gutter: 12, children: [
           { type: "p", content: "Before the first part." },
         ] },
         { type: "h1", content: "Part I: The Empire", properties: { semanticRole: "part" } },
-        { type: "h1", content: "The Collegia", properties: { semanticRole: "chapter" } },
+        { type: "h1", content: "The Collegia", properties: { semanticRole: "chapter", audioPart: 1 } },
         { type: "story", content: "", columns: 2, gutter: 12, children: [
           { type: "p", content: "", children: [
             { type: "text", content: "Roll " },
@@ -47,10 +47,10 @@ test("narrates the authored logical tree and groups chapters by part markers", a
           { type: "h2", content: "Notes", properties: { semanticRole: "notes" } },
           { type: "list", content: "", properties: { semanticRole: "notes" }, children: [{ type: "list-item", content: "Secret note" }] },
         ] },
-        { type: "h1", content: "Another Chapter", properties: { semanticRole: "chapter" } },
+        { type: "h1", content: "Another Chapter", properties: { semanticRole: "chapter", audioPart: 1 } },
         { type: "story", content: "", columns: 2, gutter: 12, children: [{ type: "p", content: "Same part." }] },
         { type: "h1", content: "Part II: Beyond", properties: { semanticRole: "part" } },
-        { type: "h1", content: "The Frontier", properties: { semanticRole: "chapter" } },
+        { type: "h1", content: "The Frontier", properties: { semanticRole: "chapter", audioPart: 2 } },
         { type: "story", content: "", columns: 2, gutter: 12, children: [{ type: "p", content: "Next part." }] },
       ],
     }, root);
