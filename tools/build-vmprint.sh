@@ -9,11 +9,8 @@ patches=$(ls tools/patches/*.patch 2>/dev/null || true)
 # The build identity is the pinned upstream commit plus the exact patches applied to it.
 identity="$revision $(cat $patches 2>/dev/null | sha256sum | cut -d' ' -f1)"
 stamp=vendor/vmprint/node_modules/.gens-togata-built
-if [ -f "$stamp" ] && [ "$(cat "$stamp")" = "$identity" ] && \
-  [ -f vendor/vmprint/engine/dist/index.mjs ] && \
-  [ -f vendor/vmprint/contracts/dist/index.mjs ] && \
-  [ -f vendor/vmprint/contexts/pdf/dist/index.mjs ] && \
-  [ -f vendor/vmprint/font-managers/local/dist/index.js ]; then
+# The stamp lives in vendor/vmprint/node_modules, so it disappears with the dependencies it vouches for.
+if [ -f "$stamp" ] && [ "$(cat "$stamp")" = "$identity" ] && [ -f vendor/vmprint/engine/dist/index.mjs ]; then
   exit 0
 fi
 
