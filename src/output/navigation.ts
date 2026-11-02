@@ -3,7 +3,7 @@ import type { Page } from "@vmprint/engine";
 import type { DocumentData } from "../content/types";
 import { contentsEntries } from "../templates/document";
 
-// VMPrint owns geometry; this only adds PDF metadata, outline destinations, and TOC links.
+// VMPrint owns geometry and the contents page; this only adds PDF metadata and bookmarks, which it does not provide.
 export async function finishPdf(bytes: Uint8Array, document: DocumentData, layout: Page[]): Promise<Uint8Array> {
   const pdf = await PDFDocument.load(bytes);
   pdf.setTitle(document.meta.title);
@@ -20,10 +20,6 @@ export async function finishPdf(bytes: Uint8Array, document: DocumentData, layou
     if (!target) throw new Error(`Missing PDF destination: ${entry.id}`);
     const destination = pdf.context.obj([pages[target.page.index]!.ref, "XYZ", null, target.page.height - target.box.y, null]);
     const node = pdf.context.obj({ Title: PDFHexString.fromText(entry.label), Parent: rootRef, Dest: destination });
-    for (const { page, box } of boxes.filter(({ id }) => id === `toc-${entry.id}`)) {
-      const rect = [box.x, page.height - box.y - box.h, box.x + box.w, page.height - box.y];
-      pages[page.index]!.node.addAnnot(pdf.context.register(pdf.context.obj({ Type: "Annot", Subtype: "Link", Rect: rect, Border: [0, 0, 0], Dest: destination })));
-    }
     return { node, ref: pdf.context.register(node) };
   });
   outlines.forEach(({ node }, index) => {

@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import { VMPrintEngine, loadDocument, type Page } from "@vmprint/engine";
 import PdfContext from "@vmprint/context-pdf";
 import type { DocumentData } from "../content/types";
-import { contentsEntries, documentInput, fontManager } from "../templates/document";
+import { documentInput, fontManager } from "../templates/document";
 import { bookTheme } from "../templates/styles";
 import { finishPdf } from "./navigation";
 
@@ -16,19 +16,8 @@ export function sourcePages(pages: Page[]): Map<string, number> {
   return result;
 }
 export async function layoutDocument(document: DocumentData, root: string): Promise<{ engine: VMPrintEngine; pages: Page[] }> {
-  const fonts = fontManager(root);
-  const entries = contentsEntries(document);
-  let numbers = new Map<string, number>();
-  // TOC labels occupy fixed-width cells, so inserting page numbers cannot change their wrapping.
-  for (let pass = 0; pass < 4; pass++) {
-    const engine = new VMPrintEngine(loadDocument(await documentInput(document, root, numbers), "Gens Togata"), fonts);
-    const pages = await engine.layout();
-    const resolved = sourcePages(pages);
-    for (const entry of entries) if (!resolved.has(entry.id)) throw new Error(`Missing contents target: ${entry.id}`);
-    if (entries.every(entry => resolved.get(entry.id) === numbers.get(entry.id))) return { engine, pages };
-    numbers = resolved;
-  }
-  throw new Error("Contents pagination did not settle");
+  const engine = new VMPrintEngine(loadDocument(await documentInput(document, root), "Gens Togata"), fontManager(root));
+  return { engine, pages: await engine.layout() };
 }
 export async function writePdf(document: DocumentData, root: string, outputPath: string): Promise<void> {
   const { engine, pages } = await layoutDocument(document, root);

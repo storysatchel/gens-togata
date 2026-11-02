@@ -34,8 +34,19 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
     }
     expect(wrong).toEqual([]);
     const targets = sourcePages(pages);
-    const tocText = (id: string) => pages.flatMap(page => page.boxes).filter(box => box.meta?.sourceId === `author:${id}`).flatMap(box => box.lines ?? []).flat().map(run => run.text).join("").trim();
-    for (const entry of contentsEntries(document)) expect(tocText(`toc-page-${entry.id}`)).toBe(String(targets.get(entry.id)));
+    const toc = whitespace(pages.flatMap(page => page.boxes)
+      .filter(box => box.meta?.sourceId === "author:contents")
+      .flatMap(box => box.lines ?? []).flat().map(run => run.text).join(""));
+    let cursor = 0;
+    const source = new Map([...walkElements(document.elements)].map(element => [element.properties?.sourceId, element]));
+    for (const entry of contentsEntries(document)) {
+      const page = targets.get(entry.id);
+      expect(page).toBeDefined();
+      const label = whitespace(elementText(source.get(entry.id)!));
+      const position = toc.indexOf(`${label}${page}`, cursor);
+      expect(position).toBeGreaterThanOrEqual(cursor);
+      cursor = position + label.length + String(page).length;
+    }
     // Full-width headings must not share vertical space with column text.
     for (const page of pages) for (const band of page.boxes.filter(box => box.lines?.length && ["h1", "h2", "scenario"].includes(box.type))) {
       for (const box of page.boxes) if (box !== band && box.lines?.length && box.type !== "footer") {
@@ -45,7 +56,7 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
   });
 }
 
-test("styleguide PDF carries a bookmark and a TOC link for every contents entry", async () => {
+test("styleguide PDF carries a bookmark for every contents entry", async () => {
   const dir = await mkdtemp(`${tmpdir()}/book-pdf-`);
   try {
     const document = await loadDocument("styleguide.yaml");
@@ -53,7 +64,6 @@ test("styleguide PDF carries a bookmark and a TOC link for every contents entry"
     const pdf = await PDFDocument.load(await readFile(`${dir}/guide.pdf`));
     const entries = contentsEntries(document).length;
     expect(pdf.catalog.lookup(PDFName.of("Outlines"), PDFDict).get(PDFName.of("Count"))?.toString()).toBe(String(entries));
-    expect(pdf.getPages().reduce((total, page) => total + (page.node.Annots()?.size() ?? 0), 0)).toBe(entries);
     expect(pdf.getTitle()).toBe(document.meta.title);
   } finally { await rm(dir, { recursive: true, force: true }); }
 });

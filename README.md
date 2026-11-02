@@ -83,8 +83,8 @@ walks the logical tree in reading order rather than recovering text from the PDF
 `sourceId` (the `toc-` prefix is reserved), and every `note-ref` has a matching `note`
 in its chapter. VMPrint validates structure and styles when the document is laid out.
 `tests/book.test.ts` lays out both sources and checks that every authored element
-appears exactly once with its full text, inside the margins, with resolved
-navigation, and that the PDF carries a bookmark and link per contents entry.
+appears exactly once with its full text, inside the margins, and that contents
+entries appear in reading order with their resolved page numbers.
 `tests/source.test.ts` and `tests/speech.test.ts` cover the loader, theme application
 by role, and narration.
 
@@ -117,24 +117,19 @@ Body copy is 7 pt Libre Baskerville with 1.4 line-height, justified; sidebars, s
 blocks, and other specialized text have their own sizes. The theme is `src/templates/styles.ts`.
 Fonts are registered from the packaged WOFF files plus the Genesys TTF (PDFKit fails
 to subset some WOFF2 composite glyphs), and the Genesys glyphs are embedded so dice
-symbols stay glyphs. Contents page numbers are resolved from layout, and `pdf-lib`
-adds matching TOC links, bookmarks, and document metadata.
+symbols stay glyphs. VMPrint generates the contents from chapter, part, and heading
+roles; `pdf-lib` adds bookmarks and document metadata. Contents entries are not
+currently clickable.
 
 ### VMPrint engine
 
 [VMPrint](https://github.com/cosmiciron/vmprint) lays out the document; there is no
 JSX, HTML intermediate, or headless browser. It is vendored as the `vendor/vmprint`
-submodule, pinned to commit
-[`8170435`](https://github.com/gavmor/vmprint/commit/817043594c917e286c41d06a8cfb79899dcd971f)
-of the [`gavmor/vmprint`](https://github.com/gavmor/vmprint) fork, and built locally
-rather than taken from the npm releases of the same version number.
-
-The fork is upstream `a69394f` plus two story-layout fixes, each with a regression
-fixture (`engine/tests/fixtures/regression/20-` and `76-`): a block that did not fit the
-last column of a multi-column story was emitted twice, and columns after a
-`columnSpan` element restarted at the top of the story instead of below it. Upstream
-has issues disabled, so these are offered as pull requests; move back to upstream once
-it carries equivalent fixes.
+submodule from the [`gavmor/vmprint`](https://github.com/gavmor/vmprint) fork,
+built locally rather than taken from the npm releases. The fork includes fixes for
+story continuations, heading publication, multi-page contents, and PDF text clipping.
+The contents gathers heading signals after pagination and can replay layout to
+settle; a page-limited preview does not guarantee a populated contents.
 
 Upstream's own `test:zone-continue` fails at this revision (a nested story/column-span
 check inside an expandable continued zone). The book does not use that composition.
