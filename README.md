@@ -60,49 +60,84 @@ elements:
           sourceId: forum-introduction
 ```
 
-Use native headings (`h1`, `h2`, `h3`, and `scenario`), stories with explicit
-`columns` and `gutter`, and native lists and tables. A story child can use
-`columnSpan` for full-width material. Roles distinguish, for example, chapter and
-part headings, asides, and notes. Inline semantic runs are `text` elements:
-roles such as `dice:ability`, `result:success`, and `note-ref` carry meaning
-without inferring it from a glyph. Preserve endnote numbers and place aside
-elements in their intended reading order. See `styleguide.yaml` for component
-examples.
+Use native headings (`h1`, `h2`, `h3`, `scenario`), stories with explicit `columns`
+and `gutter`, and native lists and tables. Roles distinguish chapter and part
+headings, asides, and notes. Inline semantic runs are `text` elements whose roles
+(`dice:ability`, `result:success`, `note-ref`, `keyword`) carry meaning without
+inferring it from a glyph; the theme supplies their appearance. Preserve endnote
+numbers and place aside elements in their intended reading order. See
+`styleguide.yaml` for component examples.
 
+A story child may use `columnSpan: all` for a short full-width heading or table. A
+`columnSpan` element cannot split across pages: one taller than the space left is
+silently dropped along with the rest of its story. Put long full-width material,
+such as chapter endnotes, after the story at the root level instead.
 
+The cover, contents, and footer are generated at output time, not authored. Narration
+walks the logical tree in reading order rather than recovering text from the PDF.
+`audioPart` on each chapter heading assigns it to one of the narration files.
 
-Legacy `chapters`/`blocks` source and its migration tooling were removed once the migration was complete; they remain in git history.
+### Validation
 
-`tests/book.test.ts` lays out both sources and checks that every authored element appears exactly once with its full text, inside the margins, with resolved navigation.
-
-Source validation checks the logical document before output. Cover and contents
-are presentation-generated, not authored into the shared tree. Narration walks
-that logical tree in reading order rather than recovering text from PDF layout;
-the typed theme controls visual presentation rather than source meaning.
+`loadDocument` checks what VMPrint's own loader does not: every element has a unique
+`sourceId` (the `toc-` prefix is reserved), and every `note-ref` has a matching `note`
+in its chapter. VMPrint validates structure and styles when the document is laid out.
+`tests/book.test.ts` lays out both sources and checks that every authored element
+appears exactly once with its full text, inside the margins, with resolved
+navigation, and that the PDF carries a bookmark and link per contents entry.
+`tests/source.test.ts` and `tests/speech.test.ts` cover the loader, theme application
+by role, and narration.
 
 ## Build
 
-Requires [Bun](https://bun.sh/), Git, Node.js, and npm. `make` initializes the VMPrint submodule and builds its packages from upstream's locked dependencies before installing this project's locked dependencies. A fresh checkout can also be prepared explicitly with `sh tools/build-vmprint.sh && bun install --frozen-lockfile`.
+Requires [Bun](https://bun.sh/), Git, Node.js, and npm. `make` initializes the VMPrint
+submodule and builds its packages from their locked dependencies before installing
+this project's. A fresh checkout can be prepared explicitly with
+`sh tools/build-vmprint.sh && bun install --frozen-lockfile`.
 
 ```sh
-make pdf        # content.yaml -> VMPrint PDF + narration
-make styleguide # styleguide.yaml -> style-guide PDF
-make audio      # content.yaml -> narration only
-make clean
-bun run typecheck # TypeScript static check
+make pdf          # content.yaml -> rulebook PDF + narration
+make folio        # 2-up booklet PDF for letter paper
+make styleguide   # styleguide.yaml -> style-guide PDF
+make audio        # content.yaml -> narration only (audio/)
 make test         # project tests
+bun run typecheck # TypeScript static check
+make clean
 ```
 
-[VMPrint](https://github.com/cosmiciron/vmprint) lays out typed document objects and writes the paged PDF without JSX, intermediate HTML, or a headless browser. Native VMPrint columns handle text flow and pagination; the typed theme defines presentation without CSS or a custom page-measurement loop. Narration traverses the same logical document independently of PDF layout.
-Body copy uses 7 pt type with 1.4 line-height and justified alignment. Specialized text, including sidebars and stat blocks, uses its own sizes and alignment. The PDF renderer registers the bundled text fonts and Genesys glyph font for embedding, so dice symbols remain glyphs rather than substituted text.
-VMPrint is vendored as the `vendor/vmprint` Git submodule, pinned to commit [`8170435`](https://github.com/gavmor/vmprint/commit/817043594c917e286c41d06a8cfb79899dcd971f) of the [`gavmor/vmprint`](https://github.com/gavmor/vmprint) fork (upstream `a69394f` plus two story-layout fixes); its packages are built locally from that revision, not the npm releases with the same version numbers. Upstream's `package-lock.json` pins its build dependencies, and `bun.lock` pins the application dependencies. Font registration uses the packaged WOFF text fonts and the Genesys TTF; WOFF2 composite-glyph embedding fails in PDFKit. Contents page numbers are resolved from layout in fixed-width cells; `pdf-lib` adds matching TOC links, bookmarks, and document metadata without changing geometry.
-Upstream's own `test:zone-continue` fails at this revision (nested story/column-span check inside an expandable continued zone, `engine/tests/zone-map-continue.spec.ts:886`); the rulebook does not use that composition, so do not rely on it until upstream fixes it.
+The source page is 5.5 × 8.5 in (396 × 612 pt). `make folio` (and CI) imposes it 2-up on
+letter paper in 16-page signatures for duplex booklet printing, using
+[`pdfimpose`](https://framagit.org/spalax/pdfimpose) (`hardcover --signature 2x1
+--group 4`), run pinned through `uvx`; install [uv](https://docs.astral.sh/uv/). Always
+verify the PDF visually before release: overflow and overlap are silent.
 
-The fork carries two engine fixes, each with a regression fixture (`engine/tests/fixtures/regression/20-` and `76-`), that upstream `cosmiciron/vmprint` does not have yet (it has issues disabled, so they are offered as pull requests): a block that did not fit the last column of a multi-column story was emitted twice, and columns after a `columnSpan` element restarted at the top of the story instead of below it. Move back to upstream once it carries equivalent fixes.
+### Typography and output
 
-Engine limitation to author around: a `columnSpan` element cannot split across pages. One taller than the space left (for example a long endnotes list) is silently dropped along with the rest of its story, so put long full-width material between stories instead of inside one, as upstream's `documents/SKILL.md` advises. Chapter endnotes therefore follow their story at the root level.
-The source PDF page is 5.5 × 8.5 inches (396 × 612 pt). `make folio` (and CI) imposes it 2-up on letter paper in 16-page signatures for duplex booklet printing, using [`pdfimpose`](https://framagit.org/spalax/pdfimpose) (`hardcover --signature 2x1 --group 4`), run pinned through `uvx` — install [uv](https://docs.astral.sh/uv/); no TeX needed.
-Always verify the PDF visually (overflow/overlap are silent) before release.
+Body copy is 7 pt Libre Baskerville with 1.4 line-height, justified; sidebars, stat
+blocks, and other specialized text have their own sizes. The theme is `src/templates/styles.ts`.
+Fonts are registered from the packaged WOFF files plus the Genesys TTF (PDFKit fails
+to subset some WOFF2 composite glyphs), and the Genesys glyphs are embedded so dice
+symbols stay glyphs. Contents page numbers are resolved from layout, and `pdf-lib`
+adds matching TOC links, bookmarks, and document metadata.
+
+### VMPrint engine
+
+[VMPrint](https://github.com/cosmiciron/vmprint) lays out the document; there is no
+JSX, HTML intermediate, or headless browser. It is vendored as the `vendor/vmprint`
+submodule, pinned to commit
+[`8170435`](https://github.com/gavmor/vmprint/commit/817043594c917e286c41d06a8cfb79899dcd971f)
+of the [`gavmor/vmprint`](https://github.com/gavmor/vmprint) fork, and built locally
+rather than taken from the npm releases of the same version number.
+
+The fork is upstream `a69394f` plus two story-layout fixes, each with a regression
+fixture (`engine/tests/fixtures/regression/20-` and `76-`): a block that did not fit the
+last column of a multi-column story was emitted twice, and columns after a
+`columnSpan` element restarted at the top of the story instead of below it. Upstream
+has issues disabled, so these are offered as pull requests; move back to upstream once
+it carries equivalent fixes.
+
+Upstream's own `test:zone-continue` fails at this revision (a nested story/column-span
+check inside an expandable continued zone). The book does not use that composition.
 
 ## Releases (CI/CD)
 
