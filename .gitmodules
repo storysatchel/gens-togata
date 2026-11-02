@@ -1,3 +1,3 @@
 [submodule "vendor/vmprint"]
 	path = vendor/vmprint
-	url = https://github.com/cosmiciron/vmprint.git
+	url = https://github.com/gavmor/vmprint.git

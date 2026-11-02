@@ -224,65 +224,63 @@ elements:
               sourceId: provides-social-encounter-options-fo-1b96926f7f0c
         properties:
           sourceId: start-with-the-genesys-core-rulebook-efaa4e8ce131
-      - type: h4
+    properties:
+      sourceId: story-341cf7ee503f
+  - type: h4
+    content: ""
+    children:
+      - type: text
+        content: Notes
+        properties:
+          sourceId: notes-eaccfc4aa94d
+    properties:
+      semanticRole: notes
+      style:
+        fontSize: 6
+      sourceId: notes-9c14bf1d7fea
+  - type: list
+    content: ""
+    list:
+      kind: ordered
+      indent: 10
+      itemSpacing: 3
+    children:
+      - type: list-item
         content: ""
         children:
           - type: text
-            content: Notes
+            content: "Seneca, "
             properties:
-              sourceId: notes-eaccfc4aa94d
-        properties:
-          semanticRole: notes
-          style:
-            fontSize: 6
-          sourceId: notes-9c14bf1d7fea
-        columnSpan: all
-      - type: list
-        content: ""
-        list:
-          kind: ordered
-          indent: 10
-          itemSpacing: 3
-        children:
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Seneca, "
-                properties:
-                  sourceId: seneca-7e6e97d82bfc
-              - type: text
-                content: De Tranquillitate Animi
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: de-tranquillitate-animi-e876969bdb9c
-              - type: text
-                content: " 14.4–9, trans. Aubrey Stewart, in "
-                properties:
-                  sourceId: 14-4-9-trans-aubrey-stewart-in-5bda20cd2e36
-              - type: text
-                content: Minor Dialogues, Together with the Dialogue on Clemency
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: minor-dialogues-together-with-the-di-bd99cf5dcc91
-              - type: text
-                content: " (London, 1889), pp. 280–281."
-                properties:
-                  sourceId: london-1889-pp-280-281-9ef54ee621f2
+              sourceId: seneca-7e6e97d82bfc
+          - type: text
+            content: De Tranquillitate Animi
             properties:
-              semanticRole: note
-              noteNumber: 1
-              sourceId: seneca-de-tranquillitate-animi-14-4-f795fc93f62b
+              style:
+                fontStyle: italic
+              sourceId: de-tranquillitate-animi-e876969bdb9c
+          - type: text
+            content: " 14.4–9, trans. Aubrey Stewart, in "
+            properties:
+              sourceId: 14-4-9-trans-aubrey-stewart-in-5bda20cd2e36
+          - type: text
+            content: Minor Dialogues, Together with the Dialogue on Clemency
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: minor-dialogues-together-with-the-di-bd99cf5dcc91
+          - type: text
+            content: " (London, 1889), pp. 280–281."
+            properties:
+              sourceId: london-1889-pp-280-281-9ef54ee621f2
         properties:
-          semanticRole: notes
-          style:
-            fontSize: 6
-          sourceId: list-8fc641f9b109
-        columnSpan: all
+          semanticRole: note
+          noteNumber: 1
+          sourceId: seneca-de-tranquillitate-animi-14-4-f795fc93f62b
     properties:
-      sourceId: story-341cf7ee503f
+      semanticRole: notes
+      style:
+        fontSize: 6
+      sourceId: list-8fc641f9b109
   - type: h1
     content: ""
     children:
@@ -1089,407 +1087,405 @@ elements:
               sourceId: rome-the-gm-may-of-course-admit-faun-b2e8aafe0175
         properties:
           sourceId: everyone-is-human-use-the-human-prof-1314b1f9f179
-      - type: h4
+    properties:
+      sourceId: story-1e8c23a02b4f
+  - type: h4
+    content: ""
+    children:
+      - type: text
+        content: Notes
+        properties:
+          sourceId: notes-1caf1799b059
+    properties:
+      semanticRole: notes
+      style:
+        fontSize: 6
+      sourceId: notes-70c20c1b5851
+  - type: list
+    content: ""
+    list:
+      kind: ordered
+      indent: 10
+      itemSpacing: 3
+    children:
+      - type: list-item
         content: ""
         children:
           - type: text
-            content: Notes
+            content: "Chris Scarre, "
             properties:
-              sourceId: notes-1caf1799b059
+              sourceId: chris-scarre-a2e5dcf988fe
+          - type: text
+            content: The Penguin Historical Atlas of Ancient Rome
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-penguin-historical-atlas-of-anci-0fe0b7a98b76
+          - type: text
+            content: " (1995); “Timeline of the Roman Empire,” "
+            properties:
+              sourceId: 1995-timeline-of-the-roman-empire-52d074a0fd34
+          - type: text
+            content: Encyclopaedia Britannica
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: encyclopaedia-britannica-b98496041a1d
+          - type: text
+            content: ", https://www.britannica.com/place/Timeline-of-the-Roman-Empire."
+            properties:
+              sourceId: https-www-britannica-com-place-timel-52bb2cbe8fc6
         properties:
-          semanticRole: notes
-          style:
-            fontSize: 6
-          sourceId: notes-70c20c1b5851
-        columnSpan: all
-      - type: list
+          semanticRole: note
+          noteNumber: 1
+          sourceId: chris-scarre-the-penguin-historical-5422eccf6775
+      - type: list-item
         content: ""
-        list:
-          kind: ordered
-          indent: 10
-          itemSpacing: 3
         children:
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Chris Scarre, "
-                properties:
-                  sourceId: chris-scarre-a2e5dcf988fe
-              - type: text
-                content: The Penguin Historical Atlas of Ancient Rome
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-penguin-historical-atlas-of-anci-0fe0b7a98b76
-              - type: text
-                content: " (1995); “Timeline of the Roman Empire,” "
-                properties:
-                  sourceId: 1995-timeline-of-the-roman-empire-52d074a0fd34
-              - type: text
-                content: Encyclopaedia Britannica
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: encyclopaedia-britannica-b98496041a1d
-              - type: text
-                content: ", https://www.britannica.com/place/Timeline-of-the-Roman-Empire."
-                properties:
-                  sourceId: https-www-britannica-com-place-timel-52bb2cbe8fc6
+          - type: text
+            content: "Theodor Mommsen, "
             properties:
-              semanticRole: note
-              noteNumber: 1
-              sourceId: chris-scarre-the-penguin-historical-5422eccf6775
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Theodor Mommsen, "
-                properties:
-                  sourceId: theodor-mommsen-e6efc85c256c
-              - type: text
-                content: The History of Rome
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-history-of-rome-f70542129995
-              - type: text
-                content: ", trans. W. P. Dickson — on "
-                properties:
-                  sourceId: trans-w-p-dickson-on-dd2372b3415d
-              - type: text
-                content: patria potestas
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: patria-potestas-9a50750159c9
-              - type: text
-                content: ", the power of the household head."
-                properties:
-                  sourceId: the-power-of-the-household-head-551b352f923a
+              sourceId: theodor-mommsen-e6efc85c256c
+          - type: text
+            content: The History of Rome
             properties:
-              semanticRole: note
-              noteNumber: 2
-              sourceId: theodor-mommsen-the-history-of-rome-fa166728b8ca
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Mommsen, "
-                properties:
-                  sourceId: mommsen-6ff54669b7b2
-              - type: text
-                content: The History of Rome
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-history-of-rome-cd14a811f025
-              - type: text
-                content: " (Dickson) — on the legal standing of slaves as property of the household."
-                properties:
-                  sourceId: dickson-on-the-legal-standing-of-sla-409e8e92cdc3
+              style:
+                fontStyle: italic
+              sourceId: the-history-of-rome-f70542129995
+          - type: text
+            content: ", trans. W. P. Dickson — on "
             properties:
-              semanticRole: note
-              noteNumber: 3
-              sourceId: mommsen-the-history-of-rome-dickson-5f290b167232
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Cato the Elder, "
-                properties:
-                  sourceId: cato-the-elder-a24aab6d5094
-              - type: text
-                content: De Agri Cultura
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: de-agri-cultura-19cc3dff941d
-              - type: text
-                content: " 2, trans. Fairfax Harrison, "
-                properties:
-                  sourceId: 2-trans-fairfax-harrison-48cc8ae71f4b
-              - type: text
-                content: Roman Farm Management
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: roman-farm-management-484061ee90e6
-              - type: text
-                content: " (1913)."
-                properties:
-                  sourceId: 1913-5317ef5a8bf0
+              sourceId: trans-w-p-dickson-on-dd2372b3415d
+          - type: text
+            content: patria potestas
             properties:
-              semanticRole: note
-              noteNumber: 4
-              sourceId: cato-the-elder-de-agri-cultura-2-tra-44f8fcf26602
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Seneca, "
-                properties:
-                  sourceId: seneca-ddc147e29afe
-              - type: text
-                content: Moral Letters to Lucilius
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: moral-letters-to-lucilius-799c0df87b9c
-              - type: text
-                content: " 47.1, trans. Richard M. Gummere (Loeb Classical Library, 1917) — public domain."
-                properties:
-                  sourceId: 47-1-trans-richard-m-gummere-loeb-cl-370def30e6f3
+              style:
+                fontStyle: italic
+              sourceId: patria-potestas-9a50750159c9
+          - type: text
+            content: ", the power of the household head."
             properties:
-              semanticRole: note
-              noteNumber: 5
-              sourceId: seneca-moral-letters-to-lucilius-47-5d6f7b081376
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Mommsen, "
-                properties:
-                  sourceId: mommsen-b5838ad61028
-              - type: text
-                content: The History of Rome
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-history-of-rome-78ff4aea99a7
-              - type: text
-                content: " (Dickson) — the archaic law of client-faith; cf. the Twelve Tables, "
-                properties:
-                  sourceId: dickson-the-archaic-law-of-client-fa-b6849f51415f
-              - type: text
-                content: patronus si clienti fraudem fecerit, sacer esto
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: patronus-si-clienti-fraudem-fecerit-d334e17ec304
-              - type: text
-                content: .
-                properties:
-                  sourceId: text-b309970eb1f2
-            properties:
-              semanticRole: note
-              noteNumber: 6
-              sourceId: mommsen-the-history-of-rome-dickson-ac5dcaf44c34
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Elżbieta Loska, “Inconvenient Witnesses: Testimonies of Slaves in a Criminal Trial During the Republic and the Principate,” "
-                properties:
-                  sourceId: el-bieta-loska-inconvenient-witnesse-d924e0d70d26
-              - type: text
-                content: Studia Iuridica Lublinensia
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: studia-iuridica-lublinensia-c6613a344fa1
-              - type: text
-                content: " 30, no. 1 (2021), 197–204, doi:10.17951/sil.2021.30.1.197-204."
-                properties:
-                  sourceId: 30-no-1-2021-197-204-doi-10-17951-si-9edfa9eba764
-            properties:
-              semanticRole: note
-              noteNumber: 7
-              sourceId: el-bieta-loska-inconvenient-witnesse-593a2f919c38
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Glenn R. Storey, “The Population of Ancient Rome,” "
-                properties:
-                  sourceId: glenn-r-storey-the-population-of-anc-14c7cfddde7a
-              - type: text
-                content: Antiquity
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: antiquity-b86fb5904d6f
-              - type: text
-                content: " 71 (1997), 966–978, doi:10.1017/S0003598X00085859."
-                properties:
-                  sourceId: 71-1997-966-978-doi-10-1017-s0003598-e45ca66b2ff7
-            properties:
-              semanticRole: note
-              noteNumber: 8
-              sourceId: glenn-r-storey-the-population-of-anc-fc779b01cf60
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Henrik Mouritsen, "
-                properties:
-                  sourceId: henrik-mouritsen-d0963b2513dc
-              - type: text
-                content: Plebs and Politics in the Late Roman Republic
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: plebs-and-politics-in-the-late-roman-895b26d941b3
-              - type: text
-                content: " (2001), pp. 66, 91, 150; Fergus Millar, "
-                properties:
-                  sourceId: 2001-pp-66-91-150-fergus-millar-df764afafb63
-              - type: text
-                content: The Crowd in Republican Rome
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-crowd-in-republican-rome-4fb1ae3ec0a1
-              - type: text
-                content: " (1998)."
-                properties:
-                  sourceId: 1998-aedd25e93af1
-            properties:
-              semanticRole: note
-              noteNumber: 9
-              sourceId: henrik-mouritsen-plebs-and-politics-ac298b63e7d2
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Lionel Casson, "
-                properties:
-                  sourceId: lionel-casson-1a38a736ef89
-              - type: text
-                content: Travel in the Ancient World
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: travel-in-the-ancient-world-e7e754d0b767
-              - type: text
-                content: " (1974), p. 192; Suetonius, "
-                properties:
-                  sourceId: 1974-p-192-suetonius-2a1c8c77fb88
-              - type: text
-                content: Augustus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: augustus-21f5013a8bef
-              - type: text
-                content: " 49.3."
-                properties:
-                  sourceId: 49-3-1d9aff99c57f
-            properties:
-              semanticRole: note
-              noteNumber: 10
-              sourceId: lionel-casson-travel-in-the-ancient-37fef2cd9433
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "“The Roman Legion,” "
-                properties:
-                  sourceId: the-roman-legion-f56e45320eae
-              - type: text
-                content: Encyclopaedia Romana
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: encyclopaedia-romana-84c4720044ec
-              - type: text
-                content: ", University of Chicago, https://penelope.uchicago.edu/encyclopaedia_romana/britannia/wales/legio.html."
-                properties:
-                  sourceId: university-of-chicago-https-penelope-b529b2b8273f
-            properties:
-              semanticRole: note
-              noteNumber: 11
-              sourceId: the-roman-legion-encyclopaedia-roman-cb863e7385dc
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "John North, “Religious Diversity,” in "
-                properties:
-                  sourceId: john-north-religious-diversity-in-0fd601bd5475
-              - type: text
-                content: "Ancient Rome: The Archaeology of the Eternal City"
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: ancient-rome-the-archaeology-of-the-7b2f5a6c9a6d
-              - type: text
-                content: " (2000), pp. 592–607; Michael Kulikowski, "
-                properties:
-                  sourceId: 2000-pp-592-607-michael-kulikowski-9f241e2f637f
-              - type: text
-                content: The Triumph of Empire
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-triumph-of-empire-e1d81b9b238b
-              - type: text
-                content: " (2016), on Mithraic worship; Pliny, "
-                properties:
-                  sourceId: 2016-on-mithraic-worship-pliny-aeaf2109a7a4
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-eba2bd5eefa5
-              - type: text
-                content: " 10.96–97."
-                properties:
-                  sourceId: 10-96-97-c0eefd9a8a1f
-            properties:
-              semanticRole: note
-              noteNumber: 12
-              sourceId: john-north-religious-diversity-in-an-fbdae89782a7
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "David J. Mattingly, "
-                properties:
-                  sourceId: david-j-mattingly-a046853bc197
-              - type: text
-                content: The Archaeology of Fazzan
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-archaeology-of-fazzan-5e70ff93b930
-              - type: text
-                content: ", vol. 1, "
-                properties:
-                  sourceId: vol-1-b2230146ebd4
-              - type: text
-                content: Synthesis
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: synthesis-c16accd69c09
-              - type: text
-                content: " (2003); “Garamantes,” "
-                properties:
-                  sourceId: 2003-garamantes-725521350cee
-              - type: text
-                content: Livius
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: livius-eb3f581da079
-              - type: text
-                content: ", https://www.livius.org/articles/place/garamantes/."
-                properties:
-                  sourceId: https-www-livius-org-articles-place-a3cd2e9deda0
-            properties:
-              semanticRole: note
-              noteNumber: 13
-              sourceId: david-j-mattingly-the-archaeology-of-a5e9c69e532e
+              sourceId: the-power-of-the-household-head-551b352f923a
         properties:
-          semanticRole: notes
-          style:
-            fontSize: 6
-          sourceId: list-1e90b0460b58
-        columnSpan: all
+          semanticRole: note
+          noteNumber: 2
+          sourceId: theodor-mommsen-the-history-of-rome-fa166728b8ca
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Mommsen, "
+            properties:
+              sourceId: mommsen-6ff54669b7b2
+          - type: text
+            content: The History of Rome
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-history-of-rome-cd14a811f025
+          - type: text
+            content: " (Dickson) — on the legal standing of slaves as property of the household."
+            properties:
+              sourceId: dickson-on-the-legal-standing-of-sla-409e8e92cdc3
+        properties:
+          semanticRole: note
+          noteNumber: 3
+          sourceId: mommsen-the-history-of-rome-dickson-5f290b167232
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Cato the Elder, "
+            properties:
+              sourceId: cato-the-elder-a24aab6d5094
+          - type: text
+            content: De Agri Cultura
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: de-agri-cultura-19cc3dff941d
+          - type: text
+            content: " 2, trans. Fairfax Harrison, "
+            properties:
+              sourceId: 2-trans-fairfax-harrison-48cc8ae71f4b
+          - type: text
+            content: Roman Farm Management
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: roman-farm-management-484061ee90e6
+          - type: text
+            content: " (1913)."
+            properties:
+              sourceId: 1913-5317ef5a8bf0
+        properties:
+          semanticRole: note
+          noteNumber: 4
+          sourceId: cato-the-elder-de-agri-cultura-2-tra-44f8fcf26602
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Seneca, "
+            properties:
+              sourceId: seneca-ddc147e29afe
+          - type: text
+            content: Moral Letters to Lucilius
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: moral-letters-to-lucilius-799c0df87b9c
+          - type: text
+            content: " 47.1, trans. Richard M. Gummere (Loeb Classical Library, 1917) — public domain."
+            properties:
+              sourceId: 47-1-trans-richard-m-gummere-loeb-cl-370def30e6f3
+        properties:
+          semanticRole: note
+          noteNumber: 5
+          sourceId: seneca-moral-letters-to-lucilius-47-5d6f7b081376
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Mommsen, "
+            properties:
+              sourceId: mommsen-b5838ad61028
+          - type: text
+            content: The History of Rome
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-history-of-rome-78ff4aea99a7
+          - type: text
+            content: " (Dickson) — the archaic law of client-faith; cf. the Twelve Tables, "
+            properties:
+              sourceId: dickson-the-archaic-law-of-client-fa-b6849f51415f
+          - type: text
+            content: patronus si clienti fraudem fecerit, sacer esto
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: patronus-si-clienti-fraudem-fecerit-d334e17ec304
+          - type: text
+            content: .
+            properties:
+              sourceId: text-b309970eb1f2
+        properties:
+          semanticRole: note
+          noteNumber: 6
+          sourceId: mommsen-the-history-of-rome-dickson-ac5dcaf44c34
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Elżbieta Loska, “Inconvenient Witnesses: Testimonies of Slaves in a Criminal Trial During the Republic and the Principate,” "
+            properties:
+              sourceId: el-bieta-loska-inconvenient-witnesse-d924e0d70d26
+          - type: text
+            content: Studia Iuridica Lublinensia
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: studia-iuridica-lublinensia-c6613a344fa1
+          - type: text
+            content: " 30, no. 1 (2021), 197–204, doi:10.17951/sil.2021.30.1.197-204."
+            properties:
+              sourceId: 30-no-1-2021-197-204-doi-10-17951-si-9edfa9eba764
+        properties:
+          semanticRole: note
+          noteNumber: 7
+          sourceId: el-bieta-loska-inconvenient-witnesse-593a2f919c38
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Glenn R. Storey, “The Population of Ancient Rome,” "
+            properties:
+              sourceId: glenn-r-storey-the-population-of-anc-14c7cfddde7a
+          - type: text
+            content: Antiquity
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: antiquity-b86fb5904d6f
+          - type: text
+            content: " 71 (1997), 966–978, doi:10.1017/S0003598X00085859."
+            properties:
+              sourceId: 71-1997-966-978-doi-10-1017-s0003598-e45ca66b2ff7
+        properties:
+          semanticRole: note
+          noteNumber: 8
+          sourceId: glenn-r-storey-the-population-of-anc-fc779b01cf60
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Henrik Mouritsen, "
+            properties:
+              sourceId: henrik-mouritsen-d0963b2513dc
+          - type: text
+            content: Plebs and Politics in the Late Roman Republic
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: plebs-and-politics-in-the-late-roman-895b26d941b3
+          - type: text
+            content: " (2001), pp. 66, 91, 150; Fergus Millar, "
+            properties:
+              sourceId: 2001-pp-66-91-150-fergus-millar-df764afafb63
+          - type: text
+            content: The Crowd in Republican Rome
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-crowd-in-republican-rome-4fb1ae3ec0a1
+          - type: text
+            content: " (1998)."
+            properties:
+              sourceId: 1998-aedd25e93af1
+        properties:
+          semanticRole: note
+          noteNumber: 9
+          sourceId: henrik-mouritsen-plebs-and-politics-ac298b63e7d2
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Lionel Casson, "
+            properties:
+              sourceId: lionel-casson-1a38a736ef89
+          - type: text
+            content: Travel in the Ancient World
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: travel-in-the-ancient-world-e7e754d0b767
+          - type: text
+            content: " (1974), p. 192; Suetonius, "
+            properties:
+              sourceId: 1974-p-192-suetonius-2a1c8c77fb88
+          - type: text
+            content: Augustus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: augustus-21f5013a8bef
+          - type: text
+            content: " 49.3."
+            properties:
+              sourceId: 49-3-1d9aff99c57f
+        properties:
+          semanticRole: note
+          noteNumber: 10
+          sourceId: lionel-casson-travel-in-the-ancient-37fef2cd9433
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "“The Roman Legion,” "
+            properties:
+              sourceId: the-roman-legion-f56e45320eae
+          - type: text
+            content: Encyclopaedia Romana
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: encyclopaedia-romana-84c4720044ec
+          - type: text
+            content: ", University of Chicago, https://penelope.uchicago.edu/encyclopaedia_romana/britannia/wales/legio.html."
+            properties:
+              sourceId: university-of-chicago-https-penelope-b529b2b8273f
+        properties:
+          semanticRole: note
+          noteNumber: 11
+          sourceId: the-roman-legion-encyclopaedia-roman-cb863e7385dc
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "John North, “Religious Diversity,” in "
+            properties:
+              sourceId: john-north-religious-diversity-in-0fd601bd5475
+          - type: text
+            content: "Ancient Rome: The Archaeology of the Eternal City"
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: ancient-rome-the-archaeology-of-the-7b2f5a6c9a6d
+          - type: text
+            content: " (2000), pp. 592–607; Michael Kulikowski, "
+            properties:
+              sourceId: 2000-pp-592-607-michael-kulikowski-9f241e2f637f
+          - type: text
+            content: The Triumph of Empire
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-triumph-of-empire-e1d81b9b238b
+          - type: text
+            content: " (2016), on Mithraic worship; Pliny, "
+            properties:
+              sourceId: 2016-on-mithraic-worship-pliny-aeaf2109a7a4
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-eba2bd5eefa5
+          - type: text
+            content: " 10.96–97."
+            properties:
+              sourceId: 10-96-97-c0eefd9a8a1f
+        properties:
+          semanticRole: note
+          noteNumber: 12
+          sourceId: john-north-religious-diversity-in-an-fbdae89782a7
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "David J. Mattingly, "
+            properties:
+              sourceId: david-j-mattingly-a046853bc197
+          - type: text
+            content: The Archaeology of Fazzan
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-archaeology-of-fazzan-5e70ff93b930
+          - type: text
+            content: ", vol. 1, "
+            properties:
+              sourceId: vol-1-b2230146ebd4
+          - type: text
+            content: Synthesis
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: synthesis-c16accd69c09
+          - type: text
+            content: " (2003); “Garamantes,” "
+            properties:
+              sourceId: 2003-garamantes-725521350cee
+          - type: text
+            content: Livius
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: livius-eb3f581da079
+          - type: text
+            content: ", https://www.livius.org/articles/place/garamantes/."
+            properties:
+              sourceId: https-www-livius-org-articles-place-a3cd2e9deda0
+        properties:
+          semanticRole: note
+          noteNumber: 13
+          sourceId: david-j-mattingly-the-archaeology-of-a5e9c69e532e
     properties:
-      sourceId: story-1e8c23a02b4f
+      semanticRole: notes
+      style:
+        fontSize: 6
+      sourceId: list-1e90b0460b58
   - type: h1
     content: ""
     children:
@@ -40044,1630 +40040,1628 @@ elements:
               sourceId: c-or-e-15-xp-and-no-dignitas-gained-55d0f297672c
         properties:
           sourceId: adversaries-street-tough-minion-grou-c55f3723e3a2
-      - type: h4
+    properties:
+      sourceId: story-fc1fdac6f881
+  - type: h4
+    content: ""
+    children:
+      - type: text
+        content: Notes
+        properties:
+          sourceId: notes-0039a9c5db15
+    properties:
+      semanticRole: notes
+      style:
+        fontSize: 6
+      sourceId: notes-161774fe902c
+  - type: list
+    content: ""
+    list:
+      kind: ordered
+      indent: 10
+      itemSpacing: 3
+    children:
+      - type: list-item
         content: ""
         children:
           - type: text
-            content: Notes
+            content: "The prodigy of 114 BCE, in which the knight's daughter Helvia and her horse were struck down and stripped by lightning while travelling toward Apulia: Plutarch, "
             properties:
-              sourceId: notes-0039a9c5db15
+              sourceId: the-prodigy-of-114-bce-in-which-the-e63019a3396c
+          - type: text
+            content: Roman Questions
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: roman-questions-401136c18aea
+          - type: text
+            content: " 83; Orosius 5.15.20–22; Obsequens 37; Livy, "
+            properties:
+              sourceId: 83-orosius-5-15-20-22-obsequens-37-l-a5fa9df3710f
+          - type: text
+            content: Periochae
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: periochae-441b9855b495
+          - type: text
+            content: " 63. The narrative is in A. H. J. Greenidge, "
+            properties:
+              sourceId: 63-the-narrative-is-in-a-h-j-greenid-98a890f8ba93
+          - type: text
+            content: A History of Rome During the Later Republic and Early Principate
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: a-history-of-rome-during-the-later-r-988be7b27bca
+          - type: text
+            content: ", vol. 1 (1904), on the Vestal trials of 114–113 BCE. On the haruspices' reading (nakedness meaning a broken vow, the horse meaning the knights), and its timing just before the pontiffs took up the case, see Federico Santangelo, "
+            properties:
+              sourceId: vol-1-1904-on-the-vestal-trials-of-1-d6b9e5d96d25
+          - type: text
+            content: Divination, Prediction and the End of the Roman Republic
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: divination-prediction-and-the-end-of-a1747b0b7cb6
+          - type: text
+            content: " (2013) (paraphrased)."
+            properties:
+              sourceId: 2013-paraphrased-228f6f5125a8
         properties:
-          semanticRole: notes
-          style:
-            fontSize: 6
-          sourceId: notes-161774fe902c
-        columnSpan: all
-      - type: list
+          semanticRole: note
+          noteNumber: 1
+          sourceId: the-prodigy-of-114-bce-in-which-the-d42dde26cbd5
+      - type: list-item
         content: ""
-        list:
-          kind: ordered
-          indent: 10
-          itemSpacing: 3
         children:
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "The prodigy of 114 BCE, in which the knight's daughter Helvia and her horse were struck down and stripped by lightning while travelling toward Apulia: Plutarch, "
-                properties:
-                  sourceId: the-prodigy-of-114-bce-in-which-the-e63019a3396c
-              - type: text
-                content: Roman Questions
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: roman-questions-401136c18aea
-              - type: text
-                content: " 83; Orosius 5.15.20–22; Obsequens 37; Livy, "
-                properties:
-                  sourceId: 83-orosius-5-15-20-22-obsequens-37-l-a5fa9df3710f
-              - type: text
-                content: Periochae
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: periochae-441b9855b495
-              - type: text
-                content: " 63. The narrative is in A. H. J. Greenidge, "
-                properties:
-                  sourceId: 63-the-narrative-is-in-a-h-j-greenid-98a890f8ba93
-              - type: text
-                content: A History of Rome During the Later Republic and Early Principate
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: a-history-of-rome-during-the-later-r-988be7b27bca
-              - type: text
-                content: ", vol. 1 (1904), on the Vestal trials of 114–113 BCE. On the haruspices' reading (nakedness meaning a broken vow, the horse meaning the knights), and its timing just before the pontiffs took up the case, see Federico Santangelo, "
-                properties:
-                  sourceId: vol-1-1904-on-the-vestal-trials-of-1-d6b9e5d96d25
-              - type: text
-                content: Divination, Prediction and the End of the Roman Republic
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: divination-prediction-and-the-end-of-a1747b0b7cb6
-              - type: text
-                content: " (2013) (paraphrased)."
-                properties:
-                  sourceId: 2013-paraphrased-228f6f5125a8
+          - type: text
+            content: "Cicero, "
             properties:
-              semanticRole: note
-              noteNumber: 1
-              sourceId: the-prodigy-of-114-bce-in-which-the-d42dde26cbd5
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Cicero, "
-                properties:
-                  sourceId: cicero-3cffd2f60f13
-              - type: text
-                content: Pro Milone
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: pro-milone-3729a201b763
-              - type: text
-                content: " 59: under no law were slaves examined against their master except in a case of incest ("
-                properties:
-                  sourceId: 59-under-no-law-were-slaves-examined-feb6e8231830
-              - type: text
-                content: de servis nulla lege quaestio est in dominum nisi de incestu
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: de-servis-nulla-lege-quaestio-est-in-48a110aadc35
-              - type: text
-                content: "; some editors bracket the sentence). In 114 BCE the informer was the slave of a knight (the name is often restored as Barrus), and he named his own master: Plutarch, "
-                properties:
-                  sourceId: some-editors-bracket-the-sentence-in-c09ea4cef1ab
-              - type: text
-                content: Roman Questions
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: roman-questions-77de4a94c0d3
-              - type: text
-                content: " 83; Greenidge, "
-                properties:
-                  sourceId: 83-greenidge-0ce069060413
-              - type: text
-                content: History of Rome
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: history-of-rome-4a06dd690227
-              - type: text
-                content: ", vol. 1. A slave of the orator M. Antonius was racked, scourged, and burned in the same affair without incriminating his master: Valerius Maximus 6.8.1."
-                properties:
-                  sourceId: vol-1-a-slave-of-the-orator-m-antoni-e8d75268210f
+              sourceId: cicero-3cffd2f60f13
+          - type: text
+            content: Pro Milone
             properties:
-              semanticRole: note
-              noteNumber: 2
-              sourceId: cicero-pro-milone-59-under-no-law-we-c3f01eb5f4ee
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Livy 8.15.7–8 (337 BCE): the Vestal Minucia, first suspected for dressing more elegantly than was proper, was denounced to the pontiffs by a slave informer ("
-                properties:
-                  sourceId: livy-8-15-7-8-337-bce-the-vestal-min-bacd5733f441
-              - type: text
-                content: ab indice servo
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: ab-indice-servo-bdbc44955968
-              - type: text
-                content: ). They ordered her to abstain from the rites and to keep her household in her power (
-                properties:
-                  sourceId: they-ordered-her-to-abstain-from-the-8b1cc506b7c9
-              - type: text
-                content: familiam in potestate habere
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: familiam-in-potestate-habere-542c703f8cc1
-              - type: text
-                content: "), and she was buried alive by the Colline Gate, to the right of the paved road, in the "
-                properties:
-                  sourceId: and-she-was-buried-alive-by-the-coll-b13daf02f536
-              - type: text
-                content: Campus Sceleratus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: campus-sceleratus-2b7d5807e88a
-              - type: text
-                content: ". On the purpose of the order (to keep her slaves available for examination), see Robin Lorsch Wildfang, "
-                properties:
-                  sourceId: on-the-purpose-of-the-order-to-keep-9bd67d9db333
-              - type: text
-                content: Rome's Vestal Virgins
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: rome-s-vestal-virgins-f5f23c987442
-              - type: text
-                content: " (2006), on the "
-                properties:
-                  sourceId: 2006-on-the-bbf419dd03e5
-              - type: text
-                content: crimen incesti
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: crimen-incesti-1a94b20e8e5f
-              - type: text
-                content: " (paraphrased). The witnesses in Domitian's prosecution of Cornelia were tortured: Suetonius, "
-                properties:
-                  sourceId: paraphrased-the-witnesses-in-domitia-af86172b9c01
-              - type: text
-                content: Domitian
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: domitian-7c699f20625a
-              - type: text
-                content: " 8.4."
-                properties:
-                  sourceId: 8-4-2de9624bb18c
+              style:
+                fontStyle: italic
+              sourceId: pro-milone-3729a201b763
+          - type: text
+            content: " 59: under no law were slaves examined against their master except in a case of incest ("
             properties:
-              semanticRole: note
-              noteNumber: 3
-              sourceId: livy-8-15-7-8-337-bce-the-vestal-min-a1b825af3cc8
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "On the rows of shops along the Via Sacra and the Nova Via that belonged to the Atrium Vestae and were let for rent, some of them absorbed in the Flavian rebuilding: Wildfang, "
-                properties:
-                  sourceId: on-the-rows-of-shops-along-the-via-s-bae099f0e89f
-              - type: text
-                content: Rome's Vestal Virgins
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: rome-s-vestal-virgins-3277a7da4096
-              - type: text
-                content: " (2006), on the order's property (paraphrased). The knight who manages the leases is invented."
-                properties:
-                  sourceId: 2006-on-the-order-s-property-paraphr-6dab0246e2f9
+              sourceId: 59-under-no-law-were-slaves-examined-feb6e8231830
+          - type: text
+            content: de servis nulla lege quaestio est in dominum nisi de incestu
             properties:
-              semanticRole: note
-              noteNumber: 4
-              sourceId: on-the-rows-of-shops-along-the-via-s-095d92cd6000
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-927e8332db1b
-              - type: text
-                content: Panegyricus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: panegyricus-7161a8bb0d5b
-              - type: text
-                content: " 42: Trajan is praised for freeing every household from the “domestic accuser” ("
-                properties:
-                  sourceId: 42-trajan-is-praised-for-freeing-eve-3e715b1d33ea
-              - type: text
-                content: accusatore domestico
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: accusatore-domestico-fa9f633ec9db
-              - type: text
-                content: ) and for ending what Pliny calls a “servile war,” a time when slaves had been the emperor's friends and their masters had not.
-                properties:
-                  sourceId: and-for-ending-what-pliny-calls-a-se-65e2627aa180
+              style:
+                fontStyle: italic
+              sourceId: de-servis-nulla-lege-quaestio-est-in-48a110aadc35
+          - type: text
+            content: "; some editors bracket the sentence). In 114 BCE the informer was the slave of a knight (the name is often restored as Barrus), and he named his own master: Plutarch, "
             properties:
-              semanticRole: note
-              noteNumber: 5
-              sourceId: pliny-the-younger-panegyricus-42-tra-7c740f12ea01
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-9868d51cc0f2
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-5367d132ea0f
-              - type: text
-                content: " 4.11; Suetonius, "
-                properties:
-                  sourceId: 4-11-suetonius-8d97311200dc
-              - type: text
-                content: Domitian
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: domitian-04ce253d8120
-              - type: text
-                content: " 8.3–4. Domitian, as "
-                properties:
-                  sourceId: 8-3-4-domitian-as-25ffd568f81b
-              - type: text
-                content: Pontifex Maximus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: pontifex-maximus-74301b1bdaaf
-              - type: text
-                content: ", summoned the pontiffs to his Alban villa instead of the Regia and condemned the Chief Vestal Cornelia in her absence, without hearing her. Earlier in the reign, the Vestals Varronilla and the Oculatae sisters had been convicted and allowed to choose how they died, and their lovers were banished. The date of Cornelia's burial is disputed (c. 89–91 CE)."
-                properties:
-                  sourceId: summoned-the-pontiffs-to-his-alban-v-af42724ff03a
+              sourceId: some-editors-bracket-the-sentence-in-c09ea4cef1ab
+          - type: text
+            content: Roman Questions
             properties:
-              semanticRole: note
-              noteNumber: 6
-              sourceId: pliny-the-younger-letters-4-11-sueto-dff1f65081b7
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-af268f2a92b2
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-647cdb06a2da
-              - type: text
-                content: " 4.11; Suetonius, "
-                properties:
-                  sourceId: 4-11-suetonius-d508ad4cd954
-              - type: text
-                content: Domitian
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: domitian-b37a37ddda2b
-              - type: text
-                content: " 8.4. Valerius Licinianus, a man of praetorian rank, confessed while the case against him was still unproven, and he was granted exile rather than death."
-                properties:
-                  sourceId: 8-4-valerius-licinianus-a-man-of-pra-317f6c818b5a
+              style:
+                fontStyle: italic
+              sourceId: roman-questions-77de4a94c0d3
+          - type: text
+            content: " 83; Greenidge, "
             properties:
-              semanticRole: note
-              noteNumber: 7
-              sourceId: pliny-the-younger-letters-4-11-sueto-b234fb3d7252
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-52fb29ad2895
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-d7d48ac5c6f5
-              - type: text
-                content: " 4.11, trans. William Melmoth, rev. F. C. T. Bosanquet, "
-                properties:
-                  sourceId: 4-11-trans-william-melmoth-rev-f-c-t-70c1d5befe4b
-              - type: text
-                content: Letters of Pliny
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-of-pliny-04a280735657
-              - type: text
-                content: " (Project Gutenberg #2811). The same letter declines to say whether Cornelia was innocent or guilty."
-                properties:
-                  sourceId: project-gutenberg-2811-the-same-lett-55828b0f3939
+              sourceId: 83-greenidge-0ce069060413
+          - type: text
+            content: History of Rome
             properties:
-              semanticRole: note
-              noteNumber: 8
-              sourceId: pliny-the-younger-letters-4-11-trans-272cf58be894
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Tacitus, "
-                properties:
-                  sourceId: tacitus-097ebb131537
-              - type: text
-                content: Annals
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: annals-be1e25d7d564
-              - type: text
-                content: " 2.34 (16 CE). Urgulania, a friend of Livia, refused to appear as a witness, and a praetor was sent to question her at home, even though by old custom the Vestal Virgins were heard in the Forum and the courts whenever they gave evidence."
-                properties:
-                  sourceId: 2-34-16-ce-urgulania-a-friend-of-liv-d810f71db7f3
+              style:
+                fontStyle: italic
+              sourceId: history-of-rome-4a06dd690227
+          - type: text
+            content: ", vol. 1. A slave of the orator M. Antonius was racked, scourged, and burned in the same affair without incriminating his master: Valerius Maximus 6.8.1."
             properties:
-              semanticRole: note
-              noteNumber: 9
-              sourceId: tacitus-annals-2-34-16-ce-urgulania-8bc6e773d35a
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-27e682278dd3
-              - type: text
-                content: Numa
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: numa-53a861db1038
-              - type: text
-                content: " 10; Dionysius of Halicarnassus, "
-                properties:
-                  sourceId: 10-dionysius-of-halicarnassus-46bcf1f2c7b5
-              - type: text
-                content: Roman Antiquities
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: roman-antiquities-14ccf9c0df7a
-              - type: text
-                content: " 2.67; Livy 8.15.8. The condemned Vestal was carried bound in a closed litter, as in a funeral procession, to the field by the Colline Gate. She went down a ladder into an underground chamber furnished with a bed, a lamp, and a little bread, water, milk, and oil, and the opening was filled in. Summarized in Wildfang, "
-                properties:
-                  sourceId: 2-67-livy-8-15-8-the-condemned-vesta-3f0487cb4f98
-              - type: text
-                content: Rome's Vestal Virgins
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: rome-s-vestal-virgins-5b1c9aa82cc0
-              - type: text
-                content: " (2006) (paraphrased)."
-                properties:
-                  sourceId: 2006-paraphrased-61cbd1e9019c
-            properties:
-              semanticRole: note
-              noteNumber: 10
-              sourceId: plutarch-numa-10-dionysius-of-halica-36d5542c8f3a
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-584601c55faa
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-f52f38000a23
-              - type: text
-                content: " 4.11, trans. Melmoth, rev. Bosanquet (Project Gutenberg #2811)."
-                properties:
-                  sourceId: 4-11-trans-melmoth-rev-bosanquet-pro-51849f3decbb
-            properties:
-              semanticRole: note
-              noteNumber: 11
-              sourceId: pliny-the-younger-letters-4-11-trans-9da6bf0450dd
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-18e90678701b
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-3401431d9268
-              - type: text
-                content: " 4.11, trans. Melmoth, rev. Bosanquet (Project Gutenberg #2811), on the Roman knight Celer, scourged in the Forum as Cornelia's alleged lover. On her lovers being whipped to death with rods in the Comitium, see Suetonius, "
-                properties:
-                  sourceId: 4-11-trans-melmoth-rev-bosanquet-pro-15490e871eda
-              - type: text
-                content: Domitian
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: domitian-b34790e41071
-              - type: text
-                content: " 8.4, trans. Alexander Thomson, rev. T. Forester (Project Gutenberg #6400)."
-                properties:
-                  sourceId: 8-4-trans-alexander-thomson-rev-t-fo-2bf3a649a263
-            properties:
-              semanticRole: note
-              noteNumber: 12
-              sourceId: pliny-the-younger-letters-4-11-trans-fe673b90674c
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-da32d24961cf
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-dde7b5b382ea
-              - type: text
-                content: " 2.11 (the Senate's trial of Marius Priscus, proconsul of Africa, January 100 CE), trans. William Melmoth, rev. W. M. L. Hutchinson, Loeb Classical Library (1915) — the quotation is from this translation."
-                properties:
-                  sourceId: 2-11-the-senate-s-trial-of-marius-pr-9611c77a7b86
-            properties:
-              semanticRole: note
-              noteNumber: 13
-              sourceId: pliny-the-younger-letters-2-11-the-s-08d35fe37b09
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Vegetius, "
-                properties:
-                  sourceId: vegetius-06519ee9af75
-              - type: text
-                content: Epitoma rei militaris
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: epitoma-rei-militaris-579df8f236ac
-              - type: text
-                content: " 4.39 — sailing uncertain and dangerous from mid-September, and the seas closed from the third day before the Ides of November (11 November) to the sixth day before the Ides of March (10 March)."
-                properties:
-                  sourceId: 4-39-sailing-uncertain-and-dangerous-26b9f06f7797
-            properties:
-              semanticRole: note
-              noteNumber: 14
-              sourceId: vegetius-epitoma-rei-militaris-4-39-e1c44c46b8fd
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Ovid, "
-                properties:
-                  sourceId: ovid-8cfa35e8c94d
-              - type: text
-                content: Tristia
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: tristia-28c384cd2e7b
-              - type: text
-                content: " 5.11.15 — the relegated poet keeps his life, his wealth, and his citizenship. Deportation to an island as an innovation of Tiberius: paraphrasing Gordon P. Kelly, "
-                properties:
-                  sourceId: 5-11-15-the-relegated-poet-keeps-his-d041f898a281
-              - type: text
-                content: A History of Exile in the Roman Republic
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: a-history-of-exile-in-the-roman-repu-27d9e683997d
-              - type: text
-                content: " (Cambridge, 2006), ch. 2."
-                properties:
-                  sourceId: cambridge-2006-ch-2-bc6203dd4d9d
-            properties:
-              semanticRole: note
-              noteNumber: 15
-              sourceId: ovid-tristia-5-11-15-the-relegated-p-48eab13defd5
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Tacitus, "
-                properties:
-                  sourceId: tacitus-46b9d2c1ab2f
-              - type: text
-                content: Annals
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: annals-635c08f1b807
-              - type: text
-                content: " 4.20 — the accusers' legal quarter of a condemned man's estate. On informers hoping for that share: paraphrasing John S. McHugh, "
-                properties:
-                  sourceId: 4-20-the-accusers-legal-quarter-of-a-df712f432c4c
-              - type: text
-                content: "Rome's Enemies Within: Imperial Conspiracies and Assassinations in the Roman Empire during the First Century AD"
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: rome-s-enemies-within-imperial-consp-bed0563ae1d8
-              - type: text
-                content: .
-                properties:
-                  sourceId: text-130ed5c62488
-            properties:
-              semanticRole: note
-              noteNumber: 16
-              sourceId: tacitus-annals-4-20-the-accusers-leg-c9ff24aff223
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: Digest
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: digest-c41787a1f029
-              - type: text
-                content: " 48.19.5 pr. (Ulpian), reporting Trajan's rescript to Julius Fronto that an absent man is not to be condemned on a criminal charge. The later practice of registering and holding an absent defendant's property is described in "
-                properties:
-                  sourceId: 48-19-5-pr-ulpian-reporting-trajan-s-eefb54ce6ace
-              - type: text
-                content: Digest
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: digest-c41787a1f029-2
-              - type: text
-                content: " 48.17.1 (Marcian); here it is moved a century early as Crispinus's motion."
-                properties:
-                  sourceId: 48-17-1-marcian-here-it-is-moved-a-c-c1240333bdfc
-            properties:
-              semanticRole: note
-              noteNumber: 17
-              sourceId: digest-48-19-5-pr-ulpian-reporting-t-2fc19e322bdb
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-51b749732314
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-1cd7ad42a1a5
-              - type: text
-                content: " 3.9 — the Senate's proceedings against the estate of Caecilius Classicus, proconsul of Baetica, who died before he could be tried. The Senate gave his daughter what he had owned before his governorship, divided the rest among his victims, and made his creditors repay what he had paid them since his return."
-                properties:
-                  sourceId: 3-9-the-senate-s-proceedings-against-0c406521ecb0
-            properties:
-              semanticRole: note
-              noteNumber: 18
-              sourceId: pliny-the-younger-letters-3-9-the-se-e42b22e1ab36
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Cassius Dio, "
-                properties:
-                  sourceId: cassius-dio-e3d46cbe7ba3
-              - type: text
-                content: Roman History
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: roman-history-71e441edf836
-              - type: text
-                content: " 56.27.2–3 — Augustus's limits on an exile's ships, slaves and freedmen, and fortune (12 CE). On the decree as a check on carrying wealth into exile: paraphrasing Kelly, "
-                properties:
-                  sourceId: 56-27-2-3-augustus-s-limits-on-an-ex-580e99a143ed
-              - type: text
-                content: A History of Exile in the Roman Republic
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: a-history-of-exile-in-the-roman-repu-81cd3e24dfe0
-              - type: text
-                content: .
-                properties:
-                  sourceId: text-260edafd4ccc
-            properties:
-              semanticRole: note
-              noteNumber: 19
-              sourceId: cassius-dio-roman-history-56-27-2-3-33cce37b9a70
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: On transfers by written entry in a banker's books, and the banker's duty to keep complete accounts and produce them (
-                properties:
-                  sourceId: on-transfers-by-written-entry-in-a-b-ee9143e7343b
-              - type: text
-                content: Digest
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: digest-a37b3f2cc6e4
-              - type: text
-                content: " 2.13): paraphrasing Koenraad Verboven and Paul Erdkamp (eds.), "
-                properties:
-                  sourceId: 2-13-paraphrasing-koenraad-verboven-9db80d37a53b
-              - type: text
-                content: Law and Economic Performance in the Roman World
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: law-and-economic-performance-in-the-2f118d935f2f
-              - type: text
-                content: " (Brill, 2022)."
-                properties:
-                  sourceId: brill-2022-f409b2dab02b
-            properties:
-              semanticRole: note
-              noteNumber: 20
-              sourceId: on-transfers-by-written-entry-in-a-b-b6d99a156e36
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: Digest
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: digest-07fdbcefabfd
-              - type: text
-                content: " 22.5.4 (Paul) — patron and freedman cannot be compelled to give criminal evidence against each other. Paraphrasing Egbert Koops, “Masters and Freedmen: Junian Latins and the Struggle for Citizenship,” in G. de Kleijn and S. Benoist (eds.), "
-                properties:
-                  sourceId: 22-5-4-paul-patron-and-freedman-cann-bc0592022e66
-              - type: text
-                content: Integration in Rome and in the Roman World
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: integration-in-rome-and-in-the-roman-ae2c956669a6
-              - type: text
-                content: " (Brill, 2014)."
-                properties:
-                  sourceId: brill-2014-fd6c5273ba53
-            properties:
-              semanticRole: note
-              noteNumber: 21
-              sourceId: digest-22-5-4-paul-patron-and-freedm-c481783a35a4
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: Tabula Heracleensis (
-                properties:
-                  sourceId: tabula-heracleensis-9c2705ef9563
-              - type: text
-                content: CIL
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: cil-3fa228165900
-              - type: text
-                content: " I² 593), the clause on wagons in the streets of Rome — no wagon to be driven after sunrise or before the tenth hour of the day, with exceptions for building temples and public works, demolition under public contract, and the wagons of priests, triumphs, and games."
-                properties:
-                  sourceId: i-593-the-clause-on-wagons-in-the-st-66f0d4bc21c6
-            properties:
-              semanticRole: note
-              noteNumber: 22
-              sourceId: tabula-heracleensis-cil-i-593-the-cl-a6e6cb645958
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "On the "
-                properties:
-                  sourceId: on-the-f1bf2b648af4
-              - type: text
-                content: naves codicariae
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: naves-codicariae-35ff4eed2aa2
-              - type: text
-                content: " and the up-to-three-day haul from Portus to Rome: paraphrasing David J. Mattingly and Gregory S. Aldrete, “The Feeding of Imperial Rome: The Mechanics of the Food Supply System,” in J. Coulston and H. Dodge (eds.), "
-                properties:
-                  sourceId: and-the-up-to-three-day-haul-from-po-24445a313584
-              - type: text
-                content: "Ancient Rome: The Archaeology of the Eternal City"
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: ancient-rome-the-archaeology-of-the-e03729929014
-              - type: text
-                content: " (Oxford, 2000)."
-                properties:
-                  sourceId: oxford-2000-9ad02819140a
-            properties:
-              semanticRole: note
-              noteNumber: 23
-              sourceId: on-the-naves-codicariae-and-the-up-t-527f1e867553
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Gaius, "
-                properties:
-                  sourceId: gaius-2a991ea56d7a
-              - type: text
-                content: Institutes
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: institutes-ed91b3a41ca1
-              - type: text
-                content: " 1.37 — under the "
-                properties:
-                  sourceId: 1-37-under-the-cbcbb00ce2e3
-              - type: text
-                content: lex Aelia Sentia
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: lex-aelia-sentia-f238a33f5e91
-              - type: text
-                content: ", a manumission made to defraud creditors is void."
-                properties:
-                  sourceId: a-manumission-made-to-defraud-credit-3988235ff228
-            properties:
-              semanticRole: note
-              noteNumber: 24
-              sourceId: gaius-institutes-1-37-under-the-lex-9b4a28cd5a87
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Kelly, "
-                properties:
-                  sourceId: kelly-d0621cedd58a
-              - type: text
-                content: A History of Exile in the Roman Republic
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: a-history-of-exile-in-the-roman-repu-5f38d222ef9b
-              - type: text
-                content: " — exiles' devices against confiscation: buying costly slaves as portable wealth, estates in free cities, friends buying at the auction, and informal manumission before departure, as Cicero arranged in 58 BCE without being sure it would hold. Paraphrased."
-                properties:
-                  sourceId: exiles-devices-against-confiscation-ae7723155d0e
-            properties:
-              semanticRole: note
-              noteNumber: 25
-              sourceId: kelly-a-history-of-exile-in-the-roma-9fdb437bc0f4
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-712e20d27f5a
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-d1937f5f0523
-              - type: text
-                content: " 3.9 (the case of Caecilius Classicus), trans. Melmoth, rev. Hutchinson, Loeb Classical Library (1915) — the quotation is from this translation."
-                properties:
-                  sourceId: 3-9-the-case-of-caecilius-classicus-8385c3834fb9
-            properties:
-              semanticRole: note
-              noteNumber: 26
-              sourceId: pliny-the-younger-letters-3-9-the-ca-5b9336b771f0
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-820fb89f1bbd
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-5c692821da38
-              - type: text
-                content: " 2.11 — the consul-designate Julius Ferox's motion to grant Priscus judges provisionally while summoning the men said to have bought innocent blood."
-                properties:
-                  sourceId: 2-11-the-consul-designate-julius-fer-bc018f1a5e61
-            properties:
-              semanticRole: note
-              noteNumber: 27
-              sourceId: pliny-the-younger-letters-2-11-the-c-df89ba93e06e
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-aa417e09e5bd
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-5e51cf07514c
-              - type: text
-                content: " 2.11 — the consular Tuccius Cerealis demands that Priscus be notified to attend, and the matter is adjourned to the next meeting of the Senate."
-                properties:
-                  sourceId: 2-11-the-consular-tuccius-cerealis-d-e58edf72a74e
-            properties:
-              semanticRole: note
-              noteNumber: 28
-              sourceId: pliny-the-younger-letters-2-11-the-c-48ce885ac0e4
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-9ac2bf8d9ebf
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-616b849a698d
-              - type: text
-                content: " 8.14 (to Titius Aristo, on the Senate's vote over the freedmen of Afranius Dexter), trans. William Melmoth, rev. F. C. T. Bosanquet (1895) — the quotation is from this translation. Pliny there insisted that death, banishment, and acquittal be counted as three separate opinions."
-                properties:
-                  sourceId: 8-14-to-titius-aristo-on-the-senate-bdb5e5e2a519
-            properties:
-              semanticRole: note
-              noteNumber: 29
-              sourceId: pliny-the-younger-letters-8-14-to-ti-eb50aa29fc13
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Aulus Gellius, "
-                properties:
-                  sourceId: aulus-gellius-5b913777ed3c
-              - type: text
-                content: Attic Nights
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: attic-nights-503d5c6166a2
-              - type: text
-                content: " 14.7.8, reporting Varro — a decree of the Senate made before sunrise or after sunset is not valid."
-                properties:
-                  sourceId: 14-7-8-reporting-varro-a-decree-of-t-d4dded152e9a
-            properties:
-              semanticRole: note
-              noteNumber: 30
-              sourceId: aulus-gellius-attic-nights-14-7-8-re-b61c164bcfbb
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-8a1d92e1e6a6
-              - type: text
-                content: Panegyricus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: panegyricus-106137d4d2df
-              - type: text
-                content: " 34–35 — Trajan's public punishment of the informers of Domitian's reign."
-                properties:
-                  sourceId: 34-35-trajan-s-public-punishment-of-bc86d9af7c47
-            properties:
-              semanticRole: note
-              noteNumber: 31
-              sourceId: pliny-the-younger-panegyricus-34-35-da4638959138
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Pliny the Younger, "
-                properties:
-                  sourceId: pliny-the-younger-ac5e4d65b141
-              - type: text
-                content: Letters
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: letters-c3aa8320d50b
-              - type: text
-                content: " 2.11 — at the division on Priscus's sentence, those standing by the consuls' chairs went over to Cornutus Tertullus's motion, and the waverers followed."
-                properties:
-                  sourceId: 2-11-at-the-division-on-priscus-s-se-965e54ad1849
-            properties:
-              semanticRole: note
-              noteNumber: 32
-              sourceId: pliny-the-younger-letters-2-11-at-th-1f67a68deb38
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Tacitus, "
-                properties:
-                  sourceId: tacitus-e0b9a609397c
-              - type: text
-                content: Annals
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: annals-6ffd55f0f87a
-              - type: text
-                content: " 12.23; Cassius Dio, "
-                properties:
-                  sourceId: 12-23-cassius-dio-53d16d082215
-              - type: text
-                content: Roman History
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: roman-history-4aa449ecae40
-              - type: text
-                content: " 52.42.6 — senators might not leave Italy without the emperor's leave, except to visit Sicily and, from Claudius, Narbonese Gaul."
-                properties:
-                  sourceId: 52-42-6-senators-might-not-leave-ita-bb9759865bec
-            properties:
-              semanticRole: note
-              noteNumber: 33
-              sourceId: tacitus-annals-12-23-cassius-dio-rom-7473d3264a99
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Appian, "
-                properties:
-                  sourceId: appian-ed248be4f966
-              - type: text
-                content: Civil Wars
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: civil-wars-1beda27362af
-              - type: text
-                content: " 1.27; George Willis Botsford, "
-                properties:
-                  sourceId: 1-27-george-willis-botsford-b5302fed2cbf
-              - type: text
-                content: The Roman Assemblies from Their Origin to the End of the Republic
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-roman-assemblies-from-their-orig-7b57c99ad45b
-              - type: text
-                content: " (1909) — on the plebiscites after Gaius Gracchus's death that first let allottees sell their land and then, in 118 BCE, ended the distributions; A. H. J. Greenidge, "
-                properties:
-                  sourceId: 1909-on-the-plebiscites-after-gaius-8b72e2fbb6c9
-              - type: text
-                content: A History of Rome During the Later Republic and Early Principate
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: a-history-of-rome-during-the-later-r-f505290d58ab
-              - type: text
-                content: ", vol. I (1904), on the later law of Spurius Thorius."
-                properties:
-                  sourceId: vol-i-1904-on-the-later-law-of-spuri-c6dedbd84729
-            properties:
-              semanticRole: note
-              noteNumber: 34
-              sourceId: appian-civil-wars-1-27-george-willis-fb57f7608e3f
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-e12456e62b6a
-              - type: text
-                content: Tiberius Gracchus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: tiberius-gracchus-60c8ffdbffa7
-              - type: text
-                content: " 10.2, trans. Bernadotte Perrin (Loeb Classical Library, 1921) — on Marcus Octavius's veto of the agrarian bill, 133 BCE."
-                properties:
-                  sourceId: 10-2-trans-bernadotte-perrin-loeb-cl-b2ba9e8621c2
-            properties:
-              semanticRole: note
-              noteNumber: 35
-              sourceId: plutarch-tiberius-gracchus-10-2-tran-7bfa546c1b43
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Greenidge, "
-                properties:
-                  sourceId: greenidge-f899e93ef0ba
-              - type: text
-                content: History of Rome
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: history-of-rome-ee2c42b8b5b6
-              - type: text
-                content: ", vol. I (1904) — on Octavius's first veto. The same passage describes the country voters streaming into Rome for the vote and Octavius bidding the scribe be silent."
-                properties:
-                  sourceId: vol-i-1904-on-octavius-s-first-veto-dc6f4878943f
-            properties:
-              semanticRole: note
-              noteNumber: 36
-              sourceId: greenidge-history-of-rome-vol-i-1904-5526a439d190
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Botsford, "
-                properties:
-                  sourceId: botsford-518a4ade59ae
-              - type: text
-                content: The Roman Assemblies
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-roman-assemblies-7578e8ceae85
-              - type: text
-                content: " (1909) — on the contio: private speakers addressing the meeting from below the platform, the president's control of the order and length of speeches, and adjournment. The fixed interval of three market days ("
-                properties:
-                  sourceId: 1909-on-the-contio-private-speakers-d1f9528c9185
-              - type: text
-                content: trinundinum
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: trinundinum-d478b4f55fcc
-              - type: text
-                content: ") between promulgation and vote was imposed by the lex Caecilia Didia of 98 BCE; see Francisco Pina Polo, "
-                properties:
-                  sourceId: between-promulgation-and-vote-was-im-c7c366ee0031
-              - type: text
-                content: The Consul at Rome
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-consul-at-rome-c40aba8e002f
-              - type: text
-                content: " (2011)."
-                properties:
-                  sourceId: 2011-1e3c8d08815b
-            properties:
-              semanticRole: note
-              noteNumber: 37
-              sourceId: botsford-the-roman-assemblies-1909-o-e0d699bcec59
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-27bb71126e3c
-              - type: text
-                content: Tiberius Gracchus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: tiberius-gracchus-26161f7a29be
-              - type: text
-                content: " 10–11 (Perrin); Greenidge, vol. I — the veto delivered by silencing the clerk, the meeting melting away, and, on the next voting day, the voting urns carried off by the party of the rich and a near-riot."
-                properties:
-                  sourceId: 10-11-perrin-greenidge-vol-i-the-vet-63ff1ab8713c
-            properties:
-              semanticRole: note
-              noteNumber: 38
-              sourceId: plutarch-tiberius-gracchus-10-11-per-fdbcf9e5394d
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Botsford, "
-                properties:
-                  sourceId: botsford-110c3b94dd89
-              - type: text
-                content: The Roman Assemblies
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-roman-assemblies-193f02d83df4
-              - type: text
-                content: " (1909) — on the tribal assembly: the lot for the tribe of the Latins and for the "
-                properties:
-                  sourceId: 1909-on-the-tribal-assembly-the-lot-99e1e667fd3f
-              - type: text
-                content: principium
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: principium-755224a9d905
-              - type: text
-                content: ", ropes stretched to divide the assembly-place, and the rule that calling the principium ended the right of intercession and of announcing an omen seen while watching the sky."
-                properties:
-                  sourceId: ropes-stretched-to-divide-the-assemb-1c06ad9b10a4
-            properties:
-              semanticRole: note
-              noteNumber: 39
-              sourceId: botsford-the-roman-assemblies-1909-o-b54b336dc314
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Ballot laws: the lex Gabinia (139 BCE, elections), lex Cassia (137, trials), and lex Papiria (c. 131/130, legislation); Marius's law of 119 narrowing the gangways, Cicero, "
-                properties:
-                  sourceId: ballot-laws-the-lex-gabinia-139-bce-23ab08015f99
-              - type: text
-                content: De Legibus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: de-legibus-e307b7902b86
-              - type: text
-                content: " 3.38–39. Botsford (1909) on the tablets marked for "
-                properties:
-                  sourceId: 3-38-39-botsford-1909-on-the-tablets-dab6c585c022
-              - type: text
-                content: uti rogas
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: uti-rogas-4a969a95efd5
-              - type: text
-                content: " and "
-                properties:
-                  sourceId: and-b099848ccfa7
-              - type: text
-                content: antiquo
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: antiquo-0ee4ce5cac31
-              - type: text
-                content: ", the "
-                properties:
-                  sourceId: the-00089aac832b
-              - type: text
-                content: cistae
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: cistae-bbc950ea026d
-              - type: text
-                content: ", and the "
-                properties:
-                  sourceId: and-the-260725cdcc6e
-              - type: text
-                content: custodes
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: custodes-14475d3cc2f8
-              - type: text
-                content: ". On the layout of the "
-                properties:
-                  sourceId: on-the-layout-of-the-803451f00301
-              - type: text
-                content: pontes
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: pontes-dd5c00d79f2b
-              - type: text
-                content: ": Antonio López García, "
-                properties:
-                  sourceId: antonio-l-pez-garc-a-9c9cd33e2739
-              - type: text
-                content: Running Rome and Its Empire
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: running-rome-and-its-empire-ca14e3ee481a
-              - type: text
-                content: " (2024), and Henrik Mouritsen, "
-                properties:
-                  sourceId: 2024-and-henrik-mouritsen-375b258cd0db
-              - type: text
-                content: Plebs and Politics in the Late Roman Republic
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: plebs-and-politics-in-the-late-roman-37c20026edb4
-              - type: text
-                content: " (2001)."
-                properties:
-                  sourceId: 2001-ba4adf2291e3
-            properties:
-              semanticRole: note
-              noteNumber: 40
-              sourceId: ballot-laws-the-lex-gabinia-139-bce-199f33fcd851
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Botsford, "
-                properties:
-                  sourceId: botsford-a7170a72aaf9
-              - type: text
-                content: The Roman Assemblies
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-roman-assemblies-c13344b233c2
-              - type: text
-                content: " (1909) — the tribal returns proclaimed in an order usually drawn by lot; a vote without effect if the president halted the announcement before a majority; every session to begin and end between sunrise and sunset."
-                properties:
-                  sourceId: 1909-the-tribal-returns-proclaimed-i-e5e84a18bf9c
-            properties:
-              semanticRole: note
-              noteNumber: 41
-              sourceId: botsford-the-roman-assemblies-1909-t-815e7ee64798
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-fa470ffb6f5b
-              - type: text
-                content: Tiberius Gracchus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: tiberius-gracchus-b81f75abefd3
-              - type: text
-                content: " 9.5, trans. Perrin (1921) — from Tiberius Gracchus's speeches for the land bill."
-                properties:
-                  sourceId: 9-5-trans-perrin-1921-from-tiberius-224d90fc6ca8
-            properties:
-              semanticRole: note
-              noteNumber: 42
-              sourceId: plutarch-tiberius-gracchus-9-5-trans-a8559f7c1c1d
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Mouritsen, "
-                properties:
-                  sourceId: mouritsen-ba088a136e2e
-              - type: text
-                content: Plebs and Politics
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: plebs-and-politics-9e9dc918980f
-              - type: text
-                content: " (2001) — on the "
-                properties:
-                  sourceId: 2001-on-the-6e43c964961e
-              - type: text
-                content: divisores
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: divisores-d1949157a7bd
-              - type: text
-                content: ", first attested in the early first century BCE; on bribes given mostly as promises and aimed at the rural tribes; and on Verres summoning the distributors of every tribe to block Cicero's election as aedile (Cicero, "
-                properties:
-                  sourceId: first-attested-in-the-early-first-ce-feabb7764d2f
-              - type: text
-                content: In Verrem
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: in-verrem-01eb123c2208
-              - type: text
-                content: " 1.22–23)."
-                properties:
-                  sourceId: 1-22-23-b9aa72223e01
-            properties:
-              semanticRole: note
-              noteNumber: 43
-              sourceId: mouritsen-plebs-and-politics-2001-on-245b5c8c91ab
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: Greenidge, vol. I — on the urban voters of 133, indifferent or hostile to the land bill and many of them clients of the noble houses, and on the country voters scattering home once the vote was over.
-                properties:
-                  sourceId: greenidge-vol-i-on-the-urban-voters-791037764660
-            properties:
-              semanticRole: note
-              noteNumber: 44
-              sourceId: greenidge-vol-i-on-the-urban-voters-e335cad94d34
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: Greenidge, vol. I; Botsford (1909) — on the laws against electoral bribery of 181 BCE (the lex Baebia, ten years' disqualification from office), 166, and 159 (the lex Cornelia Fulvia, a capital penalty, in practice exile), none of which ended the practice.
-                properties:
-                  sourceId: greenidge-vol-i-botsford-1909-on-the-e06da206218b
-            properties:
-              semanticRole: note
-              noteNumber: 45
-              sourceId: greenidge-vol-i-botsford-1909-on-the-d7fe420b9555
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-c9191f54fc3d
-              - type: text
-                content: Roman Questions
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: roman-questions-bfcc8c36f0c3
-              - type: text
-                content: " 81 — why a tribune wears no purple, and why his door stands open night and day; Daniel J. Gargola, "
-                properties:
-                  sourceId: 81-why-a-tribune-wears-no-purple-and-8e6ad92c0f46
-              - type: text
-                content: The Shape of the Roman Order
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-shape-of-the-roman-order-5eb219d3456d
-              - type: text
-                content: " (2017), on the rule that tribunes of the plebs might not be absent from the city for more than one night."
-                properties:
-                  sourceId: 2017-on-the-rule-that-tribunes-of-th-292cdb590eb5
-            properties:
-              semanticRole: note
-              noteNumber: 46
-              sourceId: plutarch-roman-questions-81-why-a-tr-c53f5cd0b847
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-37ea0900cf7e
-              - type: text
-                content: Tiberius Gracchus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: tiberius-gracchus-bdaf4c4d5d99
-              - type: text
-                content: " 9.2 and 10.3 (Perrin) — the first bill paid holders the value of the land they surrendered; after Octavius's veto, Tiberius withdrew it for a harsher bill without compensation. Greenidge, vol. I, on the redrafting."
-                properties:
-                  sourceId: 9-2-and-10-3-perrin-the-first-bill-p-06e7a3ad8f9e
-            properties:
-              semanticRole: note
-              noteNumber: 47
-              sourceId: plutarch-tiberius-gracchus-9-2-and-1-b289b780503f
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Botsford, "
-                properties:
-                  sourceId: botsford-638b199ab6ac
-              - type: text
-                content: The Roman Assemblies
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-roman-assemblies-d541a9606cdc
-              - type: text
-                content: " (1909) — on prohibitive omens: an attack of epilepsy vitiated an assembly's business and forced an adjournment, hence the name "
-                properties:
-                  sourceId: 1909-on-prohibitive-omens-an-attack-ccbdf0aa47f5
-              - type: text
-                content: morbus comitialis
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: morbus-comitialis-014c903ee3d0
-              - type: text
-                content: ", the comitial sickness."
-                properties:
-                  sourceId: the-comitial-sickness-af65d02ba075
-            properties:
-              semanticRole: note
-              noteNumber: 48
-              sourceId: botsford-the-roman-assemblies-1909-o-5d71dba44b45
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-17d0d0282019
-              - type: text
-                content: Tiberius Gracchus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: tiberius-gracchus-428d09a0b0eb
-              - type: text
-                content: " 12 (Perrin); Greenidge, vol. I — the deposition of Octavius: the halt after seventeen tribes, the last appeal, Octavius looking to the men of wealth standing together, and his removal from the Rostra by one of Tiberius's freedmen."
-                properties:
-                  sourceId: 12-perrin-greenidge-vol-i-the-deposi-b31afe7dbe7e
-            properties:
-              semanticRole: note
-              noteNumber: 49
-              sourceId: plutarch-tiberius-gracchus-12-perrin-9b99b19efa37
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Asconius, commentary on Cicero's "
-                properties:
-                  sourceId: asconius-commentary-on-cicero-s-ea6b243106c5
-              - type: text
-                content: Pro Cornelio
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: pro-cornelio-60f2b63ef9ab
-              - type: text
-                content: " (p. 72 Clark); Cassius Dio 36.30 — the tribune Trebellius withdrew his veto of Gabinius's law in 67 BCE after seventeen tribes had voted to depose him. Mouritsen, "
-                properties:
-                  sourceId: p-72-clark-cassius-dio-36-30-the-tri-4735ffa189b1
-              - type: text
-                content: Plebs and Politics
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: plebs-and-politics-7ce038b1af57
-              - type: text
-                content: " (2001), on the limits of tribunician intercession."
-                properties:
-                  sourceId: 2001-on-the-limits-of-tribunician-in-a6149e60207f
-            properties:
-              semanticRole: note
-              noteNumber: 50
-              sourceId: asconius-commentary-on-cicero-s-pro-8705793546fd
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Botsford, "
-                properties:
-                  sourceId: botsford-cf8da91af2a6
-              - type: text
-                content: The Roman Assemblies
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-roman-assemblies-e75b339bddeb
-              - type: text
-                content: " (1909) — on "
-                properties:
-                  sourceId: 1909-on-32ff1b4d282a
-              - type: text
-                content: obnuntiatio
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: obnuntiatio-2baf5f7450e4
-              - type: text
-                content: ": a president was bound to dismiss the assembly on an augur's or magistrate's report of an evil omen, whatever their relative rank, and the Aelian and Fufian laws (c. 150 BCE) extended the device. For the augur's "
-                properties:
-                  sourceId: a-president-was-bound-to-dismiss-the-ab96334f7aa2
-              - type: text
-                content: alio die
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: alio-die-4ecfb03fd44f
-              - type: text
-                content: ", Cicero, "
-                properties:
-                  sourceId: cicero-2f9eafb161be
-              - type: text
-                content: De Legibus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: de-legibus-5e68f09383ef
-              - type: text
-                content: " 2.31 and "
-                properties:
-                  sourceId: 2-31-and-fa5cb9dac2d1
-              - type: text
-                content: Philippics
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: philippics-0400989deea2
-              - type: text
-                content: " 2.83."
-                properties:
-                  sourceId: 2-83-b8ba7df06ccd
-            properties:
-              semanticRole: note
-              noteNumber: 51
-              sourceId: botsford-the-roman-assemblies-1909-o-5c43fa3df67d
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-ce76544a343b
-              - type: text
-                content: Tiberius Gracchus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: tiberius-gracchus-527294115f23
-              - type: text
-                content: " 14–15 (Perrin); Greenidge, vol. I — Titus Annius's challenge to Tiberius over the deposition, and Tiberius's reply that a tribune's sanctity comes from the people and is forfeited by injuring them."
-                properties:
-                  sourceId: 14-15-perrin-greenidge-vol-i-titus-a-a4917707ca97
-            properties:
-              semanticRole: note
-              noteNumber: 52
-              sourceId: plutarch-tiberius-gracchus-14-15-per-1302e82e367e
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Plutarch, "
-                properties:
-                  sourceId: plutarch-5d835dc3d15b
-              - type: text
-                content: Tiberius Gracchus
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: tiberius-gracchus-986a3876a69f
-              - type: text
-                content: " 19.6, trans. Perrin (1921) — the killing of Tiberius Gracchus and his supporters on the Capitol, 133 BCE."
-                properties:
-                  sourceId: 19-6-trans-perrin-1921-the-killing-o-6d9f57748b81
-            properties:
-              semanticRole: note
-              noteNumber: 53
-              sourceId: plutarch-tiberius-gracchus-19-6-tran-5da8422dc0ef
-          - type: list-item
-            content: ""
-            children:
-              - type: text
-                content: "Botsford, "
-                properties:
-                  sourceId: botsford-693662e80a5b
-              - type: text
-                content: The Roman Assemblies
-                properties:
-                  style:
-                    fontStyle: italic
-                  sourceId: the-roman-assemblies-0bcc6cc108e5
-              - type: text
-                content: " (1909) — the Senate's annulment of Saturninus's measures (100 BCE) and of Sextus Titius's agrarian law (99 BCE) as passed by violence or against the intercession."
-                properties:
-                  sourceId: 1909-the-senate-s-annulment-of-satur-bed32bcea6dd
-            properties:
-              semanticRole: note
-              noteNumber: 54
-              sourceId: botsford-the-roman-assemblies-1909-t-71127f011817
+              sourceId: vol-1-a-slave-of-the-orator-m-antoni-e8d75268210f
         properties:
-          semanticRole: notes
-          style:
-            fontSize: 6
-          sourceId: list-72bb25ad720b
-        columnSpan: all
+          semanticRole: note
+          noteNumber: 2
+          sourceId: cicero-pro-milone-59-under-no-law-we-c3f01eb5f4ee
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Livy 8.15.7–8 (337 BCE): the Vestal Minucia, first suspected for dressing more elegantly than was proper, was denounced to the pontiffs by a slave informer ("
+            properties:
+              sourceId: livy-8-15-7-8-337-bce-the-vestal-min-bacd5733f441
+          - type: text
+            content: ab indice servo
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: ab-indice-servo-bdbc44955968
+          - type: text
+            content: ). They ordered her to abstain from the rites and to keep her household in her power (
+            properties:
+              sourceId: they-ordered-her-to-abstain-from-the-8b1cc506b7c9
+          - type: text
+            content: familiam in potestate habere
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: familiam-in-potestate-habere-542c703f8cc1
+          - type: text
+            content: "), and she was buried alive by the Colline Gate, to the right of the paved road, in the "
+            properties:
+              sourceId: and-she-was-buried-alive-by-the-coll-b13daf02f536
+          - type: text
+            content: Campus Sceleratus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: campus-sceleratus-2b7d5807e88a
+          - type: text
+            content: ". On the purpose of the order (to keep her slaves available for examination), see Robin Lorsch Wildfang, "
+            properties:
+              sourceId: on-the-purpose-of-the-order-to-keep-9bd67d9db333
+          - type: text
+            content: Rome's Vestal Virgins
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: rome-s-vestal-virgins-f5f23c987442
+          - type: text
+            content: " (2006), on the "
+            properties:
+              sourceId: 2006-on-the-bbf419dd03e5
+          - type: text
+            content: crimen incesti
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: crimen-incesti-1a94b20e8e5f
+          - type: text
+            content: " (paraphrased). The witnesses in Domitian's prosecution of Cornelia were tortured: Suetonius, "
+            properties:
+              sourceId: paraphrased-the-witnesses-in-domitia-af86172b9c01
+          - type: text
+            content: Domitian
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: domitian-7c699f20625a
+          - type: text
+            content: " 8.4."
+            properties:
+              sourceId: 8-4-2de9624bb18c
+        properties:
+          semanticRole: note
+          noteNumber: 3
+          sourceId: livy-8-15-7-8-337-bce-the-vestal-min-a1b825af3cc8
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "On the rows of shops along the Via Sacra and the Nova Via that belonged to the Atrium Vestae and were let for rent, some of them absorbed in the Flavian rebuilding: Wildfang, "
+            properties:
+              sourceId: on-the-rows-of-shops-along-the-via-s-bae099f0e89f
+          - type: text
+            content: Rome's Vestal Virgins
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: rome-s-vestal-virgins-3277a7da4096
+          - type: text
+            content: " (2006), on the order's property (paraphrased). The knight who manages the leases is invented."
+            properties:
+              sourceId: 2006-on-the-order-s-property-paraphr-6dab0246e2f9
+        properties:
+          semanticRole: note
+          noteNumber: 4
+          sourceId: on-the-rows-of-shops-along-the-via-s-095d92cd6000
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-927e8332db1b
+          - type: text
+            content: Panegyricus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: panegyricus-7161a8bb0d5b
+          - type: text
+            content: " 42: Trajan is praised for freeing every household from the “domestic accuser” ("
+            properties:
+              sourceId: 42-trajan-is-praised-for-freeing-eve-3e715b1d33ea
+          - type: text
+            content: accusatore domestico
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: accusatore-domestico-fa9f633ec9db
+          - type: text
+            content: ) and for ending what Pliny calls a “servile war,” a time when slaves had been the emperor's friends and their masters had not.
+            properties:
+              sourceId: and-for-ending-what-pliny-calls-a-se-65e2627aa180
+        properties:
+          semanticRole: note
+          noteNumber: 5
+          sourceId: pliny-the-younger-panegyricus-42-tra-7c740f12ea01
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-9868d51cc0f2
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-5367d132ea0f
+          - type: text
+            content: " 4.11; Suetonius, "
+            properties:
+              sourceId: 4-11-suetonius-8d97311200dc
+          - type: text
+            content: Domitian
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: domitian-04ce253d8120
+          - type: text
+            content: " 8.3–4. Domitian, as "
+            properties:
+              sourceId: 8-3-4-domitian-as-25ffd568f81b
+          - type: text
+            content: Pontifex Maximus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: pontifex-maximus-74301b1bdaaf
+          - type: text
+            content: ", summoned the pontiffs to his Alban villa instead of the Regia and condemned the Chief Vestal Cornelia in her absence, without hearing her. Earlier in the reign, the Vestals Varronilla and the Oculatae sisters had been convicted and allowed to choose how they died, and their lovers were banished. The date of Cornelia's burial is disputed (c. 89–91 CE)."
+            properties:
+              sourceId: summoned-the-pontiffs-to-his-alban-v-af42724ff03a
+        properties:
+          semanticRole: note
+          noteNumber: 6
+          sourceId: pliny-the-younger-letters-4-11-sueto-dff1f65081b7
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-af268f2a92b2
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-647cdb06a2da
+          - type: text
+            content: " 4.11; Suetonius, "
+            properties:
+              sourceId: 4-11-suetonius-d508ad4cd954
+          - type: text
+            content: Domitian
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: domitian-b37a37ddda2b
+          - type: text
+            content: " 8.4. Valerius Licinianus, a man of praetorian rank, confessed while the case against him was still unproven, and he was granted exile rather than death."
+            properties:
+              sourceId: 8-4-valerius-licinianus-a-man-of-pra-317f6c818b5a
+        properties:
+          semanticRole: note
+          noteNumber: 7
+          sourceId: pliny-the-younger-letters-4-11-sueto-b234fb3d7252
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-52fb29ad2895
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-d7d48ac5c6f5
+          - type: text
+            content: " 4.11, trans. William Melmoth, rev. F. C. T. Bosanquet, "
+            properties:
+              sourceId: 4-11-trans-william-melmoth-rev-f-c-t-70c1d5befe4b
+          - type: text
+            content: Letters of Pliny
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-of-pliny-04a280735657
+          - type: text
+            content: " (Project Gutenberg #2811). The same letter declines to say whether Cornelia was innocent or guilty."
+            properties:
+              sourceId: project-gutenberg-2811-the-same-lett-55828b0f3939
+        properties:
+          semanticRole: note
+          noteNumber: 8
+          sourceId: pliny-the-younger-letters-4-11-trans-272cf58be894
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Tacitus, "
+            properties:
+              sourceId: tacitus-097ebb131537
+          - type: text
+            content: Annals
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: annals-be1e25d7d564
+          - type: text
+            content: " 2.34 (16 CE). Urgulania, a friend of Livia, refused to appear as a witness, and a praetor was sent to question her at home, even though by old custom the Vestal Virgins were heard in the Forum and the courts whenever they gave evidence."
+            properties:
+              sourceId: 2-34-16-ce-urgulania-a-friend-of-liv-d810f71db7f3
+        properties:
+          semanticRole: note
+          noteNumber: 9
+          sourceId: tacitus-annals-2-34-16-ce-urgulania-8bc6e773d35a
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-27e682278dd3
+          - type: text
+            content: Numa
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: numa-53a861db1038
+          - type: text
+            content: " 10; Dionysius of Halicarnassus, "
+            properties:
+              sourceId: 10-dionysius-of-halicarnassus-46bcf1f2c7b5
+          - type: text
+            content: Roman Antiquities
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: roman-antiquities-14ccf9c0df7a
+          - type: text
+            content: " 2.67; Livy 8.15.8. The condemned Vestal was carried bound in a closed litter, as in a funeral procession, to the field by the Colline Gate. She went down a ladder into an underground chamber furnished with a bed, a lamp, and a little bread, water, milk, and oil, and the opening was filled in. Summarized in Wildfang, "
+            properties:
+              sourceId: 2-67-livy-8-15-8-the-condemned-vesta-3f0487cb4f98
+          - type: text
+            content: Rome's Vestal Virgins
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: rome-s-vestal-virgins-5b1c9aa82cc0
+          - type: text
+            content: " (2006) (paraphrased)."
+            properties:
+              sourceId: 2006-paraphrased-61cbd1e9019c
+        properties:
+          semanticRole: note
+          noteNumber: 10
+          sourceId: plutarch-numa-10-dionysius-of-halica-36d5542c8f3a
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-584601c55faa
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-f52f38000a23
+          - type: text
+            content: " 4.11, trans. Melmoth, rev. Bosanquet (Project Gutenberg #2811)."
+            properties:
+              sourceId: 4-11-trans-melmoth-rev-bosanquet-pro-51849f3decbb
+        properties:
+          semanticRole: note
+          noteNumber: 11
+          sourceId: pliny-the-younger-letters-4-11-trans-9da6bf0450dd
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-18e90678701b
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-3401431d9268
+          - type: text
+            content: " 4.11, trans. Melmoth, rev. Bosanquet (Project Gutenberg #2811), on the Roman knight Celer, scourged in the Forum as Cornelia's alleged lover. On her lovers being whipped to death with rods in the Comitium, see Suetonius, "
+            properties:
+              sourceId: 4-11-trans-melmoth-rev-bosanquet-pro-15490e871eda
+          - type: text
+            content: Domitian
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: domitian-b34790e41071
+          - type: text
+            content: " 8.4, trans. Alexander Thomson, rev. T. Forester (Project Gutenberg #6400)."
+            properties:
+              sourceId: 8-4-trans-alexander-thomson-rev-t-fo-2bf3a649a263
+        properties:
+          semanticRole: note
+          noteNumber: 12
+          sourceId: pliny-the-younger-letters-4-11-trans-fe673b90674c
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-da32d24961cf
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-dde7b5b382ea
+          - type: text
+            content: " 2.11 (the Senate's trial of Marius Priscus, proconsul of Africa, January 100 CE), trans. William Melmoth, rev. W. M. L. Hutchinson, Loeb Classical Library (1915) — the quotation is from this translation."
+            properties:
+              sourceId: 2-11-the-senate-s-trial-of-marius-pr-9611c77a7b86
+        properties:
+          semanticRole: note
+          noteNumber: 13
+          sourceId: pliny-the-younger-letters-2-11-the-s-08d35fe37b09
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Vegetius, "
+            properties:
+              sourceId: vegetius-06519ee9af75
+          - type: text
+            content: Epitoma rei militaris
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: epitoma-rei-militaris-579df8f236ac
+          - type: text
+            content: " 4.39 — sailing uncertain and dangerous from mid-September, and the seas closed from the third day before the Ides of November (11 November) to the sixth day before the Ides of March (10 March)."
+            properties:
+              sourceId: 4-39-sailing-uncertain-and-dangerous-26b9f06f7797
+        properties:
+          semanticRole: note
+          noteNumber: 14
+          sourceId: vegetius-epitoma-rei-militaris-4-39-e1c44c46b8fd
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Ovid, "
+            properties:
+              sourceId: ovid-8cfa35e8c94d
+          - type: text
+            content: Tristia
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: tristia-28c384cd2e7b
+          - type: text
+            content: " 5.11.15 — the relegated poet keeps his life, his wealth, and his citizenship. Deportation to an island as an innovation of Tiberius: paraphrasing Gordon P. Kelly, "
+            properties:
+              sourceId: 5-11-15-the-relegated-poet-keeps-his-d041f898a281
+          - type: text
+            content: A History of Exile in the Roman Republic
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: a-history-of-exile-in-the-roman-repu-27d9e683997d
+          - type: text
+            content: " (Cambridge, 2006), ch. 2."
+            properties:
+              sourceId: cambridge-2006-ch-2-bc6203dd4d9d
+        properties:
+          semanticRole: note
+          noteNumber: 15
+          sourceId: ovid-tristia-5-11-15-the-relegated-p-48eab13defd5
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Tacitus, "
+            properties:
+              sourceId: tacitus-46b9d2c1ab2f
+          - type: text
+            content: Annals
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: annals-635c08f1b807
+          - type: text
+            content: " 4.20 — the accusers' legal quarter of a condemned man's estate. On informers hoping for that share: paraphrasing John S. McHugh, "
+            properties:
+              sourceId: 4-20-the-accusers-legal-quarter-of-a-df712f432c4c
+          - type: text
+            content: "Rome's Enemies Within: Imperial Conspiracies and Assassinations in the Roman Empire during the First Century AD"
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: rome-s-enemies-within-imperial-consp-bed0563ae1d8
+          - type: text
+            content: .
+            properties:
+              sourceId: text-130ed5c62488
+        properties:
+          semanticRole: note
+          noteNumber: 16
+          sourceId: tacitus-annals-4-20-the-accusers-leg-c9ff24aff223
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: Digest
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: digest-c41787a1f029
+          - type: text
+            content: " 48.19.5 pr. (Ulpian), reporting Trajan's rescript to Julius Fronto that an absent man is not to be condemned on a criminal charge. The later practice of registering and holding an absent defendant's property is described in "
+            properties:
+              sourceId: 48-19-5-pr-ulpian-reporting-trajan-s-eefb54ce6ace
+          - type: text
+            content: Digest
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: digest-c41787a1f029-2
+          - type: text
+            content: " 48.17.1 (Marcian); here it is moved a century early as Crispinus's motion."
+            properties:
+              sourceId: 48-17-1-marcian-here-it-is-moved-a-c-c1240333bdfc
+        properties:
+          semanticRole: note
+          noteNumber: 17
+          sourceId: digest-48-19-5-pr-ulpian-reporting-t-2fc19e322bdb
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-51b749732314
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-1cd7ad42a1a5
+          - type: text
+            content: " 3.9 — the Senate's proceedings against the estate of Caecilius Classicus, proconsul of Baetica, who died before he could be tried. The Senate gave his daughter what he had owned before his governorship, divided the rest among his victims, and made his creditors repay what he had paid them since his return."
+            properties:
+              sourceId: 3-9-the-senate-s-proceedings-against-0c406521ecb0
+        properties:
+          semanticRole: note
+          noteNumber: 18
+          sourceId: pliny-the-younger-letters-3-9-the-se-e42b22e1ab36
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Cassius Dio, "
+            properties:
+              sourceId: cassius-dio-e3d46cbe7ba3
+          - type: text
+            content: Roman History
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: roman-history-71e441edf836
+          - type: text
+            content: " 56.27.2–3 — Augustus's limits on an exile's ships, slaves and freedmen, and fortune (12 CE). On the decree as a check on carrying wealth into exile: paraphrasing Kelly, "
+            properties:
+              sourceId: 56-27-2-3-augustus-s-limits-on-an-ex-580e99a143ed
+          - type: text
+            content: A History of Exile in the Roman Republic
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: a-history-of-exile-in-the-roman-repu-81cd3e24dfe0
+          - type: text
+            content: .
+            properties:
+              sourceId: text-260edafd4ccc
+        properties:
+          semanticRole: note
+          noteNumber: 19
+          sourceId: cassius-dio-roman-history-56-27-2-3-33cce37b9a70
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: On transfers by written entry in a banker's books, and the banker's duty to keep complete accounts and produce them (
+            properties:
+              sourceId: on-transfers-by-written-entry-in-a-b-ee9143e7343b
+          - type: text
+            content: Digest
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: digest-a37b3f2cc6e4
+          - type: text
+            content: " 2.13): paraphrasing Koenraad Verboven and Paul Erdkamp (eds.), "
+            properties:
+              sourceId: 2-13-paraphrasing-koenraad-verboven-9db80d37a53b
+          - type: text
+            content: Law and Economic Performance in the Roman World
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: law-and-economic-performance-in-the-2f118d935f2f
+          - type: text
+            content: " (Brill, 2022)."
+            properties:
+              sourceId: brill-2022-f409b2dab02b
+        properties:
+          semanticRole: note
+          noteNumber: 20
+          sourceId: on-transfers-by-written-entry-in-a-b-b6d99a156e36
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: Digest
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: digest-07fdbcefabfd
+          - type: text
+            content: " 22.5.4 (Paul) — patron and freedman cannot be compelled to give criminal evidence against each other. Paraphrasing Egbert Koops, “Masters and Freedmen: Junian Latins and the Struggle for Citizenship,” in G. de Kleijn and S. Benoist (eds.), "
+            properties:
+              sourceId: 22-5-4-paul-patron-and-freedman-cann-bc0592022e66
+          - type: text
+            content: Integration in Rome and in the Roman World
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: integration-in-rome-and-in-the-roman-ae2c956669a6
+          - type: text
+            content: " (Brill, 2014)."
+            properties:
+              sourceId: brill-2014-fd6c5273ba53
+        properties:
+          semanticRole: note
+          noteNumber: 21
+          sourceId: digest-22-5-4-paul-patron-and-freedm-c481783a35a4
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: Tabula Heracleensis (
+            properties:
+              sourceId: tabula-heracleensis-9c2705ef9563
+          - type: text
+            content: CIL
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: cil-3fa228165900
+          - type: text
+            content: " I² 593), the clause on wagons in the streets of Rome — no wagon to be driven after sunrise or before the tenth hour of the day, with exceptions for building temples and public works, demolition under public contract, and the wagons of priests, triumphs, and games."
+            properties:
+              sourceId: i-593-the-clause-on-wagons-in-the-st-66f0d4bc21c6
+        properties:
+          semanticRole: note
+          noteNumber: 22
+          sourceId: tabula-heracleensis-cil-i-593-the-cl-a6e6cb645958
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "On the "
+            properties:
+              sourceId: on-the-f1bf2b648af4
+          - type: text
+            content: naves codicariae
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: naves-codicariae-35ff4eed2aa2
+          - type: text
+            content: " and the up-to-three-day haul from Portus to Rome: paraphrasing David J. Mattingly and Gregory S. Aldrete, “The Feeding of Imperial Rome: The Mechanics of the Food Supply System,” in J. Coulston and H. Dodge (eds.), "
+            properties:
+              sourceId: and-the-up-to-three-day-haul-from-po-24445a313584
+          - type: text
+            content: "Ancient Rome: The Archaeology of the Eternal City"
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: ancient-rome-the-archaeology-of-the-e03729929014
+          - type: text
+            content: " (Oxford, 2000)."
+            properties:
+              sourceId: oxford-2000-9ad02819140a
+        properties:
+          semanticRole: note
+          noteNumber: 23
+          sourceId: on-the-naves-codicariae-and-the-up-t-527f1e867553
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Gaius, "
+            properties:
+              sourceId: gaius-2a991ea56d7a
+          - type: text
+            content: Institutes
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: institutes-ed91b3a41ca1
+          - type: text
+            content: " 1.37 — under the "
+            properties:
+              sourceId: 1-37-under-the-cbcbb00ce2e3
+          - type: text
+            content: lex Aelia Sentia
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: lex-aelia-sentia-f238a33f5e91
+          - type: text
+            content: ", a manumission made to defraud creditors is void."
+            properties:
+              sourceId: a-manumission-made-to-defraud-credit-3988235ff228
+        properties:
+          semanticRole: note
+          noteNumber: 24
+          sourceId: gaius-institutes-1-37-under-the-lex-9b4a28cd5a87
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Kelly, "
+            properties:
+              sourceId: kelly-d0621cedd58a
+          - type: text
+            content: A History of Exile in the Roman Republic
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: a-history-of-exile-in-the-roman-repu-5f38d222ef9b
+          - type: text
+            content: " — exiles' devices against confiscation: buying costly slaves as portable wealth, estates in free cities, friends buying at the auction, and informal manumission before departure, as Cicero arranged in 58 BCE without being sure it would hold. Paraphrased."
+            properties:
+              sourceId: exiles-devices-against-confiscation-ae7723155d0e
+        properties:
+          semanticRole: note
+          noteNumber: 25
+          sourceId: kelly-a-history-of-exile-in-the-roma-9fdb437bc0f4
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-712e20d27f5a
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-d1937f5f0523
+          - type: text
+            content: " 3.9 (the case of Caecilius Classicus), trans. Melmoth, rev. Hutchinson, Loeb Classical Library (1915) — the quotation is from this translation."
+            properties:
+              sourceId: 3-9-the-case-of-caecilius-classicus-8385c3834fb9
+        properties:
+          semanticRole: note
+          noteNumber: 26
+          sourceId: pliny-the-younger-letters-3-9-the-ca-5b9336b771f0
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-820fb89f1bbd
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-5c692821da38
+          - type: text
+            content: " 2.11 — the consul-designate Julius Ferox's motion to grant Priscus judges provisionally while summoning the men said to have bought innocent blood."
+            properties:
+              sourceId: 2-11-the-consul-designate-julius-fer-bc018f1a5e61
+        properties:
+          semanticRole: note
+          noteNumber: 27
+          sourceId: pliny-the-younger-letters-2-11-the-c-df89ba93e06e
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-aa417e09e5bd
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-5e51cf07514c
+          - type: text
+            content: " 2.11 — the consular Tuccius Cerealis demands that Priscus be notified to attend, and the matter is adjourned to the next meeting of the Senate."
+            properties:
+              sourceId: 2-11-the-consular-tuccius-cerealis-d-e58edf72a74e
+        properties:
+          semanticRole: note
+          noteNumber: 28
+          sourceId: pliny-the-younger-letters-2-11-the-c-48ce885ac0e4
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-9ac2bf8d9ebf
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-616b849a698d
+          - type: text
+            content: " 8.14 (to Titius Aristo, on the Senate's vote over the freedmen of Afranius Dexter), trans. William Melmoth, rev. F. C. T. Bosanquet (1895) — the quotation is from this translation. Pliny there insisted that death, banishment, and acquittal be counted as three separate opinions."
+            properties:
+              sourceId: 8-14-to-titius-aristo-on-the-senate-bdb5e5e2a519
+        properties:
+          semanticRole: note
+          noteNumber: 29
+          sourceId: pliny-the-younger-letters-8-14-to-ti-eb50aa29fc13
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Aulus Gellius, "
+            properties:
+              sourceId: aulus-gellius-5b913777ed3c
+          - type: text
+            content: Attic Nights
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: attic-nights-503d5c6166a2
+          - type: text
+            content: " 14.7.8, reporting Varro — a decree of the Senate made before sunrise or after sunset is not valid."
+            properties:
+              sourceId: 14-7-8-reporting-varro-a-decree-of-t-d4dded152e9a
+        properties:
+          semanticRole: note
+          noteNumber: 30
+          sourceId: aulus-gellius-attic-nights-14-7-8-re-b61c164bcfbb
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-8a1d92e1e6a6
+          - type: text
+            content: Panegyricus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: panegyricus-106137d4d2df
+          - type: text
+            content: " 34–35 — Trajan's public punishment of the informers of Domitian's reign."
+            properties:
+              sourceId: 34-35-trajan-s-public-punishment-of-bc86d9af7c47
+        properties:
+          semanticRole: note
+          noteNumber: 31
+          sourceId: pliny-the-younger-panegyricus-34-35-da4638959138
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Pliny the Younger, "
+            properties:
+              sourceId: pliny-the-younger-ac5e4d65b141
+          - type: text
+            content: Letters
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: letters-c3aa8320d50b
+          - type: text
+            content: " 2.11 — at the division on Priscus's sentence, those standing by the consuls' chairs went over to Cornutus Tertullus's motion, and the waverers followed."
+            properties:
+              sourceId: 2-11-at-the-division-on-priscus-s-se-965e54ad1849
+        properties:
+          semanticRole: note
+          noteNumber: 32
+          sourceId: pliny-the-younger-letters-2-11-at-th-1f67a68deb38
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Tacitus, "
+            properties:
+              sourceId: tacitus-e0b9a609397c
+          - type: text
+            content: Annals
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: annals-6ffd55f0f87a
+          - type: text
+            content: " 12.23; Cassius Dio, "
+            properties:
+              sourceId: 12-23-cassius-dio-53d16d082215
+          - type: text
+            content: Roman History
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: roman-history-4aa449ecae40
+          - type: text
+            content: " 52.42.6 — senators might not leave Italy without the emperor's leave, except to visit Sicily and, from Claudius, Narbonese Gaul."
+            properties:
+              sourceId: 52-42-6-senators-might-not-leave-ita-bb9759865bec
+        properties:
+          semanticRole: note
+          noteNumber: 33
+          sourceId: tacitus-annals-12-23-cassius-dio-rom-7473d3264a99
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Appian, "
+            properties:
+              sourceId: appian-ed248be4f966
+          - type: text
+            content: Civil Wars
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: civil-wars-1beda27362af
+          - type: text
+            content: " 1.27; George Willis Botsford, "
+            properties:
+              sourceId: 1-27-george-willis-botsford-b5302fed2cbf
+          - type: text
+            content: The Roman Assemblies from Their Origin to the End of the Republic
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-roman-assemblies-from-their-orig-7b57c99ad45b
+          - type: text
+            content: " (1909) — on the plebiscites after Gaius Gracchus's death that first let allottees sell their land and then, in 118 BCE, ended the distributions; A. H. J. Greenidge, "
+            properties:
+              sourceId: 1909-on-the-plebiscites-after-gaius-8b72e2fbb6c9
+          - type: text
+            content: A History of Rome During the Later Republic and Early Principate
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: a-history-of-rome-during-the-later-r-f505290d58ab
+          - type: text
+            content: ", vol. I (1904), on the later law of Spurius Thorius."
+            properties:
+              sourceId: vol-i-1904-on-the-later-law-of-spuri-c6dedbd84729
+        properties:
+          semanticRole: note
+          noteNumber: 34
+          sourceId: appian-civil-wars-1-27-george-willis-fb57f7608e3f
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-e12456e62b6a
+          - type: text
+            content: Tiberius Gracchus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: tiberius-gracchus-60c8ffdbffa7
+          - type: text
+            content: " 10.2, trans. Bernadotte Perrin (Loeb Classical Library, 1921) — on Marcus Octavius's veto of the agrarian bill, 133 BCE."
+            properties:
+              sourceId: 10-2-trans-bernadotte-perrin-loeb-cl-b2ba9e8621c2
+        properties:
+          semanticRole: note
+          noteNumber: 35
+          sourceId: plutarch-tiberius-gracchus-10-2-tran-7bfa546c1b43
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Greenidge, "
+            properties:
+              sourceId: greenidge-f899e93ef0ba
+          - type: text
+            content: History of Rome
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: history-of-rome-ee2c42b8b5b6
+          - type: text
+            content: ", vol. I (1904) — on Octavius's first veto. The same passage describes the country voters streaming into Rome for the vote and Octavius bidding the scribe be silent."
+            properties:
+              sourceId: vol-i-1904-on-octavius-s-first-veto-dc6f4878943f
+        properties:
+          semanticRole: note
+          noteNumber: 36
+          sourceId: greenidge-history-of-rome-vol-i-1904-5526a439d190
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Botsford, "
+            properties:
+              sourceId: botsford-518a4ade59ae
+          - type: text
+            content: The Roman Assemblies
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-roman-assemblies-7578e8ceae85
+          - type: text
+            content: " (1909) — on the contio: private speakers addressing the meeting from below the platform, the president's control of the order and length of speeches, and adjournment. The fixed interval of three market days ("
+            properties:
+              sourceId: 1909-on-the-contio-private-speakers-d1f9528c9185
+          - type: text
+            content: trinundinum
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: trinundinum-d478b4f55fcc
+          - type: text
+            content: ") between promulgation and vote was imposed by the lex Caecilia Didia of 98 BCE; see Francisco Pina Polo, "
+            properties:
+              sourceId: between-promulgation-and-vote-was-im-c7c366ee0031
+          - type: text
+            content: The Consul at Rome
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-consul-at-rome-c40aba8e002f
+          - type: text
+            content: " (2011)."
+            properties:
+              sourceId: 2011-1e3c8d08815b
+        properties:
+          semanticRole: note
+          noteNumber: 37
+          sourceId: botsford-the-roman-assemblies-1909-o-e0d699bcec59
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-27bb71126e3c
+          - type: text
+            content: Tiberius Gracchus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: tiberius-gracchus-26161f7a29be
+          - type: text
+            content: " 10–11 (Perrin); Greenidge, vol. I — the veto delivered by silencing the clerk, the meeting melting away, and, on the next voting day, the voting urns carried off by the party of the rich and a near-riot."
+            properties:
+              sourceId: 10-11-perrin-greenidge-vol-i-the-vet-63ff1ab8713c
+        properties:
+          semanticRole: note
+          noteNumber: 38
+          sourceId: plutarch-tiberius-gracchus-10-11-per-fdbcf9e5394d
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Botsford, "
+            properties:
+              sourceId: botsford-110c3b94dd89
+          - type: text
+            content: The Roman Assemblies
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-roman-assemblies-193f02d83df4
+          - type: text
+            content: " (1909) — on the tribal assembly: the lot for the tribe of the Latins and for the "
+            properties:
+              sourceId: 1909-on-the-tribal-assembly-the-lot-99e1e667fd3f
+          - type: text
+            content: principium
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: principium-755224a9d905
+          - type: text
+            content: ", ropes stretched to divide the assembly-place, and the rule that calling the principium ended the right of intercession and of announcing an omen seen while watching the sky."
+            properties:
+              sourceId: ropes-stretched-to-divide-the-assemb-1c06ad9b10a4
+        properties:
+          semanticRole: note
+          noteNumber: 39
+          sourceId: botsford-the-roman-assemblies-1909-o-b54b336dc314
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Ballot laws: the lex Gabinia (139 BCE, elections), lex Cassia (137, trials), and lex Papiria (c. 131/130, legislation); Marius's law of 119 narrowing the gangways, Cicero, "
+            properties:
+              sourceId: ballot-laws-the-lex-gabinia-139-bce-23ab08015f99
+          - type: text
+            content: De Legibus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: de-legibus-e307b7902b86
+          - type: text
+            content: " 3.38–39. Botsford (1909) on the tablets marked for "
+            properties:
+              sourceId: 3-38-39-botsford-1909-on-the-tablets-dab6c585c022
+          - type: text
+            content: uti rogas
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: uti-rogas-4a969a95efd5
+          - type: text
+            content: " and "
+            properties:
+              sourceId: and-b099848ccfa7
+          - type: text
+            content: antiquo
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: antiquo-0ee4ce5cac31
+          - type: text
+            content: ", the "
+            properties:
+              sourceId: the-00089aac832b
+          - type: text
+            content: cistae
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: cistae-bbc950ea026d
+          - type: text
+            content: ", and the "
+            properties:
+              sourceId: and-the-260725cdcc6e
+          - type: text
+            content: custodes
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: custodes-14475d3cc2f8
+          - type: text
+            content: ". On the layout of the "
+            properties:
+              sourceId: on-the-layout-of-the-803451f00301
+          - type: text
+            content: pontes
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: pontes-dd5c00d79f2b
+          - type: text
+            content: ": Antonio López García, "
+            properties:
+              sourceId: antonio-l-pez-garc-a-9c9cd33e2739
+          - type: text
+            content: Running Rome and Its Empire
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: running-rome-and-its-empire-ca14e3ee481a
+          - type: text
+            content: " (2024), and Henrik Mouritsen, "
+            properties:
+              sourceId: 2024-and-henrik-mouritsen-375b258cd0db
+          - type: text
+            content: Plebs and Politics in the Late Roman Republic
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: plebs-and-politics-in-the-late-roman-37c20026edb4
+          - type: text
+            content: " (2001)."
+            properties:
+              sourceId: 2001-ba4adf2291e3
+        properties:
+          semanticRole: note
+          noteNumber: 40
+          sourceId: ballot-laws-the-lex-gabinia-139-bce-199f33fcd851
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Botsford, "
+            properties:
+              sourceId: botsford-a7170a72aaf9
+          - type: text
+            content: The Roman Assemblies
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-roman-assemblies-c13344b233c2
+          - type: text
+            content: " (1909) — the tribal returns proclaimed in an order usually drawn by lot; a vote without effect if the president halted the announcement before a majority; every session to begin and end between sunrise and sunset."
+            properties:
+              sourceId: 1909-the-tribal-returns-proclaimed-i-e5e84a18bf9c
+        properties:
+          semanticRole: note
+          noteNumber: 41
+          sourceId: botsford-the-roman-assemblies-1909-t-815e7ee64798
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-fa470ffb6f5b
+          - type: text
+            content: Tiberius Gracchus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: tiberius-gracchus-b81f75abefd3
+          - type: text
+            content: " 9.5, trans. Perrin (1921) — from Tiberius Gracchus's speeches for the land bill."
+            properties:
+              sourceId: 9-5-trans-perrin-1921-from-tiberius-224d90fc6ca8
+        properties:
+          semanticRole: note
+          noteNumber: 42
+          sourceId: plutarch-tiberius-gracchus-9-5-trans-a8559f7c1c1d
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Mouritsen, "
+            properties:
+              sourceId: mouritsen-ba088a136e2e
+          - type: text
+            content: Plebs and Politics
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: plebs-and-politics-9e9dc918980f
+          - type: text
+            content: " (2001) — on the "
+            properties:
+              sourceId: 2001-on-the-6e43c964961e
+          - type: text
+            content: divisores
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: divisores-d1949157a7bd
+          - type: text
+            content: ", first attested in the early first century BCE; on bribes given mostly as promises and aimed at the rural tribes; and on Verres summoning the distributors of every tribe to block Cicero's election as aedile (Cicero, "
+            properties:
+              sourceId: first-attested-in-the-early-first-ce-feabb7764d2f
+          - type: text
+            content: In Verrem
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: in-verrem-01eb123c2208
+          - type: text
+            content: " 1.22–23)."
+            properties:
+              sourceId: 1-22-23-b9aa72223e01
+        properties:
+          semanticRole: note
+          noteNumber: 43
+          sourceId: mouritsen-plebs-and-politics-2001-on-245b5c8c91ab
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: Greenidge, vol. I — on the urban voters of 133, indifferent or hostile to the land bill and many of them clients of the noble houses, and on the country voters scattering home once the vote was over.
+            properties:
+              sourceId: greenidge-vol-i-on-the-urban-voters-791037764660
+        properties:
+          semanticRole: note
+          noteNumber: 44
+          sourceId: greenidge-vol-i-on-the-urban-voters-e335cad94d34
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: Greenidge, vol. I; Botsford (1909) — on the laws against electoral bribery of 181 BCE (the lex Baebia, ten years' disqualification from office), 166, and 159 (the lex Cornelia Fulvia, a capital penalty, in practice exile), none of which ended the practice.
+            properties:
+              sourceId: greenidge-vol-i-botsford-1909-on-the-e06da206218b
+        properties:
+          semanticRole: note
+          noteNumber: 45
+          sourceId: greenidge-vol-i-botsford-1909-on-the-d7fe420b9555
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-c9191f54fc3d
+          - type: text
+            content: Roman Questions
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: roman-questions-bfcc8c36f0c3
+          - type: text
+            content: " 81 — why a tribune wears no purple, and why his door stands open night and day; Daniel J. Gargola, "
+            properties:
+              sourceId: 81-why-a-tribune-wears-no-purple-and-8e6ad92c0f46
+          - type: text
+            content: The Shape of the Roman Order
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-shape-of-the-roman-order-5eb219d3456d
+          - type: text
+            content: " (2017), on the rule that tribunes of the plebs might not be absent from the city for more than one night."
+            properties:
+              sourceId: 2017-on-the-rule-that-tribunes-of-th-292cdb590eb5
+        properties:
+          semanticRole: note
+          noteNumber: 46
+          sourceId: plutarch-roman-questions-81-why-a-tr-c53f5cd0b847
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-37ea0900cf7e
+          - type: text
+            content: Tiberius Gracchus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: tiberius-gracchus-bdaf4c4d5d99
+          - type: text
+            content: " 9.2 and 10.3 (Perrin) — the first bill paid holders the value of the land they surrendered; after Octavius's veto, Tiberius withdrew it for a harsher bill without compensation. Greenidge, vol. I, on the redrafting."
+            properties:
+              sourceId: 9-2-and-10-3-perrin-the-first-bill-p-06e7a3ad8f9e
+        properties:
+          semanticRole: note
+          noteNumber: 47
+          sourceId: plutarch-tiberius-gracchus-9-2-and-1-b289b780503f
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Botsford, "
+            properties:
+              sourceId: botsford-638b199ab6ac
+          - type: text
+            content: The Roman Assemblies
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-roman-assemblies-d541a9606cdc
+          - type: text
+            content: " (1909) — on prohibitive omens: an attack of epilepsy vitiated an assembly's business and forced an adjournment, hence the name "
+            properties:
+              sourceId: 1909-on-prohibitive-omens-an-attack-ccbdf0aa47f5
+          - type: text
+            content: morbus comitialis
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: morbus-comitialis-014c903ee3d0
+          - type: text
+            content: ", the comitial sickness."
+            properties:
+              sourceId: the-comitial-sickness-af65d02ba075
+        properties:
+          semanticRole: note
+          noteNumber: 48
+          sourceId: botsford-the-roman-assemblies-1909-o-5d71dba44b45
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-17d0d0282019
+          - type: text
+            content: Tiberius Gracchus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: tiberius-gracchus-428d09a0b0eb
+          - type: text
+            content: " 12 (Perrin); Greenidge, vol. I — the deposition of Octavius: the halt after seventeen tribes, the last appeal, Octavius looking to the men of wealth standing together, and his removal from the Rostra by one of Tiberius's freedmen."
+            properties:
+              sourceId: 12-perrin-greenidge-vol-i-the-deposi-b31afe7dbe7e
+        properties:
+          semanticRole: note
+          noteNumber: 49
+          sourceId: plutarch-tiberius-gracchus-12-perrin-9b99b19efa37
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Asconius, commentary on Cicero's "
+            properties:
+              sourceId: asconius-commentary-on-cicero-s-ea6b243106c5
+          - type: text
+            content: Pro Cornelio
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: pro-cornelio-60f2b63ef9ab
+          - type: text
+            content: " (p. 72 Clark); Cassius Dio 36.30 — the tribune Trebellius withdrew his veto of Gabinius's law in 67 BCE after seventeen tribes had voted to depose him. Mouritsen, "
+            properties:
+              sourceId: p-72-clark-cassius-dio-36-30-the-tri-4735ffa189b1
+          - type: text
+            content: Plebs and Politics
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: plebs-and-politics-7ce038b1af57
+          - type: text
+            content: " (2001), on the limits of tribunician intercession."
+            properties:
+              sourceId: 2001-on-the-limits-of-tribunician-in-a6149e60207f
+        properties:
+          semanticRole: note
+          noteNumber: 50
+          sourceId: asconius-commentary-on-cicero-s-pro-8705793546fd
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Botsford, "
+            properties:
+              sourceId: botsford-cf8da91af2a6
+          - type: text
+            content: The Roman Assemblies
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-roman-assemblies-e75b339bddeb
+          - type: text
+            content: " (1909) — on "
+            properties:
+              sourceId: 1909-on-32ff1b4d282a
+          - type: text
+            content: obnuntiatio
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: obnuntiatio-2baf5f7450e4
+          - type: text
+            content: ": a president was bound to dismiss the assembly on an augur's or magistrate's report of an evil omen, whatever their relative rank, and the Aelian and Fufian laws (c. 150 BCE) extended the device. For the augur's "
+            properties:
+              sourceId: a-president-was-bound-to-dismiss-the-ab96334f7aa2
+          - type: text
+            content: alio die
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: alio-die-4ecfb03fd44f
+          - type: text
+            content: ", Cicero, "
+            properties:
+              sourceId: cicero-2f9eafb161be
+          - type: text
+            content: De Legibus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: de-legibus-5e68f09383ef
+          - type: text
+            content: " 2.31 and "
+            properties:
+              sourceId: 2-31-and-fa5cb9dac2d1
+          - type: text
+            content: Philippics
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: philippics-0400989deea2
+          - type: text
+            content: " 2.83."
+            properties:
+              sourceId: 2-83-b8ba7df06ccd
+        properties:
+          semanticRole: note
+          noteNumber: 51
+          sourceId: botsford-the-roman-assemblies-1909-o-5c43fa3df67d
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-ce76544a343b
+          - type: text
+            content: Tiberius Gracchus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: tiberius-gracchus-527294115f23
+          - type: text
+            content: " 14–15 (Perrin); Greenidge, vol. I — Titus Annius's challenge to Tiberius over the deposition, and Tiberius's reply that a tribune's sanctity comes from the people and is forfeited by injuring them."
+            properties:
+              sourceId: 14-15-perrin-greenidge-vol-i-titus-a-a4917707ca97
+        properties:
+          semanticRole: note
+          noteNumber: 52
+          sourceId: plutarch-tiberius-gracchus-14-15-per-1302e82e367e
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Plutarch, "
+            properties:
+              sourceId: plutarch-5d835dc3d15b
+          - type: text
+            content: Tiberius Gracchus
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: tiberius-gracchus-986a3876a69f
+          - type: text
+            content: " 19.6, trans. Perrin (1921) — the killing of Tiberius Gracchus and his supporters on the Capitol, 133 BCE."
+            properties:
+              sourceId: 19-6-trans-perrin-1921-the-killing-o-6d9f57748b81
+        properties:
+          semanticRole: note
+          noteNumber: 53
+          sourceId: plutarch-tiberius-gracchus-19-6-tran-5da8422dc0ef
+      - type: list-item
+        content: ""
+        children:
+          - type: text
+            content: "Botsford, "
+            properties:
+              sourceId: botsford-693662e80a5b
+          - type: text
+            content: The Roman Assemblies
+            properties:
+              style:
+                fontStyle: italic
+              sourceId: the-roman-assemblies-0bcc6cc108e5
+          - type: text
+            content: " (1909) — the Senate's annulment of Saturninus's measures (100 BCE) and of Sextus Titius's agrarian law (99 BCE) as passed by violence or against the intercession."
+            properties:
+              sourceId: 1909-the-senate-s-annulment-of-satur-bed32bcea6dd
+        properties:
+          semanticRole: note
+          noteNumber: 54
+          sourceId: botsford-the-roman-assemblies-1909-t-71127f011817
     properties:
-      sourceId: story-fc1fdac6f881
+      semanticRole: notes
+      style:
+        fontSize: 6
+      sourceId: list-72bb25ad720b
   - type: h1
     content: ""
     children:

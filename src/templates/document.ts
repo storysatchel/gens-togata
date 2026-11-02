@@ -74,23 +74,7 @@ export async function documentInput(document: DocumentData, root: string, pageNu
       cell.properties = { ...cell.properties, style: { ...bookTheme.statCell, ...cell.properties?.style } };
     }
   }
-  // The pinned engine overlaps a full-width child with the preceding column, so each band becomes its own root element.
-  for (const story of authored) {
-    if (story.type !== "story") { elements.push(story); continue; }
-    let run: Element[] = [];
-    let pieces = 0;
-    const flush = () => {
-      if (run.length) elements.push({ ...story, children: run, properties: { ...story.properties, sourceId: `${story.properties?.sourceId}${pieces++ ? `--segment-${pieces}` : ""}` } });
-      run = [];
-    };
-    for (const child of story.children ?? []) {
-      if (child.columnSpan !== "all") { run.push(child); continue; }
-      flush();
-      delete child.columnSpan;
-      elements.push(child);
-    }
-    flush();
-  }
+  elements.push(...authored);
   return {
     documentVersion: "1.1",
     layout: { pageSize: bookTheme.geometry.pageSize, margins: bookTheme.geometry.margins, ...bookTheme.typography, footerInsetTop: 12, pageNumberStart: 1 },
