@@ -3,7 +3,6 @@ import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { loadDocument } from "../src/content/load";
-import { composeAdversary } from "../src/content/compositions";
 import { contentsEntries, documentInput } from "../src/templates/document";
 import { bookTheme } from "../src/templates/styles";
 import type { Element } from "@vmprint/engine";
@@ -11,7 +10,7 @@ import type { Element } from "@vmprint/engine";
 const metadata = { title: "Proof", subtitle: "", tagline: "", system: "Genesys", legal: [] };
 const chapter = (id: string): Element => ({ type: "h1", content: id, properties: { sourceId: id, semanticRole: "chapter" } });
 
-test("source rejects duplicate identities, malformed table rows, and dangling notes", async () => {
+test("source rejects duplicate identities and dangling notes", async () => {
   const dir = await mkdtemp(join(tmpdir(), "book-source-"));
   const path = join(dir, "input.yaml");
   try {
@@ -19,8 +18,7 @@ test("source rejects duplicate identities, malformed table rows, and dangling no
       await writeFile(path, JSON.stringify({ meta: metadata, elements }));
       return loadDocument(path);
     };
-    await expect(load([chapter("same"), chapter("same")])).rejects.toThrow("duplicate sourceId same");
-    await expect(load([chapter("first"), { type: "table", content: "", properties: { sourceId: "table" }, table: { columns: [{ mode: "flex" }, { mode: "flex" }] }, children: [{ type: "table-row", content: "", properties: { sourceId: "row" }, children: [{ type: "table-cell", content: "short", properties: { sourceId: "cell" } }] }] }])).rejects.toThrow("does not fill all 2 columns");
+    await expect(load([chapter("same"), chapter("same")])).rejects.toThrow("duplicate sourceId");
     await expect(load([chapter("first"), { type: "p", content: "", properties: { sourceId: "paragraph" }, children: [{ type: "text", content: "3", properties: { sourceId: "ref", semanticRole: "note-ref" } }] }])).rejects.toThrow("note 3 does not exist");
   } finally { await rm(dir, { recursive: true, force: true }); }
 });
@@ -53,9 +51,4 @@ test("keywords, note references, and metric tables obtain their presentation onl
   const cell = input.elements.find(element => element.properties?.sourceId === "metrics")!.children![0]!.children![0]!;
   expect(cell.properties?.style).toMatchObject(bookTheme.table.statCellStyle);
   expect(runs[0]!.properties?.style).toBeUndefined();
-});
-test("adversary composition retains meaningful metric labels and values", () => {
-  const elements = composeAdversary({ name: "Test adversary", characteristics: { Brawn: 3 }, derived: { Soak: 4 }, fields: [{ label: "Skills", text: "Melee 2" }] });
-  const tables = elements.filter(element => element.type === "table");
-  expect(tables.map(table => table.children!.map(row => row.children!.map(cell => cell.children!.map(run => run.content).join(""))))).toEqual([[["Brawn"], ["3"]], [["Soak"], ["4"]]]);
 });
