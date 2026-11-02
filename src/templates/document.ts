@@ -12,8 +12,6 @@ export function* walkElements(elements: readonly Element[]): Generator<Element> 
   for (const element of elements) {
     yield element;
     if (element.children) yield* walkElements(element.children);
-    if (element.slots) for (const slot of element.slots) yield* walkElements(slot.elements);
-    if (element.zones) for (const zone of element.zones) yield* walkElements(zone.elements);
   }
 }
 

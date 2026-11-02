@@ -35,14 +35,6 @@ test("narrates the authored logical tree and groups chapters by authored audio p
             { type: "table-row", content: "", children: [{ type: "table-cell", content: "Name" }, { type: "table-cell", content: "Brawn" }] },
             { type: "table-row", content: "", children: [{ type: "table-cell", content: "Legionary" }, { type: "table-cell", content: "3" }] },
           ] },
-          { type: "strip", content: "", slots: [
-            { elements: [{ type: "stat-field", content: "Skills: Athletics 2." }] },
-            { elements: [{ type: "stat-field", content: "Gear: Shield." }] },
-          ] },
-          { type: "zone-map", content: "", zones: [
-            { elements: [{ type: "p", content: "First zone." }] },
-            { elements: [{ type: "p", content: "Second zone." }] },
-          ] },
           { type: "image", content: "decorative image" },
           { type: "h2", content: "Notes", properties: { semanticRole: "notes" } },
           { type: "list", content: "", properties: { semanticRole: "notes" }, children: [{ type: "list-item", content: "Secret note" }] },
@@ -59,7 +51,7 @@ test("narrates the authored logical tree and groups chapters by authored audio p
     const second = await readFile(join(root, "audio", "part_2.txt"), "utf8");
     expect(transcript).toContain("Introduction. Before the first part.\n\nPart I: The Empire. The Collegia.");
     expect(transcript).toContain("Roll ability and success. An aside. After the aside. First item. Second item.");
-    expect(transcript).toContain("Name: Legionary; Brawn: 3. Skills: Athletics 2. Gear: Shield. First zone. Second zone.");
+    expect(transcript).toContain("Name: Legionary; Brawn: 3.");
     expect(transcript).not.toContain("Secret note");
     expect(transcript).not.toContain("decorative image");
     expect(transcript).not.toContain("success. 12");

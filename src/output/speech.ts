@@ -59,8 +59,6 @@ function tableSpeech(element: Element): string {
 function blockSpeech(element: Element): string {
   if (omitted(element)) return "";
   if (element.type === "table") return tableSpeech(element);
-  if (element.type === "strip") return (element.slots ?? []).flatMap(slot => slot.elements).map(blockSpeech).filter(Boolean).join(" ");
-  if (element.type === "zone-map") return (element.zones ?? []).flatMap(zone => zone.elements).map(blockSpeech).filter(Boolean).join(" ");
   if (element.type === "list" && element.list?.kind === "ordered") {
     const start = Number(element.list.start ?? 1);
     return (element.children ?? []).map((item, index) => {

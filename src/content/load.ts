@@ -24,7 +24,6 @@ export async function loadDocument(path: string): Promise<DocumentData> {
     if (role === "note") notes.add(e.properties!.noteNumber);
     if (role === "note-ref") refs.push([Number(e.content), id]);
     e.children?.forEach(visit);
-    for (const region of [...(e.slots ?? []), ...(e.zones ?? [])]) region.elements.forEach(visit);
   };
   data.elements.forEach(visit);
   endChapter();
