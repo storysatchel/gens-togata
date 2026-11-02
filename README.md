@@ -18,7 +18,6 @@ the authored content.
 | `content.yaml` | **The source of truth:** metadata and authored VMPrint elements. |
 | `styleguide.yaml` | A document in the same format demonstrating the components. |
 | `src/content/` | YAML loading, source validation, and document types. |
-| `src/content/compositions.ts` | Authoring helpers for native tables and adversaries. |
 | `src/templates/` | Typed theme and PDF document presentation, including generated material. |
 | `src/output/` | PDF output and narration from the logical content tree. |
 | `src/render.ts` | CLI entry point: YAML → paged PDF and narration. |
@@ -71,12 +70,9 @@ without inferring it from a glyph. Preserve endnote numbers and place aside
 elements in their intended reading order. See `styleguide.yaml` for component
 examples.
 
-For generated source, `composeTable(columns, rows)` and
-`composeAdversary(profile)` in `src/content/compositions.ts` build native
-elements. Assign stable unique `sourceId` values to every returned element and
-run before saving; the YAML stores the expanded elements, not helper calls.
 
 
+Legacy `chapters`/`blocks` source and its migration tooling were removed once the migration was complete; they remain in git history.
 
 `tests/book.test.ts` lays out both sources and checks that every authored element appears exactly once with its full text, inside the margins, with resolved navigation.
 
