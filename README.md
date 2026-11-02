@@ -23,7 +23,6 @@ the authored content.
 | `src/output/` | PDF output and narration from the logical content tree. |
 | `src/render.ts` | CLI entry point: YAML → paged PDF and narration. |
 | `src/excerpt.ts` | Renders a selection of the document as a PDF. |
-| `tools/importer.py` | Historical HTML→YAML migration; not the native authoring pipeline. |
 
 ### Authoring the document
 

@@ -34,4 +34,4 @@ test: $(DEPS)
 	bun run test
 
 clean:
-	rm -rf build dist audio __pycache__ tools/__pycache__
+	rm -rf build dist audio
