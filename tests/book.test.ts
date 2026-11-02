@@ -31,6 +31,13 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
     }
     expect(wrong).toEqual([]);
     const targets = sourcePages(pages);
-    for (const entry of contentsEntries(document)) expect(targets.has(entry.id)).toBe(true);
+    const tocText = (id: string) => pages.flatMap(page => page.boxes).filter(box => box.meta?.sourceId === `author:${id}`).flatMap(box => box.lines ?? []).flat().map(run => run.text).join("").trim();
+    for (const entry of contentsEntries(document)) expect(tocText(`toc-page-${entry.id}`)).toBe(String(targets.get(entry.id)));
+    // Full-width headings must not share vertical space with column text.
+    for (const page of pages) for (const band of page.boxes.filter(box => box.lines?.length && ["h1", "h2", "scenario"].includes(box.type))) {
+      for (const box of page.boxes) if (box !== band && box.lines?.length && box.type !== "footer") {
+        expect(box.y + box.h <= band.y + 0.01 || box.y >= band.y + band.h - 0.01).toBe(true);
+      }
+    }
   });
 }
