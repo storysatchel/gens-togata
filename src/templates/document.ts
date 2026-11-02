@@ -24,8 +24,7 @@ export function contentsEntries(document: DocumentData): ContentsEntry[] {
   for (const element of walkElements(document.elements)) {
     const role = element.properties?.semanticRole;
     if (role !== "part" && role !== "chapter" && role !== "heading") continue;
-    const id = element.properties?.sourceId;
-    if (!id) throw new Error(`Contents ${role} is missing a sourceId`);
+    const id = element.properties?.sourceId as string;
     const label = role === "part" && typeof element.properties?.partTitle === "string"
       ? `${element.properties.partLabel ? `${element.properties.partLabel}: ` : ""}${element.properties.partTitle}`
       : elementText(element);
