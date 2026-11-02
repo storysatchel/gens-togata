@@ -7,7 +7,6 @@ const geometry = {
   pageSize,
   margins,
   contentWidth: pageSize.width - margins.left - margins.right,
-  columnGap: 12,
 };
 const typography = {
   fontFamily: "Libre Baskerville",
@@ -38,27 +37,11 @@ const glyph: ElementStyle = {
 const note: ElementStyle = { fontSize: 4.48, baselineShift: 2.8, inlineMarginLeft: 0.3, color: colors.annotation, fontWeight: "bold" };
 const keyword: ElementStyle = { fontWeight: "bold", color: colors.annotation };
 const table = {
-  motivationFirstColumnWidth: 30,
-  headerCellStyle: { fontWeight: 700, backgroundColor: colors.tableHeader },
-  motivationCellStyle: { textAlign: "center", fontWeight: 700 },
   statCellStyle: { fontSize: 4.2, paddingTop: 1.5, paddingBottom: 1.5, paddingLeft: 0.5, paddingRight: 0.5, textAlign: "center" },
-} satisfies {
-  motivationFirstColumnWidth: number;
-  headerCellStyle: ElementStyle;
-  motivationCellStyle: ElementStyle;
-  statCellStyle: ElementStyle;
-};
+} satisfies { statCellStyle: ElementStyle };
 
 const heading: ElementStyle = { fontWeight: 700, textAlign: "left", keepWithNext: true, marginTop: 8, marginBottom: 4 };
 const panel: ElementStyle = { backgroundColor: colors.panel, paddingLeft: 6, paddingRight: 6, marginBottom: 6, textAlign: "left", allowLineSplit: true };
-
-export type BookStyleKey =
-  | "p" | "lead" | "small" | "deriv" | "act" | "chk" | "opening"
-  | "h1" | "h2" | "h3" | "h4" | "scenario"
-  | "readaloud" | "synopsis" | "example" | "sidebar" | "list-item" | "table-cell"
-  | "stat-name" | "stat-kind" | "stat-desc" | "stat-field" | "legal"
-  | "cover-title" | "cover-subtitle" | "cover-tagline" | "cover-system"
-  | "part-label" | "part-title" | "footer";
 
 const styles = {
   p: { marginBottom: 5, textAlign: "justify", allowLineSplit: true, orphans: 2, widows: 2 },
@@ -92,7 +75,7 @@ const styles = {
   "part-label": { fontSize: 12, textAlign: "center", marginTop: 140, marginBottom: 15 },
   "part-title": { fontSize: 26, textAlign: "center" },
   footer: { fontSize: 6, textAlign: "center" },
-} satisfies Record<BookStyleKey, ElementStyle>;
+} satisfies Record<string, ElementStyle>;
 
 /** The book's layout and visual vocabulary, independent of any output adapter. */
 export const bookTheme = {
