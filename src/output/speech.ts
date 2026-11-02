@@ -3,7 +3,7 @@ import type { Element } from "@vmprint/engine";
 import type { DocumentData } from "../content/types";
 
 function speechclean(text: string): string {
-  const replacements: Array<[string, string]> = [["W.T.", "Wound Threshold"], ["S.T.", "Strain Threshold"], ["(M/R)", "melee and ranged"], ["M/R", "melee and ranged"], ["HS", "sesterces"], ["vitis ", "vitis"], [" HP:", " Hard Points:"], ["Price/Rarity", "price and rarity"], ["Encumbrance Cap", "cargo capacity"], [" HT ", " Hull Trauma "], [" SS ", " System Strain "], ["(R, military)", "rare, military only"], ["(R)", "rare"], [" | ", ". "], ["|", ". "]];
+  const replacements: Array<[string, string]> = [["HS", "sesterces"], [" HP:", " Hard Points:"], ["Price/Rarity", "price and rarity"], ["(R, military)", "rare, military only"], ["(R)", "rare"], [" | ", ". "], ["|", ". "]];
   for (const [a, b] of replacements) text = text.replaceAll(a, b);
   text = text.replace(/&/g, "and");
   const patterns: Array<[RegExp, string]> = [[/\bXP\b/g, "experience points"], [/\bGMs\b/g, "Game Masters"], [/\bGM\b/g, "Game Master"], [/\bPCs\b/g, "player characters"], [/\bPC\b/g, "player character"], [/\bEnc\b/g, "Encumbrance"], [/\bDam\b/g, "Damage"], [/\bCrit\b/g, "Critical"], [/\bSil\b/g, "Silhouette"], [/\bd10\b/g, "d-ten"], [/\bc\.\s/g, "circa "]];

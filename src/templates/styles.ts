@@ -72,8 +72,6 @@ const styles = {
   "cover-subtitle": { fontSize: 13, textAlign: "center", marginBottom: 18 },
   "cover-tagline": { fontSize: 10, fontStyle: "italic", textAlign: "center", marginBottom: 30 },
   "cover-system": { fontSize: 9, textAlign: "center" },
-  "part-label": { fontSize: 12, textAlign: "center", marginTop: 140, marginBottom: 15 },
-  "part-title": { fontSize: 26, textAlign: "center" },
   footer: { fontSize: 6, textAlign: "center" },
 } satisfies Record<string, ElementStyle>;
 
