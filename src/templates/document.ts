@@ -34,13 +34,12 @@ export function contentsEntries(document: DocumentData): ContentsEntry[] {
 }
 
 export function fontManager(root: string): LocalFontManager {
-  const source = (family: string, file: string, weight = 400, style: "normal" | "italic" = "normal") => ({ name: `${family} ${weight} ${style}`, family, weight, style, src: resolve(root, file), enabled: true, fallback: family === "DejaVu Sans" });
+  const source = (family: string, file: string, weight = 400, style: "normal" | "italic" = "normal") => ({ name: `${family} ${weight} ${style}`, family, weight, style, src: resolve(root, file), enabled: true, fallback: false });
   return new LocalFontManager({ fonts: [
     source("Libre Baskerville", "node_modules/@fontsource/libre-baskerville/files/libre-baskerville-latin-400-normal.woff"),
     source("Libre Baskerville", "node_modules/@fontsource/libre-baskerville/files/libre-baskerville-latin-700-normal.woff", 700),
     source("Libre Baskerville", "node_modules/@fontsource/libre-baskerville/files/libre-baskerville-latin-400-italic.woff", 400, "italic"),
     source("Genesys", "assets/fonts/GenesysGlyphsAndDice-3.0.ttf"),
-    source("DejaVu Sans", "node_modules/@fontsource/dejavu-sans/files/dejavu-sans-latin-400-normal.woff"),
   ] });
 }
 const text = (type: string, content: string): Element => ({ type, content });

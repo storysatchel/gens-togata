@@ -21,7 +21,6 @@ the authored content.
 | `src/templates/` | Typed theme and PDF document presentation, including generated material. |
 | `src/output/` | PDF output and narration from the logical content tree. |
 | `src/render.ts` | CLI entry point: YAML → paged PDF and narration. |
-| `src/excerpt.ts` | Renders a selection of the document as a PDF. |
 
 ### Authoring the document
 
@@ -89,7 +88,6 @@ Requires [Bun](https://bun.sh/), Git, Node.js, and npm. `make` initializes the V
 make pdf        # content.yaml -> VMPrint PDF + narration
 make styleguide # styleguide.yaml -> style-guide PDF
 make audio      # content.yaml -> narration only
-make excerpt    # default: Chapter 1 preview PDF
 make clean
 bun run typecheck # TypeScript static check
 make test         # project tests

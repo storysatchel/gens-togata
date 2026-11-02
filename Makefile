@@ -1,4 +1,4 @@
-.PHONY: all pdf folio styleguide audio excerpt typecheck test clean upstream
+.PHONY: all pdf folio styleguide audio typecheck test clean upstream
 
 all: pdf styleguide
 
@@ -19,9 +19,6 @@ folio: pdf
 
 styleguide: $(DEPS)
 	bun run src/render.ts styleguide.yaml "dist/Gens Togata - Style Guide.pdf"
-
-excerpt: $(DEPS)
-	bun run src/excerpt.ts
 
 audio: $(DEPS)
 	bun run src/render.ts --audio-only

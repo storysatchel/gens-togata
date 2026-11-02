@@ -4,12 +4,10 @@
   "type": "module",
   "scripts": {
     "render": "bun run src/render.ts",
-    "excerpt": "bun run src/excerpt.ts",
     "typecheck": "tsc --noEmit",
     "test": "bun test ./tests/*.test.ts"
   },
   "dependencies": {
-    "@fontsource/dejavu-sans": "^5.3.0",
     "@fontsource/libre-baskerville": "^5.3.0",
     "@vmprint/context-pdf": "file:vendor/vmprint/contexts/pdf",
     "@vmprint/contracts": "file:vendor/vmprint/contracts",
