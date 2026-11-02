@@ -76,10 +76,7 @@ For generated source, `composeTable(columns, rows)` and
 elements. Assign stable unique `sourceId` values to every returned element and
 run before saving; the YAML stores the expanded elements, not helper calls.
 
-Two codemods keep the persisted YAML consistent; both parse and rewrite YAML structurally and never assign or change identities:
 
-- `bun tools/migrate-vmprint.ts LEGACY.yaml NATIVE.yaml` converts a legacy `chapters`/`blocks` document to native elements (stories, spans, lists, tables, semantic dice/result/note runs). It is deterministic, rejects unknown or ambiguous legacy input (unsupported block types, unknown table styles, malformed tables, anchored-sidebar misuse), refuses to overwrite an existing output, and leaves an already-native file untouched. A regenerated legacy file is a fresh run: identities already persisted in `content.yaml` are authoritative and are never recomputed.
-- `bun tools/normalize-source.ts [--check] content.yaml styleguide.yaml` runs structural passes over the native tree: it fixes `stat-metrics` table widths and strips per-cell styles, and turns runs carrying exactly the keyword presentation into `semanticRole: keyword` (the theme owns that styling). Ambiguous styling raises an error instead of being guessed.
 
 `tests/book.test.ts` lays out both sources and checks that every authored element appears exactly once with its full text, inside the margins, with resolved navigation.
 
