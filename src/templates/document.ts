@@ -64,47 +64,29 @@ export async function documentInput(document: DocumentData, root: string, pageNu
   }
   const authored = structuredClone(document.elements);
   for (const element of walkElements(authored)) {
+    const props = element.properties ?? {};
     // Book semantics used by narration and validation are not VMPrint property keys.
-    if (element.properties) {
-      delete element.properties.audioPart;
-      delete element.properties.partLabel;
-      delete element.properties.partTitle;
-      delete element.properties.noteNumber;
-    }
-    const role = element.properties?.semanticRole;
-    if (!role) continue;
-    if (role === "stat-metrics") {
-      for (const row of element.children ?? []) for (const cell of row.children ?? []) {
-        cell.properties = { ...cell.properties, style: { ...bookTheme.table.statCellStyle, ...cell.properties?.style } };
-      }
-    } else if (role === "keyword") {
-      element.properties = { ...element.properties, style: { ...element.properties?.style, ...bookTheme.keyword } };
-    } else if (role === "note-ref") {
-      element.properties = { ...element.properties, style: { ...element.properties?.style, ...bookTheme.note } };
-    } else if (role.startsWith("dice:") || role.startsWith("result:")) {
-      const die = role.slice(5) as keyof typeof bookTheme.colors.dice;
-      const color = role.startsWith("dice:") ? bookTheme.colors.dice[die] : undefined;
-      element.properties = { ...element.properties, style: { ...element.properties?.style, ...bookTheme.glyph, ...(color ? { color } : {}) } };
+    for (const key of ["audioPart", "partLabel", "partTitle", "noteNumber"]) delete props[key];
+    const role: string = props.semanticRole ?? "";
+    const [kind, name = ""] = role.split(":");
+    const style = role === "keyword" ? bookTheme.keyword : role === "note-ref" ? bookTheme.note
+      : kind === "dice" || kind === "result" ? { ...bookTheme.glyph, ...(kind === "dice" ? { color: bookTheme.colors.dice[name as keyof typeof bookTheme.colors.dice] } : {}) } : undefined;
+    if (style) element.properties = { ...props, style: { ...props.style, ...style } };
+    if (role === "stat-metrics") for (const row of element.children ?? []) for (const cell of row.children ?? []) {
+      cell.properties = { ...cell.properties, style: { ...bookTheme.table.statCellStyle, ...cell.properties?.style } };
     }
   }
-  // The pinned engine can overlap a spanning child with the preceding column.
-  // Preserve native authored structure while isolating full-width bands at layout time.
-  for (const element of authored) {
-    if (element.type !== "story" || !element.children?.some(child => child.columnSpan === "all")) {
-      elements.push(element);
-      continue;
-    }
-    let children: Element[] = [];
-    let segment = 0;
+  // The pinned engine overlaps a full-width child with the preceding column, so each band becomes its own root element.
+  for (const story of authored) {
+    if (story.type !== "story") { elements.push(story); continue; }
+    let run: Element[] = [];
+    let pieces = 0;
     const flush = () => {
-      if (!children.length) return;
-      const sourceId = element.properties?.sourceId;
-      elements.push({ ...element, children, properties: { ...element.properties, ...(sourceId && segment ? { sourceId: `${sourceId}--segment-${segment}` } : {}) } });
-      segment++;
-      children = [];
+      if (run.length) elements.push({ ...story, children: run, properties: { ...story.properties, sourceId: `${story.properties?.sourceId}${pieces++ ? `--segment-${pieces}` : ""}` } });
+      run = [];
     };
-    for (const child of element.children) {
-      if (child.columnSpan !== "all") { children.push(child); continue; }
+    for (const child of story.children ?? []) {
+      if (child.columnSpan !== "all") { run.push(child); continue; }
       flush();
       delete child.columnSpan;
       elements.push(child);
