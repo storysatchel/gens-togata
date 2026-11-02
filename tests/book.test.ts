@@ -1,6 +1,9 @@
 import { expect, test } from "bun:test";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { PDFDocument, PDFDict, PDFName } from "pdf-lib";
 import { loadDocument } from "../src/content/load";
-import { layoutDocument, sourcePages } from "../src/output/pdf";
+import { layoutDocument, sourcePages, writePdf } from "../src/output/pdf";
 import { contentsEntries, elementText, walkElements } from "../src/templates/document";
 import { bookTheme } from "../src/templates/styles";
 
@@ -41,3 +44,16 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
     }
   });
 }
+
+test("styleguide PDF carries a bookmark and a TOC link for every contents entry", async () => {
+  const dir = await mkdtemp(`${tmpdir()}/book-pdf-`);
+  try {
+    const document = await loadDocument("styleguide.yaml");
+    await writePdf(document, process.cwd(), `${dir}/guide.pdf`);
+    const pdf = await PDFDocument.load(await readFile(`${dir}/guide.pdf`));
+    const entries = contentsEntries(document).length;
+    expect(pdf.catalog.lookup(PDFName.of("Outlines"), PDFDict).get(PDFName.of("Count"))?.toString()).toBe(String(entries));
+    expect(pdf.getPages().reduce((total, page) => total + (page.node.Annots()?.size() ?? 0), 0)).toBe(entries);
+    expect(pdf.getTitle()).toBe(document.meta.title);
+  } finally { await rm(dir, { recursive: true, force: true }); }
+});

@@ -1,5 +1,5 @@
 import { PDFDocument, PDFHexString, PDFName } from "pdf-lib";
-import type { Box, Page } from "@vmprint/engine";
+import type { Page } from "@vmprint/engine";
 import type { DocumentData } from "../content/types";
 import { contentsEntries } from "../templates/document";
 
@@ -12,39 +12,28 @@ export async function finishPdf(bytes: Uint8Array, document: DocumentData, layou
   pdf.setLanguage("en");
   const pages = pdf.getPages();
   const entries = contentsEntries(document);
-  if (!entries.length) return pdf.save();
-  const targets = new Map<string, { page: number; y: number }>();
-  const links = new Map<string, { page: Page; box: Box }[]>();
-  for (const page of layout) for (const box of page.boxes) {
-    const id = box.meta?.sourceId.replace(/^author:/, "");
-    if (id && !targets.has(id)) targets.set(id, { page: page.index, y: page.height - box.y });
-    if (id?.startsWith("toc-")) {
-      const target = id.slice(4);
-      const boxes = links.get(target) ?? [];
-      boxes.push({ page, box });
-      links.set(target, boxes);
-    }
-  }
+  const boxes = layout.flatMap(page => page.boxes.map(box => ({ page, box, id: box.meta?.sourceId.replace(/^author:/, "") })));
   const root = pdf.context.obj({ Type: "Outlines", Count: entries.length });
   const rootRef = pdf.context.register(root);
   const outlines = entries.map(entry => {
-    const target = targets.get(entry.id);
+    const target = boxes.find(({ id }) => id === entry.id);
     if (!target) throw new Error(`Missing PDF destination: ${entry.id}`);
-    const destination = pdf.context.obj([pages[target.page]!.ref, "XYZ", null, target.y, null]);
+    const destination = pdf.context.obj([pages[target.page.index]!.ref, "XYZ", null, target.page.height - target.box.y, null]);
     const node = pdf.context.obj({ Title: PDFHexString.fromText(entry.label), Parent: rootRef, Dest: destination });
-    const ref = pdf.context.register(node);
-    for (const { page, box } of links.get(entry.id) ?? []) {
-      const annotation = pdf.context.obj({ Type: "Annot", Subtype: "Link", Rect: [box.x, page.height - box.y - box.h, box.x + box.w, page.height - box.y], Border: [0, 0, 0], Dest: destination });
-      pages[page.index]!.node.addAnnot(pdf.context.register(annotation));
+    for (const { page, box } of boxes.filter(({ id }) => id === `toc-${entry.id}`)) {
+      const rect = [box.x, page.height - box.y - box.h, box.x + box.w, page.height - box.y];
+      pages[page.index]!.node.addAnnot(pdf.context.register(pdf.context.obj({ Type: "Annot", Subtype: "Link", Rect: rect, Border: [0, 0, 0], Dest: destination })));
     }
-    return { node, ref };
+    return { node, ref: pdf.context.register(node) };
   });
   outlines.forEach(({ node }, index) => {
     if (index > 0) node.set(PDFName.of("Prev"), outlines[index - 1]!.ref);
     if (index + 1 < outlines.length) node.set(PDFName.of("Next"), outlines[index + 1]!.ref);
   });
-  root.set(PDFName.of("First"), outlines[0]!.ref);
-  root.set(PDFName.of("Last"), outlines.at(-1)!.ref);
-  pdf.catalog.set(PDFName.of("Outlines"), rootRef);
+  if (outlines.length) {
+    root.set(PDFName.of("First"), outlines[0]!.ref);
+    root.set(PDFName.of("Last"), outlines.at(-1)!.ref);
+    pdf.catalog.set(PDFName.of("Outlines"), rootRef);
+  }
   return pdf.save();
 }
