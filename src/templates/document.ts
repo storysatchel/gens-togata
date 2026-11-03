@@ -23,7 +23,7 @@ export function contentsEntries(document: DocumentData): ContentsEntry[] {
   const entries: ContentsEntry[] = [];
   for (const element of walkElements(document.elements)) {
     const role = element.properties?.semanticRole;
-    if (role !== "part" && role !== "chapter" && role !== "heading") continue;
+    if (role !== "part" && role !== "chapter" && !(role === "heading" && (element.type === "h1" || element.type === "h2"))) continue;
     const id = element.properties?.sourceId as string;
     const label = role === "part" && typeof element.properties?.partTitle === "string"
       ? `${element.properties.partLabel ? `${element.properties.partLabel}: ` : ""}${element.properties.partTitle}`
@@ -59,7 +59,7 @@ export async function documentInput(document: DocumentData, root: string): Promi
     { type: "image", content: "", image: { data: cover.toString("base64"), mimeType: "image/png", fit: "contain" }, properties: { style: { width: bookTheme.geometry.contentWidth, height: 130, marginTop: 30 } } },
     text("cover-title", meta.title), text("cover-subtitle", meta.subtitle), text("cover-tagline", `“${meta.tagline}”`), text("cover-system", meta.system.toUpperCase()),
     ...meta.legal.map((paragraph, i) => i === 0 ? pageStart(text("legal", paragraph)) : text("legal", paragraph)),
-    pageStart({ type: "toc", content: "", properties: { sourceId: "contents", toc: { title: "Contents", semanticRoleFilter: ["part", "chapter", "heading"], style: { fontSize: 7, lineHeight: 1.6 } } } }),
+    pageStart({ type: "toc", content: "", properties: { sourceId: "contents", toc: { title: "Contents", levelFilter: [1, 2], style: { fontSize: 7, lineHeight: 1.6 } } } }),
   ];
   const authored = structuredClone(document.elements);
   for (const story of authored) {

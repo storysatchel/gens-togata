@@ -46,11 +46,11 @@ book_hash=$(pdftotext -raw 'dist/Gens Togata.pdf' - | sha256sum | cut -d ' ' -f1
 guide_hash=$(pdftotext -raw 'dist/Gens Togata - Style Guide.pdf' - | sha256sum | cut -d ' ' -f1)
 folio_hash=$(pdftotext -raw 'dist/Gens Togata - Folio.pdf' - | sha256sum | cut -d ' ' -f1)
 test "$audio_hash" = 77e75fbff22565f2d61f368746b9b86b0276fd6eb5a6db8331fcb2aa01f70b0c
-test "$book_hash" = 881bcc1d63d43f92317c7032a9a41b8549d65a412ef7f7f85ac6dab55576f68d
-test "$guide_hash" = be5a859aa2cf2630f0d5dfe21fb508a50990a6effc082206289cf74978f87850
-test "$folio_hash" = 51665d9e926fc3d5ce744f59b29e379924f89b5bc23913b6f6f73d6aa560648a
+test "$book_hash" = bda984db8d46aad712adaba2c71b09f78303e1cc30ede812cb0999ba9953ce5f
+test "$guide_hash" = 3e21a0e08198bbf90e658d6bb63dcbb2203887483970f0d7107fb6f2e7d05c91
+test "$folio_hash" = c347349d60452485c11464ff7430face3a1b65cf2df1d22fd449b96e60ee6940
 book_pages=$(pdfinfo 'dist/Gens Togata.pdf' | awk '/^Pages:/{print $2}')
-test "$book_pages" = 100
+test "$book_pages" = 98
 test "$(pdfinfo 'dist/Gens Togata - Style Guide.pdf' | awk '/^Pages:/{print $2}')" = 8
 test "$(pdfinfo 'dist/Gens Togata - Folio.pdf' | awk '/^Pages:/{print $2}')" = 56
 test "$(pdfinfo 'dist/Gens Togata - Folio.pdf' | awk '/^Page size:/{print $3, $4, $5}')" = "792 x 612"
@@ -80,17 +80,17 @@ raster_hash() {
 }
 test "$(raster_hash 'dist/Gens Togata.pdf' 1)" = ec411598dd26d5f306a6f065145ae28316445731a851e605747c3f5a428df1d1
 test "$(raster_hash 'dist/Gens Togata - Style Guide.pdf' 1)" = d79ca62cd68ab169cf0f56ba7cf7fed6fe6c8fe74d35adc72a500c368e630d21
-test "$(raster_hash 'dist/Gens Togata.pdf' 10)" = 348409907515a78c5fc6aefed1294f64db1fd7392c38614115fbbf9d754fb9ee
-test "$(raster_hash 'dist/Gens Togata.pdf' 14)" = e087fc51e03a1955c708eb490332bbc7e5c76aeb1566550ff605370cbbae3a31
+test "$(raster_hash 'dist/Gens Togata.pdf' 10)" = ff6c6c7a93a246524e7fb7bc41426f4e4d82c21f577c7ee1d865e1c55881046d
+test "$(raster_hash 'dist/Gens Togata.pdf' 14)" = ba71367bdb82e5a224059d04acbdcae7f4d83e651ec9eb91c8ab3a2d6cae71d4
 test "$(raster_hash 'dist/Gens Togata - Style Guide.pdf' 8)" = 98ef46efada08fb5346e3f28990169b008e18287ec84a7b5e02403e6bf05109a
-test "$(raster_hash 'dist/Gens Togata - Folio.pdf' 1)" = ce7ae8b8b5cef0891f0a18669483c78e5454db73af8d42e77ccf2f69489a93ed
-test "$(raster_hash 'dist/Gens Togata - Folio.pdf' 28)" = 14eae1010293177906d89a33fc914b1163095ecf3a13f387fffa5ed6ef325311
+test "$(raster_hash 'dist/Gens Togata - Folio.pdf' 1)" = 88281088349714bf6e1efdf783b521e4e0fcc580e632cf3e93ffea1f1d5ab3f6
+test "$(raster_hash 'dist/Gens Togata - Folio.pdf' 28)" = ab21ae2a3fb3016242bbe6b2eac21de8d5a5662f4c3895c7c476d730d3b4b1e5
 # PDF outlines include bookmark labels and physical destination pages.
 outline_hash() {
   pdftohtml -i -xml -stdout -hidden "$1" | awk '/<outline>/{printing=1} printing {print} /<\/outline>/{printing=0}' | sha256sum | cut -d ' ' -f1
 }
-test "$(outline_hash 'dist/Gens Togata.pdf')" = da8548c14dd67ed809a863ae276942f24f40f82959ef65d302921b95b5a0c691
-test "$(outline_hash 'dist/Gens Togata - Style Guide.pdf')" = e74ce3ead8168c0bc7cd7098837ef5f56f88a7040c9af90a4222826397d93b05
+test "$(outline_hash 'dist/Gens Togata.pdf')" = 9a3ba935bf2bbaabb7d81d70be0ee7b0c3061760348ecfade28a1f0e32e3c782
+test "$(outline_hash 'dist/Gens Togata - Style Guide.pdf')" = f227bb3502a14866d213c119164375bfea43482cde1dad0913f43b34856323ce
 for pdf in 'dist/Gens Togata.pdf' 'dist/Gens Togata - Style Guide.pdf'; do
   test "$(pdfinfo "$pdf" | awk '/^Page size:/{print $3, $4, $5}')" = "396 x 612"
 done
