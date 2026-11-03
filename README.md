@@ -79,6 +79,7 @@ walks the logical tree in reading order rather than recovering text from the PDF
 
 ### Validation
 
+The YAML parser rejects duplicate mapping keys rather than silently replacing authored values.
 `loadDocument` checks what VMPrint's own loader does not: every element has a unique
 `sourceId` (the `toc-` prefix is reserved), and every `note-ref` has a matching `note`
 in its chapter. VMPrint validates structure and styles when the document is laid out.
@@ -94,6 +95,14 @@ Requires [Bun](https://bun.sh/), Git, Node.js, and npm. `make` initializes the V
 submodule and builds its packages from their locked dependencies before installing
 this project's. A fresh checkout can be prepared explicitly with
 `sh tools/build-vmprint.sh && bun install --frozen-lockfile`.
+
+`bash autoresearch.sh` requires installed dependencies, a cached `pdfimpose==2.10.0`,
+and a clean, built VMPrint checkout at the pinned revision, with installed package builds
+matching the checkout. Its Bun install and folio build run offline.
+It checks authored text, identities, and roles; the rulebook, style guide, and folio text,
+fonts, metadata, page counts, and dimensions; selected rendered pages and bookmarks; and
+every narration file against the baseline.
+Update the fingerprints deliberately when the publication or rendering toolchain changes.
 
 ```sh
 make pdf          # content.yaml -> rulebook PDF + narration

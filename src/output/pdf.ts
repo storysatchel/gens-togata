@@ -1,5 +1,3 @@
-import { mkdir, writeFile } from "node:fs/promises";
-import { resolve } from "node:path";
 import { VMPrintEngine, loadDocument, type Page } from "@vmprint/engine";
 import PdfContext from "@vmprint/context-pdf";
 import type { DocumentData } from "../content/types";
@@ -28,7 +26,6 @@ export async function writePdf(document: DocumentData, root: string, outputPath:
   await engine.render(context);
   await completion;
   const pdf = await finishPdf(Buffer.concat(chunks), document, pages);
-  await mkdir(resolve(outputPath, ".."), { recursive: true });
-  await writeFile(outputPath, pdf);
+  await Bun.write(outputPath, pdf);
   console.log(`PDF -> ${outputPath} (${pages.length} pages, ${pdf.byteLength} bytes)`);
 }

@@ -1,4 +1,3 @@
-import { readFile } from "node:fs/promises";
 import { parse } from "yaml";
 import type { Element } from "@vmprint/engine";
 import { walkElements } from "../templates/document";
@@ -17,8 +16,6 @@ const hasRole = (name: string) => (e: Element) => role(e) === name;
 const chapters = (es: Element[]): Element[][] =>
   [0, ...es.flatMap((e, i) => hasRole("chapter")(e) ? [i] : [])].map((start, k, starts) => es.slice(start, starts[k + 1]));
 
-const perChapter = (rule: Rule): Rule => es => chapters(es).flatMap(rule);
-
 const badIds: Rule = es => es
   .filter(e => !idOf(e) || idOf(e).startsWith("toc-"))
   .map(e => [idOf(e), "sourceId must be a nonempty string outside the reserved toc- prefix"]);
@@ -33,14 +30,12 @@ const danglingNotes: Rule = chapter => {
     .map(e => [idOf(e), `note ${e.content} does not exist in its chapter`]);
 };
 
-const rules: Rule[] = [badIds, duplicateIds, perChapter(danglingNotes)];
-const problems: Rule = es => rules.flatMap(rule => rule(es));
-
 /** Structure and styles are validated by VMPrint's own loader; this checks identities and note references only. */
 export async function loadDocument(path: string): Promise<DocumentData> {
-  const data = parse(await readFile(path, "utf8")) as DocumentData;
+  const data = parse(await Bun.file(path).text()) as DocumentData;
   if (!data?.meta || !Array.isArray(data.elements)) fail(path)("document", "expected meta and elements");
-  const [first] = problems([...walkElements(data.elements)]);
+  const elements = [...walkElements(data.elements)];
+  const first = badIds(elements)[0] ?? duplicateIds(elements)[0] ?? chapters(elements).flatMap(danglingNotes)[0];
   if (first) fail(path)(...first);
   return data;
 }

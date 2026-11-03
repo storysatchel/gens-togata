@@ -8,7 +8,7 @@ upstream:
 	sh tools/build-vmprint.sh
 
 $(DEPS): package.json bun.lock upstream
-	bun install --frozen-lockfile
+	bun install --frozen-lockfile $(BUN_INSTALL_FLAGS)
 	@touch $@
 
 pdf: $(DEPS)
@@ -22,7 +22,6 @@ styleguide: $(DEPS)
 
 audio: $(DEPS)
 	bun run src/render.ts --audio-only
-	@echo "Narration -> audio/part_*.txt and audio/transcript.txt"
 
 typecheck: $(DEPS)
 	bun run typecheck

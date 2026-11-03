@@ -10,7 +10,7 @@ import type { Element } from "@vmprint/engine";
 const metadata = { title: "Proof", subtitle: "", tagline: "", system: "Genesys", legal: [] };
 const chapter = (id: string): Element => ({ type: "h1", content: id, properties: { sourceId: id, semanticRole: "chapter" } });
 
-test("source rejects duplicate identities and dangling notes", async () => {
+test("source rejects duplicate keys, duplicate identities, and dangling notes", async () => {
   const dir = await mkdtemp(join(tmpdir(), "book-source-"));
   const path = join(dir, "input.yaml");
   try {
@@ -20,6 +20,8 @@ test("source rejects duplicate identities and dangling notes", async () => {
     };
     await expect(load([chapter("same"), chapter("same")])).rejects.toThrow("duplicate sourceId");
     await expect(load([chapter("first"), { type: "p", content: "", properties: { sourceId: "paragraph" }, children: [{ type: "text", content: "3", properties: { sourceId: "ref", semanticRole: "note-ref" } }] }])).rejects.toThrow("note 3 does not exist");
+    await writeFile(path, 'meta: {title: First, title: Second, subtitle: "", tagline: "", system: Genesys, legal: []}\nelements:\n  - type: h1\n    content: First\n    properties: {sourceId: first, semanticRole: chapter, audioPart: 1}\n');
+    await expect(loadDocument(path)).rejects.toThrow();
   } finally { await rm(dir, { recursive: true, force: true }); }
 });
 

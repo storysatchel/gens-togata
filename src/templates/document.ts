@@ -44,6 +44,13 @@ export function fontManager(root: string): LocalFontManager {
 }
 const text = (type: string, content: string): Element => ({ type, content });
 const pageStart = (element: Element): Element => ({ ...element, properties: { ...element.properties, style: { ...element.properties?.style, pageBreakBefore: true } } });
+const floatAside = (group: Element[]): Element => ({
+  type: "story",
+  content: "",
+  placement: { mode: "float", align: "right", wrap: "around", gap: 4 },
+  properties: { sourceId: `aside-float-${group[0]!.properties?.sourceId ?? "sidebar"}`, style: { width: 68 } },
+  children: group,
+});
 
 export async function documentInput(document: DocumentData, root: string): Promise<DocumentInput> {
   const meta = document.meta;
@@ -55,6 +62,21 @@ export async function documentInput(document: DocumentData, root: string): Promi
     pageStart({ type: "toc", content: "", properties: { sourceId: "contents", toc: { title: "Contents", semanticRoleFilter: ["part", "chapter", "heading"], style: { fontSize: 7, lineHeight: 1.6 } } } }),
   ];
   const authored = structuredClone(document.elements);
+  for (const story of authored) {
+    if (story.type !== "story" || !story.children) continue;
+    const children: Element[] = [];
+    let group: Element[] = [];
+    for (const child of story.children) {
+      if ((child.type === "sidebar" || child.properties?.semanticRole === "aside") && !child.placement) {
+        group.push(child);
+      } else {
+        if (group.length) { children.push(floatAside(group)); group = []; }
+        children.push(child);
+      }
+    }
+    if (group.length) children.push(floatAside(group));
+    story.children = children;
+  }
   for (const element of walkElements(authored)) {
     const props = element.properties ?? {};
     // Book semantics used by narration and validation are not VMPrint property keys.

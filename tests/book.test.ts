@@ -58,6 +58,10 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
         expect(box.y + box.h <= band.y + 0.01 || box.y >= band.y + band.h - 0.01).toBe(true);
       }
     }
+    // Sidebars float within story columns and have columnar prose flowing around them.
+    const asides = pages.flatMap(page => page.boxes.filter(box => box.lines?.length && box.type === "sidebar"));
+    expect(asides.length).toBeGreaterThan(0);
+    expect(asides.every(aside => aside.w < bookTheme.geometry.contentWidth / 2)).toBe(true);
   });
 }
 

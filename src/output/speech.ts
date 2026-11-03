@@ -1,4 +1,3 @@
-import { mkdir, writeFile } from "node:fs/promises";
 import type { Element } from "@vmprint/engine";
 import type { DocumentData } from "../content/types";
 
@@ -75,7 +74,6 @@ export async function writeNarration(document: DocumentData, root: string): Prom
     lead = [];
   }
   const audioDir = `${root}/audio`;
-  await mkdir(audioDir, { recursive: true });
-  for (const [number, group] of groups) await writeFile(`${audioDir}/part_${number}.txt`, `${number === 1 ? `${intro}\n\n` : ""}${speechclean(group.join(" "))}`);
-  await writeFile(`${audioDir}/transcript.txt`, `${intro}\n\n${chapters.filter(chapter => chapter.length).map(chapter => speechclean(chapter.join(" "))).join("\n\n")}`);
+  for (const [number, group] of groups) await Bun.write(`${audioDir}/part_${number}.txt`, `${number === 1 ? `${intro}\n\n` : ""}${speechclean(group.join(" "))}`);
+  await Bun.write(`${audioDir}/transcript.txt`, `${intro}\n\n${chapters.filter(chapter => chapter.length).map(chapter => speechclean(chapter.join(" "))).join("\n\n")}`);
 }
