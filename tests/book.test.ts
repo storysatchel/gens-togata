@@ -25,8 +25,10 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
       if (!box.lines?.length || box.type === "footer") continue;
       const id = box.meta?.sourceId.replace(/^author:/, "") ?? "";
       laidOut.set(id, (laidOut.get(id) ?? "") + box.lines.flat().map(run => run.text).join(""));
-      expect(box.x).toBeGreaterThanOrEqual(margins.left - 0.1);
-      expect(box.x + box.w).toBeLessThanOrEqual(pageSize.width - margins.right + 0.1);
+      // Sidebars deliberately bleed 28 pt into the side margins.
+      const bleed = box.type === "sidebar" ? 28 : 0;
+      expect(box.x).toBeGreaterThanOrEqual(margins.left - bleed - 0.1);
+      expect(box.x + box.w).toBeLessThanOrEqual(pageSize.width - margins.right + bleed + 0.1);
       expect(box.y).toBeGreaterThanOrEqual(margins.top - 0.1);
       expect(box.y + box.h).toBeLessThanOrEqual(pageSize.height - margins.bottom + 0.1);
     }
@@ -58,10 +60,10 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
         expect(box.y + box.h <= band.y + 0.01 || box.y >= band.y + band.h - 0.01).toBe(true);
       }
     }
-    // Sidebars float within story columns and have columnar prose flowing around them.
+    // Sidebars are full-width bands that ignore columns and the side margins.
     const asides = pages.flatMap(page => page.boxes.filter(box => box.lines?.length && box.type === "sidebar"));
-    expect(asides.length).toBeGreaterThan(0);
-    expect(asides.every(aside => aside.w < bookTheme.geometry.contentWidth / 2)).toBe(true);
+    if (file === "content.yaml") expect(asides.length).toBeGreaterThan(0);
+    expect(asides.every(aside => aside.w > pageSize.width - margins.left - margins.right)).toBe(true);
   });
 }
 

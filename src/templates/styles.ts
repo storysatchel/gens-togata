@@ -58,7 +58,7 @@ const styles = {
   readaloud: { ...panel, fontStyle: "italic" },
   synopsis: panel,
   example: { ...panel, fontSize: 6.5 },
-  sidebar: { fontSize: 6, lineHeight: 1.3, textAlign: "left", paddingLeft: 6, borderLeftWidth: 0.5, borderLeftColor: colors.sidebarBorder, marginBottom: 5, allowLineSplit: true },
+  sidebar: { fontSize: 6.5, lineHeight: 1.35, textAlign: "left", backgroundColor: colors.panel, marginLeft: -28, marginRight: -28, paddingLeft: 28, paddingRight: 28, paddingTop: 2, paddingBottom: 2, marginBottom: 0, allowLineSplit: true },
   "list-item": { marginBottom: 3, allowLineSplit: true, overflowPolicy: "move-whole", textAlign: "left" },
   "table-cell": { fontSize: 6, padding: 3, textAlign: "left", borderBottomWidth: 0.3, borderBottomColor: colors.tableBorder },
   "stat-name": { ...heading, fontSize: 10, color: colors.accent },
