@@ -55,9 +55,23 @@ export async function documentInput(document: DocumentData, root: string): Promi
     pageStart({ type: "toc", content: "", properties: { sourceId: "contents", toc: { title: "Contents", levelFilter: [1, 2], style: { fontSize: 7, lineHeight: 1.6 } } } }),
   ];
   const authored = structuredClone(document.elements);
-  // Asides break out of the columns and margins as full-width shaded bands.
-  for (const story of authored) for (const child of story.type === "story" ? story.children ?? [] : []) {
-    if (child.type === "sidebar" && !child.placement) child.columnSpan = "all";
+  // Asides become shaded strips on the page's outer edge, bleeding off it, with columns flowing beside them.
+  for (const story of authored) {
+    if (story.type !== "story" || !story.children) continue;
+    const children: Element[] = [];
+    let group: Element[] = [];
+    const flush = () => {
+      if (!group.length) return;
+      children.push({ type: "story", content: "", children: group, placement: { mode: "float", align: "outer", wrap: "around", gap: 6, bleed: 28 },
+        properties: { sourceId: `aside-strip-${group[0]!.properties?.sourceId}`, style: { width: 72 } } });
+      group = [];
+    };
+    for (const child of story.children) {
+      if (child.type === "sidebar" && !child.placement) group.push(child);
+      else { flush(); children.push(child); }
+    }
+    flush();
+    story.children = children;
   }
   for (const element of walkElements(authored)) {
     const props = element.properties ?? {};

@@ -60,10 +60,14 @@ for (const file of ["content.yaml", "styleguide.yaml"]) {
         expect(box.y + box.h <= band.y + 0.01 || box.y >= band.y + band.h - 0.01).toBe(true);
       }
     }
-    // Sidebars are full-width bands that ignore columns and the side margins.
-    const asides = pages.flatMap(page => page.boxes.filter(box => box.lines?.length && box.type === "sidebar"));
+    // Sidebars are narrow shaded strips that bleed off the page's outer edge.
+    const asides = pages.flatMap(page => page.boxes.filter(box => box.lines?.length && box.type === "sidebar").map(box => ({ box, page })));
     if (file === "content.yaml") expect(asides.length).toBeGreaterThan(0);
-    expect(asides.every(aside => aside.w > pageSize.width - margins.left - margins.right)).toBe(true);
+    for (const { box, page } of asides) {
+      expect(box.w).toBeLessThan(bookTheme.geometry.contentWidth / 2);
+      const outer = page.index % 2 === 0 ? pageSize.width - (box.x + box.w) : box.x;
+      expect(outer).toBeCloseTo(margins.left - 28, 0);
+    }
   });
 }
 
