@@ -34,11 +34,15 @@ chapters:
   - type: p
     style: body
     text: |-
-      **Gens Togata** is a setting supplement for **Genesys**. Its default setting is the High Empire, roughly the reigns of Trajan and Hadrian (*c.* 100–120 CE), though its material can be used elsewhere in the Principate. Players might serve together in a legion, pursue a case through the courts, keep a household's affairs in order, trade across the provinces, or investigate a sign the gods have sent. Their adventures can move from a crowded street to a governor's audience chamber, from a roadside shrine to the Senate.
+      A tabletop roleplaying game is a conversation in which a group imagines events together, using rules and dice to resolve uncertain outcomes. One person is the game master (GM), who describes the world and plays the people the group meets. The other participants are players; each controls a player character (PC), deciding what that character says and does. The GM describes what happens in response, and the group builds an ongoing story through those choices and their consequences.
   - type: p
     style: body
     text: |-
-      At the table, the GM describes the world and portrays the people the characters meet; the players decide what their characters attempt. {{sidebar}} When an outcome is uncertain and consequential, the group uses a Genesys check: the dice establish whether the attempt succeeds and what advantages, complications, or other consequences accompany it. Those results change the situation, and play continues from there. A successful plea can win a hearing while making an enemy; a failed investigation can still uncover a useful lead.
+      **Gens Togata** is a setting supplement for **Genesys**, a tabletop roleplaying game. Its default setting is the High Empire, roughly the reigns of Trajan and Hadrian (*c.* 100–120 CE), though its material can be used elsewhere in the Principate. Player characters might serve together in a legion, pursue a case through the courts, keep a household's affairs in order, trade across the provinces, or investigate a sign the gods have sent. Their adventures can move from a crowded street to a governor's audience chamber, from a roadside shrine to the Senate.
+  - type: p
+    style: body
+    text: |-
+      {{sidebar}} When an outcome is uncertain and consequential, the group uses a Genesys check: the dice establish whether the attempt succeeds and what advantages, complications, or other consequences accompany it. Those results change the situation, and play continues from there. A successful plea can win a hearing while making an enemy; a failed investigation can still uncover a useful lead.
     sidebar:
       type: sidebar
       title: A Note on Slavery and History
@@ -122,11 +126,6 @@ chapters:
     style: body
     text: |-
       Roman roads carried armies, traders, and travellers across the empire. The *vehiculatio*, a state transport system, moved officials and imperial business between stations where travellers could obtain fresh animals; later sources call the system the *cursus publicus*.{{10}} Aqueducts supplied cities with water, and baths and wealthy houses could be heated by a *hypocaust*, a system that circulated hot air beneath floors. Builders used concrete and arches; armies deployed siege engines and warships. Coinage, credit, and banking supported trade, while physicians drew on Greek medical learning and surgical instruments. Firearms, printing presses, mechanical clocks, and stirrups do not belong to the default setting.
-  - type: sidebar
-    title: Dialing the Supernatural
-    body:
-    - |-
-      [[Grounded:]] the gods are belief, politics, and theatre; omens and curses work only in the players' heads. [[Fated:]] Story Points are the will of the gods — omens, dreams, and auguries give real mechanical nudges (see GM Advice). [[Mythic:]] full Genesys magic, with priests, sibyls, and Egyptian sorcerers wielding it; monsters of myth stalk the provinces. Pick one before session zero.
   - type: h2
     text: Major Factions & Powers
   - type: h3
@@ -174,7 +173,7 @@ chapters:
   - type: p
     style: body
     text: |-
-      Everyone is **Human** (use the Human profile from the Core Rulebook). What matters in Rome is not *species* but *status* — citizen or non-citizen, free or enslaved, patrician or plebeian, Roman or provincial. Those are role-played and reflected in the archetypes, careers, and talents below, not in different stat lines. (In a [[Mythic]] Rome, the GM may of course admit fauns, nymphs, and the half-divine.)
+      Everyone is **Human** (use the Human profile from the Core Rulebook). What matters in Rome is not *species* but *status* — citizen or non-citizen, free or enslaved, patrician or plebeian, Roman or provincial. Those are role-played and reflected in the archetypes, careers, and talents below, not in different stat lines. If the group chooses a Mythic campaign with creatures from Roman myth, the GM may also admit fauns, nymphs, and the half-divine; see Dialing the Supernatural in Game Mastering Rome.
   - type: endnotes
     title: Notes
     items:
@@ -1771,6 +1770,11 @@ chapters:
     style: lead
     text: |-
       A historical setting is a gift and a trap. The gift is that players already know Rome — legions, togas, gladiators, “hail Caesar.” The trap is that they know the *movie* Rome, and will bring every assumption with them. Lean into the familiar iconography, then surprise them with the real strangeness: a world where the gods are in the gutters and the Senate, where a man's name tells you who owns him, and where a bad omen can stop an army.
+  - type: sidebar
+    title: Dialing the Supernatural
+    body:
+    - |-
+      Decide together how much supernatural power is present in the campaign when you discuss its premise before play. In a **Grounded** campaign, gods, omens, and curses are matters of belief and politics, with no supernatural effects. In a **Fated** campaign, the gods influence events through omens and the Story Point rules; see Story Points as the Will of the Gods below. In a **Mythic** campaign, characters can use the Genesys magic rules and encounter creatures from myth.
   - type: h3
     text: Choosing a Campaign Frame
   - type: p
