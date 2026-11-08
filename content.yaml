@@ -529,6 +529,10 @@ chapters:
       text: '3'
     - label: Starting Skills
       text: One rank in Knowledge (Rome) or Charm (max 2 at creation).
+    - label: Faction Ties
+      text: Natural ties to the senatorial order (*ordo senatorius*), prestigious
+        civic priestly colleges (*collegia sacerdotum*), and traditionalist faction
+        blocs.
     - label: The Weight of Ancestors
       text: Once per session, when making a social check that leans on your name and
         lineage, add [[advantage]] [[advantage]]. Your blood opens doors that gold
@@ -560,6 +564,9 @@ chapters:
       text: '2'
     - label: Starting Skills
       text: One rank in Negotiation or Knowledge (Rome) (max 2 at creation).
+    - label: Faction Ties
+      text: Natural ties to corporate state-contracting syndicates (*societates publicanorum*),
+        maritime transport shippers, and circus enterprise owners (*domini factionum*).
     - label: Men of Business
       text: Once per session, spend a Story Point to declare you have the capital,
         credit, cargo, or well-placed contact already arranged — the quiet machinery
@@ -588,6 +595,9 @@ chapters:
       text: '1'
     - label: Starting Skills
       text: One rank in each of two different non-career skills (max 2 at creation).
+    - label: Faction Ties
+      text: Natural ties to municipal neighborhood wards (*vici*), artisan guilds
+        (*collegia fabrum*), mutual-aid burial funds, and partisan Circus colors.
     - label: A Nose for Trouble
       text: Once per session, as an out-of-turn incidental, move one Story Point from
         the GM's pool to the players' pool. The street always finds a way.
@@ -616,6 +626,9 @@ chapters:
     - label: Starting Skills
       text: One rank in any single skill, reflecting the trade you were trained to
         (max 2 at creation).
+    - label: Faction Ties
+      text: Natural ties to ward magistracies (*vicomagistri*), the imperial cult
+        of Augustus (*seviri Augustales*), and imperial bureaucratic secretariats.
     - label: The Master's Education
       text: Once per session, spend a Story Point as an incidental; during your next
         check that turn, count your ranks in the skill used as equal to your Intellect.
@@ -644,6 +657,9 @@ chapters:
       text: '1'
     - label: Starting Skills
       text: One rank in Ranged (Heavy), Riding, or Survival (max 2 at creation).
+    - label: Faction Ties
+      text: Natural ties to maritime shipping corporations (*corpora naviculariorum*),
+        provincial trade embassies, and foreign enclaves in Portus or Trastevere.
     - label: Skills of the Frontier
       text: Once per encounter, add [[advantage]] to a Ranged, Riding, Survival, or
         Perception check in the field. Should your character gain Roman citizenship
@@ -673,6 +689,9 @@ chapters:
     - label: Starting Skills
       text: One rank in Resilience, or in any single skill reflecting your duties
         (max 2 at creation).
+    - label: Faction Ties
+      text: Natural ties to urban household domestic retinues (*familia urbana*),
+        imperial administrative secretariats, and gladiatorial training barracks (*ludi*).
     - label: Unbroken
       text: Add [[boost]] to Discipline and Resilience checks while enslaved, bound,
         imprisoned, or outnumbered. If your character is manumitted in play, they
@@ -702,6 +721,10 @@ chapters:
       text: 0 (outsider)
     - label: Starting Skills
       text: One rank in Survival or Melee (max 2 at creation).
+    - label: Faction Ties
+      text: Natural ties to frontier auxiliary cohorts (*auxilia*), gladiatorial
+        barracks troupes (*familiae gladiatoriae*), and tribal clans beyond the imperial
+        frontiers (*limes*).
     - label: Untamed Fury
       text: Add [[boost]] to melee combat checks on any round in which your character
         first engages a new target. Civilization has not dulled you.
@@ -723,14 +746,17 @@ chapters:
     style: body
     text: 'The orator, lawyer, and teacher: trained in Greek rhetoric to sway juries,
       assemblies, and dinner-parties. Career skills: **Charm, Cool, Deception, Negotiation,
-      Knowledge (Law), Knowledge (Rome), Perception, Discipline**.'
+      Knowledge (Law), Knowledge (Rome), Perception, Discipline**. **Faction Connections:**
+      Senatorial patronage networks, judicial magistrates, and neighborhood ward tribunals.'
   - type: h4
     text: Centurion / Decurion
   - type: p
     style: body
     text: 'The men (and, in the auxilia, sometimes the chieftains) who lead Rome''s
       soldiers and, often, its politics. Career skills: **Coercion, Cool, Discipline,
-      Leadership, Melee, Ranged (Light), Vigilance, Knowledge (Warfare)**.'
+      Leadership, Melee, Ranged (Light), Vigilance, Knowledge (Warfare)**. **Faction
+      Connections:** Legionary veteran associations, provincial military commands,
+      and frontier governors.'
   - type: h4
     text: Cursor
   - type: p
@@ -738,14 +764,18 @@ chapters:
     text: 'The imperial post-runner, dispatch courier, and message-bearer — sprinting
       through crowded avenues, riding post-horses along the *viae*, and bearing sensitive
       letters of state or private intrigue. Career skills: **Athletics, Coordination,
-      Cool, Discipline, Riding, Streetwise, Survival, Vigilance**.'
+      Cool, Discipline, Riding, Streetwise, Survival, Vigilance**. **Faction Connections:**
+      The imperial vehicular post (*cursus publicus*), municipal ward-masters, and
+      commercial dispatch syndicates.'
   - type: h4
     text: Gladiator
   - type: p
     style: body
     text: 'A fighter of the arena — condemned, enslaved, volunteer, or freed champion
       — schooled in a particular style of spectacular, lethal combat. Career skills:
-      **Athletics, Brawl, Coordination, Melee, Charm, Cool, Resilience, Vigilance**.'
+      **Athletics, Brawl, Coordination, Melee, Charm, Cool, Resilience, Vigilance**.
+      **Faction Connections:** Gladiatorial training barracks (*ludi*), equestrian
+      troupe-masters (*lanistae*), and partisan circus colors.'
   - type: h4
     text: Medicus
   - type: p
@@ -753,14 +783,17 @@ chapters:
     text: 'The physician — army surgeon, arena doctor, or fashionable Greek practitioner
       — skilled in the limited but real medicine of the age. Career skills: **Cool,
       Knowledge (the Gods), Knowledge (Rome), Medicine, Perception, Resilience, Streetwise,
-      Vigilance**.'
+      Vigilance**. **Faction Connections:** Asclepiad healing sanctuaries, gladiatorial
+      barracks retinues, and elite aristocratic households.'
   - type: h4
     text: Mercator
   - type: p
     style: body
     text: 'Trader, banker, ship-owner, or tax-farmer — the people who actually move
       the Empire''s wealth and know where every body is buried. Career skills: **Charm,
-      Cool, Deception, Negotiation, Streetwise, Knowledge (Rome), Operating, Perception**.'
+      Cool, Deception, Negotiation, Streetwise, Knowledge (Rome), Operating, Perception**.
+      **Faction Connections:** State contracting syndicates (*societates publicanorum*),
+      maritime shipping corporations (*corpora naviculariorum*), and Forum money-changers.'
   - type: h4
     text: Miles / Soldier
   - type: p
@@ -768,7 +801,8 @@ chapters:
     text: 'The backbone of the Empire: a professional soldier of a citizen legion,
       drilled in formation fighting, field engineering, and the long march. Career
       skills: **Athletics, Brawl, Discipline, Melee, Ranged (Light), Resilience, Survival,
-      Knowledge (Warfare)**.'
+      Knowledge (Warfare)**. **Faction Connections:** Frontier legionary camps, auxiliary
+      cohorts, and veterans'' mutual-aid sodalities.'
   - type: h4
     text: Nobilis
   - type: p
@@ -776,7 +810,8 @@ chapters:
     text: 'The aristocrat climbing the *cursus honorum*: lawmaker, judge, provincial
       governor, spider at the center of a web of clients. Career skills: **Charm,
       Coercion, Deception, Leadership, Negotiation, Knowledge (Law), Knowledge (Rome),
-      Discipline**.'
+      Discipline**. **Faction Connections:** The senatorial order (*ordo senatorius*),
+      the imperial council (*consilium principis*), and ancestral client networks.'
   - type: h4
     text: Philosophus / Scholar
   - type: p
@@ -784,7 +819,9 @@ chapters:
     text: 'The philosopher, tutor, and keeper of Greek and Latin learning — steeped
       in Stoic or Epicurean ethics, logic, natural history, and disputation, often
       advising powerful households. Career skills: **Charm, Discipline, Knowledge
-      (Rome), Knowledge (Law), Knowledge (the Gods), Leadership, Negotiation, Perception**.'
+      (Rome), Knowledge (Law), Knowledge (the Gods), Leadership, Negotiation, Perception**.
+      **Faction Connections:** Noble domestic academies, philosophical schools, and
+      senatorial opposition circles.'
   - type: h4
     text: Sacerdos / Priest
   - type: p
@@ -792,7 +829,8 @@ chapters:
     text: 'Reader of omens, keeper of ritual, intermediary with the gods — and, not
       incidentally, a political power in their own right. Career skills: **Charm,
       Cool, Discipline, Knowledge (the Gods), Knowledge (Rome), Medicine, Vigilance,
-      Leadership**.'
+      Leadership**. **Faction Connections:** The pontifical and augural colleges (*collegia
+      sacerdotum*), civic temple sodalities, and foreign mystery cults.'
   - type: h4
     text: Scriba / Clerk
   - type: p
@@ -800,14 +838,18 @@ chapters:
     text: 'The professional secretary, public notary, or household accountant who
       records transactions, drafts official petitions, audits municipal taxes, and
       tracks administrative records. Career skills: **Cool, Deception, Discipline,
-      Knowledge (Law), Knowledge (Rome), Negotiation, Perception, Skullduggery**.'
+      Knowledge (Law), Knowledge (Rome), Negotiation, Perception, Skullduggery**.
+      **Faction Connections:** Imperial administrative bureaus (*a libellis*, *ab
+      epistulis*), municipal magistrates, and financial syndicates.'
   - type: h4
     text: Explorator
   - type: p
     style: body
     text: 'The scout, spy, and courier — eyes beyond the frontier and ears within
       it. Rome''s intelligence service wore many hats. Career skills: **Deception,
-      Perception, Ranged (Light), Riding, Skullduggery, Stealth, Streetwise, Survival**.'
+      Perception, Ranged (Light), Riding, Skullduggery, Stealth, Streetwise, Survival**.
+      **Faction Connections:** Frontier intelligence units, provincial governors''
+      staffs, and cross-border trade networks.'
   - type: sidebar
     title: Status, Not Species
     body:
@@ -1019,6 +1061,50 @@ chapters:
       slave) recalls a stranger''s name, family, and weakness: make an Average Knowledge
       (Rome) check; on success, immediately learn one Strength or Flaw of a present
       character without spending [[advantage]].'
+  - type: h4
+    text: Publican's Agent
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: When your character takes this talent, they gain Negotiation or Knowledge
+      (Rome) as a career skill. In addition, once per session they may collect a small
+      favor from a commercial syndicate, tax bureau, or customs house (*portorium*),
+      even if none is owed.
+  - type: h4
+    text: Circus Partisan
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: When your character takes this talent, they gain Athletics or Charm as a
+      career skill. In addition, once per session they may collect a small favor from
+      a circus faction (*factio*) or gladiatorial barracks (*ludus*), even if none
+      is owed.
+  - type: h4
+    text: Temple Acolyte
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: When your character takes this talent, they gain Knowledge (the Gods) or
+      Discipline as a career skill. In addition, once per session they may collect
+      a small favor from a civic priestly college or consecrated temple, even if none
+      is owed.
+  - type: h4
+    text: Initiate of the Mysteries
+  - type: p
+    style: body
+    text: '**Tier:** 1   **Activation:** Passive   **Ranked:** No'
+  - type: p
+    style: body
+    text: When your character takes this talent, they gain Knowledge (the Gods) or
+      Streetwise as a career skill. In addition, once per session they may collect
+      a small favor from an Isiac congregation, Mithraic cell, or foreign diaspora
+      community, even if none is owed.
   - type: h3
     text: Tier 2
   - type: h4
@@ -1261,6 +1347,22 @@ chapters:
       • **Big Favor:** Your character begins owing a life-altering favor to a high-ranking
       patrician, general, or imperial freedman for an additional 1,500 sesterces of
       gear or 20 starting XP.'
+  - type: p
+    style: body
+    text: '**Story Points and Factions:** Obligations and influence are active forces
+      at the game table. Players and the Game Master may tap into faction networks
+      through the Story Point economy:
+
+
+      • **Player Benefit:** A player may spend 1 Story Point to call in a Small or
+      Regular favor from an affiliated faction or patron immediately during a scene,
+      without expending any banked favors already recorded on their character sheet.
+
+
+      • **GM Leverage:** The Game Master may flip 1 Story Point to introduce an urgent,
+      inconvenient demand from an affiliated faction or patron that requires immediate
+      attention, complicating the party’s current plans or placing competing duties
+      upon the character.'
   - type: h2
     text: "Factions & Roman Orders"
   - type: p
@@ -1277,6 +1379,22 @@ chapters:
   - type: p
     style: body
     text: "**At the Table:** Syndicates provide capital, logistics, and legal protection. A **Small Favor** secures passage on a grain freighter or expedited customs clearance. A **Regular Favor** secures a commercial loan of 500 sesterces, insider advance notice on tax leases, or guild muscle from the builders. A **Big Favor** secures an imperial mining lease or quashes a governor's inquiry into private ledgers. When dealing with syndicates and trade corporations, characters add [[boost]] to Negotiation and Knowledge (Commerce) checks concerning commerce or state contracts, but face [[setback]] on social checks with aggrieved provincial subjects or austere senatorial traditionalists."
+  - type: table
+    style: gear
+    columns:
+    - Tier
+    - Value / Scope
+    - Examples
+    rows:
+    - - Small
+      - 100 HS
+      - Grain-freighter passage; expedited customs clearance (*portorium*).
+    - - Regular
+      - 500 HS
+      - Commercial loan; notice of tax leases; guild muscle (*fabri*).
+    - - Big
+      - 1,500 HS
+      - Imperial mining lease; quashing a governor's audit.
   - type: h3
     text: "Neighborhood Wards & Urban Associations (Vici, Compitalia, Sodalitates)"
   - type: p
@@ -1288,6 +1406,22 @@ chapters:
   - type: p
     style: body
     text: "**At the Table:** Neighborhood associations provide street knowledge, concealment, and mob leverage. A **Small Favor** secures safe shelter in a tenement garret for three days or early warning of approaching watchmen. A **Regular Favor** mobilizes a ward crowd to pack a court hearing, shut down a market street, or provide neighborhood witnesses. A **Big Favor** secures an endowed tomb with an authorized burial guild or organizes citywide ward protests. Characters allied with local wards add [[boost]] to Streetwise and Skulduggery checks in their home district, but suffer [[setback]] on Stealth checks in unfamiliar wards where neighborhood lookouts watch every stranger."
+  - type: table
+    style: gear
+    columns:
+    - Tier
+    - Value / Scope
+    - Examples
+    rows:
+    - - Small
+      - Up to 100 HS
+      - Safe shelter in a tenement garret for three days; warning of approaching night watchmen; entry to a ward banquet.
+    - - Regular
+      - Up to 500 HS
+      - Mobilizing a ward crowd to pack a court hearing; shuttering a market street; providing neighborhood alibi witnesses.
+    - - Big
+      - Up to 1,500 HS
+      - Endowed family tomb with an authorized burial guild; orchestrating a citywide ward protest or bread strike.
   - type: h3
     text: "Spectacle Enterprises & Circus Factions (Factiones)"
   - type: p
@@ -1299,6 +1433,22 @@ chapters:
   - type: p
     style: body
     text: "**At the Table:** Spectacle factions offer popular acclaim, martial muscle, and public visibility. A **Small Favor** secures choice seating at the Circus Maximus or a private introduction to a star gladiator. A **Regular Favor** hires a squad of gladiators as bodyguards for a dangerous expedition, or directs a theatrical claque to acclaim or heckle a speaker in the Forum. A **Big Favor** rigs a high-stakes chariot race or orchestrates a synchronized demonstration of thousands of circus spectators to sway imperial policy. Characters wearing faction colors add [[boost]] to Charm and Leadership checks among fellow supporters, but face [[setback]] and open brawls when entering taverns dominated by rival colors."
+  - type: table
+    style: gear
+    columns:
+    - Tier
+    - Value / Scope
+    - Examples
+    rows:
+    - - Small
+      - Up to 100 HS
+      - Reserved seating at the Circus Maximus; private introduction to a star gladiator; faction livery and tavern pass.
+    - - Regular
+      - Up to 500 HS
+      - Squad of gladiators as bodyguards for a dangerous mission; hiring a theatrical claque to acclaim or heckle in the Forum.
+    - - Big
+      - Up to 1,500 HS
+      - Rigging a championship chariot race; orchestrating a synchronized demonstration of circus spectators to pressure the emperor.
   - type: h3
     text: "Civic Priesthoods & Sacred Colleges (Collegia Sacerdotum)"
   - type: p
@@ -1310,6 +1460,22 @@ chapters:
   - type: p
     style: body
     text: "**At the Table:** The sacred colleges command sacral authority and decisive procedural vetoes. A **Small Favor** grants access to a temple archive, a private purification ritual to remove an omen, or entry to a closed ceremonial feast. A **Regular Favor** halts a court proceeding or assembly vote by declaring a public holiday (*feriae*) or adverse omen, or secures formal sanctuary within a consecrated temple. A **Big Favor** arranges a consultation of the Sibylline Books or initiates an inquiry before the pontifical college. Characters holding priestly status add [[boost]] to Discipline and social checks invoking ancestral custom (*mos maiorum*), while anyone violating sacral law suffers [[setback]] on social interactions with pious citizens."
+  - type: table
+    style: gear
+    columns:
+    - Tier
+    - Value / Scope
+    - Examples
+    rows:
+    - - Small
+      - Up to 100 HS
+      - Access to a temple archive; private purification ritual to avert an omen; entry to a ceremonial collegial feast.
+    - - Regular
+      - Up to 500 HS
+      - Halting court proceedings by declaring an adverse omen (*obnuntiatio*); formal sanctuary within a consecrated temple.
+    - - Big
+      - Up to 1,500 HS
+      - Official consultation of the Sibylline Books; pontifical inquiry declaring a rival's contract or election impious and void.
   - type: h3
     text: "Foreign Enclaves, Mystery Cults, and Dissident Cells"
   - type: p
@@ -1321,6 +1487,22 @@ chapters:
   - type: p
     style: body
     text: "**At the Table:** Foreign enclaves offer Mediterranean-wide contacts, covert refuge, and esoteric lore. A **Small Favor** secures safe shelter in an enclave inn, translation of Greek or Aramaic documents, or discreet medical treatment. A **Regular Favor** secures concealed sanctuary in a subterranean *mithraeum* or domestic *titulus*, letters of introduction to merchant houses in Alexandria or Antioch, or financial relief from a community fund. A **Big Favor** arranges clandestine passage out of Italy on an uninspected cargo vessel or coordinates an overseas diaspora network to recover a lost heirloom. Characters allied with these groups add [[boost]] to Knowledge (the Gods) and Streetwise checks regarding overseas contacts, but suffer [[setback]] on social checks when scrutinized by suspicious city prefects."
+  - type: table
+    style: gear
+    columns:
+    - Tier
+    - Value / Scope
+    - Examples
+    rows:
+    - - Small
+      - Up to 100 HS
+      - Safe lodging in a diaspora inn; translation of Greek, Aramaic, or Punic documents; discreet herbal or surgical care.
+    - - Regular
+      - Up to 500 HS
+      - Concealed sanctuary in a subterranean *mithraeum* or house church; commercial letter of credit to Antioch or Alexandria.
+    - - Big
+      - Up to 1,500 HS
+      - Clandestine passage out of Italy on an uninspected cargo ship; mobilising overseas diaspora networks to recover lost assets.
   - type: h3
     text: "Aristocratic Patronage Blocs & Senatorial Factions"
   - type: p
@@ -1332,6 +1514,22 @@ chapters:
   - type: p
     style: body
     text: "**At the Table:** Aristocratic blocs control administrative influence, legal protection, and imperial favor. A **Small Favor** secures an invitation to a noble banquet (*convivium*), an official letter of recommendation (*commendatio*), or a reserved seat at a senate hearing. A **Regular Favor** secures legal representation by an eloquent advocate in a court trial, an introduction to an imperial freedman secretary, or an appointment to an equestrian officer post. A **Big Favor** secures an imperial pardon, a senatorial decree, or a private audience with the emperor. Characters backed by a senatorial patron add [[boost]] to Charm, Negotiation, and Leadership checks when dealing with civic magistrates, but face [[setback]] from the patron's jealous political adversaries."
+  - type: table
+    style: gear
+    columns:
+    - Tier
+    - Value / Scope
+    - Examples
+    rows:
+    - - Small
+      - Up to 100 HS
+      - Invitation to a noble banquet (*convivium*); letter of recommendation (*commendatio*); reserved seat at a senate hearing.
+    - - Regular
+      - Up to 500 HS
+      - Legal defense by an eloquent forensic advocate; introduction to an imperial freedman secretary; appointment as equestrian officer.
+    - - Big
+      - Up to 1,500 HS
+      - Imperial pardon from provincial exile; imperial or senatorial decree in client's favor; private audience with the Princeps.
 - title: 'Chapter 2: Equipment and Vehicles'
   blocks:
   - type: h2
@@ -1372,35 +1570,91 @@ chapters:
       with public bankers (*argentarii*), allowing large sums to travel between Rome,
       Alexandria, and Antioch without transporting tons of metal.'
   - type: h2
+    text: Acquiring Goods & Favor Economy
+  - type: p
+    style: body
+    text: 'Everyday goods and common provisions are sold openly in the markets of
+      the Empire — the Macellum, forum stalls, and street-corner shops. Scarce items
+      and haggled cargoes call for a **Negotiation** check, adjusted by local scarcity
+      and the merchant''s temper. Military ordnance, state monopolies, and illicit
+      instruments are **Restricted (R)** — imperial law forbids the civilian sale or
+      carriage of legionary armor, heavy artillery, poisons, and seditious documents.'
+  - type: p
+    style: body
+    text: 'Procuring Restricted goods means tapping the underworld with an **Average
+      ([[difficulty difficulty]]) or Hard ([[difficulty difficulty difficulty]])
+      Streetwise** check — through Subura craft *collegia*, corrupt quartermasters at
+      the *castra*, or smugglers at Ostia and Puteoli. Peril is severe: a [[despair]]
+      brings a raid by the night watch (*vigiles*), or extortion by an informer
+      (*delator*).'
+  - type: p
+    style: body
+    text: 'Often the better Roman method is not coin but the favor economy
+      (*beneficia* and *officia*): a character calls in an obligation from a patron,
+      faction, or syndicate to obtain equipment, vehicles, or official passes without
+      liquidating wealth. The table, **Equipment Acquisition via Favors**, fixes
+      what each tier buys.'
+  - type: table
+    style: gear
+    columns:
+    - Favor Tier
+    - Value / Rarity Limit
+    - Terms & Obligations
+    - Example Gear
+    rows:
+    - - Small
+      - 100 HS; Rarity 1–3
+      - Minor reciprocal service; goods returned undamaged.
+      - Common weapons, artisan tools, travel rations, a mule lent for an afternoon.
+    - - Regular
+      - 1,000 HS; Rarity 4–5
+      - Standing obligation, repaid in political or forensic support.
+      - Quality armor, a standard warhorse, a carriage for several days, uninspected permits.
+    - - Big
+      - Over 1,000 HS; Rarity 6+ or R
+      - Life-altering debt to a senator or general; lasting vulnerability.
+      - Lorica segmentata, a Cappadocian steed, a scorpio or ballista, forged customs seals.
+  - type: h2
     text: Weapons
   - type: p
     style: body
     text: '**Gladius.** The short, broad stabbing sword of the legions — the weapon
       that conquered the world, designed for close, disciplined butchery behind a
-      shield wall.'
+      shield wall. Models include the Mainz-pattern infantry sword turned out by the
+      Rhine frontier fabricae (*Fabrica Mogontiacensis*), the Pompeii-pattern straight
+      blade stamped with the mark of *Statius of Puteoli*, and the high-carbon
+      Celtiberian blade forged at Bilbilis (*ferrum Celtibericum*).'
   - type: p
     style: body
     text: '**Pugio.** The military dagger; a sidearm, a tool, and — famously — the
-      blade of choice for assassinating emperors.'
+      blade of choice for assassinating emperors. Models include the bronze-damascened
+      officer''s dagger of *Vindonissa*, the silver-inlaid sidearm carried by Praetorian
+      Guardsmen, and the stamped iron trench knife issued to Danubian auxiliaries.'
   - type: p
     style: body
     text: '**Spatha.** A longer sword favored by cavalry and, later, the whole army;
-      more reach than the gladius but less suited to the press of the shield wall.'
+      more reach than the gladius but less suited to the press of the shield wall.
+      Models include the Celtic longsword adopted by auxiliary cavalry and a Syrian
+      pattern built on a carved bone pommel.'
   - type: p
     style: body
     text: '**Hasta.** The thrusting spear, carried by auxiliaries, triarii of old,
-      and guardsmen. Its reach keeps enemies at bay.'
+      and guardsmen. Its reach keeps enemies at bay. Models include the Sabine ash
+      shaft with an iron leaf-shaped tip and the plain spear held in the armories of
+      the municipal watch.'
   - type: p
     style: body
     text: '**Pilum.** The heavy legionary javelin, hurled in a volley just before
       contact. Its soft iron shank bends on impact, fouling an enemy''s shield and
       rendering it useless — and it cannot easily be thrown back (see the *Pilum Volley*
-      talent).'
+      talent). Models include the Imperial arsenal standard issued at Aquileia and
+      the heavy weighted lead-ball pattern (*pilum ballistarium*).'
   - type: p
     style: body
     text: '**Fuscina & Rete (Trident and Net).** The signature arms of the *retiarius*
       gladiator: a long trident for reach and a weighted net to entangle and trip
-      a foe before the kill.'
+      a foe before the kill. Models include the Campanian armory trident with flared
+      barbs and the weighted linen net of the Pozzuoli fishing *collegium*.'
   - type: p
     style: body
     text: '**Caestus.** A leather boxing-glove bound with iron or lead and sometimes
@@ -1422,25 +1676,33 @@ chapters:
   - type: p
     style: body
     text: '**Lorica Segmentata.** The iconic banded iron plate of the Imperial legionary:
-      excellent protection, issued by the army and rarely seen in civilian hands.'
+      excellent protection, issued by the army and rarely seen in civilian hands.
+      Models include the Corbridge-type articulated iron plate of the imperial arms
+      manufactories at Aquileia and the heavier Newstead-pattern cuirass.'
   - type: p
     style: body
     text: '**Lorica Hamata.** Mail; heavier but more flexible, worn by legionaries,
-      auxiliaries, and the wealthy for centuries.'
+      auxiliaries, and the wealthy for centuries. Models include the Gallic
+      double-shoulder mail (*lorica Gallica*), the riveted ring-mesh of Syrian
+      auxiliaries, and a gilded parade cuirass made for equestrian cavalry prefects.'
   - type: p
     style: body
     text: '**Lorica Squamata.** Scale armor — bronze or iron scales sewn to a backing;
-      flashy, favored by officers, standard-bearers, and some auxiliaries.'
+      flashy, favored by officers, standard-bearers, and some auxiliaries. Models
+      include the Syrian scale cuirass stitched to a linen backing and the Danubian
+      corselet set with brass scales.'
   - type: p
     style: body
     text: '**Galea.** The military helmet, with cheek-guards and neck-flare. (If a
       character already wears body armor granting Soak, the helmet''s benefit is included;
-      worn alone it grants Soak +1.)'
+      worn alone it grants Soak +1.) Models include the Imperial Gallic helmet with
+      its bronze brow reinforcement and neck guard, and the Weisenau-type iron helmet.'
   - type: p
     style: body
     text: '**Scutum.** The great curved rectangular shield — a wall of plywood and
       iron that is half the legion''s doctrine. It can also be punched into a foe''s
-      face.'
+      face. Models include the curved plywood shield turned out by the *Fabri Tignuarii*
+      of Rome and the frontier shield faced with rawhide.'
   - type: p
     style: body
     text: '**Parma / Gladiator Shield.** Smaller round or rectangular shields used
@@ -1779,11 +2041,13 @@ chapters:
       3 strain and is knocked prone. — *Encumbrance 1 · 30 HS · Rarity 3.*'
   - type: p
     style: body
-    text: '**Poison (*venenum*).** From a bad-oyster purge to a senator''s favourite.
+    text: '**Poison (*venenum*).** From a bad-oyster purge to a senator''s favorite.
       An attacker who applies or administers a dose forces a Resilience check whose
       difficulty the GM sets by potency — **Average** for a crude purge, up to **Daunting**
       for a king''s draught — inflicting wounds, strain, or a Critical Injury on a
-      failure. — *Encumbrance 0 · 300 HS (R) · Rarity 7.*'
+      failure. Known preparations include Thessalian hemlock extract and Alexandrian
+      serpent venom, the latter carried through the port of Puteoli in sealed
+      amphorae. — *Encumbrance 0 · 300 HS (R) · Rarity 7.*'
   - type: h2
     text: Social Instruments
   - type: p
@@ -1802,8 +2066,8 @@ chapters:
   - type: p
     style: body
     text: '**Letter of Recommendation (*litterae commendaticiae*).** A named patron''s
-      written favour. Spend it as a Favour, or add [[boost boost]] to a single first-meeting
-      social check with its addressee. — *Encumbrance 0 · 100 HS or a Favour owed
+      written favor. Spend it as a Favor, or add [[boost boost]] to a single first-meeting
+      social check with its addressee. — *Encumbrance 0 · 100 HS or a Favor owed
       · Rarity 4.*'
   - type: p
     style: body
@@ -1815,13 +2079,27 @@ chapters:
     style: body
     text: '**A Claque.** A hired body of applauders, treated as a minion group. While
       present, your character may spend their reactions to bank [[boost]] toward the
-      crowd-mood of a speech. — *Encumbrance — · 500 HS per performance · Rarity 4.*'
+      crowd-mood of a speech. Claques are booked through the organizers of the
+      theatrical *factiones*, who can supply a paid audience by the following
+      morning. — *Encumbrance — · 500 HS per performance · Rarity 4.*'
+  - type: p
+    style: body
+    text: '**Client Retinue (*comitatus*).** A train of dependants who walk you through
+      the Forum and lend your person the weight of numbers. Treat the retinue as a
+      minion group that adds [[boost]] to Charm and Coercion checks where visible
+      support matters. A retinue hired for show rather than bound by *clientela*
+      scatters at the first drawn blade. Such trains are raised through the Ostian
+      carpenters'' guild (*Fabri Tignuarii*) or through a theatrical claque organizer,
+      who supplies twenty men by morning for a fee. — *Encumbrance — · 200 HS per
+      day · Rarity 3.*'
   - type: p
     style: body
     text: '**A Dossier of Dirt.** Evidence of a target''s guilty secret, the *delator''s*
       stock-in-trade. It reveals one of the target''s Flaws automatically and, if
-      made public, costs them 1 Dignitas. — *Encumbrance 0 · 1,000 HS (R) · Rarity
-      6.*'
+      made public, costs them 1 Dignitas. Such files come from informant syndicates
+      of the kind that served *Marcus Aquilius Regulus*, or from the street-surveillance
+      ledgers kept by the *vicomagistri* of the Subura and sold by their clerks. —
+      *Encumbrance 0 · 1,000 HS (R) · Rarity 6.*'
   - type: p
     style: body
     text: '**A Well-Placed Bribe.** Coin as argument; adds [[boost]] to a Negotiation
@@ -1928,6 +2206,10 @@ chapters:
       - —
       - '500'
       - '4'
+    - - Client retinue
+      - —
+      - 200/day
+      - '3'
     - - Dossier of dirt
       - '0'
       - 1,000 (R)
@@ -1940,14 +2222,15 @@ chapters:
     text: Beasts & Vehicles
   - type: p
     style: body
-    text: Roman “vehicles” are drawn by muscle and wind. The profiles below use the
-      standard Genesys vehicle format (Silhouette / Speed / Handling, Defense, Armor,
-      Hull Trauma and System Strain thresholds). Mounts use the simplified animal
-      rules; treat a horse's “system strain” as its fatigue.
+    text: Roman “vehicles” move by muscle and wind. Profiles use the standard Genesys
+      vehicle format (Silhouette, Speed, Handling, Defense, Armor, Hull Trauma, System
+      Strain). Mounts use the animal rules, reading a horse's “system strain” as its
+      fatigue.
   - name: Racing Chariot (Biga / Quadriga)
-    desc: 'A light wicker-and-wood car drawn by two or four horses, built for the
-      *Circus Maximus*: terrifyingly fast, almost no protection, and prone to the
-      spectacular wreck (*naufragium*) that the crowds adore.'
+    desc: 'A light wicker-and-wood car drawn by two or four horses for the *Circus
+      Maximus*: fast, unprotected, and prone to the wreck (*naufragium*) the crowds
+      adore. Models include the ash *biga* of the circus wheelwrights and the
+      *quadriga* tuned by Green faction stable-masters.'
     fields:
     - label: Sil
       text: '2'
@@ -1976,13 +2259,14 @@ chapters:
     - label: Weapons
       text: none (the driver carries a knife to cut the reins lashed to his waist).
     - label: Note
-      text: On a despair at speed, the chariot may overturn — the driver, reins bound
-        to his body, is dragged (see Chariot Racing, GM Advice).
+      text: On a despair the chariot overturns; the driver, reins bound to his body,
+        is dragged (see Chariot Racing).
     type: statblock
   - name: Travel Carriage & Ox-Cart (Raeda / Plaustrum)
     desc: The four-wheeled *raeda* carried people and baggage along the great roads;
       the ox-drawn *plaustrum* hauled freight at a crawl. Slow, but the lifeblood
-      of overland trade.
+      of overland trade. Models include the Cisalpine carriage built by the guild of
+      Mediolanum and the heavy baggage *plaustrum* on iron-rimmed wheels.
     fields:
     - label: Sil
       text: '2'
@@ -2012,6 +2296,8 @@ chapters:
   - name: Liburnian (Light Galley)
     desc: The fast, two-banked warship that became the workhorse of the Imperial navy
       — patrol, anti-piracy, and dispatch. Drawn from the pirate craft of Illyria.
+      Models include the patrol galley laid down at the naval shipyards of Misenum and
+      the Illyrian cedar runner, still the fastest hull of the pattern.
     fields:
     - label: Sil
       text: '4'
@@ -2045,7 +2331,8 @@ chapters:
   - name: Trireme (War Galley)
     desc: The classic three-banked galley of Mediterranean warfare — a floating battering-ram
       crewed by free oarsmen (Rome, unlike legend, rarely used slave rowers in its
-      war fleets).
+      war fleets). Models include the war galley of the *Classis Ravennas* and the
+      Alexandrian flagship trireme.
     fields:
     - label: Sil
       text: '5'
@@ -2075,7 +2362,9 @@ chapters:
     type: statblock
   - name: Merchantman (Corbita)
     desc: The broad-bellied sailing freighter that carried Egyptian grain to feed
-      the million mouths of Rome. Slow, unarmed, and a pirate's dream.
+      the million mouths of Rome. Slow, unarmed, and a pirate's dream. Models include
+      the grain-carrier commissioned by the *Corpora Naviculariorum* of Ostia and the
+      Greek amphora freighter out of Rhodes.
     fields:
     - label: Sil
       text: '5'
@@ -2415,6 +2704,30 @@ chapters:
       bloc; inflicting strain past that bloc's wound threshold **commits** its votes
       to that side. When every bloc has committed (or the session ends), tally the
       votes.
+  - type: p
+    style: body
+    text: 'Behind the bench-groups stand four standing interests, each answering to a
+      faction type from the earlier chapters. **The Old Guard** (*optimates*) are
+      traditionalist senators defending senatorial supremacy and ancestral custom,
+      and they keep close to the great priestly colleges (*collegia sacerdotum*).
+      **The Imperial Bureau** gathers senators and equestrians tied to the imperial
+      house (*domus Augusta*), the Praetorian prefect, and the imperial secretariats
+      for correspondence (*ab epistulis*) and petitions (*a libellis*); it is the
+      largest bloc by patronage and the smallest by conviction. **The Financial
+      Interest** is composed of senators holding shares in the tax-farming syndicates
+      (*societates publicanorum*) and the grain contracts, who vote with the syndicates
+      whose ledgers they share. **The Popular Tribunes** are magistrates and tribunes
+      who carry the petitions and grain grievances of the neighborhood wards (*vici*)
+      into the assembly.'
+  - type: p
+    style: body
+    text: 'A character''s faction membership sets each bloc''s baseline stance. A
+      publican''s ally begins friendly with the Financial Interest and at [[setback]]
+      with the Old Guard; a priest''s household begins friendly with the Old Guard and
+      at [[setback]] with the Popular Tribunes. A named patron''s favor can override
+      that baseline for a single hearing, at the cost of the obligation described
+      above. Alignment adjusts the difficulty of an appeal and the options open to
+      the speaker; it never guarantees a vote.'
   - type: procedure
     title: Procedural Trump Cards
     steps:
@@ -2481,6 +2794,30 @@ chapters:
     - '**Appeal to pity** — the weeping family, the old general baring his scars —
       is a *Pathos* appeal with a prop, adding [[boost boost]]. Cicero won cases this
       way.'
+  - type: h4
+    text: Trials as Factional Contests
+  - type: p
+    style: body
+    text: 'Three standing charges turn the courtroom into an institutional collision.
+      A prosecution for extortion (*repetundae*) pits a provincial delegation and the
+      publican syndicates against a senatorial governor before an equestrian jury, so
+      the jury''s own class interest is the real battlefield. A treason charge
+      (*maiestas*) is a *delator* syndicate prosecuting a senatorial rival to seize
+      his estate and standing, with the emperor as the only audience that matters. A
+      sacral inquiry — *incestum*, or the desecration of a temple — has the pontifical
+      college judge a Vestal or a shrine, and the verdict is religious while its
+      consequence is political.'
+  - type: p
+    style: body
+    text: 'Faction backing supplies each side''s pool of assets: witnesses, advocates,
+      documentary evidence, procedural objections. A character''s own faction decides
+      which of those assets are available without a check. A senatorial patron produces
+      the advocate and the character witnesses; a syndicate produces the ledgers and
+      the clerk who copied them; a ward produces the crowd outside the court and the
+      men who will swear to anything. Roll for the rest — Knowledge (Law) to find the
+      precedent, Negotiation to hold a wavering witness, Coercion or Deception to break
+      one — and let a [[triumph]] produce the document the other side believed burned,
+      a [[despair]] reveal that your patron has already settled with the prosecutor.'
   - type: h3
     text: The Salutatio & the Favor Economy
   - type: p
@@ -2497,6 +2834,18 @@ chapters:
       a magistrate''s leave to address a meeting. An *amicitia* Favor is called in
       between equals with no Dignitas-gap limit, but breaking one costs extra reputation,
       because it shames both parties.'
+  - type: p
+    style: body
+    text: 'Faction attendance turns the morning greeting into a favor pool. A patron
+      of senatorial or equestrian rank banks a number of small favors each session
+      from the client base their Dignitas supports; the *Morning Clients* talent gives
+      that rule. A client who attends a faction patron''s *salutatio* may bank one
+      small favor from that patron''s faction per session — and the patron may then
+      call on them in the same session, through the Story Point leverage described in
+      character creation Step 6. The setting of the greeting fixes the kind of favor:
+      senatorial *salutationes* generate political obligations, the *stationes* of the
+      syndicates generate commercial ones, and a *vicus* crossroads shrine generates
+      neighborhood ones.'
   - type: procedure
     title: Using Favors
     steps:
@@ -2577,6 +2926,15 @@ chapters:
   - type: h4
     text: Forum Romanum
   - type: p
+    text: '**Faction hold.** The Senatorial Order and the equestrian *societates
+      publicanorum* hold this ground. The *Basilica Aemilia* is their
+      exchange, where shares in tax-farming contracts change hands within
+      sight of the courts, and a word under its arcades can price a province''s
+      revenue before the Senate has voted. Their lever is the law itself,
+      argued and bought in the same morning. The Palatine''s imperial bureau
+      contests it, drawing petitions and appeals up the hill to secretariats
+      that answer to no magistrate.'
+  - type: p
     text: 'The paved valley between the Palatine and Capitoline hills forms the political,
       religious, and legal heart of the Mediterranean world (*Regio VIII Forum Romanum
       Magnum*). The *Via Sacra*, or Sacred Way, cuts through the plaza, lined by venerable
@@ -2633,6 +2991,15 @@ chapters:
   - type: h4
     text: The Palatine
   - type: p
+    text: '**Faction hold.** The Imperial Bureau holds this ground: the imperial
+      house (*domus Augusta*), the secretariats for correspondence and
+      petitions (*ab epistulis*, *a libellis*), and the Praetorian Guard at
+      every archway. The lever is access — to the emperor''s ear, to the
+      treasury''s signature, to the guard''s silence — and access decides which
+      petitions are answered at all. Senatorial houses contest it, buying
+      clients and informers among the palace freedmen to learn what the hill
+      intends before the hill announces it.'
+  - type: p
     text: Rising steeply above the Forum, the Palatine Hill (*Regio X Palatium*) is
       the premier residential quarter of the imperial family and the highest senatorial
       aristocracy. Here stands the sprawling imperial palace complex—the *Domus Augustana*
@@ -2672,7 +3039,7 @@ chapters:
     fields:
     - label: Motivations
       text: 'Desire: to be indispensable to the throne. Fear: a new emperor, a new
-        favourite. Strength: he controls access and money. Flaw: a freedman''s hunger
+        favorite. Strength: he controls access and money. Flaw: a freedman''s hunger
         for the respect birth denies him.'
     - label: Skills
       text: Knowledge (Rome) 4, Knowledge (Law) 3, Negotiation 3, Deception 3, Charm
@@ -2686,6 +3053,15 @@ chapters:
         princeps — treat as the *Emperor''s known wish* against those he opposes.'
   - type: h4
     text: The Capitoline
+  - type: p
+    text: '**Faction hold.** The Civic Priesthoods hold this ground: the pontifical
+      and augural colleges (*collegia sacerdotum*), the mint of Juno Moneta,
+      and the *Tabularium*, whose bronze laws and decrees are the state''s
+      memory. The lever is the sacral veto — an adverse omen (*obnuntiatio*)
+      suspends public business for the day, and a priest who keeps the
+      calendar decides what the state may lawfully do. The imperial bureau
+      contests it, pressing to move the archives and the auspices into
+      imperial hands.'
   - type: p
     text: The rugged double-crested citadel hill looming over the Forum (*Mons Capitolinus*)
       is Rome's supreme religious sanctuary. The southern summit (*Capitolium*) is
@@ -2705,8 +3081,53 @@ chapters:
       condemned client of the PCs is scheduled to be cast from the Tarpeian Rock at
       dawn on trumped-up charges of sacrilege; the party has one night to break into
       the Tabularium and retrieve the true imperial decree proving his innocence.'
+  - type: statblock
+    name: Cornelia
+    kind: Nemesis
+    desc: 'The Chief Vestal (*Virgo Vestalis Maxima*), keeper of the sacred flame
+      and of the wills Romans deposit with the Vestals. She has outlasted
+      three emperors by never once appearing to choose between them.'
+    chars:
+      Br: '1'
+      Ag: '1'
+      Int: '3'
+      Cun: '3'
+      Will: '5'
+      Pr: '4'
+    derived:
+      Soak: 2
+      W.T.: '11'
+      S.T.: '18'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: 'Desire: the flame kept and the college''s authority intact. Fear:
+        an emperor who treats the rites as an instrument of policy.
+        Strength: she holds wills, secrets, and the calendar. Flaw: she
+        will not bend a rite for politics.'
+    - label: Skills
+      text: 'Knowledge (the Gods) 4, Knowledge (Law) 3, Discipline 4, Cool 3,
+        Charm 2, Vigilance 3.'
+    - label: Talents
+      text: 'Adversary 2; Nobody''s Fool; Temple Acolyte.'
+    - label: Abilities
+      text: '**Ritual Impediment:** she may halt any public proceeding — a
+        court, an assembly, a contract signed in the forum — by declaring
+        the day *vitio* and the rites polluted; only a Formidable
+        Knowledge (the Gods) check or an explicit imperial order sets it
+        aside. **The Vestals'' Sanctuary:** anyone she receives within the
+        temple precinct cannot be lawfully seized there; the protection
+        holds for one night and costs her a Favor from the college.'
   - type: h4
     text: The Subura
+  - type: p
+    text: '**Faction hold.** The Neighborhood Wards hold this ground: the *vici*
+      and their *vicomagistri*, the craft *collegia*, and the crossroads
+      shrines of the *Lares Compitales*. The lever is labour and the street —
+      ward-masters can shutter the artisan shops on a morning''s notice and put
+      a crowd on a corner before the watch arrives. The *lanistae* and the
+      Circus colors contest it, recruiting the same young men for the arena
+      and the faction gangs, and paying better.'
   - type: p
     text: Nestled in the low-lying depression between the Esquiline and Viminal hills
       (*Regio IV Templum Pacis* and *Regio VI Alta Semita*), the Subura is Rome's
@@ -2761,6 +3182,14 @@ chapters:
   - type: h4
     text: The Aventine
   - type: p
+    text: '**Faction hold.** The plebeian assembly and the trade *collegia* hold
+      this ground: the *scholae* of the dockers, measurers, and potters, and
+      the Temple of Ceres, which keeps the tribunes'' archives. The lever is
+      the voting bloc — a guild that walks together to the assembly can carry
+      a tribe, and its officers know exactly which names to call. Senatorial
+      patrons contest it, buying those blocs with loans and legal favors and
+      calling in the debt at election time.'
+  - type: p
     text: Rising south of the Forum and overlooking the Tiber wharves, the Aventine
       Hill (*Regio XIII Aventinus*) has been the spiritual and political citadel of
       the plebeians since the earliest days of the Republic. Outside the ancient Servian
@@ -2780,8 +3209,54 @@ chapters:
       entire guild of Aventine potters to build a luxury bath complex; the guild hires
       the PCs to find the lost Republican land-charter in the Temple of Ceres before
       hired thugs burn their kilns.'
+  - type: statblock
+    name: Gaius Vibidius
+    kind: Rival
+    desc: 'A patron of an artisan *collegium* and broker of a ward bloc on the
+      Aventine. He sells the votes of his neighbours to whichever senator
+      pays, and keeps a tally of who has paid late.'
+    chars:
+      Br: '2'
+      Ag: '2'
+      Int: '3'
+      Cun: '5'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: 3
+      W.T.: '13'
+      S.T.: '15'
+      Def (M/R): 0/0
+    fields:
+    - label: Motivations
+      text: 'Desire: to be the man both sides must pay. Fear: a patron who
+        decides he can be replaced. Strength: he owns the ward roll and
+        knows every household on it. Flaw: he cannot resist selling one
+        bloc twice.'
+    - label: Skills
+      text: 'Streetwise 4, Negotiation 3, Coercion 3, Deception 3, Knowledge
+        (Rome) 2, Vigilance 3.'
+    - label: Talents
+      text: 'Adversary 2; Morning Clients; Client Network; a standing minion
+        group of *Street Toughs*.'
+    - label: Abilities
+      text: '**Call the Ward:** once per session he puts a hundred neighbours
+        into the street within the hour, adding [[boost boost]] to
+        Coercion and Charm checks against anyone who must go on living
+        there. **Shut the Street:** he can close a market street or a row
+        of workshops for a day, starving a rival''s trade and forcing the
+        argument to happen on his terms.'
   - type: h4
     text: The Esquiline, Quirinal, Viminal & Caelian
+  - type: p
+    text: '**Faction hold.** Spectacle Enterprises hold this ground: the
+      gladiatorial barracks (*ludi*) on the Caelian and the trainers who
+      supply the games, set among the senatorial gardens (*horti*) that cover
+      the Esquiline slopes. The lever is the arena — a *ludus* lends muscle
+      for a bodyguard contract and fills a bench with its own men, and the
+      *lanista* decides which names fight and therefore which names the crowd
+      will shout. The ward organizations contest it in the crowded quarters
+      below, where the barracks and the *vici* recruit from the same families.'
   - type: p
     text: These four vast crescent hills form the eastern residential and garden arc
       of Rome (*Regiones II, III, V, and VI*). The Esquiline is a district of stark
@@ -2831,7 +3306,7 @@ chapters:
     - label: Abilities
       text: '**Showman''s Kill:** when he wins a melee check he may spend [[advantage]]/[[triumph]]
         to work the crowd, swinging the race-day/arena mood and the editor''s *missio*
-        vote. **The Crowd''s Favourite:** so long as the mob loves him, even his master
+        vote. **The Crowd''s Favorite:** so long as the mob loves him, even his master
         dares not simply dispose of him.'
   - type: statblock
     name: Hermogenes
@@ -2868,6 +3343,14 @@ chapters:
   - type: h4
     text: The Campus Martius
   - type: p
+    text: '**Faction hold.** The Civic Priesthoods hold this ground alongside the
+      voting enclosures: the augurs read the sky here, and the *Saepta Julia*
+      gathers the tribes for elections. The lever is the sacred calendar and
+      the assembly ground — an augur''s ruling can void a voting day, and the
+      *Saepta* can be opened, closed, or filled with the right faces. The
+      Circus factions contest it, leasing the theaters and stadium space and
+      turning a political crowd into an audience that cheers on cue.'
+  - type: p
     text: 'The broad alluvial plain enclosed by the western bend of the Tiber (*Regio
       IX Circus Flaminius*), the Campus Martius lies entirely outside the sacred pomerium.
       Originally the military muster ground dedicated to Mars, it has been transformed
@@ -2888,8 +3371,53 @@ chapters:
       at the Theater of Pompey, an assassin strikes down a visiting Armenian princeling
       beneath the statue of Pompey; the party must pursue the hooded killer through
       the endless shadow of the colonnades.'
+  - type: statblock
+    name: Lucius Calpurnius
+    kind: Rival
+    desc: 'An augur of the college who reads the auspices for a fee, and sells the
+      reading that suits the buyer. His ruling can void an assembly day, which
+      makes him worth more than his modest fees suggest.'
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '4'
+      Cun: '4'
+      Will: '4'
+      Pr: '4'
+    derived:
+      Soak: 2
+      W.T.: '12'
+      S.T.: '17'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: 'Desire: to be believed. Fear: a rival augur with better luck and a
+        straighter face. Strength: he reads the sky and names the lawful
+        day. Flaw: he will sell the same omen to the higher bidder.'
+    - label: Skills
+      text: 'Knowledge (the Gods) 4, Knowledge (Rome) 3, Charm 3, Deception 3,
+        Discipline 3, Perception 3.'
+    - label: Talents
+      text: 'Adversary 1; Temple Acolyte; Nobody''s Fool.'
+    - label: Abilities
+      text: '**Read the Sky:** once per session, when a check would decide an
+        assembly, an election, or a court day, he forces a reroll of that
+        check and adds [[setback]] to the second result; the second result
+        stands. **Ancestral Custom:** invoking *mos maiorum*, he adds
+        [[boost boost]] to a social check against any magistrate or
+        senator who claims to defend the old ways — and a [[despair]] on
+        that check leaves the claim exposed as hollow.'
   - type: h4
     text: Transtiberim
+  - type: p
+    text: '**Faction hold.** The foreign enclaves and the maritime transport
+      corporations (*corpora naviculariorum*) hold this ground: the
+      synagogues, the Iseum, the mystery cells, and the dockers who unload the
+      grain fleet. The lever is the cargo — a shipper''s clerk knows what came
+      ashore and what was never entered in the customs ledger (*portorium*),
+      and a diaspora congregation can hide a man or a crate for a week. The
+      *vigiles* and the grain prefect (*praefectus annonae*) contest it,
+      raiding the wharves and counting the *annona*''s sacks.'
   - type: p
     text: Lying across the Tiber on the river's right bank (*Regio XIV Transtiberim*),
       this vibrant, polyglot quarter is home to Rome's foreign communities, sailors,
@@ -2945,6 +3473,14 @@ chapters:
   - type: h4
     text: 'The Commercial Quarters: Boarium, Velabrum & Argiletum'
   - type: p
+    text: '**Faction hold.** The Financial Interest holds this ground: the
+      money-changers of the Forum Boarium, the *stationes* of the trade
+      corporations, and the grain measurers (*mensores frumentarii*) of the
+      Emporium. The lever is credit — a banker''s refusal freezes a cargo at
+      the wharf, and the measurers'' tally decides what a shipload is worth
+      before it is sold. The Subura wards contest it over market turf, taxing
+      the stalls and the porters in the name of the *vicus*.'
+  - type: p
     text: These three low-lying quarters form the commercial connective tissue of
       central Rome (*Regio XI Circus Maximus* and neighboring valleys). The *Forum
       Boarium* is the ancient cattle market beside the Tiber, home to the round Temple
@@ -2964,8 +3500,55 @@ chapters:
       imperial silver coins stamped with Trajan''s likeness begin circulating through
       the money-tables of the Forum Boarium; the PCs trace the illicit dies down into
       the brick tunnels of the Cloaca Maxima.'
+  - type: statblock
+    name: Tiberius Iunius
+    kind: Rival
+    desc: 'An *argentarius* of the Forum Boarium and broker of grain contracts,
+      whose letters of credit clear payment from Ostia to Alexandria. He has
+      never shipped a cargo in his life and knows the price of every one.'
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '4'
+      Cun: '4'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: 2
+      W.T.: '12'
+      S.T.: '16'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: 'Desire: a ledger no patron can audit. Fear: a run on his bank that
+        paper cannot cover. Strength: every great house''s signature sits
+        in his strongbox. Flaw: he trusts a written contract more than any
+        man.'
+    - label: Skills
+      text: 'Negotiation 4, Knowledge (Rome) 3, Knowledge (Law) 3, Cool 3,
+        Deception 2, Perception 2.'
+    - label: Talents
+      text: 'Adversary 1; Publican''s Agent; a web of correspondents in Ostia
+        and Alexandria.'
+    - label: Abilities
+      text: '**Freeze the Credit:** once per session he refuses a draft or
+        calls in a loan under pressure; the target''s purchase, contract,
+        or bribe fails, and their next Negotiation check in that market
+        adds [[setback setback]]. **Letters of Credit:** a *nomen* he
+        signs clears payment in any port where his correspondents keep a
+        *statio*, so the party can carry a fortune across the
+        Mediterranean as paper.'
   - type: h4
     text: The Circus Maximus
+  - type: p
+    text: '**Faction hold.** Spectacle Enterprises hold this ground: the four
+      circus factions (*factiones*) under their equestrian contractors
+      (*domini factionum*), the stables, and the betting rings that fill the
+      arcades. The lever is the crowd — a faction that controls the day''s
+      program controls what 150,000 people chant, and a rigged race settles a
+      debt no court would hear. The senatorial order contests it, staging
+      games for political capital and reminding the factions who holds the
+      games'' budget.'
   - type: p
     text: The vast stadium filling the long valley between the Palatine and Aventine
       hills (*Regio XI Circus Maximus*), the Circus Maximus is the entertainment engine
@@ -3425,6 +4008,18 @@ chapters:
       settings, adversaries are organized by thematic category and classified by threat
       level: Minions who fight or work in groups, Rivals who act as competent individual
       opponents, and Nemeses who command organizations and drive campaigns.'
+  - type: p
+    style: body
+    text: 'Faction opposition is scattered across these categories rather than gathered
+      under one heading. The financial and commercial syndicates appear among the
+      criminals and the elites, as syndicate factors and as the officials they own;
+      the neighborhood wards and their *collegia* appear among the citizens and the
+      criminals; the spectacle enterprises and the circus factions appear among the
+      gladiators of the arena. The civic priesthoods appear among the elites, as do
+      the foreign enclaves, the mystery cults, and the dissident cells; the
+      aristocratic patronage blocs and the senatorial factions appear among the
+      elites and again among the historical nemeses. Where a faction''s own agent is
+      missing from these categories, the profiles below supply one.'
   - type: h3
     text: Citizens and Plebeians
   - type: p
@@ -3584,6 +4179,10 @@ chapters:
     fields:
     - label: Skills (group only)
       text: Brawl, Coercion, Melee, Streetwise
+    - label: Abilities
+      text: '**Faction Clamour:** while at least two of the group are engaged and within
+        sight of their own ward, the group adds [[boost]] to Coercion and Brawl checks;
+        the bonus ends the moment the crowd turns.'
     - label: Equipment
       text: Cudgel (Brawl; Dam 4; Crit 5; Disorient 1), knife (Dam 3; Crit 3), ragged
         tunic.
@@ -3694,10 +4293,52 @@ chapters:
     - label: Abilities
       text: 'Dossier of Dirt: begins any social scene knowing one Flaw of each PC.
         Denunciation: may spend a [[triumph]] or a Story Point to open a treason case
-        against a target — a legal threat resolved in a later encounter.'
+        against a target — a legal threat resolved in a later encounter. **Whispered
+        Accusation:** once per session, as an action, he reveals a present character''s
+        Flaw and inflicts strain equal to his Presence by producing a ledger, a letter,
+        or a bought witness; a [[despair]] reveals the document as forged.'
     - label: Standing
       text: Dignitas 2 — and climbing on other men's ruin.
     type: statblock
+  - type: statblock
+    name: Syndicate Factor
+    kind: Rival
+    desc: 'A *societatis* agent who collects the tax lease, keeps the ledgers, and
+      pays the guild muscle. Courteous, patient, and entirely without sentiment
+      about a debtor.'
+    chars:
+      Br: '1'
+      Ag: '2'
+      Int: '4'
+      Cun: '4'
+      Will: '3'
+      Pr: '3'
+    derived:
+      Soak: 2
+      W.T.: '12'
+      S.T.: '15'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: 'Desire: the lease renewed and the ledger balanced. Fear: an audit
+        he cannot buy. Strength: he holds the contracts and the muscle
+        that enforces them. Flaw: he cannot resist a margin.'
+    - label: Skills
+      text: 'Negotiation 3, Knowledge (Rome) 3, Knowledge (Law) 3, Deception 3,
+        Coercion 2, Perception 2.'
+    - label: Talents
+      text: 'Adversary 1; Publican''s Agent; a web of clerks in Ostia and
+        Puteoli.'
+    - label: Abilities
+      text: '**Call the Muscle:** once per session he summons a minion group of
+        guild enforcers or *collegium* toughs, who arrive at the end of
+        the round. **Bury the Debt:** he can lose a claim in paperwork — a
+        false entry, a lost seal, a clerk who never existed — forcing a
+        Hard Knowledge (Law) or Negotiation check to contest it before a
+        magistrate.'
+    - label: Standing
+      text: 'Dignitas 2 — the standing of a man who holds other men''s
+        contracts.'
   - type: h3
     text: The Gladiators and the Arena
   - type: p
@@ -3803,11 +4444,51 @@ chapters:
     - label: Abilities
       text: 'Criminal Assets 3: accompanied by a minion group of 3 (thugs or gladiators)
         at short range; may redirect a hit to one of them, eliminating it. Bribe:
-        if cornered, offers up to 20,000 HS to walk free.'
+        if cornered, offers up to 20,000 HS to walk free. **Faction Stable:** once
+        per session, he calls a squad of his own gladiators into a scene as a minion
+        group; each use costs him a Favor owed to the circus faction whose colors
+        he rents.'
     - label: Equipment
       text: Flagellum (whip; Ensnare 1, Disorient 1), concealed dagger, strongbox,
         a stable of fighters.
     type: statblock
+  - type: statblock
+    name: Circus Faction Agent
+    kind: Rival
+    desc: 'A *factio* fixer who buys drivers, pays the claque, and settles which race
+      is honest. He never touches a rein and knows every stable-hand in Rome.'
+    chars:
+      Br: '2'
+      Ag: '3'
+      Int: '3'
+      Cun: '4'
+      Will: '2'
+      Pr: '4'
+    derived:
+      Soak: 3
+      W.T.: '12'
+      S.T.: '14'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: 'Desire: the faction''s take and his own cut. Fear: a rigged race
+        traced back to him. Strength: he owns the drivers'' debts and half
+        the betting rings. Flaw: he talks too freely in his own tavern.'
+    - label: Skills
+      text: 'Charm 3, Deception 3, Streetwise 3, Negotiation 3, Vigilance 2,
+        Knowledge (Rome) 2.'
+    - label: Talents
+      text: 'Adversary 1; Circus Partisan; Nobody''s Fool.'
+    - label: Abilities
+      text: '**Turn the Crowd:** in the Circus or in a tavern of his color, he
+        adds [[boost]] to social checks and can start a chant, a cheer, or
+        a jeer at a word. **Arrange the Result:** once per session he
+        fixes a race, a bout, or a wager in advance; the outcome is what
+        he sold, unless someone on the track produces a [[triumph]] to
+        expose it.'
+    - label: Equipment
+      text: 'A purse of betting tokens, faction livery, a knife, and a list of
+        men who owe him.'
   - type: h3
     text: Soldiers and Legionaries
   - type: p
@@ -3969,7 +4650,10 @@ chapters:
         an immediate maneuver).'
     - label: Abilities
       text: 'Command the Guard: once per encounter, summon a minion group of Praetorians
-        (minions equal to the PCs) that arrives at the end of the round.'
+        (minions equal to the PCs) that arrives at the end of the round. **Imperial
+        Mandate:** once per session, he redirects an investigation, a
+        prosecution, or a guard deployment by invoking imperial authority; doing so
+        publicly costs him the Emperor''s trust if it fails.'
     - label: Equipment
       text: Gilded armor (+2 soak), gladius (Dam 6; Crit 2; Pierce 1), the Emperor's
         ear.
@@ -4003,7 +4687,10 @@ chapters:
       text: Adversary 1.
     - label: Abilities
       text: 'By the Magistrate’s Authority: add [[boost]] to Coercion checks made
-        to compel citizens in the magistrate’s name.'
+        to compel citizens in the magistrate’s name. **Magisterial Imperium:** while
+        he accompanies a magistrate and carries the fasces, he adds automatic
+        [[advantage]] to Coercion and Leadership checks against citizens who must
+        yield the road; the ability lapses if he is separated from the magistrate.'
     - label: Equipment
       text: Fasces (Melee; Dam 5; Crit 3; Vicious 1), leather (+1 soak).
     type: statblock
@@ -4143,6 +4830,44 @@ chapters:
         *pax deorum* can feed a [[Fated]] party''s Story Points or halt a public act
         as surely as an augur''s, and her testimony is accepted without the oath required
         of others.'
+  - type: statblock
+    name: Mithraic Pater
+    kind: Rival
+    desc: 'A senior initiate of a *mithraeum*, often a legionary veteran or a customs
+      official — the seventh grade of the brotherhood and keeper of its cave. He
+      asks no questions of a brother and answers none of a stranger.'
+    chars:
+      Br: '3'
+      Ag: '2'
+      Int: '3'
+      Cun: '3'
+      Will: '4'
+      Pr: '2'
+    derived:
+      Soak: 4
+      W.T.: '14'
+      S.T.: '16'
+      Def (M/R): 0/1
+    fields:
+    - label: Motivations
+      text: 'Desire: the brotherhood kept, and his oath kept with it. Fear: a
+        member who talks. Strength: the trust of soldiers and customs men
+        on both banks of the river. Flaw: he will shelter a brother who
+        does not deserve it.'
+    - label: Skills
+      text: 'Discipline 4, Knowledge (the Gods) 3, Melee 2, Coercion 2,
+        Vigilance 3, Knowledge (Rome) 2.'
+    - label: Talents
+      text: 'Adversary 1; Initiate of the Mysteries; Nobody''s Fool.'
+    - label: Abilities
+      text: '**Sevenfold Seal:** while he is engaged with fellow initiates he
+        is immune to fear and to Coercion. **The Cave''s Silence:** within
+        his *mithraeum* he grants a hunted man sanctuary, food, and
+        silence for a night; no member will speak of who entered, and the
+        seal of the grade binds even those who would sell him.'
+    - label: Equipment
+      text: 'A short sword, the ritual mask and torch of his grade, and a key
+        to the shrine.'
   - type: h3
     text: Enemies Beyond the Frontier
   - type: p
@@ -4466,7 +5191,7 @@ chapters:
         and [[boost]] to his social checks before a crowd. **The Legions Are His:**
         his veterans'' loyalty is to him, not the state.'
     - label: At the Table
-      text: The rising threat behind every late-Republican scene; a patron whose favour
+      text: The rising threat behind every late-Republican scene; a patron whose favor
         is intoxicating and ruinous. The event-horizon the whole setting bends toward.
   - type: statblock
     name: Gnaeus Pompeius Magnus
@@ -4629,7 +5354,7 @@ chapters:
       Def (M/R): 1/1
     fields:
     - label: Motivations
-      text: 'Desire: glory, pleasure, and a great man''s favour. Fear: being sidelined.
+      text: 'Desire: glory, pleasure, and a great man''s favor. Fear: being sidelined.
         Strength: soldiers love him. Flaw: his appetites — wine, women, and loyalty
         to the wrong patron.'
     - label: Skills
@@ -4756,7 +5481,7 @@ chapters:
         no one in Rome may raise their Dignitas against his in a public contest.'
     - label: At the Table
       text: 'In the default Imperial era his heirs sit the throne — use Augustus as
-        the template for *your* princeps: the distant, all-seeing power whose favour
+        the template for *your* princeps: the distant, all-seeing power whose favor
         makes careers and whose suspicion ends them.'
 - title: 'Chapter 6: The Game Master'
   blocks:
@@ -4949,6 +5674,47 @@ chapters:
       wrecks (*naufragia*). Drivers make Driving checks opposed by rivals, while navigating
       the roaring, partisan stadium crowd.'
   - type: h3
+    text: Competing Factions in One Room
+  - type: p
+    style: body
+    text: 'An imperial procurator, a senatorial legate, and an equestrian publican sit
+      in the same brick office at Alburnus Maior, arguing over how the silver of a
+      Dacian mine is divided. The procurator wants the output entered in the
+      imperial ledger before the governor can see it, and can offer the party an
+      armed escort and a sealed warrant. The legate wants the mine''s surplus
+      credited to his province''s roads, and can offer access to the governor''s
+      court and a blind eye to their methods. The publican wants the lease renewed
+      at the old rate, and can offer credit, wagons, and the mine''s own clerks.
+      Refuse the procurator and his report follows the party to Rome; refuse the
+      legate and the roads close to them; refuse the publican and the carts leave
+      without them.'
+  - type: p
+    style: body
+    text: 'Run every faction scene on three questions. For each faction present, decide
+      what it wants from the scene, what it can offer the party, and what it will
+      do if refused. Then let the factions react to each other: an offer made to
+      the party is also an insult to a rival, and a favor granted in the open
+      changes who will speak to them next. The party''s own faction ties set the
+      opening stance — who is greeted first, who is watched, and who is treated as
+      a threat.'
+  - type: p
+    style: body
+    text: 'Adjudicate it with the social-encounter tools from *The Theater of Power*.
+      Each faction''s agenda is a separate social opponent in the scene, with its
+      own stance and its own threshold; appeals are aimed at a particular faction
+      rather than at the room, and the oratory structure and the Senate-bloc
+      commitment rules apply unchanged. Spending a Favor on a faction, or a Story
+      Point under the Step 6 faction rule, shifts one agenda''s stance; the rest of
+      the room watches and remembers.'
+  - type: p
+    style: body
+    text: 'A faction the party burns does not vanish. It becomes an adversary: its
+      agents appear among the profiles in Chapter 5, its clerks refuse the party''s
+      drafts, and it may call in the obligation the party ignored — the same lever
+      the GM holds under the Step 6 Story Point rule. Treat a burned faction as a
+      standing complication with a name, not a closed door, and let the party earn
+      their way back with a favor they will not enjoy paying.'
+  - type: h3
     text: Roman Adventure Builder
   - type: p
     text: The following adventure builder allows the Game Master to rapidly construct
@@ -4957,6 +5723,13 @@ chapters:
       **Escalations**, and **Climaxes**. Combining these modular elements produces
       an adventure with clear initial stakes, sudden dramatic twists, and a memorable
       moral or social dilemma.
+  - type: p
+    text: 'Every entry below turns on a collision between two of the six faction types
+      described in the earlier chapters — a tax syndicate and a senatorial house, a
+      priestly college and a ward, one circus color and its rival. Name both
+      factions before play begins, note which one the party''s current obligations
+      already favor, and record which faction the party ends up owing when the
+      adventure closes; that debt is the next session''s opening.'
   - type: h4
     text: Hooks
   - type: p
@@ -5060,6 +5833,86 @@ chapters:
 
       *Twist:* The prodigy was engineered by a cabal of high priests who discovered
       an actual military coup was planned for election day.'
+  - type: p
+    text: '**7. The Stolen Tax Ledger (Tabulae Publicanorum).** A syndicate clerk has
+      fled the *Basilica Aemilia* with the duplicate ledgers of a five-year tax
+      lease, and the Financial Interest wants them back before a senatorial
+      extortion court can read them. The senator prosecuting the syndicate for
+      *repetundae* offers the party a share of the recovered estate; the
+      syndicate''s factor offers twice as much and a debt cancelled.
+
+
+      *Primary Goals:* Recover the ledgers before either side''s agents reach the
+      clerk, and decide which copy to hand over.
+
+
+      *Challenges:* Tracing a frightened clerk through the Subura''s lodging
+      houses; reading abbreviated entries in two hands; keeping the ledgers out
+      of the hands of the urban cohorts.
+
+
+      *Twist:* The ledgers are genuine, and they show that the prosecuting
+      senator held shares in the same lease under a freedman''s name.'
+  - type: p
+    text: '**8. The Circus Conspiracy (Factiones Circenses).** The Blues and the
+      Greens each claim the coming consular race was sold before the starting
+      gates opened, and each faction''s agent wants the party to prove the other
+      side did it. The Blues offer seats near the imperial box and the ear of a
+      senator; the Greens offer stables, drivers, and the goodwill of the crowd.
+
+
+      *Primary Goals:* Discover who bought the race, and keep the discovery from
+      becoming a street war between the colors.
+
+
+      *Challenges:* Getting into the stables and the drivers'' quarters; reading
+      a betting book without its owner''s leave; surviving the arcades when the
+      colors meet.
+
+
+      *Twist:* Both factions paid the same driver through different agents, and
+      neither knows the other did.'
+  - type: p
+    text: '**9. The Vestal''s Vow (Crimen Incesti).** The pontifical college has
+      opened an inquiry into a Vestal''s chastity, and the senatorial house that
+      raised her will do anything to keep the verdict from reaching the
+      pontifex. The college offers the party the temple records and the
+      protection of its sacral authority; the family offers money, a marriage,
+      and a debt forgiven.
+
+
+      *Primary Goals:* Establish what the inquiry can prove, and keep the Vestal
+      alive until the college rules.
+
+
+      *Challenges:* Reading the temple''s sealed records without a priest''s
+      leave; finding witnesses willing to speak against a senatorial house;
+      keeping the family''s men from reaching the Vestal''s attendants.
+
+
+      *Twist:* A rival house brought the charge to ruin the family''s election
+      chances, and the Vestal knows it.'
+  - type: p
+    text: '**10. The Underground Cell (Coetus Nocturnus).** The Praetorian Guard has
+      orders to break a clandestine congregation — a Christian *titulus* in a
+      Transtiberim insula, or a Mithraic cell beneath a customs station — and
+      the ward (*vicus*) that shelters it will be searched house by house. The
+      Guard offers the party a warrant and a share of the confiscations; the
+      congregation''s elders offer silence, shelter, and a road out of the city
+      for anyone the party names.
+
+
+      *Primary Goals:* Reach the meeting place before the Guard does, and decide
+      who is warned and who is left to the raid.
+
+
+      *Challenges:* Moving through a ward where every doorway is watched;
+      keeping a congregation from scattering into the raid; hiding a name that
+      will be tortured out of someone else.
+
+
+      *Twist:* The informer who gave the Guard the address is a ward-master
+      settling a private quarrel, and the Guard knows it.'
   - type: h4
     text: Escalations
   - type: p
@@ -5100,6 +5953,28 @@ chapters:
       *New Challenges:* Administering emergency medicine to keep the victim alive;
       exposing the true poisoner before guards draw steel; escaping a fortified suburban
       estate.'
+  - type: p
+    text: '**5. Ward Mobilization (Secessio Vicana).** The ward-masters shutter the
+      shops and barricade the Subura, and the *vicomagistri* of three *vici*
+      refuse to open the streets until their grievance is heard. The party''s
+      route, their informants, and their supplies all run through ground the
+      wards now hold.
+
+
+      *New Challenges:* Crossing a barricaded district without a ward-master''s
+      leave; finding the one grievance that will reopen the streets; keeping the
+      urban cohorts from forcing the barricades and turning a protest into a
+      massacre.'
+  - type: p
+    text: '**6. The Tribune''s Veto (Intercessio).** A tribune bought by the party''s
+      opponents interposes his *sacrosanctitas* and halts the proceeding they
+      need — a vote, a prosecution, a magistrate''s order. The tribune cannot be
+      touched, sued, or compelled, and he knows it.
+
+
+      *New Challenges:* Finding what the tribune actually wants, since the money
+      was only a retainer; persuading him to withdraw without humiliating him;
+      working around a veto that stops every lawful route at once.'
   - type: h4
     text: Climaxes
   - type: p
@@ -5141,6 +6016,30 @@ chapters:
 
       *New Challenges:* Overcoming consular gravitas and royal intimidation; navigating
       dynastic rivalries; accepting a morally painful imperial compromise.'
+  - type: p
+    text: '**5. Night Run to Portus.** The evidence must reach the grain harbours
+      before dawn, and the only road is the Tiber. The party runs a fast boat
+      downriver past the river patrols, the customs cutters, and the chains at
+      Ostia, with the men who want the evidence sunk close behind.
+
+
+      *New Challenges:* Navigating the Tiber at night past sandbars and bridges;
+      passing a customs inspection with a sealed cargo; keeping the boat afloat
+      when the pursuit begins; landing the evidence with the grain prefect''s own
+      clerks before the harbour opens.'
+  - type: p
+    text: '**6. Sanctuary on the Capitoline.** The party''s quarry — or the party
+      itself — takes refuge on the steps of the Temple of Jupiter Optimus
+      Maximus, where the law stops at the threshold. A lictor troop waits below
+      with the magistrate''s warrant, the priests refuse to give up anyone
+      inside, and the crowd on the Clivus watches to see which authority yields
+      first.
+
+
+      *New Challenges:* Holding a sanctuary against armed men without beginning
+      a sacrilege; negotiating with a magistrate who cannot afford to lose face;
+      deciding whether to hand over the fugitive, fight on sacred ground, or
+      find a third road out of the temple precinct.'
   - type: h2
     text: Starter Scenarios
   - type: p
@@ -6282,7 +7181,7 @@ chapters:
     desc: 'The PCs'' patron: a praetorian senator of fifty-five, able, generous to
       his people, and a governor who sold a man''s death. **Wants:** to leave Rome
       with his fortune, and to be remembered as a man who looked after his own. **Stance:**
-      depends on the PCs utterly and says so; he gives orders as favours. **Secret:**
+      depends on the PCs utterly and says so; he gives orders as favors. **Secret:**
       the bought sentence, recorded in Eutychus''s ledger. **Voice:** “I have fed
       your families for twelve years. I am asking for four days.”'
     chars:
