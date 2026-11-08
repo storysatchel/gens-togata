@@ -7,6 +7,9 @@ import { CONTENT_HEIGHT, CONTENT_WIDTH } from "./page";
 
 // Measured layout and the final render can differ by sub-pixel rounding; the slack keeps a full page from spilling a line onto a page of its own.
 const PAGE_LIMIT = CONTENT_HEIGHT - 2;
+// A heading group rides to the next page only while it stays under a fifth of the page (~107 pt): a heading and a short
+// lead-in are worth the break, real body text is not — the hole it leaves would match the stranding it prevents.
+const KEEP_GROUP_LIMIT = CONTENT_HEIGHT / 5;
 
 export interface Piece { block: ContentBlock; key: string; id?: string; fragment: Fragment }
 export type Segment =
@@ -122,6 +125,24 @@ export class Flow {
     return await this.pageHeight(segments) <= PAGE_LIMIT;
   }
 
+  // Would the trailing segment at `index` ride to the next page with the block it introduces? A bare heading always
+  // does. A heading's lead-in paragraph, or the column that it opens, does only while the whole heading group — plus
+  // whatever already left with it — measures under KEEP_GROUP_LIMIT.
+  private async keepsWithNext(page: Segment[], index: number, carried: Segment[]): Promise<boolean> {
+    const last = page[index];
+    if (last.kind === "node") return false;
+    if (last.kind === "full" && headingTypes[last.piece.block.type]) return true;
+    if (last.kind === "band") {
+      const first = last.left[0];
+      if (!first || !headingTypes[first.block.type]) return false;
+      return await this.pageHeight([...page.slice(index), ...carried]) <= KEEP_GROUP_LIMIT;
+    }
+    if (last.piece.block.type !== "p" || index === 0) return false;
+    const opener = page[index - 1];
+    if (opener.kind !== "full" || !headingTypes[opener.piece.block.type]) return false;
+    return await this.pageHeight([...page.slice(index - 1), ...carried]) <= KEEP_GROUP_LIMIT;
+  }
+
   // At least two lines on each side of a paragraph break.
   private async multiLine(piece: Piece, frame: Frame): Promise<boolean> {
     if (piece.block.type !== "p") return true;
@@ -189,30 +210,50 @@ export class Flow {
   async paginate(lead: Segment[], entries: { piece: Piece; full: boolean }[]): Promise<PageLayout[]> {
     const pages: PageLayout[] = [];
     let page: Segment[] = [...lead];
+    // The page that received nothing but the heading group the last break carried; if it stays that way the carry was
+    // pointless and the group goes back where it came from.
+    let carriedOnly: { segments: Segment[]; length: number } | null = null;
+    const add = (segment: Segment) => { page.push(segment); carriedOnly = null; };
     // Close the page, counting any pages the renderer adds to break content taller than a page.
     const closePage = async (segments: Segment[]) => {
       pages.push({ segments, recto: this.pageNumber % 2 === 1 });
       this.pageNumber += Math.max(1, Math.ceil(await this.pageHeight(segments) / CONTENT_HEIGHT));
     };
     const breakPage = async () => {
+      if (carriedOnly && page === carriedOnly.segments && page.length === carriedOnly.length && pages.length > 0) {
+        pages[pages.length - 1].segments.push(...page);
+        page = [];
+        carriedOnly = null;
+        return;
+      }
       const carried: Segment[] = [];
       while (page.length > 1) {
-        const last = page[page.length - 1];
-        if (last.kind !== "full" || !headingTypes[last.piece.block.type]) break;
-        carried.unshift(page.pop()!);
+        if (!await this.keepsWithNext(page, page.length - 1, carried)) break;
+        const leaving = page.pop()!;
+        carried.unshift(leaving);
+        // One group only: a heading-led column carries alone, without the run that follows it.
+        if (leaving.kind === "band") break;
       }
+      // A heading never ends a page on its own; if its group is leaving, it leaves too.
+      const last = page[page.length - 1];
+      if (carried.length > 0 && last?.kind === "full" && headingTypes[last.piece.block.type]) carried.unshift(page.pop()!);
+      // Leaving another heading group at the foot strands it in place of the one that left: keep both.
+      if (carried.length > 0 && page.length > 0 && await this.keepsWithNext(page, page.length - 1, [])) { page.push(...carried); carried.length = 0; }
+      // Carrying the whole page would reopen it unchanged; close it as it stands instead.
+      if (page.length === 0) { page = carried.slice(); carried.length = 0; }
       await closePage(page);
       page = carried;
+      carriedOnly = carried.length > 0 ? { segments: carried, length: carried.length } : null;
     };
 
     const placeFull = async (piece: Piece) => {
       let current = piece;
       for (;;) {
-        if (await this.fits([...page, full(current)])) { page.push(full(current)); return; }
+        if (await this.fits([...page, full(current)])) { add(full(current)); return; }
         const split = await this.splitToFit(current, head => this.fits([...page, full(head)]), full);
-        if (split) { page.push(full(split[0])); await breakPage(); current = split[1]; continue; }
+        if (split) { add(full(split[0])); await breakPage(); current = split[1]; continue; }
         // Taller than a whole page: the renderer breaks it.
-        if (page.length === 0) { page.push(full(current)); return; }
+        if (page.length === 0) { add(full(current)); return; }
         await breakPage();
       }
     };
@@ -221,18 +262,18 @@ export class Flow {
       let rest = run;
       while (rest.length > 0) {
         const settled = await this.balance(rest, page);
-        if (settled) { page.push(settled); return; }
+        if (settled) { add(settled); return; }
         const [left, afterLeft] = await this.fillColumn(rest, col => this.fits([...page, band(col, [])]));
         if (left.length === 0) {
           if (page.length > 0) { await breakPage(); continue; }
           // Taller than a whole column: the renderer breaks it.
-          page.push(band([rest[0]], []));
+          add(band([rest[0]], []));
           rest = rest.slice(1);
           await breakPage();
           continue;
         }
         const [right, remaining] = await this.fillColumn(afterLeft, col => this.fits([...page, band(left, col)]));
-        page.push(band(left, right));
+        add(band(left, right));
         rest = remaining;
         if (rest.length > 0) await breakPage();
       }
