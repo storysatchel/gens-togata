@@ -1262,50 +1262,76 @@ chapters:
       patrician, general, or imperial freedman for an additional 1,500 sesterces of
       gear or 20 starting XP.'
   - type: h2
-    text: Factions & Roman Orders
+    text: "Factions & Roman Orders"
   - type: p
     style: lead
-    text: No Roman stands alone. Formal orders, imperial bureaus, and civic associations
-      form the power blocs of the empire. Characters interact with these factions
-      through patronage, service, and favors.
+    text: "No Roman stands alone. Formal legal orders, imperial bureaus, commercial syndicates, and religious sodalities form the true power blocs of the empire. Like the diverse institutions of a modern metropolis, Roman factions divide broadly into six distinct types of faction. Characters interact with these bodies through the favor economy, anchoring their backgrounds, debts, and alliances in the social realities of the Mediterranean."
   - type: h3
-    text: The Emperor and His Household
+    text: "Financial & Commercial Syndicates (Societates Publicanorum & Corpora)"
   - type: p
     style: body
-    text: The emperor's *domus*, or household, includes family, freedmen secretaries,
-      and servants; the Praetorian Guard protects the ruler. Access to the emperor
-      brings influence, but also rivalry among those who seek it.
-  - type: h3
-    text: The Senate
+    text: "Financial and commercial syndicates are joint-stock corporations and chartered trade bodies organized to deploy private capital for state operations. Unlike ordinary private partnerships (*societates*) that legally dissolve upon the death of any partner, state contracting syndicates (*societates publicanorum*) possess corporate continuity. Equestrian financiers invest capital in exchange for tradable shares (*partes*) negotiated near the Basilica Aemilia in the Forum. These syndicates bid before the censors in Rome for lucrative five-year leases, collecting provincial direct taxes, managing customs dues (*portoria*) at ports like Puteoli and Ostia, operating state gold and silver mines at Alburnus Maior and Hispania, and provisioning frontier legions. Their aggressive revenue agents (*vectigaliarii*) frequently clash with provincial subjects and senatorial governors who attempt to check extortion."
   - type: p
     style: body
-    text: Senators are wealthy men whose families compete for office, prestige, and
-      imperial favour. The Senate still administers some provinces and conducts public
-      business, though the emperor controls the greatest concentration of power.
-  - type: h3
-    text: The Legions
+    text: "Chartered maritime transport corporations coordinate the overseas grain supply (*annona*), operating under imperial contract with the grain prefect (*praefectus annonae*). These shipowners (*corpora naviculariorum*) maintain permanent trading offices (*stationes*) in the Piazzale delle Corporazioni at Ostia alongside grain measurers (*mensores frumentarii*) and sack porters (*saccarii*). In manufacturing and municipal services, three chartered corporations dominate: the builders and carpenters (*fabri tignuarii*), who control municipal construction and engineering; the clothiers (*centonarii*), whose heavy soaked woolen blankets serve as the municipal fire brigades of Italian cities; and the timber transporters (*dendrophori*), who haul structural wood and bathhouse fuel while serving as ritual escorts during the March rites of Cybele."
   - type: p
     style: body
-    text: A legion is a Roman army formation of roughly 5,000 citizen soldiers, chiefly
-      infantry. Around thirty legions serve across the empire, supported by separate
-      auxiliary units that provide infantry and cavalry. Soldiers and commanders have
-      interests in pay, rewards, and the loyalty of the army.
+    text: "**At the Table:** Syndicates provide capital, logistics, and legal protection. A **Small Favor** secures passage on a grain freighter or expedited customs clearance. A **Regular Favor** secures a commercial loan of 500 sesterces, insider advance notice on tax leases, or guild muscle from the builders. A **Big Favor** secures an imperial mining lease or quashes a governor's inquiry into private ledgers. When dealing with syndicates and trade corporations, characters add [[boost]] to Negotiation and Knowledge (Commerce) checks concerning commerce or state contracts, but face [[setback]] on social checks with aggrieved provincial subjects or austere senatorial traditionalists."
   - type: h3
-    text: The Equestrian Order
+    text: "Neighborhood Wards & Urban Associations (Vici, Compitalia, Sodalitates)"
   - type: p
     style: body
-    text: The *equites*, Rome’s aristocratic commercial and administrative class,
-      hold property valued at 400,000 sesterces or more. They command auxiliary cavalry,
-      govern imperial provinces such as Egypt, manage public tax collection (*publicani*),
-      and control large-scale Mediterranean shipping and finance.
-  - type: h3
-    text: Associations and the Crowd
+    text: "Neighborhood and urban associations form the grassroots fabric of plebeian civic life. Rome is partitioned into 265 municipal neighborhood wards (*vici*), each centered on a crossroads shrine (*compitum*) honoring the guardian spirits (*Lares Compitales*) alongside the protective spirit of the ruler (*Genius Augusti*). Each ward is governed by four elected ward-masters (*vicomagistri*), almost always wealthy freedmen, assisted by enslaved attendants (*vicoministri*). During the winter festival of the *Compitalia*, these wards unite shopkeepers, craftsmen, and tenement dwellers in public games, feasting, and neighborhood sacrifice."
   - type: p
     style: body
-    text: '*Collegia*, voluntary associations formed around trades, worship, or burial,
-      give members ties beyond their households. Crowds gather at games, in neighbourhoods,
-      and around the grain supply; their concerns can attract the attention of officials
-      and patrons.'
+    text: "Beneath this peaceful civic routine lies a potent mechanism for street mobilization. Late Republican politicians armed the neighborhood associations (*collegia compitalicia*) into street gangs to disrupt courts and burn opposing meeting places. In response, imperial law (*Lex Iulia de collegiis*) disbanded unauthorized assemblies, permitting only chartered mutual-aid burial funds (*collegia tenuiorum*) that meet monthly to collect modest dues (*stips*) and ensure every member receives a decent pyre. Yet the wards remain volatile: covert election clubs (*sodalitates*) employ distribution agents (*divisores*) to deliver bribes and direct voting blocs, while ward-masters can shutter artisan shops and mobilize crowds whenever grain shipments fail."
+  - type: p
+    style: body
+    text: "**At the Table:** Neighborhood associations provide street knowledge, concealment, and mob leverage. A **Small Favor** secures safe shelter in a tenement garret for three days or early warning of approaching watchmen. A **Regular Favor** mobilizes a ward crowd to pack a court hearing, shut down a market street, or provide neighborhood witnesses. A **Big Favor** secures an endowed tomb with an authorized burial guild or organizes citywide ward protests. Characters allied with local wards add [[boost]] to Streetwise and Skulduggery checks in their home district, but suffer [[setback]] on Stealth checks in unfamiliar wards where neighborhood lookouts watch every stranger."
+  - type: h3
+    text: "Spectacle Enterprises & Circus Factions (Factiones)"
+  - type: p
+    style: body
+    text: "Spectacle enterprises are commercial entertainment corporations commanding massive budgets and fanatical followings. The four circus factions (*factiones circenses*)—the Whites (*Albati*), Reds (*Russati*), Blues (*Veneti*), and Greens (*Prasini*)—are private syndicates owned and managed by equestrian contractors (*domini factionum*). These enterprises own extensive stud farms across Hispania, Sicily, and Cappadocia, employ star charioteers (*aurigae*), trainers, veterinarians, and wheelwrights, and lease complete racing teams to magistrates staging public games (*ludi*). By the High Empire, the Blues and Greens dominate popular loyalty across every social rank. Packed into the Circus Maximus, 150,000 spectators use synchronized chants organized by faction leaders to demand tax relief, grain subsidies, or the dismissal of unpopular ministers directly from the emperor."
+  - type: p
+    style: body
+    text: "Beyond the circus tracks, theatrical claques (*factiones theatrales*) are professional chanting squads hired by pantomime actors and magistrates to sway theater audiences, frequently sparking street brawls between partisan fans. Gladiatorial combat is managed by private trainers (*lanistae*) and imperial administrators directing state training barracks (*ludi*) in Rome: the Ludus Magnus (connected to the Colosseum through a subterranean tunnel), the Ludus Dacicus, the Ludus Gallicus, and the Ludus Matutinus (which specializes in animal spectacles). These gladiatorial troupes (*familiae gladiatoriae*) house disciplined fighters whose martial prowess is prized for arena glory and private bodyguard work during times of crisis."
+  - type: p
+    style: body
+    text: "**At the Table:** Spectacle factions offer popular acclaim, martial muscle, and public visibility. A **Small Favor** secures choice seating at the Circus Maximus or a private introduction to a star gladiator. A **Regular Favor** hires a squad of gladiators as bodyguards for a dangerous expedition, or directs a theatrical claque to acclaim or heckle a speaker in the Forum. A **Big Favor** rigs a high-stakes chariot race or orchestrates a synchronized demonstration of thousands of circus spectators to sway imperial policy. Characters wearing faction colors add [[boost]] to Charm and Leadership checks among fellow supporters, but face [[setback]] and open brawls when entering taverns dominated by rival colors."
+  - type: h3
+    text: "Civic Priesthoods & Sacred Colleges (Collegia Sacerdotum)"
+  - type: p
+    style: body
+    text: "Civic priesthoods are constitutional organs that intertwine religious ritual with state governance. The great priestly colleges (*collegia sacerdotum*) are staffed by active magistrates and senators who manage public cults alongside political offices. The Pontifical College (*Collegium Pontificum*), presided over by the *Pontifex Maximus* (an office held by the emperor), holds supreme authority over religious statutes, public calendars, funeral regulations, and the six Vestal Virgins (*Virgines Vestales*), whose sacred flame guarantees Rome's survival. Alongside them stands the College of Augurs (*Collegium Augurum*), who interpret the public auspices (*auspicia*); an augur possesses the constitutional authority to dissolve assemblies, invalidate elections, or suspend legislation by announcing unfavorable omens (*obnuntiatio*)."
+  - type: p
+    style: body
+    text: "Other specialized colleges manage public destiny and diplomatic relations. The Fifteen Custodians (*Quindecimviri Sacris Faciundis*) guard the prophetic Sibylline Books and supervise the introduction of foreign non-Italian cults like Apollo, Ceres, and the Magna Mater. The Seven Banquet Masters (*Septemviri Epulonum*) organize the sacred feasts (*epulum Iovis*) during major public games. Ancient noble sodalities preserve archaic rites: the twelve Arval Brethren (*Fratres Arvales*) sacrifice in their sacred grove for the health (*salus*) of the emperor, the leaping Salii process in archaic bronze armor while beating Mars's sacred shields, and the Fetiales solemnize treaties and conduct ritual declarations of war."
+  - type: p
+    style: body
+    text: "**At the Table:** The sacred colleges command sacral authority and decisive procedural vetoes. A **Small Favor** grants access to a temple archive, a private purification ritual to remove an omen, or entry to a closed ceremonial feast. A **Regular Favor** halts a court proceeding or assembly vote by declaring a public holiday (*feriae*) or adverse omen, or secures formal sanctuary within a consecrated temple. A **Big Favor** arranges a consultation of the Sibylline Books or initiates an inquiry before the pontifical college. Characters holding priestly status add [[boost]] to Discipline and social checks invoking ancestral custom (*mos maiorum*), while anyone violating sacral law suffers [[setback]] on social interactions with pious citizens."
+  - type: h3
+    text: "Foreign Enclaves, Mystery Cults, and Dissident Cells"
+  - type: p
+    style: body
+    text: "Foreign enclaves and non-civic religious networks provide community outside the traditional Roman pantheon. Across the river in *Trans Tiberim* (Trastevere) and around the Porta Capena, the Jewish community gathers in more than a dozen synagogues (*proseuchai*). Protected by charters tracing to Julius Caesar and Augustus, their faith is recognized as an authorized ancestral practice (*religio licita*), exempting them from military conscription and Sabbath court sessions, while remitting the annual contribution to Jerusalem (diverted after 70 CE into the imperial *Fiscus Iudaicus* tax). These synagogues operate mutual-aid treasuries and dispute arbitration courts that keep members insulated from Roman civil litigation."
+  - type: p
+    style: body
+    text: "Mystery sodalities recruit through private devotion and hierarchical fellowship. The devotees of Isis (*Isiaci*), centered at the magnificent Iseum Campense in the Campus Martius, follow white-robed priests in daily dawn temple rituals that attract matrons, merchants, and imperial officials. Beneath the streets of Rome and Ostia, over forty subterranean shrines (*mithraea*) host the mystery brotherhood of Mithras, structured into seven initiatory grades (from *Corax* to *Pater*) that forge tight bonds among legionaries, customs officials, and imperial freedmen. In contrast, early Christian house churches (*tituli* or *domus ecclesiae*) meet in private domestic quarters; rejecting civic sacrifices and the Imperial Cult, they are classified by magistrates as an illicit superstition (*superstitio illicita*) subject to sudden denunciation."
+  - type: p
+    style: body
+    text: "**At the Table:** Foreign enclaves offer Mediterranean-wide contacts, covert refuge, and esoteric lore. A **Small Favor** secures safe shelter in an enclave inn, translation of Greek or Aramaic documents, or discreet medical treatment. A **Regular Favor** secures concealed sanctuary in a subterranean *mithraeum* or domestic *titulus*, letters of introduction to merchant houses in Alexandria or Antioch, or financial relief from a community fund. A **Big Favor** arranges clandestine passage out of Italy on an uninspected cargo vessel or coordinates an overseas diaspora network to recover a lost heirloom. Characters allied with these groups add [[boost]] to Knowledge (the Gods) and Streetwise checks regarding overseas contacts, but suffer [[setback]] on social checks when scrutinized by suspicious city prefects."
+  - type: h3
+    text: "Aristocratic Patronage Blocs & Senatorial Factions"
+  - type: p
+    style: body
+    text: "Aristocratic patronage blocs and senatorial factions steer high politics, legislative power, and state commands. The senatorial order (*ordo senatorius*) encompasses roughly six hundred families possessing the census minimum of one million sesterces. Senators compete endlessly for offices (*cursus honorum*), military commands, and provincial governorships. While formal political parties do not exist, senatorial debate divides between conservative traditionalists (*optimates*), who defend senatorial supremacy and ancestral custom, and reformist populists (*populares*), who bypass the Senate to champion land allotments, grain subsidies, and public works through popular assemblies."
+  - type: p
+    style: body
+    text: "Overarching senatorial rivalries is the imperial court (*domus Augusta*). Centered on the Palatine Hill, the Princeps rules through personal advisers (*consilium principis*), the Praetorian Guard under its powerful prefects, and imperial freedmen who manage imperial secretariats for correspondence (*ab epistulis*) and petitions (*a libellis*). Across both imperial and senatorial houses, power is demonstrated each morning during the formal greeting (*salutatio*), when swarms of dependent clients (*clientes*) gather in the patron's atrium to offer respects and receive the daily cash gift (*sportula*). In exchange, clients provide bodyguards in the streets, pack jury benches, cheer forensic speeches, and form reliable voting blocs."
+  - type: p
+    style: body
+    text: "**At the Table:** Aristocratic blocs control administrative influence, legal protection, and imperial favor. A **Small Favor** secures an invitation to a noble banquet (*convivium*), an official letter of recommendation (*commendatio*), or a reserved seat at a senate hearing. A **Regular Favor** secures legal representation by an eloquent advocate in a court trial, an introduction to an imperial freedman secretary, or an appointment to an equestrian officer post. A **Big Favor** secures an imperial pardon, a senatorial decree, or a private audience with the emperor. Characters backed by a senatorial patron add [[boost]] to Charm, Negotiation, and Leadership checks when dealing with civic magistrates, but face [[setback]] from the patron's jealous political adversaries."
 - title: 'Chapter 2: Equipment and Vehicles'
   blocks:
   - type: h2
