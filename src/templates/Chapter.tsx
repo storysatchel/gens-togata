@@ -7,7 +7,7 @@ export async function Chapter({ chapter, chapterIndex, flow }: { chapter: Chapte
   let afterHeading = true;
   const entries = chapter.blocks.map((block, index) => {
     const id = ["h2", "h3", "scenario"].includes(block.type) ? `c${chapterIndex}s${subsection++}` : undefined;
-    const full = block.type === "h2" || block.type === "table" || block.type === "endnotes" || (block.type === "p" && (afterHeading || block.style === "opening"));
+    const full = block.type === "h2" || block.type === "table" || block.type === "endnotes" || block.type === "full-bleed" || (block.type === "p" && (afterHeading || block.style === "opening"));
     if (block.type === "h2") afterHeading = true;
     else if (block.type === "p" && afterHeading) afterHeading = false;
     else if (block.type !== "p") afterHeading = false;

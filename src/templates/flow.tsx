@@ -38,11 +38,19 @@ function PieceView({ piece }: { piece: Piece }) {
 function SegmentView({ segment }: { segment: Segment }) {
   switch (segment.kind) {
     case "node": return segment.node;
-    case "full": return <div className="fullw"><PieceView piece={segment.piece} /></div>;
-    case "band": return <div className="column-layout">
-      <div className="column column-left">{segment.left.map(piece => <PieceView key={piece.key} piece={piece} />)}</div>
-      <div className="column column-right">{segment.right.map(piece => <PieceView key={piece.key} piece={piece} />)}</div>
-    </div>;
+    // A full-bleed plate positions itself against the page box, so the .fullw
+    // wrapper's vertical margins would offset it by a few pixels.
+    case "full": return segment.piece.block.type === "full-bleed"
+      ? <PieceView piece={segment.piece} />
+      : <div className="fullw"><PieceView piece={segment.piece} /></div>;
+    case "band":
+      if (segment.right.length === 0) {
+        return segment.left.map(piece => <PieceView key={piece.key} piece={piece} />);
+      }
+      return <div className="column-layout">
+        <div className="column column-left">{segment.left.map(piece => <PieceView key={piece.key} piece={piece} />)}</div>
+        <div className="column column-right">{segment.right.map(piece => <PieceView key={piece.key} piece={piece} />)}</div>
+      </div>;
   }
 }
 
@@ -68,6 +76,8 @@ function unitCount(block: ContentBlock): number {
     case "p": return wordBreaks(block.text).length + 1;
     case "list": case "endnotes": return block.items.length;
     case "table": return block.rows.length;
+    case "full-bleed": case "vignette": return 1;
+    case "spot": return 0;
     default: return 1;
   }
 }
@@ -89,6 +99,7 @@ function cut(piece: Piece, k: number): [Piece, Piece] {
       const start = fragment.start ?? 1;
       return [head({ ...block, items: block.items.slice(0, k) }, fragment), tail({ ...block, items: block.items.slice(k) }, { ...fragment, continued: true, start: start + k })];
     }
+    case "full-bleed": case "vignette": case "spot": throw new Error(`Cannot split a ${block.type} block`);
     default: throw new Error(`Cannot split a ${block.type} block`);
   }
 }
@@ -218,6 +229,38 @@ export class Flow {
     };
 
     const placeRun = async (run: Piece[]) => {
+      // Check if the run contains any image blocks that need single-column flow
+      const hasImageBlocks = run.some(block =>
+        block.block.type === 'vignette' || block.block.type === 'spot'
+      );
+
+      if (hasImageBlocks) {
+        // Single-column layout for image blocks
+        let rest = run;
+        while (rest.length > 0) {
+          // Fit as many blocks as possible in a single column
+          let col: Piece[] = [];
+          while (col.length < rest.length) {
+            const candidate = [...col, rest[col.length]];
+            if (!this.fits([...page, band(candidate, [])])) break;
+            col = candidate;
+          }
+          if (col.length === 0) {
+            if (page.length > 0) { await breakPage(); continue; }
+            // Taller than a whole column: the renderer breaks it.
+            page.push(band([rest[0]], []));
+            rest = rest.slice(1);
+            await breakPage();
+            continue;
+          }
+          page.push(band(col, []));
+          rest = rest.slice(col.length);
+          if (rest.length > 0) await breakPage();
+        }
+        return;
+      }
+
+      // Existing two-column balance for non-image content
       let rest = run;
       while (rest.length > 0) {
         const settled = await this.balance(rest, page);

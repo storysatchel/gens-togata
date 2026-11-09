@@ -1,0 +1,28 @@
+title: "Test Chapter"
+blocks:
+  - type: h2
+    text: "Three Image Types"
+  - type: p
+    text: "The first type is a full-bleed image, which extends to the edges of the page."
+  - type: full-bleed
+    src: "images/full-bleed-test.png"
+    caption: "A full-bleed image spanning the entire page"
+    alt: "Test full-bleed image"
+  - type: p
+    text: "After the full-bleed image, we continue with text. Here is a vignette, a half-page image with text beside it."
+  - type: vignette
+    src: "images/vignette-test.png"
+    caption: "A vignette — half-page illustration"
+    alt: "Test vignette image"
+    position: top
+  - type: p
+    text: "Now some more text beside the vignette."
+  - type: p
+    text: "Finally, a spot illustration appears inline within the text. This is a small image that flows with the content."
+  - type: spot
+    src: "images/spot-test.png"
+    caption: "A spot illustration"
+    alt: "Test spot image"
+    float: right
+  - type: p
+    text: "This paragraph wraps around the spot illustration."
