@@ -99,15 +99,15 @@ p.runs-on { text-align-last: justify; margin-bottom: 0; }
 .endnotes.continued { margin-top: 0; border-top: 0; padding-top: 0; }
 
 /* Full-bleed image: spans the full page width (528px). The negative side
-   margins cancel .document's 18px horizontal padding. Vertically it fills the
+   margins cancel .document's SIDEBAR_HANG (30px) horizontal padding. Vertically it fills the
    renderer's content box: takumi-pdf clips page content to the 48px/53px page
    margins, so an 816px-tall block would be fragmented across two pages. The
    flow already gives this block a page of its own, so no CSS page break is
    needed (adding one produced a blank page before the plate). */
 .full-bleed-image {
-  margin: 0 -18px;
+  margin: 0 -30px;
   padding: 0;
-  width: calc(100% + 36px);
+  width: calc(100% + 60px);
   height: 715px;
   position: relative;
   break-inside: avoid;
@@ -157,15 +157,16 @@ p.runs-on { text-align-last: justify; margin-bottom: 0; }
   background: #f9f5ea;
 }
 
-/* Spot illustration: explicit width, inline-block, no float */
+/* Spot illustration: explicit width, block figure. takumi-pdf does not float,
+   so the image and caption occupy their own lines and the text follows below. */
 .spot-image {
   break-inside: avoid;
   width: 150px;
-  display: inline-block;
+  display: block;
   border: 1px solid #c9bfa8;
   border-radius: 2px;
   background: #fff;
-  margin: 3px 8px 3px 0;
+  margin: 4px 0;
   vertical-align: top;
 }
 .spot-image img {
@@ -181,5 +182,4 @@ p.runs-on { text-align-last: justify; margin-bottom: 0; }
   padding-top: 2px;
 }
 
-.float-right { float: right; }
-.float-left { float: left; }
+

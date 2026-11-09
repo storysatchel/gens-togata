@@ -12,17 +12,11 @@ const PAGE_LIMIT = CONTENT_HEIGHT - 2;
 const KEEP_GROUP_LIMIT = CONTENT_HEIGHT / 5;
 
 export interface Piece { block: ContentBlock; key: string; id?: string; fragment: Fragment }
-export interface Piece { block: ContentBlock; key: string; id?: string; fragment: Fragment }
-export interface Piece { block: ContentBlock; key: string; id?: string; fragment: Fragment }
-export interface Piece { block: ContentBlock; key: string; id?: string; fragment: Fragment }
-export interface Piece { block: ContentBlock; key: string; id?: string; fragment: Fragment }
 export type Segment =
   | { kind: "node"; key: string; node: ReactNode }
   | { kind: "full"; piece: Piece }
   | { kind: "band"; left: Piece[]; right: Piece[] };
 // A laid-out page; `recto` (odd page) lets the stylesheet tell the outer side of the spread.
-export interface PageLayout { segments: Segment[]; recto: boolean }
-export interface PageLayout { segments: Segment[]; recto: boolean }
 export interface PageLayout { segments: Segment[]; recto: boolean }
 type Frame = (piece: Piece) => Segment;
 type Fit = (pieces: Piece[]) => Promise<boolean>;
@@ -52,14 +46,10 @@ function SegmentView({ segment }: { segment: Segment }) {
     case "full": return segment.piece.block.type === "full-bleed"
       ? <PieceView piece={segment.piece} />
       : <div className="fullw"><PieceView piece={segment.piece} /></div>;
-    case "band":
-      if (segment.right.length === 0) {
-        return segment.left.map(piece => <PieceView key={piece.key} piece={piece} />);
-      }
-      return <div className="column-layout">
-        <div className="column column-left">{segment.left.map(piece => <PieceView key={piece.key} piece={piece} />)}</div>
-        <div className="column column-right">{segment.right.map(piece => <PieceView key={piece.key} piece={piece} />)}</div>
-      </div>;
+    case "band": return <div className="column-layout">
+      <div className="column column-left">{segment.left.map(piece => <PieceView key={piece.key} piece={piece} />)}</div>
+      <div className="column column-right">{segment.right.map(piece => <PieceView key={piece.key} piece={piece} />)}</div>
+    </div>;
   }
 }
 

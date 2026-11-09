@@ -6,7 +6,7 @@ import { Inline } from "../inline/Inline";
 import { Contents } from "./Contents";
 import { Chapter } from "./Chapter";
 import { Flow } from "./flow";
-import { CONTENT_HEIGHT, CONTENT_WIDTH, PAGE_SIZE } from "./page";
+import { CONTENT_HEIGHT, CONTENT_WIDTH, PAGE_SIZE, SIDEBAR_HANG } from "./page";
 
 export type DocumentAssets = Required<Pick<MeasureOptions, "fonts" | "images" | "fontFamilies">>;
 
@@ -23,7 +23,7 @@ export async function DocumentTemplate({ document, root, assets }: { document: D
   for (const [index, chapter] of document.chapters.entries()) chapters.push(await Chapter({ chapter, chapterIndex: index, flow }));
   return <>
     <style>{css}</style>
-    <main className="document" style={{ padding: `0 18px` }}>
+    <main className="document" style={{ padding: `0 ${SIDEBAR_HANG}px` }}>
       <section className="cover">
         <img className="festoon" src="cover-festoon.png" alt="" />
         <h1 className="ptitle"><Inline text={m.title} /></h1>

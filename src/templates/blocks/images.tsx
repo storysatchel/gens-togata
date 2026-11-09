@@ -25,9 +25,8 @@ export function Vignette({ block, textBefore, textAfter }: { block: VignetteBloc
 }
 
 export function SpotImage({ block }: { block: SpotImageBlock }) {
-  const floatClass = block.float && block.float !== "none" ? `float-${block.float}` : "";
   const widthStyle = block.width ? { width: `${block.width}px` } : undefined;
-  return <figure className={`spot-image ${floatClass}`} style={widthStyle}>
+  return <figure className="spot-image" style={widthStyle}>
     <img src={block.src} alt={block.alt ?? ""} />
     {block.caption && <figcaption><Inline text={block.caption} /></figcaption>}
   </figure>;
