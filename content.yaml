@@ -1336,17 +1336,38 @@ chapters:
 
 
       • **Small Favor:** Your character begins owing a small favor (or is owed one)
-      for an additional 100 sesterces of starting gear.
+      for an additional 50 sesterces of starting gear.
 
 
       • **Regular Favor:** Your character begins owing a substantial favor to a magistrate,
-      merchant, or tribune for an additional 500 sesterces of starting gear or 10
+      merchant, or tribune for an additional 250 sesterces of starting gear or 10
       starting XP.
 
 
       • **Big Favor:** Your character begins owing a life-altering favor to a high-ranking
-      patrician, general, or imperial freedman for an additional 1,500 sesterces of
+      patrician, general, or imperial freedman for an additional 1,000 sesterces of
       gear or 20 starting XP.'
+  - type: p
+    style: body
+    text: 'Small favors are 50 HS or less, the whole attested range of ordinary Roman
+      cash generosity: a *sportula* of 12 HS, a civic distribution of 4 to 30 HS a
+      head, and enough for a dinner, a night''s lodging, a letter carried, or a word
+      at a door. Regular favors reach 500 HS, half a working year for a labourer,
+      and buy three months'' rent or a *gladius* and a *galea* together. Big favors
+      are over 500 HS, capital rather than hospitality: a slave at 1,000 HS or a bought
+      jury at 500,000, and they are never converted to coin.
+      A starting character takes 50, 250, or 1,000 HS of gear for the three tiers,
+      or 10 or 20 starting XP in place of gear for a Regular or Big favor, and the
+      obligation itself is the interest.'
+  - type: p
+    style: body
+    text: 'A fixed sum measures a favor against only one kind of purse, because Roman
+      incomes run from a labourer''s 3 to 4 HS a day to a senator''s census of 1,000,000
+      HS. Read the tiers against the granter''s own annual income instead: a Small
+      favor costs up to about a twentieth of it, a Regular up to half, and a Big more
+      than half. The same slave is a Big favor from a labourer and a Small one from
+      a senator, which is how the sources describe senatorial giving; the GM caps
+      any single Favor by the grantor''s Dignitas, as Chapter 3 rules.'
   - type: p
     style: body
     text: '**Story Points and Factions:** Obligations and influence are active forces
@@ -1378,7 +1399,7 @@ chapters:
     text: "Chartered maritime transport corporations coordinate the overseas grain supply (*annona*), operating under imperial contract with the grain prefect (*praefectus annonae*). These shipowners (*corpora naviculariorum*) maintain permanent trading offices (*stationes*) in the Piazzale delle Corporazioni at Ostia alongside grain measurers (*mensores frumentarii*) and sack porters (*saccarii*). In manufacturing and municipal services, three chartered corporations dominate: the builders and carpenters (*fabri tignuarii*), who control municipal construction and engineering; the clothiers (*centonarii*), whose heavy soaked woolen blankets serve as the municipal fire brigades of Italian cities; and the timber transporters (*dendrophori*), who haul structural wood and bathhouse fuel while serving as ritual escorts during the March rites of Cybele."
   - type: p
     style: body
-    text: "**At the Table:** Syndicates provide capital, logistics, and legal protection. A **Small Favor** secures passage on a grain freighter or expedited customs clearance. A **Regular Favor** secures a commercial loan of 500 sesterces, insider advance notice on tax leases, or guild muscle from the builders. A **Big Favor** secures an imperial mining lease or quashes a governor's inquiry into private ledgers. When dealing with syndicates and trade corporations, characters add [[boost]] to Negotiation and Knowledge (Commerce) checks concerning commerce or state contracts, but face [[setback]] on social checks with aggrieved provincial subjects or austere senatorial traditionalists."
+    text: "**At the Table:** Syndicates supply capital, logistics, and legal cover: loans, freight, customs access, and the services of chartered builders. The price is entanglement. Accepting a syndicate's help writes a character's name into ledgers that equestrians read as leverage, and provincial communities ruined by tax collection remember who arrived on whose ship. When dealing with syndicates and trade corporations, characters add [[boost]] to Negotiation and Knowledge (Commerce) checks concerning commerce or state contracts, but face [[setback]] on social checks with aggrieved provincial subjects or austere senatorial traditionalists."
   - type: table
     style: gear
     columns:
@@ -1387,13 +1408,13 @@ chapters:
     - Examples
     rows:
     - - Small
-      - 100 HS
-      - Grain-freighter passage; expedited customs clearance (*portorium*).
+      - 50 HS or less
+      - A berth on a grain freighter; a word in a warehouse factor's ear.
     - - Regular
-      - 500 HS
-      - Commercial loan; notice of tax leases; guild muscle (*fabri*).
+      - Up to 500 HS
+      - A small commercial loan; notice of tax leases; guild muscle (*fabri*).
     - - Big
-      - 1,500 HS
+      - Over 500 HS, or any favor beyond price
       - Imperial mining lease; quashing a governor's audit.
   - type: h3
     text: "Neighborhood Wards & Urban Associations (Vici, Compitalia, Sodalitates)"
@@ -1405,7 +1426,7 @@ chapters:
     text: "Beneath this peaceful civic routine lies a potent mechanism for street mobilization. Late Republican politicians armed the neighborhood associations (*collegia compitalicia*) into street gangs to disrupt courts and burn opposing meeting places. In response, imperial law (*Lex Iulia de collegiis*) disbanded unauthorized assemblies, permitting only chartered mutual-aid burial funds (*collegia tenuiorum*) that meet monthly to collect modest dues (*stips*) and ensure every member receives a decent pyre. Yet the wards remain volatile: covert election clubs (*sodalitates*) employ distribution agents (*divisores*) to deliver bribes and direct voting blocs, while ward-masters can shutter artisan shops and mobilize crowds whenever grain shipments fail."
   - type: p
     style: body
-    text: "**At the Table:** Neighborhood associations provide street knowledge, concealment, and mob leverage. A **Small Favor** secures safe shelter in a tenement garret for three days or early warning of approaching watchmen. A **Regular Favor** mobilizes a ward crowd to pack a court hearing, shut down a market street, or provide neighborhood witnesses. A **Big Favor** secures an endowed tomb with an authorized burial guild or organizes citywide ward protests. Characters allied with local wards add [[boost]] to Streetwise and Skulduggery checks in their home district, but suffer [[setback]] on Stealth checks in unfamiliar wards where neighborhood lookouts watch every stranger."
+    text: "**At the Table:** The wards supply street knowledge, concealment, and a crowd that can be moved on short notice. Their help is local and visible: a face seen entering a ward-master's shop becomes known to every lookout on the block, and a favor called in against a neighbor is remembered at the fountain and the shrine. Characters allied with local wards add [[boost]] to Streetwise and Skulduggery checks in their home district, but suffer [[setback]] on Stealth checks in unfamiliar wards where neighborhood lookouts watch every stranger."
   - type: table
     style: gear
     columns:
@@ -1414,13 +1435,13 @@ chapters:
     - Examples
     rows:
     - - Small
-      - Up to 100 HS
-      - Safe shelter in a tenement garret for three days; warning of approaching night watchmen; entry to a ward banquet.
+      - 50 HS or less
+      - A night's shelter in a tenement garret; warning of approaching night watchmen; entry to a ward banquet.
     - - Regular
       - Up to 500 HS
       - Mobilizing a ward crowd to pack a court hearing; shuttering a market street; providing neighborhood alibi witnesses.
     - - Big
-      - Up to 1,500 HS
+      - Over 500 HS, or any favor beyond price
       - Endowed family tomb with an authorized burial guild; orchestrating a citywide ward protest or bread strike.
   - type: h3
     text: "Spectacle Enterprises & Circus Factions (Factiones)"
@@ -1432,7 +1453,7 @@ chapters:
     text: "Beyond the circus tracks, theatrical claques (*factiones theatrales*) are professional chanting squads hired by pantomime actors and magistrates to sway theater audiences, frequently sparking street brawls between partisan fans. Gladiatorial combat is managed by private trainers (*lanistae*) and imperial administrators directing state training barracks (*ludi*) in Rome: the Ludus Magnus (connected to the Colosseum through a subterranean tunnel), the Ludus Dacicus, the Ludus Gallicus, and the Ludus Matutinus (which specializes in animal spectacles). These gladiatorial troupes (*familiae gladiatoriae*) house disciplined fighters whose martial prowess is prized for arena glory and private bodyguard work during times of crisis."
   - type: p
     style: body
-    text: "**At the Table:** Spectacle factions offer popular acclaim, martial muscle, and public visibility. A **Small Favor** secures choice seating at the Circus Maximus or a private introduction to a star gladiator. A **Regular Favor** hires a squad of gladiators as bodyguards for a dangerous expedition, or directs a theatrical claque to acclaim or heckle a speaker in the Forum. A **Big Favor** rigs a high-stakes chariot race or orchestrates a synchronized demonstration of thousands of circus spectators to sway imperial policy. Characters wearing faction colors add [[boost]] to Charm and Leadership checks among fellow supporters, but face [[setback]] and open brawls when entering taverns dominated by rival colors."
+    text: "**At the Table:** Spectacle factions supply popular acclaim, martial muscle, and public visibility. Their friendship is loud and partisan: a character seen in faction colors inherits the faction's friends and its enemies at the same door, and a favor from a *lanista* is known in every tavern that follows the races. Characters wearing faction colors add [[boost]] to Charm and Leadership checks among fellow supporters, but face [[setback]] and open brawls when entering taverns dominated by rival colors."
   - type: table
     style: gear
     columns:
@@ -1441,13 +1462,13 @@ chapters:
     - Examples
     rows:
     - - Small
-      - Up to 100 HS
+      - 50 HS or less
       - Reserved seating at the Circus Maximus; private introduction to a star gladiator; faction livery and tavern pass.
     - - Regular
       - Up to 500 HS
-      - Squad of gladiators as bodyguards for a dangerous mission; hiring a theatrical claque to acclaim or heckle in the Forum.
+      - A gladiator as escort for one errand; a knot of faction supporters to cheer or jeer at a door.
     - - Big
-      - Up to 1,500 HS
+      - Over 500 HS, or any favor beyond price
       - Rigging a championship chariot race; orchestrating a synchronized demonstration of circus spectators to pressure the emperor.
   - type: h3
     text: "Civic Priesthoods & Sacred Colleges (Collegia Sacerdotum)"
@@ -1459,7 +1480,7 @@ chapters:
     text: "Other specialized colleges manage public destiny and diplomatic relations. The Fifteen Custodians (*Quindecimviri Sacris Faciundis*) guard the prophetic Sibylline Books and supervise the introduction of foreign non-Italian cults like Apollo, Ceres, and the Magna Mater. The Seven Banquet Masters (*Septemviri Epulonum*) organize the sacred feasts (*epulum Iovis*) during major public games. Ancient noble sodalities preserve archaic rites: the twelve Arval Brethren (*Fratres Arvales*) sacrifice in their sacred grove for the health (*salus*) of the emperor, the leaping Salii process in archaic bronze armor while beating Mars's sacred shields, and the Fetiales solemnize treaties and conduct ritual declarations of war."
   - type: p
     style: body
-    text: "**At the Table:** The sacred colleges command sacral authority and decisive procedural vetoes. A **Small Favor** grants access to a temple archive, a private purification ritual to remove an omen, or entry to a closed ceremonial feast. A **Regular Favor** halts a court proceeding or assembly vote by declaring a public holiday (*feriae*) or adverse omen, or secures formal sanctuary within a consecrated temple. A **Big Favor** arranges a consultation of the Sibylline Books or initiates an inquiry before the pontifical college. Characters holding priestly status add [[boost]] to Discipline and social checks invoking ancestral custom (*mos maiorum*), while anyone violating sacral law suffers [[setback]] on social interactions with pious citizens."
+    text: "**At the Table:** The sacred colleges supply sacral authority and procedural vetoes: a ritual performed, an omen declared, a day struck from the calendar. Their help is public, and so is the debt. To be seen consulting a priest on a legal matter invites the charge that a character works by superstition rather than law, and pious rivals will say so. Characters holding priestly status add [[boost]] to Discipline and social checks invoking ancestral custom (*mos maiorum*), while anyone violating sacral law suffers [[setback]] on social interactions with pious citizens."
   - type: table
     style: gear
     columns:
@@ -1468,13 +1489,13 @@ chapters:
     - Examples
     rows:
     - - Small
-      - Up to 100 HS
+      - 50 HS or less
       - Access to a temple archive; private purification ritual to avert an omen; entry to a ceremonial collegial feast.
     - - Regular
       - Up to 500 HS
       - Halting court proceedings by declaring an adverse omen (*obnuntiatio*); formal sanctuary within a consecrated temple.
     - - Big
-      - Up to 1,500 HS
+      - Over 500 HS, or any favor beyond price
       - Official consultation of the Sibylline Books; pontifical inquiry declaring a rival's contract or election impious and void.
   - type: h3
     text: "Foreign Enclaves, Mystery Cults, and Dissident Cells"
@@ -1486,7 +1507,7 @@ chapters:
     text: "Mystery sodalities recruit through private devotion and hierarchical fellowship. The devotees of Isis (*Isiaci*), centered at the magnificent Iseum Campense in the Campus Martius, follow white-robed priests in daily dawn temple rituals that attract matrons, merchants, and imperial officials. Beneath the streets of Rome and Ostia, over forty subterranean shrines (*mithraea*) host the mystery brotherhood of Mithras, structured into seven initiatory grades (from *Corax* to *Pater*) that forge tight bonds among legionaries, customs officials, and imperial freedmen. In contrast, early Christian house churches (*tituli* or *domus ecclesiae*) meet in private domestic quarters; rejecting civic sacrifices and the Imperial Cult, they are classified by magistrates as an illicit superstition (*superstitio illicita*) subject to sudden denunciation."
   - type: p
     style: body
-    text: "**At the Table:** Foreign enclaves offer Mediterranean-wide contacts, covert refuge, and esoteric lore. A **Small Favor** secures safe shelter in an enclave inn, translation of Greek or Aramaic documents, or discreet medical treatment. A **Regular Favor** secures concealed sanctuary in a subterranean *mithraeum* or domestic *titulus*, letters of introduction to merchant houses in Alexandria or Antioch, or financial relief from a community fund. A **Big Favor** arranges clandestine passage out of Italy on an uninspected cargo vessel or coordinates an overseas diaspora network to recover a lost heirloom. Characters allied with these groups add [[boost]] to Knowledge (the Gods) and Streetwise checks regarding overseas contacts, but suffer [[setback]] on social checks when scrutinized by suspicious city prefects."
+    text: "**At the Table:** Foreign enclaves supply contacts across the Mediterranean, covert refuge, and lore that the civic cults do not hold. Their help depends on discretion. A Roman seen entering a synagogue, a *mithraeum*, or a foreign inn is marked by the neighbors and the prefect's informers. Characters allied with these groups add [[boost]] to Knowledge (the Gods) and Streetwise checks regarding overseas contacts, but suffer [[setback]] on social checks when scrutinized by suspicious city prefects."
   - type: table
     style: gear
     columns:
@@ -1495,14 +1516,14 @@ chapters:
     - Examples
     rows:
     - - Small
-      - Up to 100 HS
-      - Safe lodging in a diaspora inn; translation of Greek, Aramaic, or Punic documents; discreet herbal or surgical care.
+      - 50 HS or less
+      - A night's lodging in a diaspora inn; a scribe; a herbal remedy.
     - - Regular
       - Up to 500 HS
-      - Concealed sanctuary in a subterranean *mithraeum* or house church; commercial letter of credit to Antioch or Alexandria.
+      - Concealed sanctuary in a *mithraeum*; a small letter of credit to Antioch.
     - - Big
-      - Up to 1,500 HS
-      - Clandestine passage out of Italy on an uninspected cargo ship; mobilising overseas diaspora networks to recover lost assets.
+      - Over 500 HS, or any favor beyond price
+      - Clandestine passage out of Italy; diaspora help to recover assets.
   - type: h3
     text: "Aristocratic Patronage Blocs & Senatorial Factions"
   - type: p
@@ -1513,7 +1534,7 @@ chapters:
     text: "Overarching senatorial rivalries is the imperial court (*domus Augusta*). Centered on the Palatine Hill, the Princeps rules through personal advisers (*consilium principis*), the Praetorian Guard under its powerful prefects, and imperial freedmen who manage imperial secretariats for correspondence (*ab epistulis*) and petitions (*a libellis*). Across both imperial and senatorial houses, power is demonstrated each morning during the formal greeting (*salutatio*), when swarms of dependent clients (*clientes*) gather in the patron's atrium to offer respects and receive the daily cash gift (*sportula*). In exchange, clients provide bodyguards in the streets, pack jury benches, cheer forensic speeches, and form reliable voting blocs."
   - type: p
     style: body
-    text: "**At the Table:** Aristocratic blocs control administrative influence, legal protection, and imperial favor. A **Small Favor** secures an invitation to a noble banquet (*convivium*), an official letter of recommendation (*commendatio*), or a reserved seat at a senate hearing. A **Regular Favor** secures legal representation by an eloquent advocate in a court trial, an introduction to an imperial freedman secretary, or an appointment to an equestrian officer post. A **Big Favor** secures an imperial pardon, a senatorial decree, or a private audience with the emperor. Characters backed by a senatorial patron add [[boost]] to Charm, Negotiation, and Leadership checks when dealing with civic magistrates, but face [[setback]] from the patron's jealous political adversaries."
+    text: "**At the Table:** Aristocratic blocs supply administrative influence, legal protection, and access to the imperial court. Their help arrives with a patron's name attached. A character who owes a senator is expected at the morning *salutatio*, counted in his retinue, and treated as his man by every rival house. Characters backed by a senatorial patron add [[boost]] to Charm, Negotiation, and Leadership checks when dealing with civic magistrates, but face [[setback]] from the patron's jealous political adversaries."
   - type: table
     style: gear
     columns:
@@ -1522,13 +1543,13 @@ chapters:
     - Examples
     rows:
     - - Small
-      - Up to 100 HS
-      - Invitation to a noble banquet (*convivium*); letter of recommendation (*commendatio*); reserved seat at a senate hearing.
+      - 50 HS or less
+      - Invitation to a noble banquet (*convivium*); a spoken recommendation (*commendatio*) to a household steward; reserved seat at a senate hearing.
     - - Regular
       - Up to 500 HS
       - Legal defense by an eloquent forensic advocate; introduction to an imperial freedman secretary; appointment as equestrian officer.
     - - Big
-      - Up to 1,500 HS
+      - Over 500 HS, or any favor beyond price
       - Imperial pardon from provincial exile; imperial or senatorial decree in client's favor; private audience with the Princeps.
 - title: 'Chapter 2: Equipment and Vehicles'
   blocks:
@@ -1603,15 +1624,15 @@ chapters:
     - Example Gear
     rows:
     - - Small
-      - 100 HS; Rarity 1–3
+      - 50 HS; Rarity 0–2
       - Minor reciprocal service; goods returned undamaged.
-      - Common weapons, artisan tools, travel rations, a mule lent for an afternoon.
+      - A torch, a day's rations, a *pugio*, a *funda*.
     - - Regular
-      - 1,000 HS; Rarity 4–5
+      - 500 HS; Rarity 3–5
       - Standing obligation, repaid in political or forensic support.
-      - Quality armor, a standard warhorse, a carriage for several days, uninspected permits.
+      - A *galea*, a *gladius*, a *scutum*, a good cloak, a letter of recommendation.
     - - Big
-      - Over 1,000 HS; Rarity 6+ or R
+      - Over 500 HS, or Rarity 6+ / R
       - Life-altering debt to a senator or general; lasting vulnerability.
       - Lorica segmentata, a Cappadocian steed, a scorpio or ballista, forged customs seals.
   - type: h2
@@ -2860,6 +2881,18 @@ chapters:
       and the risk involved.'
     - '**Breaking faith** — refusing a reasonable call on a Favor you owe — costs
       1 Dignitas and makes an enemy. Rome remembered.'
+    - '**Trade like for like.** Two characters may exchange favors of the same tier
+      with no check, provided both agree in front of witnesses or in writing.'
+    - '**Trading up.** Asking for a favor one tier above what is owed, or accepting
+      a small favor and then pressing for a larger one, calls for an opposed check:
+      your character''s **Charm vs. the target''s Cool**, or **Coercion vs. Discipline**,
+      at the GM''s choice of approach. On success the larger favor is granted and
+      the debt becomes the larger one; on failure the target keeps the smaller debt
+      and your character takes [[setback]] on social checks with that person for the
+      rest of the session.'
+    - '**Smaller than small.** Acts with no real cost or risk — a cup of wine, a
+      message carried across the forum, a name given at a door — are not tracked as
+      favors at all.'
   - type: h3
     text: Convivium and Elections
   - type: p
@@ -8192,7 +8225,7 @@ chapters:
       patron''s *atrium* at dawn in clean togas to offer respects and receive the
       *sportula*.'
     - '**Sportula** — the daily gift, originally a food basket and later a standard
-      cash handout (typically 25 sesterces or 6.25 denarii), distributed by patrons
+      cash handout (typically 12 sesterces or 3 denarii), distributed by patrons
       to their clients.'
     - '**Honestiores & Humiliores** — the fundamental imperial legal divide between
       elite citizens (senators, equestrians, decurions, veterans) who enjoy immunity
