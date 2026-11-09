@@ -38,6 +38,7 @@ function blockSpeech(block: ContentBlock): string {
     case "list": return block.items.map(item => { const value = plain(item); return value + (/([.!?:])$/.test(item.trim()) ? "" : "."); }).join(" ");
     case "table": return block.rows.map(row => row.map((value, i) => ({ value, column: block.columns[i] })).filter(cell => cell.value && cell.column).map(cell => `${plain(cell.column!)}: ${plain(String(cell.value))}`).join("; ") + ".").join(" ");
     case "statblock": return statSpeech(block);
+    case "full-bleed": case "vignette": case "spot": return block.caption ? plain(block.caption) : "";
     case "endnotes": return "";
   }
 }

@@ -6,7 +6,7 @@ Authoring and build conventions for this repository. Read before editing content
 *Gens Togata* — a fan-made setting supplement for the **Genesys** roleplaying game, set in ancient Rome. Published under the Genesys Foundry Community Content Agreement; unofficial and non-commercial.
 
 ## Architecture — source of truth is decoupled from presentation
-- `content.yaml` is the **single source of truth**: metadata + chapters of typed blocks (`h3`, `p`, `list`, `table`, `statblock`, `sidebar`, `procedure`, `scenario`, `endnotes`, …). It knows nothing of markup.
+- `content.yaml` is the **single source of truth**: metadata + chapters of typed blocks (`h3`, `p`, `list`, `table`, `statblock`, `sidebar`, `procedure`, `scenario`, `endnotes`, `full-bleed`, `vignette`, `spot`, …). It knows nothing of markup. Image blocks reference files in the `images/` directory.
 - `styles.css` is presentation only.
 - `src/content/` loads YAML and declares the typed content model. `src/templates/` contains reusable TSX templates; `src/inline/` handles inline markup.
 - Two-column pages are laid out by `src/templates/flow.tsx`, not CSS (takumi-pdf has no multicol): it measures candidate pages with takumi's `measure()`, fills the left column to the page foot before the right, splits paragraphs/lists/tables/endnotes at word or item boundaries, and emits explicit `.page` boxes tagged `recto`/`verso` so outer-column sidebars float into the correct margin. Page geometry lives in `src/templates/page.ts`; keep `measure` options in step with the `render` options.

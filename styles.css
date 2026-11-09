@@ -97,3 +97,89 @@ sup.en { font-size: .64em; line-height: 0; vertical-align: super; color: #8a5a12
 .page + .page { break-before: page; }
 p.runs-on { text-align-last: justify; margin-bottom: 0; }
 .endnotes.continued { margin-top: 0; border-top: 0; padding-top: 0; }
+
+/* Full-bleed image: spans the full page width (528px). The negative side
+   margins cancel .document's 18px horizontal padding. Vertically it fills the
+   renderer's content box: takumi-pdf clips page content to the 48px/53px page
+   margins, so an 816px-tall block would be fragmented across two pages. The
+   flow already gives this block a page of its own, so no CSS page break is
+   needed (adding one produced a blank page before the plate). */
+.full-bleed-image {
+  margin: 0 -18px;
+  padding: 0;
+  width: calc(100% + 36px);
+  height: 715px;
+  position: relative;
+  break-inside: avoid;
+}
+.full-bleed-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.full-bleed-image figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 6pt;
+  color: #555;
+  text-align: center;
+  padding: 4px;
+  font-style: italic;
+}
+
+/* Vignette: floated thumbnail (image left, text right) */
+.vignette-wrap {
+  display: block;
+  margin-bottom: 4px;
+}
+.vignette-image {
+  float: left;
+  width: 207px;
+  margin: 0 8px 0 0;
+  border: 1px solid #c9bfa8;
+  border-radius: 2px;
+  background: #fff;
+}
+.vignette-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.vignette-image figcaption {
+  font-size: 6pt;
+  color: #555;
+  text-align: center;
+  padding: 4px 6px;
+  font-style: italic;
+  background: #f9f5ea;
+}
+
+/* Spot illustration: explicit width, inline-block, no float */
+.spot-image {
+  break-inside: avoid;
+  width: 150px;
+  display: inline-block;
+  border: 1px solid #c9bfa8;
+  border-radius: 2px;
+  background: #fff;
+  margin: 3px 8px 3px 0;
+  vertical-align: top;
+}
+.spot-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.spot-image figcaption {
+  font-size: 6pt;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+  padding-top: 2px;
+}
+
+.float-right { float: right; }
+.float-left { float: left; }
